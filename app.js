@@ -88,7 +88,7 @@ function renderHome() {
 
     <div class="section-title">최근 단어 <a href="#words">전체 보기 ›</a></div>
     ${recentWords.length ? `<div class="mini-words">${recentWords.map(w => `
-      <a class="card" href="#words"><div class="w">${esc(w.word)}</div>${w.ipa ? `<div class="ipa">${esc(w.ipa)}</div>` : ''}<div class="m">${esc(w.meaning)}</div></a>`).join('')}</div>`
+      <a class="card" href="#words"><div><span class="w">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}</div><div class="m">${esc(w.meaning)}</div></a>`).join('')}</div>`
     : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
 
     <div class="section-title">최근 스크립트 <a href="#scripts">전체 보기 ›</a></div>
@@ -106,8 +106,7 @@ function wordCard(w) {
     <article class="card word">
       <div class="word-head">
         <div style="flex:1;min-width:0">
-          <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}
-          ${w.ipa ? `<div class="ipa">${esc(w.ipa)}</div>` : ''}
+          <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}
         </div>
         ${speakBtn(w.word)}
       </div>

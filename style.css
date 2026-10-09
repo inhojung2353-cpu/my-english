@@ -80,7 +80,8 @@ main { max-width: 680px; margin: 0 auto; padding: 4px 16px calc(var(--tabbar-h) 
 .speak.speaking { background: var(--primary); animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 50% { transform: scale(1.08); } }
 .ipa { font-family: "Lucida Sans Unicode", "Arial Unicode MS", "Segoe UI", sans-serif; font-size: 14px; color: var(--primary); letter-spacing: .01em; }
-.mini-words .ipa { font-size: 12px; }
+.word-head .ipa, .mini-words .ipa { margin-left: 8px; white-space: nowrap; }
+.mini-words .ipa { font-size: 12px; margin-left: 6px; }
 .word-head .w { cursor: pointer; }
 .pill { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--primary-soft); color: var(--primary); vertical-align: middle; }
 
