@@ -1885,6 +1885,88 @@ window.CONTENT = {
             "마트 앞에서 시니어 인턴 공고 발견 — 지원 조건과 영상 자기소개서",
             "이웃 패티의 저녁 초대를 정중히 미룸"
           ],
+          "words": [
+            {
+              "word": "retired",
+              "ipa": "/rɪˈtaɪərd/",
+              "pos": "adj.",
+              "meaning": "은퇴한",
+              "example": "My father is retired and enjoys gardening.",
+              "exampleKo": "아버지는 은퇴하시고 정원 가꾸기를 즐기세요."
+            },
+            {
+              "word": "relentless",
+              "ipa": "/rɪˈlentləs/",
+              "pos": "adj.",
+              "meaning": "끊임없는, 가차 없는",
+              "example": "Her relentless effort finally paid off.",
+              "exampleKo": "그녀의 끊임없는 노력이 마침내 결실을 맺었어."
+            },
+            {
+              "word": "novelty",
+              "ipa": "/ˈnɑːvlti/",
+              "pos": "n.",
+              "meaning": "새로움, 신기함",
+              "example": "The novelty of the new job wore off quickly.",
+              "exampleKo": "새 직장의 신선함은 금방 사라졌어."
+            },
+            {
+              "word": "funeral",
+              "ipa": "/ˈfjuːnərəl/",
+              "pos": "n.",
+              "meaning": "장례식",
+              "example": "We went to his grandfather’s funeral.",
+              "exampleKo": "그의 할아버지 장례식에 갔어."
+            },
+            {
+              "word": "rely on",
+              "ipa": "/rɪˈlaɪ ɑːn/",
+              "pos": "phrasal v.",
+              "meaning": "~에 의지하다",
+              "example": "You can rely on her to finish on time.",
+              "exampleKo": "그녀가 제때 끝낼 거라고 믿어도 돼."
+            },
+            {
+              "word": "flyer",
+              "ipa": "/ˈflaɪər/",
+              "pos": "n.",
+              "meaning": "전단지",
+              "example": "I saw a flyer for a yoga class.",
+              "exampleKo": "요가 수업 전단지를 봤어."
+            },
+            {
+              "word": "applicant",
+              "ipa": "/ˈæplɪkənt/",
+              "pos": "n.",
+              "meaning": "지원자",
+              "example": "All applicants must submit a résumé.",
+              "exampleKo": "모든 지원자는 이력서를 제출해야 해요."
+            },
+            {
+              "word": "genuine",
+              "ipa": "/ˈdʒenjuɪn/",
+              "pos": "adj.",
+              "meaning": "진짜의, 진심 어린",
+              "example": "She has a genuine interest in art.",
+              "exampleKo": "그녀는 미술에 진심으로 관심이 있어."
+            },
+            {
+              "word": "roll up one’s sleeves",
+              "ipa": "",
+              "pos": "phrase",
+              "meaning": "소매를 걷어붙이다, 본격적으로 일하다",
+              "example": "It’s time to roll up our sleeves and get to work.",
+              "exampleKo": "이제 소매 걷어붙이고 일할 시간이야."
+            },
+            {
+              "word": "challenging",
+              "ipa": "/ˈtʃælɪndʒɪŋ/",
+              "pos": "adj.",
+              "meaning": "어려운, 도전적인",
+              "example": "This project is challenging but fun.",
+              "exampleKo": "이 프로젝트는 어렵지만 재밌어."
+            }
+          ],
           "expressions": [
             {
               "phrase": "have time on one’s hands",
@@ -1984,6 +2066,88 @@ window.CONTENT = {
             "비서 베키가 쏟아내는 줄스의 일정",
             "홈페이지 시안 회의 — 한눈에 읽혀야 한다"
           ],
+          "words": [
+            {
+              "word": "tremendous",
+              "ipa": "/trəˈmendəs/",
+              "pos": "adj.",
+              "meaning": "엄청난, 굉장한",
+              "example": "The concert was a tremendous success.",
+              "exampleKo": "그 콘서트는 대성공이었어."
+            },
+            {
+              "word": "eager",
+              "ipa": "/ˈiːɡər/",
+              "pos": "adj.",
+              "meaning": "간절히 ~하고 싶은, 열심인",
+              "example": "I’m eager to learn new things.",
+              "exampleKo": "새로운 걸 배우고 싶은 마음이 커요."
+            },
+            {
+              "word": "loyal",
+              "ipa": "/ˈlɔɪəl/",
+              "pos": "adj.",
+              "meaning": "충실한, 의리 있는",
+              "example": "He’s a loyal customer.",
+              "exampleKo": "그는 충성 고객이야."
+            },
+            {
+              "word": "trustworthy",
+              "ipa": "/ˈtrʌstwɜːrði/",
+              "pos": "adj.",
+              "meaning": "믿을 수 있는",
+              "example": "We need a trustworthy person for this job.",
+              "exampleKo": "이 일엔 믿을 수 있는 사람이 필요해."
+            },
+            {
+              "word": "crisis",
+              "ipa": "/ˈkraɪsɪs/",
+              "pos": "n.",
+              "meaning": "위기 (복수 crises)",
+              "example": "She stays calm in a crisis.",
+              "exampleKo": "그녀는 위기에도 침착해."
+            },
+            {
+              "word": "vendor",
+              "ipa": "/ˈvendər/",
+              "pos": "n.",
+              "meaning": "판매업체, 공급업체",
+              "example": "We contacted the vendor about the delay.",
+              "exampleKo": "지연 건으로 공급업체에 연락했어요."
+            },
+            {
+              "word": "refund",
+              "ipa": "/ˈriːfʌnd/",
+              "pos": "n. / v.",
+              "meaning": "환불(하다)",
+              "example": "Can I get a refund for this?",
+              "exampleKo": "이거 환불받을 수 있나요?"
+            },
+            {
+              "word": "bridesmaid",
+              "ipa": "/ˈbraɪdzmeɪd/",
+              "pos": "n.",
+              "meaning": "신부 들러리",
+              "example": "She asked me to be her bridesmaid.",
+              "exampleKo": "그녀가 나에게 들러리를 부탁했어."
+            },
+            {
+              "word": "conference room",
+              "ipa": "/ˈkɑːnfərəns ruːm/",
+              "pos": "n.",
+              "meaning": "회의실",
+              "example": "The meeting is in the big conference room.",
+              "exampleKo": "회의는 큰 회의실에서 해요."
+            },
+            {
+              "word": "slimming",
+              "ipa": "/ˈslɪmɪŋ/",
+              "pos": "adj.",
+              "meaning": "날씬해 보이게 하는",
+              "example": "Black is a slimming color.",
+              "exampleKo": "검은색은 날씬해 보이는 색이야."
+            }
+          ],
           "expressions": [
             {
               "phrase": "figure out",
@@ -2075,6 +2239,88 @@ window.CONTENT = {
             "\"10년 후 당신의 모습은?\" — 70세에게 어색한 질문",
             "합격 통보",
             "캐머런: 시니어 인턴 한 명이 줄스와 직접 일할 것"
+          ],
+          "words": [
+            {
+              "word": "acquisition",
+              "ipa": "/ˌækwɪˈzɪʃn/",
+              "pos": "n.",
+              "meaning": "획득, (기업) 인수",
+              "example": "The company announced a new acquisition.",
+              "exampleKo": "회사가 새 인수 소식을 발표했어."
+            },
+            {
+              "word": "graduate",
+              "ipa": "/ˈɡrædʒueɪt/",
+              "pos": "v.",
+              "meaning": "졸업하다",
+              "example": "She graduated from college in 2020.",
+              "exampleKo": "그녀는 2020년에 대학을 졸업했어."
+            },
+            {
+              "word": "oversee",
+              "ipa": "/ˌoʊvərˈsiː/",
+              "pos": "v.",
+              "meaning": "감독하다, 총괄하다",
+              "example": "He oversees the whole sales team.",
+              "exampleKo": "그는 영업팀 전체를 총괄해."
+            },
+            {
+              "word": "advertising",
+              "ipa": "/ˈædvərtaɪzɪŋ/",
+              "pos": "n.",
+              "meaning": "광고(업)",
+              "example": "She works in advertising.",
+              "exampleKo": "그녀는 광고업계에서 일해."
+            },
+            {
+              "word": "telling",
+              "ipa": "/ˈtelɪŋ/",
+              "pos": "adj.",
+              "meaning": "(속마음을) 드러내는, 의미심장한",
+              "example": "It was a very telling question.",
+              "exampleKo": "그건 많은 걸 알려 주는 질문이었어."
+            },
+            {
+              "word": "qualified",
+              "ipa": "/ˈkwɑːlɪfaɪd/",
+              "pos": "adj.",
+              "meaning": "자격을 갖춘",
+              "example": "She’s well qualified for the job.",
+              "exampleKo": "그녀는 그 일에 충분한 자격이 있어."
+            },
+            {
+              "word": "outreach",
+              "ipa": "/ˈaʊtriːtʃ/",
+              "pos": "n.",
+              "meaning": "(대상을 찾아가는) 지원·홍보 활동",
+              "example": "The library runs an outreach program for seniors.",
+              "exampleKo": "도서관은 어르신을 위한 지원 프로그램을 운영해."
+            },
+            {
+              "word": "eventually",
+              "ipa": "/ɪˈventʃuəli/",
+              "pos": "adv.",
+              "meaning": "결국",
+              "example": "Eventually, we found the answer.",
+              "exampleKo": "결국 우리는 답을 찾았어."
+            },
+            {
+              "word": "minimum",
+              "ipa": "/ˈmɪnɪməm/",
+              "pos": "n. / adj.",
+              "meaning": "최소(의)",
+              "example": "You need a minimum of three years’ experience.",
+              "exampleKo": "최소 3년의 경력이 필요해요."
+            },
+            {
+              "word": "sue",
+              "ipa": "/suː/",
+              "pos": "v.",
+              "meaning": "고소하다",
+              "example": "They threatened to sue the company.",
+              "exampleKo": "그들은 회사를 고소하겠다고 했어."
+            }
           ],
           "expressions": [
             {
@@ -2168,6 +2414,88 @@ window.CONTENT = {
             "비서 베키의 조언: 빨리 말하고, 꾸물대지 말고, 눈 깜빡일 것",
             "줄스와의 첫 미팅 — \"이메일로 연락할게요\""
           ],
+          "words": [
+            {
+              "word": "founder",
+              "ipa": "/ˈfaʊndər/",
+              "pos": "n.",
+              "meaning": "창업자",
+              "example": "She’s the founder of a fashion startup.",
+              "exampleKo": "그녀는 패션 스타트업 창업자야."
+            },
+            {
+              "word": "hatch",
+              "ipa": "/hætʃ/",
+              "pos": "v.",
+              "meaning": "(계획을) 꾸미다, 부화하다",
+              "example": "The idea was hatched over coffee.",
+              "exampleKo": "그 아이디어는 커피 마시다가 나왔어."
+            },
+            {
+              "word": "employee",
+              "ipa": "/ɪmˈplɔɪiː/",
+              "pos": "n.",
+              "meaning": "직원",
+              "example": "The company has 200 employees.",
+              "exampleKo": "회사 직원은 200명이에요."
+            },
+            {
+              "word": "confident",
+              "ipa": "/ˈkɑːnfɪdənt/",
+              "pos": "adj.",
+              "meaning": "자신감 있는",
+              "example": "Be confident in your answer.",
+              "exampleKo": "네 답에 자신감을 가져."
+            },
+            {
+              "word": "assign",
+              "ipa": "/əˈsaɪn/",
+              "pos": "v.",
+              "meaning": "배정하다, 맡기다",
+              "example": "I was assigned to the marketing team.",
+              "exampleKo": "나는 마케팅 팀에 배정됐어."
+            },
+            {
+              "word": "floater",
+              "ipa": "/ˈfloʊtər/",
+              "pos": "n.",
+              "meaning": "(부서 없이) 여러 팀을 돕는 직원",
+              "example": "As a floater, I help different teams.",
+              "exampleKo": "플로터라서 여러 팀을 도와요."
+            },
+            {
+              "word": "secure",
+              "ipa": "/sɪˈkjʊr/",
+              "pos": "v.",
+              "meaning": "확보하다",
+              "example": "We secured a meeting with the CEO.",
+              "exampleKo": "CEO와의 미팅을 잡았어."
+            },
+            {
+              "word": "transfer",
+              "ipa": "/trænsˈfɜːr/",
+              "pos": "n. / v.",
+              "meaning": "이동, 전근(하다)",
+              "example": "She asked for a transfer to another office.",
+              "exampleKo": "그녀는 다른 지사로 이동을 요청했어."
+            },
+            {
+              "word": "grasp",
+              "ipa": "/ɡræsp/",
+              "pos": "v.",
+              "meaning": "이해하다, 꽉 잡다",
+              "example": "It’s a hard concept to grasp.",
+              "exampleKo": "이해하기 어려운 개념이야."
+            },
+            {
+              "word": "blink",
+              "ipa": "/blɪŋk/",
+              "pos": "v.",
+              "meaning": "눈을 깜빡이다",
+              "example": "He didn’t even blink.",
+              "exampleKo": "그는 눈 하나 깜짝 안 했어."
+            }
+          ],
           "expressions": [
             {
               "phrase": "(be) psyched",
@@ -2259,6 +2587,88 @@ window.CONTENT = {
             "캐머런: \"외부 CEO 후보를 만나 보자\"",
             "줄스의 반발: 경험이 부족해서? 하버드를 안 나와서?",
             "벤이 치운 잡동사니 책상, 사내 마사지사 피오나와의 만남"
+          ],
+          "words": [
+            {
+              "word": "congeniality",
+              "ipa": "/kənˌdʒiːniˈæləti/",
+              "pos": "n.",
+              "meaning": "친화력, 붙임성",
+              "example": "He won the award for congeniality.",
+              "exampleKo": "그는 친화력 상을 받았어."
+            },
+            {
+              "word": "inventory",
+              "ipa": "/ˈɪnvəntɔːri/",
+              "pos": "n.",
+              "meaning": "재고",
+              "example": "We’re running out of inventory.",
+              "exampleKo": "재고가 바닥나고 있어요."
+            },
+            {
+              "word": "shipping",
+              "ipa": "/ˈʃɪpɪŋ/",
+              "pos": "n.",
+              "meaning": "배송",
+              "example": "Shipping is free for orders over $50.",
+              "exampleKo": "50달러 이상 주문은 배송비 무료예요."
+            },
+            {
+              "word": "investor",
+              "ipa": "/ɪnˈvestər/",
+              "pos": "n.",
+              "meaning": "투자자",
+              "example": "The investors want to see more growth.",
+              "exampleKo": "투자자들은 더 큰 성장을 보고 싶어 해."
+            },
+            {
+              "word": "seasoned",
+              "ipa": "/ˈsiːznd/",
+              "pos": "adj.",
+              "meaning": "노련한, 경험 많은",
+              "example": "She’s a seasoned manager.",
+              "exampleKo": "그녀는 노련한 관리자야."
+            },
+            {
+              "word": "supervision",
+              "ipa": "/ˌsuːpərˈvɪʒn/",
+              "pos": "n.",
+              "meaning": "감독, 관리",
+              "example": "Children need adult supervision.",
+              "exampleKo": "아이들은 어른의 보살핌이 필요해."
+            },
+            {
+              "word": "inexperienced",
+              "ipa": "/ˌɪnɪkˈspɪriənst/",
+              "pos": "adj.",
+              "meaning": "경험이 부족한",
+              "example": "He’s young and inexperienced.",
+              "exampleKo": "그는 어리고 경험이 부족해."
+            },
+            {
+              "word": "complicated",
+              "ipa": "/ˈkɑːmplɪkeɪtɪd/",
+              "pos": "adj.",
+              "meaning": "복잡한",
+              "example": "The process is more complicated than I thought.",
+              "exampleKo": "그 과정은 생각보다 복잡해."
+            },
+            {
+              "word": "startup",
+              "ipa": "/ˈstɑːrtʌp/",
+              "pos": "n.",
+              "meaning": "스타트업, 신생 기업",
+              "example": "She works at a tech startup.",
+              "exampleKo": "그녀는 테크 스타트업에서 일해."
+            },
+            {
+              "word": "spill",
+              "ipa": "/spɪl/",
+              "pos": "v.",
+              "meaning": "쏟다, 흘리다",
+              "example": "I spilled coffee on my shirt.",
+              "exampleKo": "셔츠에 커피를 쏟았어."
+            }
           ],
           "expressions": [
             {
@@ -2360,6 +2770,88 @@ window.CONTENT = {
             "첫 CEO 후보 면담 실패, 벤의 수프",
             "집에서 기다리는 남편 매트와 딸 페이지"
           ],
+          "words": [
+            {
+              "word": "evict",
+              "ipa": "/ɪˈvɪkt/",
+              "pos": "v.",
+              "meaning": "(집에서) 내쫓다",
+              "example": "The landlord evicted the tenants.",
+              "exampleKo": "집주인이 세입자들을 내보냈어."
+            },
+            {
+              "word": "confidential",
+              "ipa": "/ˌkɑːnfɪˈdenʃl/",
+              "pos": "adj.",
+              "meaning": "기밀의, 비밀의",
+              "example": "This information is strictly confidential.",
+              "exampleKo": "이 정보는 철저히 기밀이에요."
+            },
+            {
+              "word": "research",
+              "ipa": "/ˈriːsɜːrtʃ/",
+              "pos": "n.",
+              "meaning": "연구, 조사",
+              "example": "They did research on sleep.",
+              "exampleKo": "그들은 수면에 대해 연구했어."
+            },
+            {
+              "word": "weight gain",
+              "ipa": "/ˈweɪt ɡeɪn/",
+              "pos": "n.",
+              "meaning": "체중 증가",
+              "example": "Stress can cause weight gain.",
+              "exampleKo": "스트레스는 체중 증가를 일으킬 수 있어."
+            },
+            {
+              "word": "condescending",
+              "ipa": "/ˌkɑːndɪˈsendɪŋ/",
+              "pos": "adj.",
+              "meaning": "거들먹거리는, 깔보는",
+              "example": "I don’t like his condescending tone.",
+              "exampleKo": "그의 깔보는 말투가 싫어."
+            },
+            {
+              "word": "sexist",
+              "ipa": "/ˈseksɪst/",
+              "pos": "adj.",
+              "meaning": "성차별적인",
+              "example": "That comment was sexist.",
+              "exampleKo": "그 발언은 성차별적이었어."
+            },
+            {
+              "word": "inorganic",
+              "ipa": "/ˌɪnɔːrˈɡænɪk/",
+              "pos": "adj.",
+              "meaning": "부자연스러운, 억지스러운",
+              "example": "The growth felt inorganic.",
+              "exampleKo": "그 성장은 부자연스럽게 느껴졌어."
+            },
+            {
+              "word": "replace",
+              "ipa": "/rɪˈpleɪs/",
+              "pos": "v.",
+              "meaning": "대체하다, 교체하다",
+              "example": "We need to replace the old printer.",
+              "exampleKo": "오래된 프린터를 교체해야 해."
+            },
+            {
+              "word": "nauseous",
+              "ipa": "/ˈnɔːʃəs/",
+              "pos": "adj.",
+              "meaning": "메스꺼운",
+              "example": "I feel nauseous on boats.",
+              "exampleKo": "배를 타면 속이 메스꺼워."
+            },
+            {
+              "word": "mercury",
+              "ipa": "/ˈmɜːrkjəri/",
+              "pos": "n.",
+              "meaning": "수은",
+              "example": "Some fish contain mercury.",
+              "exampleKo": "어떤 생선에는 수은이 들어 있어."
+            }
+          ],
           "expressions": [
             {
               "phrase": "get evicted",
@@ -2453,6 +2945,88 @@ window.CONTENT = {
             "학교 엄마들의 과카몰리 부탁과 줄스의 한숨",
             "창고 가는 길 — 길 안내 신경전"
           ],
+          "words": [
+            {
+              "word": "hamper",
+              "ipa": "/ˈhæmpər/",
+              "pos": "n.",
+              "meaning": "빨래 바구니",
+              "example": "Put your dirty clothes in the hamper.",
+              "exampleKo": "빨랫감은 바구니에 넣어."
+            },
+            {
+              "word": "raisin",
+              "ipa": "/ˈreɪzn/",
+              "pos": "n.",
+              "meaning": "건포도",
+              "example": "Do you want some raisins?",
+              "exampleKo": "건포도 좀 먹을래?"
+            },
+            {
+              "word": "dry cleaning",
+              "ipa": "/ˌdraɪ ˈkliːnɪŋ/",
+              "pos": "n.",
+              "meaning": "드라이클리닝 (맡길 옷)",
+              "example": "I need to pick up my dry cleaning.",
+              "exampleKo": "드라이클리닝 맡긴 옷 찾아와야 해."
+            },
+            {
+              "word": "laundry",
+              "ipa": "/ˈlɔːndri/",
+              "pos": "n.",
+              "meaning": "빨래, 세탁물",
+              "example": "I do laundry on Sundays.",
+              "exampleKo": "일요일마다 빨래해."
+            },
+            {
+              "word": "admirable",
+              "ipa": "/ˈædmərəbl/",
+              "pos": "adj.",
+              "meaning": "존경스러운, 훌륭한",
+              "example": "Her patience is admirable.",
+              "exampleKo": "그녀의 인내심은 존경스러워."
+            },
+            {
+              "word": "househusband",
+              "ipa": "/ˈhaʊshʌzbənd/",
+              "pos": "n.",
+              "meaning": "전업주부 남편",
+              "example": "He became a househusband after the baby was born.",
+              "exampleKo": "그는 아기가 태어난 뒤 전업주부가 됐어."
+            },
+            {
+              "word": "critical",
+              "ipa": "/ˈkrɪtɪkl/",
+              "pos": "adj.",
+              "meaning": "비판적인, 결정적인",
+              "example": "Don’t be so critical of yourself.",
+              "exampleKo": "너 자신에게 너무 비판적이지 마."
+            },
+            {
+              "word": "rhetorical",
+              "ipa": "/rɪˈtɔːrɪkl/",
+              "pos": "adj.",
+              "meaning": "수사적인 (대답을 바라지 않는)",
+              "example": "It was just a rhetorical question.",
+              "exampleKo": "그냥 대답을 바란 질문은 아니었어."
+            },
+            {
+              "word": "warehouse",
+              "ipa": "/ˈwerhaʊs/",
+              "pos": "n.",
+              "meaning": "창고",
+              "example": "The orders are packed at the warehouse.",
+              "exampleKo": "주문은 창고에서 포장돼요."
+            },
+            {
+              "word": "exhausting",
+              "ipa": "/ɪɡˈzɔːstɪŋ/",
+              "pos": "adj.",
+              "meaning": "진을 빼는, 지치게 하는",
+              "example": "Moving is exhausting.",
+              "exampleKo": "이사는 진이 빠져."
+            }
+          ],
           "expressions": [
             {
               "phrase": "Loud and clear.",
@@ -2538,6 +3112,88 @@ window.CONTENT = {
             "사무실 피자, 두 번째 CEO 후보 이야기",
             "벤의 옛 사무실 이야기, 페이스북 프로필 만들기",
             "차에서 잠든 줄스"
+          ],
+          "words": [
+            {
+              "word": "satisfying",
+              "ipa": "/ˈsætɪsfaɪɪŋ/",
+              "pos": "adj.",
+              "meaning": "만족스러운, 뿌듯한",
+              "example": "It’s satisfying to finish a project.",
+              "exampleKo": "프로젝트를 끝내면 뿌듯해."
+            },
+            {
+              "word": "security deposit",
+              "ipa": "/sɪˈkjʊrəti dɪˈpɑːzɪt/",
+              "pos": "n.",
+              "meaning": "보증금",
+              "example": "The security deposit is two months’ rent.",
+              "exampleKo": "보증금은 월세 두 달 치예요."
+            },
+            {
+              "word": "collar",
+              "ipa": "/ˈkɑːlər/",
+              "pos": "n.",
+              "meaning": "옷깃, 칼라",
+              "example": "Wear a shirt with a collar.",
+              "exampleKo": "칼라 있는 셔츠를 입어."
+            },
+            {
+              "word": "breakthrough",
+              "ipa": "/ˈbreɪkθruː/",
+              "pos": "n.",
+              "meaning": "돌파구, 큰 진전",
+              "example": "We finally had a breakthrough.",
+              "exampleKo": "드디어 돌파구를 찾았어."
+            },
+            {
+              "word": "legit",
+              "ipa": "/ləˈdʒɪt/",
+              "pos": "adj.",
+              "meaning": "(구어) 진짜의, 제대로 된",
+              "example": "Is this website legit?",
+              "exampleKo": "이 웹사이트 믿을 만해?"
+            },
+            {
+              "word": "remodel",
+              "ipa": "/ˌriːˈmɑːdl/",
+              "pos": "v.",
+              "meaning": "개조하다, 리모델링하다",
+              "example": "They remodeled the kitchen.",
+              "exampleKo": "그들은 부엌을 리모델링했어."
+            },
+            {
+              "word": "diversion",
+              "ipa": "/daɪˈvɜːrʒn/",
+              "pos": "n.",
+              "meaning": "기분 전환, 우회",
+              "example": "I need a diversion from work.",
+              "exampleKo": "일에서 잠깐 벗어날 기분 전환이 필요해."
+            },
+            {
+              "word": "inspire",
+              "ipa": "/ɪnˈspaɪər/",
+              "pos": "v.",
+              "meaning": "영감을 주다",
+              "example": "Her story inspired me.",
+              "exampleKo": "그녀의 이야기가 나에게 영감을 줬어."
+            },
+            {
+              "word": "widower",
+              "ipa": "/ˈwɪdoʊər/",
+              "pos": "n.",
+              "meaning": "아내를 잃은 남자",
+              "example": "He’s been a widower for three years.",
+              "exampleKo": "그는 아내를 잃은 지 3년 됐어."
+            },
+            {
+              "word": "snore",
+              "ipa": "/snɔːr/",
+              "pos": "v.",
+              "meaning": "코를 골다",
+              "example": "My dad snores loudly.",
+              "exampleKo": "아빠는 코를 크게 골아."
+            }
           ],
           "expressions": [
             {
@@ -2639,6 +3295,88 @@ window.CONTENT = {
             "구매 패턴 데이터 분석, 베키 칭찬하기",
             "데이비스를 집에 재워 줌 — 손수건 이야기"
           ],
+          "words": [
+            {
+              "word": "demented",
+              "ipa": "/dɪˈmentɪd/",
+              "pos": "adj.",
+              "meaning": "제정신이 아닌",
+              "example": "You must think I’m demented.",
+              "exampleKo": "내가 제정신이 아니라고 생각하겠다."
+            },
+            {
+              "word": "apology",
+              "ipa": "/əˈpɑːlədʒi/",
+              "pos": "n.",
+              "meaning": "사과",
+              "example": "Please accept my apology.",
+              "exampleKo": "제 사과를 받아 주세요."
+            },
+            {
+              "word": "centered",
+              "ipa": "/ˈsentərd/",
+              "pos": "adj.",
+              "meaning": "(마음이) 안정된, 차분한",
+              "example": "Yoga helps me feel centered.",
+              "exampleKo": "요가를 하면 마음이 차분해져."
+            },
+            {
+              "word": "arrangement",
+              "ipa": "/əˈreɪndʒmənt/",
+              "pos": "n.",
+              "meaning": "배치, 준비",
+              "example": "I like the new seating arrangement.",
+              "exampleKo": "새 자리 배치가 마음에 들어."
+            },
+            {
+              "word": "enlist",
+              "ipa": "/ɪnˈlɪst/",
+              "pos": "v.",
+              "meaning": "(도움을) 얻다, 입대하다",
+              "example": "I enlisted my friend’s help.",
+              "exampleKo": "친구의 도움을 받았어."
+            },
+            {
+              "word": "segment",
+              "ipa": "/ˈseɡmənt/",
+              "pos": "n.",
+              "meaning": "부분, (고객)층",
+              "example": "This segment of customers spends more.",
+              "exampleKo": "이 고객층이 돈을 더 써."
+            },
+            {
+              "word": "purchase",
+              "ipa": "/ˈpɜːrtʃəs/",
+              "pos": "n. / v.",
+              "meaning": "구매(하다)",
+              "example": "Thank you for your purchase.",
+              "exampleKo": "구매해 주셔서 감사합니다."
+            },
+            {
+              "word": "frustrating",
+              "ipa": "/ˈfrʌstreɪtɪŋ/",
+              "pos": "adj.",
+              "meaning": "답답한, 짜증 나는",
+              "example": "Waiting in line is frustrating.",
+              "exampleKo": "줄 서서 기다리는 건 답답해."
+            },
+            {
+              "word": "handkerchief",
+              "ipa": "/ˈhæŋkərtʃɪf/",
+              "pos": "n.",
+              "meaning": "손수건",
+              "example": "He always carries a handkerchief.",
+              "exampleKo": "그는 항상 손수건을 가지고 다녀."
+            },
+            {
+              "word": "chivalrous",
+              "ipa": "/ˈʃɪvlrəs/",
+              "pos": "adj.",
+              "meaning": "(특히 여성에게) 정중한, 신사적인",
+              "example": "He’s very chivalrous.",
+              "exampleKo": "그는 아주 신사적이야."
+            }
+          ],
           "expressions": [
             {
               "phrase": "overstep",
@@ -2731,6 +3469,88 @@ window.CONTENT = {
             "잘못 보낸 이메일 — 침입 작전 개시",
             "가짜인 줄 알았던 진짜 경보기",
             "축하 술자리와 줄스의 연설"
+          ],
+          "words": [
+            {
+              "word": "negotiation",
+              "ipa": "/nɪˌɡoʊʃiˈeɪʃn/",
+              "pos": "n.",
+              "meaning": "협상",
+              "example": "The negotiation took three weeks.",
+              "exampleKo": "협상은 3주가 걸렸어."
+            },
+            {
+              "word": "gadget",
+              "ipa": "/ˈɡædʒɪt/",
+              "pos": "n.",
+              "meaning": "(작은) 기기, 도구",
+              "example": "He loves new gadgets.",
+              "exampleKo": "그는 새 기기를 좋아해."
+            },
+            {
+              "word": "sanitation",
+              "ipa": "/ˌsænɪˈteɪʃn/",
+              "pos": "n.",
+              "meaning": "위생",
+              "example": "The sanitation department inspected the kitchen.",
+              "exampleKo": "위생 담당 부서가 주방을 점검했어."
+            },
+            {
+              "word": "bedbug",
+              "ipa": "/ˈbedbʌɡ/",
+              "pos": "n.",
+              "meaning": "빈대",
+              "example": "The hotel had a bedbug problem.",
+              "exampleKo": "그 호텔은 빈대 문제가 있었어."
+            },
+            {
+              "word": "accomplice",
+              "ipa": "/əˈkɑːmplɪs/",
+              "pos": "n.",
+              "meaning": "공범",
+              "example": "He was an accomplice to the robbery.",
+              "exampleKo": "그는 강도 사건의 공범이었어."
+            },
+            {
+              "word": "influence",
+              "ipa": "/ˈɪnfluəns/",
+              "pos": "n.",
+              "meaning": "영향",
+              "example": "She’s a good influence on her brother.",
+              "exampleKo": "그녀는 남동생에게 좋은 영향을 줘."
+            },
+            {
+              "word": "burglar",
+              "ipa": "/ˈbɜːrɡlər/",
+              "pos": "n.",
+              "meaning": "빈집털이, 도둑",
+              "example": "A burglar broke into the house.",
+              "exampleKo": "도둑이 집에 침입했어."
+            },
+            {
+              "word": "arrest",
+              "ipa": "/əˈrest/",
+              "pos": "v.",
+              "meaning": "체포하다",
+              "example": "The police arrested the suspect.",
+              "exampleKo": "경찰이 용의자를 체포했어."
+            },
+            {
+              "word": "indebted",
+              "ipa": "/ɪnˈdetɪd/",
+              "pos": "adj.",
+              "meaning": "신세를 진, 고마운",
+              "example": "I’m indebted to you for your help.",
+              "exampleKo": "도와줘서 신세를 졌어."
+            },
+            {
+              "word": "nurture",
+              "ipa": "/ˈnɜːrtʃər/",
+              "pos": "v.",
+              "meaning": "보살피다, 키우다",
+              "example": "Parents nurture their children’s talents.",
+              "exampleKo": "부모는 아이의 재능을 키워 줘."
+            }
           ],
           "expressions": [
             {
@@ -2832,6 +3652,88 @@ window.CONTENT = {
             "엄마들의 뒷말 — 유리 천장을 깨는 줄스",
             "매트의 비밀을 알게 된 벤의 어색함"
           ],
+          "words": [
+            {
+              "word": "widow",
+              "ipa": "/ˈwɪdoʊ/",
+              "pos": "n.",
+              "meaning": "남편을 잃은 여자",
+              "example": "The widow thanked everyone for coming.",
+              "exampleKo": "남편을 잃은 부인이 와 준 모두에게 감사했어."
+            },
+            {
+              "word": "divorced",
+              "ipa": "/dɪˈvɔːrst/",
+              "pos": "adj.",
+              "meaning": "이혼한",
+              "example": "Her parents are divorced.",
+              "exampleKo": "그녀의 부모님은 이혼하셨어."
+            },
+            {
+              "word": "manufacture",
+              "ipa": "/ˌmænjuˈfæktʃər/",
+              "pos": "v.",
+              "meaning": "제조하다",
+              "example": "They manufacture car parts.",
+              "exampleKo": "그들은 자동차 부품을 제조해."
+            },
+            {
+              "word": "grandchild",
+              "ipa": "/ˈɡræntʃaɪld/",
+              "pos": "n.",
+              "meaning": "손주",
+              "example": "She has three grandchildren.",
+              "exampleKo": "그녀는 손주가 셋이야."
+            },
+            {
+              "word": "sitter",
+              "ipa": "/ˈsɪtər/",
+              "pos": "n.",
+              "meaning": "베이비시터",
+              "example": "We hired a sitter for the night.",
+              "exampleKo": "그날 밤 베이비시터를 불렀어."
+            },
+            {
+              "word": "sensation",
+              "ipa": "/senˈseɪʃn/",
+              "pos": "n.",
+              "meaning": "센세이션, 화제",
+              "example": "The video became an internet sensation.",
+              "exampleKo": "그 영상은 인터넷에서 화제가 됐어."
+            },
+            {
+              "word": "downtime",
+              "ipa": "/ˈdaʊntaɪm/",
+              "pos": "n.",
+              "meaning": "쉬는 시간",
+              "example": "Everyone needs some downtime.",
+              "exampleKo": "누구나 쉬는 시간이 필요해."
+            },
+            {
+              "word": "deserve",
+              "ipa": "/dɪˈzɜːrv/",
+              "pos": "v.",
+              "meaning": "~을 받을 자격이 있다",
+              "example": "You deserve a break.",
+              "exampleKo": "넌 쉴 자격이 있어."
+            },
+            {
+              "word": "pressure",
+              "ipa": "/ˈpreʃər/",
+              "pos": "n.",
+              "meaning": "압박, 부담",
+              "example": "She works well under pressure.",
+              "exampleKo": "그녀는 압박 속에서도 일을 잘해."
+            },
+            {
+              "word": "flushed",
+              "ipa": "/flʌʃt/",
+              "pos": "adj.",
+              "meaning": "(얼굴이) 붉어진",
+              "example": "You look flushed. Are you okay?",
+              "exampleKo": "얼굴이 빨개 보여. 괜찮아?"
+            }
+          ],
           "expressions": [
             {
               "phrase": "I’m so sorry for your loss.",
@@ -2932,6 +3834,88 @@ window.CONTENT = {
             "줄스의 고백: 매트의 외도",
             "\"나랑 몰리 옆에 묻혀도 돼요\""
           ],
+          "words": [
+            {
+              "word": "descent",
+              "ipa": "/dɪˈsent/",
+              "pos": "n.",
+              "meaning": "하강, 착륙",
+              "example": "The plane began its descent.",
+              "exampleKo": "비행기가 하강을 시작했어."
+            },
+            {
+              "word": "upright",
+              "ipa": "/ˈʌpraɪt/",
+              "pos": "adj.",
+              "meaning": "똑바로 선",
+              "example": "Keep your seat in the upright position.",
+              "exampleKo": "좌석을 똑바로 세워 주세요."
+            },
+            {
+              "word": "omen",
+              "ipa": "/ˈoʊmən/",
+              "pos": "n.",
+              "meaning": "징조",
+              "example": "Some people think a black cat is a bad omen.",
+              "exampleKo": "어떤 사람들은 검은 고양이를 불길한 징조로 여겨."
+            },
+            {
+              "word": "escort",
+              "ipa": "/ɪˈskɔːrt/",
+              "pos": "v.",
+              "meaning": "바래다주다, 호위하다",
+              "example": "He escorted her to the door.",
+              "exampleKo": "그는 그녀를 문까지 바래다줬어."
+            },
+            {
+              "word": "principal",
+              "ipa": "/ˈprɪnsəpl/",
+              "pos": "n.",
+              "meaning": "교장",
+              "example": "The principal gave a speech.",
+              "exampleKo": "교장 선생님이 연설을 했어."
+            },
+            {
+              "word": "beloved",
+              "ipa": "/bɪˈlʌvɪd/",
+              "pos": "adj.",
+              "meaning": "사랑받는",
+              "example": "She was a beloved teacher.",
+              "exampleKo": "그녀는 사랑받는 선생님이었어."
+            },
+            {
+              "word": "devastated",
+              "ipa": "/ˈdevəsteɪtɪd/",
+              "pos": "adj.",
+              "meaning": "큰 충격을 받은, 망연자실한",
+              "example": "He was devastated by the news.",
+              "exampleKo": "그는 그 소식에 큰 충격을 받았어."
+            },
+            {
+              "word": "affair",
+              "ipa": "/əˈfer/",
+              "pos": "n.",
+              "meaning": "불륜, 일",
+              "example": "The movie is about a secret affair.",
+              "exampleKo": "그 영화는 비밀스러운 불륜에 관한 이야기야."
+            },
+            {
+              "word": "transparent",
+              "ipa": "/trænsˈpærənt/",
+              "pos": "adj.",
+              "meaning": "투명한, 속이 훤히 보이는",
+              "example": "The company is transparent about its prices.",
+              "exampleKo": "그 회사는 가격을 투명하게 공개해."
+            },
+            {
+              "word": "cemetery",
+              "ipa": "/ˈseməteri/",
+              "pos": "n.",
+              "meaning": "묘지",
+              "example": "They visited the cemetery on his birthday.",
+              "exampleKo": "그의 생일에 묘지를 찾았어."
+            }
+          ],
           "expressions": [
             {
               "phrase": "take the rap (for ~)",
@@ -3024,6 +4008,88 @@ window.CONTENT = {
             "벤의 집에서 만난 피오나, 벤의 진심 어린 조언",
             "레이첼의 웨딩 사진, 매트의 사과",
             "공원 태극권 — \"좋은 소식이 있어요\""
+          ],
+          "words": [
+            {
+              "word": "respectful",
+              "ipa": "/rɪˈspektfl/",
+              "pos": "adj.",
+              "meaning": "정중한, 존중하는",
+              "example": "Be respectful to your elders.",
+              "exampleKo": "어른들께 예의를 갖춰."
+            },
+            {
+              "word": "remove",
+              "ipa": "/rɪˈmuːv/",
+              "pos": "v.",
+              "meaning": "없애다, 제거하다",
+              "example": "Please remove your shoes.",
+              "exampleKo": "신발을 벗어 주세요."
+            },
+            {
+              "word": "booze",
+              "ipa": "/buːz/",
+              "pos": "n.",
+              "meaning": "(구어) 술",
+              "example": "There’s no booze at the party.",
+              "exampleKo": "파티에 술은 없어."
+            },
+            {
+              "word": "field trip",
+              "ipa": "/ˈfiːld trɪp/",
+              "pos": "n.",
+              "meaning": "현장 학습, 견학",
+              "example": "The kids went on a field trip to the zoo.",
+              "exampleKo": "아이들이 동물원으로 현장 학습을 갔어."
+            },
+            {
+              "word": "sentimental",
+              "ipa": "/ˌsentɪˈmentl/",
+              "pos": "adj.",
+              "meaning": "감상적인",
+              "example": "Don’t get sentimental.",
+              "exampleKo": "감상에 빠지지 마."
+            },
+            {
+              "word": "ashamed",
+              "ipa": "/əˈʃeɪmd/",
+              "pos": "adj.",
+              "meaning": "부끄러운",
+              "example": "I’m ashamed of what I said.",
+              "exampleKo": "내가 한 말이 부끄러워."
+            },
+            {
+              "word": "confusing",
+              "ipa": "/kənˈfjuːzɪŋ/",
+              "pos": "adj.",
+              "meaning": "혼란스러운, 헷갈리는",
+              "example": "The instructions are confusing.",
+              "exampleKo": "설명서가 헷갈려."
+            },
+            {
+              "word": "extend",
+              "ipa": "/ɪkˈstend/",
+              "pos": "v.",
+              "meaning": "뻗다, 연장하다",
+              "example": "Extend your arms forward.",
+              "exampleKo": "팔을 앞으로 쭉 뻗으세요."
+            },
+            {
+              "word": "balance",
+              "ipa": "/ˈbæləns/",
+              "pos": "n.",
+              "meaning": "균형",
+              "example": "It’s hard to keep a work-life balance.",
+              "exampleKo": "일과 삶의 균형을 지키기 어려워."
+            },
+            {
+              "word": "commitment",
+              "ipa": "/kəˈmɪtmənt/",
+              "pos": "n.",
+              "meaning": "헌신, 전념 (Set 1)",
+              "example": "Her commitment to the team is amazing.",
+              "exampleKo": "팀에 대한 그녀의 헌신은 대단해."
+            }
           ],
           "expressions": [
             {

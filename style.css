@@ -291,3 +291,17 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
 input[type=search], textarea { background: var(--surface); }
 .seg { background: var(--surface-2); }
 @media (min-width: 760px) { .tabbar { border-color: var(--line); } }
+
+/* 스크립트 파트: 단어 · 표현 · 문법 목록 */
+.vlist { padding: 4px 16px; }
+.vrow { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.vrow:last-child { border-bottom: 0; }
+.vhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
+.vw { font-family: var(--serif); font-weight: 700; font-size: 18px; letter-spacing: -.01em; }
+.vhead .ipa { margin: 0; font-size: 13px; }
+.vhead .pos { font-size: 12px; color: var(--muted); font-style: italic; }
+.vm { margin-top: 2px; font-weight: 600; font-size: 15px; }
+.vscene { margin-top: 4px; font-size: 13px; color: var(--muted); }
+.vex { margin-top: 8px; padding-left: 10px; border-left: 3px solid var(--mark); }
+.vex .en { font-style: italic; font-size: 15px; }
+.vex .ko { font-size: 13px; color: var(--muted); margin-top: 1px; }

@@ -296,7 +296,7 @@ function scriptCard(s) {
     <a class="card script-item" href="#script/${encodeURIComponent(s.id)}">
       <div class="row-between"><h3>🎬 ${esc(s.title)}${s.original ? ` <span class="muted small">${esc(s.original)}${s.year ? ` (${s.year})` : ''}</span>` : ''}</h3>
       <span class="tag ${has ? 'done' : ''}">${has ? '원문 있음' : '원문 없음'}</span></div>
-      <div class="meta">${(s.parts || []).length}개 파트 · 표현 ${(s.parts || []).reduce((n, p) => n + (p.expressions || []).length, 0)}개</div>
+      <div class="meta">${(s.parts || []).length}개 파트 · 단어 ${(s.parts || []).reduce((n, p) => n + (p.words || []).length, 0)} · 표현 ${(s.parts || []).reduce((n, p) => n + (p.expressions || []).length, 0)}</div>
       ${s.summary ? `<p>${esc(s.summary)}</p>` : ''}
     </a>`;
 }
@@ -338,7 +338,7 @@ function renderScript(id, partNo) {
         <div class="day">Part<b>${p.part}</b></div>
         <div class="grow">
           <h3>${esc(p.title)}</h3>
-          <div class="meta">${esc(p.time || '')}${text ? ` · ${split[k].length}문장` : ''} · 표현 ${(p.expressions || []).length}개</div>
+          <div class="meta">${esc(p.time || '')}${text ? ` · ${split[k].length}문장` : ''} · 단어 ${(p.words || []).length} · 표현 ${(p.expressions || []).length}</div>
         </div>
       </a>`).join('')}`;
   bindScriptBox(s);
@@ -415,24 +415,33 @@ function renderPart(s, partNo) {
         <a class="btn block" href="#script/${encodeURIComponent(s.id)}">원문 붙여 넣으러 가기 ›</a>
       </div>`}
 
+    ${(p.words || []).length ? `
+      <div class="section-title">📝 단어 <small>${p.words.length}개</small></div>
+      <div class="card vlist">${p.words.map(w => `
+        <div class="vrow">
+          <div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>
+          <div class="vm">${esc(w.meaning)}</div>
+          ${w.example ? `<div class="vex"><div class="en">${esc(w.example)}</div>${w.exampleKo ? `<div class="ko">${esc(w.exampleKo)}</div>` : ''}</div>` : ''}
+        </div>`).join('')}</div>` : ''}
+
     ${(p.expressions || []).length ? `
       <div class="section-title">💬 숙어 · 표현 <small>${p.expressions.length}개</small></div>
-      ${p.expressions.map(e => `
-        <article class="card word">
-          <div class="word-head"><div class="grow"><span class="w">${esc(e.phrase)}</span></div></div>
-          <div class="m">${esc(e.meaning)}</div>
-          ${e.scene ? `<div class="muted small" style="margin-top:4px">🎬 ${esc(e.scene)}</div>` : ''}
-          ${e.example ? `<div class="ex"><div class="en">${esc(e.example)}</div>${e.exampleKo ? `<div class="ko">${esc(e.exampleKo)}</div>` : ''}</div>` : ''}
-        </article>`).join('')}` : ''}
+      <div class="card vlist">${p.expressions.map(e => `
+        <div class="vrow">
+          <div class="vhead"><span class="vw">${esc(e.phrase)}</span></div>
+          <div class="vm">${esc(e.meaning)}</div>
+          ${e.scene ? `<div class="vscene">🎬 ${esc(e.scene)}</div>` : ''}
+          ${e.example ? `<div class="vex"><div class="en">${esc(e.example)}</div>${e.exampleKo ? `<div class="ko">${esc(e.exampleKo)}</div>` : ''}</div>` : ''}
+        </div>`).join('')}</div>` : ''}
 
     ${(p.grammar || []).length ? `
-      <div class="section-title">📐 문법 · 패턴</div>
-      ${p.grammar.map(g => `
-        <article class="card word">
-          <div class="word-head"><div class="grow"><span class="w" style="font-size:17px">${esc(g.point)}</span></div></div>
-          <div class="m" style="font-weight:500">${esc(g.explain)}</div>
-          ${g.example ? `<div class="ex"><div class="en">${esc(g.example)}</div>${g.exampleKo ? `<div class="ko">${esc(g.exampleKo)}</div>` : ''}</div>` : ''}
-        </article>`).join('')}` : ''}
+      <div class="section-title">📐 문법 · 패턴 <small>${p.grammar.length}개</small></div>
+      <div class="card vlist">${p.grammar.map(g => `
+        <div class="vrow">
+          <div class="vhead"><span class="vw">${esc(g.point)}</span></div>
+          <div class="vm" style="font-weight:500">${esc(g.explain)}</div>
+          ${g.example ? `<div class="vex"><div class="en">${esc(g.example)}</div>${g.exampleKo ? `<div class="ko">${esc(g.exampleKo)}</div>` : ''}</div>` : ''}
+        </div>`).join('')}</div>` : ''}
 
     <div class="pager">
       ${prev ? `<a class="card" href="#script/${encodeURIComponent(s.id)}/${prev.part}"><span class="muted small">‹ 이전</span><b>Part ${prev.part} · ${esc(prev.title)}</b></a>` : '<span></span>'}
