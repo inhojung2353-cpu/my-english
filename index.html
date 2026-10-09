@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My English Notebook</title>
+  <meta name="description" content="나의 영어 노트 — 단어와 스크립트 모음">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="My English">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="back" id="back" aria-label="뒤로" hidden>‹</button>
+    <h1 id="page-title">My English</h1>
+  </header>
+
+  <main id="view"></main>
+
+  <nav class="tabbar" aria-label="메뉴">
+    <a href="#home" data-tab="home"><span class="ti">🏠</span><span>홈</span></a>
+    <a href="#words" data-tab="words"><span class="ti">📚</span><span>단어</span></a>
+    <a href="#scripts" data-tab="scripts"><span class="ti">🎬</span><span>스크립트</span></a>
+  </nav>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
