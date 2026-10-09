@@ -1860,10 +1860,1254 @@ window.CONTENT = {
     }
   ],
 
-  /* ---------- 스크립트 ----------
-     id: 주소에 쓰이는 이름(영문), title, source: 출처, date, summary: 한 줄 요약,
-     lines: [{ speaker, en, ko }], expressions: [{ phrase, meaning }] — 본문에서 굵게 표시돼요 */
-  scripts: [],
+  /* ---------- 스크립트 (영화) ----------
+     영화별 파트 학습 노트. 대본 원문은 저작권 때문에 여기 넣지 않고,
+     각자 기기에 붙여 넣으면 marker(파트 시작 줄의 앞부분)를 기준으로 파트가 나뉘어요. */
+  scripts: [
+    {
+      "id": "intern",
+      "title": "인턴",
+      "original": "The Intern",
+      "year": 2015,
+      "source": "영화",
+      "date": "2026-10-09",
+      "summary": "70세 시니어 인턴 벤과 30대 창업자 줄스가 세대를 넘어 친구가 되는 이야기. 일상 대화와 회사 영어가 많아 쉐도잉하기 좋아요.",
+      "parts": [
+        {
+          "part": 1,
+          "time": "약 0:00 – 0:07",
+          "title": "은퇴한 70세 벤의 일상",
+          "marker": null,
+          "summary": "아내를 잃고 은퇴한 70세 벤은 여행, 요가, 중국어 수업까지 해 봤지만 마음 한구석이 비어 있어요. 어느 날 장을 보고 나오다 온라인 패션 회사 About The Fit의 시니어 인턴 모집 공고를 발견하고, 이웃 패티의 저녁 초대는 다음으로 미뤄요.",
+          "scenes": [
+            "벤의 내레이션: 은퇴 후 남아도는 시간과 바쁘게 지내려는 노력",
+            "매일 아침 7시 15분, 스타벅스로 출근하듯 나가는 루틴",
+            "마트 앞에서 시니어 인턴 공고 발견 — 지원 조건과 영상 자기소개서",
+            "이웃 패티의 저녁 초대를 정중히 미룸"
+          ],
+          "expressions": [
+            {
+              "phrase": "have time on one’s hands",
+              "meaning": "시간이 남아돌다",
+              "scene": "은퇴하고 아내도 떠난 벤이 자기 상황을 설명하며",
+              "example": "Since I retired, I’ve had a lot of time on my hands.",
+              "exampleKo": "은퇴한 뒤로 시간이 많이 남아요."
+            },
+            {
+              "phrase": "play hooky",
+              "meaning": "(학교·일을) 땡땡이치다",
+              "scene": "은퇴 초반엔 꼭 땡땡이치는 기분이었다며",
+              "example": "I played hooky from work and went to the beach.",
+              "exampleKo": "회사 땡땡이치고 바다에 갔어."
+            },
+            {
+              "phrase": "hit someone like a ton of bricks",
+              "meaning": "(감정·사실이) 크게 덮쳐 오다",
+              "scene": "여행에서 돌아올 때마다 \"갈 곳이 없다\"는 느낌이 밀려왔다며",
+              "example": "The news hit me like a ton of bricks.",
+              "exampleKo": "그 소식은 큰 충격으로 다가왔어."
+            },
+            {
+              "phrase": "come rain or shine",
+              "meaning": "비가 오든 해가 뜨든, 무슨 일이 있어도",
+              "scene": "매일 아침 카페에 가는 습관을 말하며",
+              "example": "I go jogging every morning, come rain or shine.",
+              "exampleKo": "나는 무슨 일이 있어도 매일 아침 조깅해."
+            },
+            {
+              "phrase": "You name it.",
+              "meaning": "(생각나는 건) 뭐든지 다",
+              "scene": "골프, 책, 요가… 안 해 본 게 없다며",
+              "example": "Pizza, pasta, sushi — you name it, he’s tried it.",
+              "exampleKo": "피자, 파스타, 초밥… 뭐든 그는 다 먹어 봤어."
+            },
+            {
+              "phrase": "love ~ to pieces",
+              "meaning": "~을 너무너무 사랑하다",
+              "scene": "샌디에이고에 사는 아들 가족에 대해",
+              "example": "I love my grandkids to pieces.",
+              "exampleKo": "손주들을 너무너무 사랑해."
+            },
+            {
+              "phrase": "Don’t get me wrong.",
+              "meaning": "오해하지 마",
+              "scene": "불행한 사람은 아니라고 말하기 전에",
+              "example": "Don’t get me wrong, I like my job. I’m just tired.",
+              "exampleKo": "오해하지 마, 일은 좋아. 그냥 피곤할 뿐이야."
+            },
+            {
+              "phrase": "Quite the contrary.",
+              "meaning": "오히려 정반대야",
+              "scene": "불행하지 않다, 오히려 그 반대라며",
+              "example": "“Are you bored?” “Quite the contrary. I’m having fun.”",
+              "exampleKo": "\"지루해?\" \"오히려 반대야. 재밌어.\""
+            },
+            {
+              "phrase": "out of the corner of one’s eye",
+              "meaning": "곁눈으로, 언뜻",
+              "scene": "공고 전단지가 언뜻 눈에 들어온 순간",
+              "example": "I saw something move out of the corner of my eye.",
+              "exampleKo": "곁눈으로 뭔가 움직이는 게 보였어."
+            },
+            {
+              "phrase": "take a rain check",
+              "meaning": "다음 기회로 미루다",
+              "scene": "패티의 저녁 초대를 정중히 미루며",
+              "example": "Can I take a rain check on dinner? I’m swamped today.",
+              "exampleKo": "저녁은 다음에 해도 될까? 오늘 너무 바빠."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "no matter where ~",
+              "explain": "어디로 ~하든 (no matter + 의문사)",
+              "example": "No matter where I go, I always bring a book.",
+              "exampleKo": "어디를 가든 나는 항상 책을 가져가."
+            },
+            {
+              "point": "과거완료 had p.p.",
+              "explain": "과거의 어느 시점보다 더 먼저 일어난 일 — 모아 \"두었던\" 마일리지를 썼다",
+              "example": "I finally used the money I’d saved for years.",
+              "exampleKo": "몇 년간 모아 둔 돈을 드디어 썼어."
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "time": "약 0:07 – 0:13",
+          "title": "지원 영상, 그리고 줄스의 회사",
+          "marker": "So here I am,",
+          "summary": "벤은 손자에게 물어 가며 지원 영상을 찍어요. 한편 About The Fit의 창업자 줄스는 직접 고객 상담 전화를 받고, 자전거로 사무실을 누비며 홈페이지 회의까지 정신없이 처리해요.",
+          "scenes": [
+            "벤의 지원 영상: 일하고 싶은 이유, 충성심과 위기 대처 능력",
+            "줄스가 직접 고객의 들러리 드레스 배송 사고를 해결",
+            "비서 베키가 쏟아내는 줄스의 일정",
+            "홈페이지 시안 회의 — 한눈에 읽혀야 한다"
+          ],
+          "expressions": [
+            {
+              "phrase": "figure out",
+              "meaning": "알아내다, 이해하다",
+              "scene": "기술적인 건 익히는 데 시간이 좀 걸릴 거라며",
+              "example": "It took me a while to figure out the new software.",
+              "exampleKo": "새 소프트웨어를 익히는 데 시간이 좀 걸렸어."
+            },
+            {
+              "phrase": "I’ll get there.",
+              "meaning": "(시간은 걸려도) 결국 해낼 거야",
+              "scene": "USB가 뭔지도 몰랐지만 배우겠다며",
+              "example": "My English isn’t perfect yet, but I’ll get there.",
+              "exampleKo": "아직 영어가 완벽하진 않지만 결국 해낼 거야."
+            },
+            {
+              "phrase": "company man",
+              "meaning": "회사에 충실한 사람",
+              "scene": "평생 한 회사에 충성해 왔다며",
+              "example": "My dad was a company man. He worked there for 35 years.",
+              "exampleKo": "아빠는 회사밖에 모르는 분이었어. 35년을 거기서 일하셨지."
+            },
+            {
+              "phrase": "good in a crisis",
+              "meaning": "위기에 강한",
+              "scene": "자신의 장점을 소개하며",
+              "example": "We need someone who’s calm and good in a crisis.",
+              "exampleKo": "침착하고 위기에 강한 사람이 필요해요."
+            },
+            {
+              "phrase": "hip",
+              "meaning": "최신 유행에 밝은, 힙한",
+              "scene": "브루클린에 살기엔 자신이 덜 힙한 것 같다며 농담",
+              "example": "This neighborhood has become really hip lately.",
+              "exampleKo": "이 동네 요즘 정말 힙해졌어."
+            },
+            {
+              "phrase": "track (a package)",
+              "meaning": "(배송을) 조회하다",
+              "scene": "줄스가 고객 상담 전화에서",
+              "example": "Let me track your order for you.",
+              "exampleKo": "주문 배송 조회해 드릴게요."
+            },
+            {
+              "phrase": "check ~ off one’s list",
+              "meaning": "(할 일) 목록에서 지우다, 해결하다",
+              "scene": "드레스 문제를 해결해 주며 고객에게",
+              "example": "Finally, I can check that off my list!",
+              "exampleKo": "드디어 그거 할 일 목록에서 지울 수 있다!"
+            },
+            {
+              "phrase": "sign off on ~",
+              "meaning": "~을 최종 승인하다",
+              "scene": "모두가 줄스의 홈페이지 승인을 기다리며",
+              "example": "The manager needs to sign off on the budget.",
+              "exampleKo": "매니저가 예산을 최종 승인해야 해요."
+            },
+            {
+              "phrase": "in a glance / at a glance",
+              "meaning": "한눈에",
+              "scene": "홈페이지는 한눈에 읽혀야 한다며",
+              "example": "The dashboard shows everything at a glance.",
+              "exampleKo": "대시보드에서 모든 걸 한눈에 볼 수 있어."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "the 비교급 ~, the 비교급 …",
+              "explain": "~할수록 더 …하다 — 벤의 지원 영상",
+              "example": "The more I practice, the more confident I feel.",
+              "exampleKo": "연습할수록 더 자신감이 생겨."
+            },
+            {
+              "point": "have + 목적어 + p.p.",
+              "explain": "(남을 시켜) ~되게 하다 — 업체에 연락해 오늘 고쳐 놓겠다",
+              "example": "I’ll have this fixed by tomorrow.",
+              "exampleKo": "내일까지 이거 고쳐 놓도록 할게요."
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "time": "약 0:13 – 0:19",
+          "title": "면접 합격, 그리고 줄스의 당황",
+          "marker": "There's gonna be a couple",
+          "summary": "벤은 젊은 면접관과 엉뚱하지만 유쾌한 면접을 보고 인턴으로 합격해요. 한편 줄스는 회사 임원 캐머런에게 시니어 인턴 프로그램 이야기를 듣고, 자신도 인턴 한 명을 맡아야 한다는 사실에 당황해요.",
+          "scenes": [
+            "채용팀과의 면접 — 학교와 경력 질문",
+            "\"10년 후 당신의 모습은?\" — 70세에게 어색한 질문",
+            "합격 통보",
+            "캐머런: 시니어 인턴 한 명이 줄스와 직접 일할 것"
+          ],
+          "expressions": [
+            {
+              "phrase": "talent acquisition",
+              "meaning": "인재 채용(팀)",
+              "scene": "벤이 낯선 회사 용어에 갸웃하며",
+              "example": "Talent acquisition will contact you after the interview.",
+              "exampleKo": "면접 후에 인재 채용팀에서 연락드릴 거예요."
+            },
+            {
+              "phrase": "Fire away.",
+              "meaning": "(질문) 어서 해 보세요",
+              "scene": "면접 질문을 시작하려 하자 벤이",
+              "example": "“Can I ask you a few questions?” “Sure, fire away.”",
+              "exampleKo": "\"몇 가지 질문해도 돼요?\" \"물론이죠, 어서 하세요.\""
+            },
+            {
+              "phrase": "be in charge of ~",
+              "meaning": "~을 담당하다, 책임지다",
+              "scene": "전화번호부 인쇄를 총괄했다고 설명하며",
+              "example": "I’m in charge of the marketing team.",
+              "exampleKo": "저는 마케팅 팀을 맡고 있어요."
+            },
+            {
+              "phrase": "overqualified",
+              "meaning": "(일에 비해) 자격이 넘치는",
+              "scene": "면접관이 벤의 경력을 보고",
+              "example": "He’s overqualified for this entry-level job.",
+              "exampleKo": "그는 이 신입 자리에 비해 경력이 넘쳐."
+            },
+            {
+              "phrase": "You nailed it.",
+              "meaning": "완벽하게 해냈어",
+              "scene": "합격을 알리며",
+              "example": "Great presentation! You nailed it.",
+              "exampleKo": "발표 최고였어! 완벽했어."
+            },
+            {
+              "phrase": "set ~ in motion",
+              "meaning": "~을 시작하게 하다, 진행시키다",
+              "scene": "캐머런이 이미 프로그램을 진행시켰다며",
+              "example": "We’ve already set the plan in motion.",
+              "exampleKo": "이미 계획을 진행시켰어요."
+            },
+            {
+              "phrase": "set the tone",
+              "meaning": "분위기를 정하다, 본보기가 되다",
+              "scene": "대표인 줄스가 먼저 인턴을 맡아야 한다며",
+              "example": "The first meeting sets the tone for the whole project.",
+              "exampleKo": "첫 회의가 프로젝트 전체 분위기를 좌우해."
+            },
+            {
+              "phrase": "as opposed to ~",
+              "meaning": "~와 대조적으로, ~가 아니라",
+              "scene": "경험 많은 인턴과 대학생 인턴을 비교하며",
+              "example": "I prefer working in the morning, as opposed to at night.",
+              "exampleKo": "나는 밤보다는 아침에 일하는 게 좋아."
+            },
+            {
+              "phrase": "a ton of ~",
+              "meaning": "엄청 많은 ~",
+              "scene": "시니어 인턴에 대한 연구가 아주 많다며",
+              "example": "I have a ton of work to do today.",
+              "exampleKo": "오늘 할 일이 엄청 많아."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "Where do you see yourself in 10 years?",
+              "explain": "면접 단골 질문. in + 기간 = (지금부터) ~ 후에",
+              "example": "I see myself leading a team in five years.",
+              "exampleKo": "5년 후엔 팀을 이끌고 있을 것 같아요."
+            },
+            {
+              "point": "Would you prefer A or B?",
+              "explain": "정중하게 선호를 묻기",
+              "example": "Would you prefer coffee or tea?",
+              "exampleKo": "커피와 차 중 어떤 걸로 드릴까요?"
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "time": "약 0:19 – 0:27",
+          "title": "첫 출근 — 줄스의 개인 인턴",
+          "marker": "Back in action.",
+          "summary": "오리엔테이션 첫날, 벤은 젊은 인턴 데이비스와 친해지고 창업자 줄스의 개인 인턴으로 배정돼요. 줄스는 솔직하게 \"시킬 일이 별로 없을 것\"이라며 다른 부서로 옮기길 권하지만, 벤은 남겠다고 해요.",
+          "scenes": [
+            "회사 소개: 칸막이 없는 한 층, 자전거 타는 CEO",
+            "동기 인턴 데이비스와의 첫 만남",
+            "비서 베키의 조언: 빨리 말하고, 꾸물대지 말고, 눈 깜빡일 것",
+            "줄스와의 첫 미팅 — \"이메일로 연락할게요\""
+          ],
+          "expressions": [
+            {
+              "phrase": "(be) psyched",
+              "meaning": "엄청 신난",
+              "scene": "데이비스가 인턴에 붙어 들떠서",
+              "example": "I’m so psyched for the concert tonight!",
+              "exampleKo": "오늘 밤 콘서트 너무 기대돼!"
+            },
+            {
+              "phrase": "I like how you roll.",
+              "meaning": "네 방식(스타일) 마음에 든다",
+              "scene": "매일 정장을 입겠다는 벤에게 데이비스가",
+              "example": "You always come prepared. I like how you roll.",
+              "exampleKo": "넌 항상 준비돼 있구나. 네 스타일 맘에 든다."
+            },
+            {
+              "phrase": "Hang in there.",
+              "meaning": "힘내, 버텨",
+              "scene": "줄스의 인턴이 됐다는 벤에게 동료가",
+              "example": "I know work is tough right now. Hang in there!",
+              "exampleKo": "요즘 일 힘든 거 알아. 힘내!"
+            },
+            {
+              "phrase": "dawdle",
+              "meaning": "꾸물거리다",
+              "scene": "베키가 줄스 앞에서 꾸물대지 말라며",
+              "example": "Don’t dawdle — we’re going to miss the train!",
+              "exampleKo": "꾸물대지 마, 기차 놓치겠어!"
+            },
+            {
+              "phrase": "weird someone out",
+              "meaning": "~을 기분 이상하게 만들다",
+              "scene": "줄스는 눈 안 깜빡이는 사람을 싫어한다며",
+              "example": "His long silence really weirded me out.",
+              "exampleKo": "그가 오래 말이 없어서 정말 이상했어."
+            },
+            {
+              "phrase": "be better off ~ing",
+              "meaning": "~하는 게 더 낫다",
+              "scene": "줄스가 벤에게 다른 부서가 나을 거라며",
+              "example": "You’d be better off taking the subway.",
+              "exampleKo": "지하철 타는 게 더 나을 거야."
+            },
+            {
+              "phrase": "get along with ~",
+              "meaning": "~와 잘 지내다",
+              "scene": "누구와도 잘 지낼 수 있다는 벤",
+              "example": "I get along with all my coworkers.",
+              "exampleKo": "동료들 모두와 잘 지내요."
+            },
+            {
+              "phrase": "be stuck with ~",
+              "meaning": "(싫든 좋든) ~와 함께해야 하는 처지다",
+              "scene": "전근을 안 하겠다는 벤에게 줄스가",
+              "example": "Looks like you’re stuck with me for the weekend.",
+              "exampleKo": "주말 동안 나랑 꼼짝없이 같이 있어야겠네."
+            },
+            {
+              "phrase": "stand out",
+              "meaning": "눈에 띄다",
+              "scene": "정장을 입으면 적어도 눈에 띌 거라며",
+              "example": "Her bright red coat really stood out.",
+              "exampleKo": "그녀의 새빨간 코트가 정말 눈에 띄었어."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "make that happen",
+              "explain": "그렇게 되도록 하다, 실현시키다 — 원하면 전근시켜 줄 수 있다",
+              "example": "If you want a bigger desk, I can make that happen.",
+              "exampleKo": "더 큰 책상을 원하면 마련해 줄 수 있어요."
+            },
+            {
+              "point": "get used to + 명사/~ing",
+              "explain": "~에 익숙해지다 — \"곧 저한테 익숙해질 거예요\"",
+              "example": "You’ll get used to waking up early.",
+              "exampleKo": "일찍 일어나는 데 익숙해질 거야."
+            }
+          ]
+        },
+        {
+          "part": 5,
+          "time": "약 0:27 – 0:35",
+          "title": "사무실에 스며드는 벤",
+          "marker": "Can't leave before",
+          "summary": "이메일을 기다리며 할 일 없이 앉아 있던 벤은 동료들의 고민을 들어 주고, 아무도 손대지 않던 잡동사니 책상을 아침 일찍 치워 모두의 사랑을 받아요. 한편 줄스는 투자자들이 경험 많은 외부 CEO 영입을 원한다는 소식을 들어요.",
+          "scenes": [
+            "연애 고민 상담: 문자 말고 직접 만나서 사과하라",
+            "캐머런: \"외부 CEO 후보를 만나 보자\"",
+            "줄스의 반발: 경험이 부족해서? 하버드를 안 나와서?",
+            "벤이 치운 잡동사니 책상, 사내 마사지사 피오나와의 만남"
+          ],
+          "expressions": [
+            {
+              "phrase": "on purpose",
+              "meaning": "일부러",
+              "scene": "동료가 일부러 그런 건 아니라며",
+              "example": "Sorry, I didn’t do it on purpose.",
+              "exampleKo": "미안, 일부러 그런 거 아니야."
+            },
+            {
+              "phrase": "a big hit",
+              "meaning": "인기 만점",
+              "scene": "모두가 벤을 좋아한다며",
+              "example": "The new menu was a big hit with customers.",
+              "exampleKo": "새 메뉴가 손님들에게 대박이었어."
+            },
+            {
+              "phrase": "drive someone crazy",
+              "meaning": "~을 미치게 하다",
+              "scene": "지저분한 책상을 보지 말라며",
+              "example": "The noise upstairs is driving me crazy.",
+              "exampleKo": "윗집 소음 때문에 미치겠어."
+            },
+            {
+              "phrase": "I didn’t see that coming.",
+              "meaning": "그건 예상 못 했어",
+              "scene": "외부 CEO 이야기에 줄스가 당황하며",
+              "example": "He quit? Wow, I didn’t see that coming.",
+              "exampleKo": "그가 그만뒀어? 와, 예상 못 했다."
+            },
+            {
+              "phrase": "by the book",
+              "meaning": "규정대로, 정석대로",
+              "scene": "내 방식이 정석이 아니라서냐며",
+              "example": "She does everything by the book.",
+              "exampleKo": "그녀는 모든 걸 원칙대로 해."
+            },
+            {
+              "phrase": "keep up with ~",
+              "meaning": "~을 따라가다 (Dialog Day 7)",
+              "scene": "회사가 자기 성장 속도를 못 따라간다며",
+              "example": "We can’t keep up with all the orders.",
+              "exampleKo": "주문을 다 따라가지 못하고 있어요."
+            },
+            {
+              "phrase": "play catch-up",
+              "meaning": "(뒤처진 걸) 따라잡으려 애쓰다",
+              "scene": "모두가 밀린 일을 쫓고 있다며",
+              "example": "After my vacation, I’m playing catch-up with emails.",
+              "exampleKo": "휴가 끝나고 밀린 이메일 따라잡는 중이야."
+            },
+            {
+              "phrase": "take ~ off one’s plate",
+              "meaning": "~의 일을 덜어 주다",
+              "scene": "노련한 CEO가 줄스의 일을 덜어 줄 거라며",
+              "example": "Let me take this task off your plate.",
+              "exampleKo": "이 일은 내가 덜어 갈게."
+            },
+            {
+              "phrase": "run ~ by someone",
+              "meaning": "~에게 (의견을) 먼저 물어보다",
+              "scene": "모든 아이디어를 새 CEO에게 보고해야 하냐며",
+              "example": "Can I run an idea by you?",
+              "exampleKo": "아이디어 하나 의견 좀 물어봐도 될까?"
+            },
+            {
+              "phrase": "Baby steps.",
+              "meaning": "천천히, 한 걸음씩",
+              "scene": "일단 후보 명단부터 보자며",
+              "example": "Don’t rush. Baby steps.",
+              "exampleKo": "서두르지 마. 한 걸음씩."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "only so many / only so much",
+              "explain": "한정된 만큼만 있다 — 하루 시간엔 한계가 있다",
+              "example": "There’s only so much I can do by myself.",
+              "exampleKo": "나 혼자 할 수 있는 건 한계가 있어."
+            },
+            {
+              "point": "the 비교급, the 비교급 (복습)",
+              "explain": "회사가 커질수록 더 복잡해진다",
+              "example": "The bigger the team, the harder communication gets.",
+              "exampleKo": "팀이 커질수록 소통은 어려워져."
+            }
+          ]
+        },
+        {
+          "part": 6,
+          "time": "약 0:35 – 0:44",
+          "title": "운전대를 잡은 벤",
+          "marker": "Wait, so you're saying",
+          "summary": "줄스의 운전기사가 낮술을 마신 것을 눈치챈 벤은 조용히 그를 돌려보내고 직접 운전대를 잡아요. 줄스는 첫 CEO 후보를 만나지만 실망하고, 벤이 사 온 수프에 마음이 조금 열려요. 그날 밤 벤은 피오나에게 전화를 걸어요.",
+          "scenes": [
+            "데이비스의 집 구하기 고민",
+            "운전기사를 조용히 설득해 돌려보냄",
+            "차 안에서 줄스와 엄마의 통화 — 수면 연구 이야기",
+            "첫 CEO 후보 면담 실패, 벤의 수프",
+            "집에서 기다리는 남편 매트와 딸 페이지"
+          ],
+          "expressions": [
+            {
+              "phrase": "get evicted",
+              "meaning": "(집에서) 쫓겨나다",
+              "scene": "부모님이 2주 안에 나가라고 했다는 데이비스",
+              "example": "If you don’t pay rent, you could get evicted.",
+              "exampleKo": "월세 안 내면 쫓겨날 수도 있어."
+            },
+            {
+              "phrase": "I’m in no rush.",
+              "meaning": "난 급하지 않아",
+              "scene": "데이비스가 자신은 급할 게 없다며",
+              "example": "Take your time. I’m in no rush.",
+              "exampleKo": "천천히 해. 난 급하지 않아."
+            },
+            {
+              "phrase": "not feeling so hot",
+              "meaning": "몸 상태가 별로다",
+              "scene": "운전기사가 핑계를 대며",
+              "example": "I’m not feeling so hot today. I think I’m catching a cold.",
+              "exampleKo": "오늘 컨디션이 별로야. 감기 걸리려나 봐."
+            },
+            {
+              "phrase": "cover for ~",
+              "meaning": "~의 일을 대신 해 주다",
+              "scene": "벤이 기사 대신 운전하겠다며",
+              "example": "Can you cover for me while I’m at the dentist?",
+              "exampleKo": "나 치과 간 동안 내 일 좀 대신해 줄래?"
+            },
+            {
+              "phrase": "It goes without saying.",
+              "meaning": "말할 필요도 없지",
+              "scene": "차 안 대화는 비밀이라는 줄스에게 벤이",
+              "example": "It goes without saying that safety comes first.",
+              "exampleKo": "안전이 최우선인 건 말할 필요도 없지."
+            },
+            {
+              "phrase": "Word travels fast.",
+              "meaning": "소문 참 빠르네",
+              "scene": "미팅이 금방 끝났다는 벤에게",
+              "example": "Word travels fast in a small office.",
+              "exampleKo": "작은 사무실에선 소문이 빨라."
+            },
+            {
+              "phrase": "know-it-all",
+              "meaning": "다 아는 척하는 사람",
+              "scene": "줄스가 첫 CEO 후보를 평가하며",
+              "example": "Nobody likes a know-it-all.",
+              "exampleKo": "아는 척하는 사람은 아무도 안 좋아해."
+            },
+            {
+              "phrase": "Be there or be square.",
+              "meaning": "꼭 와 (안 오면 재미없는 사람이야)",
+              "scene": "내일 아침에 보자며",
+              "example": "Party at my place on Friday. Be there or be square!",
+              "exampleKo": "금요일 우리 집 파티야. 꼭 와!"
+            },
+            {
+              "phrase": "over the hump",
+              "meaning": "고비를 넘긴 (주로 수요일)",
+              "scene": "매트가 줄스를 맞으며",
+              "example": "It’s Wednesday — we’re over the hump!",
+              "exampleKo": "수요일이다, 고비 넘겼어!"
+            }
+          ],
+          "grammar": [
+            {
+              "point": "happen to + 동사 (Dialog Day 15)",
+              "explain": "마침 ~하다 — 마침 창밖을 봤는데",
+              "example": "I happened to see him at the station.",
+              "exampleKo": "역에서 마침 그를 봤어."
+            },
+            {
+              "point": "be ~% more likely to …",
+              "explain": "…할 가능성이 ~% 더 높다 — 통계 표현",
+              "example": "People who exercise are more likely to sleep well.",
+              "exampleKo": "운동하는 사람들은 잠을 잘 잘 가능성이 더 높아요."
+            }
+          ]
+        },
+        {
+          "part": 7,
+          "time": "약 0:44 – 0:52",
+          "title": "줄스의 집, 그리고 학교 엄마들",
+          "marker": "Hey, Ben. It's Becky.",
+          "summary": "다음 날 아침 벤은 줄스를 데리러 갔다가 남편 매트, 딸 페이지와 인사해요. 줄스가 성공한 뒤 매트는 일을 그만두고 전업주부 아빠가 되었어요. 학교 앞 엄마들의 은근한 견제에 줄스는 지친 기색을 보여요.",
+          "scenes": [
+            "베키의 부탁: 7시 45분, 벨 누르고 물러설 것",
+            "줄스의 집 — 매트, 페이지, 레고",
+            "엄마들 사이 유일한 아빠, 매트",
+            "학교 엄마들의 과카몰리 부탁과 줄스의 한숨",
+            "창고 가는 길 — 길 안내 신경전"
+          ],
+          "expressions": [
+            {
+              "phrase": "Loud and clear.",
+              "meaning": "잘 들려요, 확실히 알겠어요",
+              "scene": "베키의 지시에 벤이",
+              "example": "“Did you get my message?” “Loud and clear.”",
+              "exampleKo": "\"내 메시지 받았어?\" \"확실히 알겠어.\""
+            },
+            {
+              "phrase": "Watch your step.",
+              "meaning": "발밑 조심하세요",
+              "scene": "레고가 널린 집에 들어오며",
+              "example": "Watch your step — the floor is wet.",
+              "exampleKo": "발밑 조심하세요, 바닥이 젖었어요."
+            },
+            {
+              "phrase": "be slammed",
+              "meaning": "정신없이 바쁘다",
+              "scene": "줄스가 다음 주가 꽉 찼다며",
+              "example": "I’m slammed this week. Can we meet next week?",
+              "exampleKo": "이번 주 너무 바빠. 다음 주에 볼까?"
+            },
+            {
+              "phrase": "be fixated on ~",
+              "meaning": "~에 꽂혀 있다",
+              "scene": "포장지에 정신이 팔려 남편 말을 놓쳤다며",
+              "example": "He’s fixated on finding the perfect apartment.",
+              "exampleKo": "그는 완벽한 집을 찾는 데 꽂혀 있어."
+            },
+            {
+              "phrase": "stay-at-home dad",
+              "meaning": "전업주부 아빠",
+              "scene": "\"주부 남편\"이란 말을 줄스가 바로잡으며",
+              "example": "My brother is a stay-at-home dad.",
+              "exampleKo": "우리 오빠는 전업주부 아빠야."
+            },
+            {
+              "phrase": "take off",
+              "meaning": "(사업이) 급성장하다 (Set 2 take off)",
+              "scene": "회사가 잘되자 매트가 일을 그만뒀다며",
+              "example": "Her YouTube channel really took off last year.",
+              "exampleKo": "그녀의 유튜브 채널이 작년에 확 떴어."
+            },
+            {
+              "phrase": "take the high road",
+              "meaning": "(맞서지 않고) 품위 있게 대처하다",
+              "scene": "학교 엄마들의 견제를 참으며",
+              "example": "She could have yelled back, but she took the high road.",
+              "exampleKo": "맞받아칠 수도 있었지만 그녀는 품위 있게 넘어갔어."
+            },
+            {
+              "phrase": "make a right",
+              "meaning": "우회전하다",
+              "scene": "줄스가 길을 알려 주며",
+              "example": "Make a right at the next light.",
+              "exampleKo": "다음 신호에서 우회전하세요."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "수사 의문문",
+              "explain": "답을 바라지 않는 질문 — \"아직도 워킹맘을 비판해?\"",
+              "example": "Who doesn’t love pizza?",
+              "exampleKo": "피자 싫어하는 사람이 어딨어?"
+            },
+            {
+              "point": "Do you know yet if ~?",
+              "explain": "~인지 이제 알아? (if = ~인지)",
+              "example": "Do you know yet if you can come?",
+              "exampleKo": "올 수 있는지 이제 알아?"
+            }
+          ]
+        },
+        {
+          "part": 8,
+          "time": "약 0:52 – 1:02",
+          "title": "옛 사무실에서 보낸 늦은 밤",
+          "marker": "Can I interest you",
+          "summary": "벤은 피오나와의 저녁 약속을 미루고 줄스의 야근을 기다려요. 피자를 나눠 먹으며 벤은 이 건물이 자신이 40년 일한 전화번호부 공장이었다고 밝히고, 줄스는 벤의 페이스북 가입을 도와줘요. 차에서 잠든 줄스와 나누는 \"사요나라\" 인사.",
+          "scenes": [
+            "피오나의 발 마사지와 데이트 재약속",
+            "배달 가는 루이스에게 옷차림 조언",
+            "사무실 피자, 두 번째 CEO 후보 이야기",
+            "벤의 옛 사무실 이야기, 페이스북 프로필 만들기",
+            "차에서 잠든 줄스"
+          ],
+          "expressions": [
+            {
+              "phrase": "Can I interest you in ~?",
+              "meaning": "~은 어떠세요? (권유)",
+              "scene": "피오나가 벤에게 마사지를 권하며",
+              "example": "Can I interest you in some dessert?",
+              "exampleKo": "디저트 좀 드시겠어요?"
+            },
+            {
+              "phrase": "reschedule",
+              "meaning": "일정을 다시 잡다",
+              "scene": "미룬 저녁 약속을 다시 잡으며",
+              "example": "Can we reschedule the meeting for Friday?",
+              "exampleKo": "회의 금요일로 다시 잡을 수 있을까요?"
+            },
+            {
+              "phrase": "on all cylinders",
+              "meaning": "전력을 다해, 풀가동으로",
+              "scene": "줄스는 쉬지 않고 일한다며",
+              "example": "The team is working on all cylinders before the launch.",
+              "exampleKo": "출시 전에 팀이 전력을 다하고 있어."
+            },
+            {
+              "phrase": "freaked out",
+              "meaning": "겁먹은, 패닉 상태의",
+              "scene": "유명인 집에 배달 간다는 루이스",
+              "example": "I was so freaked out before the exam.",
+              "exampleKo": "시험 전에 너무 겁났어."
+            },
+            {
+              "phrase": "dress to impress",
+              "meaning": "잘 보이게 차려입다",
+              "scene": "벤이 루이스에게 셔츠를 입으라며",
+              "example": "It’s a job interview, so dress to impress.",
+              "exampleKo": "면접이니까 제대로 차려입어."
+            },
+            {
+              "phrase": "force of habit",
+              "meaning": "습관이라서",
+              "scene": "굳이 안 해도 되는 행동을 습관처럼 하며",
+              "example": "Sorry, force of habit — I always check my phone.",
+              "exampleKo": "미안, 습관이라 계속 폰을 보게 돼."
+            },
+            {
+              "phrase": "Better late than never.",
+              "meaning": "늦더라도 안 하는 것보단 낫다",
+              "scene": "늦게 페이스북을 시작한 벤에게",
+              "example": "I started learning English at 40. Better late than never!",
+              "exampleKo": "마흔에 영어를 시작했어. 늦어도 안 하는 것보단 낫지!"
+            },
+            {
+              "phrase": "brown-nose",
+              "meaning": "아첨하다",
+              "scene": "아부하려는 게 아니라며 칭찬하는 벤",
+              "example": "He’s always brown-nosing the boss.",
+              "exampleKo": "그는 항상 상사한테 아부해."
+            },
+            {
+              "phrase": "run across ~",
+              "meaning": "~을 우연히 만나다",
+              "scene": "줄스 같은 사람은 처음 봤다며",
+              "example": "I ran across an old friend at the mall.",
+              "exampleKo": "쇼핑몰에서 옛 친구를 우연히 만났어."
+            },
+            {
+              "phrase": "at the end of the day",
+              "meaning": "결국, 따지고 보면",
+              "scene": "줄스가 창업 아이디어를 설명하며",
+              "example": "At the end of the day, the customer decides.",
+              "exampleKo": "결국엔 고객이 결정하는 거야."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "If I were you, I’d ~",
+              "explain": "내가 너라면 ~할 거야 (가정법 과거, 조언) — 집 계약서를 본 벤",
+              "example": "If I were you, I’d ask for a discount.",
+              "exampleKo": "내가 너라면 할인을 요청할 거야."
+            },
+            {
+              "point": "used to + 동사",
+              "explain": "(예전에) ~하곤 했다 — 전화번호부를 만들던 공장",
+              "example": "This building used to be a factory.",
+              "exampleKo": "이 건물은 예전엔 공장이었어."
+            }
+          ]
+        },
+        {
+          "part": 9,
+          "time": "약 1:02 – 1:11",
+          "title": "오해, 사과, 그리고 한 팀",
+          "marker": "Good morning. I'm Doris.",
+          "summary": "줄스가 무심코 한 말 때문에 벤이 다른 부서로 옮겨지자, 줄스는 직접 벤의 집을 찾아가 사과하고 자기 옆자리로 불러와요. 벤은 지친 비서 베키를 도와주고, 집에서 쫓겨난 데이비스를 자기 집에 재워 줘요.",
+          "scenes": [
+            "새 기사 도리스와의 아찔한 출근길",
+            "줄스의 사과: \"당신이 있으면 마음이 차분해져요\"",
+            "베키의 눈물과 벤의 도움",
+            "구매 패턴 데이터 분석, 베키 칭찬하기",
+            "데이비스를 집에 재워 줌 — 손수건 이야기"
+          ],
+          "expressions": [
+            {
+              "phrase": "overstep",
+              "meaning": "선을 넘다, 주제넘게 굴다",
+              "scene": "벤이 혹시 선을 넘었다면 사과한다며",
+              "example": "I’m sorry if I overstepped.",
+              "exampleKo": "제가 선을 넘었다면 죄송해요."
+            },
+            {
+              "phrase": "I could use ~",
+              "meaning": "~가 있으면 좋겠다, 필요하다",
+              "scene": "줄스가 벤의 차분함이 필요하다며",
+              "example": "I could use a cup of coffee right now.",
+              "exampleKo": "지금 커피 한 잔 마시면 딱 좋겠다."
+            },
+            {
+              "phrase": "jump the gun",
+              "meaning": "성급하게 행동하다",
+              "scene": "줄스가 섣불리 벤을 옮긴 걸 후회하며",
+              "example": "Let’s not jump the gun. Wait for the results.",
+              "exampleKo": "섣불리 굴지 말자. 결과를 기다려."
+            },
+            {
+              "phrase": "give someone a lift",
+              "meaning": "차로 태워 주다",
+              "scene": "회사까지 태워 주겠다며",
+              "example": "Can you give me a lift to the station?",
+              "exampleKo": "역까지 좀 태워 줄 수 있어?"
+            },
+            {
+              "phrase": "give someone a hand",
+              "meaning": "도와주다",
+              "scene": "베키가 벤의 도움을 받게 하며",
+              "example": "Can you give me a hand with these boxes?",
+              "exampleKo": "이 상자들 좀 같이 들어 줄래?"
+            },
+            {
+              "phrase": "once in a while",
+              "meaning": "가끔은",
+              "scene": "베키에게 가끔은 제시간에 퇴근하라며",
+              "example": "You should take a break once in a while.",
+              "exampleKo": "가끔은 좀 쉬어야 해."
+            },
+            {
+              "phrase": "a clean slate",
+              "meaning": "백지상태, 새 출발",
+              "scene": "밀린 일을 깨끗이 정리하자며",
+              "example": "Let’s start with a clean slate.",
+              "exampleKo": "새 마음으로 처음부터 시작하자."
+            },
+            {
+              "phrase": "put someone up",
+              "meaning": "~을 (집에) 재워 주다",
+              "scene": "벤이 데이비스를 몇 주 재워 주겠다며",
+              "example": "My friend put me up for a week in London.",
+              "exampleKo": "런던에서 친구가 일주일 재워 줬어."
+            },
+            {
+              "phrase": "I’m pooped.",
+              "meaning": "완전 녹초야",
+              "scene": "벤이 이제 자야겠다며",
+              "example": "I’m pooped. I’m going to bed.",
+              "exampleKo": "완전 지쳤어. 잘게."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "I happen to think ~",
+              "explain": "(남들은 몰라도) 나는 ~라고 생각해 — 베키를 격려하는 벤",
+              "example": "I happen to think you’re doing a great job.",
+              "exampleKo": "난 네가 아주 잘하고 있다고 생각해."
+            },
+            {
+              "point": "무생물 주어",
+              "explain": "사람 대신 광고 채널이 주어인 데이터 보고 문장",
+              "example": "This channel brings us the most customers.",
+              "exampleKo": "이 채널이 고객을 가장 많이 데려와요."
+            }
+          ]
+        },
+        {
+          "part": 10,
+          "time": "약 1:11 – 1:22",
+          "title": "엄마 집 침입 작전",
+          "marker": "more berries",
+          "summary": "줄스가 엄마에게 실수로 험담 메일을 보내자, 벤과 인턴 3인방은 영화 \"오션스 일레븐\"처럼 줄스 엄마의 집에 몰래 들어가 메일을 지워요. 성공 후 바에서 술에 취한 줄스는 요즘 남자들에 대한 일장 연설을 늘어놓아요.",
+          "scenes": [
+            "아침 식탁: 거물 CEO 후보 타운센드, 샌프란시스코 출장 계획",
+            "홈페이지 줌 기능 고장, 창고 빈대 사건",
+            "잘못 보낸 이메일 — 침입 작전 개시",
+            "가짜인 줄 알았던 진짜 경보기",
+            "축하 술자리와 줄스의 연설"
+          ],
+          "expressions": [
+            {
+              "phrase": "on the fence",
+              "meaning": "(결정을 못 하고) 망설이는",
+              "scene": "타운센드 영입에 대해 줄스가",
+              "example": "I’m still on the fence about moving.",
+              "exampleKo": "이사할지 아직 고민 중이야."
+            },
+            {
+              "phrase": "flip out",
+              "meaning": "흥분하다, 난리 나다",
+              "scene": "모두가 타운센드 소식에 들떴다며",
+              "example": "My mom flipped out when she saw my grades.",
+              "exampleKo": "엄마가 내 성적 보고 난리 났어."
+            },
+            {
+              "phrase": "for the record",
+              "meaning": "참고로 말해 두자면 (Day 30 just so you know와 비슷)",
+              "scene": "페이지가 자기는 한 번도 아리엘을 못 해 봤다며",
+              "example": "For the record, I never agreed to this plan.",
+              "exampleKo": "참고로 말하는데, 난 이 계획에 동의한 적 없어."
+            },
+            {
+              "phrase": "Lay it on me.",
+              "meaning": "(나쁜 소식이라도) 말해 봐",
+              "scene": "창고 담당자에게 줄스가",
+              "example": "“I have bad news.” “Okay, lay it on me.”",
+              "exampleKo": "\"안 좋은 소식이 있어.\" \"그래, 말해 봐.\""
+            },
+            {
+              "phrase": "count on ~",
+              "meaning": "~을 믿다, 의지하다",
+              "scene": "줄스가 직원들의 도움을 믿는다며",
+              "example": "You can always count on me.",
+              "exampleKo": "언제든 나한테 의지해도 돼."
+            },
+            {
+              "phrase": "a piece of cake",
+              "meaning": "식은 죽 먹기",
+              "scene": "침입 작전 전 벤이",
+              "example": "Don’t worry, the test will be a piece of cake.",
+              "exampleKo": "걱정 마, 시험은 식은 죽 먹기일 거야."
+            },
+            {
+              "phrase": "win-win",
+              "meaning": "모두에게 좋은",
+              "scene": "컴퓨터를 가져가면 새 걸 사 주면 된다며",
+              "example": "It’s a win-win for both companies.",
+              "exampleKo": "두 회사 모두에게 이득이야."
+            },
+            {
+              "phrase": "Pull it together.",
+              "meaning": "정신 차려",
+              "scene": "패닉에 빠진 데이비스에게",
+              "example": "Pull it together! We need to finish this.",
+              "exampleKo": "정신 차려! 이거 끝내야 해."
+            },
+            {
+              "phrase": "above and beyond",
+              "meaning": "기대(의무) 이상으로",
+              "scene": "줄스가 고마움을 표현하며",
+              "example": "She always goes above and beyond for her customers.",
+              "exampleKo": "그녀는 항상 고객을 위해 기대 이상으로 노력해."
+            },
+            {
+              "phrase": "be in someone’s debt",
+              "meaning": "~에게 신세를 지다",
+              "scene": "줄스가 영원히 신세 졌다며",
+              "example": "Thanks for helping me move. I’m in your debt.",
+              "exampleKo": "이사 도와줘서 고마워. 신세 졌어."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "부정어 도치: Little do/does/did + 주어 + 동사",
+              "explain": "~을 전혀 모른다 — 내비게이션은 자기가 공범인 줄 모른다",
+              "example": "Little did I know that he was the boss.",
+              "exampleKo": "그가 사장인 줄은 전혀 몰랐어."
+            },
+            {
+              "point": "go from A to B",
+              "explain": "A에서 B로 바뀌다 — \"girls\"에서 \"women\"으로",
+              "example": "Prices went from $10 to $15.",
+              "exampleKo": "가격이 10달러에서 15달러로 올랐어."
+            }
+          ]
+        },
+        {
+          "part": 11,
+          "time": "약 1:22 – 1:32",
+          "title": "장례식 데이트와 불길한 목격",
+          "marker": "Really so nice of you",
+          "summary": "벤은 피오나와의 첫 데이트를 지인의 장례식(시바)에서 보내며 서로의 인생을 10초 만에 소개해요. 다음 날 아픈 매트 대신 페이지를 생일 파티에 데려다준 벤은 매트의 비밀을 알게 되고, 줄스 앞에서 어색하게 행동해요.",
+          "scenes": [
+            "시바(유대식 조문)에 함께 간 첫 데이트",
+            "\"10초 자기소개\": 홀아비, 인턴, 짝사랑",
+            "아픈 매트 대신 페이지를 파티에 데려다줌",
+            "엄마들의 뒷말 — 유리 천장을 깨는 줄스",
+            "매트의 비밀을 알게 된 벤의 어색함"
+          ],
+          "expressions": [
+            {
+              "phrase": "I’m so sorry for your loss.",
+              "meaning": "삼가 조의를 표합니다",
+              "scene": "피오나가 유족에게",
+              "example": "I’m so sorry for your loss. Let me know if you need anything.",
+              "exampleKo": "삼가 조의를 표해요. 필요한 거 있으면 말해 주세요."
+            },
+            {
+              "phrase": "icebreaker",
+              "meaning": "어색함을 깨는 것",
+              "scene": "장례식 데이트를 농담 삼아",
+              "example": "Let’s start with an icebreaker game.",
+              "exampleKo": "어색함을 풀 게임부터 하죠."
+            },
+            {
+              "phrase": "have a ball",
+              "meaning": "아주 즐거운 시간을 보내다",
+              "scene": "벤이 인턴 생활이 즐겁다며",
+              "example": "We had a ball at the party.",
+              "exampleKo": "파티에서 정말 신나게 놀았어."
+            },
+            {
+              "phrase": "have a crush on ~",
+              "meaning": "~에게 반하다",
+              "scene": "회사에서 만난 사람에게 반했다며",
+              "example": "I had a crush on my English teacher.",
+              "exampleKo": "영어 선생님을 좋아했었어."
+            },
+            {
+              "phrase": "on the way",
+              "meaning": "(아기가) 곧 태어날",
+              "scene": "피오나가 손주가 곧 태어난다며",
+              "example": "They have two kids and another one on the way.",
+              "exampleKo": "그들은 아이 둘에 하나가 곧 태어나."
+            },
+            {
+              "phrase": "I look better than I feel.",
+              "meaning": "보기보다 몸이 더 안 좋아",
+              "scene": "아픈 매트가",
+              "example": "I know I look fine, but I look better than I feel.",
+              "exampleKo": "멀쩡해 보여도 사실 상태가 더 안 좋아."
+            },
+            {
+              "phrase": "hit the road",
+              "meaning": "출발하다, 떠나다",
+              "scene": "아픈 페이지를 데리고 파티를 떠나며",
+              "example": "It’s getting late. Let’s hit the road.",
+              "exampleKo": "늦었다. 이제 출발하자."
+            },
+            {
+              "phrase": "glass ceiling",
+              "meaning": "(승진을 막는) 유리 천장",
+              "scene": "엄마들이 줄스를 비꼬듯 칭찬하며",
+              "example": "She broke the glass ceiling in the tech industry.",
+              "exampleKo": "그녀는 테크 업계의 유리 천장을 깼어."
+            },
+            {
+              "phrase": "have a lot on one’s shoulders",
+              "meaning": "짊어진 짐이 많다",
+              "scene": "매트가 줄스의 부담을 걱정하며",
+              "example": "As a new manager, she has a lot on her shoulders.",
+              "exampleKo": "새 매니저라 그녀는 짊어진 게 많아."
+            },
+            {
+              "phrase": "do right by ~",
+              "meaning": "~에게 도리를 다하다",
+              "scene": "줄스가 모두에게 잘하려 한다며",
+              "example": "I want to do right by my team.",
+              "exampleKo": "우리 팀에게 도리를 다하고 싶어."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "I spy with my little eye ~",
+              "explain": "영어권 아이들의 스무고개 놀이 — \"내 눈에 ~한 게 보여요\"",
+              "example": "I spy with my little eye something red!",
+              "exampleKo": "내 눈에 빨간 게 보여요!"
+            },
+            {
+              "point": "Am I wrong that I ~?",
+              "explain": "내가 ~하는 게 잘못이야? — 조심스럽게 의견을 구하기",
+              "example": "Am I wrong to think this is unfair?",
+              "exampleKo": "이게 불공평하다고 생각하는 게 잘못이야?"
+            }
+          ]
+        },
+        {
+          "part": 12,
+          "time": "약 1:32 – 1:45",
+          "title": "샌프란시스코의 밤",
+          "marker": "We got the day off.",
+          "summary": "CEO 후보 타운센드를 만나러 간 샌프란시스코. 호텔 화재경보로 잠이 깬 줄스는 벤에게 남편의 외도를 알고 있다고 털어놓아요. 혼자 묻힐까 봐 두렵다는 줄스에게 벤은 아내 몰리 옆자리를 내주겠다며 위로해요.",
+          "scenes": [
+            "기내 대화: 마음에 들면 하고, 아니면 말고",
+            "호텔 화재경보 — \"불길한 징조야\"",
+            "벤의 아내 몰리 이야기: 42년의 결혼",
+            "줄스의 고백: 매트의 외도",
+            "\"나랑 몰리 옆에 묻혀도 돼요\""
+          ],
+          "expressions": [
+            {
+              "phrase": "take the rap (for ~)",
+              "meaning": "(~의) 책임을 뒤집어쓰다",
+              "scene": "외도를 자기 탓으로 돌리려는 줄스에게 벤이",
+              "example": "Don’t take the rap for his mistake.",
+              "exampleKo": "그의 실수를 네가 뒤집어쓰지 마."
+            },
+            {
+              "phrase": "act out",
+              "meaning": "(불만을) 나쁜 행동으로 표출하다",
+              "scene": "남편이 자존심이 상해 엇나간 거라며",
+              "example": "Kids sometimes act out when they feel ignored.",
+              "exampleKo": "아이들은 무시당한다고 느끼면 엇나가기도 해."
+            },
+            {
+              "phrase": "a lapse in judgment",
+              "meaning": "일시적인 판단 착오",
+              "scene": "줄스가 그냥 실수였으면 하며",
+              "example": "It was a lapse in judgment. It won’t happen again.",
+              "exampleKo": "판단 착오였어요. 다시는 안 그럴게요."
+            },
+            {
+              "phrase": "give up on ~",
+              "meaning": "~을 포기하다",
+              "scene": "남편을 포기하고 싶지 않다며",
+              "example": "Don’t give up on your dream.",
+              "exampleKo": "꿈을 포기하지 마."
+            },
+            {
+              "phrase": "a rising star",
+              "meaning": "떠오르는 스타, 유망주",
+              "scene": "매트가 원래 잘나가던 사람이었다며",
+              "example": "She’s a rising star in the company.",
+              "exampleKo": "그녀는 회사의 떠오르는 인재야."
+            },
+            {
+              "phrase": "bow out",
+              "meaning": "물러나다",
+              "scene": "매트가 줄스를 위해 물러났다며",
+              "example": "He decided to bow out of the race.",
+              "exampleKo": "그는 경쟁에서 물러나기로 했어."
+            },
+            {
+              "phrase": "get back on track",
+              "meaning": "정상 궤도로 돌아오다",
+              "scene": "새 CEO가 오면 삶이 제자리를 찾을 거라며",
+              "example": "After the holidays, I need to get back on track.",
+              "exampleKo": "연휴 끝났으니 다시 페이스를 찾아야 해."
+            },
+            {
+              "phrase": "Such is life.",
+              "meaning": "인생이 다 그렇지",
+              "scene": "줄스가 체념하듯",
+              "example": "It rained on our picnic day. Oh well, such is life.",
+              "exampleKo": "소풍날 비가 왔어. 뭐, 인생이 그렇지."
+            },
+            {
+              "phrase": "keep someone up",
+              "meaning": "~을 잠 못 들게 하다",
+              "scene": "혼자 묻힐까 봐 밤에 잠이 안 온다며",
+              "example": "Worries about work keep me up at night.",
+              "exampleKo": "일 걱정 때문에 밤에 잠이 안 와."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "I wish + 과거형",
+              "explain": "(현재 사실과 반대로) ~라면 좋을 텐데 — 표정이 그렇게 다 드러나지 않으면 좋을 텐데",
+              "example": "I wish I had more time.",
+              "exampleKo": "시간이 더 있으면 좋을 텐데."
+            },
+            {
+              "point": "as = ~하면서, ~할 때",
+              "explain": "기내 방송 \"착륙을 시작하면서\" (Set 2 as)",
+              "example": "Please fasten your seat belts as we start our descent.",
+              "exampleKo": "착륙을 시작하오니 안전벨트를 매 주세요."
+            }
+          ]
+        },
+        {
+          "part": 13,
+          "time": "약 1:45 – 2:01",
+          "title": "줄스의 선택",
+          "marker": "Airport, please.",
+          "summary": "타운센드에게 CEO 자리를 주기로 한 줄스는 다음 날 아침 벤을 찾아가요. 벤은 \"이 회사엔 당신이 필요하다\"고 진심을 전하고, 남편 매트도 잘못을 뉘우치며 줄스가 회사를 계속 이끌기를 바라요. 줄스는 결정을 바꾸고, 공원에서 태극권을 하는 벤을 찾아가요.",
+          "scenes": [
+            "타운센드와 악수로 결정",
+            "매트: \"예전으로 돌아갈 수 있을 거야\"",
+            "벤의 집에서 만난 피오나, 벤의 진심 어린 조언",
+            "레이첼의 웨딩 사진, 매트의 사과",
+            "공원 태극권 — \"좋은 소식이 있어요\""
+          ],
+          "expressions": [
+            {
+              "phrase": "sleep on it",
+              "meaning": "하룻밤 자며 생각해 보다",
+              "scene": "타운센드가 서두르지 말라며",
+              "example": "You don’t have to decide now. Sleep on it.",
+              "exampleKo": "지금 결정 안 해도 돼. 하룻밤 생각해 봐."
+            },
+            {
+              "phrase": "shake hands on it",
+              "meaning": "악수로 합의하다",
+              "scene": "그 자리에서 고용을 결정하며",
+              "example": "We shook hands on the deal.",
+              "exampleKo": "우리는 악수로 거래를 확정했어."
+            },
+            {
+              "phrase": "tiebreaker",
+              "meaning": "(의견이 갈릴 때) 최종 결정권자",
+              "scene": "의견이 다르면 CEO가 결정한다며",
+              "example": "If we vote 2 to 2, the boss is the tiebreaker.",
+              "exampleKo": "2대2로 갈리면 사장님이 최종 결정해요."
+            },
+            {
+              "phrase": "call the shots",
+              "meaning": "결정권을 쥐다",
+              "scene": "다른 사람이 결정을 내려 주면 좋겠다는 줄스",
+              "example": "In this house, my wife calls the shots.",
+              "exampleKo": "우리 집에선 아내가 결정권자야."
+            },
+            {
+              "phrase": "put the genie back in the bottle",
+              "meaning": "(이미 벌어진 일을) 되돌리다",
+              "scene": "예전으로 돌아갈 수 있을 거라며",
+              "example": "Once the news is out, you can’t put the genie back in the bottle.",
+              "exampleKo": "소식이 퍼지면 되돌릴 수 없어."
+            },
+            {
+              "phrase": "add up",
+              "meaning": "앞뒤가 맞다, 말이 되다",
+              "scene": "회사를 포기하는 건 이치에 맞지 않다며",
+              "example": "His story doesn’t add up.",
+              "exampleKo": "그의 이야기는 앞뒤가 안 맞아."
+            },
+            {
+              "phrase": "along the way",
+              "meaning": "그 과정에서, 도중에",
+              "scene": "매트가 어느 순간 길을 잃었다며",
+              "example": "I made a lot of mistakes along the way.",
+              "exampleKo": "그 과정에서 실수를 많이 했어."
+            },
+            {
+              "phrase": "change one’s mind",
+              "meaning": "마음을 바꾸다",
+              "scene": "줄스가 결정을 바꾸며",
+              "example": "I was going to quit, but I changed my mind.",
+              "exampleKo": "그만두려 했는데 마음을 바꿨어."
+            },
+            {
+              "phrase": "make it",
+              "meaning": "해내다, 잘 헤쳐 나가다",
+              "scene": "\"우린 잘 해낼 거야\"라며",
+              "example": "Don’t worry. We’re going to make it.",
+              "exampleKo": "걱정 마. 우린 해낼 거야."
+            }
+          ],
+          "grammar": [
+            {
+              "point": "if you don’t mind me saying",
+              "explain": "이런 말 해도 될지 모르겠지만 — 조심스럽게 의견을 말할 때",
+              "example": "If you don’t mind me saying, you look tired.",
+              "exampleKo": "이런 말 해도 될지 모르겠지만, 피곤해 보여요."
+            },
+            {
+              "point": "It’s moments like this when ~",
+              "explain": "~한 건 바로 이런 순간이다 (강조 구문)",
+              "example": "It’s moments like this when you need a friend.",
+              "exampleKo": "친구가 필요한 건 바로 이런 순간이야."
+            }
+          ]
+        }
+      ]
+    }
+  ],
 
   /* ---------- Dialog ----------
      id: 주소에 쓰이는 이름(영문), title, situation: 상황, date, summary: 한 줄 요약,

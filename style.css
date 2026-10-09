@@ -240,3 +240,13 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
 .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 18px; }
 .pager .card { display: flex; flex-direction: column; gap: 2px; margin: 0; font-size: 14px; }
 .pager .card.right { text-align: right; }
+
+/* ---------- 스크립트 쉐도잉 ---------- */
+.scenes { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.sh-tools .btn.grow { width: 100%; }
+.sh-line { cursor: pointer; border-radius: 10px; transition: background .2s; }
+.sh-line .who { color: var(--muted); font-weight: 600; font-size: 12px; padding-top: 4px; min-width: 26px; }
+.sh-line.now { background: var(--primary-soft); margin: 0 -10px; padding-left: 10px; padding-right: 10px; }
+.sh-line.now .who { color: var(--primary); font-weight: 800; }
+.hide-en .sh-line .en { filter: blur(7px); user-select: none; }
+.hide-en .sh-line.peek .en { filter: none; }

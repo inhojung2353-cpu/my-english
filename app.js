@@ -58,14 +58,14 @@ const speakBtn = text => `<button class="speak" data-speak="${esc(text)}" aria-l
 /* ---------- 라우터 ---------- */
 const view = $('#view');
 function route() {
-  const [page, id] = (location.hash.slice(1) || 'home').split('/');
+  const [page, id, sub] = (location.hash.slice(1) || 'home').split('/');
   const tab = page === 'script' ? 'scripts' : page === 'dialog' ? 'dialogs' : page;
   $$('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.tab === tab));
   $('#back').hidden = page !== 'script' && page !== 'dialog';
   $('#back').dataset.to = page === 'dialog' ? '#dialogs' : '#scripts';
   if (page === 'words') renderWords();
   else if (page === 'scripts') renderScripts();
-  else if (page === 'script') renderScript(decodeURIComponent(id || ''));
+  else if (page === 'script') renderScript(decodeURIComponent(id || ''), Number(sub) || 0);
   else if (page === 'dialogs') renderDialogs();
   else if (page === 'dialog') renderDialog(decodeURIComponent(id || ''));
   else if (page === 'diary') renderDiary();
@@ -236,19 +236,74 @@ function renderWords() {
 }
 
 /* ---------- 스크립트 ---------- */
+/* ---------- 스크립트 (영화) ----------
+   학습 노트(요약·표현·문법)는 data.js에 있고,
+   대본 원문은 저작권 때문에 공개하지 않고 각자 기기(localStorage)에만 저장해요. */
+const scriptKey = id => `my-english-script-${id}`;
+const loadScriptText = id => { try { return localStorage.getItem(scriptKey(id)) || ''; } catch { return ''; } };
+const saveScriptText = (id, text) => {
+  try { text ? localStorage.setItem(scriptKey(id), text) : localStorage.removeItem(scriptKey(id)); return true; }
+  catch { return false; }
+};
+
+// 자막 대본 정리: 깨진 글자 고치기 + 끊긴 줄을 문장으로 합치기
+const normText = t => t.toLowerCase().replace(/[’‘`]/g, "'").replace(/\s+/g, ' ').trim();
+function cleanLine(l) {
+  return l
+    .replace(/IV[lI]/g, 'M')                                   // OCR: IVlmm → Mmm
+    .replace(/\((?:[a-z]*[A-Z]{2,}[A-Za-z]*)\)/g, '')            // (couGHING) 같은 효과음
+    .replace(/^[-–—\s]+/, '')                                    // 줄 앞 대시
+    .replace(/^(?:[A-Z]{3,}[A-Z0-9]*[:2Z]|[A-Z]{3,}I)\s*(?=\S)/, '') // RECEPTIONISTZ, FIONAI, JULES: 같은 화자 표시
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function parseScript(text) {
+  const raw = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  const lines = [];
+  raw.forEach((l, i) => {
+    const newSpeaker = /^[-–—]/.test(l);
+    const t = cleanLine(l);
+    if (!t) return;
+    const prev = lines[lines.length - 1];
+    if (prev && !newSpeaker && !/[.?!"”…)\]]$/.test(prev.en) && prev.en.length < 220) prev.en += ' ' + t;
+    else lines.push({ en: t, i });
+  });
+  return { raw, lines };
+}
+// 파트 시작 줄(marker)을 찾아 나누기. 못 찾으면 줄 수로 균등 분할
+function splitParts(movie, text) {
+  const { raw, lines } = parseScript(text);
+  const parts = movie.parts || [];
+  const starts = [0];
+  let from = 0, ok = true;
+  parts.slice(1).forEach(p => {
+    const m = normText(p.marker || '');
+    const idx = m ? raw.findIndex((l, i) => i > from && normText(l).includes(m)) : -1;
+    if (idx < 0) ok = false;
+    from = idx < 0 ? from : idx;
+    starts.push(idx);
+  });
+  if (!ok) starts.splice(0, starts.length, ...parts.map((_, k) => Math.round(raw.length * k / parts.length)));
+  return parts.map((_, k) => {
+    const a = starts[k], b = k + 1 < starts.length ? starts[k + 1] : Infinity;
+    return lines.filter(l => l.i >= a && l.i < b);
+  });
+}
+
 function scriptCard(s) {
+  const has = !!loadScriptText(s.id);
   return `
     <a class="card script-item" href="#script/${encodeURIComponent(s.id)}">
-      <h3>${esc(s.title)}</h3>
-      <div class="meta">${[s.source, prettyDate(s.date)].filter(Boolean).map(esc).join(' · ')}</div>
+      <div class="row-between"><h3>🎬 ${esc(s.title)}${s.original ? ` <span class="muted small">${esc(s.original)}${s.year ? ` (${s.year})` : ''}</span>` : ''}</h3>
+      <span class="tag ${has ? 'done' : ''}">${has ? '원문 있음' : '원문 없음'}</span></div>
+      <div class="meta">${(s.parts || []).length}개 파트 · 표현 ${(s.parts || []).reduce((n, p) => n + (p.expressions || []).length, 0)}개</div>
       ${s.summary ? `<p>${esc(s.summary)}</p>` : ''}
     </a>`;
 }
 
 function renderScripts() {
   setTitle('스크립트');
-  const items = [...scripts].sort(byDateDesc);
-  view.innerHTML = items.length ? items.map(scriptCard).join('')
+  view.innerHTML = scripts.length ? scripts.map(scriptCard).join('')
     : `<div class="empty"><span class="big">🎬</span>아직 스크립트가 없어요<br><span class="small">영상·대화·문장을 보내 주시면 여기에 정리돼요</span></div>`;
 }
 
@@ -261,53 +316,193 @@ function highlight(text, phrases) {
   return html.replace(re, '<mark>$1</mark>');
 }
 
-let showKo = true;
-function renderScript(id) {
+
+function renderScript(id, partNo) {
   const s = scripts.find(x => x.id === id);
   if (!s) { setTitle('스크립트'); view.innerHTML = `<div class="empty"><span class="big">🔍</span>스크립트를 찾을 수 없어요<br><a class="small" href="#scripts" style="color:var(--primary)">목록으로 ›</a></div>`; return; }
+  $('#back').dataset.to = partNo ? `#script/${s.id}` : '#scripts';
+  if (partNo) return renderPart(s, partNo);
   setTitle(s.title);
-  const exprs = s.expressions || [];
-  const lines = s.lines || [];
-  const speakers = [...new Set(lines.map(l => l.speaker).filter(Boolean))];
-  const hasKo = lines.some(l => l.ko);
-  const fullText = lines.map(l => l.en).join(' ');
+  const text = loadScriptText(s.id);
+  const split = text ? splitParts(s, text) : [];
+  view.innerHTML = `
+    <div class="card script-top">
+      <h2>🎬 ${esc(s.title)}</h2>
+      <div class="meta">${[s.original, s.year].filter(Boolean).map(esc).join(' · ')}</div>
+      ${s.summary ? `<p>${esc(s.summary)}</p>` : ''}
+    </div>
+    ${scriptBox(s, text, split)}
+    <div class="section-title">파트 <small>약 5~10분씩</small></div>
+    ${(s.parts || []).map((p, k) => `
+      <a class="card dialog-item" href="#script/${encodeURIComponent(s.id)}/${p.part}">
+        <div class="day">Part<b>${p.part}</b></div>
+        <div class="grow">
+          <h3>${esc(p.title)}</h3>
+          <div class="meta">${esc(p.time || '')}${text ? ` · ${split[k].length}문장` : ''} · 표현 ${(p.expressions || []).length}개</div>
+        </div>
+      </a>`).join('')}`;
+  bindScriptBox(s);
+}
+
+// 원문 붙여넣기 / 관리 상자
+function scriptBox(s, text, split) {
+  if (text) return `
+    <div class="card">
+      <div class="row-between"><b>📄 내 원문</b><span class="muted small">${split.reduce((n, p) => n + p.length, 0)}문장 · 이 기기에만 저장됨</span></div>
+      <div class="row" style="margin-top:10px">
+        <button class="btn grow" id="sc-edit">원문 바꾸기</button>
+        <button class="btn bad" id="sc-del">삭제</button>
+      </div>
+    </div>`;
+  return `
+    <div class="card">
+      <b>📄 원문 붙여넣기</b>
+      <p class="muted small" style="margin:6px 0 10px">영화 대본은 저작권이 있어서 공개 홈페이지에는 올리지 않아요. 가지고 계신 원문을 아래에 <b>한 번만</b> 붙여 넣으면 이 기기에만 저장되고, 자동으로 문장 정리와 파트 나누기가 돼요.</p>
+      <textarea id="sc-text" rows="5" placeholder="원문 전체를 붙여 넣으세요"></textarea>
+      <button class="btn primary block" id="sc-save" style="margin-top:10px">저장하고 파트 나누기</button>
+    </div>`;
+}
+function bindScriptBox(s) {
+  $('#sc-save')?.addEventListener('click', () => {
+    const t = $('#sc-text').value.trim();
+    if (t.split(/\n/).length < 20) { toast('원문이 너무 짧아요. 전체를 붙여 넣어 주세요'); return; }
+    toast(saveScriptText(s.id, t) ? '저장했어요! 파트를 골라 쉐도잉해 보세요' : '저장에 실패했어요');
+    route();
+  });
+  $('#sc-edit')?.addEventListener('click', () => {
+    if (!confirm('지금 원문을 지우고 새로 붙여 넣을까요?')) return;
+    saveScriptText(s.id, ''); route();
+  });
+  $('#sc-del')?.addEventListener('click', () => {
+    if (!confirm('이 기기에 저장된 원문을 삭제할까요?')) return;
+    saveScriptText(s.id, ''); route(); toast('삭제했어요');
+  });
+}
+
+/* 파트 화면: 쉐도잉 + 학습 노트 */
+let shadow = { rate: 0.9, hideEn: false, playing: false, idx: -1, timer: null };
+function stopShadow() {
+  shadow.playing = false;
+  clearTimeout(shadow.timer);
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  $$('.sh-line.now').forEach(x => x.classList.remove('now'));
+  const b = $('#sh-play'); if (b) b.textContent = '▶ 자동 쉐도잉';
+}
+window.addEventListener('hashchange', stopShadow);
+
+function speakLine(text, onend) {
+  if (!('speechSynthesis' in window)) return onend?.();
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  if (enVoice) u.voice = enVoice;
+  u.rate = shadow.rate;
+  u.onend = u.onerror = () => onend?.();
+  speechSynthesis.speak(u);
+}
+
+function renderPart(s, partNo) {
+  const parts = s.parts || [];
+  const k = parts.findIndex(p => p.part === partNo);
+  const p = parts[k];
+  if (!p) { location.hash = `#script/${s.id}`; return; }
+  setTitle(`${s.title} · Part ${p.part}`);
+  const text = loadScriptText(s.id);
+  const lines = text ? splitParts(s, text)[k] : [];
+  const prev = parts[k - 1], next = parts[k + 1];
 
   view.innerHTML = `
     <div class="card script-top">
-      <h2>${esc(s.title)}</h2>
-      <div class="meta">${[s.source, prettyDate(s.date)].filter(Boolean).map(esc).join(' · ')}</div>
-      ${s.summary ? `<p>${esc(s.summary)}</p>` : ''}
-      <div class="toggle-row">
-        ${hasKo ? `<button class="chip ${showKo ? 'on' : ''}" id="ko">해석 보기</button>` : ''}
-        <button class="chip" data-speak="${esc(fullText)}">🔊 전체 듣기</button>
+      <div class="pill">Part ${p.part} · ${esc(p.time || '')}</div>
+      <h2 style="margin-top:6px">${esc(p.title)}</h2>
+      <p>${esc(p.summary || '')}</p>
+      ${(p.scenes || []).length ? `<ol class="scenes">${p.scenes.map(x => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
+    </div>
+
+    <div class="section-title">🎧 쉐도잉 <small>${lines.length ? `${lines.length}문장` : ''}</small></div>
+    ${lines.length ? `
+      <div class="card sh-tools">
+        <button class="btn primary grow" id="sh-play">▶ 자동 쉐도잉</button>
+        <div class="row" style="margin-top:8px;flex-wrap:wrap">
+          ${[0.7, 0.9, 1].map(r => `<button class="chip ${shadow.rate === r ? 'on' : ''}" data-rate="${r}">${r}x</button>`).join('')}
+          <button class="chip ${shadow.hideEn ? 'on' : ''}" id="sh-hide">🙈 영어 가리기</button>
+        </div>
+        <p class="muted small" style="margin:8px 2px 0">한 문장을 들려준 뒤, 따라 말할 시간만큼 기다렸다가 다음 문장으로 넘어가요. 문장을 누르면 그 문장부터 시작해요.</p>
       </div>
-    </div>
+      <div class="card dlg ${shadow.hideEn ? 'hide-en' : ''}" id="sh-lines">
+        ${lines.map((l, i) => `
+          <div class="dlg-line sh-line" data-i="${i}">
+            <span class="who">${i + 1}</span>
+            <div class="en">${esc(l.en)}</div>
+            ${speakBtn(l.en)}
+          </div>`).join('')}
+      </div>`
+    : `<div class="card">
+        <p class="muted small" style="margin:0 0 10px">원문을 아직 붙여 넣지 않았어요. 영화 페이지에서 원문을 한 번 붙여 넣으면 여기에 이 파트의 문장이 나오고 쉐도잉할 수 있어요.</p>
+        <a class="btn block" href="#script/${encodeURIComponent(s.id)}">원문 붙여 넣으러 가기 ›</a>
+      </div>`}
 
-    <div class="card ${showKo ? '' : 'hide-ko'}" id="lines">
-      ${lines.map(l => {
-        const idx = speakers.indexOf(l.speaker);
-        return `
-        <div class="line">
-          ${l.speaker ? `<div class="sp ${idx % 2 ? 'alt' : ''}">${esc(l.speaker.slice(0, 1).toUpperCase())}</div>` : ''}
-          <div class="body">
-            ${l.speaker ? `<div class="name">${esc(l.speaker)}</div>` : ''}
-            <div class="en">${highlight(l.en || '', exprs.map(e => e.phrase))}</div>
-            ${l.ko ? `<div class="ko">${esc(l.ko)}</div>` : ''}
-          </div>
-          ${speakBtn(l.en || '')}
-        </div>`;
-      }).join('')}
-    </div>
+    ${(p.expressions || []).length ? `
+      <div class="section-title">💬 숙어 · 표현 <small>${p.expressions.length}개</small></div>
+      ${p.expressions.map(e => `
+        <article class="card word">
+          <div class="word-head"><div class="grow"><span class="w">${esc(e.phrase)}</span></div>${speakBtn(e.phrase)}</div>
+          <div class="m">${esc(e.meaning)}</div>
+          ${e.scene ? `<div class="muted small" style="margin-top:4px">🎬 ${esc(e.scene)}</div>` : ''}
+          ${e.example ? `<div class="ex"><div class="en">${esc(e.example)}</div>${e.exampleKo ? `<div class="ko">${esc(e.exampleKo)}</div>` : ''}</div>` : ''}
+        </article>`).join('')}` : ''}
 
-    ${exprs.length ? `
-      <div class="section-title">핵심 표현 <small>${exprs.length}개</small></div>
-      <div class="card">${exprs.map(e => `<div class="expr"><b>${esc(e.phrase)}</b><span>${esc(e.meaning)}</span></div>`).join('')}</div>` : ''}`;
+    ${(p.grammar || []).length ? `
+      <div class="section-title">📐 문법 · 패턴</div>
+      ${p.grammar.map(g => `
+        <article class="card word">
+          <div class="word-head"><div class="grow"><span class="w" style="font-size:17px">${esc(g.point)}</span></div></div>
+          <div class="m" style="font-weight:500">${esc(g.explain)}</div>
+          ${g.example ? `<div class="ex"><div class="row-between"><div class="en grow">${esc(g.example)}</div>${speakBtn(g.example)}</div>${g.exampleKo ? `<div class="ko">${esc(g.exampleKo)}</div>` : ''}</div>` : ''}
+        </article>`).join('')}` : ''}
 
-  $('#ko')?.addEventListener('click', e => {
-    showKo = !showKo;
-    e.target.classList.toggle('on', showKo);
-    $('#lines').classList.toggle('hide-ko', !showKo);
+    <div class="pager">
+      ${prev ? `<a class="card" href="#script/${encodeURIComponent(s.id)}/${prev.part}"><span class="muted small">‹ 이전</span><b>Part ${prev.part} · ${esc(prev.title)}</b></a>` : '<span></span>'}
+      ${next ? `<a class="card right" href="#script/${encodeURIComponent(s.id)}/${next.part}"><span class="muted small">다음 ›</span><b>Part ${next.part} · ${esc(next.title)}</b></a>` : '<span></span>'}
+    </div>`;
+
+  if (!lines.length) return;
+  const box = $('#sh-lines');
+  const mark = i => {
+    $$('.sh-line.now', box).forEach(x => x.classList.remove('now'));
+    const el = box.querySelector(`[data-i="${i}"]`);
+    if (el) { el.classList.add('now'); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  };
+  const playFrom = i => {
+    if (i >= lines.length) { stopShadow(); toast('이 파트 끝! 👏'); return; }
+    shadow.playing = true; shadow.idx = i;
+    $('#sh-play').textContent = '⏸ 멈추기';
+    mark(i);
+    const started = Date.now();
+    speakLine(lines[i].en, () => {
+      if (!shadow.playing) return;
+      // 따라 말할 시간: 들은 시간만큼 + 0.8초
+      const wait = Math.max(1200, (Date.now() - started) + 800);
+      shadow.timer = setTimeout(() => shadow.playing && playFrom(i + 1), wait);
+    });
+  };
+  $('#sh-play').onclick = () => shadow.playing ? stopShadow() : playFrom(Math.max(0, shadow.idx));
+  $$('[data-rate]').forEach(b => b.onclick = () => {
+    shadow.rate = Number(b.dataset.rate);
+    $$('[data-rate]').forEach(x => x.classList.toggle('on', x === b));
   });
+  $('#sh-hide').onclick = e => {
+    shadow.hideEn = !shadow.hideEn;
+    e.target.classList.toggle('on', shadow.hideEn);
+    box.classList.toggle('hide-en', shadow.hideEn);
+  };
+  box.addEventListener('click', e => {
+    if (e.target.closest('[data-speak]')) return;
+    const line = e.target.closest('.sh-line'); if (!line) return;
+    if (shadow.hideEn && !line.classList.contains('peek')) { line.classList.add('peek'); return; }
+    stopShadow(); playFrom(Number(line.dataset.i));
+  });
+  shadow.idx = -1;
 }
 
 /* ---------- Dialog ----------
