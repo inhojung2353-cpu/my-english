@@ -9,6 +9,8 @@
   --primary-soft: #e8e6ff;
   --accent: #f97316;
   --mark: #fff1c2;
+  --good: #16a34a;
+  --good-soft: #dcfce7;
   --radius: 18px;
   --shadow: 0 1px 2px rgba(20, 18, 50, .04), 0 4px 16px rgba(20, 18, 50, .06);
   --tabbar-h: 62px;
@@ -26,6 +28,8 @@
     --primary-soft: #2b2850;
     --accent: #fb923c;
     --mark: #4a3b12;
+    --good: #4ade80;
+    --good-soft: #163322;
     --shadow: none;
     color-scheme: dark;
   }
@@ -143,3 +147,19 @@ mark { background: var(--mark); color: inherit; border-radius: 4px; padding: 0 2
 .expr:last-child { border-bottom: 0; padding-bottom: 0; }
 .expr b { display: block; }
 .expr span { color: var(--muted); font-size: 14px; }
+
+/* ---------- 외운 단어 ---------- */
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 4px; border-radius: 14px; background: var(--surface-2); }
+.seg button { border: 0; background: none; border-radius: 10px; padding: 8px 4px; font-size: 14px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.seg button b { font-weight: 700; margin-left: 2px; opacity: .8; }
+.seg button.on { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.check {
+  flex: none; width: 34px; height: 34px; border-radius: 10px;
+  border: 2px solid var(--line); background: none; color: transparent;
+  font-size: 17px; font-weight: 900; line-height: 1; transition: .15s;
+}
+.check:active { transform: scale(.92); }
+.check.on { background: var(--good); border-color: var(--good); color: var(--bg); }
+.word.learned { box-shadow: inset 0 0 0 2px var(--good-soft); }
+.word.learned .w { color: var(--good); }
+.word.leaving { opacity: 0; transform: scale(.97); transition: .2s; }

@@ -81,7 +81,7 @@ function renderHome() {
       <p>${esc(C.subtitle || '')}</p>
     </div>
     <div class="stats">
-      <a class="stat" href="#words"><b>${words.length}</b><span>단어 · 표현</span></a>
+      <a class="stat" href="#words"><b>${words.length}</b><span>단어 · 표현${words.length ? ` (✓${words.filter(isLearned).length})` : ''}</span></a>
       <a class="stat" href="#scripts"><b>${scripts.length}</b><span>스크립트</span></a>
       <div class="stat"><b style="font-size:16px;line-height:33px">${latestDate() ? latestDate().slice(5).replace('-', '.') : '-'}</b><span>마지막 업데이트</span></div>
     </div>
@@ -101,13 +101,23 @@ let wordQuery = '';
 let wordTopic = '';
 let hideMeaning = false;
 
+// 외운 단어 체크는 이 기기의 브라우저에 저장 (단어 글자를 기준으로 기억)
+const LEARNED_KEY = 'my-english-learned';
+const PREFS_KEY = 'my-english-prefs';
+const readJSON = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
+const writeJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+const learned = new Set(readJSON(LEARNED_KEY, []));
+const isLearned = w => learned.has(w.word);
+let wordStatus = readJSON(PREFS_KEY, {}).wordStatus || 'all'; // all | todo | done
+
 function wordCard(w) {
   return `
-    <article class="card word">
+    <article class="card word ${isLearned(w) ? 'learned' : ''}">
       <div class="word-head">
         <div style="flex:1;min-width:0">
           <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}
         </div>
+        <button class="check ${isLearned(w) ? 'on' : ''}" data-check="${esc(w.word)}" aria-pressed="${isLearned(w)}" aria-label="외운 단어로 표시">✓</button>
         ${speakBtn(w.word)}
       </div>
       <div class="m">${esc(w.meaning)}</div>
@@ -121,23 +131,42 @@ function renderWords() {
   const topics = [...new Set(words.map(w => w.topic).filter(Boolean))];
   view.innerHTML = `
     <div class="tools">
+      <div class="seg" id="status" role="tablist">
+        <button data-status="all">전체 <b></b></button>
+        <button data-status="todo">안 외운 단어 <b></b></button>
+        <button data-status="done">외운 단어 <b></b></button>
+      </div>
       <input type="search" id="wq" placeholder="단어나 뜻으로 검색" value="${esc(wordQuery)}" autocomplete="off">
       <div class="chip-row" id="topics">
         <button class="chip ${hideMeaning ? 'on' : ''}" id="hide">🙈 뜻 가리기</button>
-        <button class="chip ${!wordTopic ? 'on' : ''}" data-topic="">전체</button>
+        <button class="chip ${!wordTopic ? 'on' : ''}" data-topic="">모든 주제</button>
         ${topics.map(t => `<button class="chip ${wordTopic === t ? 'on' : ''}" data-topic="${esc(t)}">${esc(t)}</button>`).join('')}
       </div>
     </div>
     <div id="list" class="${hideMeaning ? 'hide-meaning' : ''}"></div>`;
 
   const list = $('#list');
+  const drawStatus = () => {
+    const done = words.filter(isLearned).length;
+    const counts = { all: words.length, todo: words.length - done, done };
+    $$('#status button').forEach(b => {
+      b.classList.toggle('on', b.dataset.status === wordStatus);
+      b.querySelector('b').textContent = counts[b.dataset.status];
+    });
+  };
+  const emptyMsg = () =>
+    wordStatus === 'done' && !wordQuery ? '아직 외운 단어가 없어요<br><span class="small">다 외운 단어는 ✓를 눌러 주세요</span>'
+    : wordStatus === 'todo' && !wordQuery ? '🎉 모든 단어를 외웠어요!'
+    : '검색 결과가 없어요';
   const draw = () => {
+    drawStatus();
     const q = wordQuery.trim().toLowerCase();
     const items = words.filter(w =>
+      (wordStatus === 'all' || (wordStatus === 'done') === isLearned(w)) &&
       (!wordTopic || w.topic === wordTopic) &&
       (!q || [w.word, w.meaning, w.example, w.exampleKo, w.note].some(f => (f || '').toLowerCase().includes(q))));
     if (!words.length) { list.innerHTML = `<div class="empty"><span class="big">📚</span>아직 단어가 없어요</div>`; return; }
-    if (!items.length) { list.innerHTML = `<div class="empty">검색 결과가 없어요</div>`; return; }
+    if (!items.length) { list.innerHTML = `<div class="empty">${emptyMsg()}</div>`; return; }
     // 날짜별로 묶어서 최신순
     const groups = {};
     items.forEach(w => (groups[w.date || ''] ||= []).push(w));
@@ -148,6 +177,12 @@ function renderWords() {
   draw();
 
   $('#wq').addEventListener('input', e => { wordQuery = e.target.value; draw(); });
+  $('#status').addEventListener('click', e => {
+    const b = e.target.closest('[data-status]'); if (!b) return;
+    wordStatus = b.dataset.status;
+    writeJSON(PREFS_KEY, { ...readJSON(PREFS_KEY, {}), wordStatus });
+    draw();
+  });
   $('#topics').addEventListener('click', e => {
     const c = e.target.closest('.chip'); if (!c) return;
     if (c.id === 'hide') {
@@ -163,6 +198,25 @@ function renderWords() {
   });
   // 뜻 가리기 상태에서 카드를 누르면 그 카드만 보기
   list.addEventListener('click', e => {
+    const check = e.target.closest('[data-check]');
+    if (check) {
+      const word = check.dataset.check;
+      learned.has(word) ? learned.delete(word) : learned.add(word);
+      writeJSON(LEARNED_KEY, [...learned]);
+      if (wordStatus === 'all') {
+        // 전체 보기에서는 목록을 다시 그리지 않고 그 카드만 바꿔서 스크롤 위치 유지
+        const on = learned.has(word);
+        check.classList.toggle('on', on);
+        check.setAttribute('aria-pressed', on);
+        check.closest('.word').classList.toggle('learned', on);
+        drawStatus();
+      } else {
+        // 필터 보기에서는 카드가 사라지도록 살짝 페이드 후 다시 그리기
+        check.closest('.word').classList.add('leaving');
+        setTimeout(draw, 220);
+      }
+      return;
+    }
     const card = e.target.closest('.word');
     if (card && hideMeaning && !e.target.closest('[data-speak]')) card.classList.toggle('peek');
   });
