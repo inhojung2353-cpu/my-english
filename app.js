@@ -363,6 +363,7 @@ function renderDialog(id) {
   const speakers = [...new Set(lines.map(l => l.speaker).filter(Boolean))];
   if (dlgHide && !speakers.includes(dlgHide)) dlgHide = '';
   const hasKo = lines.some(l => l.ko);
+  const wide = speakers.some(sp => sp.length > 2) ? 'wide' : '';
   const fullText = lines.map(l => l.en).join(' ');
 
   view.innerHTML = `
@@ -384,24 +385,29 @@ function renderDialog(id) {
         </div>` : ''}
     </div>
 
-    <div class="chat ${dlgShowKo ? '' : 'hide-ko'}" id="chat">
+    <div class="section-title">Dialog</div>
+    <div class="card dlg ${wide}" id="chat">
       ${lines.map(l => {
-        const idx = speakers.indexOf(l.speaker);
-        const right = idx % 2 === 1;
+        const alt = speakers.indexOf(l.speaker) % 2 === 1;
         const hidden = dlgHide && l.speaker === dlgHide;
         return `
-        <div class="msg ${right ? 'right' : ''} ${hidden ? 'masked' : ''}">
-          ${l.speaker ? `<div class="name">${esc(l.speaker)}</div>` : ''}
-          <div class="bubble-row">
-            <div class="bubble">
-              <div class="en">${highlight(l.en || '', marks)}</div>
-              ${l.ko ? `<div class="ko">${esc(l.ko)}</div>` : ''}
-            </div>
-            ${speakBtn(l.en || '')}
-          </div>
+        <div class="dlg-line ${hidden ? 'masked' : ''}">
+          <span class="who ${alt ? 'alt' : ''}">${esc(l.speaker || '')}</span>
+          <div class="en">${highlight(l.en || '', marks)}</div>
+          ${speakBtn(l.en || '')}
         </div>`;
       }).join('')}
     </div>
+
+    ${hasKo ? `
+      <div class="section-title" id="ko-title" ${dlgShowKo ? '' : 'hidden'}>해석</div>
+      <div class="card dlg ko-block ${wide}" id="ko-block" ${dlgShowKo ? '' : 'hidden'}>
+        ${lines.map(l => `
+          <div class="dlg-line">
+            <span class="who ${speakers.indexOf(l.speaker) % 2 === 1 ? 'alt' : ''}">${esc(l.speaker || '')}</span>
+            <div class="ko">${esc(l.ko || '')}</div>
+          </div>`).join('')}
+      </div>` : ''}
 
     ${exprs.length ? `
       <div class="section-title">핵심 표현 <small>${exprs.length}개</small></div>
@@ -421,7 +427,7 @@ function renderDialog(id) {
   $('#dk')?.addEventListener('click', e => {
     dlgShowKo = !dlgShowKo;
     e.target.classList.toggle('on', dlgShowKo);
-    $('#chat').classList.toggle('hide-ko', !dlgShowKo);
+    $('#ko-title').hidden = $('#ko-block').hidden = !dlgShowKo;
   });
   $('#roles')?.addEventListener('click', e => {
     const c = e.target.closest('[data-role]'); if (!c) return;
@@ -432,7 +438,7 @@ function renderDialog(id) {
   });
   // 가린 말풍선을 누르면 그 줄만 보기
   $('#chat').addEventListener('click', e => {
-    const m = e.target.closest('.msg.masked, .msg.peek');
+    const m = e.target.closest('.dlg-line.masked, .dlg-line.peek');
     if (m && !e.target.closest('[data-speak]')) { m.classList.toggle('masked'); m.classList.toggle('peek'); }
   });
 }

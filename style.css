@@ -212,26 +212,18 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-/* ---------- Dialog (말풍선) ---------- */
-.chat { display: flex; flex-direction: column; gap: 12px; margin: 4px 0 8px; }
-.msg { display: flex; flex-direction: column; align-items: flex-start; max-width: 88%; }
-.msg.right { align-self: flex-end; align-items: flex-end; }
-.msg .name { font-size: 12px; font-weight: 700; color: var(--muted); margin: 0 6px 3px; }
-.bubble-row { display: flex; align-items: flex-end; gap: 6px; }
-.msg.right .bubble-row { flex-direction: row-reverse; }
-.bubble {
-  background: var(--surface); box-shadow: var(--shadow);
-  padding: 10px 14px; border-radius: 18px 18px 18px 6px;
-}
-.msg.right .bubble { background: var(--primary-soft); border-radius: 18px 18px 6px 18px; }
-.bubble .en { font-size: 17px; line-height: 1.5; }
-.bubble .ko { font-size: 14px; color: var(--muted); margin-top: 3px; }
-.hide-ko .bubble .ko { display: none; }
-.msg.masked .bubble { cursor: pointer; }
-.msg.masked .bubble .en, .msg.masked .bubble .ko { filter: blur(7px); user-select: none; }
-.msg.masked .bubble::after { content: '눌러서 확인'; display: block; font-size: 11px; font-weight: 700; color: var(--primary); margin-top: 4px; }
-.msg.peek .bubble { outline: 2px dashed var(--primary); outline-offset: 2px; cursor: pointer; }
-.msg .speak { margin-bottom: 2px; }
+/* ---------- Dialog (위에서 아래로) ---------- */
+.dlg { padding: 6px 16px; }
+.dlg-line { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.dlg-line:last-child { border-bottom: 0; }
+.dlg-line .who { flex: none; min-width: 26px; padding-top: 2px; font-size: 14px; font-weight: 800; color: var(--primary); }
+.dlg-line .who.alt { color: var(--accent); }
+.dlg-line .en { flex: 1; min-width: 0; font-size: 17px; line-height: 1.55; }
+.dlg-line .ko { flex: 1; min-width: 0; font-size: 15px; line-height: 1.6; }
+.dlg-line .speak { width: 30px; height: 30px; font-size: 13px; }
+.dlg-line.masked .en { filter: blur(7px); user-select: none; cursor: pointer; }
+.dlg.wide .who { min-width: 48px; }
+.dlg-line.peek .en { background: var(--primary-soft); border-radius: 6px; cursor: pointer; }
 
 /* Dialog 목록 · Day */
 .dialog-item { display: flex; gap: 14px; align-items: center; }
