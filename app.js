@@ -5,6 +5,7 @@
 const C = window.CONTENT || { words: [], scripts: [] };
 const words = C.words || [];
 const scripts = C.scripts || [];
+const dialogs = C.dialogs || [];
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -18,7 +19,7 @@ function prettyDate(k) {
   return `${y}년 ${m}월 ${d}일 (${'일월화수목금토'[date.getDay()]})`;
 }
 const byDateDesc = (a, b) => (b.date || '').localeCompare(a.date || '');
-const latestDate = () => [...words, ...scripts].map(x => x.date || '').sort().pop();
+const latestDate = () => [...words, ...scripts, ...dialogs].map(x => x.date || '').sort().pop();
 
 /* ---------- 발음 듣기 ---------- */
 // 기기에 있는 미국 영어 목소리 중 자연스러운 것을 우선 선택
@@ -57,18 +58,21 @@ const speakBtn = text => `<button class="speak" data-speak="${esc(text)}" aria-l
 const view = $('#view');
 function route() {
   const [page, id] = (location.hash.slice(1) || 'home').split('/');
-  const tab = page === 'script' ? 'scripts' : page;
+  const tab = page === 'script' ? 'scripts' : page === 'dialog' ? 'dialogs' : page;
   $$('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.tab === tab));
-  $('#back').hidden = page !== 'script';
+  $('#back').hidden = page !== 'script' && page !== 'dialog';
+  $('#back').dataset.to = page === 'dialog' ? '#dialogs' : '#scripts';
   if (page === 'words') renderWords();
   else if (page === 'scripts') renderScripts();
   else if (page === 'script') renderScript(decodeURIComponent(id || ''));
+  else if (page === 'dialogs') renderDialogs();
+  else if (page === 'dialog') renderDialog(decodeURIComponent(id || ''));
   else if (page === 'diary') renderDiary();
   else renderHome();
   window.scrollTo(0, 0);
 }
 const setTitle = t => { $('#page-title').textContent = t; document.title = t === 'My English' ? (C.title || t) : `${t} · My English`; };
-$('#back').onclick = () => (history.length > 1 ? history.back() : (location.hash = '#scripts'));
+$('#back').onclick = () => (history.length > 1 ? history.back() : (location.hash = $('#back').dataset.to));
 window.addEventListener('hashchange', route);
 
 /* ---------- 홈 ---------- */
@@ -76,15 +80,18 @@ function renderHome() {
   setTitle('My English');
   const recentWords = [...words].sort(byDateDesc).slice(0, 6);
   const recentScripts = [...scripts].sort(byDateDesc).slice(0, 3);
+  const recentDialogs = [...dialogs].sort(byDateDesc).slice(0, 3);
+  const last = latestDate();
   view.innerHTML = `
     <div class="hero">
       <h2>${esc(C.title || 'My English Notebook')}</h2>
       <p>${esc(C.subtitle || '')}</p>
+      ${last ? `<p class="small">마지막 업데이트 · ${prettyDate(last)}</p>` : ''}
     </div>
     <div class="stats">
       <a class="stat" href="#words"><b>${words.length}</b><span>단어 · 표현${words.length ? ` (✓${words.filter(isLearned).length})` : ''}</span></a>
       <a class="stat" href="#scripts"><b>${scripts.length}</b><span>스크립트</span></a>
-      <div class="stat"><b style="font-size:16px;line-height:33px">${latestDate() ? latestDate().slice(5).replace('-', '.') : '-'}</b><span>마지막 업데이트</span></div>
+      <a class="stat" href="#dialogs"><b>${dialogs.length}</b><span>Dialog</span></a>
     </div>
 
     <div class="section-title">최근 단어 <a href="#words">전체 보기 ›</a></div>
@@ -94,7 +101,11 @@ function renderHome() {
 
     <div class="section-title">최근 스크립트 <a href="#scripts">전체 보기 ›</a></div>
     ${recentScripts.length ? recentScripts.map(scriptCard).join('')
-    : `<div class="card empty"><span class="big">🎬</span>아직 스크립트가 없어요</div>`}`;
+    : `<div class="card empty"><span class="big">🎬</span>아직 스크립트가 없어요</div>`}
+
+    <div class="section-title">최근 Dialog <a href="#dialogs">전체 보기 ›</a></div>
+    ${recentDialogs.length ? recentDialogs.map(dialogCard).join('')
+    : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}`;
 }
 
 /* ---------- 단어 ---------- */
@@ -295,6 +306,98 @@ function renderScript(id) {
     showKo = !showKo;
     e.target.classList.toggle('on', showKo);
     $('#lines').classList.toggle('hide-ko', !showKo);
+  });
+}
+
+/* ---------- Dialog ----------
+   메신저처럼 말풍선으로 보여주고, 한쪽 역할을 가려서 말하기 연습을 할 수 있어요. */
+function dialogCard(d) {
+  const speakers = [...new Set((d.lines || []).map(l => l.speaker).filter(Boolean))];
+  return `
+    <a class="card script-item" href="#dialog/${encodeURIComponent(d.id)}">
+      <h3>${esc(d.title)}</h3>
+      <div class="meta">${[d.situation, speakers.join(' · '), prettyDate(d.date)].filter(Boolean).map(esc).join(' · ')}</div>
+      ${d.summary ? `<p>${esc(d.summary)}</p>` : ''}
+    </a>`;
+}
+
+function renderDialogs() {
+  setTitle('Dialog');
+  const items = [...dialogs].sort(byDateDesc);
+  view.innerHTML = items.length ? items.map(dialogCard).join('')
+    : `<div class="empty"><span class="big">💬</span>아직 Dialog가 없어요<br><span class="small">대화문을 보내 주시면 여기에 정리돼요</span></div>`;
+}
+
+let dlgShowKo = true;
+let dlgHide = ''; // 가릴 화자 이름 ('' = 모두 보기)
+
+function renderDialog(id) {
+  const d = dialogs.find(x => x.id === id);
+  if (!d) { setTitle('Dialog'); view.innerHTML = `<div class="empty"><span class="big">🔍</span>Dialog를 찾을 수 없어요<br><a class="small" href="#dialogs" style="color:var(--primary)">목록으로 ›</a></div>`; return; }
+  setTitle(d.title);
+  const lines = d.lines || [];
+  const exprs = d.expressions || [];
+  const speakers = [...new Set(lines.map(l => l.speaker).filter(Boolean))];
+  if (dlgHide && !speakers.includes(dlgHide)) dlgHide = '';
+  const hasKo = lines.some(l => l.ko);
+  const fullText = lines.map(l => l.en).join(' ');
+
+  view.innerHTML = `
+    <div class="card script-top">
+      <h2>${esc(d.title)}</h2>
+      <div class="meta">${[d.situation, prettyDate(d.date)].filter(Boolean).map(esc).join(' · ')}</div>
+      ${d.summary ? `<p>${esc(d.summary)}</p>` : ''}
+      <div class="toggle-row" style="flex-wrap:wrap">
+        ${hasKo ? `<button class="chip ${dlgShowKo ? 'on' : ''}" id="dk">해석 보기</button>` : ''}
+        <button class="chip" data-speak="${esc(fullText)}">🔊 전체 듣기</button>
+      </div>
+      ${speakers.length > 1 ? `
+        <div class="muted small" style="margin:8px 2px 6px;font-weight:700">🎭 역할 연습 — 가릴 사람을 고르고, 먼저 말해 본 뒤 눌러서 확인하세요</div>
+        <div class="chip-row" id="roles">
+          <button class="chip ${!dlgHide ? 'on' : ''}" data-role="">모두 보기</button>
+          ${speakers.map(sp => `<button class="chip ${dlgHide === sp ? 'on' : ''}" data-role="${esc(sp)}">${esc(sp)} 가리기</button>`).join('')}
+        </div>` : ''}
+    </div>
+
+    <div class="chat ${dlgShowKo ? '' : 'hide-ko'}" id="chat">
+      ${lines.map(l => {
+        const idx = speakers.indexOf(l.speaker);
+        const right = idx % 2 === 1;
+        const hidden = dlgHide && l.speaker === dlgHide;
+        return `
+        <div class="msg ${right ? 'right' : ''} ${hidden ? 'masked' : ''}">
+          ${l.speaker ? `<div class="name">${esc(l.speaker)}</div>` : ''}
+          <div class="bubble-row">
+            <div class="bubble">
+              <div class="en">${highlight(l.en || '', exprs.map(e => e.phrase))}</div>
+              ${l.ko ? `<div class="ko">${esc(l.ko)}</div>` : ''}
+            </div>
+            ${speakBtn(l.en || '')}
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+
+    ${exprs.length ? `
+      <div class="section-title">핵심 표현 <small>${exprs.length}개</small></div>
+      <div class="card">${exprs.map(e => `<div class="expr"><b>${esc(e.phrase)}</b><span>${esc(e.meaning)}</span></div>`).join('')}</div>` : ''}`;
+
+  $('#dk')?.addEventListener('click', e => {
+    dlgShowKo = !dlgShowKo;
+    e.target.classList.toggle('on', dlgShowKo);
+    $('#chat').classList.toggle('hide-ko', !dlgShowKo);
+  });
+  $('#roles')?.addEventListener('click', e => {
+    const c = e.target.closest('[data-role]'); if (!c) return;
+    dlgHide = c.dataset.role;
+    const y = window.scrollY;
+    renderDialog(id);
+    window.scrollTo(0, y);
+  });
+  // 가린 말풍선을 누르면 그 줄만 보기
+  $('#chat').addEventListener('click', e => {
+    const m = e.target.closest('.msg.masked, .msg.peek');
+    if (m && !e.target.closest('[data-speak]')) { m.classList.toggle('masked'); m.classList.toggle('peek'); }
   });
 }
 

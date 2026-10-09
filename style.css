@@ -59,7 +59,7 @@ a { color: inherit; text-decoration: none; }
 main { max-width: 680px; margin: 0 auto; padding: 4px 16px calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 28px); }
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   height: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom);
   background: var(--surface); border-top: 1px solid var(--line);
 }
@@ -68,7 +68,7 @@ main { max-width: 680px; margin: 0 auto; padding: 4px 16px calc(var(--tabbar-h) 
 .tabbar a.active { color: var(--primary); }
 .tabbar a.active .ti { filter: none; opacity: 1; }
 @media (min-width: 760px) {
-  .tabbar { left: 50%; transform: translateX(-50%); bottom: 16px; width: 440px; height: var(--tabbar-h); padding: 0; border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); }
+  .tabbar { left: 50%; transform: translateX(-50%); bottom: 16px; width: 520px; height: var(--tabbar-h); padding: 0; border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); }
 }
 
 /* ---------- common ---------- */
@@ -101,6 +101,7 @@ input[type=search]:focus { outline: 2px solid var(--primary); outline-offset: -1
 .hero { margin: 4px 4px 16px; }
 .hero h2 { margin: 0; font-size: 24px; letter-spacing: -.03em; }
 .hero p { margin: 2px 0 0; color: var(--muted); }
+.hero p.small { margin-top: 4px; font-size: 13px; }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .stat { background: var(--surface); border-radius: 16px; padding: 12px 8px; text-align: center; box-shadow: var(--shadow); }
 .stat b { display: block; font-size: 22px; letter-spacing: -.02em; }
@@ -210,3 +211,24 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
   font-size: 14px; font-weight: 600; transition: .25s; max-width: calc(100% - 32px); text-align: center;
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ---------- Dialog (말풍선) ---------- */
+.chat { display: flex; flex-direction: column; gap: 12px; margin: 4px 0 8px; }
+.msg { display: flex; flex-direction: column; align-items: flex-start; max-width: 88%; }
+.msg.right { align-self: flex-end; align-items: flex-end; }
+.msg .name { font-size: 12px; font-weight: 700; color: var(--muted); margin: 0 6px 3px; }
+.bubble-row { display: flex; align-items: flex-end; gap: 6px; }
+.msg.right .bubble-row { flex-direction: row-reverse; }
+.bubble {
+  background: var(--surface); box-shadow: var(--shadow);
+  padding: 10px 14px; border-radius: 18px 18px 18px 6px;
+}
+.msg.right .bubble { background: var(--primary-soft); border-radius: 18px 18px 6px 18px; }
+.bubble .en { font-size: 17px; line-height: 1.5; }
+.bubble .ko { font-size: 14px; color: var(--muted); margin-top: 3px; }
+.hide-ko .bubble .ko { display: none; }
+.msg.masked .bubble { cursor: pointer; }
+.msg.masked .bubble .en, .msg.masked .bubble .ko { filter: blur(7px); user-select: none; }
+.msg.masked .bubble::after { content: '눌러서 확인'; display: block; font-size: 11px; font-weight: 700; color: var(--primary); margin-top: 4px; }
+.msg.peek .bubble { outline: 2px dashed var(--primary); outline-offset: 2px; cursor: pointer; }
+.msg .speak { margin-bottom: 2px; }

@@ -57,4 +57,10 @@ window.CONTENT = {
      id: 주소에 쓰이는 이름(영문), title, source: 출처, date, summary: 한 줄 요약,
      lines: [{ speaker, en, ko }], expressions: [{ phrase, meaning }] — 본문에서 굵게 표시돼요 */
   scripts: [],
+
+  /* ---------- Dialog ----------
+     id: 주소에 쓰이는 이름(영문), title, situation: 상황, date, summary: 한 줄 요약,
+     lines: [{ speaker, en, ko }] — 첫 번째 화자는 왼쪽, 두 번째 화자는 오른쪽 말풍선,
+     expressions: [{ phrase, meaning }] — 본문에서 형광펜으로 표시돼요 */
+  dialogs: [],
 };
