@@ -21,17 +21,35 @@ const byDateDesc = (a, b) => (b.date || '').localeCompare(a.date || '');
 const latestDate = () => [...words, ...scripts].map(x => x.date || '').sort().pop();
 
 /* ---------- 발음 듣기 ---------- */
-function speak(text) {
-  if (!('speechSynthesis' in window)) return;
+// 기기에 있는 미국 영어 목소리 중 자연스러운 것을 우선 선택
+let enVoice = null;
+function pickVoice() {
+  const vs = speechSynthesis.getVoices().filter(v => /^en[-_]US/i.test(v.lang));
+  enVoice = vs.find(v => /Samantha|Ava|Allison|Google US English|Aria|Jenny|Zira/i.test(v.name))
+    || vs.find(v => v.localService) || vs[0] || null;
+}
+if ('speechSynthesis' in window) {
+  pickVoice();
+  speechSynthesis.addEventListener?.('voiceschanged', pickVoice);
+}
+
+let speakingBtn = null;
+function speak(text, btn) {
+  if (!('speechSynthesis' in window)) return alert('이 브라우저는 발음 듣기를 지원하지 않아요.');
   speechSynthesis.cancel();
+  speakingBtn?.classList.remove('speaking');
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'en-US';
+  if (enVoice) u.voice = enVoice;
   u.rate = 0.9;
+  speakingBtn = btn || null;
+  btn?.classList.add('speaking');
+  u.onend = u.onerror = () => btn?.classList.remove('speaking');
   speechSynthesis.speak(u);
 }
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-speak]');
-  if (b) { e.preventDefault(); e.stopPropagation(); speak(b.dataset.speak); }
+  if (b) { e.preventDefault(); e.stopPropagation(); speak(b.dataset.speak, b.closest('.word')?.querySelector('.speak') || b); }
 });
 const speakBtn = text => `<button class="speak" data-speak="${esc(text)}" aria-label="발음 듣기">🔊</button>`;
 
@@ -70,7 +88,7 @@ function renderHome() {
 
     <div class="section-title">최근 단어 <a href="#words">전체 보기 ›</a></div>
     ${recentWords.length ? `<div class="mini-words">${recentWords.map(w => `
-      <a class="card" href="#words"><div class="w">${esc(w.word)}</div><div class="m">${esc(w.meaning)}</div></a>`).join('')}</div>`
+      <a class="card" href="#words"><div class="w">${esc(w.word)}</div>${w.ipa ? `<div class="ipa">${esc(w.ipa)}</div>` : ''}<div class="m">${esc(w.meaning)}</div></a>`).join('')}</div>`
     : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
 
     <div class="section-title">최근 스크립트 <a href="#scripts">전체 보기 ›</a></div>
@@ -87,7 +105,10 @@ function wordCard(w) {
   return `
     <article class="card word">
       <div class="word-head">
-        <div style="flex:1;min-width:0"><span class="w">${esc(w.word)}</span>${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>
+        <div style="flex:1;min-width:0">
+          <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}
+          ${w.ipa ? `<div class="ipa">${esc(w.ipa)}</div>` : ''}
+        </div>
         ${speakBtn(w.word)}
       </div>
       <div class="m">${esc(w.meaning)}</div>

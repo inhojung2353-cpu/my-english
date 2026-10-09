@@ -77,6 +77,11 @@ main { max-width: 680px; margin: 0 auto; padding: 4px 16px calc(var(--tabbar-h) 
 .empty .big { font-size: 40px; display: block; margin-bottom: 8px; }
 .speak { flex: none; border: 0; background: var(--surface-2); border-radius: 10px; width: 34px; height: 34px; font-size: 15px; }
 .speak:active { transform: scale(.94); }
+.speak.speaking { background: var(--primary); animation: pulse 1s ease-in-out infinite; }
+@keyframes pulse { 50% { transform: scale(1.08); } }
+.ipa { font-family: "Lucida Sans Unicode", "Arial Unicode MS", "Segoe UI", sans-serif; font-size: 14px; color: var(--primary); letter-spacing: .01em; }
+.mini-words .ipa { font-size: 12px; }
+.word-head .w { cursor: pointer; }
 .pill { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--primary-soft); color: var(--primary); vertical-align: middle; }
 
 .chip-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
