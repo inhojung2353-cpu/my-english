@@ -266,7 +266,7 @@ function parseScript(text) {
     if (!t) return;
     const prev = lines[lines.length - 1];
     if (prev && !newSpeaker && !/[.?!"”…)\]]$/.test(prev.en) && prev.en.length < 220) prev.en += ' ' + t;
-    else lines.push({ en: t, i });
+    else lines.push({ en: t, i, turn: newSpeaker });
   });
   return { raw, lines };
 }
@@ -366,7 +366,7 @@ function bindScriptBox(s) {
   $('#sc-save')?.addEventListener('click', () => {
     const t = $('#sc-text').value.trim();
     if (t.split(/\n/).length < 20) { toast('원문이 너무 짧아요. 전체를 붙여 넣어 주세요'); return; }
-    toast(saveScriptText(s.id, t) ? '저장했어요! 파트를 골라 쉐도잉해 보세요' : '저장에 실패했어요');
+    toast(saveScriptText(s.id, t) ? '저장했어요! 파트를 골라 읽어 보세요' : '저장에 실패했어요');
     route();
   });
   $('#sc-edit')?.addEventListener('click', () => {
@@ -379,27 +379,9 @@ function bindScriptBox(s) {
   });
 }
 
-/* 파트 화면: 쉐도잉 + 학습 노트 */
-let shadow = { rate: 0.9, hideEn: false, playing: false, idx: -1, timer: null };
-function stopShadow() {
-  shadow.playing = false;
-  clearTimeout(shadow.timer);
-  if ('speechSynthesis' in window) speechSynthesis.cancel();
-  $$('.sh-line.now').forEach(x => x.classList.remove('now'));
-  const b = $('#sh-play'); if (b) b.textContent = '▶ 자동 쉐도잉';
-}
-window.addEventListener('hashchange', stopShadow);
-
-function speakLine(text, onend) {
-  if (!('speechSynthesis' in window)) return onend?.();
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'en-US';
-  if (enVoice) u.voice = enVoice;
-  u.rate = shadow.rate;
-  u.onend = u.onerror = () => onend?.();
-  speechSynthesis.speak(u);
-}
+/* 파트 화면: 영화 보면서 읽는 대본 + 학습 노트 */
+const READ_SIZES = [{ k: 's', label: '가', px: 16 }, { k: 'm', label: '가', px: 19 }, { k: 'l', label: '가', px: 22 }];
+let readSize = readJSON(PREFS_KEY, {}).readSize || 'm';
 
 function renderPart(s, partNo) {
   const parts = s.parts || [];
@@ -419,26 +401,17 @@ function renderPart(s, partNo) {
       ${(p.scenes || []).length ? `<ol class="scenes">${p.scenes.map(x => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
     </div>
 
-    <div class="section-title">🎧 쉐도잉 <small>${lines.length ? `${lines.length}문장` : ''}</small></div>
+    <div class="section-title">📖 대본 <small>${lines.length ? `${lines.length}문장` : ''}</small></div>
     ${lines.length ? `
-      <div class="card sh-tools">
-        <button class="btn primary grow" id="sh-play">▶ 자동 쉐도잉</button>
-        <div class="row" style="margin-top:8px;flex-wrap:wrap">
-          ${[0.7, 0.9, 1].map(r => `<button class="chip ${shadow.rate === r ? 'on' : ''}" data-rate="${r}">${r}x</button>`).join('')}
-          <button class="chip ${shadow.hideEn ? 'on' : ''}" id="sh-hide">🙈 영어 가리기</button>
-        </div>
-        <p class="muted small" style="margin:8px 2px 0">한 문장을 들려준 뒤, 따라 말할 시간만큼 기다렸다가 다음 문장으로 넘어가요. 문장을 누르면 그 문장부터 시작해요.</p>
+      <div class="read-tools">
+        <span class="muted small">글자 크기</span>
+        ${READ_SIZES.map(z => `<button class="chip size-${z.k} ${readSize === z.k ? 'on' : ''}" data-size="${z.k}">${z.label}</button>`).join('')}
       </div>
-      <div class="card dlg ${shadow.hideEn ? 'hide-en' : ''}" id="sh-lines">
-        ${lines.map((l, i) => `
-          <div class="dlg-line sh-line" data-i="${i}">
-            <span class="who">${i + 1}</span>
-            <div class="en">${esc(l.en)}</div>
-            ${speakBtn(l.en)}
-          </div>`).join('')}
+      <div class="card reader" id="reader" style="--read-size:${READ_SIZES.find(z => z.k === readSize).px}px">
+        ${lines.map((l, i) => `<p class="${l.turn ? 'turn' : ''}"><span class="no">${i + 1}</span>${esc(l.en)}</p>`).join('')}
       </div>`
     : `<div class="card">
-        <p class="muted small" style="margin:0 0 10px">원문을 아직 붙여 넣지 않았어요. 영화 페이지에서 원문을 한 번 붙여 넣으면 여기에 이 파트의 문장이 나오고 쉐도잉할 수 있어요.</p>
+        <p class="muted small" style="margin:0 0 10px">원문을 아직 붙여 넣지 않았어요. 영화 페이지에서 원문을 한 번 붙여 넣으면 여기에 이 파트의 대본이 나와요.</p>
         <a class="btn block" href="#script/${encodeURIComponent(s.id)}">원문 붙여 넣으러 가기 ›</a>
       </div>`}
 
@@ -446,7 +419,7 @@ function renderPart(s, partNo) {
       <div class="section-title">💬 숙어 · 표현 <small>${p.expressions.length}개</small></div>
       ${p.expressions.map(e => `
         <article class="card word">
-          <div class="word-head"><div class="grow"><span class="w">${esc(e.phrase)}</span></div>${speakBtn(e.phrase)}</div>
+          <div class="word-head"><div class="grow"><span class="w">${esc(e.phrase)}</span></div></div>
           <div class="m">${esc(e.meaning)}</div>
           ${e.scene ? `<div class="muted small" style="margin-top:4px">🎬 ${esc(e.scene)}</div>` : ''}
           ${e.example ? `<div class="ex"><div class="en">${esc(e.example)}</div>${e.exampleKo ? `<div class="ko">${esc(e.exampleKo)}</div>` : ''}</div>` : ''}
@@ -458,7 +431,7 @@ function renderPart(s, partNo) {
         <article class="card word">
           <div class="word-head"><div class="grow"><span class="w" style="font-size:17px">${esc(g.point)}</span></div></div>
           <div class="m" style="font-weight:500">${esc(g.explain)}</div>
-          ${g.example ? `<div class="ex"><div class="row-between"><div class="en grow">${esc(g.example)}</div>${speakBtn(g.example)}</div>${g.exampleKo ? `<div class="ko">${esc(g.exampleKo)}</div>` : ''}</div>` : ''}
+          ${g.example ? `<div class="ex"><div class="en">${esc(g.example)}</div>${g.exampleKo ? `<div class="ko">${esc(g.exampleKo)}</div>` : ''}</div>` : ''}
         </article>`).join('')}` : ''}
 
     <div class="pager">
@@ -466,43 +439,12 @@ function renderPart(s, partNo) {
       ${next ? `<a class="card right" href="#script/${encodeURIComponent(s.id)}/${next.part}"><span class="muted small">다음 ›</span><b>Part ${next.part} · ${esc(next.title)}</b></a>` : '<span></span>'}
     </div>`;
 
-  if (!lines.length) return;
-  const box = $('#sh-lines');
-  const mark = i => {
-    $$('.sh-line.now', box).forEach(x => x.classList.remove('now'));
-    const el = box.querySelector(`[data-i="${i}"]`);
-    if (el) { el.classList.add('now'); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-  };
-  const playFrom = i => {
-    if (i >= lines.length) { stopShadow(); toast('이 파트 끝! 👏'); return; }
-    shadow.playing = true; shadow.idx = i;
-    $('#sh-play').textContent = '⏸ 멈추기';
-    mark(i);
-    const started = Date.now();
-    speakLine(lines[i].en, () => {
-      if (!shadow.playing) return;
-      // 따라 말할 시간: 들은 시간만큼 + 0.8초
-      const wait = Math.max(1200, (Date.now() - started) + 800);
-      shadow.timer = setTimeout(() => shadow.playing && playFrom(i + 1), wait);
-    });
-  };
-  $('#sh-play').onclick = () => shadow.playing ? stopShadow() : playFrom(Math.max(0, shadow.idx));
-  $$('[data-rate]').forEach(b => b.onclick = () => {
-    shadow.rate = Number(b.dataset.rate);
-    $$('[data-rate]').forEach(x => x.classList.toggle('on', x === b));
+  $$('[data-size]').forEach(btn => btn.onclick = () => {
+    readSize = btn.dataset.size;
+    writeJSON(PREFS_KEY, { ...readJSON(PREFS_KEY, {}), readSize });
+    $$('[data-size]').forEach(x => x.classList.toggle('on', x === btn));
+    $('#reader').style.setProperty('--read-size', READ_SIZES.find(z => z.k === readSize).px + 'px');
   });
-  $('#sh-hide').onclick = e => {
-    shadow.hideEn = !shadow.hideEn;
-    e.target.classList.toggle('on', shadow.hideEn);
-    box.classList.toggle('hide-en', shadow.hideEn);
-  };
-  box.addEventListener('click', e => {
-    if (e.target.closest('[data-speak]')) return;
-    const line = e.target.closest('.sh-line'); if (!line) return;
-    if (shadow.hideEn && !line.classList.contains('peek')) { line.classList.add('peek'); return; }
-    stopShadow(); playFrom(Number(line.dataset.i));
-  });
-  shadow.idx = -1;
 }
 
 /* ---------- Dialog ----------

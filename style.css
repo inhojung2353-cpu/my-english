@@ -241,12 +241,23 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
 .pager .card { display: flex; flex-direction: column; gap: 2px; margin: 0; font-size: 14px; }
 .pager .card.right { text-align: right; }
 
-/* ---------- 스크립트 쉐도잉 ---------- */
+/* ---------- 스크립트 읽기 ---------- */
 .scenes { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.7; }
-.sh-tools .btn.grow { width: 100%; }
-.sh-line { cursor: pointer; border-radius: 10px; transition: background .2s; }
-.sh-line .who { color: var(--muted); font-weight: 600; font-size: 12px; padding-top: 4px; min-width: 26px; }
-.sh-line.now { background: var(--primary-soft); margin: 0 -10px; padding-left: 10px; padding-right: 10px; }
-.sh-line.now .who { color: var(--primary); font-weight: 800; }
-.hide-en .sh-line .en { filter: blur(7px); user-select: none; }
-.hide-en .sh-line.peek .en { filter: none; }
+.read-tools { display: flex; align-items: center; justify-content: flex-end; gap: 6px; margin: -2px 2px 8px; }
+.read-tools .chip { width: 36px; height: 32px; padding: 0; display: grid; place-items: center; }
+.read-tools .size-s { font-size: 12px; }
+.read-tools .size-m { font-size: 15px; }
+.read-tools .size-l { font-size: 18px; }
+.reader { padding: 18px 18px 18px 12px; }
+.reader p {
+  position: relative; margin: 0; padding: 5px 0 5px 34px;
+  font-size: var(--read-size, 19px); line-height: 1.65; letter-spacing: .005em;
+  word-break: keep-all; overflow-wrap: break-word;
+}
+.reader p.turn { margin-top: 10px; }
+.reader p:first-child { margin-top: 0; }
+.reader .no {
+  position: absolute; left: 0; top: calc(5px + (var(--read-size, 19px) * 1.65 - 14px) / 2);
+  width: 26px; text-align: right; font-size: 11px; line-height: 14px; color: var(--muted); opacity: .7;
+  font-variant-numeric: tabular-nums; user-select: none;
+}
