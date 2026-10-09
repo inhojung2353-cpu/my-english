@@ -232,3 +232,19 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
 .msg.masked .bubble::after { content: '눌러서 확인'; display: block; font-size: 11px; font-weight: 700; color: var(--primary); margin-top: 4px; }
 .msg.peek .bubble { outline: 2px dashed var(--primary); outline-offset: 2px; cursor: pointer; }
 .msg .speak { margin-bottom: 2px; }
+
+/* Dialog 목록 · Day */
+.dialog-item { display: flex; gap: 14px; align-items: center; }
+.dialog-item .day { flex: none; width: 52px; height: 52px; border-radius: 14px; background: var(--primary-soft); color: var(--primary); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; line-height: 1.1; text-transform: uppercase; letter-spacing: .04em; }
+.dialog-item .day b { font-size: 20px; letter-spacing: -.02em; }
+.dialog-item h3 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
+.dialog-item .meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.km { font-size: 14px; color: var(--primary); font-weight: 600; }
+.extra { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.extra:first-child { padding-top: 0; }
+.extra:last-child { border-bottom: 0; padding-bottom: 0; }
+.extra .en { font-size: 16px; }
+.extra .ko { font-size: 14px; color: var(--muted); margin-top: 2px; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 18px; }
+.pager .card { display: flex; flex-direction: column; gap: 2px; margin: 0; font-size: 14px; }
+.pager .card.right { text-align: right; }

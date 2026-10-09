@@ -19,6 +19,7 @@ function prettyDate(k) {
   return `${y}년 ${m}월 ${d}일 (${'일월화수목금토'[date.getDay()]})`;
 }
 const byDateDesc = (a, b) => (b.date || '').localeCompare(a.date || '');
+const byDayDesc = (a, b) => (b.day || 0) - (a.day || 0) || byDateDesc(a, b);
 const latestDate = () => [...words, ...scripts, ...dialogs].map(x => x.date || '').sort().pop();
 
 /* ---------- 발음 듣기 ---------- */
@@ -80,7 +81,7 @@ function renderHome() {
   setTitle('My English');
   const recentWords = [...words].sort(byDateDesc).slice(0, 6);
   const recentScripts = [...scripts].sort(byDateDesc).slice(0, 3);
-  const recentDialogs = [...dialogs].sort(byDateDesc).slice(0, 3);
+  const recentDialogs = [...dialogs].sort(byDayDesc).slice(0, 3);
   const last = latestDate();
   view.innerHTML = `
     <div class="hero">
@@ -312,20 +313,38 @@ function renderScript(id) {
 /* ---------- Dialog ----------
    메신저처럼 말풍선으로 보여주고, 한쪽 역할을 가려서 말하기 연습을 할 수 있어요. */
 function dialogCard(d) {
-  const speakers = [...new Set((d.lines || []).map(l => l.speaker).filter(Boolean))];
   return `
-    <a class="card script-item" href="#dialog/${encodeURIComponent(d.id)}">
-      <h3>${esc(d.title)}</h3>
-      <div class="meta">${[d.situation, speakers.join(' · '), prettyDate(d.date)].filter(Boolean).map(esc).join(' · ')}</div>
-      ${d.summary ? `<p>${esc(d.summary)}</p>` : ''}
+    <a class="card dialog-item" href="#dialog/${encodeURIComponent(d.id)}">
+      ${d.day ? `<div class="day">Day<b>${d.day}</b></div>` : ''}
+      <div class="grow">
+        <h3>${esc(d.key || d.title)}</h3>
+        ${d.keyMeaning ? `<div class="km">${esc(d.keyMeaning)}</div>` : ''}
+        <div class="meta">${esc(d.key ? d.title : (d.situation || prettyDate(d.date)))}</div>
+      </div>
     </a>`;
 }
 
+// Day 순서 (Day 번호가 없으면 날짜순)
+const dialogOrder = () => [...dialogs].sort((a, b) => (a.day || 1e9) - (b.day || 1e9) || (a.date || '').localeCompare(b.date || ''));
+let dialogQuery = '';
+
 function renderDialogs() {
   setTitle('Dialog');
-  const items = [...dialogs].sort(byDateDesc);
-  view.innerHTML = items.length ? items.map(dialogCard).join('')
-    : `<div class="empty"><span class="big">💬</span>아직 Dialog가 없어요<br><span class="small">대화문을 보내 주시면 여기에 정리돼요</span></div>`;
+  if (!dialogs.length) {
+    view.innerHTML = `<div class="empty"><span class="big">💬</span>아직 Dialog가 없어요<br><span class="small">대화문을 보내 주시면 여기에 정리돼요</span></div>`;
+    return;
+  }
+  view.innerHTML = `
+    <div class="tools"><input type="search" id="dq" placeholder="표현이나 문장으로 검색 (예: make sure)" value="${esc(dialogQuery)}" autocomplete="off"></div>
+    <div id="dlist"></div>`;
+  const draw = () => {
+    const q = dialogQuery.trim().toLowerCase().replace(/'/g, '’');
+    const items = dialogOrder().filter(d => !q || [d.key, d.keyMeaning, d.title, d.situation, ...(d.lines || []).flatMap(l => [l.en, l.ko])]
+      .some(f => (f || '').toLowerCase().includes(q)));
+    $('#dlist').innerHTML = items.length ? items.map(dialogCard).join('') : `<div class="empty">검색 결과가 없어요</div>`;
+  };
+  draw();
+  $('#dq').addEventListener('input', e => { dialogQuery = e.target.value; draw(); });
 }
 
 let dlgShowKo = true;
@@ -334,9 +353,13 @@ let dlgHide = ''; // 가릴 화자 이름 ('' = 모두 보기)
 function renderDialog(id) {
   const d = dialogs.find(x => x.id === id);
   if (!d) { setTitle('Dialog'); view.innerHTML = `<div class="empty"><span class="big">🔍</span>Dialog를 찾을 수 없어요<br><a class="small" href="#dialogs" style="color:var(--primary)">목록으로 ›</a></div>`; return; }
-  setTitle(d.title);
+  setTitle(d.day ? `Day ${d.day}` : d.title);
   const lines = d.lines || [];
   const exprs = d.expressions || [];
+  const marks = d.marks || exprs.map(e => e.phrase);
+  const order = dialogOrder();
+  const at = order.indexOf(d);
+  const prev = order[at - 1], next = order[at + 1];
   const speakers = [...new Set(lines.map(l => l.speaker).filter(Boolean))];
   if (dlgHide && !speakers.includes(dlgHide)) dlgHide = '';
   const hasKo = lines.some(l => l.ko);
@@ -344,8 +367,10 @@ function renderDialog(id) {
 
   view.innerHTML = `
     <div class="card script-top">
-      <h2>${esc(d.title)}</h2>
-      <div class="meta">${[d.situation, prettyDate(d.date)].filter(Boolean).map(esc).join(' · ')}</div>
+      ${d.day ? `<div class="pill">Day ${d.day}</div>` : ''}
+      <h2 style="margin-top:6px">${esc(d.key || d.title)}</h2>
+      ${d.keyMeaning ? `<div class="km">${esc(d.keyMeaning)}</div>` : ''}
+      <div class="meta" style="margin-top:6px">${[d.key ? d.title : '', d.situation].filter(Boolean).map(esc).join(' · ')}</div>
       ${d.summary ? `<p>${esc(d.summary)}</p>` : ''}
       <div class="toggle-row" style="flex-wrap:wrap">
         ${hasKo ? `<button class="chip ${dlgShowKo ? 'on' : ''}" id="dk">해석 보기</button>` : ''}
@@ -369,7 +394,7 @@ function renderDialog(id) {
           ${l.speaker ? `<div class="name">${esc(l.speaker)}</div>` : ''}
           <div class="bubble-row">
             <div class="bubble">
-              <div class="en">${highlight(l.en || '', exprs.map(e => e.phrase))}</div>
+              <div class="en">${highlight(l.en || '', marks)}</div>
               ${l.ko ? `<div class="ko">${esc(l.ko)}</div>` : ''}
             </div>
             ${speakBtn(l.en || '')}
@@ -380,7 +405,18 @@ function renderDialog(id) {
 
     ${exprs.length ? `
       <div class="section-title">핵심 표현 <small>${exprs.length}개</small></div>
-      <div class="card">${exprs.map(e => `<div class="expr"><b>${esc(e.phrase)}</b><span>${esc(e.meaning)}</span></div>`).join('')}</div>` : ''}`;
+      <div class="card">${exprs.map(e => `<div class="expr"><b>${esc(e.phrase)}</b><span>${esc(e.meaning)}</span></div>`).join('')}</div>` : ''}
+
+    ${(d.extras || []).length ? `
+      <div class="section-title">추가 예문</div>
+      <div class="card">${d.extras.map(x => `
+        <div class="extra"><div class="row-between"><div class="grow"><div class="en">${highlight(x.en, marks)}</div>${x.ko ? `<div class="ko">${esc(x.ko)}</div>` : ''}</div>${speakBtn(x.en)}</div></div>`).join('')}</div>` : ''}
+
+    ${prev || next ? `
+      <div class="pager">
+        ${prev ? `<a class="card" href="#dialog/${encodeURIComponent(prev.id)}"><span class="muted small">‹ 이전</span><b>${prev.day ? `Day ${prev.day} · ` : ''}${esc(prev.key || prev.title)}</b></a>` : '<span></span>'}
+        ${next ? `<a class="card right" href="#dialog/${encodeURIComponent(next.id)}"><span class="muted small">다음 ›</span><b>${next.day ? `Day ${next.day} · ` : ''}${esc(next.key || next.title)}</b></a>` : '<span></span>'}
+      </div>` : ''}`;
 
   $('#dk')?.addEventListener('click', e => {
     dlgShowKo = !dlgShowKo;
