@@ -1,5 +1,5 @@
 // 오프라인에서도 열리도록 앱 파일을 캐시합니다. 파일을 고치면 VERSION을 올려 주세요.
-const VERSION = 'v16';
+const VERSION = 'v17';
 const CACHE = `my-english-${VERSION}`;
 const FILES = ['./', 'index.html', 'style.css', 'app.js', 'data.js', 'manifest.json', 'icons/icon.svg', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png'];
 

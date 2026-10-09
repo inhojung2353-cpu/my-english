@@ -419,7 +419,7 @@ function renderPart(s, partNo) {
       <div class="section-title">📝 단어 <small>${p.words.length}개</small></div>
       <div class="card vlist">${p.words.map(w => `
         <div class="vrow">
-          <div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>
+          <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>${speakBtn(w.word)}</div>
           <div class="vm">${esc(w.meaning)}</div>
           ${w.example ? `<div class="vex"><div class="en">${esc(w.example)}</div>${w.exampleKo ? `<div class="ko">${esc(w.exampleKo)}</div>` : ''}</div>` : ''}
         </div>`).join('')}</div>` : ''}
