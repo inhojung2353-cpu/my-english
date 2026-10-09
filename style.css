@@ -1,35 +1,41 @@
 :root {
-  --bg: #f6f5fb;
-  --surface: #ffffff;
-  --surface-2: #f0eff7;
-  --text: #1c1b29;
-  --muted: #6b6a80;
-  --line: #e4e2ef;
-  --primary: #4f46e5;
-  --primary-soft: #e8e6ff;
-  --accent: #f97316;
-  --mark: #fff1c2;
-  --good: #16a34a;
-  --good-soft: #dcfce7;
+  /* 크림 노트 테마: 크림 종이 + 테라코타 + 세이지 */
+  --bg: #faf6f0;
+  --surface: #fffdf9;
+  --surface-2: #f3ece2;
+  --text: #2b2522;
+  --muted: #7a6a5d;
+  --line: #eadfd2;
+  --primary: #c8553d;
+  --primary-soft: #f6e3da;
+  --on-primary: #fff8f2;
+  --accent: #6f8f72;
+  --accent-soft: #e6eee3;
+  --mark: #fbe1b6;
+  --good: #5e8c61;
+  --good-soft: #e3eedf;
   --radius: 18px;
-  --shadow: 0 1px 2px rgba(20, 18, 50, .04), 0 4px 16px rgba(20, 18, 50, .06);
+  --shadow: 0 1px 2px rgba(70, 45, 25, .05), 0 6px 18px rgba(70, 45, 25, .06);
   --tabbar-h: 62px;
+  --serif: "Gowun Batang", Georgia, "AppleMyungjo", "Noto Serif KR", serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #12111a;
-    --surface: #1c1b27;
-    --surface-2: #262534;
-    --text: #ecebf5;
-    --muted: #9b9ab0;
-    --line: #2f2e3f;
-    --primary: #8b84ff;
-    --primary-soft: #2b2850;
-    --accent: #fb923c;
-    --mark: #4a3b12;
-    --good: #4ade80;
-    --good-soft: #163322;
+    --bg: #1c1815;
+    --surface: #26211c;
+    --surface-2: #312a24;
+    --text: #f2ebe3;
+    --muted: #a8998b;
+    --line: #3a322b;
+    --primary: #e07a5f;
+    --primary-soft: #3d2620;
+    --on-primary: #1c1815;
+    --accent: #9dbb9f;
+    --accent-soft: #2a352a;
+    --mark: #5a4318;
+    --good: #9dbb9f;
+    --good-soft: #2a352a;
     --shadow: none;
     color-scheme: dark;
   }
@@ -92,7 +98,7 @@ main { max-width: 680px; margin: 0 auto; padding: 4px 16px calc(var(--tabbar-h) 
 .chip-row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
 .chip-row::-webkit-scrollbar { display: none; }
 .chip { flex: none; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 600; }
-.chip.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+.chip.on { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
 
 input[type=search] { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-size: 16px; }
 input[type=search]:focus { outline: 2px solid var(--primary); outline-offset: -1px; }
@@ -177,10 +183,9 @@ mark { background: var(--mark); color: inherit; border-radius: 4px; padding: 0 2
   background: var(--surface-2); color: var(--text); font-weight: 700; font-size: 15px;
 }
 .btn:active { transform: scale(.98); }
-.btn.primary { background: var(--primary); color: #fff; }
+.btn.primary { background: var(--primary); color: var(--on-primary); }
 .btn.bad { background: var(--bad-soft); color: var(--bad); }
 .btn.block { display: flex; width: 100%; }
-@media (prefers-color-scheme: dark) { .btn.primary { color: var(--bg); } }
 textarea {
   display: block; width: 100%; padding: 12px 14px; border-radius: 12px;
   border: 1px solid var(--line); background: var(--surface-2); color: var(--text);
@@ -261,3 +266,28 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
   width: 26px; text-align: right; font-size: 11px; line-height: 14px; color: var(--muted); opacity: .7;
   font-variant-numeric: tabular-nums; user-select: none;
 }
+
+/* ---------- 크림 노트: 세리프 제목 · 종이 느낌 ---------- */
+.topbar h1, .hero h2, .script-top h2, .dialog-item h3, .script-item h3, .word-head .w, .mini-words .w {
+  font-family: var(--serif); font-weight: 700; letter-spacing: -.01em;
+}
+.topbar h1 { font-size: 23px; }
+.hero h2 { font-size: 26px; }
+.hero p { font-size: 15px; }
+.card { border: 1px solid var(--line); }
+.stat { border: 1px solid var(--line); }
+.stat b { font-family: var(--serif); color: var(--primary); }
+.section-title { color: var(--text); }
+.tabbar { background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.tabbar .ti { filter: grayscale(1) sepia(.35); }
+.dialog-item .day { background: var(--primary-soft); color: var(--primary); }
+.word .ex { border-left-color: var(--mark); }
+.word .note { background: var(--accent-soft); color: var(--text); }
+.km { color: var(--primary); }
+.pill { background: var(--primary-soft); color: var(--primary); }
+.comment { background: var(--accent-soft); }
+.dlg-line .who.alt, .line .sp.alt { color: var(--accent); }
+.line .sp.alt { background: var(--accent-soft); }
+input[type=search], textarea { background: var(--surface); }
+.seg { background: var(--surface-2); }
+@media (min-width: 760px) { .tabbar { border-color: var(--line); } }
