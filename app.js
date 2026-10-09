@@ -63,6 +63,7 @@ function route() {
   if (page === 'words') renderWords();
   else if (page === 'scripts') renderScripts();
   else if (page === 'script') renderScript(decodeURIComponent(id || ''));
+  else if (page === 'diary') renderDiary();
   else renderHome();
   window.scrollTo(0, 0);
 }
@@ -295,6 +296,224 @@ function renderScript(id) {
     e.target.classList.toggle('on', showKo);
     $('#lines').classList.toggle('hide-ko', !showKo);
   });
+}
+
+/* ---------- 일기 ----------
+   일기와 첨삭 결과는 이 기기의 브라우저에 저장됩니다.
+   첨삭은 요청문을 복사해 Claude에 붙여 넣고, 받은 답을 다시 붙여 넣는 방식이에요. */
+const DIARY_KEY = 'my-english-diaries';
+const DRAFT_KEY = 'my-english-diary-draft';
+let diaries = readJSON(DIARY_KEY, []);
+let diaryId = null; // 지금 보고 있는 일기 (null이면 새 일기)
+const saveDiaries = () => writeJSON(DIARY_KEY, diaries);
+
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+function correctionPrompt(text) {
+  return `You are my English tutor. I'm a Korean learner of English. Please correct my English diary below.
+
+Reply ONLY in this exact format. Keep the [SECTION] labels exactly as written, and write the explanations in Korean.
+
+[CORRECTED]
+(my whole diary rewritten in natural English, keeping my meaning and tone)
+
+[MISTAKES]
+- (my original phrase) → (corrected phrase) :: (short explanation in Korean)
+
+[EXPRESSIONS]
+- (useful natural English expression related to my diary) :: (meaning in Korean)
+
+[COMMENT]
+(one or two encouraging sentences in Korean)
+
+---
+My diary:
+${text}`;
+}
+
+// Claude 답변을 섹션별로 나누기. 형식이 조금 달라도(마크다운 굵게, 코드 블록 등) 최대한 읽어냄
+function parseCorrection(raw) {
+  const re = /^[\s*#>`_]*\[(CORRECTED|MISTAKES|EXPRESSIONS|COMMENT)\][\s*`_:]*$/gim;
+  const marks = [...raw.matchAll(re)];
+  if (!marks.length) return null;
+  const out = {};
+  marks.forEach((m, i) => {
+    const end = i + 1 < marks.length ? marks[i + 1].index : raw.length;
+    out[m[1].toUpperCase()] = raw.slice(m.index + m[0].length, end).replace(/^`{3}.*$/gm, '').trim();
+  });
+  const items = txt => (txt || '').split('\n')
+    .map(l => l.replace(/^\s*(?:[-*•]|\d+[.)])\s*/, '').trim())
+    .filter(Boolean)
+    .map(l => {
+      const [a, ...b] = l.split('::');
+      return { left: a.trim().replace(/\*\*/g, ''), right: b.join('::').trim() };
+    });
+  return {
+    corrected: (out.CORRECTED || '').replace(/\*\*/g, ''),
+    mistakes: items(out.MISTAKES).map(({ left, right }) => {
+      const [from, ...to] = left.split(/\s*(?:→|->|=>)\s*/);
+      return { from: from.replace(/^["“]|["”]$/g, ''), to: to.join(' → ').replace(/^["“]|["”]$/g, ''), why: right };
+    }),
+    expressions: items(out.EXPRESSIONS).map(({ left, right }) => ({ phrase: left, meaning: right })),
+    comment: out.COMMENT || '',
+  };
+}
+
+// 단어 단위 비교(LCS)로 고친 부분 표시
+function diffHtml(a, b) {
+  const A = a.split(/(\s+)/).filter(Boolean), B = b.split(/(\s+)/).filter(Boolean);
+  if (A.length * B.length > 4e6) return esc(b);
+  const n = A.length, m = B.length;
+  const dp = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+    dp[i][j] = A[i] === B[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+  const out = [];
+  const push = (kind, t) => { const last = out[out.length - 1]; if (last && last.kind === kind) last.t += t; else out.push({ kind, t }); };
+  let i = 0, j = 0;
+  while (i < n && j < m) {
+    if (A[i] === B[j]) { push('same', A[i]); i++; j++; }
+    else if (dp[i + 1][j] >= dp[i][j + 1]) push('del', A[i++]);
+    else push('ins', B[j++]);
+  }
+  while (i < n) push('del', A[i++]);
+  while (j < m) push('ins', B[j++]);
+  return out.map(p => p.kind === 'same' ? esc(p.t)
+    : p.t.trim() ? `<${p.kind}>${esc(p.t)}</${p.kind}>` : (p.kind === 'ins' ? esc(p.t) : '')).join('');
+}
+
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand('copy'); ta.remove(); return ok;
+  }
+}
+
+let toastTimer;
+function toast(msg) {
+  let t = $('#toast');
+  if (!t) { t = document.createElement('div'); t.id = 'toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function resultHtml(text, raw) {
+  const r = parseCorrection(raw);
+  if (!r) return `
+    <div class="section-title">첨삭 결과</div>
+    <div class="card"><p class="muted small" style="margin:0 0 8px">정해진 형식이 아니라서 받은 내용을 그대로 보여드려요.</p><div class="prose">${esc(raw)}</div></div>`;
+  return `
+    ${r.corrected ? `
+      <div class="section-title">바뀐 부분 <small><del>지운 곳</del> <ins>고친 곳</ins></small></div>
+      <div class="card diff">${diffHtml(text, r.corrected)}</div>
+      <div class="section-title">고친 글</div>
+      <div class="card"><div class="row-between"><div class="prose grow">${esc(r.corrected)}</div>${speakBtn(r.corrected)}</div></div>` : ''}
+    ${r.mistakes.length ? `
+      <div class="section-title">고친 이유 <small>${r.mistakes.length}개</small></div>
+      <div class="card">${r.mistakes.map(m => `
+        <div class="mistake">
+          <div><span class="from">${esc(m.from)}</span>${m.to ? ` → <span class="to">${esc(m.to)}</span>` : ''}</div>
+          ${m.why ? `<div class="why">${esc(m.why)}</div>` : ''}
+        </div>`).join('')}</div>` : ''}
+    ${r.expressions.length ? `
+      <div class="section-title">배울 표현</div>
+      <div class="card">${r.expressions.map(e => `<div class="expr"><b>${esc(e.phrase)}</b><span>${esc(e.meaning)}</span></div>`).join('')}</div>` : ''}
+    ${r.comment ? `<div class="card comment">💬 ${esc(r.comment)}</div>` : ''}`;
+}
+
+function renderDiary() {
+  setTitle('일기');
+  const cur = diaries.find(d => d.id === diaryId);
+  if (!cur) diaryId = null;
+  const draft = readJSON(DRAFT_KEY, {});
+  const text = cur ? cur.text : (draft.text || '');
+  const raw = cur ? (cur.result || '') : (draft.result || '');
+  const date = cur ? cur.date : todayKey();
+  const past = [...diaries].sort((a, b) => b.date.localeCompare(a.date) || b.updatedAt - a.updatedAt);
+
+  view.innerHTML = `
+    <div class="card">
+      <div class="row-between" style="margin-bottom:8px">
+        <b>${cur ? prettyDate(date) + ' 일기' : '✍️ 오늘의 영어 일기'}</b>
+        ${cur ? `<button class="chip" id="new-diary">＋ 새 일기</button>` : `<span class="muted small">${prettyDate(date)}</span>`}
+      </div>
+      <textarea id="d-text" rows="7" placeholder="Today I ...&#10;&#10;짧아도 괜찮아요. 오늘 있었던 일을 영어로 써 보세요." autocapitalize="sentences" spellcheck="false">${esc(text)}</textarea>
+      <div class="muted small" id="d-count" style="text-align:right;margin:4px 2px 10px"></div>
+      <button class="btn primary block" id="d-copy">📋 첨삭 요청문 복사</button>
+      <a class="btn block" href="https://claude.ai/new" target="_blank" rel="noopener" style="margin-top:8px">Claude 열기 ↗</a>
+      <p class="muted small" style="margin:10px 2px 0">복사한 요청문을 Claude에 붙여 넣고, 받은 답변을 <b>전부 복사</b>해서 아래 칸에 붙여 넣어 주세요.</p>
+    </div>
+
+    <div class="card">
+      <b>첨삭 결과 붙여넣기</b>
+      <textarea id="d-result" rows="4" placeholder="Claude 답변을 여기에 붙여 넣으세요" style="margin-top:8px">${esc(raw)}</textarea>
+      <div class="row" style="margin-top:10px">
+        ${cur ? `<button class="btn bad" id="d-del">삭제</button>` : ''}
+        <button class="btn primary grow" id="d-show">첨삭 결과 보기</button>
+      </div>
+    </div>
+
+    <div id="d-out">${text && raw ? resultHtml(text, raw) : ''}</div>
+
+    ${past.length ? `
+      <div class="section-title">지난 일기 <small>${past.length}개</small></div>
+      ${past.map(d => `
+        <button class="card diary-item ${d.id === diaryId ? 'on' : ''}" data-diary="${d.id}">
+          <div class="row-between"><b>${prettyDate(d.date)}</b><span class="tag ${d.result ? 'done' : ''}">${d.result ? '첨삭 완료' : '첨삭 전'}</span></div>
+          <p>${esc(d.text)}</p>
+        </button>`).join('')}` : ''}`;
+
+  const tText = $('#d-text'), tResult = $('#d-result');
+  const count = () => {
+    const w = tText.value.trim() ? tText.value.trim().split(/\s+/).length : 0;
+    $('#d-count').textContent = `${w} words`;
+  };
+  count();
+  // 새 일기는 쓰는 중에 임시 저장
+  const saveDraft = () => { if (!diaryId) writeJSON(DRAFT_KEY, { text: tText.value, result: tResult.value }); };
+  tText.addEventListener('input', () => { count(); saveDraft(); });
+  tResult.addEventListener('input', saveDraft);
+
+  $('#d-copy').onclick = async () => {
+    const t = tText.value.trim();
+    if (!t) { toast('먼저 일기를 써 주세요'); tText.focus(); return; }
+    toast(await copyText(correctionPrompt(t)) ? '복사했어요! Claude에 붙여 넣으세요' : '복사에 실패했어요');
+  };
+
+  $('#d-show').onclick = () => {
+    const t = tText.value.trim(), r = tResult.value.trim();
+    if (!t) { toast('먼저 일기를 써 주세요'); tText.focus(); return; }
+    if (!r) { toast('Claude 답변을 붙여 넣어 주세요'); tResult.focus(); return; }
+    if (diaryId) {
+      Object.assign(diaries.find(d => d.id === diaryId), { text: t, result: r, updatedAt: Date.now() });
+    } else {
+      diaryId = Date.now().toString(36);
+      diaries.push({ id: diaryId, date: todayKey(), text: t, result: r, createdAt: Date.now(), updatedAt: Date.now() });
+      writeJSON(DRAFT_KEY, {});
+    }
+    saveDiaries();
+    renderDiary();
+    $('#d-out').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    toast('저장했어요 ✍️');
+  };
+
+  $('#new-diary')?.addEventListener('click', () => { diaryId = null; renderDiary(); window.scrollTo(0, 0); });
+  $('#d-del')?.addEventListener('click', () => {
+    if (!confirm('이 일기를 삭제할까요?')) return;
+    diaries = diaries.filter(d => d.id !== diaryId);
+    diaryId = null;
+    saveDiaries();
+    renderDiary();
+    toast('삭제했어요');
+  });
+  $$('[data-diary]').forEach(b => b.onclick = () => { diaryId = b.dataset.diary; renderDiary(); window.scrollTo(0, 0); });
 }
 
 route();
