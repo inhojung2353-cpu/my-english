@@ -79,7 +79,7 @@ window.addEventListener('hashchange', route);
 /* ---------- 홈 ---------- */
 function renderHome() {
   setTitle('My English');
-  const recentWords = [...words].sort(byDateDesc).slice(0, 6);
+  const recentWords = [...words].reverse().sort(byDateDesc).slice(0, 6); // 같은 날짜면 나중에 추가한 단어 먼저
   const recentScripts = [...scripts].sort(byDateDesc).slice(0, 3);
   const recentDialogs = [...dialogs].sort(byDayDesc).slice(0, 3);
   const last = latestDate();
@@ -180,12 +180,12 @@ function renderWords() {
       (!q || [w.word, w.meaning, w.example, w.exampleKo, w.note].some(f => (f || '').toLowerCase().includes(q))));
     if (!words.length) { list.innerHTML = `<div class="empty"><span class="big">📚</span>아직 단어가 없어요</div>`; return; }
     if (!items.length) { list.innerHTML = `<div class="empty">${emptyMsg()}</div>`; return; }
-    // 날짜별로 묶어서 최신순
+    // 묶음(Set)별로, 없으면 날짜별로 — 최신 묶음이 위로
     const groups = {};
-    items.forEach(w => (groups[w.date || ''] ||= []).push(w));
-    list.innerHTML = Object.keys(groups).sort().reverse().map(d => `
-      <div class="group-title">${d ? prettyDate(d) : '날짜 없음'} · ${groups[d].length}개</div>
-      ${groups[d].map(wordCard).join('')}`).join('');
+    items.forEach(w => (groups[w.set || w.date || ''] ||= []).push(w));
+    list.innerHTML = Object.keys(groups).sort((a, b) => b.localeCompare(a, undefined, { numeric: true })).map(k => `
+      <div class="group-title">${/^\d{4}-/.test(k) ? prettyDate(k) : esc(k || '기타')} · ${groups[k].length}개</div>
+      ${groups[k].map(wordCard).join('')}`).join('');
   };
   draw();
 

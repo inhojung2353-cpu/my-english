@@ -8,7 +8,7 @@ window.CONTENT = {
 
   /* ---------- 단어 · 표현 ----------
      word: 단어/표현, ipa: 발음 기호(미국식), pos: 품사, meaning: 뜻,
-     example / exampleKo: 예문과 해석, note: 메모, date: 추가한 날짜, topic: 묶음 이름 */
+     example / exampleKo: 예문과 해석, note: 메모, date: 추가한 날짜, topic: 주제, set: 묶음(Set 1, Set 2 …) */
   words: [
     {
       "word": "reliable",
@@ -19,7 +19,8 @@ window.CONTENT = {
       "exampleKo": "제때 납품할 수 있는 믿을 만한 공급업체가 필요해요.",
       "note": "reliable source(믿을 만한 출처). rely on(~에 의지하다)과 같은 뿌리예요.",
       "date": "2026-10-09",
-      "topic": "성격·태도"
+      "topic": "성격·태도",
+      "set": "Set 1"
     },
     {
       "word": "estimate",
@@ -30,7 +31,8 @@ window.CONTENT = {
       "exampleKo": "금요일까지 비용 견적서를 보내 주실 수 있나요?",
       "note": "명사는 /ˈestɪmət/ [에스티멋], 동사는 /ˈestɪmeɪt/ [에스티메이트]로 발음이 달라요. rough estimate = 대략적인 추정치.",
       "date": "2026-10-09",
-      "topic": "비용·돈"
+      "topic": "비용·돈",
+      "set": "Set 1"
     },
     {
       "word": "implement",
@@ -41,7 +43,8 @@ window.CONTENT = {
       "exampleKo": "회사는 다음 달에 새 보안 정책을 시행할 거예요.",
       "note": "implement a plan / policy / system 형태로 자주 써요. 명사는 implementation.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "commitment",
@@ -52,7 +55,8 @@ window.CONTENT = {
       "exampleKo": "이 프로젝트에 헌신해 주셔서 감사합니다.",
       "note": "commitment to + 명사/동명사 (to 뒤에 ~ing). make a commitment = 약속하다.",
       "date": "2026-10-09",
-      "topic": "성격·태도"
+      "topic": "성격·태도",
+      "set": "Set 1"
     },
     {
       "word": "process",
@@ -63,7 +67,8 @@ window.CONTENT = {
       "exampleKo": "주문이 처리되고 있으며 내일 발송됩니다.",
       "note": "hiring process = 채용 절차, process a request = 요청을 처리하다.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "appliance",
@@ -74,7 +79,8 @@ window.CONTENT = {
       "exampleKo": "모든 주방 가전은 2년 보증이 제공됩니다.",
       "note": "home appliances = 가전제품. application(지원서, 앱)과 헷갈리지 마세요.",
       "date": "2026-10-09",
-      "topic": "일상·기타"
+      "topic": "일상·기타",
+      "set": "Set 1"
     },
     {
       "word": "expenditure",
@@ -85,7 +91,8 @@ window.CONTENT = {
       "exampleKo": "사무용품에 드는 월 지출을 줄여야 해요.",
       "note": "expenditure on ~ = ~에 대한 지출. expense보다 더 격식 있는 말이에요.",
       "date": "2026-10-09",
-      "topic": "비용·돈"
+      "topic": "비용·돈",
+      "set": "Set 1"
     },
     {
       "word": "executive",
@@ -96,7 +103,8 @@ window.CONTENT = {
       "exampleKo": "임원들이 내년 예산을 논의하려고 회의할 거예요.",
       "note": "CEO = Chief Executive Officer. executive assistant = 임원 비서.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "assignment",
@@ -107,7 +115,8 @@ window.CONTENT = {
       "exampleKo": "내 첫 업무는 작년 판매 데이터를 분석하는 거였어요.",
       "note": "동사 assign = 배정하다, 맡기다. be assigned to ~ = ~에 배정되다.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "opponent",
@@ -118,7 +127,8 @@ window.CONTENT = {
       "exampleKo": "그녀는 결승전에서 상대를 쉽게 이겼어요.",
       "note": "반대 의견을 가진 사람에게도 써요: opponents of the plan = 그 계획의 반대자들.",
       "date": "2026-10-09",
-      "topic": "일상·기타"
+      "topic": "일상·기타",
+      "set": "Set 1"
     },
     {
       "word": "distracted",
@@ -129,7 +139,8 @@ window.CONTENT = {
       "exampleKo": "재택근무할 때는 쉽게 집중이 흐트러져요.",
       "note": "-ed라서 \"산만해진\" 사람의 상태예요 (bored/boring 규칙!). distracting = 주의를 흩뜨리는.",
       "date": "2026-10-09",
-      "topic": "성격·태도"
+      "topic": "성격·태도",
+      "set": "Set 1"
     },
     {
       "word": "state",
@@ -140,7 +151,8 @@ window.CONTENT = {
       "exampleKo": "계약서에 대금은 30일 이내에 지불해야 한다고 명확히 나와 있어요.",
       "note": "as stated above = 위에서 언급한 대로. state of mind = 마음 상태.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "over time",
@@ -151,7 +163,8 @@ window.CONTENT = {
       "exampleKo": "꾸준히 연습하면 영어 실력은 시간이 지나면서 늘 거예요.",
       "note": "붙여 쓴 overtime은 \"야근, 초과 근무\"라서 뜻이 달라요! (Dialog Day 11)",
       "date": "2026-10-09",
-      "topic": "일상·기타"
+      "topic": "일상·기타",
+      "set": "Set 1"
     },
     {
       "word": "strong will",
@@ -162,7 +175,8 @@ window.CONTENT = {
       "exampleKo": "매일 영어 공부를 하려면 강한 의지가 필요해요.",
       "note": "형용사는 strong-willed (의지가 강한). willpower = 의지력.",
       "date": "2026-10-09",
-      "topic": "성격·태도"
+      "topic": "성격·태도",
+      "set": "Set 1"
     },
     {
       "word": "patient",
@@ -173,7 +187,8 @@ window.CONTENT = {
       "exampleKo": "문제를 해결하는 동안 기다려 주셔서 감사합니다.",
       "note": "명사 patience = 인내심. \"Thank you for your patience.\"는 고객 응대 단골 문장이에요.",
       "date": "2026-10-09",
-      "topic": "성격·태도"
+      "topic": "성격·태도",
+      "set": "Set 1"
     },
     {
       "word": "assess",
@@ -184,7 +199,8 @@ window.CONTENT = {
       "exampleKo": "결정하기 전에 위험 요소를 평가해야 해요.",
       "note": "명사 assessment = 평가. assess the damage = 피해 규모를 평가하다.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "suspend",
@@ -195,7 +211,8 @@ window.CONTENT = {
       "exampleKo": "시스템 점검으로 서비스가 일시 중단되었어요.",
       "note": "완전히 끝내는 게 아니라 \"잠시\" 멈추는 느낌이에요. 명사는 suspension.",
       "date": "2026-10-09",
-      "topic": "일정·출장"
+      "topic": "일정·출장",
+      "set": "Set 1"
     },
     {
       "word": "productivity",
@@ -206,7 +223,8 @@ window.CONTENT = {
       "exampleKo": "새 소프트웨어 덕분에 우리 팀 생산성이 올랐어요.",
       "note": "boost / improve productivity = 생산성을 높이다. productive = 생산적인.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "investigation",
@@ -217,7 +235,8 @@ window.CONTENT = {
       "exampleKo": "회사는 데이터 유출에 대한 조사에 착수했어요.",
       "note": "investigation into ~ = ~에 대한 조사. 동사는 investigate.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "compensate",
@@ -228,7 +247,8 @@ window.CONTENT = {
       "exampleKo": "항공사가 지연에 대해 승객들에게 보상했어요.",
       "note": "compensate (사람) for (손해). 명사 compensation = 보상(금), 급여.",
       "date": "2026-10-09",
-      "topic": "비용·돈"
+      "topic": "비용·돈",
+      "set": "Set 1"
     },
     {
       "word": "precaution",
@@ -239,7 +259,8 @@ window.CONTENT = {
       "exampleKo": "만일에 대비해 파일을 정기적으로 백업해 주세요.",
       "note": "take precautions = 예방 조치를 취하다. as a precaution = 만일에 대비해.",
       "date": "2026-10-09",
-      "topic": "일상·기타"
+      "topic": "일상·기타",
+      "set": "Set 1"
     },
     {
       "word": "progressive",
@@ -250,7 +271,8 @@ window.CONTENT = {
       "exampleKo": "그 회사는 원격 근무에 대해 진보적인 방식을 취하고 있어요.",
       "note": "progress(진전) + -ive. \"점진적인\"으로도 써요: a progressive increase = 점진적인 증가.",
       "date": "2026-10-09",
-      "topic": "성격·태도"
+      "topic": "성격·태도",
+      "set": "Set 1"
     },
     {
       "word": "priority",
@@ -261,7 +283,8 @@ window.CONTENT = {
       "exampleKo": "고객 만족이 우리의 최우선 과제예요.",
       "note": "top priority = 최우선 과제. 동사 prioritize = 우선순위를 정하다.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "release",
@@ -272,7 +295,8 @@ window.CONTENT = {
       "exampleKo": "앱 새 버전은 다음 주에 출시돼요.",
       "note": "press release = 보도 자료, release date = 출시일.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "itinerary",
@@ -283,7 +307,8 @@ window.CONTENT = {
       "exampleKo": "출장 일정표를 이메일로 보내 드릴게요.",
       "note": "발음 주의: [아이티너레리]. travel itinerary = 여행 일정표.",
       "date": "2026-10-09",
-      "topic": "일정·출장"
+      "topic": "일정·출장",
+      "set": "Set 1"
     },
     {
       "word": "accommodate",
@@ -294,7 +319,8 @@ window.CONTENT = {
       "exampleKo": "그 호텔은 최대 200명까지 수용할 수 있어요.",
       "note": "accommodate a request = 요청을 들어주다. 명사 accommodation(s) = 숙소. 철자는 c 두 개, m 두 개!",
       "date": "2026-10-09",
-      "topic": "일정·출장"
+      "topic": "일정·출장",
+      "set": "Set 1"
     },
     {
       "word": "complete",
@@ -305,7 +331,8 @@ window.CONTENT = {
       "exampleKo": "양식을 작성해서 월요일까지 제출해 주세요.",
       "note": "complete a form = fill out a form (양식 작성). 명사는 completion.",
       "date": "2026-10-09",
-      "topic": "업무·회사"
+      "topic": "업무·회사",
+      "set": "Set 1"
     },
     {
       "word": "postpone",
@@ -316,7 +343,8 @@ window.CONTENT = {
       "exampleKo": "회의가 다음 주 화요일로 연기되었어요.",
       "note": "postpone + ~ing (동명사). 같은 뜻의 구동사는 put off.",
       "date": "2026-10-09",
-      "topic": "일정·출장"
+      "topic": "일정·출장",
+      "set": "Set 1"
     },
     {
       "word": "essential",
@@ -327,7 +355,8 @@ window.CONTENT = {
       "exampleKo": "팀워크에는 원활한 소통이 꼭 필요해요.",
       "note": "It is essential to ~ / that ~. 복수 명사 essentials = 필수품.",
       "date": "2026-10-09",
-      "topic": "일상·기타"
+      "topic": "일상·기타",
+      "set": "Set 1"
     },
     {
       "word": "reimbursement",
@@ -338,7 +367,1496 @@ window.CONTENT = {
       "exampleKo": "출장비를 환급받으려면 영수증을 제출하세요.",
       "note": "동사 reimburse = (비용을) 돌려주다. 회사 경비 처리에서 자주 써요.",
       "date": "2026-10-09",
-      "topic": "비용·돈"
+      "topic": "비용·돈",
+      "set": "Set 1"
+    },
+    {
+      "word": "decline",
+      "ipa": "/dɪˈklaɪn/",
+      "pos": "v. / n.",
+      "meaning": "감소하다, (정중히) 거절하다 / 감소",
+      "example": "Sales declined by 10% last quarter.",
+      "exampleKo": "지난 분기에 매출이 10% 감소했어요.",
+      "note": "\"정중히 거절하다\"로도 써요: decline an invitation = 초대를 거절하다.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "congestion",
+      "ipa": "/kənˈdʒestʃən/",
+      "pos": "n.",
+      "meaning": "(교통) 혼잡, 정체",
+      "example": "Traffic congestion is terrible during rush hour.",
+      "exampleKo": "출퇴근 시간엔 교통 체증이 심해요.",
+      "note": "코막힘에도 써요: nasal congestion.",
+      "date": "2026-10-09",
+      "topic": "일정·출장",
+      "set": "Set 2"
+    },
+    {
+      "word": "prosper",
+      "ipa": "/ˈprɑːspər/",
+      "pos": "v.",
+      "meaning": "번영하다, 번창하다",
+      "example": "The business prospered after it moved online.",
+      "exampleKo": "온라인으로 옮긴 뒤 사업이 번창했어요.",
+      "note": "prosperity = 번영, prosperous = 번영하는.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "negotiate",
+      "ipa": "/nɪˈɡoʊʃieɪt/",
+      "pos": "v.",
+      "meaning": "협상하다",
+      "example": "We negotiated a better price with the supplier.",
+      "exampleKo": "공급업체와 협상해서 더 좋은 가격을 받았어요.",
+      "note": "negotiate with + 사람. 명사는 negotiation.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "expand",
+      "ipa": "/ɪkˈspænd/",
+      "pos": "v.",
+      "meaning": "확장하다, 넓히다",
+      "example": "The company plans to expand into Asian markets.",
+      "exampleKo": "회사는 아시아 시장으로 확장할 계획이에요.",
+      "note": "expand into ~ = ~로 진출하다. 명사는 expansion.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "duration",
+      "ipa": "/duˈreɪʃn/",
+      "pos": "n.",
+      "meaning": "(지속) 기간",
+      "example": "Please stay seated for the duration of the flight.",
+      "exampleKo": "비행하는 동안 내내 자리에 앉아 계세요.",
+      "note": "for the duration of ~ = ~하는 동안 내내.",
+      "date": "2026-10-09",
+      "topic": "일정·출장",
+      "set": "Set 2"
+    },
+    {
+      "word": "procedure",
+      "ipa": "/prəˈsiːdʒər/",
+      "pos": "n.",
+      "meaning": "절차, (의료) 시술",
+      "example": "Please follow the safety procedures.",
+      "exampleKo": "안전 절차를 따라 주세요.",
+      "note": "process(과정)보다 정해진 \"규칙·순서\"에 가까워요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "profit",
+      "ipa": "/ˈprɑːfɪt/",
+      "pos": "n. / v.",
+      "meaning": "이익, 수익 / 이익을 얻다",
+      "example": "The company made a profit this year.",
+      "exampleKo": "회사가 올해 수익을 냈어요.",
+      "note": "make a profit = 수익을 내다. profitable = 수익성 있는.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "promote",
+      "ipa": "/prəˈmoʊt/",
+      "pos": "v.",
+      "meaning": "승진시키다, 홍보하다, 촉진하다",
+      "example": "She was promoted to manager last month.",
+      "exampleKo": "그녀는 지난달 매니저로 승진했어요.",
+      "note": "be promoted to ~ = ~로 승진하다. 명사 promotion = 승진, 판촉.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "raise",
+      "ipa": "/reɪz/",
+      "pos": "v. / n.",
+      "meaning": "올리다, (문제를) 제기하다 / 임금 인상",
+      "example": "I’m going to ask my boss for a raise.",
+      "exampleKo": "상사에게 월급 인상을 요청할 거예요.",
+      "note": "raise는 \"무엇을 올리다\"(목적어 있음), rise는 \"스스로 오르다\".",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "guarantee",
+      "ipa": "/ˌɡærənˈtiː/",
+      "pos": "v. / n.",
+      "meaning": "보장하다 / 보증",
+      "example": "We guarantee delivery within 24 hours.",
+      "exampleKo": "24시간 이내 배송을 보장합니다.",
+      "note": "money-back guarantee = 환불 보증.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "lease",
+      "ipa": "/liːs/",
+      "pos": "n. / v.",
+      "meaning": "임대차 계약 / 임대하다",
+      "example": "We signed a two-year lease for the new office.",
+      "exampleKo": "새 사무실을 2년 임대 계약했어요.",
+      "note": "rent보다 장기적이고 공식적인 계약이에요.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "effective",
+      "ipa": "/ɪˈfektɪv/",
+      "pos": "adj.",
+      "meaning": "효과적인, (규정이) 시행되는",
+      "example": "The new policy is effective from January 1.",
+      "exampleKo": "새 정책은 1월 1일부터 시행돼요.",
+      "note": "effective(효과적인) vs efficient(효율적인) 구별하세요!",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "immediate",
+      "ipa": "/ɪˈmiːdiət/",
+      "pos": "adj.",
+      "meaning": "즉각적인, 당면한, 직속의",
+      "example": "This problem needs immediate attention.",
+      "exampleKo": "이 문제는 즉각적인 조치가 필요해요.",
+      "note": "immediately = 즉시. immediate supervisor = 직속 상사.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "prescribe",
+      "ipa": "/prɪˈskraɪb/",
+      "pos": "v.",
+      "meaning": "(약을) 처방하다, 규정하다",
+      "example": "The doctor prescribed some medicine for my cold.",
+      "exampleKo": "의사가 감기약을 처방해 줬어요.",
+      "note": "명사 prescription = 처방전. (목록의 Prescrive·prescribe를 하나로 합쳤어요)",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "major",
+      "ipa": "/ˈmeɪdʒər/",
+      "pos": "adj. / n. / v.",
+      "meaning": "주요한, 큰 / 전공 / 전공하다",
+      "example": "There were no major problems during the launch.",
+      "exampleKo": "출시하는 동안 큰 문제는 없었어요.",
+      "note": "major in ~ = ~을 전공하다. majority = 대다수.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "promptly",
+      "ipa": "/ˈprɑːmptli/",
+      "pos": "adv.",
+      "meaning": "신속하게, 정각에",
+      "example": "Please reply promptly to customer emails.",
+      "exampleKo": "고객 이메일에는 신속하게 답장해 주세요.",
+      "note": "at 9 a.m. promptly = 오전 9시 정각에. prompt = 신속한.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "warrant",
+      "ipa": "/ˈwɔːrənt/",
+      "pos": "v. / n.",
+      "meaning": "~할 만하다, 정당화하다 / 영장",
+      "example": "The situation doesn’t warrant a full investigation.",
+      "exampleKo": "그 상황은 전면 조사를 할 정도는 아니에요.",
+      "note": "warranty(품질 보증서)와 구별하세요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "withdraw",
+      "ipa": "/wɪðˈdrɔː/",
+      "pos": "v.",
+      "meaning": "(돈을) 인출하다, 철회하다, 물러나다",
+      "example": "I need to withdraw some cash from the ATM.",
+      "exampleKo": "ATM에서 현금을 좀 뽑아야 해요.",
+      "note": "withdraw an offer = 제안을 철회하다. 명사 withdrawal.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "indicate",
+      "ipa": "/ˈɪndɪkeɪt/",
+      "pos": "v.",
+      "meaning": "나타내다, 보여 주다",
+      "example": "The data indicates that sales are improving.",
+      "exampleKo": "데이터를 보면 매출이 좋아지고 있어요.",
+      "note": "indicate that ~. indicator = 지표.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "ignore",
+      "ipa": "/ɪɡˈnɔːr/",
+      "pos": "v.",
+      "meaning": "무시하다",
+      "example": "Don’t ignore warning messages on your computer.",
+      "exampleKo": "컴퓨터 경고 메시지를 무시하지 마세요.",
+      "note": "ignorant(무지한)와는 뜻이 달라요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "renew",
+      "ipa": "/rɪˈnuː/",
+      "pos": "v.",
+      "meaning": "갱신하다, 연장하다",
+      "example": "I need to renew my passport before the trip.",
+      "exampleKo": "여행 전에 여권을 갱신해야 해요.",
+      "note": "renew a contract / subscription. 명사 renewal.",
+      "date": "2026-10-09",
+      "topic": "일정·출장",
+      "set": "Set 2"
+    },
+    {
+      "word": "opportunity",
+      "ipa": "/ˌɑːpərˈtuːnəti/",
+      "pos": "n.",
+      "meaning": "기회",
+      "example": "This job is a great opportunity to learn new skills.",
+      "exampleKo": "이 일은 새로운 기술을 배울 좋은 기회예요.",
+      "note": "opportunity to + 동사 / for + 명사.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "respond",
+      "ipa": "/rɪˈspɑːnd/",
+      "pos": "v.",
+      "meaning": "응답하다, 반응하다",
+      "example": "Please respond to this email by Friday.",
+      "exampleKo": "금요일까지 이 이메일에 답해 주세요.",
+      "note": "respond to ~ (to 필수). 명사 response.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "remit",
+      "ipa": "/rɪˈmɪt/",
+      "pos": "v.",
+      "meaning": "송금하다",
+      "example": "Please remit payment within 30 days.",
+      "exampleKo": "30일 이내에 대금을 송금해 주세요.",
+      "note": "remittance = 송금(액). 청구서·인보이스에 자주 나와요.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "reply",
+      "ipa": "/rɪˈplaɪ/",
+      "pos": "v. / n.",
+      "meaning": "답장하다 / 답장",
+      "example": "Sorry for the late reply.",
+      "exampleKo": "답장이 늦어서 죄송해요.",
+      "note": "reply to ~. 이메일 첫 문장 단골 표현이에요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "prospective",
+      "ipa": "/prəˈspektɪv/",
+      "pos": "adj.",
+      "meaning": "장래의, 잠재적인",
+      "example": "We’re meeting with a prospective client tomorrow.",
+      "exampleKo": "내일 잠재 고객과 미팅이 있어요.",
+      "note": "prospective employee / buyer = 입사 예정자 / 구매 예정자.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "terminate",
+      "ipa": "/ˈtɜːrmɪneɪt/",
+      "pos": "v.",
+      "meaning": "종료하다, 해지하다",
+      "example": "Either party can terminate the contract with 30 days’ notice.",
+      "exampleKo": "양측 모두 30일 전에 통보하면 계약을 해지할 수 있어요.",
+      "note": "end보다 공식적인 말. 명사 termination.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "afford",
+      "ipa": "/əˈfɔːrd/",
+      "pos": "v.",
+      "meaning": "(~할) 여유가 있다",
+      "example": "I can’t afford a new car right now.",
+      "exampleKo": "지금은 새 차를 살 여유가 없어요.",
+      "note": "can’t afford to ~ (Dialog Day 6). affordable = 가격이 적당한.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "numerous",
+      "ipa": "/ˈnuːmərəs/",
+      "pos": "adj.",
+      "meaning": "수많은",
+      "example": "We received numerous complaints about the delay.",
+      "exampleKo": "지연에 대한 불만을 수없이 받았어요.",
+      "note": "many보다 격식 있는 말이에요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "react",
+      "ipa": "/riˈækt/",
+      "pos": "v.",
+      "meaning": "반응하다",
+      "example": "How did your boss react to the news?",
+      "exampleKo": "상사가 그 소식에 어떻게 반응했어?",
+      "note": "react to ~. 명사 reaction.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "annual",
+      "ipa": "/ˈænjuəl/",
+      "pos": "adj.",
+      "meaning": "연례의, 매년의",
+      "example": "The annual meeting is held every March.",
+      "exampleKo": "연례 회의는 매년 3월에 열려요.",
+      "note": "annual leave = 연차. annually = 매년.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "agenda",
+      "ipa": "/əˈdʒendə/",
+      "pos": "n.",
+      "meaning": "안건, 의제",
+      "example": "What’s on the agenda for today’s meeting?",
+      "exampleKo": "오늘 회의 안건이 뭐예요?",
+      "note": "on the agenda = 안건에 올라 있는.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "frequent",
+      "ipa": "/ˈfriːkwənt/",
+      "pos": "adj.",
+      "meaning": "잦은, 빈번한",
+      "example": "He’s a frequent customer at our store.",
+      "exampleKo": "그는 우리 가게 단골이에요.",
+      "note": "frequently = 자주. frequent flyer = 항공사 단골 고객.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "effect",
+      "ipa": "/ɪˈfekt/",
+      "pos": "n.",
+      "meaning": "효과, 영향",
+      "example": "The new rule had a positive effect on productivity.",
+      "exampleKo": "새 규칙이 생산성에 긍정적인 영향을 줬어요.",
+      "note": "effect(명사) vs affect(동사: 영향을 주다). have an effect on ~.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "efficient",
+      "ipa": "/ɪˈfɪʃnt/",
+      "pos": "adj.",
+      "meaning": "효율적인",
+      "example": "This new system is much more efficient.",
+      "exampleKo": "이 새 시스템이 훨씬 효율적이에요.",
+      "note": "명사 efficiency. effective(효과적인)와 구별!",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "candidate",
+      "ipa": "/ˈkændɪdət/",
+      "pos": "n.",
+      "meaning": "후보자, 지원자",
+      "example": "We interviewed five candidates for the position.",
+      "exampleKo": "그 자리에 지원자 다섯 명을 면접했어요.",
+      "note": "applicant(지원자)와 비슷해요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "caution",
+      "ipa": "/ˈkɔːʃn/",
+      "pos": "n. / v.",
+      "meaning": "주의, 조심 / 주의를 주다",
+      "example": "Please use caution when the floor is wet.",
+      "exampleKo": "바닥이 젖었을 때는 조심하세요.",
+      "note": "cautious = 조심스러운. with caution = 조심해서.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "permission",
+      "ipa": "/pərˈmɪʃn/",
+      "pos": "n.",
+      "meaning": "허락, 허가, 권한",
+      "example": "You need permission to access this file.",
+      "exampleKo": "이 파일에 접근하려면 권한이 필요해요.",
+      "note": "ask for permission. 동사 permit = 허락하다.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "boost",
+      "ipa": "/buːst/",
+      "pos": "v. / n.",
+      "meaning": "높이다, 끌어올리다 / 증가",
+      "example": "The new campaign boosted our sales.",
+      "exampleKo": "새 캠페인 덕분에 매출이 올랐어요.",
+      "note": "boost productivity / confidence.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "confirmation",
+      "ipa": "/ˌkɑːnfərˈmeɪʃn/",
+      "pos": "n.",
+      "meaning": "확인, 확정",
+      "example": "You will receive a confirmation email shortly.",
+      "exampleKo": "곧 확인 이메일을 받으실 거예요.",
+      "note": "동사 confirm. booking confirmation = 예약 확인.",
+      "date": "2026-10-09",
+      "topic": "일정·출장",
+      "set": "Set 2"
+    },
+    {
+      "word": "frustrate",
+      "ipa": "/ˈfrʌstreɪt/",
+      "pos": "v.",
+      "meaning": "좌절시키다, 짜증 나게 하다",
+      "example": "The slow internet really frustrates me.",
+      "exampleKo": "느린 인터넷 때문에 정말 짜증 나요.",
+      "note": "frustrated(짜증 난 사람) vs frustrating(짜증 나게 하는 것).",
+      "date": "2026-10-09",
+      "topic": "감정·상태",
+      "set": "Set 2"
+    },
+    {
+      "word": "materials",
+      "ipa": "/məˈtɪriəlz/",
+      "pos": "n.",
+      "meaning": "자료, 재료",
+      "example": "I’ll send you the meeting materials in advance.",
+      "exampleKo": "회의 자료를 미리 보내 드릴게요.",
+      "note": "raw materials = 원자재.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "appropriate",
+      "ipa": "/əˈproʊpriət/",
+      "pos": "adj.",
+      "meaning": "적절한",
+      "example": "Is this outfit appropriate for the interview?",
+      "exampleKo": "이 옷 면접에 적절할까?",
+      "note": "반대말 inappropriate = 부적절한.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "impression",
+      "ipa": "/ɪmˈpreʃn/",
+      "pos": "n.",
+      "meaning": "인상",
+      "example": "She made a good impression on the interviewers.",
+      "exampleKo": "그녀는 면접관들에게 좋은 인상을 남겼어요.",
+      "note": "make a good first impression = 좋은 첫인상을 남기다.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "avoid",
+      "ipa": "/əˈvɔɪd/",
+      "pos": "v.",
+      "meaning": "피하다",
+      "example": "Try to avoid making the same mistake.",
+      "exampleKo": "같은 실수를 하지 않도록 해요.",
+      "note": "avoid + ~ing (동명사)!",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "manage to",
+      "ipa": "/ˈmænɪdʒ tə/",
+      "pos": "phrase",
+      "meaning": "(어렵게) 간신히 ~해내다",
+      "example": "I managed to finish the report on time.",
+      "exampleKo": "보고서를 간신히 제시간에 끝냈어요.",
+      "note": "과거형 managed to로 많이 써요.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "wrap up",
+      "ipa": "/ˌræp ˈʌp/",
+      "pos": "phrasal v.",
+      "meaning": "마무리하다",
+      "example": "Let’s wrap up the meeting.",
+      "exampleKo": "회의를 마무리하죠.",
+      "note": "\"That’s a wrap!\" = 끝!",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "examine",
+      "ipa": "/ɪɡˈzæmɪn/",
+      "pos": "v.",
+      "meaning": "자세히 살펴보다, 검사하다, 진찰하다",
+      "example": "The doctor examined my throat.",
+      "exampleKo": "의사가 내 목을 진찰했어요.",
+      "note": "examination(exam) = 시험, 검사.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "bring",
+      "ipa": "/brɪŋ/",
+      "pos": "v.",
+      "meaning": "가져오다, 데려오다",
+      "example": "Can you bring your laptop to the meeting?",
+      "exampleKo": "회의에 노트북 가져올 수 있어요?",
+      "note": "bring(이쪽으로) vs take(저쪽으로). bring up = 화제를 꺼내다.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "take off",
+      "ipa": "/ˌteɪk ˈɔːf/",
+      "pos": "phrasal v.",
+      "meaning": "이륙하다, (옷을) 벗다, 쉬다, (갑자기) 잘되다",
+      "example": "The plane takes off at 9 a.m.",
+      "exampleKo": "비행기는 오전 9시에 이륙해요.",
+      "note": "take a day off = 하루 쉬다. Her career took off. = 그녀의 커리어가 급성장했다.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "too ~ to …",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "너무 ~해서 …할 수 없다",
+      "example": "I was too tired to go out last night.",
+      "exampleKo": "어젯밤엔 너무 피곤해서 나갈 수 없었어요.",
+      "note": "= so ~ that I couldn’t …",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "on top of that",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "게다가, 그것뿐 아니라",
+      "example": "It was raining, and on top of that, I lost my umbrella.",
+      "exampleKo": "비가 왔는데, 게다가 우산까지 잃어버렸어요.",
+      "note": "on top of ~ = ~에 더해 (Dialog Day 28).",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "guilty",
+      "ipa": "/ˈɡɪlti/",
+      "pos": "adj.",
+      "meaning": "죄책감이 드는, 유죄의",
+      "example": "I feel guilty about missing her birthday.",
+      "exampleKo": "그녀 생일을 놓쳐서 마음이 안 좋아요.",
+      "note": "feel guilty about ~. guilty pleasure = 남몰래 즐기는 것.",
+      "date": "2026-10-09",
+      "topic": "감정·상태",
+      "set": "Set 2"
+    },
+    {
+      "word": "atmosphere",
+      "ipa": "/ˈætməsfɪr/",
+      "pos": "n.",
+      "meaning": "분위기, 대기",
+      "example": "I love the relaxed atmosphere of this cafe.",
+      "exampleKo": "이 카페의 여유로운 분위기가 좋아요.",
+      "note": "지구의 \"대기\"라는 뜻도 있어요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "depressed",
+      "ipa": "/dɪˈprest/",
+      "pos": "adj.",
+      "meaning": "우울한",
+      "example": "He’s been feeling depressed since he lost his job.",
+      "exampleKo": "그는 일자리를 잃은 뒤로 우울해하고 있어요.",
+      "note": "depressing = 우울하게 만드는. (목록의 depresse를 depressed로 정리했어요)",
+      "date": "2026-10-09",
+      "topic": "감정·상태",
+      "set": "Set 2"
+    },
+    {
+      "word": "several",
+      "ipa": "/ˈsevrəl/",
+      "pos": "adj.",
+      "meaning": "몇몇의, 여러",
+      "example": "I’ve been to Japan several times.",
+      "exampleKo": "일본에 여러 번 가 봤어요.",
+      "note": "a few보다 조금 많은 느낌이에요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "stuck",
+      "ipa": "/stʌk/",
+      "pos": "adj.",
+      "meaning": "갇힌, 꼼짝 못 하는, 막힌",
+      "example": "I was stuck in traffic for an hour.",
+      "exampleKo": "한 시간 동안 차가 막혀서 꼼짝 못 했어요.",
+      "note": "be stuck on ~ = (문제에서) 막히다. get stuck = 갇히다.",
+      "date": "2026-10-09",
+      "topic": "감정·상태",
+      "set": "Set 2"
+    },
+    {
+      "word": "silence",
+      "ipa": "/ˈsaɪləns/",
+      "pos": "n.",
+      "meaning": "침묵, 고요",
+      "example": "There was a long silence after he spoke.",
+      "exampleKo": "그가 말한 뒤 긴 침묵이 흘렀어요.",
+      "note": "silent = 조용한. in silence = 조용히.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "whole",
+      "ipa": "/hoʊl/",
+      "pos": "adj. / n.",
+      "meaning": "전체의, 온 / 전체",
+      "example": "I spent the whole day cleaning.",
+      "exampleKo": "하루 종일 청소했어요.",
+      "note": "the whole + 단수 명사. hole(구멍)과 발음이 같아요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "mortgage",
+      "ipa": "/ˈmɔːrɡɪdʒ/",
+      "pos": "n.",
+      "meaning": "(주택) 담보 대출",
+      "example": "We’re still paying off our mortgage.",
+      "exampleKo": "아직 주택 담보 대출을 갚고 있어요.",
+      "note": "발음 주의: t가 묵음이에요 [모기지].",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "be supposed to",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~하기로 되어 있다, ~해야 한다",
+      "example": "I was supposed to call him yesterday.",
+      "exampleKo": "어제 그에게 전화하기로 했었는데.",
+      "note": "was supposed to = 하기로 했는데 (못 했다).",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "in order to",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~하기 위해서",
+      "example": "I wake up early in order to study English.",
+      "exampleKo": "영어 공부를 하려고 일찍 일어나요.",
+      "note": "in order not to ~ = ~하지 않기 위해.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "make it up to ~",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에게 (미안한 것을) 만회하다, 보답하다",
+      "example": "Sorry I’m late. I’ll make it up to you.",
+      "exampleKo": "늦어서 미안해. 꼭 만회할게.",
+      "note": "make up for ~ = (손실을) 메우다.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "even if",
+      "ipa": "",
+      "pos": "conj.",
+      "meaning": "비록 ~하더라도",
+      "example": "I’ll go even if it rains.",
+      "exampleKo": "비가 오더라도 갈 거예요.",
+      "note": "even though = (실제로) ~이긴 하지만.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "make it to ~",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에 (제때) 가다, 참석하다",
+      "example": "Can you make it to the meeting at 3?",
+      "exampleKo": "3시 회의에 올 수 있어요?",
+      "note": "make it = 해내다, 제시간에 도착하다.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "as soon as",
+      "ipa": "",
+      "pos": "conj.",
+      "meaning": "~하자마자",
+      "example": "I’ll call you as soon as I get home.",
+      "exampleKo": "집에 도착하자마자 전화할게.",
+      "note": "미래 일이라도 현재형(get)을 써요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "as long as",
+      "ipa": "",
+      "pos": "conj.",
+      "meaning": "~하기만 하면, ~하는 한",
+      "example": "You can borrow my car as long as you return it by tonight.",
+      "exampleKo": "오늘 밤까지 돌려주기만 하면 내 차 빌려 가도 돼.",
+      "note": "조건을 말할 때 써요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "variety",
+      "ipa": "/vəˈraɪəti/",
+      "pos": "n.",
+      "meaning": "다양성, 여러 가지",
+      "example": "The store offers a wide variety of products.",
+      "exampleKo": "그 가게는 아주 다양한 제품을 팔아요.",
+      "note": "a variety of ~ = 다양한 ~. various = 다양한.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "asset",
+      "ipa": "/ˈæset/",
+      "pos": "n.",
+      "meaning": "자산, 귀중한 존재",
+      "example": "She is a great asset to our team.",
+      "exampleKo": "그녀는 우리 팀에 큰 자산이에요.",
+      "note": "사람에게도 써요.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "conduct",
+      "ipa": "/kənˈdʌkt/",
+      "pos": "v. / n.",
+      "meaning": "(조사 등을) 실시하다 / 행동",
+      "example": "We conducted a survey of 500 customers.",
+      "exampleKo": "고객 500명을 대상으로 설문 조사를 실시했어요.",
+      "note": "conduct a survey / an interview. 명사는 /ˈkɑːndʌkt/로 강세가 앞에 와요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "observe",
+      "ipa": "/əbˈzɜːrv/",
+      "pos": "v.",
+      "meaning": "관찰하다, (규칙을) 지키다",
+      "example": "We observed how users interacted with the app.",
+      "exampleKo": "사용자들이 앱을 어떻게 쓰는지 관찰했어요.",
+      "note": "observation = 관찰. observe the rules = 규칙을 지키다.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "at last",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "마침내, 드디어",
+      "example": "At last, the project is finished!",
+      "exampleKo": "드디어 프로젝트가 끝났어!",
+      "note": "finally와 비슷하지만 오래 기다린 안도감이 느껴져요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "as",
+      "ipa": "/æz/",
+      "pos": "conj. / prep.",
+      "meaning": "~ 때문에, ~할 때, ~로서, ~처럼",
+      "example": "As it was raining, we stayed home.",
+      "exampleKo": "비가 와서 집에 있었어요.",
+      "note": "뜻이 많으니 문맥으로 파악! I work as a data analyst. = 데이터 분석가로 일해요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "entire",
+      "ipa": "/ɪnˈtaɪər/",
+      "pos": "adj.",
+      "meaning": "전체의",
+      "example": "The entire team worked overtime this week.",
+      "exampleKo": "이번 주에 팀 전체가 야근했어요.",
+      "note": "whole과 비슷해요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "realize",
+      "ipa": "/ˈriːəlaɪz/",
+      "pos": "v.",
+      "meaning": "깨닫다, 실현하다",
+      "example": "I didn’t realize it was so late.",
+      "exampleKo": "이렇게 늦은 줄 몰랐어요.",
+      "note": "realize a dream = 꿈을 이루다.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "from time to time",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "때때로, 가끔",
+      "example": "I still think about it from time to time.",
+      "exampleKo": "아직도 가끔 그 생각이 나요.",
+      "note": "= sometimes, now and then.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "be worth it",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "그만한 가치가 있다",
+      "example": "The hike was hard, but the view was worth it.",
+      "exampleKo": "등산은 힘들었지만 경치가 그만한 가치가 있었어요.",
+      "note": "be worth + ~ing: It’s worth trying. = 해 볼 만해.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "relieve",
+      "ipa": "/rɪˈliːv/",
+      "pos": "v.",
+      "meaning": "(고통을) 덜어 주다, 안심시키다",
+      "example": "This medicine will relieve your headache.",
+      "exampleKo": "이 약이 두통을 덜어 줄 거예요.",
+      "note": "relieved = 안도한. relief = 안도, 완화.",
+      "date": "2026-10-09",
+      "topic": "감정·상태",
+      "set": "Set 2"
+    },
+    {
+      "word": "import",
+      "ipa": "/ɪmˈpɔːrt/",
+      "pos": "v. / n.",
+      "meaning": "수입하다, (파일을) 불러오다 / 수입(품)",
+      "example": "Korea imports most of its oil.",
+      "exampleKo": "한국은 석유 대부분을 수입해요.",
+      "note": "반대말 export. 데이터 작업에서도 써요: import a CSV file.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "certain",
+      "ipa": "/ˈsɜːrtn/",
+      "pos": "adj.",
+      "meaning": "확실한, 특정한",
+      "example": "Are you certain about that?",
+      "exampleKo": "그거 확실해?",
+      "note": "a certain ~ = 어떤 (특정한). certainly = 확실히.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "political",
+      "ipa": "/pəˈlɪtɪkl/",
+      "pos": "adj.",
+      "meaning": "정치의, 정치적인",
+      "example": "Let’s not talk about political issues at work.",
+      "exampleKo": "회사에서는 정치 얘기는 하지 말자.",
+      "note": "politics = 정치, politician = 정치인.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "theory",
+      "ipa": "/ˈθiːəri/",
+      "pos": "n.",
+      "meaning": "이론, 가설",
+      "example": "In theory, the plan should work.",
+      "exampleKo": "이론상으로는 그 계획이 통해야 해요.",
+      "note": "in theory = 이론상으로는. confirm my theory도 참고하세요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "be determined to",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~하기로 굳게 결심하다",
+      "example": "I’m determined to pass the exam this time.",
+      "exampleKo": "이번엔 꼭 시험에 붙기로 결심했어요.",
+      "note": "determination = 결심, 투지.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "optimistic",
+      "ipa": "/ˌɑːptɪˈmɪstɪk/",
+      "pos": "adj.",
+      "meaning": "낙관적인",
+      "example": "I’m optimistic about the results.",
+      "exampleKo": "결과에 대해 낙관하고 있어요.",
+      "note": "반대말 pessimistic = 비관적인.",
+      "date": "2026-10-09",
+      "topic": "성격·태도",
+      "set": "Set 2"
+    },
+    {
+      "word": "motivate",
+      "ipa": "/ˈmoʊtɪveɪt/",
+      "pos": "v.",
+      "meaning": "동기를 부여하다",
+      "example": "Good managers know how to motivate their team.",
+      "exampleKo": "좋은 관리자는 팀에 동기를 부여하는 법을 알아요.",
+      "note": "motivated = 의욕 있는, motivation = 동기.",
+      "date": "2026-10-09",
+      "topic": "성격·태도",
+      "set": "Set 2"
+    },
+    {
+      "word": "twice as much as ~",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~보다 두 배 많이",
+      "example": "This laptop costs twice as much as mine.",
+      "exampleKo": "이 노트북은 내 것보다 두 배 비싸요.",
+      "note": "셀 수 있는 명사는 twice as many as. 세 배는 three times as much as.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "come up",
+      "ipa": "/ˌkʌm ˈʌp/",
+      "pos": "phrasal v.",
+      "meaning": "(일이) 생기다, (화제가) 나오다",
+      "example": "Something came up, so I can’t make it tonight.",
+      "exampleKo": "일이 생겨서 오늘 밤에 못 가.",
+      "note": "come up with = 생각해 내다 (Dialog Day 1).",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "be connected to ~",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~와 연결되어 있다, 관련 있다",
+      "example": "Is your laptop connected to the Wi-Fi?",
+      "exampleKo": "노트북 와이파이에 연결됐어?",
+      "note": "관계에도 써요: His stress is connected to work.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "due to",
+      "ipa": "",
+      "pos": "prep.",
+      "meaning": "~ 때문에",
+      "example": "The flight was delayed due to bad weather.",
+      "exampleKo": "악천후로 비행기가 지연됐어요.",
+      "note": "because of보다 격식 있는 말. 공지문 단골이에요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "intense",
+      "ipa": "/ɪnˈtens/",
+      "pos": "adj.",
+      "meaning": "강렬한, 치열한",
+      "example": "The competition in this market is intense.",
+      "exampleKo": "이 시장은 경쟁이 치열해요.",
+      "note": "intensive(집중적인)와 구별하세요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "especially",
+      "ipa": "/ɪˈspeʃəli/",
+      "pos": "adv.",
+      "meaning": "특히",
+      "example": "I love Korean food, especially kimchi stew.",
+      "exampleKo": "한국 음식 좋아해요, 특히 김치찌개요.",
+      "note": "목록에 두 번 있어서 하나로 합쳤어요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "possibility",
+      "ipa": "/ˌpɑːsəˈbɪləti/",
+      "pos": "n.",
+      "meaning": "가능성",
+      "example": "Is there any possibility of a delay?",
+      "exampleKo": "지연될 가능성이 있나요?",
+      "note": "possibility of ~ing.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "strategy",
+      "ipa": "/ˈstrætədʒi/",
+      "pos": "n.",
+      "meaning": "전략",
+      "example": "We need a new marketing strategy.",
+      "exampleKo": "새로운 마케팅 전략이 필요해요.",
+      "note": "strategic = 전략적인.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "massive",
+      "ipa": "/ˈmæsɪv/",
+      "pos": "adj.",
+      "meaning": "거대한, 엄청난",
+      "example": "The update caused a massive increase in traffic.",
+      "exampleKo": "업데이트 후 트래픽이 엄청나게 늘었어요.",
+      "note": "huge보다 묵직하고 강한 느낌이에요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "equivalent",
+      "ipa": "/ɪˈkwɪvələnt/",
+      "pos": "adj. / n.",
+      "meaning": "동등한, ~에 해당하는 / 동등한 것",
+      "example": "One cup is equivalent to about 240 ml.",
+      "exampleKo": "한 컵은 약 240ml에 해당해요.",
+      "note": "be equivalent to ~.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "a mix of A and B",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "A와 B가 섞인 것",
+      "example": "Our team is a mix of new and experienced members.",
+      "exampleKo": "우리 팀은 신입과 경력자가 섞여 있어요.",
+      "note": "a good mix = 적절한 조합.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "head to ~",
+      "ipa": "/ˈhed tə/",
+      "pos": "phrase",
+      "meaning": "~로 향하다, 가다",
+      "example": "I’m heading to the office now.",
+      "exampleKo": "지금 사무실로 가는 중이에요.",
+      "note": "목록에 두 번 있어서 하나로 합쳤어요. head home = 집에 가다 (to 없이).",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "confirm my theory",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "내 가설(추측)을 입증하다",
+      "example": "The test results confirmed my theory.",
+      "exampleKo": "테스트 결과가 내 가설을 입증했어요.",
+      "note": "confirm = 확인하다, 확정하다 (confirmation 참고).",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "decide on ~",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "(여러 선택지 중) ~로 정하다",
+      "example": "Have you decided on a name for the project?",
+      "exampleKo": "프로젝트 이름 정했어?",
+      "note": "decide to + 동사 / decide on + 명사.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "go for it",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "한번 해 봐! (응원)",
+      "example": "If you really want the job, go for it!",
+      "exampleKo": "그 일을 정말 원하면 도전해 봐!",
+      "note": "go for ~ = ~을 고르다: I’ll go for the pasta.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "quote",
+      "ipa": "/kwoʊt/",
+      "pos": "n. / v.",
+      "meaning": "견적(가) / 인용하다",
+      "example": "Can you give me a quote for the repair?",
+      "exampleKo": "수리 견적 좀 받을 수 있을까요?",
+      "note": "estimate(추정 견적)보다 더 확정된 가격이에요.",
+      "date": "2026-10-09",
+      "topic": "비용·돈",
+      "set": "Set 2"
+    },
+    {
+      "word": "predictably",
+      "ipa": "/prɪˈdɪktəbli/",
+      "pos": "adv.",
+      "meaning": "예상대로, 뻔하게",
+      "example": "Predictably, the meeting ran late.",
+      "exampleKo": "예상대로 회의가 늦게 끝났어요.",
+      "note": "predictable = 예측 가능한, 뻔한.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "emphasize",
+      "ipa": "/ˈemfəsaɪz/",
+      "pos": "v.",
+      "meaning": "강조하다",
+      "example": "The manager emphasized the importance of teamwork.",
+      "exampleKo": "매니저가 팀워크의 중요성을 강조했어요.",
+      "note": "명사 emphasis = 강조.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "assessment",
+      "ipa": "/əˈsesmənt/",
+      "pos": "n.",
+      "meaning": "평가",
+      "example": "We’ll do a risk assessment before the launch.",
+      "exampleKo": "출시 전에 위험 평가를 할 거예요.",
+      "note": "동사 assess는 Set 1에 있어요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "argument",
+      "ipa": "/ˈɑːrɡjumənt/",
+      "pos": "n.",
+      "meaning": "말다툼, 논쟁, 논거",
+      "example": "They had an argument about money.",
+      "exampleKo": "그들은 돈 문제로 말다툼을 했어요.",
+      "note": "\"주장, 논거\"로도 써요: a strong argument.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "nonetheless",
+      "ipa": "/ˌnʌnðəˈles/",
+      "pos": "adv.",
+      "meaning": "그럼에도 불구하고",
+      "example": "It was a difficult year. Nonetheless, we met our goals.",
+      "exampleKo": "힘든 한 해였어요. 그럼에도 목표를 달성했어요.",
+      "note": "= nevertheless. however보다 강조하는 느낌이에요.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "defend my position",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "내 입장을 옹호하다",
+      "example": "I had to defend my position in the meeting.",
+      "exampleKo": "회의에서 내 입장을 변호해야 했어요.",
+      "note": "position = 입장, 의견.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "be in touch",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "연락하다",
+      "example": "I’ll be in touch next week.",
+      "exampleKo": "다음 주에 연락드릴게요.",
+      "note": "keep in touch = 연락하고 지내다, get in touch with ~ = ~에게 연락하다.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "outcome",
+      "ipa": "/ˈaʊtkʌm/",
+      "pos": "n.",
+      "meaning": "결과",
+      "example": "We’re waiting for the outcome of the negotiation.",
+      "exampleKo": "협상 결과를 기다리고 있어요.",
+      "note": "result와 비슷해요.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "desperate",
+      "ipa": "/ˈdespərət/",
+      "pos": "adj.",
+      "meaning": "필사적인, 절박한, 간절한",
+      "example": "I was desperate for a cup of coffee.",
+      "exampleKo": "커피 한 잔이 너무 간절했어요.",
+      "note": "be desperate for ~ / to ~.",
+      "date": "2026-10-09",
+      "topic": "감정·상태",
+      "set": "Set 2"
+    },
+    {
+      "word": "except",
+      "ipa": "/ɪkˈsept/",
+      "pos": "prep.",
+      "meaning": "~을 제외하고",
+      "example": "The office is open every day except Sunday.",
+      "exampleKo": "사무실은 일요일 빼고 매일 열어요.",
+      "note": "except for ~. expect(기대하다)와 헷갈리지 마세요!",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "these past two days",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "지난 이틀 동안",
+      "example": "I’ve been really busy these past two days.",
+      "exampleKo": "지난 이틀 동안 정말 바빴어요.",
+      "note": "현재완료와 잘 어울려요. these past few weeks = 지난 몇 주 동안.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "overlook",
+      "ipa": "/ˌoʊvərˈlʊk/",
+      "pos": "v.",
+      "meaning": "간과하다, 놓치다, 내려다보다",
+      "example": "We overlooked a small error in the report.",
+      "exampleKo": "보고서의 작은 오류를 놓쳤어요.",
+      "note": "a room overlooking the sea = 바다가 내려다보이는 방.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "finalize",
+      "ipa": "/ˈfaɪnəlaɪz/",
+      "pos": "v.",
+      "meaning": "마무리하다, 확정하다",
+      "example": "We need to finalize the schedule by Friday.",
+      "exampleKo": "금요일까지 일정을 확정해야 해요.",
+      "note": "finalize a deal / contract.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "overseas",
+      "ipa": "/ˌoʊvərˈsiːz/",
+      "pos": "adv. / adj.",
+      "meaning": "해외로, 해외의",
+      "example": "She’s planning to study overseas.",
+      "exampleKo": "그녀는 해외에서 공부할 계획이에요.",
+      "note": "go overseas (to 없이!). = abroad.",
+      "date": "2026-10-09",
+      "topic": "일정·출장",
+      "set": "Set 2"
+    },
+    {
+      "word": "recognize",
+      "ipa": "/ˈrekəɡnaɪz/",
+      "pos": "v.",
+      "meaning": "알아보다, 인정하다",
+      "example": "I didn’t recognize you with your new haircut.",
+      "exampleKo": "머리 바꿔서 못 알아봤어.",
+      "note": "recognition = 인정, 인식.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "imminent",
+      "ipa": "/ˈɪmɪnənt/",
+      "pos": "adj.",
+      "meaning": "임박한, 곧 닥칠",
+      "example": "The release of the new model is imminent.",
+      "exampleKo": "새 모델 출시가 임박했어요.",
+      "note": "eminent(저명한)와 철자가 비슷하니 주의하세요.",
+      "date": "2026-10-09",
+      "topic": "일상·기타",
+      "set": "Set 2"
+    },
+    {
+      "word": "ask for",
+      "ipa": "/ˈæsk fər/",
+      "pos": "phrasal v.",
+      "meaning": "~을 요청하다",
+      "example": "Don’t be afraid to ask for help.",
+      "exampleKo": "도움을 요청하는 걸 두려워하지 마세요.",
+      "note": "ask for permission / a raise.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "get rid of ~",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~을 없애다, 처분하다",
+      "example": "I need to get rid of some old clothes.",
+      "exampleKo": "오래된 옷들을 좀 처분해야 해요.",
+      "note": "throw out(버리다, Dialog Day 29)과 비슷해요.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "repetitive",
+      "ipa": "/rɪˈpetətɪv/",
+      "pos": "adj.",
+      "meaning": "반복적인",
+      "example": "Data entry is a repetitive task.",
+      "exampleKo": "데이터 입력은 반복적인 작업이에요.",
+      "note": "repeat = 반복하다.",
+      "date": "2026-10-09",
+      "topic": "업무·회사",
+      "set": "Set 2"
+    },
+    {
+      "word": "likewise",
+      "ipa": "/ˈlaɪkwaɪz/",
+      "pos": "adv.",
+      "meaning": "마찬가지로, 저도요",
+      "example": "“Nice to meet you.” “Likewise!”",
+      "exampleKo": "\"만나서 반가워요.\" \"저도요!\"",
+      "note": "문장 앞에서 \"마찬가지로\": Likewise, our costs went up.",
+      "date": "2026-10-09",
+      "topic": "연결어",
+      "set": "Set 2"
+    },
+    {
+      "word": "make up",
+      "ipa": "/ˌmeɪk ˈʌp/",
+      "pos": "phrasal v.",
+      "meaning": "(이야기를) 지어내다, 화해하다, 구성하다",
+      "example": "He made up an excuse for being late.",
+      "exampleKo": "그는 지각한 핑계를 지어냈어요.",
+      "note": "make up with ~ = ~와 화해하다. Women make up 40% of the team. = 팀의 40%를 차지하다.",
+      "date": "2026-10-09",
+      "topic": "표현·구문",
+      "set": "Set 2"
+    },
+    {
+      "word": "adapt",
+      "ipa": "/əˈdæpt/",
+      "pos": "v.",
+      "meaning": "적응하다, 맞추다",
+      "example": "It took me a while to adapt to the new job.",
+      "exampleKo": "새 직장에 적응하는 데 시간이 좀 걸렸어요.",
+      "note": "adapt to ~. adopt(채택하다)와 구별! (목록의 adapts를 기본형으로 정리했어요)",
+      "date": "2026-10-09",
+      "topic": "성격·태도",
+      "set": "Set 2"
     }
   ],
 
