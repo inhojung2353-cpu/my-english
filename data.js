@@ -5925,6 +5925,78 @@ window.CONTENT = {
       "marks": [
         "just so you know"
       ]
+    },
+    {
+      "id": "day31",
+      "day": 31,
+      "key": "You know how it is.",
+      "keyMeaning": "어떤지 알잖아, 다 그렇지 뭐",
+      "title": "늦은 저녁 약속",
+      "situation": "일 때문에 늦게 온 친구와 식당에서",
+      "date": "2026-10-16",
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Sorry I’m late. I got caught up at work. My supervisor is one of those people who think that work starts at 5 in the evening. You know how it is.",
+          "ko": "늦어서 미안해. 회사에서 일에 붙잡혀 있었어. 우리 상사는 일이 저녁 5시부터 시작한다고 생각하는 그런 사람이거든. 어떤지 알잖아."
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. Back in my day, that was pretty much the norm. I didn’t think people had to deal with that anymore. That supervisor of yours needs to get with the times.",
+          "ko": "그럼. 내가 젊었을 땐 그게 거의 당연했지. 요즘은 그런 일 안 겪는 줄 알았는데. 너희 상사 시대에 좀 맞춰 살아야겠다."
+        },
+        {
+          "speaker": "A",
+          "en": "You can say that again.",
+          "ko": "내 말이 그 말이야."
+        },
+        {
+          "speaker": "B",
+          "en": "Oh, I went ahead and ordered us a set for two. I hope that’s OK. Nowadays, I don’t even have the patience to look through the menu. You know what I mean?",
+          "ko": "아, 내가 먼저 2인 세트로 주문해 뒀어. 괜찮았으면 좋겠다. 요즘은 메뉴판 훑어볼 인내심도 없더라. 무슨 말인지 알지?"
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "You know how it is.",
+          "meaning": "어떤지 알잖아, 다 그렇지 뭐 (상대도 공감할 만한 상황을 말할 때)"
+        },
+        {
+          "phrase": "get caught up (at work)",
+          "meaning": "(일에) 붙잡히다, 일 때문에 꼼짝 못 하다"
+        },
+        {
+          "phrase": "one of those people who ~",
+          "meaning": "~하는 그런 부류의 사람"
+        },
+        {
+          "phrase": "Back in my day, ~",
+          "meaning": "내가 젊었을 땐, 우리 때는"
+        },
+        {
+          "phrase": "the norm",
+          "meaning": "일반적인 것, 당연한 일"
+        },
+        {
+          "phrase": "get with the times",
+          "meaning": "시대에 맞춰 살다, 요즘 방식을 따르다"
+        },
+        {
+          "phrase": "You can say that again.",
+          "meaning": "내 말이 그 말이야 (강한 동의)"
+        },
+        {
+          "phrase": "go ahead and ~",
+          "meaning": "(묻지 않고) 먼저 ~해 버리다"
+        },
+        {
+          "phrase": "You know what I mean?",
+          "meaning": "무슨 말인지 알지?"
+        }
+      ],
+      "marks": [
+        "You know how it is"
+      ]
     }
   ],
 };
