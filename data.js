@@ -5997,6 +5997,70 @@ window.CONTENT = {
       "marks": [
         "You know how it is"
       ]
+    },
+    {
+      "id": "day32",
+      "day": 32,
+      "key": "at the end of the day",
+      "keyMeaning": "결국, 따지고 보면",
+      "title": "말 안 듣는 아이들",
+      "situation": "자녀 교육 고민을 나누는 부모들",
+      "date": "2026-10-18",
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Sometimes, I feel like my kids are trying to do the opposite of what I tell them to do. Do you ever feel like that with your kids?",
+          "ko": "가끔 우리 애들이 내가 하라는 것과 반대로만 하려는 것 같아. 너도 너희 애들한테 그렇게 느낄 때 있어?"
+        },
+        {
+          "speaker": "B",
+          "en": "Of course. I think it’s something all parents and children go through.",
+          "ko": "물론이지. 모든 부모와 아이가 다 겪는 일인 것 같아."
+        },
+        {
+          "speaker": "A",
+          "en": "So, how do you handle it?",
+          "ko": "그럼 넌 어떻게 대처해?"
+        },
+        {
+          "speaker": "B",
+          "en": "I’ve just accepted it because, at the end of the day, it’s their life and they should be able to make their decisions.",
+          "ko": "난 그냥 받아들였어. 결국 아이들 인생이고, 스스로 결정할 수 있어야 하니까."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "at the end of the day",
+          "meaning": "결국, 따지고 보면 (결론·가장 중요한 점을 말할 때)"
+        },
+        {
+          "phrase": "I feel like ~",
+          "meaning": "~인 것 같아 (Day 30)"
+        },
+        {
+          "phrase": "the opposite of ~",
+          "meaning": "~의 반대"
+        },
+        {
+          "phrase": "Do you ever feel like that?",
+          "meaning": "너도 그렇게 느낄 때 있어?"
+        },
+        {
+          "phrase": "go through ~",
+          "meaning": "(일·과정을) 겪다"
+        },
+        {
+          "phrase": "handle",
+          "meaning": "대처하다, 다루다"
+        },
+        {
+          "phrase": "make one’s (own) decisions",
+          "meaning": "스스로 결정하다"
+        }
+      ],
+      "marks": [
+        "at the end of the day"
+      ]
     }
   ],
 };
