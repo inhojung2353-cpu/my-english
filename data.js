@@ -6061,6 +6061,80 @@ window.CONTENT = {
       "marks": [
         "at the end of the day"
       ]
+    },
+    {
+      "id": "day33",
+      "day": 33,
+      "key": "get around to",
+      "keyMeaning": "(미루던 일을) 드디어 하다, ~할 짬을 내다",
+      "title": "또 못 간 치과",
+      "situation": "치과 예약을 또 미룬 가족(연인)과의 대화",
+      "date": "2026-10-26",
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "How did it go at the dentist today?",
+          "ko": "오늘 치과는 어땠어?"
+        },
+        {
+          "speaker": "B",
+          "en": "Oh, I didn’t go, actually.",
+          "ko": "아, 사실 안 갔어."
+        },
+        {
+          "speaker": "A",
+          "en": "What? Did you forget again?",
+          "ko": "뭐? 또 잊어버렸어?"
+        },
+        {
+          "speaker": "B",
+          "en": "No. I just never got around to it. I was stuck at the office all day.",
+          "ko": "아니. 그냥 갈 짬이 안 났어. 하루 종일 사무실에 붙잡혀 있었거든."
+        },
+        {
+          "speaker": "A",
+          "en": "That’s what you said the last time.",
+          "ko": "지난번에도 그렇게 말했잖아."
+        },
+        {
+          "speaker": "B",
+          "en": "I know, but it’s like I said. This is our busiest time of the year. Relax. I’ll go. I already called them and told them I’d be there next week.",
+          "ko": "알아, 근데 내가 말했듯이 지금이 일 년 중 제일 바쁜 시기야. 걱정 마. 갈 거야. 이미 전화해서 다음 주에 가겠다고 했어."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "get around to ~ / ~ing",
+          "meaning": "(미루던 일을) 드디어 하다, ~할 짬을 내다 — never got around to it = 끝내 못 했다"
+        },
+        {
+          "phrase": "How did it go?",
+          "meaning": "어떻게 됐어?, 어땠어?"
+        },
+        {
+          "phrase": "be stuck at ~",
+          "meaning": "~에 붙잡혀 꼼짝 못 하다 (Set 2 stuck)"
+        },
+        {
+          "phrase": "That’s what you said the last time.",
+          "meaning": "지난번에도 그렇게 말했잖아"
+        },
+        {
+          "phrase": "It’s like I said.",
+          "meaning": "내가 말했듯이"
+        },
+        {
+          "phrase": "the busiest time of the year",
+          "meaning": "일 년 중 가장 바쁜 시기"
+        },
+        {
+          "phrase": "Relax.",
+          "meaning": "진정해, 걱정 마"
+        }
+      ],
+      "marks": [
+        "got around to"
+      ]
     }
   ],
 };
