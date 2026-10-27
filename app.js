@@ -456,6 +456,9 @@ function renderPart(s, partNo) {
   });
 }
 
+// `단어` 표기를 강조 표시로
+const inlineCode = t => esc(t).replace(/`([^`]+)`/g, '<code>$1</code>');
+
 /* ---------- Dialog ----------
    메신저처럼 말풍선으로 보여주고, 한쪽 역할을 가려서 말하기 연습을 할 수 있어요. */
 function dialogCard(d) {
@@ -563,6 +566,15 @@ function renderDialog(id) {
       <div class="section-title">추가 예문</div>
       <div class="card">${d.extras.map(x => `
         <div class="extra"><div class="row-between"><div class="grow"><div class="en">${highlight(x.en, marks)}</div>${x.ko ? `<div class="ko">${esc(x.ko)}</div>` : ''}</div>${speakBtn(x.en)}</div></div>`).join('')}</div>` : ''}
+
+    ${(d.notes || []).length ? `
+      <div class="section-title">📐 문법 노트</div>
+      <div class="card vlist">${d.notes.map(n => `
+        <div class="vrow">
+          <div class="vhead"><span class="vw">${esc(n.point)}</span></div>
+          <div class="note-body">${inlineCode(n.explain)}</div>
+          ${(n.subs || []).length ? `<ul class="note-subs">${n.subs.map(x => `<li>${inlineCode(x)}</li>`).join('')}</ul>` : ''}
+        </div>`).join('')}</div>` : ''}
 
     ${prev || next ? `
       <div class="pager">

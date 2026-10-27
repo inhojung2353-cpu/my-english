@@ -4179,7 +4179,8 @@ window.CONTENT = {
      id: 주소에 쓰이는 이름(영문), title, situation: 상황, date, summary: 한 줄 요약,
      lines: [{ speaker, en, ko }] — 첫 번째 화자는 왼쪽, 두 번째 화자는 오른쪽 말풍선,
      expressions: [{ phrase, meaning }], day: Day 번호, key/keyMeaning: 그날의 핵심 표현,
-     marks: 본문에서 형광펜으로 칠할 부분, extras: 추가 예문 */
+     marks: 본문에서 형광펜으로 칠할 부분, extras: 추가 예문,
+     notes: 맨 아래 문법 노트 [{ point, explain, subs }] — `코드`는 강조 표시 */
   dialogs: [
     {
       "id": "day01",
@@ -6199,6 +6200,40 @@ window.CONTENT = {
       "marks": [
         "I wouldn’t",
         "I would"
+      ],
+      "notes": [
+        {
+          "point": "hardly",
+          "explain": "'거의 ~않다'라는 뜻이고, 그 자체로 부정의 의미가 있어요. `hard`(열심히)와 헷갈리기 쉬우니 조심하세요.",
+          "subs": [
+            "I hardly know him. → 나는 그를 거의 몰라."
+          ]
+        },
+        {
+          "point": "hardly ... anything",
+          "explain": "'거의 아무것에도 ~않다'라는 뜻이에요. 부정어가 있으니 `something`이 아니라 `anything`을 씁니다.",
+          "subs": []
+        },
+        {
+          "point": "besides",
+          "explain": "'~ 외에는, ~ 말고는'이라는 뜻이에요. 여기서는 `except`와 비슷하게 쓰였어요.",
+          "subs": [
+            "`beside`(~ 옆에)와 다른 단어이니 헷갈리지 마세요."
+          ]
+        },
+        {
+          "point": "making calls and texting",
+          "explain": "전치사 뒤에는 동명사(-ing)가 와요.",
+          "subs": [
+            "make a call → 전화하다",
+            "text → 문자 보내다 (동사로 쓰임)"
+          ]
+        },
+        {
+          "point": "anyway",
+          "explain": "'어차피, 아무튼'이라는 뜻이에요.",
+          "subs": []
+        }
       ]
     }
   ],

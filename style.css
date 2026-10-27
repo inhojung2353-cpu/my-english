@@ -308,3 +308,6 @@ input[type=search], textarea { background: var(--surface); }
 .vhead-row { display: flex; align-items: flex-start; gap: 10px; }
 .vhead-row .vhead { flex: 1; min-width: 0; }
 .vhead-row .speak { width: 32px; height: 32px; font-size: 14px; margin-top: -2px; }
+.note-body { margin-top: 4px; font-size: 15px; line-height: 1.6; }
+.note-subs { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.vlist code { font-family: inherit; font-weight: 700; color: var(--primary); background: var(--primary-soft); padding: 0 5px; border-radius: 5px; }
