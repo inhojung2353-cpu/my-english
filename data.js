@@ -6135,6 +6135,71 @@ window.CONTENT = {
       "marks": [
         "got around to"
       ]
+    },
+    {
+      "id": "day34",
+      "day": 34,
+      "key": "would",
+      "keyMeaning": "(나라면) ~할 거야 — 부드러운 조언",
+      "title": "금 간 휴대폰 화면",
+      "situation": "휴대폰을 바꿀지 고민하는 친구에게 조언하기",
+      "date": "2026-10-27",
+      "lines": [
+        {
+          "speaker": "A",
+          "en": "Is this a crack on your screen? I would get this fixed as soon as I could.",
+          "ko": "이거 화면에 금 간 거야? 나라면 최대한 빨리 고치겠다."
+        },
+        {
+          "speaker": "B",
+          "en": "I know, but I figured I should just get a new one.",
+          "ko": "알아, 근데 그냥 새로 사야겠다고 생각했어."
+        },
+        {
+          "speaker": "A",
+          "en": "What? An iPhone? The new models are just around the corner. I wouldn’t get a new one right now. I would wait a little bit.",
+          "ko": "뭐? 아이폰? 곧 신모델 나오잖아. 나라면 지금 새로 안 사. 조금 기다릴 거야."
+        },
+        {
+          "speaker": "B",
+          "en": "I don’t mind using an older model. I hardly use it for anything besides making calls and texting anyway.",
+          "ko": "구형 모델 써도 상관없어. 어차피 전화랑 문자 말고는 거의 안 쓰거든."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "I would ~ / I wouldn’t ~",
+          "meaning": "(나라면) ~할 거야 / 안 할 거야 — \"If I were you\"를 생략한 부드러운 조언"
+        },
+        {
+          "phrase": "get ~ fixed",
+          "meaning": "~을 고치다 (맡겨서 수리하다, have + O + p.p.와 같은 구조)"
+        },
+        {
+          "phrase": "as soon as I could",
+          "meaning": "가능한 한 빨리"
+        },
+        {
+          "phrase": "I figured ~",
+          "meaning": "~라고 생각했어, ~인 것 같았어"
+        },
+        {
+          "phrase": "just around the corner",
+          "meaning": "(시기가) 코앞에 다가온, 곧"
+        },
+        {
+          "phrase": "I don’t mind ~ing",
+          "meaning": "~해도 상관없어"
+        },
+        {
+          "phrase": "hardly ~ besides …",
+          "meaning": "… 말고는 거의 ~하지 않다 (Day 8 hardly ever)"
+        }
+      ],
+      "marks": [
+        "I wouldn’t",
+        "I would"
+      ]
     }
   ],
 };
