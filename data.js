@@ -8855,6 +8855,149 @@ window.CONTENT = {
           "subs": []
         }
       ]
+    },
+    {
+      "id": "day40",
+      "day": 40,
+      "key": "point out",
+      "keyMeaning": "지적하다, 짚어 주다",
+      "title": "중복·누락된 데이터",
+      "situation": "데이터 분석가(DA)와 엔지니어의 데이터 품질 장애 대응",
+      "date": "2026-11-06",
+      "lines": [
+        {
+          "speaker": "DA",
+          "en": "We found some duplicate and missing records in the analytics table.",
+          "ko": "분석 테이블에서 일부 중복 데이터와 누락된 레코드를 발견했습니다."
+        },
+        {
+          "speaker": "Engineer",
+          "en": "Thanks for pointing that out. I’ll check the data lineage and upstream sources.",
+          "ko": "알려주셔서 감사합니다. 데이터 계보와 상위 데이터 소스를 확인하겠습니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "We should check data completeness and consistency before loading the data downstream.",
+          "ko": "데이터를 하위 시스템에 적재하기 전에 완전성과 일관성을 확인해야 합니다."
+        },
+        {
+          "speaker": "Engineer",
+          "en": "Agreed. I’ll address the incident, fix the issue, and make sure the recovery process is reliable.",
+          "ko": "동의합니다. 장애를 처리하고 문제를 수정한 다음 복구 프로세스의 신뢰성을 확보하겠습니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "Could we set up monitoring to prevent this from happening again?",
+          "ko": "이런 일이 다시 발생하지 않도록 모니터링을 구축할 수 있을까요?"
+        },
+        {
+          "speaker": "Engineer",
+          "en": "Yes. We’ll also review the retry logic and make the pipeline idempotent.",
+          "ko": "네. 재시도 로직도 검토하고 파이프라인이 멱등성을 보장하도록 하겠습니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "point out",
+          "meaning": "지적하다, 짚어 주다 (핵심)"
+        },
+        {
+          "phrase": "duplicate records",
+          "meaning": "중복 레코드"
+        },
+        {
+          "phrase": "missing records",
+          "meaning": "누락된 레코드"
+        },
+        {
+          "phrase": "data lineage",
+          "meaning": "데이터 계보"
+        },
+        {
+          "phrase": "completeness",
+          "meaning": "완전성"
+        },
+        {
+          "phrase": "consistency",
+          "meaning": "일관성"
+        },
+        {
+          "phrase": "address an incident",
+          "meaning": "장애를 처리하다"
+        },
+        {
+          "phrase": "recovery process",
+          "meaning": "복구 프로세스"
+        },
+        {
+          "phrase": "retry logic",
+          "meaning": "재시도 로직"
+        },
+        {
+          "phrase": "idempotent",
+          "meaning": "멱등성을 가진 (여러 번 실행해도 결과가 같은)"
+        },
+        {
+          "phrase": "Thanks for ~ing",
+          "meaning": "~해 줘서 고마워요 (추가)"
+        },
+        {
+          "phrase": "upstream sources",
+          "meaning": "상위 데이터 소스 (추가)"
+        },
+        {
+          "phrase": "set up monitoring",
+          "meaning": "모니터링을 구축하다 (추가)"
+        },
+        {
+          "phrase": "prevent A from ~ing",
+          "meaning": "A가 ~하지 못하게 막다 (추가)"
+        }
+      ],
+      "marks": [
+        "pointing that out"
+      ],
+      "notes": [
+        {
+          "point": "Thanks for pointing that out.",
+          "explain": "`Thanks for` 뒤에는 명사나 동명사(-ing)가 와요. 상대가 문제를 알려 줬을 때 방어적이지 않게 받는 좋은 표현이에요.",
+          "subs": [
+            "Thanks for letting me know. → 알려 줘서 고마워요."
+          ]
+        },
+        {
+          "point": "point that out (구동사 + 대명사)",
+          "explain": "`point out`처럼 나눌 수 있는 구동사는 목적어가 대명사(it, that, them)면 반드시 가운데에 넣어요.",
+          "subs": [
+            "point out the error (O) / point the error out (O)",
+            "point that out (O) / point out that (X)"
+          ]
+        },
+        {
+          "point": "before loading",
+          "explain": "`before`가 전치사로 쓰이면 뒤에 동명사(-ing)가 와요. 주어를 넣고 싶으면 `before we load the data`.",
+          "subs": []
+        },
+        {
+          "point": "make sure (that) ~ is reliable",
+          "explain": "`make sure` 뒤 that절은 현재형으로 써요. \"복구 과정이 믿을 만하도록 확실히 하겠다\" (Day 6, 36과 같은 패턴).",
+          "subs": []
+        },
+        {
+          "point": "prevent A from ~ing",
+          "explain": "\"A가 ~하는 것을 막다\". `from` 뒤에는 동명사가 와요. 비슷한 패턴: `stop A from ~ing`, `keep A from ~ing`.",
+          "subs": [
+            "This check prevents bad data from reaching the dashboard. → 이 검사가 잘못된 데이터가 대시보드에 들어가는 걸 막아요."
+          ]
+        },
+        {
+          "point": "make + 목적어 + 형용사",
+          "explain": "\"~을 …하게 만들다\". `make the pipeline idempotent` = 파이프라인을 멱등하게 만들다.",
+          "subs": [
+            "Let’s make the report simpler. → 보고서를 더 간단하게 만들어요."
+          ]
+        }
+      ]
     }
   ],
 };
