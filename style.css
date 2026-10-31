@@ -227,7 +227,7 @@ ins { background: var(--good-soft); color: var(--good); text-decoration: none; b
 .dlg-line .ko { flex: 1; min-width: 0; font-size: 15px; line-height: 1.6; }
 .dlg-line .speak { width: 30px; height: 30px; font-size: 13px; }
 .dlg-line.masked .en { filter: blur(7px); user-select: none; cursor: pointer; }
-.dlg.wide .who { min-width: 48px; }
+.dlg .who { min-width: var(--who-w, 26px); }
 .dlg-line.peek .en { background: var(--primary-soft); border-radius: 6px; cursor: pointer; }
 
 /* Dialog 목록 · Day */

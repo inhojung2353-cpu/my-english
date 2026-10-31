@@ -513,6 +513,7 @@ function renderDialog(id) {
   if (dlgHide && !speakers.includes(dlgHide)) dlgHide = '';
   const hasKo = lines.some(l => l.ko);
   const wide = speakers.some(sp => sp.length > 2) ? 'wide' : '';
+  const whoW = Math.max(26, ...speakers.map(sp => Math.ceil(sp.length * 9.5))); // 가장 긴 이름에 맞춰 줄 맞춤
   const fullText = lines.map(l => l.en).join(' ');
 
   view.innerHTML = `
@@ -535,7 +536,7 @@ function renderDialog(id) {
     </div>
 
     <div class="section-title">Dialog</div>
-    <div class="card dlg ${wide}" id="chat">
+    <div class="card dlg ${wide}" style="--who-w:${whoW}px" id="chat">
       ${lines.map(l => {
         const alt = speakers.indexOf(l.speaker) % 2 === 1;
         const hidden = dlgHide && l.speaker === dlgHide;
@@ -550,7 +551,7 @@ function renderDialog(id) {
 
     ${hasKo ? `
       <div class="section-title" id="ko-title" ${dlgShowKo ? '' : 'hidden'}>해석</div>
-      <div class="card dlg ko-block ${wide}" id="ko-block" ${dlgShowKo ? '' : 'hidden'}>
+      <div class="card dlg ko-block ${wide}" style="--who-w:${whoW}px" id="ko-block" ${dlgShowKo ? '' : 'hidden'}>
         ${lines.map(l => `
           <div class="dlg-line">
             <span class="who ${speakers.indexOf(l.speaker) % 2 === 1 ? 'alt' : ''}">${esc(l.speaker || '')}</span>
