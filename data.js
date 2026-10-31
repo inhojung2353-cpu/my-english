@@ -8998,6 +8998,144 @@ window.CONTENT = {
           ]
         }
       ]
+    },
+    {
+      "id": "day41",
+      "day": 41,
+      "key": "roll out",
+      "keyMeaning": "(단계적으로) 출시하다, 도입하다",
+      "title": "새 결제 기능 출시 준비",
+      "situation": "PM·데이터 분석가(DA)·개발자의 A/B 테스트 설계 회의",
+      "date": "2026-11-07",
+      "lines": [
+        {
+          "speaker": "PM",
+          "en": "We’re planning to roll out a new checkout feature next month.",
+          "ko": "다음 달에 새로운 결제 기능을 출시할 계획입니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "Sounds good. Have we defined the success metrics and the experiment design?",
+          "ko": "좋네요. 성공 지표와 실험 설계는 정의했나요?"
+        },
+        {
+          "speaker": "PM",
+          "en": "Not yet. Could you propose a way to measure the impact?",
+          "ko": "아직이요. 효과를 측정할 방법을 제안해 주실 수 있나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "I recommend running an A/B test and comparing the conversion rate between the control and treatment groups.",
+          "ko": "A/B 테스트를 진행하고 대조군과 실험군의 전환율을 비교하는 것을 추천합니다."
+        },
+        {
+          "speaker": "Developer",
+          "en": "Are there any technical dependencies we should take into account before deployment?",
+          "ko": "배포 전에 고려해야 할 기술적 의존성이 있나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Yes. We need to confirm event tracking, validate the data, and make sure the metrics are reliable.",
+          "ko": "네. 이벤트 트래킹을 확인하고 데이터를 검증하며 지표의 신뢰성을 확보해야 합니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "roll out",
+          "meaning": "(단계적으로) 출시하다 (핵심)"
+        },
+        {
+          "phrase": "define success metrics",
+          "meaning": "성공 지표를 정의하다"
+        },
+        {
+          "phrase": "experiment design",
+          "meaning": "실험 설계"
+        },
+        {
+          "phrase": "propose",
+          "meaning": "제안하다"
+        },
+        {
+          "phrase": "A/B test",
+          "meaning": "A/B 테스트"
+        },
+        {
+          "phrase": "control group",
+          "meaning": "대조군 (기존 버전을 보는 그룹)"
+        },
+        {
+          "phrase": "treatment group",
+          "meaning": "실험군 (새 버전을 보는 그룹)"
+        },
+        {
+          "phrase": "dependency",
+          "meaning": "의존성"
+        },
+        {
+          "phrase": "deployment",
+          "meaning": "배포"
+        },
+        {
+          "phrase": "event tracking",
+          "meaning": "이벤트 추적"
+        },
+        {
+          "phrase": "measure the impact",
+          "meaning": "효과(영향)를 측정하다 (추가)"
+        },
+        {
+          "phrase": "conversion rate",
+          "meaning": "전환율 (추가)"
+        },
+        {
+          "phrase": "take ~ into account",
+          "meaning": "~을 고려하다 (추가, Day 38)"
+        },
+        {
+          "phrase": "Not yet.",
+          "meaning": "아직이요 (추가)"
+        }
+      ],
+      "marks": [
+        "roll out"
+      ],
+      "notes": [
+        {
+          "point": "We’re planning to ~",
+          "explain": "현재진행형으로 \"~할 계획이에요\"라고 가까운 미래의 계획을 말해요. `We plan to ~`보다 \"지금 준비 중\"이라는 느낌이 강해요.",
+          "subs": [
+            "We’re planning to launch it in May. → 5월에 출시할 계획이에요."
+          ]
+        },
+        {
+          "point": "Have we defined ~?",
+          "explain": "현재완료 질문으로 \"(지금까지) ~을 정해 뒀나요?\"라고 준비 상태를 확인해요. 대답은 `Yes, we have.` / `Not yet.`",
+          "subs": []
+        },
+        {
+          "point": "a way to measure ~",
+          "explain": "`to measure`가 앞의 명사 `a way`를 꾸며 \"~을 측정할 방법\"이 돼요 (to부정사의 형용사적 쓰임).",
+          "subs": [
+            "We need a way to track clicks. → 클릭을 추적할 방법이 필요해요."
+          ]
+        },
+        {
+          "point": "recommend + ~ing",
+          "explain": "`recommend` 뒤에 동사가 오면 동명사(-ing)를 써요. `I recommend to run`(X). 두 동작은 `running ... and comparing ...`처럼 둘 다 -ing로 맞춰요.",
+          "subs": []
+        },
+        {
+          "point": "any dependencies (that) we should take into account",
+          "explain": "관계대명사 `that/which`가 생략됐어요. \"우리가 고려해야 할 의존성\". 목적격 관계대명사는 구어에서 자주 생략해요.",
+          "subs": []
+        },
+        {
+          "point": "between A and B",
+          "explain": "두 대상을 비교할 때 `between A and B`. 셋 이상이면 보통 `among`을 써요. 여기서는 `the control and treatment groups`처럼 groups를 한 번만 썼어요.",
+          "subs": []
+        }
+      ]
     }
   ],
 };
