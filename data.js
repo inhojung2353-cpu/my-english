@@ -8575,6 +8575,146 @@ window.CONTENT = {
           "subs": []
         }
       ]
+    },
+    {
+      "id": "day38",
+      "day": 38,
+      "key": "narrow down",
+      "keyMeaning": "(범위를) 좁히다",
+      "title": "느려진 쿼리",
+      "situation": "데이터 분석가(DA)와 개발자의 쿼리 성능 점검",
+      "date": "2026-11-04",
+      "lines": [
+        {
+          "speaker": "DA",
+          "en": "The query is taking longer than expected. Could you take a look at it?",
+          "ko": "쿼리 실행이 예상보다 오래 걸리고 있습니다. 한번 확인해 주시겠어요?"
+        },
+        {
+          "speaker": "Developer",
+          "en": "Sure. Are you joining any large tables or running heavy aggregations?",
+          "ko": "물론이죠. 대용량 테이블을 조인하거나 무거운 집계 작업을 실행하고 있나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Yes. I’m joining several tables, and the query performance has degraded since the latest update.",
+          "ko": "네. 여러 테이블을 조인하고 있고, 최근 업데이트 이후 쿼리 성능이 저하됐습니다."
+        },
+        {
+          "speaker": "Developer",
+          "en": "We might have a bottleneck in the execution plan. Let’s check the query plan.",
+          "ko": "실행 계획에 병목이 있을 수 있습니다. 쿼리 실행 계획을 확인해 봅시다."
+        },
+        {
+          "speaker": "DA",
+          "en": "That makes sense. I’ll narrow down the problematic part and try to optimize the query.",
+          "ko": "그렇군요. 문제가 되는 부분을 좁혀서 쿼리를 최적화해 보겠습니다."
+        },
+        {
+          "speaker": "Developer",
+          "en": "Sounds good. We should also take data volume and scalability into account.",
+          "ko": "좋습니다. 데이터 양과 확장성도 고려해야 합니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "narrow down",
+          "meaning": "(범위를) 좁히다 (핵심)"
+        },
+        {
+          "phrase": "take a look at ~",
+          "meaning": "~을 살펴보다"
+        },
+        {
+          "phrase": "join large tables",
+          "meaning": "대용량 테이블을 조인하다"
+        },
+        {
+          "phrase": "aggregation",
+          "meaning": "집계"
+        },
+        {
+          "phrase": "degrade",
+          "meaning": "(성능이) 저하되다"
+        },
+        {
+          "phrase": "bottleneck",
+          "meaning": "병목"
+        },
+        {
+          "phrase": "execution plan / query plan",
+          "meaning": "실행 계획"
+        },
+        {
+          "phrase": "optimize",
+          "meaning": "최적화하다"
+        },
+        {
+          "phrase": "scalability",
+          "meaning": "확장성"
+        },
+        {
+          "phrase": "take longer than expected",
+          "meaning": "예상보다 오래 걸리다 (추가)"
+        },
+        {
+          "phrase": "That makes sense.",
+          "meaning": "그렇군요, 이해가 돼요 (추가)"
+        },
+        {
+          "phrase": "Sounds good.",
+          "meaning": "좋아요 (추가 — 제안에 동의할 때)"
+        },
+        {
+          "phrase": "take ~ into account",
+          "meaning": "~을 고려하다 (추가)"
+        },
+        {
+          "phrase": "data volume",
+          "meaning": "데이터 양 (추가)"
+        }
+      ],
+      "marks": [
+        "narrow down"
+      ],
+      "notes": [
+        {
+          "point": "is taking longer than expected",
+          "explain": "현재진행형이에요. \"지금 이 순간에도 오래 걸리고 있다\"는 진행 중인 상황을 말해요. 이미 끝났다면 `took longer than expected`.",
+          "subs": []
+        },
+        {
+          "point": "Are you joining ~ or running ~?",
+          "explain": "현재진행형 질문에서 동사 두 개(`joining`, `running`)를 `or`로 이었어요. `any`는 의문문에서 \"혹시 어떤 ~라도\".",
+          "subs": [
+            "Are you using any filters? → 혹시 필터 쓰고 있어요?"
+          ]
+        },
+        {
+          "point": "has degraded since ~",
+          "explain": "현재완료 + `since`(~ 이후로). 최근 업데이트 이후 지금까지 계속 느려진 상태라는 뜻이에요. `since` 뒤에는 시점이 와요.",
+          "subs": [
+            "It has been slow since Monday. → 월요일부터 계속 느려요."
+          ]
+        },
+        {
+          "point": "We might have ~",
+          "explain": "`might`는 \"~일 수도 있다\"는 약한 추측이에요. 원인이 확실하지 않을 때 써요. (Day 35 could be와 비슷)",
+          "subs": []
+        },
+        {
+          "point": "try to + 동사",
+          "explain": "\"~하려고 노력하다, ~해 보다\". 결과를 장담하지 않고 시도하겠다는 뉘앙스예요.",
+          "subs": []
+        },
+        {
+          "point": "take A into account",
+          "explain": "목적어가 길면 `take into account A`처럼 뒤로 보내기도 해요. 여기서는 `take data volume and scalability into account`.",
+          "subs": [
+            "We should take into account all the edge cases. → 모든 예외 상황을 고려해야 해요."
+          ]
+        }
+      ]
     }
   ],
 };
