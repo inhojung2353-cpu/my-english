@@ -8179,6 +8179,140 @@ window.CONTENT = {
           "subs": []
         }
       ]
+    },
+    {
+      "id": "day35",
+      "day": 35,
+      "key": "be driven by",
+      "keyMeaning": "~에 의해 발생하다, ~이 주된 원인이다",
+      "title": "GMV 하락 원인 분석",
+      "situation": "PM과 데이터 분석가(DA)의 업무 대화",
+      "date": "2026-11-01",
+      "lines": [
+        {
+          "speaker": "PM",
+          "en": "Have you had a chance to look into last week’s GMV performance?",
+          "ko": "지난주 GMV 실적을 확인해 볼 시간이 있었나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Yes. We observed a significant drop in GMV, mainly driven by a decrease in order volume.",
+          "ko": "네. 주로 주문량 감소로 인해 GMV가 크게 하락한 것을 확인했습니다."
+        },
+        {
+          "speaker": "PM",
+          "en": "Do we know what caused the decline?",
+          "ko": "하락의 원인이 무엇인지 파악했나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "From my perspective, changes in customer behavior could be one of the main factors.",
+          "ko": "제 관점에서는 고객 행동 변화가 주요 원인 중 하나일 수 있습니다."
+        },
+        {
+          "speaker": "PM",
+          "en": "Could you break down the numbers by customer segment?",
+          "ko": "고객 세그먼트별로 수치를 세분화해 줄 수 있나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Sure. I’ll dig into the data, validate the hypothesis, and share some insights with you.",
+          "ko": "물론입니다. 데이터를 자세히 분석하고 가설을 검증한 다음 인사이트를 공유하겠습니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "be driven by ~",
+          "meaning": "~에 의해 발생하다, ~이 주된 원인이다 (핵심)"
+        },
+        {
+          "phrase": "look into ~",
+          "meaning": "조사하다, 확인하다"
+        },
+        {
+          "phrase": "from my perspective",
+          "meaning": "제 관점에서는"
+        },
+        {
+          "phrase": "break down ~ by …",
+          "meaning": "~을 …별로 세분화하다"
+        },
+        {
+          "phrase": "dig into ~",
+          "meaning": "~을 깊이 분석하다"
+        },
+        {
+          "phrase": "validate the hypothesis",
+          "meaning": "가설을 검증하다"
+        },
+        {
+          "phrase": "Have you had a chance to ~?",
+          "meaning": "~해 볼 시간(기회)이 있었나요? (정중하게 진행 상황 묻기)"
+        },
+        {
+          "phrase": "a significant drop in ~",
+          "meaning": "~의 큰 폭 하락"
+        },
+        {
+          "phrase": "order volume",
+          "meaning": "주문량"
+        },
+        {
+          "phrase": "one of the main factors",
+          "meaning": "주요 원인 중 하나"
+        },
+        {
+          "phrase": "share insights with ~",
+          "meaning": "~에게 인사이트를 공유하다"
+        }
+      ],
+      "marks": [
+        "driven by"
+      ],
+      "notes": [
+        {
+          "point": "Have you had a chance to ~?",
+          "explain": "현재완료(`have p.p.`)로 \"지금까지 ~할 기회가 있었는지\" 묻는 표현이에요. \"Did you ~?\"보다 부드럽고 정중해서 업무 진행 상황을 확인할 때 자주 써요.",
+          "subs": [
+            "Have you had a chance to review my email? → 제 메일 검토해 보셨어요?"
+          ]
+        },
+        {
+          "point": "mainly driven by ~",
+          "explain": "`(which was) mainly driven by`에서 앞부분이 생략된 형태예요. 과거분사 `driven`이 앞의 명사(drop)를 꾸며 \"~에 의해 일어난 하락\"이라는 뜻이 돼요.",
+          "subs": [
+            "Growth was driven by new users. → 성장은 신규 사용자 덕분이었어요.",
+            "mainly = 주로, largely / primarily도 같은 뜻으로 써요."
+          ]
+        },
+        {
+          "point": "a drop in / a decrease in / a decline in",
+          "explain": "증가·감소를 나타내는 명사 뒤에는 전치사 `in`을 써요.",
+          "subs": [
+            "an increase in sales → 매출 증가",
+            "a decline in traffic → 트래픽 감소"
+          ]
+        },
+        {
+          "point": "could be ~",
+          "explain": "`could`는 여기서 \"~일 수도 있다\"는 추측이에요. 확실하지 않은 분석 결과를 조심스럽게 말할 때 좋아요.",
+          "subs": [
+            "It could be a data issue. → 데이터 문제일 수도 있어요."
+          ]
+        },
+        {
+          "point": "Could you ~?",
+          "explain": "\"~해 주실 수 있나요?\" — `Can you ~?`보다 정중한 요청이에요.",
+          "subs": []
+        },
+        {
+          "point": "I’ll A, B, and C",
+          "explain": "할 일을 순서대로 나열할 때는 동사원형을 쉼표로 이어요. 마지막 항목 앞에 `and`를 붙여요.",
+          "subs": [
+            "I’ll pull the data, check the numbers, and get back to you."
+          ]
+        }
+      ]
     }
   ],
 };

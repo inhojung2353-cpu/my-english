@@ -477,7 +477,7 @@ function dialogCard(d) {
 const dialogOrder = () => [...dialogs].sort((a, b) => (a.day || 1e9) - (b.day || 1e9) || (a.date || '').localeCompare(b.date || ''));
 let dialogQuery = '';
 
-function renderDialogs() {
+function renderDialogs() { // 목록은 최신 Day가 위로 (내림차순)
   setTitle('Dialog');
   if (!dialogs.length) {
     view.innerHTML = `<div class="empty"><span class="big">💬</span>아직 Dialog가 없어요<br><span class="small">대화문을 보내 주시면 여기에 정리돼요</span></div>`;
@@ -488,7 +488,7 @@ function renderDialogs() {
     <div id="dlist"></div>`;
   const draw = () => {
     const q = dialogQuery.trim().toLowerCase().replace(/'/g, '’');
-    const items = dialogOrder().filter(d => !q || [d.key, d.keyMeaning, d.title, d.situation, ...(d.lines || []).flatMap(l => [l.en, l.ko])]
+    const items = dialogOrder().reverse().filter(d => !q || [d.key, d.keyMeaning, d.title, d.situation, ...(d.lines || []).flatMap(l => [l.en, l.ko])]
       .some(f => (f || '').toLowerCase().includes(q)));
     $('#dlist').innerHTML = items.length ? items.map(dialogCard).join('') : `<div class="empty">검색 결과가 없어요</div>`;
   };
