@@ -8449,6 +8449,132 @@ window.CONTENT = {
           ]
         }
       ]
+    },
+    {
+      "id": "day37",
+      "day": 37,
+      "key": "align on",
+      "keyMeaning": "(의견·기준을) 서로 맞추다",
+      "title": "안 맞는 주문 건수",
+      "situation": "PM과 데이터 분석가(DA)의 지표 정의 맞추기",
+      "date": "2026-11-03",
+      "lines": [
+        {
+          "speaker": "PM",
+          "en": "I noticed that the order count in your dashboard doesn’t match our report.",
+          "ko": "대시보드의 주문 건수가 저희 보고서와 일치하지 않는 것을 발견했습니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "That’s interesting. Could you clarify how the order count is calculated on your side?",
+          "ko": "흥미롭네요. 그쪽에서는 주문 건수를 어떻게 계산하는지 설명해 주시겠어요?"
+        },
+        {
+          "speaker": "PM",
+          "en": "We include all orders, including canceled orders.",
+          "ko": "저희는 취소된 주문을 포함한 모든 주문을 집계합니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "That explains the discrepancy. Our metric only includes completed orders.",
+          "ko": "그렇다면 차이가 발생한 이유를 알겠습니다. 저희 지표는 완료된 주문만 포함합니다."
+        },
+        {
+          "speaker": "PM",
+          "en": "I see. We should align on the metric definition.",
+          "ko": "그렇군요. 지표 정의를 서로 맞춰야겠네요."
+        },
+        {
+          "speaker": "DA",
+          "en": "Agreed. I’ll update the documentation and share the definition with everyone.",
+          "ko": "동의합니다. 문서를 업데이트하고 모든 사람에게 정의를 공유하겠습니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "align on ~",
+          "meaning": "(의견·기준을) 서로 맞추다 (핵심)"
+        },
+        {
+          "phrase": "clarify",
+          "meaning": "명확히 설명하다"
+        },
+        {
+          "phrase": "include",
+          "meaning": "포함하다"
+        },
+        {
+          "phrase": "discrepancy",
+          "meaning": "불일치, 차이"
+        },
+        {
+          "phrase": "completed orders",
+          "meaning": "완료된 주문"
+        },
+        {
+          "phrase": "documentation",
+          "meaning": "문서화 자료"
+        },
+        {
+          "phrase": "A doesn’t match B",
+          "meaning": "A가 B와 일치하지 않다 (추가)"
+        },
+        {
+          "phrase": "on your side",
+          "meaning": "그쪽에서는, 그쪽 팀에서는 (추가)"
+        },
+        {
+          "phrase": "That explains ~",
+          "meaning": "그래서 ~했던 거군요, ~이 설명되네요 (추가)"
+        },
+        {
+          "phrase": "metric definition",
+          "meaning": "지표 정의 (추가)"
+        },
+        {
+          "phrase": "Agreed.",
+          "meaning": "동의합니다 (추가 — \"I agree.\"를 짧게)"
+        }
+      ],
+      "marks": [
+        "align on"
+      ],
+      "notes": [
+        {
+          "point": "I noticed that ~",
+          "explain": "\"~라는 걸 발견했어요/알게 됐어요\". 상대의 실수를 지적할 때 `You made a mistake`보다 부드럽게 들려요.",
+          "subs": [
+            "I noticed that the numbers are a bit different. → 숫자가 조금 다른 걸 발견했어요."
+          ]
+        },
+        {
+          "point": "how the order count is calculated",
+          "explain": "간접의문문(평서문 어순) + 수동태예요. \"주문 건수가 어떻게 계산되는지\". Day 36의 `what’s going on`과 같은 구조예요.",
+          "subs": []
+        },
+        {
+          "point": "include vs including",
+          "explain": "`include`는 동사(포함하다), `including`은 전치사처럼 \"~을 포함하여\"라는 뜻이에요.",
+          "subs": [
+            "We include all orders, including canceled orders. → 취소 주문을 포함해 모든 주문을 집계해요."
+          ]
+        },
+        {
+          "point": "only includes",
+          "explain": "`only`는 꾸미는 말 바로 앞에 두는 게 원칙이지만, 구어에서는 동사 앞에 두는 경우가 많아요. 의미는 \"완료 주문만 포함한다\".",
+          "subs": []
+        },
+        {
+          "point": "We should ~",
+          "explain": "\"~해야겠네요\". `must`보다 부드럽게 제안하거나 결론을 낼 때 써요.",
+          "subs": []
+        },
+        {
+          "point": "Agreed.",
+          "explain": "`I agree.` / `That’s agreed.`의 짧은 형태로, 회의에서 빠르게 동의할 때 써요. 비슷한 표현: `Sounds good.`, `Makes sense.`",
+          "subs": []
+        }
+      ]
     }
   ],
 };
