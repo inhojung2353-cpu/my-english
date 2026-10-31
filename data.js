@@ -8715,6 +8715,146 @@ window.CONTENT = {
           ]
         }
       ]
+    },
+    {
+      "id": "day39",
+      "day": 39,
+      "key": "be related to",
+      "keyMeaning": "~와 관련이 있다",
+      "title": "떨어진 고객 유지율",
+      "situation": "PM과 데이터 분석가(DA)의 리텐션 분석 논의",
+      "date": "2026-11-05",
+      "lines": [
+        {
+          "speaker": "PM",
+          "en": "We’ve seen a decline in customer retention. Can you investigate the reason?",
+          "ko": "고객 유지율이 하락했습니다. 원인을 조사해 줄 수 있나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Sure. I’ll look into purchase frequency, churn, and repeat purchase behavior.",
+          "ko": "물론입니다. 구매 빈도, 이탈, 재구매 행동을 살펴보겠습니다."
+        },
+        {
+          "speaker": "PM",
+          "en": "Can we segment customers based on their purchase history?",
+          "ko": "구매 이력에 따라 고객을 세분화할 수 있을까요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Yes. We can use cohort analysis to compare retention across different groups.",
+          "ko": "네. 코호트 분석을 사용해서 여러 그룹의 유지율을 비교할 수 있습니다."
+        },
+        {
+          "speaker": "PM",
+          "en": "What about lifetime value? Could this trend affect our long-term revenue?",
+          "ko": "고객 생애 가치는 어떤가요? 이런 추세가 장기 매출에 영향을 줄 수 있을까요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Definitely. I’ll analyze the correlation and check whether the decline is related to changes in price sensitivity or delivery lead time.",
+          "ko": "그렇습니다. 상관관계를 분석하고 이러한 하락이 가격 민감도나 배송 소요 시간의 변화와 관련이 있는지 확인하겠습니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "be related to ~",
+          "meaning": "~와 관련이 있다 (핵심)"
+        },
+        {
+          "phrase": "customer retention",
+          "meaning": "고객 유지율"
+        },
+        {
+          "phrase": "churn",
+          "meaning": "고객 이탈"
+        },
+        {
+          "phrase": "purchase frequency",
+          "meaning": "구매 빈도"
+        },
+        {
+          "phrase": "cohort analysis",
+          "meaning": "코호트 분석 (같은 시기에 가입·구매한 그룹별로 비교하는 분석)"
+        },
+        {
+          "phrase": "lifetime value (LTV)",
+          "meaning": "고객 생애 가치"
+        },
+        {
+          "phrase": "correlation",
+          "meaning": "상관관계"
+        },
+        {
+          "phrase": "delivery lead time",
+          "meaning": "배송 소요 시간"
+        },
+        {
+          "phrase": "investigate",
+          "meaning": "조사하다 (추가 — look into보다 격식 있는 말)"
+        },
+        {
+          "phrase": "segment customers",
+          "meaning": "고객을 세분화하다 (추가)"
+        },
+        {
+          "phrase": "based on ~",
+          "meaning": "~에 따라, ~을 기준으로 (추가)"
+        },
+        {
+          "phrase": "across different groups",
+          "meaning": "여러 그룹에 걸쳐 (추가)"
+        },
+        {
+          "phrase": "What about ~?",
+          "meaning": "~은 어때요? (추가 — 다른 주제를 꺼낼 때)"
+        },
+        {
+          "phrase": "Definitely.",
+          "meaning": "그렇죠, 물론이죠 (추가 — 강한 긍정)"
+        }
+      ],
+      "marks": [
+        "related to"
+      ],
+      "notes": [
+        {
+          "point": "We’ve seen a decline in ~",
+          "explain": "현재완료로 \"(최근까지) ~의 하락을 겪고 있다\"는 뜻이에요. 지표 변화를 보고할 때 자주 쓰는 패턴이에요. 증감 명사 뒤에는 `in` (Day 35).",
+          "subs": [
+            "We’ve seen an increase in traffic. → 트래픽이 늘었어요."
+          ]
+        },
+        {
+          "point": "look into A, B, and C",
+          "explain": "살펴볼 대상을 명사로 나열했어요. 마지막 항목 앞에 `and`를 붙이고, 그 앞 쉼표(옥스퍼드 콤마)는 넣어도 되고 빼도 돼요.",
+          "subs": []
+        },
+        {
+          "point": "use A to + 동사",
+          "explain": "\"~하기 위해 A를 사용하다\". `to compare`는 목적을 나타내는 to부정사예요.",
+          "subs": [
+            "We use SQL to pull the data. → 데이터를 뽑으려고 SQL을 써요."
+          ]
+        },
+        {
+          "point": "What about ~?",
+          "explain": "\"~은 어때요?\" 대화 주제를 다른 지표나 선택지로 넘길 때 써요. 뒤에는 명사나 ~ing가 와요.",
+          "subs": []
+        },
+        {
+          "point": "check whether ~",
+          "explain": "`whether`는 \"~인지 (아닌지)\"라는 뜻이에요. 확인·판단 동사(check, see, find out) 뒤에 자주 와요. 구어에서는 `if`로 바꿔 써도 돼요.",
+          "subs": [
+            "Let’s check whether the data is complete. → 데이터가 빠짐없는지 확인해 봐요."
+          ]
+        },
+        {
+          "point": "changes in A or B",
+          "explain": "`changes in ~` = ~의 변화. 여기서 `A or B`는 `price sensitivity`와 `delivery lead time` 두 가지를 가리켜요.",
+          "subs": []
+        }
+      ]
     }
   ],
 };
