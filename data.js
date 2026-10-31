@@ -8313,6 +8313,142 @@ window.CONTENT = {
           ]
         }
       ]
+    },
+    {
+      "id": "day36",
+      "day": 36,
+      "key": "identify the root cause",
+      "keyMeaning": "근본 원인을 파악하다",
+      "title": "업데이트 안 된 상위 테이블",
+      "situation": "데이터 분석가(DA)와 엔지니어의 데이터 장애 대응",
+      "date": "2026-11-02",
+      "lines": [
+        {
+          "speaker": "DA",
+          "en": "The upstream table hasn’t been updated yet. Could you check what’s going on?",
+          "ko": "상위 테이블이 아직 업데이트되지 않았습니다. 무슨 일인지 확인해 주시겠어요?"
+        },
+        {
+          "speaker": "Engineer",
+          "en": "Sure. I’ll check the logs and identify the root cause.",
+          "ko": "물론이죠. 로그를 확인하고 근본 원인을 파악하겠습니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "We need to make sure all partitions have been loaded correctly.",
+          "ko": "모든 파티션이 정상적으로 적재되었는지 확인해야 합니다."
+        },
+        {
+          "speaker": "Engineer",
+          "en": "It looks like there was an issue during the data ingestion process.",
+          "ko": "데이터 수집 과정에서 문제가 발생한 것 같습니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "Does this affect any downstream tables or dashboards?",
+          "ko": "이 문제가 하위 테이블이나 대시보드에도 영향을 미치나요?"
+        },
+        {
+          "speaker": "Engineer",
+          "en": "Yes, it might. I’ll resolve the issue and let you know once the data is up to date.",
+          "ko": "네, 그럴 수 있습니다. 문제를 해결하고 데이터가 최신 상태가 되면 알려드리겠습니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "identify the root cause",
+          "meaning": "근본 원인을 파악하다 (핵심)"
+        },
+        {
+          "phrase": "upstream / downstream",
+          "meaning": "상위(앞단) / 하위(뒷단) 시스템"
+        },
+        {
+          "phrase": "check the logs",
+          "meaning": "로그를 확인하다"
+        },
+        {
+          "phrase": "data ingestion",
+          "meaning": "데이터 수집·적재"
+        },
+        {
+          "phrase": "load partitions",
+          "meaning": "파티션을 적재하다"
+        },
+        {
+          "phrase": "up to date",
+          "meaning": "최신 상태인"
+        },
+        {
+          "phrase": "What’s going on?",
+          "meaning": "무슨 일이야?, 어떻게 된 거야?"
+        },
+        {
+          "phrase": "make sure ~",
+          "meaning": "~인지 확실히 하다, 꼭 확인하다 (Day 6)"
+        },
+        {
+          "phrase": "It looks like ~",
+          "meaning": "~인 것 같다 (보이는 정황으로 추측)"
+        },
+        {
+          "phrase": "affect ~",
+          "meaning": "~에 영향을 미치다 (Set 2 effect와 구별)"
+        },
+        {
+          "phrase": "resolve the issue",
+          "meaning": "문제를 해결하다"
+        },
+        {
+          "phrase": "let you know once ~",
+          "meaning": "~하면 바로 알려 드리다"
+        }
+      ],
+      "marks": [
+        "identify the root cause"
+      ],
+      "notes": [
+        {
+          "point": "hasn’t been updated yet",
+          "explain": "현재완료 수동태(`have been p.p.`) + `yet`이에요. \"지금까지 아직 업데이트되지 않은 상태\"를 말해요. `yet`은 부정문·의문문 끝에 와요.",
+          "subs": [
+            "The report hasn’t been shared yet. → 보고서가 아직 공유되지 않았어요."
+          ]
+        },
+        {
+          "point": "Could you check what’s going on?",
+          "explain": "간접의문문이에요. 질문 `What is going on?`이 문장 안으로 들어가면 `what’s going on`처럼 평서문 어순(주어 + 동사)이 돼요.",
+          "subs": [
+            "Do you know why it failed? (O) / Do you know why did it fail? (X)"
+          ]
+        },
+        {
+          "point": "make sure (that) all partitions have been loaded",
+          "explain": "`make sure` 뒤에는 that절이 와요(that은 생략 가능). `have been loaded`는 현재완료 수동태로 \"적재가 완료된 상태\"를 확인하는 거예요.",
+          "subs": []
+        },
+        {
+          "point": "It looks like there was ~",
+          "explain": "보이는 정황을 근거로 \"~인 것 같다\"고 말하는 표현이에요. 장애 원인처럼 아직 확정되지 않은 내용을 보고할 때 좋아요.",
+          "subs": [
+            "It looks like the job failed overnight. → 밤사이 작업이 실패한 것 같아요."
+          ]
+        },
+        {
+          "point": "Yes, it might.",
+          "explain": "`Yes, it might (affect them).`에서 반복되는 부분을 생략했어요. 조동사로 짧게 대답하는 방식이에요.",
+          "subs": [
+            "“Will it take long?” “It might.” → \"오래 걸려요?\" \"그럴 수도 있어요.\""
+          ]
+        },
+        {
+          "point": "once + 현재형",
+          "explain": "`once`는 \"~하면 (바로)\"라는 뜻의 접속사예요. 미래의 일이라도 `once` 뒤에는 현재형을 써요(`will be` X).",
+          "subs": [
+            "I’ll call you once I get home. → 집에 도착하면 바로 전화할게. (Set 2 as soon as와 같은 규칙)"
+          ]
+        }
+      ]
     }
   ],
 };
