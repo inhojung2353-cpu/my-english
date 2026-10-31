@@ -9136,6 +9136,142 @@ window.CONTENT = {
           "subs": []
         }
       ]
+    },
+    {
+      "id": "day42",
+      "day": 42,
+      "key": "walk someone through",
+      "keyMeaning": "~에게 (단계별로) 차근차근 설명하다",
+      "title": "분석 프로젝트 인수인계",
+      "situation": "리드·데이터 분석가(DA)·엔지니어의 프로젝트 마무리 회의",
+      "date": "2026-11-08",
+      "lines": [
+        {
+          "speaker": "Lead",
+          "en": "Are you ready to wrap up the analysis project?",
+          "ko": "분석 프로젝트를 마무리할 준비가 되었나요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Almost. I’ve completed the analysis and documented the key findings.",
+          "ko": "거의 끝났습니다. 분석을 완료했고 주요 발견 사항을 문서화했습니다."
+        },
+        {
+          "speaker": "Lead",
+          "en": "Great. Could you walk us through the results before handing over the project?",
+          "ko": "좋습니다. 프로젝트를 인계하기 전에 결과를 단계별로 설명해 주시겠어요?"
+        },
+        {
+          "speaker": "DA",
+          "en": "Of course. I’ll go through the key metrics, explain the limitations, and point out the remaining issues.",
+          "ko": "물론입니다. 핵심 지표를 살펴보고 한계점을 설명한 다음 남아 있는 이슈를 짚어보겠습니다."
+        },
+        {
+          "speaker": "Engineer",
+          "en": "Once we receive the handover, we’ll carry out the remaining tasks and keep track of the pipeline.",
+          "ko": "인수인계를 받으면 남은 작업을 수행하고 파이프라인을 관리하겠습니다."
+        },
+        {
+          "speaker": "DA",
+          "en": "Sounds good. I’ll share the final documentation and get back to you if anything needs further clarification.",
+          "ko": "좋습니다. 최종 문서를 공유하고 추가 설명이 필요한 사항이 있으면 다시 말씀드리겠습니다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "walk someone through ~",
+          "meaning": "~에게 단계별로 설명하다 (핵심)"
+        },
+        {
+          "phrase": "wrap up",
+          "meaning": "마무리하다"
+        },
+        {
+          "phrase": "document",
+          "meaning": "문서화하다"
+        },
+        {
+          "phrase": "key findings",
+          "meaning": "주요 발견 사항"
+        },
+        {
+          "phrase": "hand over",
+          "meaning": "인계하다 (명사 handover = 인수인계)"
+        },
+        {
+          "phrase": "limitation",
+          "meaning": "한계점"
+        },
+        {
+          "phrase": "carry out",
+          "meaning": "수행하다"
+        },
+        {
+          "phrase": "keep track of ~",
+          "meaning": "~을 추적하고 관리하다"
+        },
+        {
+          "phrase": "further clarification",
+          "meaning": "추가 설명"
+        },
+        {
+          "phrase": "Are you ready to ~?",
+          "meaning": "~할 준비 됐어요? (추가)"
+        },
+        {
+          "phrase": "go through ~",
+          "meaning": "~을 (하나씩) 살펴보다, 검토하다 (추가)"
+        },
+        {
+          "phrase": "point out",
+          "meaning": "짚어 주다, 지적하다 (추가, Day 40)"
+        },
+        {
+          "phrase": "get back to ~",
+          "meaning": "~에게 다시 연락하다 (추가)"
+        }
+      ],
+      "marks": [
+        "walk us through"
+      ],
+      "notes": [
+        {
+          "point": "Are you ready to + 동사?",
+          "explain": "\"~할 준비 됐어요?\" `be ready to + 동사` / `be ready for + 명사` 두 가지로 써요.",
+          "subs": [
+            "Are you ready for the meeting? → 회의 준비됐어요?"
+          ]
+        },
+        {
+          "point": "I’ve completed A and documented B",
+          "explain": "현재완료 두 개를 `and`로 연결했어요. 두 번째 `have`는 반복하지 않아요. \"지금 막 끝내 둔 상태\"를 보고할 때 좋아요.",
+          "subs": []
+        },
+        {
+          "point": "walk us through the results",
+          "explain": "`walk + 사람 + through + 내용` 순서예요. 사람(목적어)이 가운데에 와요. `walk through the results with us`도 가능해요.",
+          "subs": [
+            "Let me walk you through the dashboard. → 대시보드를 하나씩 설명해 드릴게요."
+          ]
+        },
+        {
+          "point": "walk through vs go through",
+          "explain": "`walk someone through` = 남에게 차근차근 설명해 주다 / `go through` = (내가) 하나씩 살펴보다·검토하다.",
+          "subs": []
+        },
+        {
+          "point": "before handing over / once we receive",
+          "explain": "`before` 뒤에는 동명사(-ing) (Day 40). `once` 뒤에는 미래 일이라도 현재형 (Day 36).",
+          "subs": []
+        },
+        {
+          "point": "if anything needs further clarification",
+          "explain": "조건절도 미래 대신 현재형(`needs`)을 써요. `anything`은 단수 취급이라 `needs`예요.",
+          "subs": [
+            "Let me know if anything is unclear. → 불분명한 게 있으면 알려 주세요."
+          ]
+        }
+      ]
     }
   ],
 };
