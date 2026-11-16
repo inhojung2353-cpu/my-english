@@ -88,17 +88,18 @@ function seededShuffle(arr, seedStr) {
   return a;
 }
 
-// 오늘의 단어: 안 외운 단어에서 우선 6개. 하루 동안은 체크해도 바뀌지 않게 저장해 둬요
+// 오늘의 단어: 외우지 못한 단어에서만 6개.
+// 하루 동안은 같은 단어를 유지하고, 그사이 ✓로 외운 단어만 빼고 다른 안 외운 단어로 채워요
 const DAILY_KEY = 'my-english-daily';
 function todayWords() {
   const day = todayKey();
   const saved = readJSON(DAILY_KEY, {});
-  if (saved.day === day && Array.isArray(saved.words)) {
-    const kept = saved.words.map(n => words.find(w => w.word === n)).filter(Boolean);
-    if (kept.length === Math.min(6, words.length)) return kept;
-  }
   const unlearned = words.filter(w => !isLearned(w));
-  const picked = seededShuffle(unlearned.length >= 6 ? unlearned : words, 'w' + day).slice(0, 6);
+  const kept = saved.day === day && Array.isArray(saved.words)
+    ? saved.words.map(n => unlearned.find(w => w.word === n)).filter(Boolean)
+    : [];
+  const fill = seededShuffle(unlearned, 'w' + day).filter(w => !kept.includes(w));
+  const picked = [...kept, ...fill].slice(0, 6);
   writeJSON(DAILY_KEY, { ...saved, day, words: picked.map(w => w.word) });
   return picked;
 }
@@ -148,7 +149,9 @@ function renderHome() {
         <div class="vm">${esc(w.meaning)}</div>
       </div>`).join('')}</div>
       <a class="more-link" href="#words">단어 탭에서 더 보기 ›</a>`
-    : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
+    : words.length
+      ? `<div class="card empty"><span class="big">🎉</span>모든 단어를 외웠어요!<br><span class="small">새 단어를 보내 주시면 여기에 다시 나와요</span></div>`
+      : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
 
     <div class="section-title">💬 오늘의 문장 <small>누르면 영어</small></div>
     ${ts.length ? `
