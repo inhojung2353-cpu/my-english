@@ -88,28 +88,40 @@ function seededShuffle(arr, seedStr) {
   return a;
 }
 
+// 오늘의 단어·문장 기록: { day, words, wn(단어 새로고침 횟수), sn(문장 새로고침 횟수) }
+// 날짜가 바뀌면 처음부터 다시 골라요. 🔄를 누르면 횟수가 늘어 다른 6개가 나와요
+const DAILY_KEY = 'my-english-daily';
+function dailyState() {
+  const saved = readJSON(DAILY_KEY, {});
+  return saved.day === todayKey() ? saved : { day: todayKey() };
+}
+const dailySeed = (prefix, n) => prefix + todayKey() + (n ? '#' + n : '');
+
 // 오늘의 단어: 외우지 못한 단어에서만 6개.
 // 하루 동안은 같은 단어를 유지하고, 그사이 ✓로 외운 단어만 빼고 다른 안 외운 단어로 채워요
-const DAILY_KEY = 'my-english-daily';
-function todayWords() {
-  const day = todayKey();
-  const saved = readJSON(DAILY_KEY, {});
+function todayWords(reroll = false) {
+  const st = dailyState();
+  const n = (st.wn || 0) + (reroll ? 1 : 0);
   const unlearned = words.filter(w => !isLearned(w));
-  const kept = saved.day === day && Array.isArray(saved.words)
-    ? saved.words.map(n => unlearned.find(w => w.word === n)).filter(Boolean)
-    : [];
-  const fill = seededShuffle(unlearned, 'w' + day).filter(w => !kept.includes(w));
+  const prev = Array.isArray(st.words) ? st.words : [];
+  const kept = reroll ? [] : prev.map(x => unlearned.find(w => w.word === x)).filter(Boolean);
+  let fill = seededShuffle(unlearned, dailySeed('w', n)).filter(w => !kept.includes(w));
+  // 새로고침할 때는 단어가 충분하면 방금 본 6개와 겹치지 않게
+  if (reroll && unlearned.length - prev.length >= 6) fill = fill.filter(w => !prev.includes(w.word));
   const picked = [...kept, ...fill].slice(0, 6);
-  writeJSON(DAILY_KEY, { ...saved, day, words: picked.map(w => w.word) });
+  writeJSON(DAILY_KEY, { ...st, wn: n, words: picked.map(w => w.word) });
   return picked;
 }
 
 // 오늘의 문장: Dialog 전체 문장 중 너무 짧거나 긴 문장을 빼고 매일 6개
-function todaySentences() {
+function todaySentences(reroll = false) {
+  const st = dailyState();
+  const n = (st.sn || 0) + (reroll ? 1 : 0);
+  if (reroll) writeJSON(DAILY_KEY, { ...st, sn: n });
   const pool = dialogs.flatMap(d => (d.lines || [])
     .filter(l => l.ko && l.en && l.en.length >= 15 && l.en.length <= 160)
     .map(l => ({ en: l.en, ko: l.ko, day: d.day, id: d.id, key: d.key })));
-  return seededShuffle(pool, 's' + todayKey()).slice(0, 6);
+  return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
 // 유튜브 주소에서 영상 ID 뽑기 (watch?v=, youtu.be/, shorts/, embed/, live/)
@@ -130,11 +142,11 @@ function allVideos() {
     .sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.ts || 0) - (a.ts || 0));
 }
 
-function renderHome() {
+function renderHome(reroll = {}) {
   setTitle('My English');
   const last = latestDate();
-  const tw = todayWords();
-  const ts = todaySentences();
+  const tw = todayWords(reroll.words);
+  const ts = todaySentences(reroll.sents);
   const videos = allVideos();
   const main = videos[0];
   const today = new Date();
@@ -152,7 +164,7 @@ function renderHome() {
       <a class="stat" href="#dialogs"><b>${dialogs.length}</b><span>Dialog</span></a>
     </div>
 
-    <div class="section-title">📚 오늘의 단어 <small>${todayLabel}</small></div>
+    <div class="section-title">📚 오늘의 단어 <span class="title-right"><small>${todayLabel}</small>${tw.length ? `<button class="reroll" id="reroll-words" aria-label="다른 단어로 새로고침">🔄</button>` : ''}</span></div>
     ${tw.length ? `
       <div class="home-tools"><button class="chip ${hideMeaning ? 'on' : ''}" id="home-hide">🙈 뜻 가리기</button><span class="muted small">${hideMeaning ? '단어를 누르면 뜻이 보여요' : ''}</span></div>
       <div class="card vlist ${hideMeaning ? 'hide-meaning' : ''}" id="today-words">${tw.map(w => `
@@ -165,7 +177,7 @@ function renderHome() {
       ? `<div class="card empty"><span class="big">🎉</span>모든 단어를 외웠어요!<br><span class="small">새 단어를 보내 주시면 여기에 다시 나와요</span></div>`
       : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
 
-    <div class="section-title">💬 오늘의 문장 <small>누르면 영어</small></div>
+    <div class="section-title">💬 오늘의 문장 <span class="title-right"><small>누르면 영어</small>${ts.length ? `<button class="reroll" id="reroll-sents" aria-label="다른 문장으로 새로고침">🔄</button>` : ''}</span></div>
     ${ts.length ? `
       <p class="muted small" style="margin:-2px 4px 8px">한글을 보고 영어로 먼저 말해 본 뒤 눌러서 확인해 보세요.</p>
       <div class="card vlist" id="sents">${ts.map((t, i) => `
@@ -205,6 +217,11 @@ function renderHome() {
       <button class="btn primary block" id="v-add">추가하기</button>
       <p class="muted small" style="margin:8px 2px 0">추가한 영상은 이 기기에만 저장돼요. 가장 최근에 추가한 영상이 위에 크게 나와요.</p>
     </div>`;
+
+  // 🔄 새로고침: 화면 위치는 그대로 두고 그 영역만 새 6개로
+  const refresh = (opt, msg) => { const y = window.scrollY; renderHome(opt); window.scrollTo(0, y); toast(msg); };
+  $('#reroll-words')?.addEventListener('click', () => refresh({ words: true }, '새 단어 6개를 골랐어요'));
+  $('#reroll-sents')?.addEventListener('click', () => refresh({ sents: true }, '새 문장 6개를 골랐어요'));
 
   // 오늘의 단어: 뜻 가리기 / 눌러서 보기
   const twBox = $('#today-words');

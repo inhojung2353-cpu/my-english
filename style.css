@@ -336,6 +336,11 @@ input[type=search], textarea { background: var(--surface); }
 .video-add input { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; font-size: 16px; }
 .video-add input:focus { outline: 2px solid var(--primary); outline-offset: -1px; }
 
+/* 홈: 🔄 새로고침 버튼 */
+.title-right { display: inline-flex; align-items: center; gap: 8px; }
+.reroll { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 15px; line-height: 1; cursor: pointer; display: grid; place-items: center; }
+.reroll:active { transform: rotate(-90deg) scale(.95); transition: transform .15s; }
+
 /* 홈 오늘의 단어: 뜻 가리기 (기본) */
 .home-tools { display: flex; align-items: center; gap: 8px; margin: -2px 2px 8px; }
 .hide-meaning .vrow.word { cursor: pointer; }
