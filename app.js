@@ -77,12 +77,58 @@ $('#back').onclick = () => (history.length > 1 ? history.back() : (location.hash
 window.addEventListener('hashchange', route);
 
 /* ---------- 홈 ---------- */
+// 날짜를 시드로 한 섞기: 같은 날에는 항상 같은 결과가 나와요
+function seededShuffle(arr, seedStr) {
+  let h = 1779033703 ^ seedStr.length;
+  for (let i = 0; i < seedStr.length; i++) { h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353); h = (h << 13) | (h >>> 19); }
+  let t = h >>> 0;
+  const rand = () => { t += 0x6D2B79F5; let r = Math.imul(t ^ (t >>> 15), 1 | t); r ^= r + Math.imul(r ^ (r >>> 7), 61 | r); return ((r ^ (r >>> 14)) >>> 0) / 4294967296; };
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+// 오늘의 단어: 안 외운 단어에서 우선 6개. 하루 동안은 체크해도 바뀌지 않게 저장해 둬요
+const DAILY_KEY = 'my-english-daily';
+function todayWords() {
+  const day = todayKey();
+  const saved = readJSON(DAILY_KEY, {});
+  if (saved.day === day && Array.isArray(saved.words)) {
+    const kept = saved.words.map(n => words.find(w => w.word === n)).filter(Boolean);
+    if (kept.length === Math.min(6, words.length)) return kept;
+  }
+  const unlearned = words.filter(w => !isLearned(w));
+  const picked = seededShuffle(unlearned.length >= 6 ? unlearned : words, 'w' + day).slice(0, 6);
+  writeJSON(DAILY_KEY, { ...saved, day, words: picked.map(w => w.word) });
+  return picked;
+}
+
+// 오늘의 문장: Dialog 전체 문장 중 너무 짧거나 긴 문장을 빼고 매일 6개
+function todaySentences() {
+  const pool = dialogs.flatMap(d => (d.lines || [])
+    .filter(l => l.ko && l.en && l.en.length >= 15 && l.en.length <= 160)
+    .map(l => ({ en: l.en, ko: l.ko, day: d.day, id: d.id, key: d.key })));
+  return seededShuffle(pool, 's' + todayKey()).slice(0, 6);
+}
+
+// 유튜브 주소에서 영상 ID 뽑기 (watch?v=, youtu.be/, shorts/, embed/, live/)
+function youtubeId(url = '') {
+  const m = url.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})/);
+  return m ? m[1] : (/^[\w-]{11}$/.test(url) ? url : null);
+}
+const embedUrl = id => `https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`;
+
 function renderHome() {
   setTitle('My English');
-  const recentWords = [...words].reverse().sort(byDateDesc).slice(0, 6); // 같은 날짜면 나중에 추가한 단어 먼저
-  const recentScripts = [...scripts].sort(byDateDesc).slice(0, 3);
-  const recentDialogs = [...dialogs].sort(byDayDesc).slice(0, 3);
   const last = latestDate();
+  const tw = todayWords();
+  const ts = todaySentences();
+  const videos = (C.videos || []).map((v, i) => ({ ...v, i, vid: youtubeId(v.url) })).filter(v => v.vid)
+    .sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.i - a.i);
+  const main = videos[0];
+  const today = new Date();
+  const todayLabel = `${today.getMonth() + 1}월 ${today.getDate()}일`;
+
   view.innerHTML = `
     <div class="hero">
       <h2>${esc(C.title || 'My English Notebook')}</h2>
@@ -95,18 +141,74 @@ function renderHome() {
       <a class="stat" href="#dialogs"><b>${dialogs.length}</b><span>Dialog</span></a>
     </div>
 
-    <div class="section-title">최근 단어 <a href="#words">전체 보기 ›</a></div>
-    ${recentWords.length ? `<div class="mini-words">${recentWords.map(w => `
-      <a class="card" href="#words"><div><span class="w">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}</div><div class="m">${esc(w.meaning)}</div></a>`).join('')}</div>`
+    <div class="section-title">📚 오늘의 단어 <small>${todayLabel}</small></div>
+    ${tw.length ? `<div class="card vlist">${tw.map(w => `
+      <div class="vrow word">
+        <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>${speakBtn(w.word)}</div>
+        <div class="vm">${esc(w.meaning)}</div>
+      </div>`).join('')}</div>
+      <a class="more-link" href="#words">단어 탭에서 더 보기 ›</a>`
     : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
 
-    <div class="section-title">최근 스크립트 <a href="#scripts">전체 보기 ›</a></div>
-    ${recentScripts.length ? recentScripts.map(scriptCard).join('')
-    : `<div class="card empty"><span class="big">🎬</span>아직 스크립트가 없어요</div>`}
+    <div class="section-title">💬 오늘의 문장 <small>누르면 영어</small></div>
+    ${ts.length ? `
+      <p class="muted small" style="margin:-2px 4px 8px">한글을 보고 영어로 먼저 말해 본 뒤 눌러서 확인해 보세요.</p>
+      <div class="card vlist" id="sents">${ts.map((t, i) => `
+        <div class="vrow sent" data-i="${i}" role="button" tabindex="0" aria-expanded="false">
+          <div class="sent-ko"><span class="sent-no">${i + 1}</span><span class="grow">${esc(t.ko)}</span></div>
+          <div class="sent-en">
+            <div class="row-between"><div class="en grow">${esc(t.en)}</div>${speakBtn(t.en)}</div>
+            <a class="sent-src" href="#dialog/${encodeURIComponent(t.id)}">Day ${t.day} · ${esc(t.key || '')} ›</a>
+          </div>
+        </div>`).join('')}</div>
+      <button class="more-link" id="sents-all">모두 펼치기</button>`
+    : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}
 
-    <div class="section-title">최근 Dialog <a href="#dialogs">전체 보기 ›</a></div>
-    ${recentDialogs.length ? recentDialogs.map(dialogCard).join('')
-    : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}`;
+    <div class="section-title">🎬 오늘의 영상</div>
+    ${main ? `
+      <div class="card video-card">
+        <div class="video-wrap"><iframe id="yt" src="${embedUrl(main.vid)}" title="${esc(main.title || 'YouTube video')}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+        <div class="video-meta">
+          <b id="yt-title">${esc(main.title || '오늘의 영상')}</b>
+          <div class="muted small" id="yt-note">${esc(main.note || '')}</div>
+        </div>
+      </div>
+      ${videos.length > 1 ? `
+        <div class="card vlist">${videos.map((v, i) => `
+          <button class="vrow video-item ${i === 0 ? 'on' : ''}" data-v="${i}">
+            <span class="grow">${esc(v.title || '영상 ' + (videos.length - i))}</span>
+            <span class="muted small">${v.date ? esc(v.date.slice(5).replace('-', '.')) : ''}</span>
+          </button>`).join('')}</div>` : ''}`
+    : `<div class="card empty"><span class="big">🎬</span>아직 영상이 없어요<br><span class="small">보고 싶은 유튜브 링크를 보내 주시면 여기에서 바로 볼 수 있게 넣어 드릴게요</span></div>`}`;
+
+  // 오늘의 문장: 눌러서 영어 보기
+  const sents = $('#sents');
+  if (sents) {
+    const toggle = row => { row.classList.toggle('open'); row.setAttribute('aria-expanded', row.classList.contains('open')); };
+    sents.addEventListener('click', e => {
+      if (e.target.closest('[data-speak]') || e.target.closest('a')) return;
+      const row = e.target.closest('.sent'); if (row) toggle(row);
+    });
+    sents.addEventListener('keydown', e => {
+      const row = e.target.closest('.sent');
+      if (row && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); toggle(row); }
+    });
+    $('#sents-all').onclick = e => {
+      const open = e.target.textContent === '모두 펼치기';
+      $$('.sent', sents).forEach(r => { r.classList.toggle('open', open); r.setAttribute('aria-expanded', open); });
+      e.target.textContent = open ? '모두 접기' : '모두 펼치기';
+    };
+  }
+
+  // 지난 영상 고르기
+  $$('.video-item').forEach(btn => btn.onclick = () => {
+    const v = videos[Number(btn.dataset.v)];
+    $('#yt').src = embedUrl(v.vid);
+    $('#yt-title').textContent = v.title || '영상';
+    $('#yt-note').textContent = v.note || '';
+    $$('.video-item').forEach(x => x.classList.toggle('on', x === btn));
+    $('.video-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 }
 
 /* ---------- 단어 ---------- */

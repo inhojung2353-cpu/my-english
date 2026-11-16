@@ -311,3 +311,22 @@ input[type=search], textarea { background: var(--surface); }
 .note-body { margin-top: 4px; font-size: 15px; line-height: 1.6; }
 .note-subs { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 .vlist code { font-family: inherit; font-weight: 700; color: var(--primary); background: var(--primary-soft); padding: 0 5px; border-radius: 5px; }
+
+/* ---------- 홈: 오늘의 단어 · 문장 · 영상 ---------- */
+.more-link { display: block; margin: -2px 4px 0 auto; padding: 6px 2px; border: 0; background: none; color: var(--primary); font-size: 13px; font-weight: 600; text-align: right; cursor: pointer; }
+.sent { cursor: pointer; }
+.sent-ko { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; line-height: 1.6; font-weight: 500; }
+.sent-no { flex: none; width: 22px; height: 22px; margin-top: 2px; border-radius: 50%; background: var(--primary-soft); color: var(--primary); font-size: 12px; font-weight: 700; display: grid; place-items: center; transition: .15s; }
+.sent:not(.open) .sent-ko::after { content: '탭'; flex: none; align-self: center; font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 1px 7px; }
+.sent-en { display: none; margin: 10px 0 0 32px; padding-left: 10px; border-left: 3px solid var(--mark); }
+.sent.open .sent-en { display: block; }
+.sent.open .sent-no { background: var(--primary); color: var(--on-primary); }
+.sent-en .en { font-size: 16px; line-height: 1.6; font-style: italic; }
+.sent-src { display: inline-block; margin-top: 4px; font-size: 12px; color: var(--muted); }
+.video-card { padding: 0; overflow: hidden; }
+.video-wrap { position: relative; aspect-ratio: 16 / 9; background: #000; }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-meta { padding: 12px 16px 14px; }
+.video-item { display: flex; gap: 10px; width: 100%; border: 0; border-bottom: 1px solid var(--line); background: none; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.video-item:last-child { border-bottom: 0; }
+.video-item.on { color: var(--primary); font-weight: 700; }
