@@ -119,13 +119,23 @@ function youtubeId(url = '') {
 }
 const embedUrl = id => `https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`;
 
+// 앱에서 직접 추가한 영상은 이 기기에만 저장돼요
+const VIDEO_KEY = 'my-english-videos';
+const myVideos = () => readJSON(VIDEO_KEY, []);
+const saveMyVideos = list => writeJSON(VIDEO_KEY, list);
+function allVideos() {
+  const fromData = (C.videos || []).map((v, i) => ({ ...v, ts: i, mine: false }));
+  const mine = myVideos().map(v => ({ ...v, mine: true }));
+  return [...fromData, ...mine].map(v => ({ ...v, vid: youtubeId(v.url) })).filter(v => v.vid)
+    .sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.ts || 0) - (a.ts || 0));
+}
+
 function renderHome() {
   setTitle('My English');
   const last = latestDate();
   const tw = todayWords();
   const ts = todaySentences();
-  const videos = (C.videos || []).map((v, i) => ({ ...v, i, vid: youtubeId(v.url) })).filter(v => v.vid)
-    .sort((a, b) => (b.date || '').localeCompare(a.date || '') || b.i - a.i);
+  const videos = allVideos();
   const main = videos[0];
   const today = new Date();
   const todayLabel = `${today.getMonth() + 1}월 ${today.getDate()}일`;
@@ -143,7 +153,9 @@ function renderHome() {
     </div>
 
     <div class="section-title">📚 오늘의 단어 <small>${todayLabel}</small></div>
-    ${tw.length ? `<div class="card vlist">${tw.map(w => `
+    ${tw.length ? `
+      <div class="home-tools"><button class="chip ${hideMeaning ? 'on' : ''}" id="home-hide">🙈 뜻 가리기</button><span class="muted small">${hideMeaning ? '단어를 누르면 뜻이 보여요' : ''}</span></div>
+      <div class="card vlist ${hideMeaning ? 'hide-meaning' : ''}" id="today-words">${tw.map(w => `
       <div class="vrow word">
         <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>${speakBtn(w.word)}</div>
         <div class="vm">${esc(w.meaning)}</div>
@@ -178,11 +190,31 @@ function renderHome() {
       </div>
       ${videos.length > 1 ? `
         <div class="card vlist">${videos.map((v, i) => `
-          <button class="vrow video-item ${i === 0 ? 'on' : ''}" data-v="${i}">
-            <span class="grow">${esc(v.title || '영상 ' + (videos.length - i))}</span>
+          <div class="vrow video-item ${i === 0 ? 'on' : ''}" data-v="${i}" role="button" tabindex="0">
+            <span class="grow">${esc(v.title || '제목 없는 영상')}</span>
             <span class="muted small">${v.date ? esc(v.date.slice(5).replace('-', '.')) : ''}</span>
-          </button>`).join('')}</div>` : ''}`
-    : `<div class="card empty"><span class="big">🎬</span>아직 영상이 없어요<br><span class="small">보고 싶은 유튜브 링크를 보내 주시면 여기에서 바로 볼 수 있게 넣어 드릴게요</span></div>`}`;
+            ${v.mine ? `<button class="video-del" data-del="${esc(String(v.ts))}" aria-label="영상 삭제">✕</button>` : ''}
+          </div>`).join('')}</div>`
+      : main.mine ? `<button class="more-link" data-del="${esc(String(main.ts))}">이 영상 삭제</button>` : ''}`
+    : `<div class="card empty"><span class="big">🎬</span>아직 영상이 없어요<br><span class="small">아래에 유튜브 링크를 붙여 넣어 추가해 보세요</span></div>`}
+
+    <div class="card video-add">
+      <b>＋ 영상 추가</b>
+      <input type="url" id="v-url" placeholder="유튜브 링크 붙여 넣기" autocomplete="off" inputmode="url">
+      <input type="text" id="v-title" placeholder="제목 (선택)" autocomplete="off">
+      <button class="btn primary block" id="v-add">추가하기</button>
+      <p class="muted small" style="margin:8px 2px 0">추가한 영상은 이 기기에만 저장돼요. 가장 최근에 추가한 영상이 위에 크게 나와요.</p>
+    </div>`;
+
+  // 오늘의 단어: 뜻 가리기 / 눌러서 보기
+  const twBox = $('#today-words');
+  if (twBox) {
+    $('#home-hide').onclick = () => { hideMeaning = !hideMeaning; renderHome(); };
+    twBox.addEventListener('click', e => {
+      const row = e.target.closest('.word');
+      if (row && hideMeaning && !e.target.closest('[data-speak]')) row.classList.toggle('peek');
+    });
+  }
 
   // 오늘의 문장: 눌러서 영어 보기
   const sents = $('#sents');
@@ -204,20 +236,44 @@ function renderHome() {
   }
 
   // 지난 영상 고르기
-  $$('.video-item').forEach(btn => btn.onclick = () => {
-    const v = videos[Number(btn.dataset.v)];
+  const pick = item => {
+    const v = videos[Number(item.dataset.v)];
     $('#yt').src = embedUrl(v.vid);
     $('#yt-title').textContent = v.title || '영상';
     $('#yt-note').textContent = v.note || '';
-    $$('.video-item').forEach(x => x.classList.toggle('on', x === btn));
+    $$('.video-item').forEach(x => x.classList.toggle('on', x === item));
     $('.video-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  $$('.video-item').forEach(item => {
+    item.addEventListener('click', e => { if (!e.target.closest('[data-del]')) pick(item); });
+    item.addEventListener('keydown', e => { if (e.key === 'Enter') pick(item); });
   });
+
+  // 영상 삭제 (앱에서 추가한 영상만)
+  $$('[data-del]').forEach(btn => btn.addEventListener('click', e => {
+    e.stopPropagation();
+    if (!confirm('이 영상을 목록에서 삭제할까요?')) return;
+    saveMyVideos(myVideos().filter(v => String(v.ts) !== btn.dataset.del));
+    renderHome(); toast('삭제했어요');
+  }));
+
+  // 영상 추가
+  $('#v-add').onclick = () => {
+    const url = $('#v-url').value.trim();
+    const title = $('#v-title').value.trim();
+    if (!youtubeId(url)) { toast('유튜브 링크가 맞는지 확인해 주세요'); $('#v-url').focus(); return; }
+    if (allVideos().some(v => v.vid === youtubeId(url))) { toast('이미 추가된 영상이에요'); return; }
+    saveMyVideos([...myVideos(), { url, title, date: todayKey(), ts: Date.now() }]);
+    renderHome();
+    toast('영상을 추가했어요 🎬');
+    $('.video-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 }
 
 /* ---------- 단어 ---------- */
 let wordQuery = '';
 let wordTopic = '';
-let hideMeaning = false;
+let hideMeaning = true; // 뜻 가리기가 기본. 홈과 단어 탭이 같은 설정을 써요
 
 // 외운 단어 체크는 이 기기의 브라우저에 저장 (단어 글자를 기준으로 기억)
 const LEARNED_KEY = 'my-english-learned';

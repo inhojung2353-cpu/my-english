@@ -330,3 +330,14 @@ input[type=search], textarea { background: var(--surface); }
 .video-item { display: flex; gap: 10px; width: 100%; border: 0; border-bottom: 1px solid var(--line); background: none; font: inherit; color: inherit; text-align: left; cursor: pointer; }
 .video-item:last-child { border-bottom: 0; }
 .video-item.on { color: var(--primary); font-weight: 700; }
+.video-item { align-items: center; }
+.video-del { flex: none; width: 28px; height: 28px; border: 0; border-radius: 8px; background: var(--surface-2); color: var(--muted); font-size: 13px; cursor: pointer; }
+.video-add { display: grid; gap: 8px; margin-top: 10px; }
+.video-add input { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; font-size: 16px; }
+.video-add input:focus { outline: 2px solid var(--primary); outline-offset: -1px; }
+
+/* 홈 오늘의 단어: 뜻 가리기 (기본) */
+.home-tools { display: flex; align-items: center; gap: 8px; margin: -2px 2px 8px; }
+.hide-meaning .vrow.word { cursor: pointer; }
+.hide-meaning .vrow.word .vm { filter: blur(6px); transition: filter .2s; user-select: none; }
+.hide-meaning .vrow.word.peek .vm { filter: none; user-select: auto; }
