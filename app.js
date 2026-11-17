@@ -124,6 +124,21 @@ function todaySentences(reroll = false) {
   return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
+// 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 매일 6개
+const writing = C.writing || [];
+function todayWriting(reroll = false) {
+  const st = dailyState();
+  const n = (st.cn || 0) + (reroll ? 1 : 0);
+  if (reroll) writeJSON(DAILY_KEY, { ...st, cn: n });
+  return seededShuffle(writing, dailySeed('c', n)).slice(0, 6);
+}
+// 내가 쓴 답은 그날 하루 동안 이 기기에 저장 (다음 날엔 비워져요)
+const WRITE_KEY = 'my-english-writing';
+const loadAnswers = () => { const s = readJSON(WRITE_KEY, {}); return s.day === todayKey() ? s.answers || {} : {}; };
+const saveAnswer = (id, text) => writeJSON(WRITE_KEY, { day: todayKey(), answers: { ...loadAnswers(), [id]: text } });
+// 비교할 때 둥근 따옴표·대소문자 차이는 무시
+const normEn = t => t.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
+
 // 유튜브 주소에서 영상 ID 뽑기 (watch?v=, youtu.be/, shorts/, embed/, live/)
 function youtubeId(url = '') {
   const m = url.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})/);
@@ -147,6 +162,9 @@ function renderHome(reroll = {}) {
   const last = latestDate();
   const tw = todayWords(reroll.words);
   const ts = todaySentences(reroll.sents);
+  const tc = todayWriting(reroll.write);
+  const answers = loadAnswers();
+  const dayOf = n => dialogs.find(d => d.day === n);
   const videos = allVideos();
   const main = videos[0];
   const today = new Date();
@@ -191,6 +209,27 @@ function renderHome(reroll = {}) {
       <button class="more-link" id="sents-all">모두 펼치기</button>`
     : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}
 
+    <div class="section-title">✍️ 오늘의 영작 <span class="title-right"><small>Dialog 응용</small>${tc.length ? `<button class="reroll" id="reroll-write" aria-label="다른 문제로 새로고침">🔄</button>` : ''}</span></div>
+    ${tc.length ? `
+      <p class="muted small" style="margin:-2px 4px 8px">한글 문장을 영어로 써 보고 <b>정답 보기</b>로 확인하세요. 답은 하나가 아니에요. 뜻이 통하면 OK!</p>
+      <div class="card vlist" id="compose">${tc.map((c, i) => {
+        const d = dayOf(c.day);
+        return `
+        <div class="vrow comp" data-id="${esc(c.id)}">
+          <div class="sent-ko"><span class="sent-no">${i + 1}</span><span class="grow">${esc(c.ko)}</span></div>
+          <textarea class="comp-input" rows="2" placeholder="영어로 써 보세요" autocapitalize="sentences" autocomplete="off" spellcheck="false">${esc(answers[c.id] || '')}</textarea>
+          <button class="chip comp-toggle">정답 보기</button>
+          <div class="comp-answer">
+            <div class="comp-label">모범 답안</div>
+            <div class="row-between"><div class="en grow">${esc(c.en)}</div>${speakBtn(c.en)}</div>
+            <div class="comp-diff"></div>
+            ${(c.tips || []).length ? `<div class="comp-label">알아 둘 것</div><ul class="note-subs comp-tips">${c.tips.map(t => `<li>${inlineCode(t)}</li>`).join('')}</ul>` : ''}
+            ${d ? `<a class="sent-src" href="#dialog/${encodeURIComponent(d.id)}">Day ${d.day} · ${esc(d.key || '')} 복습하기 ›</a>` : ''}
+          </div>
+        </div>`;
+      }).join('')}</div>`
+    : ''}
+
     <div class="section-title">🎬 오늘의 영상</div>
     ${main ? `
       <div class="card video-card">
@@ -222,6 +261,29 @@ function renderHome(reroll = {}) {
   const refresh = (opt, msg) => { const y = window.scrollY; renderHome(opt); window.scrollTo(0, y); toast(msg); };
   $('#reroll-words')?.addEventListener('click', () => refresh({ words: true }, '새 단어 6개를 골랐어요'));
   $('#reroll-sents')?.addEventListener('click', () => refresh({ sents: true }, '새 문장 6개를 골랐어요'));
+  $('#reroll-write')?.addEventListener('click', () => refresh({ write: true }, '새 영작 문제 6개를 골랐어요'));
+
+  // 오늘의 영작: 쓰는 대로 저장, 정답 보기에서 내 답과 비교
+  const compose = $('#compose');
+  if (compose) {
+    compose.addEventListener('input', e => {
+      const box = e.target.closest('.comp-input'); if (!box) return;
+      saveAnswer(box.closest('.comp').dataset.id, box.value);
+    });
+    compose.addEventListener('click', e => {
+      const btn = e.target.closest('.comp-toggle'); if (!btn) return;
+      const row = btn.closest('.comp');
+      const open = row.classList.toggle('open');
+      btn.textContent = open ? '정답 접기' : '정답 보기';
+      if (!open) return;
+      const mine = normEn(row.querySelector('.comp-input').value);
+      const model = normEn(writing.find(c => c.id === row.dataset.id)?.en || '');
+      row.querySelector('.comp-diff').innerHTML = !mine ? ''
+        : normEn(mine).toLowerCase() === model.toLowerCase()
+          ? `<div class="comp-label">내 답과 비교</div><div class="comp-perfect">🎉 모범 답안과 똑같아요!</div>`
+          : `<div class="comp-label">내 답과 비교 <span class="muted small"><del>내 답에만 있음</del> <ins>모범 답안</ins></span></div><div class="diff comp-mine">${diffHtml(mine, model)}</div>`;
+    });
+  }
 
   // 오늘의 단어: 뜻 가리기 / 눌러서 보기
   const twBox = $('#today-words');

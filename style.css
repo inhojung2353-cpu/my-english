@@ -336,6 +336,21 @@ input[type=search], textarea { background: var(--surface); }
 .video-add input { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; font-size: 16px; }
 .video-add input:focus { outline: 2px solid var(--primary); outline-offset: -1px; }
 
+/* 홈: 오늘의 영작 */
+.comp-input { margin-top: 10px; min-height: 0; font-size: 16px; line-height: 1.5; resize: vertical; }
+.comp-toggle { margin-top: 8px; }
+.comp.open .comp-toggle { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.comp.open .sent-no { background: var(--primary); color: var(--on-primary); }
+.comp-answer { display: none; margin-top: 12px; padding-left: 10px; border-left: 3px solid var(--mark); }
+.comp.open .comp-answer { display: block; }
+.comp-answer .en { font-size: 16px; line-height: 1.6; font-style: italic; }
+.comp-label { margin: 10px 0 3px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.comp-label:first-child { margin-top: 0; }
+.comp-label del, .comp-label ins { font-size: 11px; }
+.comp-mine { font-size: 15px; line-height: 1.8; }
+.comp-perfect { font-size: 14px; font-weight: 600; color: var(--good); }
+.comp-tips { margin-top: 2px; }
+
 /* 홈: 🔄 새로고침 버튼 */
 .title-right { display: inline-flex; align-items: center; gap: 8px; }
 .reroll { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 15px; line-height: 1; cursor: pointer; display: grid; place-items: center; }

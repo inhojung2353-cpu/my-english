@@ -9275,6 +9275,807 @@ window.CONTENT = {
     }
   ],
 
+  /* ---------- 오늘의 영작 ----------
+     Dialog 핵심 표현을 살짝 바꾼 영작 문제. day: 참고한 Dialog Day,
+     ko: 한글 문제, en: 모범 답안, tips: 알아 둘 단어·문법 (`코드`는 강조 표시) */
+  writing: [
+    {
+      "id": "c01-1",
+      "day": 1,
+      "ko": "일단은 이 이름으로 부르자. 나중에 더 좋은 걸 생각해 보자.",
+      "en": "Let’s call it this for now. We can come up with something better later.",
+      "tips": [
+        "`for now` = 일단은, 당분간 (나중에 바뀔 수 있음)",
+        "`come up with` = (아이디어를) 생각해 내다"
+      ]
+    },
+    {
+      "id": "c01-2",
+      "day": 1,
+      "ko": "일단은 이 방법으로 하고, 다른 방법이 또 있는지 보자.",
+      "en": "Let’s go with this approach for now and see what else we can find.",
+      "tips": [
+        "`go with ~` = ~로 하다 (선택하다)",
+        "`see what else ~` = 또 뭐가 있는지 보다"
+      ]
+    },
+    {
+      "id": "c02-1",
+      "day": 2,
+      "ko": "그 회의는 대체로 괜찮았는데, 좀 길었어.",
+      "en": "The meeting was fine for the most part, but it was a bit long.",
+      "tips": [
+        "`for the most part` = 대체로",
+        "`a bit` = 조금 (a little보다 구어적)"
+      ]
+    },
+    {
+      "id": "c02-2",
+      "day": 2,
+      "ko": "대체로 데이터는 정확하지만, 오류가 몇 개 있어.",
+      "en": "For the most part, the data is accurate, but there are a few errors.",
+      "tips": [
+        "`For the most part,`를 문장 맨 앞에 둬도 돼요",
+        "`a few` + 복수 명사 = 몇 개의"
+      ]
+    },
+    {
+      "id": "c03-1",
+      "day": 3,
+      "ko": "그 일을 하기 싫었던 건 아니야. 그냥 시간이 없었어.",
+      "en": "It’s not like I didn’t want to do it. I just didn’t have time.",
+      "tips": [
+        "`It’s not like ~` = ~인 건 아니야 (오해 풀기)",
+        "`just` = 그냥, 단지"
+      ]
+    },
+    {
+      "id": "c03-2",
+      "day": 3,
+      "ko": "네 말을 안 듣고 있던 건 아니야. 잠깐 딴생각을 했을 뿐이야.",
+      "en": "It’s not like I wasn’t listening to you. I was just distracted for a second.",
+      "tips": [
+        "`distracted` = 정신이 딴 데 팔린 (Set 1)",
+        "`for a second` = 잠깐"
+      ]
+    },
+    {
+      "id": "c04-1",
+      "day": 4,
+      "ko": "지금 출발해야 해. 안 그러면 기차를 놓칠 거야.",
+      "en": "We should leave now. Otherwise, we’ll miss the train.",
+      "tips": [
+        "`Otherwise,` = 그렇지 않으면",
+        "`miss` = 놓치다"
+      ]
+    },
+    {
+      "id": "c04-2",
+      "day": 4,
+      "ko": "좀 피곤하긴 하지만, 그것만 빼면 괜찮아.",
+      "en": "I’m a little tired, but otherwise I’m fine.",
+      "tips": [
+        "`otherwise` = 그 점 말고는 (Day 4의 두 번째 뜻)"
+      ]
+    },
+    {
+      "id": "c05-1",
+      "day": 5,
+      "ko": "발표 전에 이 자료를 한 번 더 검토해 보자.",
+      "en": "Let’s go over these materials one more time before the presentation.",
+      "tips": [
+        "`go over` = 검토하다, 다시 짚어 보다",
+        "`one more time` = 한 번 더"
+      ]
+    },
+    {
+      "id": "c05-2",
+      "day": 5,
+      "ko": "우리 이거 벌써 몇 번이나 얘기했잖아.",
+      "en": "We’ve already gone over this several times.",
+      "tips": [
+        "현재완료 `have gone over` = 지금까지 여러 번 짚어 봤다",
+        "`several times` = 여러 번"
+      ]
+    },
+    {
+      "id": "c06-1",
+      "day": 6,
+      "ko": "나가기 전에 꼭 문을 잠가.",
+      "en": "Make sure to lock the door before you leave.",
+      "tips": [
+        "`make sure to + 동사` = 꼭 ~해",
+        "`before you leave`: before 뒤 주어 + 현재형"
+      ]
+    },
+    {
+      "id": "c06-2",
+      "day": 6,
+      "ko": "보고서를 보내기 전에 숫자가 맞는지 꼭 확인해 줘.",
+      "en": "Please make sure the numbers are correct before you send the report.",
+      "tips": [
+        "`make sure (that) + 문장`",
+        "미래 일이라도 before 절은 현재형 `send`"
+      ]
+    },
+    {
+      "id": "c07-1",
+      "day": 7,
+      "ko": "요즘 뉴스를 잘 못 따라가고 있어.",
+      "en": "I haven’t been keeping up with the news lately.",
+      "tips": [
+        "`keep up with` = (흐름을) 따라가다",
+        "현재완료진행 `haven’t been ~ing` = 요즘 계속 못 하고 있다"
+      ]
+    },
+    {
+      "id": "c07-2",
+      "day": 7,
+      "ko": "주문이 너무 많아서 우리가 따라갈 수가 없어.",
+      "en": "We can’t keep up with all the orders.",
+      "tips": [
+        "`keep up with` + 일·속도 = (양이나 속도를) 따라잡다"
+      ]
+    },
+    {
+      "id": "c08-1",
+      "day": 8,
+      "ko": "이 빈 공간을 좀 활용하자.",
+      "en": "Let’s make use of this empty space.",
+      "tips": [
+        "`make use of` = 활용하다"
+      ]
+    },
+    {
+      "id": "c08-2",
+      "day": 8,
+      "ko": "남는 시간을 활용해서 영어 공부를 했어.",
+      "en": "I made use of the extra time to study English.",
+      "tips": [
+        "`make use of A to + 동사` = A를 활용해 ~하다",
+        "`extra time` = 남는 시간"
+      ]
+    },
+    {
+      "id": "c09-1",
+      "day": 9,
+      "ko": "갈지 말지는 날씨에 달렸어.",
+      "en": "Whether we go or not depends on the weather.",
+      "tips": [
+        "`depend on` = ~에 달려 있다",
+        "`Whether ~ or not`이 주어면 단수 취급 → `depends`"
+      ]
+    },
+    {
+      "id": "c09-2",
+      "day": 9,
+      "ko": "상황에 따라 달라. 예산이 얼마야?",
+      "en": "It depends. What’s your budget?",
+      "tips": [
+        "`It depends.` = 상황에 따라 달라 (단독으로도 써요)"
+      ]
+    },
+    {
+      "id": "c10-1",
+      "day": 10,
+      "ko": "오늘 하루 종일 일이 꼬였어. 그런 날 있잖아.",
+      "en": "Everything went wrong today. It was one of those days.",
+      "tips": [
+        "`go wrong` = 일이 잘못되다",
+        "`one of those days` = (안 풀리는) 그런 날"
+      ]
+    },
+    {
+      "id": "c10-2",
+      "day": 10,
+      "ko": "이번 주는 정말 그런 한 주였어.",
+      "en": "It’s been one of those weeks.",
+      "tips": [
+        "days 대신 `weeks`로 바꿔 쓸 수 있어요",
+        "`It’s been` = 지금까지 계속 그랬다 (현재완료)"
+      ]
+    },
+    {
+      "id": "c11-1",
+      "day": 11,
+      "ko": "돈 그 자체가 나쁜 건 아니야.",
+      "en": "Money isn’t bad in and of itself.",
+      "tips": [
+        "`in and of itself` = 그 자체로는",
+        "보통 문장 끝에 와요"
+      ]
+    },
+    {
+      "id": "c11-2",
+      "day": 11,
+      "ko": "실수 자체는 큰 문제가 아니야. 반복하는 게 문제지.",
+      "en": "A mistake isn’t a big problem in and of itself. Repeating it is.",
+      "tips": [
+        "`Repeating it is (the problem).` 반복되는 부분 생략",
+        "동명사가 주어: `Repeating it`"
+      ]
+    },
+    {
+      "id": "c12-1",
+      "day": 12,
+      "ko": "오늘은 기분 전환 삼아 집에서 요리해 먹자.",
+      "en": "Let’s cook at home tonight for a change.",
+      "tips": [
+        "`for a change` = 기분 전환 삼아, 모처럼"
+      ]
+    },
+    {
+      "id": "c12-2",
+      "day": 12,
+      "ko": "이번 주말엔 모처럼 일찍 일어나 볼까 해.",
+      "en": "I’m thinking of getting up early this weekend for a change.",
+      "tips": [
+        "`I’m thinking of ~ing` = ~할까 생각 중이야"
+      ]
+    },
+    {
+      "id": "c13-1",
+      "day": 13,
+      "ko": "그 짧은 시간에 그걸 해내다니 믿기지가 않아.",
+      "en": "I can’t believe you pulled it off in such a short time.",
+      "tips": [
+        "`pull it off` = (어려운 일을) 해내다",
+        "`in such a short time` = 그렇게 짧은 시간에"
+      ]
+    },
+    {
+      "id": "c13-2",
+      "day": 13,
+      "ko": "우리 팀이 마감 전에 프로젝트를 해냈어.",
+      "en": "Our team pulled off the project before the deadline.",
+      "tips": [
+        "명사는 `pull off the project`, 대명사는 `pull it off`"
+      ]
+    },
+    {
+      "id": "c14-1",
+      "day": 14,
+      "ko": "이 셔츠가 딱 내가 찾던 거야.",
+      "en": "This shirt is just the thing I was looking for.",
+      "tips": [
+        "`just the thing` = 딱 맞는 것",
+        "`was looking for` = 찾고 있던"
+      ]
+    },
+    {
+      "id": "c14-2",
+      "day": 14,
+      "ko": "조용히 공부하기 딱 좋은 카페를 알아.",
+      "en": "I know just the place to study quietly.",
+      "tips": [
+        "`just the place to + 동사` = ~하기 딱 좋은 곳"
+      ]
+    },
+    {
+      "id": "c15-1",
+      "day": 15,
+      "ko": "혹시 이 근처에 약국 있는지 아세요?",
+      "en": "Do you happen to know if there’s a pharmacy near here?",
+      "tips": [
+        "`Do you happen to ~?` = 혹시 ~해요? (공손하게)",
+        "`if` = ~인지"
+      ]
+    },
+    {
+      "id": "c15-2",
+      "day": 15,
+      "ko": "마침 내가 그 파일을 갖고 있어.",
+      "en": "I happen to have that file.",
+      "tips": [
+        "`happen to + 동사` = 마침 ~하다"
+      ]
+    },
+    {
+      "id": "c16-1",
+      "day": 16,
+      "ko": "그는 보통 10시가 돼서야 출근해.",
+      "en": "He usually doesn’t come to work until 10.",
+      "tips": [
+        "`not ~ until …` = …가 되어서야 ~하다"
+      ]
+    },
+    {
+      "id": "c16-2",
+      "day": 16,
+      "ko": "결과는 다음 주나 되어야 나와.",
+      "en": "The results won’t be out until next week.",
+      "tips": [
+        "`be out` = (결과가) 나오다",
+        "미래: `won’t ~ until`"
+      ]
+    },
+    {
+      "id": "c17-1",
+      "day": 17,
+      "ko": "내일 비가 올지 궁금하네.",
+      "en": "I wonder if it’s going to rain tomorrow.",
+      "tips": [
+        "`I wonder if ~` = ~일지 궁금하다"
+      ]
+    },
+    {
+      "id": "c17-2",
+      "day": 17,
+      "ko": "그가 내 메시지를 읽었을까 궁금해.",
+      "en": "I wonder if he read my message.",
+      "tips": [
+        "if 뒤 시제는 내용에 맞게 (과거 `read`)"
+      ]
+    },
+    {
+      "id": "c18-1",
+      "day": 18,
+      "ko": "막 전화하려던 참이었어!",
+      "en": "I was just about to call you!",
+      "tips": [
+        "`be about to + 동사` = 막 ~하려던 참이다",
+        "`just`로 강조"
+      ]
+    },
+    {
+      "id": "c18-2",
+      "day": 18,
+      "ko": "회의가 막 시작하려고 해. 빨리 와.",
+      "en": "The meeting is about to start. Hurry up.",
+      "tips": [
+        "현재형 `is about to` = 곧 ~하려고 한다"
+      ]
+    },
+    {
+      "id": "c19-1",
+      "day": 19,
+      "ko": "이 일은 나와 우리 팀 모두에게 중요해.",
+      "en": "This work is important for both me and my team.",
+      "tips": [
+        "`both A and B` = A와 B 모두"
+      ]
+    },
+    {
+      "id": "c19-2",
+      "day": 19,
+      "ko": "그녀는 영어와 중국어를 둘 다 해.",
+      "en": "She speaks both English and Chinese.",
+      "tips": [
+        "`both A and B`가 주어면 복수 취급"
+      ]
+    },
+    {
+      "id": "c20-1",
+      "day": 20,
+      "ko": "이번 주말에 집 청소를 할 계획이야.",
+      "en": "I’m planning to clean my house this weekend.",
+      "tips": [
+        "`be planning to + 동사` = ~할 계획이다"
+      ]
+    },
+    {
+      "id": "c20-2",
+      "day": 20,
+      "ko": "다음 달에 새 툴 사용법을 배울 계획이야.",
+      "en": "I’m planning to learn how to use a new tool next month.",
+      "tips": [
+        "`how to + 동사` = ~하는 방법",
+        "현재진행형으로 가까운 미래 계획 (Day 41)"
+      ]
+    },
+    {
+      "id": "c21-1",
+      "day": 21,
+      "ko": "버스가 안 오네. 그냥 걸어가는 게 낫겠다.",
+      "en": "The bus isn’t coming. We might as well walk.",
+      "tips": [
+        "`might as well + 동사` = (그럴 바엔) ~하는 게 낫겠다"
+      ]
+    },
+    {
+      "id": "c21-2",
+      "day": 21,
+      "ko": "어차피 기다려야 하니까 커피나 마시자.",
+      "en": "Since we have to wait anyway, we might as well get some coffee.",
+      "tips": [
+        "`Since ~` = ~이니까",
+        "`anyway` = 어차피"
+      ]
+    },
+    {
+      "id": "c22-1",
+      "day": 22,
+      "ko": "잠깐 쉬었으니까 이제 다시 하던 거 해야겠다.",
+      "en": "I took a short break, so I’d better get back to it.",
+      "tips": [
+        "`get back to it` = 하던 일로 돌아가다",
+        "`I’d better` = ~하는 게 좋겠다"
+      ]
+    },
+    {
+      "id": "c22-2",
+      "day": 22,
+      "ko": "이 전화 끝나고 다시 하던 거 할게.",
+      "en": "I’ll get back to it after this call.",
+      "tips": [
+        "`after + 명사` = ~ 후에"
+      ]
+    },
+    {
+      "id": "c23-1",
+      "day": 23,
+      "ko": "그는 돈보다 시간을 택했어.",
+      "en": "He chose time over money.",
+      "tips": [
+        "`choose A over B` = B 대신 A를 택하다"
+      ]
+    },
+    {
+      "id": "c23-2",
+      "day": 23,
+      "ko": "나는 대기업 대신 스타트업을 택했어.",
+      "en": "I chose a startup over a big company.",
+      "tips": [
+        "과거형 `chose`"
+      ]
+    },
+    {
+      "id": "c24-1",
+      "day": 24,
+      "ko": "산책하면서 머리 좀 식히고 올게.",
+      "en": "I’m going to take a walk to clear my head.",
+      "tips": [
+        "`clear my head` = 머리를 식히다",
+        "`to + 동사` = ~하려고 (목적)"
+      ]
+    },
+    {
+      "id": "c24-2",
+      "day": 24,
+      "ko": "머리 좀 식힐 시간이 필요해.",
+      "en": "I need some time to clear my head.",
+      "tips": [
+        "`time to + 동사` = ~할 시간"
+      ]
+    },
+    {
+      "id": "c25-1",
+      "day": 25,
+      "ko": "전부터 너한테 전화하려고 했어.",
+      "en": "I’ve been meaning to call you.",
+      "tips": [
+        "`I’ve been meaning to + 동사` = 전부터 ~하려고 했어"
+      ]
+    },
+    {
+      "id": "c25-2",
+      "day": 25,
+      "ko": "전부터 그 책을 읽으려고 했는데 아직 못 읽었어.",
+      "en": "I’ve been meaning to read that book, but I haven’t yet.",
+      "tips": [
+        "`I haven’t (read it) yet` = 아직 안 했다, 반복되는 부분 생략"
+      ]
+    },
+    {
+      "id": "c26-1",
+      "day": 26,
+      "ko": "그 노래를 들으면 웃지 않을 수가 없어.",
+      "en": "I can’t help smiling when I hear that song.",
+      "tips": [
+        "`can’t help ~ing` = ~하지 않을 수 없다"
+      ]
+    },
+    {
+      "id": "c26-2",
+      "day": 26,
+      "ko": "할 일이 많으면 걱정할 수밖에 없어.",
+      "en": "I can’t help worrying when I have a lot to do.",
+      "tips": [
+        "`a lot to do` = 할 일이 많다"
+      ]
+    },
+    {
+      "id": "c27-1",
+      "day": 27,
+      "ko": "“오늘 회의 취소됐어?” “내가 알기로는 아니야.”",
+      "en": "“Was today’s meeting canceled?” “Not that I know of.”",
+      "tips": [
+        "`Not that I know of.` = 내가 알기로는 아니야",
+        "수동태 과거 `was canceled` = 취소됐다"
+      ]
+    },
+    {
+      "id": "c27-2",
+      "day": 27,
+      "ko": "“이 기능 무료로 쓸 수 있어?” “내가 알기로는 아니야.”",
+      "en": "“Can I use this feature for free?” “Not that I know of.”",
+      "tips": [
+        "`for free` = 무료로"
+      ]
+    },
+    {
+      "id": "c28-1",
+      "day": 28,
+      "ko": "이사하는 거 좀 망설여지기 시작했어.",
+      "en": "I’m starting to have second thoughts about moving.",
+      "tips": [
+        "`have second thoughts about ~` = ~가 망설여지다",
+        "`about` 뒤엔 동명사 `moving`"
+      ]
+    },
+    {
+      "id": "c28-2",
+      "day": 28,
+      "ko": "그 제안을 받아들인 걸 다시 생각하게 됐어.",
+      "en": "I’m having second thoughts about accepting the offer.",
+      "tips": [
+        "진행형 `I’m having second thoughts`도 자주 써요"
+      ]
+    },
+    {
+      "id": "c29-1",
+      "day": 29,
+      "ko": "도움이 필요하면 말만 해.",
+      "en": "If you need any help, just say the word.",
+      "tips": [
+        "`just say the word` = 말만 해"
+      ]
+    },
+    {
+      "id": "c29-2",
+      "day": 29,
+      "ko": "차로 태워 줄까? 말만 해.",
+      "en": "Do you need a ride? Just say the word.",
+      "tips": [
+        "`a ride` = 차로 태워 주기"
+      ]
+    },
+    {
+      "id": "c30-1",
+      "day": 30,
+      "ko": "참고로 말하는데, 나 내일 쉬는 날이야.",
+      "en": "Just so you know, I’m off tomorrow.",
+      "tips": [
+        "`Just so you know,` = 참고로 말하자면",
+        "`be off` = 쉬는 날이다"
+      ]
+    },
+    {
+      "id": "c30-2",
+      "day": 30,
+      "ko": "참고로, 회의가 3시로 옮겨졌어.",
+      "en": "Just so you know, the meeting has been moved to 3.",
+      "tips": [
+        "현재완료 수동태 `has been moved` = (이미) 옮겨졌다"
+      ]
+    },
+    {
+      "id": "c31-1",
+      "day": 31,
+      "ko": "요즘 너무 바빠서 운동을 못 했어. 어떤지 알잖아.",
+      "en": "I’ve been too busy to work out lately. You know how it is.",
+      "tips": [
+        "`too ~ to …` = 너무 ~해서 …못 하다 (Set 2)",
+        "`You know how it is.` = 어떤지 알잖아"
+      ]
+    },
+    {
+      "id": "c31-2",
+      "day": 31,
+      "ko": "월말이라 정신이 없어. 다 그렇지 뭐.",
+      "en": "It’s the end of the month, so things are crazy. You know how it is.",
+      "tips": [
+        "`things are crazy` = 정신없다"
+      ]
+    },
+    {
+      "id": "c32-1",
+      "day": 32,
+      "ko": "결국 중요한 건 고객이 만족하는 거야.",
+      "en": "At the end of the day, what matters is that customers are happy.",
+      "tips": [
+        "`At the end of the day,` = 결국",
+        "`what matters is ~` = 중요한 건 ~이다"
+      ]
+    },
+    {
+      "id": "c32-2",
+      "day": 32,
+      "ko": "결국 결정은 네가 하는 거야.",
+      "en": "At the end of the day, it’s your decision.",
+      "tips": [
+        "`At the end of the day`는 결론을 말할 때 문장 앞에 와요"
+      ]
+    },
+    {
+      "id": "c33-1",
+      "day": 33,
+      "ko": "그 이메일에 답장한다는 게 끝내 못 했어.",
+      "en": "I never got around to replying to that email.",
+      "tips": [
+        "`get around to ~ing` = (미루던 일을) 드디어 하다",
+        "`never got around to` = 끝내 못 했다"
+      ]
+    },
+    {
+      "id": "c33-2",
+      "day": 33,
+      "ko": "이번 주말엔 드디어 방 정리를 할 거야.",
+      "en": "I’m finally going to get around to cleaning my room this weekend.",
+      "tips": [
+        "`to` 뒤에 동명사 `cleaning`"
+      ]
+    },
+    {
+      "id": "c34-1",
+      "day": 34,
+      "ko": "나라면 지금 안 사고 세일을 기다리겠어.",
+      "en": "I wouldn’t buy it now. I would wait for a sale.",
+      "tips": [
+        "`I would / I wouldn’t` = 나라면 ~하겠어 / 안 하겠어 (부드러운 조언)"
+      ]
+    },
+    {
+      "id": "c34-2",
+      "day": 34,
+      "ko": "나라면 그 일을 최대한 빨리 처리하겠어.",
+      "en": "I would take care of it as soon as I could.",
+      "tips": [
+        "`take care of` = 처리하다",
+        "`as soon as I could` = 최대한 빨리"
+      ]
+    },
+    {
+      "id": "c35-1",
+      "day": 35,
+      "ko": "매출 증가는 주로 신규 고객 덕분이었어요.",
+      "en": "The increase in sales was mainly driven by new customers.",
+      "tips": [
+        "`be driven by` = ~에 의해 발생하다",
+        "증감 명사 + `in`: an increase in sales"
+      ]
+    },
+    {
+      "id": "c35-2",
+      "day": 35,
+      "ko": "이번 하락은 주로 배송 지연 때문인 것 같아요.",
+      "en": "It looks like the drop was mainly driven by delivery delays.",
+      "tips": [
+        "`It looks like ~` = ~인 것 같다 (Day 36)"
+      ]
+    },
+    {
+      "id": "c36-1",
+      "day": 36,
+      "ko": "로그를 확인해서 근본 원인을 찾아볼게요.",
+      "en": "I’ll check the logs and identify the root cause.",
+      "tips": [
+        "`identify the root cause` = 근본 원인을 파악하다"
+      ]
+    },
+    {
+      "id": "c36-2",
+      "day": 36,
+      "ko": "근본 원인을 찾기 전까지는 고칠 수 없어요.",
+      "en": "We can’t fix it until we identify the root cause.",
+      "tips": [
+        "`can’t ~ until …` = …하기 전까지는 ~할 수 없다 (Day 16)"
+      ]
+    },
+    {
+      "id": "c37-1",
+      "day": 37,
+      "ko": "시작하기 전에 일정에 대해 의견을 맞춰요.",
+      "en": "Let’s align on the timeline before we start.",
+      "tips": [
+        "`align on ~` = ~에 대해 의견을 맞추다"
+      ]
+    },
+    {
+      "id": "c37-2",
+      "day": 37,
+      "ko": "두 팀이 지표 정의에 대해 아직 합의하지 못했어요.",
+      "en": "The two teams haven’t aligned on the metric definition yet.",
+      "tips": [
+        "현재완료 부정 + `yet` = 아직 ~하지 못했다"
+      ]
+    },
+    {
+      "id": "c38-1",
+      "day": 38,
+      "ko": "원인을 두 가지로 좁혔어요.",
+      "en": "We’ve narrowed it down to two possible causes.",
+      "tips": [
+        "`narrow ~ down to …` = ~을 …로 좁히다",
+        "대명사는 가운데: `narrow it down`"
+      ]
+    },
+    {
+      "id": "c38-2",
+      "day": 38,
+      "ko": "검색 범위를 좀 좁혀 보자.",
+      "en": "Let’s narrow down the search.",
+      "tips": [
+        "명사 목적어는 `narrow down the search`도 가능"
+      ]
+    },
+    {
+      "id": "c39-1",
+      "day": 39,
+      "ko": "이 문제는 지난 업데이트와 관련이 있는 것 같아요.",
+      "en": "I think this issue is related to the last update.",
+      "tips": [
+        "`be related to` = ~와 관련이 있다"
+      ]
+    },
+    {
+      "id": "c39-2",
+      "day": 39,
+      "ko": "매출 하락이 가격 변화와 관련이 있는지 확인해 볼게요.",
+      "en": "I’ll check whether the drop in sales is related to the price change.",
+      "tips": [
+        "`check whether ~` = ~인지 확인하다"
+      ]
+    },
+    {
+      "id": "c40-1",
+      "day": 40,
+      "ko": "그 실수 짚어 줘서 고마워요.",
+      "en": "Thanks for pointing out that mistake.",
+      "tips": [
+        "`Thanks for ~ing` = ~해 줘서 고마워요",
+        "`point out` = 짚어 주다, 지적하다"
+      ]
+    },
+    {
+      "id": "c40-2",
+      "day": 40,
+      "ko": "그녀가 보고서에서 오류를 몇 개 지적했어요.",
+      "en": "She pointed out a few errors in the report.",
+      "tips": [
+        "과거형 `pointed out`"
+      ]
+    },
+    {
+      "id": "c41-1",
+      "day": 41,
+      "ko": "새 기능을 다음 주에 전체 사용자에게 출시할 거예요.",
+      "en": "We’re going to roll out the new feature to all users next week.",
+      "tips": [
+        "`roll out ~ to …` = ~을 …에게 출시하다"
+      ]
+    },
+    {
+      "id": "c41-2",
+      "day": 41,
+      "ko": "먼저 일부 사용자에게만 출시해 보는 게 어때요?",
+      "en": "How about rolling it out to a small group of users first?",
+      "tips": [
+        "`How about ~ing?` = ~하는 게 어때요?",
+        "대명사는 가운데: `rolling it out`"
+      ]
+    },
+    {
+      "id": "c42-1",
+      "day": 42,
+      "ko": "대시보드 사용법을 하나씩 설명해 드릴게요.",
+      "en": "Let me walk you through how to use the dashboard.",
+      "tips": [
+        "`walk someone through ~` = 차근차근 설명하다",
+        "`how to + 동사` = ~하는 방법"
+      ]
+    },
+    {
+      "id": "c42-2",
+      "day": 42,
+      "ko": "새 프로세스를 단계별로 설명해 주실 수 있나요?",
+      "en": "Could you walk us through the new process?",
+      "tips": [
+        "`Could you ~?` = 정중한 요청"
+      ]
+    }
+  ],
+
   /* ---------- 오늘의 영상 ----------
      url: 유튜브 주소 (watch?v=, youtu.be/, shorts/ 모두 가능), title, note: 한 줄 메모, date: 추가한 날짜
      가장 최근 영상이 홈에 크게 나오고, 나머지는 목록에서 골라 볼 수 있어요 */
