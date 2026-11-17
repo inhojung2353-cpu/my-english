@@ -53,6 +53,10 @@ document.addEventListener('click', e => {
   const b = e.target.closest('[data-speak]');
   if (b) { e.preventDefault(); e.stopPropagation(); speak(b.dataset.speak, b.closest('.word')?.querySelector('.speak') || b); }
 });
+// 품사 약어를 한글로 (n. → 명사, phrasal v. → 구동사 …). "n. / v."처럼 여러 개면 각각 바꿔요
+const POS_KO = { 'n.': '명사', 'v.': '동사', 'adj.': '형용사', 'adv.': '부사', 'prep.': '전치사', 'conj.': '접속사',
+  'phrasal v.': '구동사', 'phrase': '표현', 'pattern': '패턴' };
+const posKo = pos => pos.split('/').map(p => POS_KO[p.trim()] || p.trim()).join(' · ');
 const speakBtn = text => `<button class="speak" data-speak="${esc(text)}" aria-label="발음 듣기">🔊</button>`;
 
 /* ---------- 라우터 ---------- */
@@ -217,8 +221,9 @@ function renderHome(reroll = {}) {
       <div class="home-tools"><button class="chip ${hideMeaning ? 'on' : ''}" id="home-hide">🙈 뜻 가리기</button><span class="muted small">${hideMeaning ? '단어를 누르면 뜻이 보여요' : ''}</span></div>
       <div class="card vlist ${hideMeaning ? 'hide-meaning' : ''}" id="today-words">${tw.map(w => `
       <div class="vrow word">
-        <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>${speakBtn(w.word)}</div>
+        <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(posKo(w.pos))}</span>` : ''}</div>${speakBtn(w.word)}</div>
         <div class="vm">${esc(w.meaning)}</div>
+        ${w.example ? `<div class="vex"><div class="en">${esc(w.example)}</div>${w.exampleKo ? `<div class="ko">${esc(w.exampleKo)}</div>` : ''}</div>` : ''}
       </div>`).join('')}</div>
       <a class="more-link" href="#words">단어 탭에서 더 보기 ›</a>`
     : words.length
@@ -395,7 +400,7 @@ function wordCard(w) {
     <article class="card word ${isLearned(w) ? 'learned' : ''}">
       <div class="word-head">
         <div style="flex:1;min-width:0">
-          <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}
+          <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(posKo(w.pos))}</span>` : ''}
         </div>
         <button class="check ${isLearned(w) ? 'on' : ''}" data-check="${esc(w.word)}" aria-pressed="${isLearned(w)}" aria-label="외운 단어로 표시">✓</button>
         ${speakBtn(w.word)}
@@ -686,7 +691,7 @@ function renderPart(s, partNo) {
       <div class="section-title">📝 단어 <small>${p.words.length}개</small></div>
       <div class="card vlist">${p.words.map(w => `
         <div class="vrow">
-          <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(w.pos)}</span>` : ''}</div>${speakBtn(w.word)}</div>
+          <div class="vhead-row"><div class="vhead"><span class="vw">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(posKo(w.pos))}</span>` : ''}</div>${speakBtn(w.word)}</div>
           <div class="vm">${esc(w.meaning)}</div>
           ${w.example ? `<div class="vex"><div class="en">${esc(w.example)}</div>${w.exampleKo ? `<div class="ko">${esc(w.exampleKo)}</div>` : ''}</div>` : ''}
         </div>`).join('')}</div>` : ''}

@@ -372,5 +372,12 @@ input[type=search], textarea { background: var(--surface); }
 /* 홈 오늘의 단어: 뜻 가리기 (기본) */
 .home-tools { display: flex; align-items: center; gap: 8px; margin: -2px 2px 8px; }
 .hide-meaning .vrow.word { cursor: pointer; }
-.hide-meaning .vrow.word .vm { filter: blur(6px); transition: filter .2s; user-select: none; }
-.hide-meaning .vrow.word.peek .vm { filter: none; user-select: auto; }
+.hide-meaning .vrow.word .vm, .hide-meaning .vrow.word .vex .ko { filter: blur(6px); transition: filter .2s; user-select: none; }
+.hide-meaning .vrow.word.peek .vm, .hide-meaning .vrow.word.peek .vex .ko { filter: none; user-select: auto; }
+
+/* 품사: 한글 라벨 */
+.word-head .pos, .vhead .pos {
+  font-style: normal; font-size: 11px; font-weight: 600; color: var(--muted);
+  background: var(--surface-2); border-radius: 6px; padding: 1px 6px; margin-left: 2px;
+  white-space: nowrap; align-self: center;
+}
