@@ -128,15 +128,34 @@ function todaySentences(reroll = false) {
   return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
-// 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 매일 6개
+// 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 6개.
+// 날짜가 바뀌어도 그대로 두고, 🔄를 눌렀을 때만 새 6개로 바꿔요.
+// 저장 형태: { ids: [문제 id 6개], since: 이 세트를 시작한 시각 }
 const writing = C.writing || [];
+const WRITE_SET_KEY = 'my-english-writing-set';
 function todayWriting(reroll = false) {
-  const st = dailyState();
-  const n = (st.cn || 0) + (reroll ? 1 : 0);
-  if (reroll) writeJSON(DAILY_KEY, { ...st, cn: n });
-  return seededShuffle(writing, dailySeed('c', n)).slice(0, 6);
+  const saved = readJSON(WRITE_SET_KEY, null);
+  const want = Math.min(6, writing.length);
+  let ids = saved && Array.isArray(saved.ids) ? saved.ids.filter(id => writing.some(c => c.id === id)) : [];
+  let since = saved && saved.since;
+  if (!saved) {
+    // 처음 한 번: 지금까지 보던 오늘 세트를 그대로 이어받고, 오늘 써 둔 답도 보이게
+    const st = dailyState();
+    ids = seededShuffle(writing, dailySeed('c', st.cn || 0)).slice(0, want).map(c => c.id);
+    since = new Date(new Date().toDateString()).getTime();
+  }
+  if (reroll) {
+    // 새로고침: 남은 문제가 충분하면 방금 본 6개와 겹치지 않게
+    const fresh = writing.filter(c => !ids.includes(c.id));
+    ids = seededShuffle(fresh.length >= want ? fresh : writing, 'c' + Date.now()).slice(0, want).map(c => c.id);
+    since = Date.now();
+  } else if (ids.length < want) {
+    // 문제가 지워졌거나 모자라면 빈 자리만 채우기
+    ids = [...ids, ...seededShuffle(writing.filter(c => !ids.includes(c.id)), 'c' + Date.now()).slice(0, want - ids.length).map(c => c.id)];
+  }
+  if (!saved || reroll || ids.length !== saved.ids.length) writeJSON(WRITE_SET_KEY, { ids, since });
+  return ids.map(id => writing.find(c => c.id === id));
 }
-// 내가 쓴 답은 그날 하루 동안 이 기기에 저장 (다음 날엔 비워져요)
 // 내가 쓴 영작은 날짜별로 계속 쌓여요 (이 기기에 저장). 키: '날짜|문제id'
 const WRITE_LOG_KEY = 'my-english-writing-log';
 function writingLog() {
@@ -151,15 +170,23 @@ function writingLog() {
   writeJSON(WRITE_LOG_KEY, moved);
   return moved;
 }
+// 지금 세트를 시작한 뒤에 쓴 답 중 문제마다 가장 최근 것을 칸에 채워 둬요 (며칠에 걸쳐 이어 쓰기 가능)
+const writingSince = () => (readJSON(WRITE_SET_KEY, {}) || {}).since || 0;
 const loadAnswers = () => {
-  const out = {};
-  Object.values(writingLog()).forEach(e => { if (e.date === todayKey()) out[e.id] = e.mine; });
+  const since = writingSince(), out = {}, at = {};
+  Object.values(writingLog()).forEach(e => {
+    if ((e.ts || 0) >= since && !((at[e.id] || 0) > (e.ts || 0))) { out[e.id] = e.mine; at[e.id] = e.ts || 0; }
+  });
   return out;
 };
 const saveAnswer = (id, text) => {
   const log = writingLog(), key = `${todayKey()}|${id}`;
   if (text.trim()) log[key] = { date: todayKey(), id, mine: text, ts: Date.now() };
-  else delete log[key];
+  else {
+    // 칸을 비우면 이 세트에서 쓴 그 문제의 답을 지워요 (다시 열어도 빈칸)
+    const since = writingSince();
+    Object.keys(log).forEach(k => { if (log[k].id === id && (log[k].ts || 0) >= since) delete log[k]; });
+  }
   writeJSON(WRITE_LOG_KEY, log);
 };
 // 내 답 vs 모범 답안 비교 (둥근 따옴표·대소문자 차이는 무시)
@@ -246,7 +273,7 @@ function renderHome(reroll = {}) {
 
     <div class="section-title">✍️ 오늘의 영작 <span class="title-right"><small>Dialog 응용</small>${tc.length ? `<button class="reroll" id="reroll-write" aria-label="다른 문제로 새로고침">🔄</button>` : ''}</span></div>
     ${tc.length ? `
-      <p class="muted small" style="margin:-2px 4px 8px">한글 문장을 영어로 써 보고 <b>정답 보기</b>로 확인하세요. 답은 하나가 아니에요. 뜻이 통하면 OK!</p>
+      <p class="muted small" style="margin:-2px 4px 8px">한글 문장을 영어로 써 보고 <b>정답 보기</b>로 확인하세요. 답은 하나가 아니에요. 뜻이 통하면 OK! 문제는 🔄를 누를 때만 바뀌어요.</p>
       <div class="card vlist" id="compose">${tc.map((c, i) => {
         const d = dayOf(c.day);
         return `
