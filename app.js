@@ -66,7 +66,7 @@ function route() {
   if (page === 'words') renderWords();
   else if (page === 'scripts') renderScripts();
   else if (page === 'script') renderScript(decodeURIComponent(id || ''), Number(sub) || 0);
-  else if (page === 'dialogs') renderDialogs();
+  else if (page === 'dialogs') renderDialogs(id === 'mine' ? 'mine' : 'list');
   else if (page === 'dialog') renderDialog(decodeURIComponent(id || ''));
   else if (page === 'diary') renderDiary();
   else renderHome();
@@ -133,9 +133,39 @@ function todayWriting(reroll = false) {
   return seededShuffle(writing, dailySeed('c', n)).slice(0, 6);
 }
 // 내가 쓴 답은 그날 하루 동안 이 기기에 저장 (다음 날엔 비워져요)
-const WRITE_KEY = 'my-english-writing';
-const loadAnswers = () => { const s = readJSON(WRITE_KEY, {}); return s.day === todayKey() ? s.answers || {} : {}; };
-const saveAnswer = (id, text) => writeJSON(WRITE_KEY, { day: todayKey(), answers: { ...loadAnswers(), [id]: text } });
+// 내가 쓴 영작은 날짜별로 계속 쌓여요 (이 기기에 저장). 키: '날짜|문제id'
+const WRITE_LOG_KEY = 'my-english-writing-log';
+function writingLog() {
+  const log = readJSON(WRITE_LOG_KEY, null);
+  if (log) return log;
+  // 예전 방식(그날 하루만 저장)에 남아 있던 답을 옮겨 오기
+  const old = readJSON('my-english-writing', {});
+  const moved = {};
+  Object.entries(old.answers || {}).forEach(([id, mine]) => {
+    if (old.day && mine && mine.trim()) moved[`${old.day}|${id}`] = { date: old.day, id, mine, ts: Date.now() };
+  });
+  writeJSON(WRITE_LOG_KEY, moved);
+  return moved;
+}
+const loadAnswers = () => {
+  const out = {};
+  Object.values(writingLog()).forEach(e => { if (e.date === todayKey()) out[e.id] = e.mine; });
+  return out;
+};
+const saveAnswer = (id, text) => {
+  const log = writingLog(), key = `${todayKey()}|${id}`;
+  if (text.trim()) log[key] = { date: todayKey(), id, mine: text, ts: Date.now() };
+  else delete log[key];
+  writeJSON(WRITE_LOG_KEY, log);
+};
+// 내 답 vs 모범 답안 비교 (둥근 따옴표·대소문자 차이는 무시)
+function compareHtml(mine, model) {
+  const a = normEn(mine), b = normEn(model);
+  if (!a) return '';
+  return a.toLowerCase() === b.toLowerCase()
+    ? `<div class="comp-label">내 답과 비교</div><div class="comp-perfect">🎉 모범 답안과 똑같아요!</div>`
+    : `<div class="comp-label">내 답과 비교 <span class="muted small"><del>내 답에만 있음</del> <ins>모범 답안</ins></span></div><div class="diff comp-mine">${diffHtml(a, b)}</div>`;
+}
 // 비교할 때 둥근 따옴표·대소문자 차이는 무시
 const normEn = t => t.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
 
@@ -227,7 +257,8 @@ function renderHome(reroll = {}) {
             ${d ? `<a class="sent-src" href="#dialog/${encodeURIComponent(d.id)}">Day ${d.day} · ${esc(d.key || '')} 복습하기 ›</a>` : ''}
           </div>
         </div>`;
-      }).join('')}</div>`
+      }).join('')}</div>
+      <a class="more-link" href="#dialogs/mine">쓴 영작은 저장돼요 · 지난 영작 보기 ›</a>`
     : ''}
 
     <div class="section-title">🎬 오늘의 영상</div>
@@ -276,12 +307,8 @@ function renderHome(reroll = {}) {
       const open = row.classList.toggle('open');
       btn.textContent = open ? '정답 접기' : '정답 보기';
       if (!open) return;
-      const mine = normEn(row.querySelector('.comp-input').value);
-      const model = normEn(writing.find(c => c.id === row.dataset.id)?.en || '');
-      row.querySelector('.comp-diff').innerHTML = !mine ? ''
-        : normEn(mine).toLowerCase() === model.toLowerCase()
-          ? `<div class="comp-label">내 답과 비교</div><div class="comp-perfect">🎉 모범 답안과 똑같아요!</div>`
-          : `<div class="comp-label">내 답과 비교 <span class="muted small"><del>내 답에만 있음</del> <ins>모범 답안</ins></span></div><div class="diff comp-mine">${diffHtml(mine, model)}</div>`;
+      row.querySelector('.comp-diff').innerHTML =
+        compareHtml(row.querySelector('.comp-input').value, writing.find(c => c.id === row.dataset.id)?.en || '');
     });
   }
 
@@ -717,14 +744,24 @@ function dialogCard(d) {
 const dialogOrder = () => [...dialogs].sort((a, b) => (a.day || 1e9) - (b.day || 1e9) || (a.date || '').localeCompare(b.date || ''));
 let dialogQuery = '';
 
-function renderDialogs() { // 목록은 최신 Day가 위로 (내림차순)
+// Dialog 탭 위 [Dialog | 내 영작] 전환
+function dialogSeg(mode) {
+  const myCount = myWritingEntries().length;
+  return `<div class="seg seg-2" role="tablist">
+    <a href="#dialogs" role="tab" aria-selected="${mode === 'list'}" class="${mode === 'list' ? 'on' : ''}">Dialog <b>${dialogs.length}</b></a>
+    <a href="#dialogs/mine" role="tab" aria-selected="${mode === 'mine'}" class="${mode === 'mine' ? 'on' : ''}">내 영작 <b>${myCount}</b></a>
+  </div>`;
+}
+
+function renderDialogs(mode = 'list') { // 목록은 최신 Day가 위로 (내림차순)
   setTitle('Dialog');
+  if (mode === 'mine') return renderMyWriting();
   if (!dialogs.length) {
-    view.innerHTML = `<div class="empty"><span class="big">💬</span>아직 Dialog가 없어요<br><span class="small">대화문을 보내 주시면 여기에 정리돼요</span></div>`;
+    view.innerHTML = `<div class="tools">${dialogSeg(mode)}</div><div class="empty"><span class="big">💬</span>아직 Dialog가 없어요<br><span class="small">대화문을 보내 주시면 여기에 정리돼요</span></div>`;
     return;
   }
   view.innerHTML = `
-    <div class="tools"><input type="search" id="dq" placeholder="표현이나 문장으로 검색 (예: make sure)" value="${esc(dialogQuery)}" autocomplete="off"></div>
+    <div class="tools">${dialogSeg(mode)}<input type="search" id="dq" placeholder="표현이나 문장으로 검색 (예: make sure)" value="${esc(dialogQuery)}" autocomplete="off"></div>
     <div id="dlist"></div>`;
   const draw = () => {
     const q = dialogQuery.trim().toLowerCase().replace(/'/g, '’');
@@ -734,6 +771,57 @@ function renderDialogs() { // 목록은 최신 Day가 위로 (내림차순)
   };
   draw();
   $('#dq').addEventListener('input', e => { dialogQuery = e.target.value; draw(); });
+}
+
+// 내 영작: 홈에서 쓴 답이 날짜별로 쌓여요 (최신 날짜가 위로)
+function myWritingEntries() {
+  return Object.entries(writingLog())
+    .map(([key, e]) => ({ key, ...e, c: writing.find(c => c.id === e.id) }))
+    .filter(e => e.c && e.mine && e.mine.trim())
+    .sort((a, b) => b.date.localeCompare(a.date) || (b.ts || 0) - (a.ts || 0));
+}
+
+function renderMyWriting() {
+  const entries = myWritingEntries();
+  const groups = {};
+  entries.forEach(e => (groups[e.date] ||= []).push(e));
+  view.innerHTML = `<div class="tools">${dialogSeg('mine')}</div>` + (entries.length
+    ? Object.keys(groups).map(date => `
+      <div class="group-title">${prettyDate(date)} · ${groups[date].length}문장</div>
+      <div class="card vlist">${groups[date].map(e => {
+        const d = dialogs.find(x => x.day === e.c.day);
+        return `
+        <div class="vrow mine-item" data-key="${esc(e.key)}">
+          <div class="vhead-row"><div class="mine-ko grow">${esc(e.c.ko)}</div><button class="video-del" data-del aria-label="이 영작 삭제">✕</button></div>
+          <div class="comp-label">내 답</div>
+          <div class="mine-text">${esc(e.mine)}</div>
+          <div class="comp-label">모범 답안</div>
+          <div class="row-between"><div class="en grow">${esc(e.c.en)}</div>${speakBtn(e.c.en)}</div>
+          <button class="chip mine-toggle">비교 · 설명 보기</button>
+          <div class="mine-more">
+            ${compareHtml(e.mine, e.c.en)}
+            ${(e.c.tips || []).length ? `<div class="comp-label">알아 둘 것</div><ul class="note-subs comp-tips">${e.c.tips.map(t => `<li>${inlineCode(t)}</li>`).join('')}</ul>` : ''}
+            ${d ? `<a class="sent-src" href="#dialog/${encodeURIComponent(d.id)}">Day ${d.day} · ${esc(d.key || '')} 복습하기 ›</a>` : ''}
+          </div>
+        </div>`;
+      }).join('')}</div>`).join('')
+    : `<div class="empty"><span class="big">✍️</span>아직 저장된 영작이 없어요<br><span class="small">홈의 오늘의 영작에서 영어로 쓰면 여기에 날짜별로 쌓여요</span><br><a class="small" href="#home" style="color:var(--primary)">오늘의 영작 하러 가기 ›</a></div>`);
+
+  view.addEventListener('click', onMyWritingClick);
+}
+function onMyWritingClick(e) {
+  if (!location.hash.startsWith('#dialogs/mine')) { view.removeEventListener('click', onMyWritingClick); return; }
+  const item = e.target.closest('.mine-item'); if (!item) return;
+  if (e.target.closest('[data-del]')) {
+    if (!confirm('이 영작을 삭제할까요?')) return;
+    const log = writingLog(); delete log[item.dataset.key]; writeJSON(WRITE_LOG_KEY, log);
+    view.removeEventListener('click', onMyWritingClick);
+    const y = window.scrollY; renderMyWriting(); window.scrollTo(0, y); toast('삭제했어요');
+    return;
+  }
+  const btn = e.target.closest('.mine-toggle'); if (!btn) return;
+  const open = item.classList.toggle('open');
+  btn.textContent = open ? '접기' : '비교 · 설명 보기';
 }
 
 let dlgShowKo = true;

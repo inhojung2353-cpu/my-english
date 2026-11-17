@@ -351,6 +351,19 @@ input[type=search], textarea { background: var(--surface); }
 .comp-perfect { font-size: 14px; font-weight: 600; color: var(--good); }
 .comp-tips { margin-top: 2px; }
 
+/* Dialog 탭: [Dialog | 내 영작] 전환 + 내 영작 목록 */
+.seg-2 { grid-template-columns: repeat(2, 1fr); }
+.seg a { border-radius: 10px; padding: 8px 4px; font-size: 14px; font-weight: 600; color: var(--muted); text-align: center; white-space: nowrap; }
+.seg a b { font-weight: 700; margin-left: 2px; opacity: .8; }
+.seg a.on { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.mine-ko { font-size: 16px; font-weight: 600; line-height: 1.5; }
+.mine-text { font-size: 16px; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
+.mine-item .en { font-size: 16px; line-height: 1.6; font-style: italic; }
+.mine-toggle { margin-top: 10px; }
+.mine-more { display: none; margin-top: 10px; padding-left: 10px; border-left: 3px solid var(--mark); }
+.mine-item.open .mine-more { display: block; }
+.mine-item.open .mine-toggle { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+
 /* 홈: 🔄 새로고침 버튼 */
 .title-right { display: inline-flex; align-items: center; gap: 8px; }
 .reroll { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 15px; line-height: 1; cursor: pointer; display: grid; place-items: center; }
