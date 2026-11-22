@@ -364,6 +364,16 @@ input[type=search], textarea { background: var(--surface); }
 .mine-item.open .mine-more { display: block; }
 .mine-item.open .mine-toggle { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
 
+/* Dialog: 생각해 볼 질문 */
+.qa-q { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; line-height: 1.55; font-weight: 600; }
+.qa-toggle { margin: 8px 0 0 32px; }
+.qa-a { display: none; margin: 10px 0 0 32px; padding-left: 10px; border-left: 3px solid var(--mark); }
+.qa.open .qa-a { display: block; }
+.qa.open .qa-toggle { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.qa.open .sent-no { background: var(--primary); color: var(--on-primary); }
+.qa-a .en { font-size: 16px; line-height: 1.6; font-style: italic; }
+.qa-a .ko { font-size: 14px; color: var(--muted); margin-top: 2px; }
+
 /* 홈: 🔄 새로고침 버튼 */
 .title-right { display: inline-flex; align-items: center; gap: 8px; }
 .reroll { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 15px; line-height: 1; cursor: pointer; display: grid; place-items: center; }

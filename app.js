@@ -937,6 +937,18 @@ function renderDialog(id) {
           ${(n.subs || []).length ? `<ul class="note-subs">${n.subs.map(x => `<li>${inlineCode(x)}</li>`).join('')}</ul>` : ''}
         </div>`).join('')}</div>` : ''}
 
+    ${(d.questions || []).length ? `
+      <div class="section-title">💭 생각해 볼 질문 <small>먼저 영어로 답해 보세요</small></div>
+      <div class="card vlist" id="dq-list">${d.questions.map((q, i) => `
+        <div class="vrow qa">
+          <div class="vhead-row"><div class="qa-q grow"><span class="sent-no">${i + 1}</span><span>${esc(q.q)}</span></div>${speakBtn(q.q)}</div>
+          <button class="chip qa-toggle">예시 답 보기</button>
+          <div class="qa-a">
+            <div class="row-between"><div class="en grow">${esc(q.answer)}</div>${speakBtn(q.answer)}</div>
+            ${q.answerKo ? `<div class="ko">${esc(q.answerKo)}</div>` : ''}
+          </div>
+        </div>`).join('')}</div>` : ''}
+
     ${prev || next ? `
       <div class="pager">
         ${prev ? `<a class="card" href="#dialog/${encodeURIComponent(prev.id)}"><span class="muted small">‹ 이전</span><b>${prev.day ? `Day ${prev.day} · ` : ''}${esc(prev.key || prev.title)}</b></a>` : '<span></span>'}
@@ -959,6 +971,12 @@ function renderDialog(id) {
   $('#chat').addEventListener('click', e => {
     const m = e.target.closest('.dlg-line.masked, .dlg-line.peek');
     if (m && !e.target.closest('[data-speak]')) { m.classList.toggle('masked'); m.classList.toggle('peek'); }
+  });
+  // 생각해 볼 질문: 예시 답 펼치기
+  $('#dq-list')?.addEventListener('click', e => {
+    const btn = e.target.closest('.qa-toggle'); if (!btn) return;
+    const open = btn.closest('.qa').classList.toggle('open');
+    btn.textContent = open ? '접기' : '예시 답 보기';
   });
 }
 

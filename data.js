@@ -6124,7 +6124,8 @@ window.CONTENT = {
      lines: [{ speaker, en, ko }] — 첫 번째 화자는 왼쪽, 두 번째 화자는 오른쪽 말풍선,
      expressions: [{ phrase, meaning }], day: Day 번호, key/keyMeaning: 그날의 핵심 표현,
      marks: 본문에서 형광펜으로 칠할 부분, extras: 추가 예문,
-     notes: 맨 아래 문법 노트 [{ point, explain, subs }] — `코드`는 강조 표시 */
+     notes: 문법 노트 [{ point, explain, subs }] — `코드`는 강조 표시,
+     questions: 생각해 볼 질문 [{ q, answer, answerKo }] */
   dialogs: [
     {
       "id": "day01",
@@ -9136,6 +9137,414 @@ window.CONTENT = {
           "subs": []
         }
       ]
+    },
+    {
+      "id": "day42",
+      "day": 42,
+      "key": "secure a deal",
+      "keyMeaning": "거래를 따내다, 계약을 성사시키다",
+      "title": "계약 성공 다음 날 (1)",
+      "situation": "혼잣말 · 일기 — 계약을 따낸 다음 날 회사에서",
+      "date": "2026-11-22",
+      "lines": [
+        {
+          "speaker": "Me",
+          "en": "I came into work today feeling good after the successful contract signing.",
+          "ko": "성공적인 계약 체결 후, 오늘은 기분 좋게 출근했다."
+        },
+        {
+          "speaker": "Me",
+          "en": "I got myself a coffee from the staff kitchen and started to work.",
+          "ko": "직원 탕비실에서 커피를 한 잔 가져와서 일을 시작했다."
+        },
+        {
+          "speaker": "Me",
+          "en": "I was able to really focus, and the time flew by fast.",
+          "ko": "정말 집중이 잘 됐고, 시간이 쏜살같이 지나갔다."
+        },
+        {
+          "speaker": "Me",
+          "en": "In the mid-morning, our director and MD suddenly appeared in the door.",
+          "ko": "오전 중반쯤, 이사님과 대표님(MD)이 갑자기 문 앞에 나타나셨다."
+        },
+        {
+          "speaker": "Me",
+          "en": "They said I had done really well in securing this deal!",
+          "ko": "두 분은 내가 이번 거래를 따내는 데 정말 잘했다고 말씀하셨다!"
+        },
+        {
+          "speaker": "Me",
+          "en": "They added that the company had been struggling with lower overseas sales and it was very lucky that we got this amazing project.",
+          "ko": "회사가 해외 매출 감소로 고전하고 있었는데, 이렇게 멋진 프로젝트를 따내서 정말 다행이라고 덧붙이셨다."
+        },
+        {
+          "speaker": "Me",
+          "en": "And at such an advantageous price!",
+          "ko": "그것도 그렇게 유리한 가격으로!"
+        },
+        {
+          "speaker": "Me",
+          "en": "They announced we’d only work a half-day today, then celebrate at a fancy hanwoo beef restaurant!",
+          "ko": "오늘은 오전만 근무하고, 고급 한우 식당에서 축하하자고 발표하셨다!"
+        },
+        {
+          "speaker": "Me",
+          "en": "At lunch, I sat with the director and the MD, which was nerve-wracking but exciting.",
+          "ko": "점심 때 이사님, 대표님과 같은 자리에 앉았는데, 긴장되면서도 신이 났다."
+        },
+        {
+          "speaker": "Me",
+          "en": "The director said I’d get an immediate bonus this month.",
+          "ko": "이사님은 내가 이번 달에 바로 보너스를 받게 될 거라고 하셨다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "secure a deal",
+          "meaning": "거래를 따내다, 계약을 성사시키다 (핵심)"
+        },
+        {
+          "phrase": "come into work",
+          "meaning": "출근하다"
+        },
+        {
+          "phrase": "contract signing",
+          "meaning": "계약 체결"
+        },
+        {
+          "phrase": "get oneself a coffee",
+          "meaning": "(스스로) 커피를 한 잔 가져오다"
+        },
+        {
+          "phrase": "staff kitchen",
+          "meaning": "직원 탕비실"
+        },
+        {
+          "phrase": "The time flew by.",
+          "meaning": "시간이 쏜살같이 지나갔다"
+        },
+        {
+          "phrase": "mid-morning",
+          "meaning": "오전 중반 (10~11시쯤)"
+        },
+        {
+          "phrase": "director / MD (managing director)",
+          "meaning": "이사 / 대표이사·전무급 임원"
+        },
+        {
+          "phrase": "do well in ~ing",
+          "meaning": "~하는 데 잘 해내다"
+        },
+        {
+          "phrase": "struggle with ~",
+          "meaning": "~로 고전하다, 애를 먹다"
+        },
+        {
+          "phrase": "overseas sales",
+          "meaning": "해외 매출"
+        },
+        {
+          "phrase": "advantageous",
+          "meaning": "유리한"
+        },
+        {
+          "phrase": "work a half-day",
+          "meaning": "반나절만 근무하다"
+        },
+        {
+          "phrase": "fancy",
+          "meaning": "고급스러운"
+        },
+        {
+          "phrase": "nerve-wracking",
+          "meaning": "긴장되는, 조마조마한"
+        },
+        {
+          "phrase": "immediate",
+          "meaning": "즉각적인, 바로 받는"
+        }
+      ],
+      "marks": [
+        "securing this deal"
+      ],
+      "notes": [
+        {
+          "point": "came into work feeling good",
+          "explain": "`feeling good`은 분사구문이에요. \"기분 좋은 상태로 출근했다\"처럼 동작과 동시에 일어나는 상태를 덧붙여요.",
+          "subs": [
+            "She left the meeting smiling. → 그녀는 웃으며 회의실을 나갔다."
+          ]
+        },
+        {
+          "point": "got myself a coffee",
+          "explain": "`get oneself + 물건` = (스스로) ~을 챙기다/사 오다. 목적어가 자기 자신이라 재귀대명사 `myself`를 써요.",
+          "subs": [
+            "I got myself a new laptop. → 나 새 노트북 하나 장만했어."
+          ]
+        },
+        {
+          "point": "They said I had done really well",
+          "explain": "간접화법의 시제 일치예요. 말한 시점(said)보다 더 이전에 한 일이라 과거완료 `had done`을 써요. 다음 문장의 `had been struggling`(과거완료진행)도 \"그전부터 계속 고전해 오고 있었다\"는 뜻이에요.",
+          "subs": []
+        },
+        {
+          "point": "it was very lucky that ~",
+          "explain": "가주어 `it` + 진주어 `that절`. \"~라서 정말 다행이었다\"",
+          "subs": [
+            "It’s lucky that you came early. → 네가 일찍 와서 다행이야."
+          ]
+        },
+        {
+          "point": "such an advantageous price",
+          "explain": "`such a/an + 형용사 + 명사` = 그렇게 ~한 …. 이 문장은 앞 문장에 이어지는 감탄으로, 주어와 동사가 생략됐어요.",
+          "subs": []
+        },
+        {
+          "point": "we’d only work ~, then celebrate",
+          "explain": "`we’d` = `we would`. 간접화법이라 `will`이 `would`로 바뀌었어요. `then celebrate` 앞에도 `would`가 생략됐어요.",
+          "subs": []
+        },
+        {
+          "point": ", which was nerve-wracking but exciting",
+          "explain": "계속적 용법의 `which`가 앞 문장 전체(\"임원들과 같이 앉은 것\")를 받아요.",
+          "subs": []
+        },
+        {
+          "point": "appeared in the door",
+          "explain": "보통은 `appeared at the door` 또는 `appeared in the doorway`라고 해요. 지문 그대로 두었지만 말할 때는 이 표현을 쓰는 게 더 자연스러워요.",
+          "subs": []
+        }
+      ],
+      "questions": [
+        {
+          "q": "How did the writer feel when they came into work today? Why?",
+          "answer": "They felt good because they had successfully signed a contract.",
+          "answerKo": "계약을 성공적으로 체결해서 기분이 좋았어요."
+        },
+        {
+          "q": "Who suddenly appeared in the mid-morning, and what did they say?",
+          "answer": "The director and the MD appeared. They said the writer had done really well in securing the deal.",
+          "answerKo": "이사님과 대표님이 나타나서, 글쓴이가 거래를 정말 잘 따냈다고 말했어요."
+        },
+        {
+          "q": "Why was this project especially important for the company?",
+          "answer": "Because the company had been struggling with lower overseas sales.",
+          "answerKo": "회사가 해외 매출 감소로 고전하고 있었기 때문이에요."
+        },
+        {
+          "q": "How did the company celebrate the deal?",
+          "answer": "Everyone worked only a half-day and then celebrated at a fancy hanwoo beef restaurant.",
+          "answerKo": "모두 오전만 근무하고 고급 한우 식당에서 축하했어요."
+        },
+        {
+          "q": "How did the writer feel while sitting with the director and the MD at lunch?",
+          "answer": "It was nerve-wracking but exciting.",
+          "answerKo": "긴장되면서도 신이 났어요."
+        }
+      ]
+    },
+    {
+      "id": "day43",
+      "day": 43,
+      "key": "on top of the world",
+      "keyMeaning": "세상을 다 가진 기분인, 날아갈 듯 기쁜",
+      "title": "계약 성공 다음 날 (2)",
+      "situation": "혼잣말 · 일기 — 축하 점심과 그날의 소감",
+      "date": "2026-11-22",
+      "lines": [
+        {
+          "speaker": "Me",
+          "en": "He also told the MD the full story — how I’d negotiated a higher price point, even though Mr. Kim had wanted to submit a normal low quote.",
+          "ko": "이사님은 대표님께 자세한 이야기도 해 드렸다. 김 과장님은 평소처럼 낮은 견적을 내려고 했지만, 내가 어떻게 더 높은 가격으로 협상했는지를."
+        },
+        {
+          "speaker": "Me",
+          "en": "The director praised my clever strategy that had secured an excellent deal.",
+          "ko": "이사님은 훌륭한 거래를 성사시킨 내 영리한 전략을 칭찬하셨다."
+        },
+        {
+          "speaker": "Me",
+          "en": "Everyone in the room raised a glass to me.",
+          "ko": "그 자리에 있던 모두가 나를 위해 잔을 들었다."
+        },
+        {
+          "speaker": "Me",
+          "en": "“This would have been impossible without your brilliant strategy, Mr. Lee,” the director boomed.",
+          "ko": "\"이 대리의 훌륭한 전략이 없었다면 불가능했을 거야.\" 이사님이 우렁차게 말씀하셨다."
+        },
+        {
+          "speaker": "Me",
+          "en": "“Finally, some good news!” the managing director chimed in.",
+          "ko": "\"드디어 좋은 소식이군!\" 대표님이 맞장구를 치셨다."
+        },
+        {
+          "speaker": "Me",
+          "en": "I was glowing by the end of the celebration lunch.",
+          "ko": "축하 점심이 끝날 무렵, 내 얼굴은 환하게 빛나고 있었다."
+        },
+        {
+          "speaker": "Me",
+          "en": "As I left, the director even handed me 100,000 won for a taxi home!",
+          "ko": "자리를 나설 때 이사님은 집에 갈 택시비로 10만 원까지 쥐여 주셨다!"
+        },
+        {
+          "speaker": "Me",
+          "en": "Today was amazing.",
+          "ko": "오늘은 정말 멋진 하루였다."
+        },
+        {
+          "speaker": "Me",
+          "en": "The delicious food, news of an imminent bonus, praise from the directors, and a chance to go home early and relax.",
+          "ko": "맛있는 음식, 곧 받을 보너스 소식, 임원들의 칭찬, 그리고 일찍 퇴근해서 쉴 기회까지."
+        },
+        {
+          "speaker": "Me",
+          "en": "I felt on top of the world.",
+          "ko": "세상을 다 가진 기분이었다."
+        },
+        {
+          "speaker": "Me",
+          "en": "I’m so happy to be recognized for my work.",
+          "ko": "내 일을 인정받아서 정말 기쁘다."
+        },
+        {
+          "speaker": "Me",
+          "en": "I feel like this contract could be a turning point in my career.",
+          "ko": "이 계약이 내 커리어의 전환점이 될 수 있을 것 같다."
+        }
+      ],
+      "expressions": [
+        {
+          "phrase": "on top of the world",
+          "meaning": "세상을 다 가진 기분인 (핵심)"
+        },
+        {
+          "phrase": "the full story",
+          "meaning": "자초지종, 전체 이야기"
+        },
+        {
+          "phrase": "negotiate a higher price point",
+          "meaning": "더 높은 가격대로 협상하다"
+        },
+        {
+          "phrase": "submit a quote",
+          "meaning": "견적을 내다 (Set 2 quote)"
+        },
+        {
+          "phrase": "praise",
+          "meaning": "칭찬(하다)"
+        },
+        {
+          "phrase": "clever strategy",
+          "meaning": "영리한 전략"
+        },
+        {
+          "phrase": "raise a glass to ~",
+          "meaning": "~를 위해 건배하다"
+        },
+        {
+          "phrase": "boom",
+          "meaning": "(목소리가) 우렁차게 말하다"
+        },
+        {
+          "phrase": "chime in",
+          "meaning": "(대화에) 끼어들어 맞장구치다"
+        },
+        {
+          "phrase": "glow",
+          "meaning": "(기쁨으로) 얼굴이 빛나다"
+        },
+        {
+          "phrase": "hand someone ~",
+          "meaning": "~에게 …을 건네주다"
+        },
+        {
+          "phrase": "imminent",
+          "meaning": "곧 닥칠, 임박한 (Set 2)"
+        },
+        {
+          "phrase": "be recognized for ~",
+          "meaning": "~로 인정받다"
+        },
+        {
+          "phrase": "turning point",
+          "meaning": "전환점"
+        }
+      ],
+      "marks": [
+        "on top of the world"
+      ],
+      "notes": [
+        {
+          "point": "how I’d negotiated ~, even though Mr. Kim had wanted ~",
+          "explain": "이사님이 이야기한 시점보다 더 이전에 일어난 일이라 둘 다 과거완료(`had p.p.`)예요. `I’d` = `I had`. `even though` = (실제로) ~했지만.",
+          "subs": []
+        },
+        {
+          "point": "my clever strategy that had secured an excellent deal",
+          "explain": "관계대명사 `that`이 앞의 `strategy`를 꾸며요. 칭찬한 시점보다 먼저 거래가 성사됐으니 `had secured`.",
+          "subs": []
+        },
+        {
+          "point": "This would have been impossible without ~",
+          "explain": "가정법 과거완료예요. `without ~` = \"~가 없었다면\". 실제로는 전략이 있었기 때문에 가능했다는 뜻이에요.",
+          "subs": [
+            "It would have been hard without your help. → 네 도움이 없었다면 힘들었을 거야."
+          ]
+        },
+        {
+          "point": "the director boomed / chimed in",
+          "explain": "`said` 대신 말투가 드러나는 동사를 썼어요. `boom` = 우렁차게 말하다, `chime in` = 맞장구치며 끼어들다. 이야기를 생생하게 쓸 때 좋아요.",
+          "subs": []
+        },
+        {
+          "point": "even handed me ~",
+          "explain": "`even` = \"~까지도\". 기대 이상이었다는 놀라움을 강조해요.",
+          "subs": []
+        },
+        {
+          "point": "The delicious food, news of ~, and a chance to ~.",
+          "explain": "동사 없이 명사구만 나열한 문장이에요. 앞 문장 \"Today was amazing.\"의 이유를 쭉 늘어놓아 감정을 강조해요. 일기나 말할 때 자연스럽지만, 격식 있는 글에서는 완전한 문장으로 써요.",
+          "subs": []
+        },
+        {
+          "point": "be recognized for my work",
+          "explain": "수동태 + `for` = ~로 인정받다. `happy to be p.p.` = ~되어서 기쁘다.",
+          "subs": []
+        },
+        {
+          "point": "I feel like this contract could be ~",
+          "explain": "`I feel like + 문장` = ~인 것 같다 (Day 30). `could be` = ~가 될 수도 있다 (가능성).",
+          "subs": []
+        }
+      ],
+      "questions": [
+        {
+          "q": "What did Mr. Kim originally want to do, and what did the writer do instead?",
+          "answer": "Mr. Kim wanted to submit a normal low quote, but the writer negotiated a higher price point.",
+          "answerKo": "김 과장님은 평소처럼 낮은 견적을 내려고 했지만, 글쓴이는 더 높은 가격으로 협상했어요."
+        },
+        {
+          "q": "What did the director give the writer as they left?",
+          "answer": "He handed the writer 100,000 won for a taxi home.",
+          "answerKo": "집에 갈 택시비로 10만 원을 줬어요."
+        },
+        {
+          "q": "Why does the writer feel this contract could be a turning point in their career?",
+          "answer": "Because their work was recognized by the directors, and it could lead to more opportunities.",
+          "answerKo": "임원들에게 일을 인정받았고, 앞으로 더 많은 기회로 이어질 수 있기 때문이에요."
+        },
+        {
+          "q": "Have you ever been recognized for your work? How did you feel?",
+          "answer": "Yes. When my analysis helped my team make a decision, my manager praised me, and I felt really proud.",
+          "answerKo": "(예시) 네. 제 분석이 팀의 결정에 도움이 됐을 때 매니저가 칭찬해 줘서 정말 뿌듯했어요."
+        },
+        {
+          "q": "If you suddenly received a bonus, what would you do with it?",
+          "answer": "I would treat my family to a nice dinner and save the rest.",
+          "answerKo": "(예시) 가족에게 맛있는 저녁을 사고, 나머지는 저축할 거예요."
+        }
+      ]
     }
   ],
 
@@ -9917,6 +10326,46 @@ window.CONTENT = {
       "tips": [
         "`How about ~ing?` = ~하는 게 어때요?",
         "대명사는 가운데: `rolling it out`"
+      ]
+    },
+    {
+      "id": "c42-1",
+      "day": 42,
+      "ko": "오늘은 기분 좋게 출근했어.",
+      "en": "I came into work feeling good today.",
+      "tips": [
+        "`come into work` = 출근하다",
+        "`feeling good` = 분사구문으로 \"기분 좋은 상태로\""
+      ]
+    },
+    {
+      "id": "c42-2",
+      "day": 42,
+      "ko": "회사가 해외 매출 감소로 고전하고 있었어요.",
+      "en": "The company had been struggling with lower overseas sales.",
+      "tips": [
+        "`struggle with ~` = ~로 고전하다",
+        "과거완료진행 `had been ~ing` = 그전부터 계속 ~하고 있었다"
+      ]
+    },
+    {
+      "id": "c43-1",
+      "day": 43,
+      "ko": "네 도움이 없었다면 불가능했을 거야.",
+      "en": "It would have been impossible without your help.",
+      "tips": [
+        "`would have been` = ~였을 거야 (가정법 과거완료)",
+        "`without ~` = ~가 없었다면"
+      ]
+    },
+    {
+      "id": "c43-2",
+      "day": 43,
+      "ko": "이 프로젝트가 내 커리어의 전환점이 될 수 있을 것 같아.",
+      "en": "I feel like this project could be a turning point in my career.",
+      "tips": [
+        "`I feel like + 문장` = ~인 것 같아",
+        "`turning point` = 전환점"
       ]
     }
   ],
