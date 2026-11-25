@@ -10370,6 +10370,2076 @@ window.CONTENT = {
     }
   ],
 
+  /* ---------- 오늘의 질문 ----------
+     Dialog 핵심 표현으로 답할 수 있는 질문. day: 답에 쓸 표현이 나온 Day,
+     q / qKo: 질문과 해석, answer / answerKo: 그 표현을 쓴 예시 답 */
+  ask: [
+    {
+      "id": "q01-1",
+      "day": 1,
+      "q": "Where are you living these days? Are you planning to move?",
+      "qKo": "요즘 어디 살아요? 이사할 계획 있어요?",
+      "answer": "I’m living near my office for now, but I might move next year.",
+      "answerKo": "일단은 회사 근처에 살고 있는데, 내년에 이사할 수도 있어요."
+    },
+    {
+      "id": "q01-2",
+      "day": 1,
+      "q": "What do you use to keep track of your English study?",
+      "qKo": "영어 공부 기록은 뭘로 관리해요?",
+      "answer": "I’m just using this website for now. It works well enough.",
+      "answerKo": "일단은 이 웹사이트를 쓰고 있어요. 충분히 괜찮아요."
+    },
+    {
+      "id": "q01-3",
+      "day": 1,
+      "q": "Do you have a car?",
+      "qKo": "차 있어요?",
+      "answer": "Not for now. I take the subway to work, but I might buy one later.",
+      "answerKo": "지금은 없어요. 지하철로 출근하는데, 나중에 살 수도 있어요."
+    },
+    {
+      "id": "q01-4",
+      "day": 1,
+      "q": "Is that your final decision?",
+      "qKo": "그게 최종 결정이에요?",
+      "answer": "It’s my decision for now, but I’m open to changing it.",
+      "answerKo": "일단은 그렇게 정했는데, 바뀔 수도 있어요."
+    },
+    {
+      "id": "q01-5",
+      "day": 1,
+      "q": "What tool does your team use for dashboards?",
+      "qKo": "팀에서 대시보드는 어떤 툴을 써요?",
+      "answer": "We’re using Power BI for now, but we might switch to Superset.",
+      "answerKo": "일단은 Power BI를 쓰는데, Superset으로 바꿀 수도 있어요."
+    },
+    {
+      "id": "q01-6",
+      "day": 1,
+      "q": "Are you going to cook dinner tonight?",
+      "qKo": "오늘 저녁 요리할 거예요?",
+      "answer": "I’ll just have some leftovers for now and cook tomorrow.",
+      "answerKo": "오늘은 일단 남은 음식 먹고, 요리는 내일 할래요."
+    },
+    {
+      "id": "q02-1",
+      "day": 2,
+      "q": "How was your week?",
+      "qKo": "이번 주 어땠어요?",
+      "answer": "It was good for the most part, but I was really busy on Wednesday.",
+      "answerKo": "대체로 좋았는데, 수요일엔 정말 바빴어요."
+    },
+    {
+      "id": "q02-2",
+      "day": 2,
+      "q": "Do you enjoy your job?",
+      "qKo": "일이 즐거워요?",
+      "answer": "For the most part, yes. I like analyzing data, but meetings can be tiring.",
+      "answerKo": "대체로는요. 데이터 분석은 좋은데, 회의는 좀 지칠 때가 있어요."
+    },
+    {
+      "id": "q02-3",
+      "day": 2,
+      "q": "How was your trip to Japan?",
+      "qKo": "일본 여행 어땠어요?",
+      "answer": "It was great for the most part, but it rained a lot.",
+      "answerKo": "대체로 좋았는데, 비가 많이 왔어요."
+    },
+    {
+      "id": "q02-4",
+      "day": 2,
+      "q": "How did your presentation go?",
+      "qKo": "발표 어떻게 됐어요?",
+      "answer": "It went well for the most part. I just got one tough question.",
+      "answerKo": "대체로 잘됐어요. 어려운 질문 하나만 받았어요."
+    },
+    {
+      "id": "q02-5",
+      "day": 2,
+      "q": "Is your team easy to work with?",
+      "qKo": "팀원들이랑 일하기 편해요?",
+      "answer": "For the most part, yes. Everyone is helpful and kind.",
+      "answerKo": "대체로는요. 다들 잘 도와주고 친절해요."
+    },
+    {
+      "id": "q02-6",
+      "day": 2,
+      "q": "Did you like the movie?",
+      "qKo": "영화 마음에 들었어요?",
+      "answer": "For the most part. The story was good, but the ending was a bit weak.",
+      "answerKo": "대체로요. 줄거리는 좋았는데 결말이 좀 아쉬웠어요."
+    },
+    {
+      "id": "q03-1",
+      "day": 3,
+      "q": "Why didn’t you go to the gym yesterday?",
+      "qKo": "어제 왜 헬스장 안 갔어요?",
+      "answer": "It’s not like I didn’t want to go. I just had too much work.",
+      "answerKo": "가기 싫었던 건 아니에요. 그냥 일이 너무 많았어요."
+    },
+    {
+      "id": "q03-2",
+      "day": 3,
+      "q": "Do you dislike speaking English in meetings?",
+      "qKo": "회의에서 영어로 말하는 거 싫어요?",
+      "answer": "It’s not like I hate it. I just get nervous sometimes.",
+      "answerKo": "싫은 건 아니에요. 그냥 가끔 긴장돼요."
+    },
+    {
+      "id": "q03-3",
+      "day": 3,
+      "q": "Why didn’t you reply to my message?",
+      "qKo": "왜 내 메시지에 답장 안 했어요?",
+      "answer": "It’s not like I ignored you. I just didn’t see it until late.",
+      "answerKo": "무시한 건 아니에요. 늦게까지 못 봤을 뿐이에요."
+    },
+    {
+      "id": "q03-4",
+      "day": 3,
+      "q": "Don’t you like Korean food?",
+      "qKo": "한국 음식 안 좋아해요?",
+      "answer": "It’s not like I don’t like it. I’m just not hungry right now.",
+      "answerKo": "싫어하는 건 아니에요. 그냥 지금 배가 안 고파요."
+    },
+    {
+      "id": "q03-5",
+      "day": 3,
+      "q": "Why didn’t you come to the team dinner?",
+      "qKo": "왜 팀 회식에 안 왔어요?",
+      "answer": "It’s not like I didn’t want to come. I had a family event.",
+      "answerKo": "오기 싫었던 건 아니에요. 집안 행사가 있었어요."
+    },
+    {
+      "id": "q03-6",
+      "day": 3,
+      "q": "Are you upset with your manager?",
+      "qKo": "매니저한테 화났어요?",
+      "answer": "It’s not like I’m angry. I’m just a little disappointed.",
+      "answerKo": "화난 건 아니에요. 그냥 좀 실망했어요."
+    },
+    {
+      "id": "q04-1",
+      "day": 4,
+      "q": "Why do you leave home so early in the morning?",
+      "qKo": "아침에 왜 그렇게 일찍 나가요?",
+      "answer": "I have to leave early. Otherwise, I’ll get stuck in traffic.",
+      "answerKo": "일찍 나가야 해요. 안 그러면 차가 막혀서 꼼짝 못 하거든요."
+    },
+    {
+      "id": "q04-2",
+      "day": 4,
+      "q": "How are you feeling today?",
+      "qKo": "오늘 컨디션 어때요?",
+      "answer": "I’m a little tired, but otherwise I’m fine.",
+      "answerKo": "좀 피곤한 것 빼고는 괜찮아요."
+    },
+    {
+      "id": "q04-3",
+      "day": 4,
+      "q": "Why are you saving money every month?",
+      "qKo": "왜 매달 돈을 모아요?",
+      "answer": "I want to buy a house someday. Otherwise, I wouldn’t save so much.",
+      "answerKo": "언젠가 집을 사고 싶어서요. 안 그러면 이렇게까지 안 모았을 거예요."
+    },
+    {
+      "id": "q04-4",
+      "day": 4,
+      "q": "Should we book the restaurant in advance?",
+      "qKo": "식당 미리 예약해야 할까요?",
+      "answer": "Yes, let’s book now. Otherwise, it’ll be full.",
+      "answerKo": "네, 지금 예약해요. 안 그러면 꽉 찰 거예요."
+    },
+    {
+      "id": "q04-5",
+      "day": 4,
+      "q": "How was your weekend?",
+      "qKo": "주말 어땠어요?",
+      "answer": "I had a cold on Saturday, but otherwise it was relaxing.",
+      "answerKo": "토요일에 감기 걸린 것 빼고는 편하게 쉬었어요."
+    },
+    {
+      "id": "q04-6",
+      "day": 4,
+      "q": "Why do you write down your tasks every morning?",
+      "qKo": "왜 매일 아침 할 일을 적어요?",
+      "answer": "It helps me stay organized. Otherwise, I’d forget things.",
+      "answerKo": "정리하는 데 도움이 돼요. 안 그러면 잊어버리거든요."
+    },
+    {
+      "id": "q05-1",
+      "day": 5,
+      "q": "What do you usually do before an important meeting?",
+      "qKo": "중요한 회의 전에 보통 뭘 해요?",
+      "answer": "I go over my notes and check the numbers one more time.",
+      "answerKo": "메모를 다시 훑어보고 숫자를 한 번 더 확인해요."
+    },
+    {
+      "id": "q05-2",
+      "day": 5,
+      "q": "How do you review what you learned in English?",
+      "qKo": "배운 영어는 어떻게 복습해요?",
+      "answer": "I go over the dialogs on this website every evening.",
+      "answerKo": "매일 저녁 이 웹사이트에서 Dialog를 다시 봐요."
+    },
+    {
+      "id": "q05-3",
+      "day": 5,
+      "q": "What do you do after a project ends?",
+      "qKo": "프로젝트가 끝나면 뭘 해요?",
+      "answer": "We go over what went well and what we can improve.",
+      "answerKo": "잘된 점과 개선할 점을 함께 짚어 봐요."
+    },
+    {
+      "id": "q05-4",
+      "day": 5,
+      "q": "How do you prepare for a job interview?",
+      "qKo": "면접 준비는 어떻게 해요?",
+      "answer": "I go over common questions and practice my answers.",
+      "answerKo": "자주 나오는 질문을 검토하고 답변을 연습해요."
+    },
+    {
+      "id": "q05-5",
+      "day": 5,
+      "q": "Did your manager explain the new process?",
+      "qKo": "매니저가 새 프로세스를 설명해 줬어요?",
+      "answer": "Yes, we went over it together this morning.",
+      "answerKo": "네, 오늘 아침에 같이 검토했어요."
+    },
+    {
+      "id": "q05-6",
+      "day": 5,
+      "q": "How do you check a contract before signing it?",
+      "qKo": "계약서에 서명하기 전에 어떻게 확인해요?",
+      "answer": "I go over every detail carefully before I sign.",
+      "answerKo": "서명하기 전에 세부 내용을 꼼꼼히 다 검토해요."
+    },
+    {
+      "id": "q06-1",
+      "day": 6,
+      "q": "What do you always check before you leave home?",
+      "qKo": "집을 나서기 전에 항상 뭘 확인해요?",
+      "answer": "I always make sure the lights are off and the door is locked.",
+      "answerKo": "불이 꺼졌는지, 문이 잠겼는지 꼭 확인해요."
+    },
+    {
+      "id": "q06-2",
+      "day": 6,
+      "q": "What do you do before you send a report to your manager?",
+      "qKo": "매니저에게 보고서를 보내기 전에 뭘 해요?",
+      "answer": "I make sure all the numbers are correct.",
+      "answerKo": "숫자가 전부 맞는지 꼭 확인해요."
+    },
+    {
+      "id": "q06-3",
+      "day": 6,
+      "q": "What’s important when you travel abroad?",
+      "qKo": "해외여행 갈 때 뭐가 중요해요?",
+      "answer": "I always make sure my passport is still valid.",
+      "answerKo": "여권이 아직 유효한지 꼭 확인해요."
+    },
+    {
+      "id": "q06-4",
+      "day": 6,
+      "q": "What do you check before a presentation?",
+      "qKo": "발표 전에 뭘 확인해요?",
+      "answer": "I make sure my laptop and the projector work.",
+      "answerKo": "노트북이랑 프로젝터가 잘 되는지 꼭 확인해요."
+    },
+    {
+      "id": "q06-5",
+      "day": 6,
+      "q": "How do you stay healthy?",
+      "qKo": "건강은 어떻게 챙겨요?",
+      "answer": "I make sure to get at least seven hours of sleep.",
+      "answerKo": "최소 7시간은 꼭 자려고 해요."
+    },
+    {
+      "id": "q06-6",
+      "day": 6,
+      "q": "What advice would you give a new team member?",
+      "qKo": "새 팀원에게 어떤 조언을 해 주고 싶어요?",
+      "answer": "Make sure to back up your work every day.",
+      "answerKo": "매일 작업한 걸 꼭 백업하세요."
+    },
+    {
+      "id": "q07-1",
+      "day": 7,
+      "q": "How do you keep up with news in your field?",
+      "qKo": "업계 소식은 어떻게 따라가요?",
+      "answer": "I read data newsletters to keep up with the latest trends.",
+      "answerKo": "최신 트렌드를 따라가려고 데이터 뉴스레터를 읽어요."
+    },
+    {
+      "id": "q07-2",
+      "day": 7,
+      "q": "Is it hard to keep up with your workload these days?",
+      "qKo": "요즘 업무량을 따라가기 힘들어요?",
+      "answer": "Yes, it’s hard to keep up with all the requests these days.",
+      "answerKo": "네, 요즘 들어오는 요청을 다 따라가기가 힘들어요."
+    },
+    {
+      "id": "q07-3",
+      "day": 7,
+      "q": "Do you follow the latest smartphones?",
+      "qKo": "최신 스마트폰 소식 챙겨 봐요?",
+      "answer": "Not really. It’s hard to keep up with all the new models.",
+      "answerKo": "별로요. 새 모델을 다 따라가기가 힘들어요."
+    },
+    {
+      "id": "q07-4",
+      "day": 7,
+      "q": "How do you keep in contact with your friends?",
+      "qKo": "친구들과는 어떻게 연락하고 지내요?",
+      "answer": "We have a group chat, so I keep up with their news there.",
+      "answerKo": "단톡방이 있어서 거기서 소식을 따라가요."
+    },
+    {
+      "id": "q07-5",
+      "day": 7,
+      "q": "Is it hard to follow your English class?",
+      "qKo": "영어 수업 따라가기 어려워요?",
+      "answer": "Sometimes. The teacher speaks fast, so it’s hard to keep up.",
+      "answerKo": "가끔요. 선생님이 말을 빨리 해서 따라가기 힘들어요."
+    },
+    {
+      "id": "q07-6",
+      "day": 7,
+      "q": "How do you stay informed about changes at your company?",
+      "qKo": "회사 변화 소식은 어떻게 알아요?",
+      "answer": "I read the weekly update email to keep up with changes.",
+      "answerKo": "변화를 따라가려고 주간 업데이트 메일을 읽어요."
+    },
+    {
+      "id": "q08-1",
+      "day": 8,
+      "q": "How do you spend your commute?",
+      "qKo": "출퇴근 시간은 어떻게 보내요?",
+      "answer": "I make use of my commute to study English.",
+      "answerKo": "출퇴근 시간을 활용해서 영어 공부를 해요."
+    },
+    {
+      "id": "q08-2",
+      "day": 8,
+      "q": "What do you do with your free time on weekends?",
+      "qKo": "주말 자유 시간엔 뭘 해요?",
+      "answer": "I try to make use of it by learning new tools like Superset.",
+      "answerKo": "Superset 같은 새 툴을 배우면서 그 시간을 활용하려고 해요."
+    },
+    {
+      "id": "q08-3",
+      "day": 8,
+      "q": "What do you do with old clothes?",
+      "qKo": "안 입는 옷은 어떻게 해요?",
+      "answer": "I make use of them as cleaning rags.",
+      "answerKo": "걸레로 활용해요."
+    },
+    {
+      "id": "q08-4",
+      "day": 8,
+      "q": "How does your team use the data it collects?",
+      "qKo": "팀에서 모은 데이터는 어떻게 써요?",
+      "answer": "We make use of it to improve our marketing.",
+      "answerKo": "마케팅을 개선하는 데 활용해요."
+    },
+    {
+      "id": "q08-5",
+      "day": 8,
+      "q": "What do you do during a long flight?",
+      "qKo": "장거리 비행 중엔 뭐 해요?",
+      "answer": "I make use of the time to read or watch English movies.",
+      "answerKo": "그 시간을 활용해서 책을 읽거나 영어 영화를 봐요."
+    },
+    {
+      "id": "q08-6",
+      "day": 8,
+      "q": "Do you use your company’s training budget?",
+      "qKo": "회사 교육비 지원 받아서 써요?",
+      "answer": "Yes, I make use of it to take online courses.",
+      "answerKo": "네, 온라인 강의 듣는 데 활용해요."
+    },
+    {
+      "id": "q09-1",
+      "day": 9,
+      "q": "Do you prefer to work from home or at the office?",
+      "qKo": "재택근무가 좋아요, 사무실 근무가 좋아요?",
+      "answer": "It depends on the day. If I have a lot of meetings, I prefer the office.",
+      "answerKo": "날마다 달라요. 회의가 많은 날은 사무실이 더 좋아요."
+    },
+    {
+      "id": "q09-2",
+      "day": 9,
+      "q": "How long does it take you to get to work?",
+      "qKo": "출근하는 데 얼마나 걸려요?",
+      "answer": "It depends on the traffic, but usually about 40 minutes.",
+      "answerKo": "교통 상황에 따라 다른데, 보통 40분쯤 걸려요."
+    },
+    {
+      "id": "q09-3",
+      "day": 9,
+      "q": "Are you going to the party on Friday?",
+      "qKo": "금요일 파티에 갈 거예요?",
+      "answer": "It depends on how busy I am at work.",
+      "answerKo": "회사에서 얼마나 바쁘냐에 달렸어요."
+    },
+    {
+      "id": "q09-4",
+      "day": 9,
+      "q": "Which do you like better, summer or winter?",
+      "qKo": "여름이랑 겨울 중 뭐가 더 좋아요?",
+      "answer": "It depends. I like summer for travel, but winter for skiing.",
+      "answerKo": "때에 따라 달라요. 여행은 여름, 스키는 겨울이 좋아요."
+    },
+    {
+      "id": "q09-5",
+      "day": 9,
+      "q": "How much does a trip to Jeju cost?",
+      "qKo": "제주도 여행은 얼마나 들어요?",
+      "answer": "It depends on the season, but it’s usually not that expensive.",
+      "answerKo": "계절에 따라 다른데, 보통 그렇게 비싸진 않아요."
+    },
+    {
+      "id": "q09-6",
+      "day": 9,
+      "q": "Will the project be finished on time?",
+      "qKo": "프로젝트가 제때 끝날까요?",
+      "answer": "It depends on the data team. If they finish soon, we’ll be fine.",
+      "answerKo": "데이터 팀에 달렸어요. 그쪽이 빨리 끝내면 괜찮을 거예요."
+    },
+    {
+      "id": "q10-1",
+      "day": 10,
+      "q": "Have you ever had a day when nothing went right?",
+      "qKo": "뭐 하나 제대로 안 풀린 날 있었어요?",
+      "answer": "Yes. Last Monday was one of those days. Everything went wrong.",
+      "answerKo": "네. 지난 월요일이 딱 그런 날이었어요. 다 꼬였어요."
+    },
+    {
+      "id": "q10-2",
+      "day": 10,
+      "q": "How was your day today?",
+      "qKo": "오늘 하루 어땠어요?",
+      "answer": "It was one of those days. I had back-to-back meetings.",
+      "answerKo": "그런 날이었어요. 회의가 줄줄이 있었거든요."
+    },
+    {
+      "id": "q10-3",
+      "day": 10,
+      "q": "Why do you look so tired?",
+      "qKo": "왜 그렇게 피곤해 보여요?",
+      "answer": "It’s been one of those days. My computer crashed twice.",
+      "answerKo": "그런 날이에요. 컴퓨터가 두 번이나 멈췄어요."
+    },
+    {
+      "id": "q10-4",
+      "day": 10,
+      "q": "Did something bad happen today?",
+      "qKo": "오늘 무슨 안 좋은 일 있었어요?",
+      "answer": "Not really. It was just one of those days.",
+      "answerKo": "딱히요. 그냥 그런 날이었어요."
+    },
+    {
+      "id": "q10-5",
+      "day": 10,
+      "q": "How was your commute this morning?",
+      "qKo": "오늘 아침 출근길 어땠어요?",
+      "answer": "Terrible. It was one of those mornings. I missed the bus, and it rained.",
+      "answerKo": "최악이었어요. 버스도 놓치고 비도 오고, 그런 아침이었어요."
+    },
+    {
+      "id": "q10-6",
+      "day": 10,
+      "q": "Do you ever feel like giving up?",
+      "qKo": "포기하고 싶을 때가 있어요?",
+      "answer": "Sometimes, on one of those days. But I feel better the next morning.",
+      "answerKo": "그런 날엔 가끔요. 그래도 다음 날 아침이면 괜찮아져요."
+    },
+    {
+      "id": "q11-1",
+      "day": 11,
+      "q": "Do you think social media is bad?",
+      "qKo": "SNS가 나쁘다고 생각해요?",
+      "answer": "Not in and of itself. It depends on how you use it.",
+      "answerKo": "그 자체로 나쁜 건 아니에요. 어떻게 쓰느냐에 달렸죠."
+    },
+    {
+      "id": "q11-2",
+      "day": 11,
+      "q": "Is making mistakes at work a bad thing?",
+      "qKo": "회사에서 실수하는 건 나쁜 일인가요?",
+      "answer": "Not in and of itself. It’s how we learn.",
+      "answerKo": "그 자체로 나쁜 건 아니에요. 그렇게 배우는 거죠."
+    },
+    {
+      "id": "q11-3",
+      "day": 11,
+      "q": "Is working overtime a bad thing?",
+      "qKo": "야근은 나쁜 건가요?",
+      "answer": "Not in and of itself, but doing it every day can lead to burnout.",
+      "answerKo": "그 자체로 나쁜 건 아니지만, 매일 하면 번아웃이 올 수 있어요."
+    },
+    {
+      "id": "q11-4",
+      "day": 11,
+      "q": "Do you think money makes people happy?",
+      "qKo": "돈이 사람을 행복하게 한다고 생각해요?",
+      "answer": "Money isn’t happiness in and of itself, but it helps.",
+      "answerKo": "돈 그 자체가 행복은 아니지만, 도움은 되죠."
+    },
+    {
+      "id": "q11-5",
+      "day": 11,
+      "q": "Is a high churn rate always a problem?",
+      "qKo": "이탈률이 높으면 항상 문제인가요?",
+      "answer": "Not in and of itself. It depends on the type of business.",
+      "answerKo": "그 자체로 문제는 아니에요. 사업 유형에 따라 달라요."
+    },
+    {
+      "id": "q11-6",
+      "day": 11,
+      "q": "Is playing video games a waste of time?",
+      "qKo": "게임하는 건 시간 낭비인가요?",
+      "answer": "Not in and of itself. It’s fine if you do it in moderation.",
+      "answerKo": "그 자체로는 아니에요. 적당히만 하면 괜찮아요."
+    },
+    {
+      "id": "q12-1",
+      "day": 12,
+      "q": "What would you like to do this weekend?",
+      "qKo": "이번 주말에 뭐 하고 싶어요?",
+      "answer": "I’d like to go hiking for a change.",
+      "answerKo": "기분 전환 삼아 등산을 가 보고 싶어요."
+    },
+    {
+      "id": "q12-2",
+      "day": 12,
+      "q": "What do you usually have for lunch?",
+      "qKo": "점심은 보통 뭐 먹어요?",
+      "answer": "I usually eat at the cafeteria, but today I went out for a change.",
+      "answerKo": "보통 구내식당에서 먹는데, 오늘은 모처럼 밖에서 먹었어요."
+    },
+    {
+      "id": "q12-3",
+      "day": 12,
+      "q": "Where do you want to go for dinner?",
+      "qKo": "저녁 어디로 먹으러 갈까요?",
+      "answer": "Let’s try Thai food for a change.",
+      "answerKo": "기분 전환 삼아 태국 음식 먹어 봐요."
+    },
+    {
+      "id": "q12-4",
+      "day": 12,
+      "q": "How do you usually get to work?",
+      "qKo": "보통 출근은 어떻게 해요?",
+      "answer": "I take the bus, but today I rode a bike for a change.",
+      "answerKo": "버스 타는데, 오늘은 모처럼 자전거를 탔어요."
+    },
+    {
+      "id": "q12-5",
+      "day": 12,
+      "q": "What kind of movies do you like?",
+      "qKo": "어떤 영화 좋아해요?",
+      "answer": "I usually watch action movies, but I watched a comedy for a change.",
+      "answerKo": "보통 액션 영화를 보는데, 모처럼 코미디를 봤어요."
+    },
+    {
+      "id": "q12-6",
+      "day": 12,
+      "q": "How was your day off?",
+      "qKo": "쉬는 날 어땠어요?",
+      "answer": "Great. I stayed home and relaxed for a change.",
+      "answerKo": "좋았어요. 모처럼 집에서 푹 쉬었어요."
+    },
+    {
+      "id": "q13-1",
+      "day": 13,
+      "q": "What’s something difficult you’ve pulled off recently?",
+      "qKo": "최근에 해낸 어려운 일이 있어요?",
+      "answer": "I pulled off a big data project before the deadline.",
+      "answerKo": "큰 데이터 프로젝트를 마감 전에 해냈어요."
+    },
+    {
+      "id": "q13-2",
+      "day": 13,
+      "q": "Do you think you can finish your project by Friday?",
+      "qKo": "금요일까지 프로젝트 끝낼 수 있을 것 같아요?",
+      "answer": "It’ll be tough, but I think I can pull it off.",
+      "answerKo": "빡빡하겠지만 해낼 수 있을 것 같아요."
+    },
+    {
+      "id": "q13-3",
+      "day": 13,
+      "q": "How did your friend’s surprise party go?",
+      "qKo": "친구 깜짝 파티는 어떻게 됐어요?",
+      "answer": "It was perfect. We pulled it off without her knowing.",
+      "answerKo": "완벽했어요. 친구가 눈치 못 채게 해냈어요."
+    },
+    {
+      "id": "q13-4",
+      "day": 13,
+      "q": "Can you finish this report by noon?",
+      "qKo": "이 보고서 정오까지 끝낼 수 있어요?",
+      "answer": "It’s a lot, but I think I can pull it off.",
+      "answerKo": "양이 많지만 해낼 수 있을 것 같아요."
+    },
+    {
+      "id": "q13-5",
+      "day": 13,
+      "q": "What’s the hardest thing you’ve ever done?",
+      "qKo": "지금까지 해 본 일 중 가장 힘들었던 건 뭐예요?",
+      "answer": "I pulled off a half marathon last year.",
+      "answerKo": "작년에 하프 마라톤을 해냈어요."
+    },
+    {
+      "id": "q13-6",
+      "day": 13,
+      "q": "How did your team do on the launch?",
+      "qKo": "팀이 출시는 어떻게 했어요?",
+      "answer": "We pulled it off, even though we had very little time.",
+      "answerKo": "시간이 정말 없었는데도 해냈어요."
+    },
+    {
+      "id": "q14-1",
+      "day": 14,
+      "q": "Can you recommend a good place to study?",
+      "qKo": "공부하기 좋은 곳 추천해 줄 수 있어요?",
+      "answer": "I know just the place. There’s a quiet cafe near my house.",
+      "answerKo": "딱 좋은 데 알아요. 우리 집 근처에 조용한 카페가 있어요."
+    },
+    {
+      "id": "q14-2",
+      "day": 14,
+      "q": "What’s a good gift for a coworker?",
+      "qKo": "동료에게 줄 선물로 뭐가 좋을까요?",
+      "answer": "A nice coffee mug would be just the thing.",
+      "answerKo": "예쁜 머그컵이면 딱이에요."
+    },
+    {
+      "id": "q14-3",
+      "day": 14,
+      "q": "I need a quiet place to read. Any ideas?",
+      "qKo": "조용히 책 읽을 곳이 필요해요. 아는 데 있어요?",
+      "answer": "I know just the place. There’s a small library near the station.",
+      "answerKo": "딱 좋은 데 알아요. 역 근처에 작은 도서관이 있어요."
+    },
+    {
+      "id": "q14-4",
+      "day": 14,
+      "q": "What should I wear to the interview?",
+      "qKo": "면접에 뭘 입고 가야 할까요?",
+      "answer": "A simple navy suit would be just the thing.",
+      "answerKo": "깔끔한 남색 정장이면 딱이에요."
+    },
+    {
+      "id": "q14-5",
+      "day": 14,
+      "q": "I’m exhausted. What do I need?",
+      "qKo": "완전 지쳤어요. 뭐가 필요할까요?",
+      "answer": "A hot bath is just the thing after a long day.",
+      "answerKo": "긴 하루 끝엔 따뜻한 목욕이 딱이에요."
+    },
+    {
+      "id": "q14-6",
+      "day": 14,
+      "q": "Do you know a good restaurant for my parents?",
+      "qKo": "부모님 모시고 갈 좋은 식당 알아요?",
+      "answer": "I know just the place. It’s quiet, and the food is great.",
+      "answerKo": "딱 맞는 곳 알아요. 조용하고 음식도 맛있어요."
+    },
+    {
+      "id": "q15-1",
+      "day": 15,
+      "q": "Do you happen to know any good English podcasts?",
+      "qKo": "혹시 괜찮은 영어 팟캐스트 알아요?",
+      "answer": "Yes, I happen to listen to one every morning on my way to work.",
+      "answerKo": "네, 마침 출근길에 매일 아침 하나 듣고 있어요."
+    },
+    {
+      "id": "q15-2",
+      "day": 15,
+      "q": "Have you ever run into someone you know by chance?",
+      "qKo": "아는 사람을 우연히 마주친 적 있어요?",
+      "answer": "Yes, I happened to meet my old classmate at the airport.",
+      "answerKo": "네, 공항에서 옛 동창을 우연히 만났어요."
+    },
+    {
+      "id": "q15-3",
+      "day": 15,
+      "q": "Do you happen to have a phone charger?",
+      "qKo": "혹시 휴대폰 충전기 있어요?",
+      "answer": "Yes, I happen to have one in my bag.",
+      "answerKo": "네, 마침 가방에 하나 있어요."
+    },
+    {
+      "id": "q15-4",
+      "day": 15,
+      "q": "How did you find your current job?",
+      "qKo": "지금 직장은 어떻게 구했어요?",
+      "answer": "I happened to see the job post on LinkedIn.",
+      "answerKo": "링크드인에서 우연히 채용 공고를 봤어요."
+    },
+    {
+      "id": "q15-5",
+      "day": 15,
+      "q": "Do you know where meeting room B is?",
+      "qKo": "회의실 B가 어딘지 알아요?",
+      "answer": "Yes, I happen to know. It’s on the third floor.",
+      "answerKo": "네, 마침 알아요. 3층에 있어요."
+    },
+    {
+      "id": "q15-6",
+      "day": 15,
+      "q": "Do you know anyone who speaks Spanish?",
+      "qKo": "스페인어 하는 사람 알아요?",
+      "answer": "I happen to have a coworker who lived in Spain.",
+      "answerKo": "마침 스페인에서 살았던 동료가 있어요."
+    },
+    {
+      "id": "q16-1",
+      "day": 16,
+      "q": "When do you usually get home on weekdays?",
+      "qKo": "평일엔 보통 몇 시에 집에 와요?",
+      "answer": "I usually don’t get home until 8 p.m.",
+      "answerKo": "보통 저녁 8시나 돼야 집에 와요."
+    },
+    {
+      "id": "q16-2",
+      "day": 16,
+      "q": "When will your current project be finished?",
+      "qKo": "지금 프로젝트는 언제 끝나요?",
+      "answer": "It won’t be finished until the end of next month.",
+      "answerKo": "다음 달 말이나 돼야 끝날 거예요."
+    },
+    {
+      "id": "q16-3",
+      "day": 16,
+      "q": "When does the store open?",
+      "qKo": "가게는 몇 시에 열어요?",
+      "answer": "It doesn’t open until 10 a.m.",
+      "answerKo": "오전 10시나 돼야 열어요."
+    },
+    {
+      "id": "q16-4",
+      "day": 16,
+      "q": "When did you start learning English seriously?",
+      "qKo": "영어를 제대로 공부하기 시작한 게 언제예요?",
+      "answer": "I didn’t start studying seriously until last year.",
+      "answerKo": "작년이 되어서야 제대로 공부하기 시작했어요."
+    },
+    {
+      "id": "q16-5",
+      "day": 16,
+      "q": "Can I get the results today?",
+      "qKo": "결과 오늘 받을 수 있어요?",
+      "answer": "Sorry, they won’t be ready until tomorrow.",
+      "answerKo": "죄송해요, 내일이나 돼야 나와요."
+    },
+    {
+      "id": "q16-6",
+      "day": 16,
+      "q": "When did you realize you liked data analysis?",
+      "qKo": "데이터 분석이 좋다는 걸 언제 알았어요?",
+      "answer": "I didn’t realize it until I worked on my first project.",
+      "answerKo": "첫 프로젝트를 하고 나서야 알았어요."
+    },
+    {
+      "id": "q17-1",
+      "day": 17,
+      "q": "What are you curious about these days?",
+      "qKo": "요즘 뭐가 궁금해요?",
+      "answer": "I wonder if AI will change my job a lot.",
+      "answerKo": "AI가 제 일을 많이 바꿀지 궁금해요."
+    },
+    {
+      "id": "q17-2",
+      "day": 17,
+      "q": "Do you think it will rain this weekend?",
+      "qKo": "이번 주말에 비 올 것 같아요?",
+      "answer": "I’m not sure. I wonder if I should cancel my picnic.",
+      "answerKo": "잘 모르겠어요. 소풍을 취소해야 하나 싶어요."
+    },
+    {
+      "id": "q17-3",
+      "day": 17,
+      "q": "What do you think of your coworker’s new idea?",
+      "qKo": "동료의 새 아이디어 어떻게 생각해요?",
+      "answer": "It sounds good. I wonder if it will work in practice.",
+      "answerKo": "좋아 보여요. 실제로 효과가 있을지 궁금해요."
+    },
+    {
+      "id": "q17-4",
+      "day": 17,
+      "q": "Are you going to apply for the new position?",
+      "qKo": "새 자리에 지원할 거예요?",
+      "answer": "I’m thinking about it. I wonder if I’m ready.",
+      "answerKo": "생각 중이에요. 제가 준비가 됐는지 모르겠어요."
+    },
+    {
+      "id": "q17-5",
+      "day": 17,
+      "q": "Why are you looking at the sky?",
+      "qKo": "왜 하늘을 보고 있어요?",
+      "answer": "I wonder if it’s going to snow tonight.",
+      "answerKo": "오늘 밤에 눈이 올지 궁금해서요."
+    },
+    {
+      "id": "q17-6",
+      "day": 17,
+      "q": "What are you thinking about?",
+      "qKo": "무슨 생각해요?",
+      "answer": "I wonder if I left the stove on.",
+      "answerKo": "가스레인지를 켜 두고 나왔나 싶어서요."
+    },
+    {
+      "id": "q18-1",
+      "day": 18,
+      "q": "What were you doing when your phone last rang?",
+      "qKo": "마지막으로 전화가 왔을 때 뭐 하고 있었어요?",
+      "answer": "I was about to leave the office.",
+      "answerKo": "막 퇴근하려던 참이었어요."
+    },
+    {
+      "id": "q18-2",
+      "day": 18,
+      "q": "Are you busy right now?",
+      "qKo": "지금 바빠요?",
+      "answer": "A little. I’m about to join a meeting.",
+      "answerKo": "조금요. 막 회의에 들어가려던 참이에요."
+    },
+    {
+      "id": "q18-3",
+      "day": 18,
+      "q": "Why are you holding your keys?",
+      "qKo": "왜 열쇠를 들고 있어요?",
+      "answer": "I was about to leave for the gym.",
+      "answerKo": "막 헬스장에 가려던 참이었어요."
+    },
+    {
+      "id": "q18-4",
+      "day": 18,
+      "q": "Can I talk to you for a minute?",
+      "qKo": "잠깐 얘기할 수 있어요?",
+      "answer": "Sure, but I’m about to go into a meeting. Can we talk later?",
+      "answerKo": "그럼요, 근데 막 회의에 들어가려던 참이에요. 이따 얘기할까요?"
+    },
+    {
+      "id": "q18-5",
+      "day": 18,
+      "q": "What happened when the power went out?",
+      "qKo": "정전됐을 때 어떻게 됐어요?",
+      "answer": "I was about to save my file, so I lost some work.",
+      "answerKo": "막 파일을 저장하려던 참이라 작업한 걸 좀 날렸어요."
+    },
+    {
+      "id": "q18-6",
+      "day": 18,
+      "q": "Has the movie started?",
+      "qKo": "영화 시작했어요?",
+      "answer": "Not yet, but it’s about to start.",
+      "answerKo": "아직요, 근데 곧 시작해요."
+    },
+    {
+      "id": "q19-1",
+      "day": 19,
+      "q": "Which do you like better, coffee or tea?",
+      "qKo": "커피랑 차 중에 뭐가 더 좋아요?",
+      "answer": "I like both coffee and tea.",
+      "answerKo": "커피랑 차 둘 다 좋아요."
+    },
+    {
+      "id": "q19-2",
+      "day": 19,
+      "q": "Who will benefit from your new dashboard?",
+      "qKo": "새 대시보드로 누가 도움을 받을까요?",
+      "answer": "Both my team and the marketing team will benefit from it.",
+      "answerKo": "우리 팀과 마케팅 팀 모두 도움을 받을 거예요."
+    },
+    {
+      "id": "q19-3",
+      "day": 19,
+      "q": "Do you speak any other languages?",
+      "qKo": "다른 언어도 할 줄 알아요?",
+      "answer": "I speak both Korean and English.",
+      "answerKo": "한국어랑 영어 둘 다 해요."
+    },
+    {
+      "id": "q19-4",
+      "day": 19,
+      "q": "Which is more important, speed or accuracy?",
+      "qKo": "속도랑 정확도 중에 뭐가 더 중요해요?",
+      "answer": "Both speed and accuracy are important in my job.",
+      "answerKo": "제 일에선 속도와 정확도 둘 다 중요해요."
+    },
+    {
+      "id": "q19-5",
+      "day": 19,
+      "q": "Who did you go on the trip with?",
+      "qKo": "여행은 누구랑 갔어요?",
+      "answer": "I went with both my parents and my sister.",
+      "answerKo": "부모님이랑 여동생 모두와 같이 갔어요."
+    },
+    {
+      "id": "q19-6",
+      "day": 19,
+      "q": "What skills do data analysts need?",
+      "qKo": "데이터 분석가에겐 어떤 능력이 필요해요?",
+      "answer": "They need both technical skills and communication skills.",
+      "answerKo": "기술 역량과 소통 능력 둘 다 필요해요."
+    },
+    {
+      "id": "q20-1",
+      "day": 20,
+      "q": "What are your plans for this weekend?",
+      "qKo": "이번 주말 계획이 뭐예요?",
+      "answer": "I’m planning to clean my house and study English.",
+      "answerKo": "집 청소하고 영어 공부할 계획이에요."
+    },
+    {
+      "id": "q20-2",
+      "day": 20,
+      "q": "What are you planning to learn this year?",
+      "qKo": "올해 뭘 배울 계획이에요?",
+      "answer": "I’m planning to learn Python for data analysis.",
+      "answerKo": "데이터 분석용으로 파이썬을 배울 계획이에요."
+    },
+    {
+      "id": "q20-3",
+      "day": 20,
+      "q": "Where are you planning to go on vacation?",
+      "qKo": "휴가 때 어디 갈 계획이에요?",
+      "answer": "I’m planning to visit Vietnam this winter.",
+      "answerKo": "이번 겨울에 베트남에 갈 계획이에요."
+    },
+    {
+      "id": "q20-4",
+      "day": 20,
+      "q": "What are you doing after work today?",
+      "qKo": "오늘 퇴근하고 뭐 해요?",
+      "answer": "I’m planning to go to the gym and then cook dinner.",
+      "answerKo": "헬스장 갔다가 저녁 해 먹을 계획이에요."
+    },
+    {
+      "id": "q20-5",
+      "day": 20,
+      "q": "Are you thinking about changing jobs?",
+      "qKo": "이직 생각 있어요?",
+      "answer": "Not right now. I’m planning to stay for at least two more years.",
+      "answerKo": "지금은 없어요. 최소 2년은 더 다닐 계획이에요."
+    },
+    {
+      "id": "q20-6",
+      "day": 20,
+      "q": "How will you celebrate your birthday?",
+      "qKo": "생일은 어떻게 보낼 거예요?",
+      "answer": "I’m planning to have dinner with my close friends.",
+      "answerKo": "친한 친구들이랑 저녁 먹을 계획이에요."
+    },
+    {
+      "id": "q21-1",
+      "day": 21,
+      "q": "Your meeting got canceled. What will you do with the extra time?",
+      "qKo": "회의가 취소됐어요. 남는 시간에 뭘 할 거예요?",
+      "answer": "I might as well finish my report.",
+      "answerKo": "그럴 바엔 보고서나 끝내야겠어요."
+    },
+    {
+      "id": "q21-2",
+      "day": 21,
+      "q": "It’s raining and the bus is late. What should we do?",
+      "qKo": "비도 오고 버스도 늦어요. 어떡하죠?",
+      "answer": "We might as well take a taxi.",
+      "answerKo": "그냥 택시 타는 게 낫겠어요."
+    },
+    {
+      "id": "q21-3",
+      "day": 21,
+      "q": "The store is closed. What now?",
+      "qKo": "가게가 문 닫았어요. 이제 어떡하죠?",
+      "answer": "We might as well go home and order online.",
+      "answerKo": "그냥 집에 가서 온라인으로 주문하는 게 낫겠어요."
+    },
+    {
+      "id": "q21-4",
+      "day": 21,
+      "q": "We have 30 minutes before the movie. What should we do?",
+      "qKo": "영화 시작까지 30분 남았어요. 뭐 할까요?",
+      "answer": "We might as well grab a coffee.",
+      "answerKo": "커피나 한잔하는 게 낫겠어요."
+    },
+    {
+      "id": "q21-5",
+      "day": 21,
+      "q": "You woke up early. Will you go back to sleep?",
+      "qKo": "일찍 깼네요. 다시 잘 거예요?",
+      "answer": "No, I might as well get up and study.",
+      "answerKo": "아뇨, 그냥 일어나서 공부하는 게 낫겠어요."
+    },
+    {
+      "id": "q21-6",
+      "day": 21,
+      "q": "The report is almost done. Should we finish it tomorrow?",
+      "qKo": "보고서 거의 다 됐어요. 내일 끝낼까요?",
+      "answer": "We might as well finish it now.",
+      "answerKo": "그냥 지금 끝내는 게 낫겠어요."
+    },
+    {
+      "id": "q22-1",
+      "day": 22,
+      "q": "What do you do after a short break at work?",
+      "qKo": "회사에서 잠깐 쉬고 나면 뭐 해요?",
+      "answer": "I grab a coffee, stretch, and then get back to it.",
+      "answerKo": "커피 한 잔 하고 스트레칭한 다음 다시 일해요."
+    },
+    {
+      "id": "q22-2",
+      "day": 22,
+      "q": "How do you stay focused when you’re tired?",
+      "qKo": "피곤할 때 어떻게 집중을 유지해요?",
+      "answer": "I take a short walk and then get back to it.",
+      "answerKo": "잠깐 걷고 나서 다시 하던 일로 돌아가요."
+    },
+    {
+      "id": "q22-3",
+      "day": 22,
+      "q": "How do you get your energy back after lunch?",
+      "qKo": "점심 먹고 나서 어떻게 기운을 차려요?",
+      "answer": "I take a quick walk and then get back to it.",
+      "answerKo": "잠깐 산책하고 나서 다시 일해요."
+    },
+    {
+      "id": "q22-4",
+      "day": 22,
+      "q": "Were you interrupted a lot today?",
+      "qKo": "오늘 방해를 많이 받았어요?",
+      "answer": "Yes, but I tried to get back to it every time.",
+      "answerKo": "네, 그래도 매번 다시 하던 일로 돌아가려고 했어요."
+    },
+    {
+      "id": "q22-5",
+      "day": 22,
+      "q": "Do you take breaks when you study?",
+      "qKo": "공부할 때 쉬는 시간 가져요?",
+      "answer": "Yes, I rest for ten minutes and then get back to it.",
+      "answerKo": "네, 10분 쉬고 다시 공부해요."
+    },
+    {
+      "id": "q22-6",
+      "day": 22,
+      "q": "What did you say to your team after the coffee break?",
+      "qKo": "커피 타임 후에 팀원들에게 뭐라고 했어요?",
+      "answer": "Okay, everyone, let’s get back to it.",
+      "answerKo": "자, 여러분, 다시 일합시다."
+    },
+    {
+      "id": "q23-1",
+      "day": 23,
+      "q": "Would you rather work at a big company or a startup?",
+      "qKo": "대기업과 스타트업 중 어디서 일하고 싶어요?",
+      "answer": "I’d choose a startup over a big company because I can learn faster.",
+      "answerKo": "더 빨리 배울 수 있어서 대기업보다 스타트업을 택할 거예요."
+    },
+    {
+      "id": "q23-2",
+      "day": 23,
+      "q": "Do you prefer the city or the countryside?",
+      "qKo": "도시가 좋아요, 시골이 좋아요?",
+      "answer": "I’d choose the city over the countryside because it’s more convenient.",
+      "answerKo": "더 편리해서 시골보다 도시를 택할 거예요."
+    },
+    {
+      "id": "q23-3",
+      "day": 23,
+      "q": "Did you take the higher salary offer?",
+      "qKo": "연봉 더 높은 제안을 받아들였어요?",
+      "answer": "No, I chose a better company culture over a higher salary.",
+      "answerKo": "아뇨, 더 높은 연봉보다 더 좋은 회사 문화를 택했어요."
+    },
+    {
+      "id": "q23-4",
+      "day": 23,
+      "q": "Do you prefer texting or calling?",
+      "qKo": "문자가 좋아요, 전화가 좋아요?",
+      "answer": "I’d choose texting over calling. It’s more convenient.",
+      "answerKo": "전화보다 문자를 택할래요. 더 편하거든요."
+    },
+    {
+      "id": "q23-5",
+      "day": 23,
+      "q": "Why did you study data analysis?",
+      "qKo": "왜 데이터 분석을 공부했어요?",
+      "answer": "I chose data analysis over marketing because I love numbers.",
+      "answerKo": "숫자를 좋아해서 마케팅 대신 데이터 분석을 택했어요."
+    },
+    {
+      "id": "q23-6",
+      "day": 23,
+      "q": "Coffee or energy drinks in the afternoon?",
+      "qKo": "오후엔 커피예요, 에너지 드링크예요?",
+      "answer": "I’d choose coffee over energy drinks.",
+      "answerKo": "에너지 드링크보다 커피를 택할래요."
+    },
+    {
+      "id": "q24-1",
+      "day": 24,
+      "q": "What do you do when you’re stressed?",
+      "qKo": "스트레스 받을 땐 뭐 해요?",
+      "answer": "I take a walk by the river to clear my head.",
+      "answerKo": "머리 식히려고 강가를 걸어요."
+    },
+    {
+      "id": "q24-2",
+      "day": 24,
+      "q": "What helps you relax after a long day?",
+      "qKo": "긴 하루 끝에 뭐가 쉬는 데 도움이 돼요?",
+      "answer": "Listening to music helps me clear my head.",
+      "answerKo": "음악을 들으면 머리가 맑아져요."
+    },
+    {
+      "id": "q24-3",
+      "day": 24,
+      "q": "Why do you go running in the morning?",
+      "qKo": "왜 아침에 달리기를 해요?",
+      "answer": "It helps me clear my head before work.",
+      "answerKo": "출근 전에 머리를 맑게 하는 데 도움이 돼요."
+    },
+    {
+      "id": "q24-4",
+      "day": 24,
+      "q": "What do you do after an argument?",
+      "qKo": "말다툼한 뒤에는 뭐 해요?",
+      "answer": "I go for a walk to clear my head.",
+      "answerKo": "머리 식히려고 산책을 가요."
+    },
+    {
+      "id": "q24-5",
+      "day": 24,
+      "q": "Why are you going outside?",
+      "qKo": "왜 밖에 나가요?",
+      "answer": "I need some fresh air to clear my head.",
+      "answerKo": "머리 좀 식히게 바람 좀 쐬려고요."
+    },
+    {
+      "id": "q24-6",
+      "day": 24,
+      "q": "How do you prepare for a big decision?",
+      "qKo": "큰 결정을 앞두고 어떻게 준비해요?",
+      "answer": "I take a day off to clear my head first.",
+      "answerKo": "먼저 하루 쉬면서 머리를 정리해요."
+    },
+    {
+      "id": "q25-1",
+      "day": 25,
+      "q": "Is there something you’ve been putting off lately?",
+      "qKo": "요즘 미루고 있는 일 있어요?",
+      "answer": "I’ve been meaning to go to the dentist, but I keep putting it off.",
+      "answerKo": "전부터 치과에 가려고 했는데 계속 미루고 있어요."
+    },
+    {
+      "id": "q25-2",
+      "day": 25,
+      "q": "Is there a place you want to visit soon?",
+      "qKo": "곧 가 보고 싶은 곳 있어요?",
+      "answer": "I’ve been meaning to visit the new museum downtown.",
+      "answerKo": "시내에 새로 생긴 박물관에 전부터 가 보려고 했어요."
+    },
+    {
+      "id": "q25-3",
+      "day": 25,
+      "q": "Have you called your parents recently?",
+      "qKo": "최근에 부모님께 전화드렸어요?",
+      "answer": "Not yet. I’ve been meaning to call them this week.",
+      "answerKo": "아직요. 이번 주에 전화드리려고 했어요."
+    },
+    {
+      "id": "q25-4",
+      "day": 25,
+      "q": "Have you tried the new cafe downstairs?",
+      "qKo": "아래층에 새로 생긴 카페 가 봤어요?",
+      "answer": "Not yet, but I’ve been meaning to.",
+      "answerKo": "아직요, 근데 전부터 가 보려고 했어요."
+    },
+    {
+      "id": "q25-5",
+      "day": 25,
+      "q": "Have you started learning Python?",
+      "qKo": "파이썬 배우기 시작했어요?",
+      "answer": "I’ve been meaning to, but I haven’t had time.",
+      "answerKo": "전부터 하려고 했는데 시간이 없었어요."
+    },
+    {
+      "id": "q25-6",
+      "day": 25,
+      "q": "Is there anything you want to ask me?",
+      "qKo": "저한테 물어보고 싶은 거 있어요?",
+      "answer": "Yes, I’ve been meaning to ask you about the new project.",
+      "answerKo": "네, 새 프로젝트에 대해 전부터 물어보려고 했어요."
+    },
+    {
+      "id": "q26-1",
+      "day": 26,
+      "q": "Do you have any bad habits?",
+      "qKo": "나쁜 습관 있어요?",
+      "answer": "I can’t help checking my phone as soon as I wake up.",
+      "answerKo": "일어나자마자 휴대폰을 보지 않을 수가 없어요."
+    },
+    {
+      "id": "q26-2",
+      "day": 26,
+      "q": "What do you do when you see a big sale?",
+      "qKo": "큰 세일을 보면 어떻게 해요?",
+      "answer": "I can’t help buying something, even if I don’t need it.",
+      "answerKo": "필요 없어도 뭔가 사지 않을 수가 없어요."
+    },
+    {
+      "id": "q26-3",
+      "day": 26,
+      "q": "Why are you smiling?",
+      "qKo": "왜 웃어요?",
+      "answer": "I can’t help smiling. I got good news today.",
+      "answerKo": "웃음이 나와요. 오늘 좋은 소식이 있었거든요."
+    },
+    {
+      "id": "q26-4",
+      "day": 26,
+      "q": "Do you get nervous before big meetings?",
+      "qKo": "큰 회의 전에 긴장돼요?",
+      "answer": "Yes, I can’t help worrying before big meetings.",
+      "answerKo": "네, 큰 회의 전엔 걱정이 될 수밖에 없어요."
+    },
+    {
+      "id": "q26-5",
+      "day": 26,
+      "q": "Why do you always order dessert?",
+      "qKo": "왜 항상 디저트를 시켜요?",
+      "answer": "I can’t help ordering one. I love sweets!",
+      "answerKo": "안 시킬 수가 없어요. 단 걸 너무 좋아하거든요!"
+    },
+    {
+      "id": "q26-6",
+      "day": 26,
+      "q": "Why do you keep checking the dashboard?",
+      "qKo": "왜 자꾸 대시보드를 확인해요?",
+      "answer": "I can’t help checking it after a big launch.",
+      "answerKo": "큰 출시 뒤엔 확인하지 않을 수가 없어요."
+    },
+    {
+      "id": "q27-1",
+      "day": 27,
+      "q": "Is there a team meeting tomorrow morning?",
+      "qKo": "내일 아침에 팀 회의 있어요?",
+      "answer": "Not that I know of. Let me check the calendar.",
+      "answerKo": "제가 알기로는 없어요. 캘린더 확인해 볼게요."
+    },
+    {
+      "id": "q27-2",
+      "day": 27,
+      "q": "Are there any changes to the project schedule?",
+      "qKo": "프로젝트 일정에 변경 사항 있어요?",
+      "answer": "Not that I know of, but I’ll ask my manager.",
+      "answerKo": "제가 알기로는 없는데, 매니저에게 물어볼게요."
+    },
+    {
+      "id": "q27-3",
+      "day": 27,
+      "q": "Is the office closed on Friday?",
+      "qKo": "금요일에 사무실 쉬어요?",
+      "answer": "Not that I know of.",
+      "answerKo": "제가 알기로는 아니에요."
+    },
+    {
+      "id": "q27-4",
+      "day": 27,
+      "q": "Has the client replied yet?",
+      "qKo": "고객사에서 답장 왔어요?",
+      "answer": "Not that I know of. I’ll check my email.",
+      "answerKo": "제가 알기로는 아직이요. 메일 확인해 볼게요."
+    },
+    {
+      "id": "q27-5",
+      "day": 27,
+      "q": "Is there a dress code for the event?",
+      "qKo": "그 행사에 드레스 코드 있어요?",
+      "answer": "Not that I know of, but business casual should be fine.",
+      "answerKo": "제가 알기로는 없는데, 비즈니스 캐주얼이면 괜찮을 거예요."
+    },
+    {
+      "id": "q27-6",
+      "day": 27,
+      "q": "Did anyone call for me while I was out?",
+      "qKo": "저 없는 동안 누가 전화했어요?",
+      "answer": "Not that I know of.",
+      "answerKo": "제가 알기로는 없어요."
+    },
+    {
+      "id": "q28-1",
+      "day": 28,
+      "q": "Have you ever changed your mind about a big decision?",
+      "qKo": "큰 결정을 두고 마음을 바꾼 적 있어요?",
+      "answer": "Yes. I had second thoughts about moving, so I stayed.",
+      "answerKo": "네. 이사하는 게 망설여져서 그냥 남았어요."
+    },
+    {
+      "id": "q28-2",
+      "day": 28,
+      "q": "How do you feel about your new project?",
+      "qKo": "새 프로젝트에 대해 어떻게 생각해요?",
+      "answer": "I’m starting to have second thoughts because it’s a lot of work.",
+      "answerKo": "일이 너무 많아서 좀 망설여지기 시작했어요."
+    },
+    {
+      "id": "q28-3",
+      "day": 28,
+      "q": "Are you still going to buy that car?",
+      "qKo": "그 차 아직 살 거예요?",
+      "answer": "I’m having second thoughts. It’s too expensive.",
+      "answerKo": "좀 망설여져요. 너무 비싸요."
+    },
+    {
+      "id": "q28-4",
+      "day": 28,
+      "q": "How did you feel after signing up for the marathon?",
+      "qKo": "마라톤 신청하고 나서 기분이 어땠어요?",
+      "answer": "I had second thoughts, but I’m glad I did it.",
+      "answerKo": "망설여지기도 했는데, 하길 잘했어요."
+    },
+    {
+      "id": "q28-5",
+      "day": 28,
+      "q": "Are you sure about joining the new team?",
+      "qKo": "새 팀에 합류하는 거 확실해요?",
+      "answer": "Honestly, I’m having second thoughts about it.",
+      "answerKo": "솔직히 좀 망설여져요."
+    },
+    {
+      "id": "q28-6",
+      "day": 28,
+      "q": "Have you ever regretted a decision?",
+      "qKo": "결정을 후회한 적 있어요?",
+      "answer": "Yes, I had second thoughts after accepting my first job.",
+      "answerKo": "네, 첫 직장 제안을 받아들이고 나서 다시 생각하게 됐어요."
+    },
+    {
+      "id": "q29-1",
+      "day": 29,
+      "q": "What would you say to a friend who’s moving next week?",
+      "qKo": "다음 주에 이사하는 친구에게 뭐라고 할 거예요?",
+      "answer": "If you need any help, just say the word.",
+      "answerKo": "도움 필요하면 말만 해."
+    },
+    {
+      "id": "q29-2",
+      "day": 29,
+      "q": "How would you offer help to a new coworker?",
+      "qKo": "새로 온 동료에게 어떻게 도움을 제안할 거예요?",
+      "answer": "If you have any questions, just say the word.",
+      "answerKo": "궁금한 거 있으면 언제든 말만 해요."
+    },
+    {
+      "id": "q29-3",
+      "day": 29,
+      "q": "I might need some help with my presentation.",
+      "qKo": "발표 준비하는 데 도움이 필요할 수도 있어요.",
+      "answer": "Just say the word. I’m happy to help.",
+      "answerKo": "말만 해요. 기꺼이 도울게요."
+    },
+    {
+      "id": "q29-4",
+      "day": 29,
+      "q": "Could you pick me up from the airport sometime?",
+      "qKo": "언제 공항에 데리러 와 줄 수 있어요?",
+      "answer": "Of course. Just say the word.",
+      "answerKo": "물론이죠. 말만 해요."
+    },
+    {
+      "id": "q29-5",
+      "day": 29,
+      "q": "Your coworker looks stressed. What would you say?",
+      "qKo": "동료가 스트레스 받아 보여요. 뭐라고 할 거예요?",
+      "answer": "If you need anything, just say the word.",
+      "answerKo": "필요한 거 있으면 말만 해요."
+    },
+    {
+      "id": "q29-6",
+      "day": 29,
+      "q": "Could you review my code later?",
+      "qKo": "나중에 제 코드 좀 봐 줄 수 있어요?",
+      "answer": "Sure, just say the word when it’s ready.",
+      "answerKo": "그럼요, 준비되면 말만 해요."
+    },
+    {
+      "id": "q30-1",
+      "day": 30,
+      "q": "How would you tell your team you’ll be out tomorrow?",
+      "qKo": "내일 자리를 비운다는 걸 팀에 어떻게 알릴 거예요?",
+      "answer": "Just so you know, I’ll be out of the office tomorrow.",
+      "answerKo": "참고로, 저 내일 사무실에 없어요."
+    },
+    {
+      "id": "q30-2",
+      "day": 30,
+      "q": "What would you tell a friend before they visit your place?",
+      "qKo": "친구가 집에 오기 전에 뭐라고 알려 줄 거예요?",
+      "answer": "Just so you know, there’s no parking near my place.",
+      "answerKo": "참고로, 우리 집 근처엔 주차할 곳이 없어."
+    },
+    {
+      "id": "q30-3",
+      "day": 30,
+      "q": "What would you tell a guest about your dog?",
+      "qKo": "손님에게 강아지에 대해 뭐라고 알려 줄 거예요?",
+      "answer": "Just so you know, my dog is friendly but very loud.",
+      "answerKo": "참고로, 우리 강아지는 순한데 엄청 시끄러워요."
+    },
+    {
+      "id": "q30-4",
+      "day": 30,
+      "q": "How would you remind your team about a deadline?",
+      "qKo": "팀에 마감을 어떻게 상기시킬 거예요?",
+      "answer": "Just so you know, the report is due Friday.",
+      "answerKo": "참고로, 보고서 마감은 금요일이에요."
+    },
+    {
+      "id": "q30-5",
+      "day": 30,
+      "q": "What would you say to a friend before dinner?",
+      "qKo": "저녁 먹기 전에 친구에게 뭐라고 할 거예요?",
+      "answer": "Just so you know, I’m paying today.",
+      "answerKo": "참고로, 오늘은 내가 살게."
+    },
+    {
+      "id": "q30-6",
+      "day": 30,
+      "q": "How would you tell your manager you’ll be late?",
+      "qKo": "매니저에게 늦는다고 어떻게 말할 거예요?",
+      "answer": "Just so you know, I’ll be 10 minutes late because of traffic.",
+      "answerKo": "참고로, 차가 막혀서 10분 늦을 것 같아요."
+    },
+    {
+      "id": "q31-1",
+      "day": 31,
+      "q": "Why haven’t you exercised lately?",
+      "qKo": "요즘 왜 운동을 안 했어요?",
+      "answer": "I’ve been so busy at work. You know how it is.",
+      "answerKo": "회사 일이 너무 바빴어요. 어떤지 알잖아요."
+    },
+    {
+      "id": "q31-2",
+      "day": 31,
+      "q": "Why are you so tired today?",
+      "qKo": "오늘 왜 그렇게 피곤해요?",
+      "answer": "It’s the end of the month, so there’s a lot to do. You know how it is.",
+      "answerKo": "월말이라 할 일이 많아요. 다 그렇죠 뭐."
+    },
+    {
+      "id": "q31-3",
+      "day": 31,
+      "q": "Why didn’t you finish the book?",
+      "qKo": "왜 그 책 다 안 읽었어요?",
+      "answer": "I got too busy with work. You know how it is.",
+      "answerKo": "일이 너무 바빠졌어요. 어떤지 알잖아요."
+    },
+    {
+      "id": "q31-4",
+      "day": 31,
+      "q": "Why is your desk so messy?",
+      "qKo": "책상이 왜 그렇게 지저분해요?",
+      "answer": "It’s the end of the quarter. You know how it is.",
+      "answerKo": "분기 말이잖아요. 어떤지 알죠."
+    },
+    {
+      "id": "q31-5",
+      "day": 31,
+      "q": "Why did you order takeout again?",
+      "qKo": "왜 또 배달시켰어요?",
+      "answer": "I was too tired to cook. You know how it is.",
+      "answerKo": "너무 피곤해서 요리할 수가 없었어요. 다 그렇죠 뭐."
+    },
+    {
+      "id": "q31-6",
+      "day": 31,
+      "q": "Why haven’t you called your old friend lately?",
+      "qKo": "요즘 왜 옛 친구한테 연락 안 했어요?",
+      "answer": "Life got busy. You know how it is.",
+      "answerKo": "사는 게 바빠졌어요. 어떤지 알잖아요."
+    },
+    {
+      "id": "q32-1",
+      "day": 32,
+      "q": "What’s most important when choosing a job?",
+      "qKo": "직장을 고를 때 뭐가 제일 중요해요?",
+      "answer": "At the end of the day, I think it’s the people you work with.",
+      "answerKo": "결국엔 같이 일하는 사람들이라고 생각해요."
+    },
+    {
+      "id": "q32-2",
+      "day": 32,
+      "q": "How do you make decisions with data?",
+      "qKo": "데이터로 어떻게 결정을 내려요?",
+      "answer": "At the end of the day, the data should guide the decision.",
+      "answerKo": "결국엔 데이터가 결정을 이끌어야 해요."
+    },
+    {
+      "id": "q32-3",
+      "day": 32,
+      "q": "Which phone should I buy?",
+      "qKo": "어떤 휴대폰을 사야 할까요?",
+      "answer": "At the end of the day, it’s your choice. Both are good.",
+      "answerKo": "결국엔 네 선택이야. 둘 다 좋아."
+    },
+    {
+      "id": "q32-4",
+      "day": 32,
+      "q": "Is a high salary the most important thing?",
+      "qKo": "높은 연봉이 가장 중요한가요?",
+      "answer": "At the end of the day, I think happiness matters more.",
+      "answerKo": "결국엔 행복이 더 중요하다고 생각해요."
+    },
+    {
+      "id": "q32-5",
+      "day": 32,
+      "q": "How do you handle different opinions in a meeting?",
+      "qKo": "회의에서 의견이 다를 땐 어떻게 해요?",
+      "answer": "We listen to everyone, but at the end of the day, the manager decides.",
+      "answerKo": "모두의 얘기를 듣지만, 결국엔 매니저가 결정해요."
+    },
+    {
+      "id": "q32-6",
+      "day": 32,
+      "q": "Why do you study English every day?",
+      "qKo": "왜 매일 영어 공부를 해요?",
+      "answer": "At the end of the day, consistency is what makes you better.",
+      "answerKo": "결국 실력을 늘려 주는 건 꾸준함이니까요."
+    },
+    {
+      "id": "q33-1",
+      "day": 33,
+      "q": "Have you finished the book you started?",
+      "qKo": "읽기 시작한 책 다 읽었어요?",
+      "answer": "Not yet. I haven’t gotten around to finishing it.",
+      "answerKo": "아직요. 끝까지 읽을 짬을 못 냈어요."
+    },
+    {
+      "id": "q33-2",
+      "day": 33,
+      "q": "What’s something you finally did recently?",
+      "qKo": "최근에 드디어 한 일이 있어요?",
+      "answer": "I finally got around to cleaning my closet.",
+      "answerKo": "드디어 옷장 정리를 했어요."
+    },
+    {
+      "id": "q33-3",
+      "day": 33,
+      "q": "Did you fix your bike?",
+      "qKo": "자전거 고쳤어요?",
+      "answer": "Not yet. I haven’t gotten around to it.",
+      "answerKo": "아직요. 할 짬을 못 냈어요."
+    },
+    {
+      "id": "q33-4",
+      "day": 33,
+      "q": "Have you updated your resume?",
+      "qKo": "이력서 업데이트했어요?",
+      "answer": "I finally got around to it last weekend.",
+      "answerKo": "지난 주말에 드디어 했어요."
+    },
+    {
+      "id": "q33-5",
+      "day": 33,
+      "q": "Did you watch the show I recommended?",
+      "qKo": "내가 추천한 드라마 봤어요?",
+      "answer": "Sorry, I haven’t gotten around to watching it yet.",
+      "answerKo": "미안해요, 아직 볼 짬을 못 냈어요."
+    },
+    {
+      "id": "q33-6",
+      "day": 33,
+      "q": "When are you going to wash your car?",
+      "qKo": "세차는 언제 할 거예요?",
+      "answer": "I’ll get around to it this weekend.",
+      "answerKo": "이번 주말에 할 거예요."
+    },
+    {
+      "id": "q34-1",
+      "day": 34,
+      "q": "My laptop is really slow. What should I do?",
+      "qKo": "노트북이 너무 느려요. 어떻게 해야 할까요?",
+      "answer": "I would restart it first. If that doesn’t work, I would call IT.",
+      "answerKo": "나라면 먼저 재부팅하겠어요. 그래도 안 되면 IT팀에 연락하고요."
+    },
+    {
+      "id": "q34-2",
+      "day": 34,
+      "q": "I’m thinking of quitting my job. Any advice?",
+      "qKo": "회사를 그만둘까 생각 중이에요. 조언해 줄래요?",
+      "answer": "I wouldn’t quit right away. I would talk to your manager first.",
+      "answerKo": "나라면 바로 그만두진 않겠어요. 먼저 매니저와 얘기해 볼 거예요."
+    },
+    {
+      "id": "q34-3",
+      "day": 34,
+      "q": "Which hotel should I book?",
+      "qKo": "어느 호텔을 예약할까요?",
+      "answer": "I would book the one near the station. It’s more convenient.",
+      "answerKo": "나라면 역 근처 호텔을 예약하겠어요. 더 편하니까요."
+    },
+    {
+      "id": "q34-4",
+      "day": 34,
+      "q": "Should I take the job offer?",
+      "qKo": "그 입사 제안 받아들여야 할까요?",
+      "answer": "I would take it. It’s a great opportunity.",
+      "answerKo": "나라면 받아들이겠어요. 좋은 기회잖아요."
+    },
+    {
+      "id": "q34-5",
+      "day": 34,
+      "q": "Should I buy a new phone now?",
+      "qKo": "지금 새 휴대폰 사야 할까요?",
+      "answer": "I wouldn’t buy one now. I would wait for the new model.",
+      "answerKo": "나라면 지금은 안 사요. 새 모델을 기다리겠어요."
+    },
+    {
+      "id": "q34-6",
+      "day": 34,
+      "q": "My coworker keeps interrupting me. What should I do?",
+      "qKo": "동료가 자꾸 말을 끊어요. 어떻게 해야 할까요?",
+      "answer": "I would talk to them privately first.",
+      "answerKo": "나라면 먼저 따로 얘기해 보겠어요."
+    },
+    {
+      "id": "q35-1",
+      "day": 35,
+      "q": "Why did your company’s sales go up last quarter?",
+      "qKo": "지난 분기에 회사 매출이 왜 올랐어요?",
+      "answer": "The increase was mainly driven by new customers.",
+      "answerKo": "증가는 주로 신규 고객 덕분이었어요."
+    },
+    {
+      "id": "q35-2",
+      "day": 35,
+      "q": "What drives your motivation to study English?",
+      "qKo": "영어 공부하는 동기는 뭐예요?",
+      "answer": "My motivation is driven by my goal to work abroad someday.",
+      "answerKo": "언젠가 해외에서 일하고 싶다는 목표가 제 동기예요."
+    },
+    {
+      "id": "q35-3",
+      "day": 35,
+      "q": "Why did website traffic go up this month?",
+      "qKo": "이번 달에 웹사이트 트래픽이 왜 늘었어요?",
+      "answer": "It was mainly driven by our new social media campaign.",
+      "answerKo": "주로 새 SNS 캠페인 덕분이었어요."
+    },
+    {
+      "id": "q35-4",
+      "day": 35,
+      "q": "Why did costs go up?",
+      "qKo": "비용이 왜 올랐어요?",
+      "answer": "The increase was driven by higher shipping fees.",
+      "answerKo": "배송비 인상 때문에 늘었어요."
+    },
+    {
+      "id": "q35-5",
+      "day": 35,
+      "q": "What guides your decisions at work?",
+      "qKo": "회사에서 무엇을 근거로 결정해요?",
+      "answer": "My decisions are driven by data, not just gut feeling.",
+      "answerKo": "감이 아니라 데이터를 근거로 결정해요."
+    },
+    {
+      "id": "q35-6",
+      "day": 35,
+      "q": "Why did the app get so many downloads?",
+      "qKo": "그 앱은 왜 다운로드가 그렇게 많았어요?",
+      "answer": "The growth was driven by a viral video.",
+      "answerKo": "입소문 난 영상 덕분에 늘었어요."
+    },
+    {
+      "id": "q36-1",
+      "day": 36,
+      "q": "What do you do when a dashboard shows wrong numbers?",
+      "qKo": "대시보드 숫자가 틀리게 나오면 어떻게 해요?",
+      "answer": "I check the logs and try to identify the root cause.",
+      "answerKo": "로그를 확인하고 근본 원인을 찾아보려고 해요."
+    },
+    {
+      "id": "q36-2",
+      "day": 36,
+      "q": "How do you solve problems at work?",
+      "qKo": "회사에서 문제를 어떻게 해결해요?",
+      "answer": "First, I identify the root cause. Then I look for a solution.",
+      "answerKo": "먼저 근본 원인을 파악하고, 그다음 해결책을 찾아요."
+    },
+    {
+      "id": "q36-3",
+      "day": 36,
+      "q": "Your car keeps making a strange noise. What will you do?",
+      "qKo": "차에서 자꾸 이상한 소리가 나요. 어떻게 할 거예요?",
+      "answer": "I’ll take it to a mechanic to identify the root cause.",
+      "answerKo": "정비소에 가져가서 근본 원인을 찾을 거예요."
+    },
+    {
+      "id": "q36-4",
+      "day": 36,
+      "q": "Why do you keep getting headaches?",
+      "qKo": "왜 자꾸 두통이 생겨요?",
+      "answer": "I’m not sure. I’ll see a doctor to identify the root cause.",
+      "answerKo": "잘 모르겠어요. 병원에 가서 근본 원인을 알아보려고요."
+    },
+    {
+      "id": "q36-5",
+      "day": 36,
+      "q": "Customers are complaining about late deliveries. What’s next?",
+      "qKo": "고객들이 배송 지연에 불만이에요. 다음엔 뭘 해요?",
+      "answer": "We need to identify the root cause before we fix anything.",
+      "answerKo": "뭘 고치기 전에 근본 원인부터 파악해야 해요."
+    },
+    {
+      "id": "q36-6",
+      "day": 36,
+      "q": "The data pipeline failed again. What should we do?",
+      "qKo": "데이터 파이프라인이 또 실패했어요. 어떻게 할까요?",
+      "answer": "Let’s check the logs and identify the root cause.",
+      "answerKo": "로그를 확인하고 근본 원인을 찾아봐요."
+    },
+    {
+      "id": "q37-1",
+      "day": 37,
+      "q": "What do you do before starting a new project?",
+      "qKo": "새 프로젝트를 시작하기 전에 뭘 해요?",
+      "answer": "We align on the goals and the timeline first.",
+      "answerKo": "먼저 목표와 일정에 대해 의견을 맞춰요."
+    },
+    {
+      "id": "q37-2",
+      "day": 37,
+      "q": "Why do teams sometimes report different numbers?",
+      "qKo": "팀마다 가끔 숫자가 다르게 나오는 이유는 뭘까요?",
+      "answer": "Because they haven’t aligned on the metric definition.",
+      "answerKo": "지표 정의를 서로 맞추지 않았기 때문이에요."
+    },
+    {
+      "id": "q37-3",
+      "day": 37,
+      "q": "How do you plan a trip with friends?",
+      "qKo": "친구들과 여행 계획은 어떻게 세워요?",
+      "answer": "We align on the budget and dates first.",
+      "answerKo": "먼저 예산이랑 날짜를 맞춰요."
+    },
+    {
+      "id": "q37-4",
+      "day": 37,
+      "q": "Why was the meeting so long?",
+      "qKo": "회의가 왜 그렇게 길었어요?",
+      "answer": "We had to align on the priorities for next quarter.",
+      "answerKo": "다음 분기 우선순위를 맞춰야 했거든요."
+    },
+    {
+      "id": "q37-5",
+      "day": 37,
+      "q": "What should we do before the client meeting?",
+      "qKo": "고객 미팅 전에 뭘 해야 할까요?",
+      "answer": "Let’s align on our key messages first.",
+      "answerKo": "먼저 핵심 메시지를 맞춰요."
+    },
+    {
+      "id": "q37-6",
+      "day": 37,
+      "q": "How do you and your family manage money?",
+      "qKo": "가족과 돈 관리는 어떻게 해요?",
+      "answer": "We align on our monthly budget together.",
+      "answerKo": "월 예산을 함께 맞춰요."
+    },
+    {
+      "id": "q38-1",
+      "day": 38,
+      "q": "How do you choose a restaurant for a team dinner?",
+      "qKo": "팀 회식 식당은 어떻게 골라요?",
+      "answer": "I narrow down the options to three and let the team vote.",
+      "answerKo": "후보를 세 곳으로 좁히고 팀이 투표하게 해요."
+    },
+    {
+      "id": "q38-2",
+      "day": 38,
+      "q": "How do you find the cause of a slow query?",
+      "qKo": "느린 쿼리의 원인은 어떻게 찾아요?",
+      "answer": "I narrow down the problematic part step by step.",
+      "answerKo": "문제가 되는 부분을 단계별로 좁혀 가요."
+    },
+    {
+      "id": "q38-3",
+      "day": 38,
+      "q": "How do you choose a place to live?",
+      "qKo": "살 집은 어떻게 골라요?",
+      "answer": "I narrow down the options by price and location.",
+      "answerKo": "가격과 위치로 선택지를 좁혀요."
+    },
+    {
+      "id": "q38-4",
+      "day": 38,
+      "q": "Have you decided where to travel?",
+      "qKo": "여행지 정했어요?",
+      "answer": "I’ve narrowed it down to Japan or Taiwan.",
+      "answerKo": "일본이나 대만으로 좁혔어요."
+    },
+    {
+      "id": "q38-5",
+      "day": 38,
+      "q": "How did you find the bug?",
+      "qKo": "버그는 어떻게 찾았어요?",
+      "answer": "I narrowed it down to one line of code.",
+      "answerKo": "코드 한 줄로 범위를 좁혔어요."
+    },
+    {
+      "id": "q38-6",
+      "day": 38,
+      "q": "How do you choose a gift for someone?",
+      "qKo": "선물은 어떻게 골라요?",
+      "answer": "I narrow down a few ideas and then pick the most useful one.",
+      "answerKo": "몇 가지로 좁힌 다음 가장 쓸모 있는 걸 골라요."
+    },
+    {
+      "id": "q39-1",
+      "day": 39,
+      "q": "Why do you think customers are leaving?",
+      "qKo": "고객들이 왜 이탈한다고 생각해요?",
+      "answer": "I think it’s related to the slow delivery times.",
+      "answerKo": "느린 배송 시간과 관련이 있는 것 같아요."
+    },
+    {
+      "id": "q39-2",
+      "day": 39,
+      "q": "What is your job related to?",
+      "qKo": "당신의 일은 무엇과 관련이 있어요?",
+      "answer": "My job is related to data analysis and reporting.",
+      "answerKo": "제 일은 데이터 분석과 리포팅과 관련이 있어요."
+    },
+    {
+      "id": "q39-3",
+      "day": 39,
+      "q": "Why are you so tired these days?",
+      "qKo": "요즘 왜 그렇게 피곤해요?",
+      "answer": "I think it’s related to my lack of sleep.",
+      "answerKo": "잠이 부족한 것과 관련 있는 것 같아요."
+    },
+    {
+      "id": "q39-4",
+      "day": 39,
+      "q": "Are these two issues connected?",
+      "qKo": "이 두 문제가 연결돼 있어요?",
+      "answer": "Yes, I think they’re both related to the same update.",
+      "answerKo": "네, 둘 다 같은 업데이트와 관련 있는 것 같아요."
+    },
+    {
+      "id": "q39-5",
+      "day": 39,
+      "q": "Why did sales drop in December?",
+      "qKo": "12월에 매출이 왜 떨어졌어요?",
+      "answer": "It might be related to the holiday season.",
+      "answerKo": "연휴 시즌과 관련이 있을 수도 있어요."
+    },
+    {
+      "id": "q39-6",
+      "day": 39,
+      "q": "Is your major related to your job?",
+      "qKo": "전공이 지금 일과 관련 있어요?",
+      "answer": "Not really. My major is related to economics.",
+      "answerKo": "별로요. 제 전공은 경제학 쪽이에요."
+    },
+    {
+      "id": "q40-1",
+      "day": 40,
+      "q": "How do you give feedback to a coworker?",
+      "qKo": "동료에게 피드백을 어떻게 줘요?",
+      "answer": "I point out the problem politely and suggest a solution.",
+      "answerKo": "문제를 정중하게 짚어 주고 해결책을 제안해요."
+    },
+    {
+      "id": "q40-2",
+      "day": 40,
+      "q": "What would you say if someone found a mistake in your report?",
+      "qKo": "누가 내 보고서에서 실수를 찾으면 뭐라고 할 거예요?",
+      "answer": "Thanks for pointing that out. I’ll fix it right away.",
+      "answerKo": "짚어 줘서 고마워요. 바로 고칠게요."
+    },
+    {
+      "id": "q40-3",
+      "day": 40,
+      "q": "How did you find the error?",
+      "qKo": "오류는 어떻게 찾았어요?",
+      "answer": "My coworker pointed it out during the review.",
+      "answerKo": "검토하다가 동료가 짚어 줬어요."
+    },
+    {
+      "id": "q40-4",
+      "day": 40,
+      "q": "What did your manager say about your report?",
+      "qKo": "매니저가 보고서에 대해 뭐라고 했어요?",
+      "answer": "She pointed out a few areas I could improve.",
+      "answerKo": "개선할 수 있는 부분 몇 가지를 짚어 줬어요."
+    },
+    {
+      "id": "q40-5",
+      "day": 40,
+      "q": "Your friend has food on their face. What would you do?",
+      "qKo": "친구 얼굴에 음식이 묻었어요. 어떻게 할 거예요?",
+      "answer": "I’d point it out quietly.",
+      "answerKo": "조용히 알려 줄 거예요."
+    },
+    {
+      "id": "q40-6",
+      "day": 40,
+      "q": "How do you give feedback without hurting people?",
+      "qKo": "상처 주지 않고 피드백은 어떻게 줘요?",
+      "answer": "I point out what went well first, then the problems.",
+      "answerKo": "잘한 점을 먼저 말하고, 그다음 문제를 짚어요."
+    },
+    {
+      "id": "q41-1",
+      "day": 41,
+      "q": "How does your company launch new features?",
+      "qKo": "회사에서 새 기능은 어떻게 출시해요?",
+      "answer": "We roll them out to a small group of users first.",
+      "answerKo": "먼저 일부 사용자에게만 출시해요."
+    },
+    {
+      "id": "q41-2",
+      "day": 41,
+      "q": "What’s new at your company these days?",
+      "qKo": "요즘 회사에 새로운 일 있어요?",
+      "answer": "We’re rolling out a new dashboard next month.",
+      "answerKo": "다음 달에 새 대시보드를 출시해요."
+    },
+    {
+      "id": "q41-3",
+      "day": 41,
+      "q": "When is the new app update coming out?",
+      "qKo": "앱 업데이트는 언제 나와요?",
+      "answer": "It’s rolling out next week.",
+      "answerKo": "다음 주에 배포돼요."
+    },
+    {
+      "id": "q41-4",
+      "day": 41,
+      "q": "How is your company introducing the new policy?",
+      "qKo": "회사에서 새 정책은 어떻게 도입해요?",
+      "answer": "They’re rolling it out step by step.",
+      "answerKo": "단계적으로 도입하고 있어요."
+    },
+    {
+      "id": "q41-5",
+      "day": 41,
+      "q": "Is the new feature available to everyone?",
+      "qKo": "새 기능 모든 사람이 쓸 수 있어요?",
+      "answer": "Not yet. They’re rolling it out to some users first.",
+      "answerKo": "아직요. 일부 사용자에게 먼저 출시하고 있어요."
+    },
+    {
+      "id": "q41-6",
+      "day": 41,
+      "q": "What did your team do last month?",
+      "qKo": "지난달에 팀은 뭘 했어요?",
+      "answer": "We rolled out a new reporting system.",
+      "answerKo": "새 리포팅 시스템을 도입했어요."
+    },
+    {
+      "id": "q42-1",
+      "day": 42,
+      "q": "What’s the biggest achievement at your work this year?",
+      "qKo": "올해 회사에서 가장 큰 성과는 뭐예요?",
+      "answer": "Our team secured a deal with a big overseas client.",
+      "answerKo": "우리 팀이 큰 해외 고객과의 거래를 따냈어요."
+    },
+    {
+      "id": "q42-2",
+      "day": 42,
+      "q": "How do you feel when your team secures a big deal?",
+      "qKo": "팀이 큰 거래를 따내면 기분이 어때요?",
+      "answer": "I feel proud and motivated to do even better.",
+      "answerKo": "뿌듯하고 더 잘하고 싶은 의욕이 생겨요."
+    },
+    {
+      "id": "q42-3",
+      "day": 42,
+      "q": "How did your sales team do this quarter?",
+      "qKo": "영업팀은 이번 분기에 어땠어요?",
+      "answer": "They secured three big deals.",
+      "answerKo": "큰 거래를 세 건이나 따냈어요."
+    },
+    {
+      "id": "q42-4",
+      "day": 42,
+      "q": "How do you get a good price when you shop?",
+      "qKo": "쇼핑할 때 어떻게 좋은 가격에 사요?",
+      "answer": "I secure a good deal by comparing prices online.",
+      "answerKo": "온라인으로 가격을 비교해서 좋은 조건으로 사요."
+    },
+    {
+      "id": "q42-5",
+      "day": 42,
+      "q": "What did your boss say after the meeting?",
+      "qKo": "회의 끝나고 상사가 뭐라고 했어요?",
+      "answer": "He said we did really well in securing the contract.",
+      "answerKo": "우리가 계약을 따내는 데 정말 잘했다고 했어요."
+    },
+    {
+      "id": "q42-6",
+      "day": 42,
+      "q": "What would you do after a big win at work?",
+      "qKo": "회사에서 큰 성과를 내면 뭘 할 거예요?",
+      "answer": "If I secured a big deal, I’d take my team out for dinner.",
+      "answerKo": "큰 거래를 따내면 팀원들에게 저녁을 살 거예요."
+    },
+    {
+      "id": "q43-1",
+      "day": 43,
+      "q": "When did you last feel on top of the world?",
+      "qKo": "마지막으로 세상을 다 가진 기분이었던 때가 언제예요?",
+      "answer": "I felt on top of the world when I got my first job offer.",
+      "answerKo": "첫 입사 제안을 받았을 때 세상을 다 가진 기분이었어요."
+    },
+    {
+      "id": "q43-2",
+      "day": 43,
+      "q": "How would you feel if you got an unexpected bonus?",
+      "qKo": "예상치 못한 보너스를 받으면 기분이 어떨 것 같아요?",
+      "answer": "I’d feel on top of the world!",
+      "answerKo": "세상을 다 가진 기분일 거예요!"
+    },
+    {
+      "id": "q43-3",
+      "day": 43,
+      "q": "How did you feel when you passed your exam?",
+      "qKo": "시험에 합격했을 때 기분이 어땠어요?",
+      "answer": "I felt on top of the world!",
+      "answerKo": "세상을 다 가진 기분이었어요!"
+    },
+    {
+      "id": "q43-4",
+      "day": 43,
+      "q": "How do you feel after a good workout?",
+      "qKo": "운동 잘하고 나면 기분이 어때요?",
+      "answer": "I feel on top of the world and full of energy.",
+      "answerKo": "세상을 다 가진 것 같고 힘이 넘쳐요."
+    },
+    {
+      "id": "q43-5",
+      "day": 43,
+      "q": "What would make you really happy this year?",
+      "qKo": "올해 무엇이 당신을 정말 행복하게 할까요?",
+      "answer": "Getting a job abroad would make me feel on top of the world.",
+      "answerKo": "해외 취업을 하면 세상을 다 가진 기분일 거예요."
+    },
+    {
+      "id": "q43-6",
+      "day": 43,
+      "q": "How did you feel when your team praised you?",
+      "qKo": "팀이 칭찬해 줬을 때 기분이 어땠어요?",
+      "answer": "I felt on top of the world. It was a great day.",
+      "answerKo": "세상을 다 가진 기분이었어요. 최고의 하루였어요."
+    }
+  ],
+
   /* ---------- 오늘의 영상 ----------
      url: 유튜브 주소 (watch?v=, youtu.be/, shorts/ 모두 가능), title, note: 한 줄 메모, date: 추가한 날짜
      가장 최근 영상이 홈에 크게 나오고, 나머지는 목록에서 골라 볼 수 있어요 */

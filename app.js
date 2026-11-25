@@ -128,6 +128,19 @@ function todaySentences(reroll = false) {
   return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
+// 오늘의 질문: Dialog 표현으로 답하는 질문(data.js ask) 중 매일 6개, 🔄로 바꾸기
+const ask = C.ask || [];
+function todayQuestions(reroll = false) {
+  const st = dailyState();
+  const n = (st.an || 0) + (reroll ? 1 : 0);
+  if (reroll) writeJSON(DAILY_KEY, { ...st, an: n });
+  return seededShuffle(ask, dailySeed('q', n)).slice(0, 6);
+}
+// 질문에 쓴 답은 그날 하루 동안 이 기기에 저장
+const QA_KEY = 'my-english-qa';
+const loadQa = () => { const s = readJSON(QA_KEY, {}); return s.day === todayKey() ? s.answers || {} : {}; };
+const saveQa = (id, text) => writeJSON(QA_KEY, { day: todayKey(), answers: { ...loadQa(), [id]: text } });
+
 // 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 6개.
 // 날짜가 바뀌어도 그대로 두고, 🔄를 눌렀을 때만 새 6개로 바꿔요.
 // 저장 형태: { ids: [문제 id 6개], since: 이 세트를 시작한 시각 }
@@ -223,6 +236,8 @@ function renderHome(reroll = {}) {
   const last = latestDate();
   const tw = todayWords(reroll.words);
   const ts = todaySentences(reroll.sents);
+  const tq = todayQuestions(reroll.ask);
+  const qaAnswers = loadQa();
   const tc = todayWriting(reroll.write);
   const answers = loadAnswers();
   const dayOf = n => dialogs.find(d => d.day === n);
@@ -270,6 +285,29 @@ function renderHome(reroll = {}) {
         </div>`).join('')}</div>
       <button class="more-link" id="sents-all">모두 펼치기</button>`
     : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}
+
+    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>외운 표현으로 답하기</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 질문으로 새로고침">🔄</button>` : ''}</span></div>
+    ${tq.length ? `
+      <p class="muted small" style="margin:-2px 4px 8px">Dialog에서 외운 표현을 떠올려 영어로 답해 보세요. 소리 내어 말해도 좋아요. 막히면 💡 힌트!</p>
+      <div class="card vlist" id="asks">${tq.map((q, i) => {
+        const d = dayOf(q.day);
+        return `
+        <div class="vrow qa ask" data-id="${esc(q.id)}">
+          <div class="vhead-row"><div class="qa-q grow"><span class="sent-no">${i + 1}</span><span>${esc(q.q)}</span></div>${speakBtn(q.q)}</div>
+          ${q.qKo ? `<div class="ask-ko">${esc(q.qKo)}</div>` : ''}
+          <textarea class="comp-input ask-input" rows="2" placeholder="영어로 답해 보세요" autocapitalize="sentences" autocomplete="off" spellcheck="false">${esc(qaAnswers[q.id] || '')}</textarea>
+          <div class="ask-btns">
+            ${d ? `<button class="chip hint-toggle">💡 힌트 보기</button>` : ''}
+            <button class="chip ask-toggle">예시 답 보기</button>
+          </div>
+          ${d ? `<div class="ask-hint">써 볼 표현: <a href="#dialog/${encodeURIComponent(d.id)}"><b>${esc(d.key || '')}</b></a> <span class="muted">· ${esc(d.keyMeaning || '')} (Day ${d.day})</span></div>` : ''}
+          <div class="qa-a">
+            <div class="row-between"><div class="en grow">${esc(q.answer)}</div>${speakBtn(q.answer)}</div>
+            ${q.answerKo ? `<div class="ko">${esc(q.answerKo)}</div>` : ''}
+          </div>
+        </div>`;
+      }).join('')}</div>`
+    : ''}
 
     <div class="section-title">✍️ 오늘의 영작 <span class="title-right"><small>Dialog 응용</small>${tc.length ? `<button class="reroll" id="reroll-write" aria-label="다른 문제로 새로고침">🔄</button>` : ''}</span></div>
     ${tc.length ? `
@@ -325,6 +363,26 @@ function renderHome(reroll = {}) {
   $('#reroll-words')?.addEventListener('click', () => refresh({ words: true }, '새 단어 6개를 골랐어요'));
   $('#reroll-sents')?.addEventListener('click', () => refresh({ sents: true }, '새 문장 6개를 골랐어요'));
   $('#reroll-write')?.addEventListener('click', () => refresh({ write: true }, '새 영작 문제 6개를 골랐어요'));
+  $('#reroll-ask')?.addEventListener('click', () => refresh({ ask: true }, '새 질문 6개를 골랐어요'));
+
+  // 오늘의 질문: 답은 쓰는 대로 저장, 힌트·예시 답은 눌러서 보기
+  const asks = $('#asks');
+  if (asks) {
+    asks.addEventListener('input', e => {
+      const box = e.target.closest('.ask-input'); if (!box) return;
+      saveQa(box.closest('.ask').dataset.id, box.value);
+    });
+    asks.addEventListener('click', e => {
+      const row = e.target.closest('.ask'); if (!row) return;
+      if (e.target.closest('.hint-toggle')) {
+        const on = row.classList.toggle('hint-open');
+        e.target.closest('.hint-toggle').textContent = on ? '💡 힌트 접기' : '💡 힌트 보기';
+      } else if (e.target.closest('.ask-toggle')) {
+        const on = row.classList.toggle('open');
+        e.target.closest('.ask-toggle').textContent = on ? '예시 답 접기' : '예시 답 보기';
+      }
+    });
+  }
 
   // 오늘의 영작: 쓰는 대로 저장, 정답 보기에서 내 답과 비교
   const compose = $('#compose');

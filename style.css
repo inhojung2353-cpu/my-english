@@ -374,6 +374,17 @@ input[type=search], textarea { background: var(--surface); }
 .qa-a .en { font-size: 16px; line-height: 1.6; font-style: italic; }
 .qa-a .ko { font-size: 14px; color: var(--muted); margin-top: 2px; }
 
+/* 홈: 오늘의 질문 */
+.ask-ko { margin: 4px 0 0 32px; font-size: 13px; color: var(--muted); }
+.ask .comp-input { margin-left: 0; }
+.ask-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.ask .qa-a { margin-left: 0; }
+.ask-hint { display: none; margin-top: 10px; padding: 8px 10px; border-radius: 10px; background: var(--accent-soft); font-size: 14px; }
+.ask-hint a { color: var(--primary); }
+.ask.hint-open .ask-hint { display: block; }
+.ask.hint-open .hint-toggle { background: var(--accent-soft); border-color: var(--accent); }
+.ask.open .ask-toggle { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+
 /* 홈: 🔄 새로고침 버튼 */
 .title-right { display: inline-flex; align-items: center; gap: 8px; }
 .reroll { width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 15px; line-height: 1; cursor: pointer; display: grid; place-items: center; }
