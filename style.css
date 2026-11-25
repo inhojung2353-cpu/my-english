@@ -377,8 +377,10 @@ input[type=search], textarea { background: var(--surface); }
 .qa-a .ko { font-size: 14px; color: var(--muted); margin-top: 2px; }
 
 /* 홈: 오늘의 질문 */
-.ask-ko { margin: 4px 0 0 32px; font-size: 13px; color: var(--muted); }
-.ask .comp-input { margin-left: 0; }
+.ask-ko { margin: 4px 0 0 32px; font-size: 13px; color: var(--muted); cursor: pointer; }
+.ask-ko-text { filter: blur(5px); transition: filter .2s; user-select: none; }
+.ask.ko-open .ask-ko-text { filter: none; user-select: auto; }
+.ask:not(.ko-open) .ask-ko::after { content: '해석'; margin-left: 6px; font-size: 11px; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 0 7px; }
 .ask-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
 .ask .qa-a { margin-left: 0; }
 .ask-hint { display: none; margin-top: 10px; padding: 8px 10px; border-radius: 10px; background: var(--accent-soft); font-size: 14px; }
