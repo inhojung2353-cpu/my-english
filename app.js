@@ -128,13 +128,24 @@ function todaySentences(reroll = false) {
   return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
-// 오늘의 질문: Dialog 표현으로 답하는 질문(data.js ask) 중 매일 6개, 🔄로 바꾸기
+// 오늘의 질문: 정답이 Dialog 문장 그대로인 질문(data.js ask) 중 매일 6개, 🔄로 바꾸기
+// 정답은 Dialog 원문(day + li번째 줄)에서 바로 가져와요. 같은 날 같은 정답이 두 번 나오지 않게
 const ask = C.ask || [];
 function todayQuestions(reroll = false) {
   const st = dailyState();
   const n = (st.an || 0) + (reroll ? 1 : 0);
   if (reroll) writeJSON(DAILY_KEY, { ...st, an: n });
-  return seededShuffle(ask, dailySeed('q', n)).slice(0, 6);
+  const seen = new Set(), out = [];
+  for (const q of seededShuffle(ask, dailySeed('q', n))) {
+    const d = dialogs.find(x => x.day === q.day);
+    const line = d && (d.lines || [])[q.li];
+    const key = `${q.day}|${q.li}`;
+    if (!line || seen.has(key)) continue;
+    seen.add(key);
+    out.push({ ...q, answer: line.en, answerKo: line.ko });
+    if (out.length === 6) break;
+  }
+  return out;
 }
 
 // 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 6개.
@@ -281,23 +292,25 @@ function renderHome(reroll = {}) {
       <button class="more-link" id="sents-all">모두 펼치기</button>`
     : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}
 
-    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>외운 표현으로 답하기</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 질문으로 새로고침">🔄</button>` : ''}</span></div>
+    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>Dialog 문장으로 답하기</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 질문으로 새로고침">🔄</button>` : ''}</span></div>
     ${tq.length ? `
-      <p class="muted small" style="margin:-2px 4px 8px">Dialog에서 외운 표현을 떠올려 소리 내어 영어로 답해 보세요. 해석은 눌러서 보고, 막히면 💡 힌트!</p>
+      <p class="muted small" style="margin:-2px 4px 8px">외운 Dialog 문장 그대로 소리 내어 답해 보세요. 해석은 눌러서 보고, 막히면 💡 힌트!</p>
       <div class="card vlist" id="asks">${tq.map((q, i) => {
         const d = dayOf(q.day);
+        const start = q.answer.replace(/^[“"]/, '').split(/\s+/).slice(0, 2).join(' ');
         return `
         <div class="vrow qa ask" data-id="${esc(q.id)}">
           <div class="vhead-row"><div class="qa-q grow"><span class="sent-no">${i + 1}</span><span>${esc(q.q)}</span></div>${speakBtn(q.q)}</div>
           ${q.qKo ? `<div class="ask-ko" role="button" tabindex="0" title="눌러서 해석 보기"><span class="ask-ko-text">${esc(q.qKo)}</span></div>` : ''}
           <div class="ask-btns">
             ${d ? `<button class="chip hint-toggle">💡 힌트 보기</button>` : ''}
-            <button class="chip ask-toggle">예시 답 보기</button>
+            <button class="chip ask-toggle">정답 보기</button>
           </div>
-          ${d ? `<div class="ask-hint">써 볼 표현: <a href="#dialog/${encodeURIComponent(d.id)}"><b>${esc(d.key || '')}</b></a> <span class="muted">· ${esc(d.keyMeaning || '')} (Day ${d.day})</span></div>` : ''}
+          ${d ? `<div class="ask-hint">📍 <b>Day ${d.day}</b> · ${esc(d.key || '')} <span class="muted">(${esc(d.title || '')})</span><br>“<b>${esc(start)}</b> …”로 시작해요</div>` : ''}
           <div class="qa-a">
             <div class="row-between"><div class="en grow">${esc(q.answer)}</div>${speakBtn(q.answer)}</div>
             ${q.answerKo ? `<div class="ko">${esc(q.answerKo)}</div>` : ''}
+            ${d ? `<a class="sent-src" href="#dialog/${encodeURIComponent(d.id)}">Day ${d.day} 대화에서 보기 ›</a>` : ''}
           </div>
         </div>`;
       }).join('')}</div>`
@@ -371,7 +384,7 @@ function renderHome(reroll = {}) {
         e.target.closest('.hint-toggle').textContent = on ? '💡 힌트 접기' : '💡 힌트 보기';
       } else if (e.target.closest('.ask-toggle')) {
         const on = row.classList.toggle('open');
-        e.target.closest('.ask-toggle').textContent = on ? '예시 답 접기' : '예시 답 보기';
+        e.target.closest('.ask-toggle').textContent = on ? '정답 접기' : '정답 보기';
       }
     });
   }
