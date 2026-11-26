@@ -128,24 +128,16 @@ function todaySentences(reroll = false) {
   return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
-// 오늘의 질문: 정답이 Dialog 문장 그대로인 질문(data.js ask) 중 매일 6개, 🔄로 바꾸기
-// 정답은 Dialog 원문(day + li번째 줄)에서 바로 가져와요. 같은 날 같은 정답이 두 번 나오지 않게
+// 오늘의 질문: 한글 문장을 보고 영어로 말하기 (data.js ask)
+// 매일 IT 회사 상황 6개 + 일상 4개를 섞어서 10개, 🔄로 바꾸기
 const ask = C.ask || [];
 function todayQuestions(reroll = false) {
   const st = dailyState();
   const n = (st.an || 0) + (reroll ? 1 : 0);
   if (reroll) writeJSON(DAILY_KEY, { ...st, an: n });
-  const seen = new Set(), out = [];
-  for (const q of seededShuffle(ask, dailySeed('q', n))) {
-    const d = dialogs.find(x => x.day === q.day);
-    const line = d && (d.lines || [])[q.li];
-    const key = `${q.day}|${q.li}`;
-    if (!line || seen.has(key)) continue;
-    seen.add(key);
-    out.push({ ...q, answer: line.en, answerKo: line.ko });
-    if (out.length === 6) break;
-  }
-  return out;
+  const it = seededShuffle(ask.filter(q => q.type === 'it'), dailySeed('qi', n)).slice(0, 6);
+  const life = seededShuffle(ask.filter(q => q.type !== 'it'), dailySeed('ql', n)).slice(0, 4);
+  return seededShuffle([...it, ...life], dailySeed('qm', n));
 }
 
 // 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 6개.
@@ -220,24 +212,6 @@ function compareHtml(mine, model) {
 // 비교할 때 둥근 따옴표·대소문자 차이는 무시
 const normEn = t => t.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
 
-// 유튜브 주소에서 영상 ID 뽑기 (watch?v=, youtu.be/, shorts/, embed/, live/)
-function youtubeId(url = '') {
-  const m = url.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})/);
-  return m ? m[1] : (/^[\w-]{11}$/.test(url) ? url : null);
-}
-const embedUrl = id => `https://www.youtube-nocookie.com/embed/${id}?rel=0&playsinline=1`;
-
-// 앱에서 직접 추가한 영상은 이 기기에만 저장돼요
-const VIDEO_KEY = 'my-english-videos';
-const myVideos = () => readJSON(VIDEO_KEY, []);
-const saveMyVideos = list => writeJSON(VIDEO_KEY, list);
-function allVideos() {
-  const fromData = (C.videos || []).map((v, i) => ({ ...v, ts: i, mine: false }));
-  const mine = myVideos().map(v => ({ ...v, mine: true }));
-  return [...fromData, ...mine].map(v => ({ ...v, vid: youtubeId(v.url) })).filter(v => v.vid)
-    .sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.ts || 0) - (a.ts || 0));
-}
-
 function renderHome(reroll = {}) {
   setTitle('My English');
   const last = latestDate();
@@ -247,8 +221,6 @@ function renderHome(reroll = {}) {
   const tc = todayWriting(reroll.write);
   const answers = loadAnswers();
   const dayOf = n => dialogs.find(d => d.day === n);
-  const videos = allVideos();
-  const main = videos[0];
   const today = new Date();
   const todayLabel = `${today.getMonth() + 1}월 ${today.getDate()}일`;
 
@@ -292,28 +264,22 @@ function renderHome(reroll = {}) {
       <button class="more-link" id="sents-all">모두 펼치기</button>`
     : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}
 
-    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>Dialog 문장으로 답하기</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 질문으로 새로고침">🔄</button>` : ''}</span></div>
+    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>한글 → 영어로 말하기</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 문장으로 새로고침">🔄</button>` : ''}</span></div>
     ${tq.length ? `
-      <p class="muted small" style="margin:-2px 4px 8px">외운 Dialog 문장 그대로 소리 내어 답해 보세요. 해석은 눌러서 보고, 막히면 💡 힌트!</p>
-      <div class="card vlist" id="asks">${tq.map((q, i) => {
-        const d = dayOf(q.day);
-        const start = q.answer.replace(/^[“"]/, '').split(/\s+/).slice(0, 2).join(' ');
-        return `
+      <p class="muted small" style="margin:-2px 4px 8px">한글 문장을 보고 소리 내어 영어로 말해 보세요. 막히면 💡 힌트, 다 말했으면 정답 보기!</p>
+      <div class="card vlist" id="asks">${tq.map((q, i) => `
         <div class="vrow qa ask" data-id="${esc(q.id)}">
-          <div class="vhead-row"><div class="qa-q grow"><span class="sent-no">${i + 1}</span><span>${esc(q.q)}</span></div>${speakBtn(q.q)}</div>
-          ${q.qKo ? `<div class="ask-ko" role="button" tabindex="0" title="눌러서 해석 보기"><span class="ask-ko-text">${esc(q.qKo)}</span></div>` : ''}
+          <div class="ask-head"><span class="sent-no">${i + 1}</span><span class="ask-tag ${q.type === 'it' ? 'it' : 'life'}">${q.type === 'it' ? '💼 회사' : '🏠 일상'}</span></div>
+          <div class="ask-ko-main">${esc(q.ko)}</div>
           <div class="ask-btns">
-            ${d ? `<button class="chip hint-toggle">💡 힌트 보기</button>` : ''}
+            ${(q.hints || []).length ? `<button class="chip hint-toggle">💡 힌트 보기</button>` : ''}
             <button class="chip ask-toggle">정답 보기</button>
           </div>
-          ${d ? `<div class="ask-hint">📍 <b>Day ${d.day}</b> · ${esc(d.key || '')} <span class="muted">(${esc(d.title || '')})</span><br>“<b>${esc(start)}</b> …”로 시작해요</div>` : ''}
+          ${(q.hints || []).length ? `<div class="ask-hint">써 볼 표현: ${q.hints.map(h => `<span class="hint-chip">${esc(h)}</span>`).join(' ')}</div>` : ''}
           <div class="qa-a">
-            <div class="row-between"><div class="en grow">${esc(q.answer)}</div>${speakBtn(q.answer)}</div>
-            ${q.answerKo ? `<div class="ko">${esc(q.answerKo)}</div>` : ''}
-            ${d ? `<a class="sent-src" href="#dialog/${encodeURIComponent(d.id)}">Day ${d.day} 대화에서 보기 ›</a>` : ''}
+            <div class="row-between"><div class="en grow">${esc(q.en)}</div>${speakBtn(q.en)}</div>
           </div>
-        </div>`;
-      }).join('')}</div>`
+        </div>`).join('')}</div>`
     : ''}
 
     <div class="section-title">✍️ 오늘의 영작 <span class="title-right"><small>Dialog 응용</small>${tc.length ? `<button class="reroll" id="reroll-write" aria-label="다른 문제로 새로고침">🔄</button>` : ''}</span></div>
@@ -337,49 +303,21 @@ function renderHome(reroll = {}) {
       }).join('')}</div>
       <a class="more-link" href="#dialogs/mine">쓴 영작은 저장돼요 · 지난 영작 보기 ›</a>`
     : ''}
-
-    <div class="section-title">🎬 오늘의 영상</div>
-    ${main ? `
-      <div class="card video-card">
-        <div class="video-wrap"><iframe id="yt" src="${embedUrl(main.vid)}" title="${esc(main.title || 'YouTube video')}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
-        <div class="video-meta">
-          <b id="yt-title">${esc(main.title || '오늘의 영상')}</b>
-          <div class="muted small" id="yt-note">${esc(main.note || '')}</div>
-        </div>
-      </div>
-      ${videos.length > 1 ? `
-        <div class="card vlist">${videos.map((v, i) => `
-          <div class="vrow video-item ${i === 0 ? 'on' : ''}" data-v="${i}" role="button" tabindex="0">
-            <span class="grow">${esc(v.title || '제목 없는 영상')}</span>
-            <span class="muted small">${v.date ? esc(v.date.slice(5).replace('-', '.')) : ''}</span>
-            ${v.mine ? `<button class="video-del" data-del="${esc(String(v.ts))}" aria-label="영상 삭제">✕</button>` : ''}
-          </div>`).join('')}</div>`
-      : main.mine ? `<button class="more-link" data-del="${esc(String(main.ts))}">이 영상 삭제</button>` : ''}`
-    : `<div class="card empty"><span class="big">🎬</span>아직 영상이 없어요<br><span class="small">아래에 유튜브 링크를 붙여 넣어 추가해 보세요</span></div>`}
-
-    <div class="card video-add">
-      <b>＋ 영상 추가</b>
-      <input type="url" id="v-url" placeholder="유튜브 링크 붙여 넣기" autocomplete="off" inputmode="url">
-      <input type="text" id="v-title" placeholder="제목 (선택)" autocomplete="off">
-      <button class="btn primary block" id="v-add">추가하기</button>
-      <p class="muted small" style="margin:8px 2px 0">추가한 영상은 이 기기에만 저장돼요. 가장 최근에 추가한 영상이 위에 크게 나와요.</p>
-    </div>`;
+`;
 
   // 🔄 새로고침: 화면 위치는 그대로 두고 그 영역만 새 6개로
   const refresh = (opt, msg) => { const y = window.scrollY; renderHome(opt); window.scrollTo(0, y); toast(msg); };
   $('#reroll-words')?.addEventListener('click', () => refresh({ words: true }, '새 단어 6개를 골랐어요'));
   $('#reroll-sents')?.addEventListener('click', () => refresh({ sents: true }, '새 문장 6개를 골랐어요'));
   $('#reroll-write')?.addEventListener('click', () => refresh({ write: true }, '새 영작 문제 6개를 골랐어요'));
-  $('#reroll-ask')?.addEventListener('click', () => refresh({ ask: true }, '새 질문 6개를 골랐어요'));
+  $('#reroll-ask')?.addEventListener('click', () => refresh({ ask: true }, '새 문장 10개를 골랐어요'));
 
-  // 오늘의 질문: 해석·힌트·예시 답은 눌러서 보기
+  // 오늘의 질문: 힌트·정답은 눌러서 보기
   const asks = $('#asks');
   if (asks) {
     asks.addEventListener('click', e => {
       const row = e.target.closest('.ask'); if (!row) return;
-      if (e.target.closest('.ask-ko')) {
-        row.classList.toggle('ko-open');
-      } else if (e.target.closest('.hint-toggle')) {
+      if (e.target.closest('.hint-toggle')) {
         const on = row.classList.toggle('hint-open');
         e.target.closest('.hint-toggle').textContent = on ? '💡 힌트 접기' : '💡 힌트 보기';
       } else if (e.target.closest('.ask-toggle')) {
@@ -435,40 +373,6 @@ function renderHome(reroll = {}) {
       e.target.textContent = open ? '모두 접기' : '모두 펼치기';
     };
   }
-
-  // 지난 영상 고르기
-  const pick = item => {
-    const v = videos[Number(item.dataset.v)];
-    $('#yt').src = embedUrl(v.vid);
-    $('#yt-title').textContent = v.title || '영상';
-    $('#yt-note').textContent = v.note || '';
-    $$('.video-item').forEach(x => x.classList.toggle('on', x === item));
-    $('.video-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-  $$('.video-item').forEach(item => {
-    item.addEventListener('click', e => { if (!e.target.closest('[data-del]')) pick(item); });
-    item.addEventListener('keydown', e => { if (e.key === 'Enter') pick(item); });
-  });
-
-  // 영상 삭제 (앱에서 추가한 영상만)
-  $$('[data-del]').forEach(btn => btn.addEventListener('click', e => {
-    e.stopPropagation();
-    if (!confirm('이 영상을 목록에서 삭제할까요?')) return;
-    saveMyVideos(myVideos().filter(v => String(v.ts) !== btn.dataset.del));
-    renderHome(); toast('삭제했어요');
-  }));
-
-  // 영상 추가
-  $('#v-add').onclick = () => {
-    const url = $('#v-url').value.trim();
-    const title = $('#v-title').value.trim();
-    if (!youtubeId(url)) { toast('유튜브 링크가 맞는지 확인해 주세요'); $('#v-url').focus(); return; }
-    if (allVideos().some(v => v.vid === youtubeId(url))) { toast('이미 추가된 영상이에요'); return; }
-    saveMyVideos([...myVideos(), { url, title, date: todayKey(), ts: Date.now() }]);
-    renderHome();
-    toast('영상을 추가했어요 🎬');
-    $('.video-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
 }
 
 /* ---------- 단어 ---------- */

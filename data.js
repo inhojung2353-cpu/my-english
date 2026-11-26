@@ -10370,2520 +10370,1873 @@ window.CONTENT = {
     }
   ],
 
-  /* ---------- 오늘의 질문 ----------
-     정답이 Dialog 문장 그대로인 질문. day + li: 정답이 되는 Dialog 줄(0부터),
-     q / qKo: 질문과 해석. 한 문장에 여러 질문이 있어 다양하게 연습할 수 있어요 */
+  /* ---------- 오늘의 질문 (한글 → 영어로 말하기) ----------
+     type: 'it'(IT 회사 상황) / 'life'(일상), ko: 한글 문장, en: 영어 정답,
+     hints: 써 볼 표현 (단어 탭 + Dialog 표현). 매일 IT 6개 + 일상 4개가 나와요 */
   ask: [
     {
-      "id": "a01-03-1",
-      "day": 1,
-      "li": 3,
-      "q": "Byung-chul? Are you serious?",
-      "qKo": "병철이? 진심이야?"
-    },
-    {
-      "id": "a01-03-2",
-      "day": 1,
-      "li": 3,
-      "q": "Why did you suggest the name Byung-chul?",
-      "qKo": "왜 병철이라는 이름을 제안했어?"
-    },
-    {
-      "id": "a01-04-1",
-      "day": 1,
-      "li": 4,
-      "q": "So, are we going with Byung-chul or not?",
-      "qKo": "그래서 병철이로 하는 거야, 마는 거야?"
-    },
-    {
-      "id": "a01-04-2",
-      "day": 1,
-      "li": 4,
-      "q": "Do you want to keep thinking about the baby’s name?",
-      "qKo": "아기 이름 더 생각해 보고 싶어?"
-    },
-    {
-      "id": "a02-00-1",
-      "day": 2,
-      "li": 0,
-      "q": "What do you think of this drama?",
-      "qKo": "이 드라마 어떻게 생각해?"
-    },
-    {
-      "id": "a02-00-2",
-      "day": 2,
-      "li": 0,
-      "q": "Why did you stop on this channel?",
-      "qKo": "왜 이 채널에서 멈췄어?"
-    },
-    {
-      "id": "a02-01-1",
-      "day": 2,
-      "li": 1,
-      "q": "Have you seen this drama before?",
-      "qKo": "이 드라마 전에 본 적 있어?"
-    },
-    {
-      "id": "a02-01-2",
-      "day": 2,
-      "li": 1,
-      "q": "When did you watch it?",
-      "qKo": "그거 언제 봤어?"
-    },
-    {
-      "id": "a02-03-1",
-      "day": 2,
-      "li": 3,
-      "q": "You did? How was it?",
-      "qKo": "그래? 어땠어?"
-    },
-    {
-      "id": "a02-03-2",
-      "day": 2,
-      "li": 3,
-      "q": "Was the ending good?",
-      "qKo": "결말은 괜찮았어?"
-    },
-    {
-      "id": "a02-05-1",
-      "day": 2,
-      "li": 5,
-      "q": "Would you recommend it?",
-      "qKo": "추천할 만해?"
-    },
-    {
-      "id": "a02-05-2",
-      "day": 2,
-      "li": 5,
-      "q": "Do you think I should watch it?",
-      "qKo": "내가 그거 봐야 할까?"
-    },
-    {
-      "id": "a03-00-1",
-      "day": 3,
-      "li": 0,
-      "q": "What happened at work today?",
-      "qKo": "오늘 회사에서 무슨 일 있었어?"
-    },
-    {
-      "id": "a03-00-2",
-      "day": 3,
-      "li": 0,
-      "q": "What did your manager ask you to do?",
-      "qKo": "매니저가 뭘 해 달라고 했어?"
-    },
-    {
-      "id": "a03-01-1",
-      "day": 3,
-      "li": 1,
-      "q": "Why didn’t you analyze the data more deeply?",
-      "qKo": "왜 데이터를 더 깊이 분석하지 못했어?"
-    },
-    {
-      "id": "a03-01-2",
-      "day": 3,
-      "li": 1,
-      "q": "How did the analysis go?",
-      "qKo": "분석은 어떻게 됐어?"
-    },
-    {
-      "id": "a03-02-1",
-      "day": 3,
-      "li": 2,
-      "q": "Why did your manager get upset?",
-      "qKo": "매니저가 왜 화가 났어?"
-    },
-    {
-      "id": "a03-02-2",
-      "day": 3,
-      "li": 2,
-      "q": "How did your manager react?",
-      "qKo": "매니저 반응은 어땠어?"
-    },
-    {
-      "id": "a03-03-1",
-      "day": 3,
-      "li": 3,
-      "q": "Did you just not care about the project?",
-      "qKo": "그 프로젝트에 그냥 신경을 안 쓴 거야?"
-    },
-    {
-      "id": "a03-03-2",
-      "day": 3,
-      "li": 3,
-      "q": "Do you think you did it carelessly?",
-      "qKo": "네가 대충 했다고 생각해?"
-    },
-    {
-      "id": "a03-05-1",
-      "day": 3,
-      "li": 5,
-      "q": "What did you do exactly?",
-      "qKo": "정확히 뭘 했는데?"
-    },
-    {
-      "id": "a03-05-2",
-      "day": 3,
-      "li": 5,
-      "q": "Which tools did you use for the project?",
-      "qKo": "그 프로젝트에 어떤 툴을 썼어?"
-    },
-    {
-      "id": "a04-00-1",
-      "day": 4,
-      "li": 0,
-      "q": "Why are you in such a hurry?",
-      "qKo": "왜 그렇게 서둘러?"
-    },
-    {
-      "id": "a04-00-2",
-      "day": 4,
-      "li": 0,
-      "q": "Can we stay a little longer?",
-      "qKo": "조금 더 있다 가도 돼?"
-    },
-    {
-      "id": "a04-01-1",
-      "day": 4,
-      "li": 1,
-      "q": "It’s raining, and we might be late. What should we do?",
-      "qKo": "비도 오고 늦을 수도 있어. 어떡하지?"
-    },
-    {
-      "id": "a04-01-2",
-      "day": 4,
-      "li": 1,
-      "q": "Do you think we’ll make it on time?",
-      "qKo": "우리 제시간에 갈 수 있을까?"
-    },
-    {
-      "id": "a04-02-1",
-      "day": 4,
-      "li": 2,
-      "q": "Should we just take a taxi?",
-      "qKo": "그냥 택시 탈까?"
-    },
-    {
-      "id": "a04-02-2",
-      "day": 4,
-      "li": 2,
-      "q": "Are we going to miss the bus?",
-      "qKo": "우리 버스 놓치는 거 아니야?"
-    },
-    {
-      "id": "a04-03-1",
-      "day": 4,
-      "li": 3,
-      "q": "What should we do after church?",
-      "qKo": "예배 끝나고 뭐 할까?"
-    },
-    {
-      "id": "a04-03-2",
-      "day": 4,
-      "li": 3,
-      "q": "How are you feeling right now?",
-      "qKo": "지금 컨디션 어때?"
-    },
-    {
-      "id": "a05-00-1",
-      "day": 5,
-      "li": 0,
-      "q": "What do you say to a teammate who keeps making decisions alone?",
-      "qKo": "계속 혼자 결정하는 팀원에게 뭐라고 할 거야?"
-    },
-    {
-      "id": "a05-00-2",
-      "day": 5,
-      "li": 0,
-      "q": "Why are you upset with Molly?",
-      "qKo": "왜 몰리한테 화가 났어?"
-    },
-    {
-      "id": "a06-00-1",
-      "day": 6,
-      "li": 0,
-      "q": "What’s wrong? Why are you looking at that document?",
-      "qKo": "왜 그래? 왜 저 서류를 보고 있어?"
-    },
-    {
-      "id": "a06-00-2",
-      "day": 6,
-      "li": 0,
-      "q": "Did your coworker send the document yet?",
-      "qKo": "동료가 서류 벌써 보냈어?"
-    },
-    {
-      "id": "a06-01-1",
-      "day": 6,
-      "li": 1,
-      "q": "Have you mailed the document yet?",
-      "qKo": "서류 부쳤어?"
-    },
-    {
-      "id": "a06-01-2",
-      "day": 6,
-      "li": 1,
-      "q": "Did you forget about the document?",
-      "qKo": "서류 잊어버린 거야?"
-    },
-    {
-      "id": "a06-02-1",
-      "day": 6,
-      "li": 2,
-      "q": "When does the document need to be sent?",
-      "qKo": "서류는 언제까지 보내야 해?"
-    },
-    {
-      "id": "a06-02-2",
-      "day": 6,
-      "li": 2,
-      "q": "Is there any rush with the mail?",
-      "qKo": "우편 보내는 거 급한 거야?"
-    },
-    {
-      "id": "a06-03-1",
-      "day": 6,
-      "li": 3,
-      "q": "When are you going to mail it?",
-      "qKo": "언제 부칠 거야?"
-    },
-    {
-      "id": "a06-03-2",
-      "day": 6,
-      "li": 3,
-      "q": "Can you send it in the next couple of days?",
-      "qKo": "이삼일 안에 보낼 수 있어?"
-    },
-    {
-      "id": "a06-04-1",
-      "day": 6,
-      "li": 4,
-      "q": "Is there anything else I should be careful about?",
-      "qKo": "또 조심해야 할 게 있어?"
-    },
-    {
-      "id": "a06-04-2",
-      "day": 6,
-      "li": 4,
-      "q": "Why are you so worried about this letter?",
-      "qKo": "이 편지 왜 그렇게 걱정해?"
-    },
-    {
-      "id": "a07-01-1",
-      "day": 7,
-      "li": 1,
-      "q": "So, what’s new in AI?",
-      "qKo": "요즘 AI 쪽에 새로운 거 있어?"
-    },
-    {
-      "id": "a07-01-2",
-      "day": 7,
-      "li": 1,
-      "q": "Have you heard any big AI news lately?",
-      "qKo": "최근에 AI 관련 큰 뉴스 들었어?"
-    },
-    {
-      "id": "a07-02-1",
-      "day": 7,
-      "li": 2,
-      "q": "There hasn’t been much news in AI lately. Is that bad?",
-      "qKo": "요즘 AI 소식이 별로 없네. 안 좋은 걸까?"
-    },
-    {
-      "id": "a07-02-2",
-      "day": 7,
-      "li": 2,
-      "q": "Do you think it’s good that AI is moving slower?",
-      "qKo": "AI 발전이 느려지는 게 좋은 일이라고 생각해?"
-    },
-    {
-      "id": "a07-03-1",
-      "day": 7,
-      "li": 3,
-      "q": "Are people still worried about AI developing too fast?",
-      "qKo": "사람들이 아직도 AI가 너무 빨리 발전하는 걸 걱정해?"
-    },
-    {
-      "id": "a07-03-2",
-      "day": 7,
-      "li": 3,
-      "q": "Do you think AI is moving too fast?",
-      "qKo": "AI가 너무 빨리 발전한다고 생각해?"
-    },
-    {
-      "id": "a08-01-1",
-      "day": 8,
-      "li": 1,
-      "q": "Where should we put this?",
-      "qKo": "이거 어디에 둘까?"
-    },
-    {
-      "id": "a08-01-2",
-      "day": 8,
-      "li": 1,
-      "q": "We don’t have any room for the new shelf. Any ideas?",
-      "qKo": "새 선반 둘 자리가 없어. 좋은 생각 있어?"
-    },
-    {
-      "id": "a08-02-1",
-      "day": 8,
-      "li": 2,
-      "q": "How about we move that table somewhere else?",
-      "qKo": "저 테이블을 다른 데로 옮기는 건 어때?"
-    },
-    {
-      "id": "a08-02-2",
-      "day": 8,
-      "li": 2,
-      "q": "What do you think of my idea?",
-      "qKo": "내 아이디어 어때?"
-    },
-    {
-      "id": "a08-03-1",
-      "day": 8,
-      "li": 3,
-      "q": "Are you sure it’s okay to move the table?",
-      "qKo": "테이블 옮겨도 정말 괜찮아?"
-    },
-    {
-      "id": "a08-03-2",
-      "day": 8,
-      "li": 3,
-      "q": "Won’t we need that table?",
-      "qKo": "저 테이블 필요하지 않을까?"
-    },
-    {
-      "id": "a09-01-1",
-      "day": 9,
-      "li": 1,
-      "q": "Do you think I should get an electric car?",
-      "qKo": "나 전기차 사는 게 좋을까?"
-    },
-    {
-      "id": "a09-01-2",
-      "day": 9,
-      "li": 1,
-      "q": "Is an electric car a good choice for me?",
-      "qKo": "전기차가 나한테 좋은 선택일까?"
-    },
-    {
-      "id": "a10-01-1",
-      "day": 10,
-      "li": 1,
-      "q": "How was work today?",
-      "qKo": "오늘 일 어땠어?"
-    },
-    {
-      "id": "a10-01-2",
-      "day": 10,
-      "li": 1,
-      "q": "You look exhausted. Was it a long day?",
-      "qKo": "지쳐 보이네. 긴 하루였어?"
-    },
-    {
-      "id": "a10-03-1",
-      "day": 10,
-      "li": 3,
-      "q": "Why was work so busy today?",
-      "qKo": "오늘 왜 그렇게 바빴어?"
-    },
-    {
-      "id": "a10-03-2",
-      "day": 10,
-      "li": 3,
-      "q": "What made today so tiring?",
-      "qKo": "오늘 뭐 때문에 그렇게 피곤했어?"
-    },
-    {
-      "id": "a10-04-1",
-      "day": 10,
-      "li": 4,
-      "q": "Today was such a hard day for me.",
-      "qKo": "오늘 나한테 정말 힘든 하루였어."
-    },
-    {
-      "id": "a10-04-2",
-      "day": 10,
-      "li": 4,
-      "q": "What do you say to a friend who had a bad day?",
-      "qKo": "힘든 하루를 보낸 친구에게 뭐라고 해?"
-    },
-    {
-      "id": "a11-01-1",
-      "day": 11,
-      "li": 1,
-      "q": "Do you think working overtime is a bad thing?",
-      "qKo": "야근하는 게 나쁜 거라고 생각해?"
-    },
-    {
-      "id": "a11-01-2",
-      "day": 11,
-      "li": 1,
-      "q": "Is staying late at work always bad?",
-      "qKo": "회사에 늦게까지 있는 건 항상 나빠?"
-    },
-    {
-      "id": "a11-02-1",
-      "day": 11,
-      "li": 2,
-      "q": "Overtime can be helpful sometimes, right?",
-      "qKo": "야근이 가끔은 도움이 되잖아, 그렇지?"
-    },
-    {
-      "id": "a11-02-2",
-      "day": 11,
-      "li": 2,
-      "q": "What do you think about working late every week?",
-      "qKo": "매주 늦게까지 일하는 거 어떻게 생각해?"
-    },
-    {
-      "id": "a11-03-1",
-      "day": 11,
-      "li": 3,
-      "q": "So is overtime good or bad?",
-      "qKo": "그래서 야근은 좋은 거야, 나쁜 거야?"
-    },
-    {
-      "id": "a11-03-2",
-      "day": 11,
-      "li": 3,
-      "q": "Can too much overtime be a problem?",
-      "qKo": "야근을 너무 많이 하면 문제가 될까?"
-    },
-    {
-      "id": "a11-04-1",
-      "day": 11,
-      "li": 4,
-      "q": "Overtime is fine, but too much can lead to burnout.",
-      "qKo": "야근은 괜찮지만, 너무 많으면 번아웃이 올 수 있어."
-    },
-    {
-      "id": "a11-04-2",
-      "day": 11,
-      "li": 4,
-      "q": "What’s the key to working overtime in a healthy way?",
-      "qKo": "건강하게 야근하는 비결이 뭘까?"
-    },
-    {
-      "id": "a12-01-1",
-      "day": 12,
-      "li": 1,
-      "q": "What do you want for lunch?",
-      "qKo": "점심 뭐 먹고 싶어?"
-    },
-    {
-      "id": "a12-01-2",
-      "day": 12,
-      "li": 1,
-      "q": "Should we eat at our desks again today?",
-      "qKo": "오늘도 자리에서 먹을까?"
-    },
-    {
-      "id": "a12-03-1",
-      "day": 12,
-      "li": 3,
-      "q": "Where do you want to go for lunch?",
-      "qKo": "점심 어디로 가고 싶어?"
-    },
-    {
-      "id": "a12-03-2",
-      "day": 12,
-      "li": 3,
-      "q": "Do you know any good places to eat around here?",
-      "qKo": "이 근처에 맛집 알아?"
-    },
-    {
-      "id": "a12-04-1",
-      "day": 12,
-      "li": 4,
-      "q": "Shall we go to that new brunch place?",
-      "qKo": "그 새로 생긴 브런치 가게 갈까?"
-    },
-    {
-      "id": "a12-04-2",
-      "day": 12,
-      "li": 4,
-      "q": "Are you ready to go out for lunch?",
-      "qKo": "점심 먹으러 나갈 준비 됐어?"
-    },
-    {
-      "id": "a12-05-1",
-      "day": 12,
-      "li": 5,
-      "q": "Should we take a taxi to the restaurant?",
-      "qKo": "식당까지 택시 탈까?"
-    },
-    {
-      "id": "a12-05-2",
-      "day": 12,
-      "li": 5,
-      "q": "How should we get there?",
-      "qKo": "거기 어떻게 갈까?"
-    },
-    {
-      "id": "a13-00-1",
-      "day": 13,
-      "li": 0,
-      "q": "How was my presentation?",
-      "qKo": "내 발표 어땠어?"
-    },
-    {
-      "id": "a13-00-2",
-      "day": 13,
-      "li": 0,
-      "q": "What do you say to a coworker after a great presentation?",
-      "qKo": "발표를 잘한 동료에게 뭐라고 해?"
-    },
-    {
-      "id": "a13-01-1",
-      "day": 13,
-      "li": 1,
-      "q": "Were you confident during the presentation?",
-      "qKo": "발표할 때 자신 있었어?"
-    },
-    {
-      "id": "a13-01-2",
-      "day": 13,
-      "li": 1,
-      "q": "How did you feel before you went on stage?",
-      "qKo": "무대에 오르기 전에 기분이 어땠어?"
-    },
-    {
-      "id": "a13-02-1",
-      "day": 13,
-      "li": 2,
-      "q": "I was so nervous during my presentation.",
-      "qKo": "발표할 때 너무 긴장했어."
-    },
-    {
-      "id": "a13-02-2",
-      "day": 13,
-      "li": 2,
-      "q": "Did I look nervous up there?",
-      "qKo": "나 거기서 긴장한 것처럼 보였어?"
-    },
-    {
-      "id": "a13-03-1",
-      "day": 13,
-      "li": 3,
-      "q": "You really pulled off that presentation!",
-      "qKo": "그 발표 정말 잘 해냈어!"
-    },
-    {
-      "id": "a13-03-2",
-      "day": 13,
-      "li": 3,
-      "q": "How did you prepare for the presentation?",
-      "qKo": "발표 준비는 어떻게 했어?"
-    },
-    {
-      "id": "a13-04-1",
-      "day": 13,
-      "li": 4,
-      "q": "I spent the whole weekend preparing for it.",
-      "qKo": "그거 준비하느라 주말을 통째로 썼어."
-    },
-    {
-      "id": "a13-04-2",
-      "day": 13,
-      "li": 4,
-      "q": "Was all that preparation worth it?",
-      "qKo": "그렇게 준비한 보람이 있었어?"
-    },
-    {
-      "id": "a14-00-1",
-      "day": 14,
-      "li": 0,
-      "q": "What are you looking for on your phone?",
-      "qKo": "휴대폰으로 뭐 찾고 있어?"
-    },
-    {
-      "id": "a14-00-2",
-      "day": 14,
-      "li": 0,
-      "q": "Can I help you with anything?",
-      "qKo": "내가 도와줄 거 있어?"
-    },
-    {
-      "id": "a14-02-1",
-      "day": 14,
-      "li": 2,
-      "q": "Are you taking your wife there?",
-      "qKo": "아내분이랑 가는 거야?"
-    },
-    {
-      "id": "a14-02-2",
-      "day": 14,
-      "li": 2,
-      "q": "Who are you going to the restaurant with?",
-      "qKo": "식당에 누구랑 가?"
-    },
-    {
-      "id": "a14-03-1",
-      "day": 14,
-      "li": 3,
-      "q": "It’s my dad’s 70th birthday. Do you know a good place?",
-      "qKo": "아버지 칠순이야. 좋은 데 알아?"
-    },
-    {
-      "id": "a14-03-2",
-      "day": 14,
-      "li": 3,
-      "q": "Can you recommend a quiet restaurant for my parents?",
-      "qKo": "부모님 모시고 갈 조용한 식당 추천해 줄래?"
-    },
-    {
-      "id": "a14-04-1",
-      "day": 14,
-      "li": 4,
-      "q": "I’ll check if that restaurant is still open.",
-      "qKo": "그 식당 아직 하는지 확인해 볼게."
-    },
-    {
-      "id": "a14-04-2",
-      "day": 14,
-      "li": 4,
-      "q": "Is there anything else you need to prepare for the birthday?",
-      "qKo": "생일 때문에 또 준비할 거 있어?"
-    },
-    {
-      "id": "a15-01-1",
-      "day": 15,
-      "li": 1,
-      "q": "Do you happen to remember where we saved last week’s presentation?",
-      "qKo": "혹시 지난주 발표 자료 어디 저장했는지 기억나?"
-    },
-    {
-      "id": "a15-01-2",
-      "day": 15,
-      "li": 1,
-      "q": "Do you have a copy of last week’s presentation?",
-      "qKo": "지난주 발표 자료 사본 있어?"
-    },
-    {
-      "id": "a15-02-1",
-      "day": 15,
-      "li": 2,
-      "q": "I can send you the file now.",
-      "qKo": "지금 그 파일 보내 줄 수 있어."
-    },
-    {
-      "id": "a15-02-2",
-      "day": 15,
-      "li": 2,
-      "q": "Why do you need the presentation file?",
-      "qKo": "발표 파일이 왜 필요해?"
-    },
-    {
-      "id": "a15-04-1",
-      "day": 15,
-      "li": 4,
-      "q": "Do you happen to know which version is the latest one?",
-      "qKo": "혹시 어떤 버전이 최신인지 알아?"
-    },
-    {
-      "id": "a15-04-2",
-      "day": 15,
-      "li": 4,
-      "q": "Which file should I use?",
-      "qKo": "어떤 파일을 써야 해?"
-    },
-    {
-      "id": "a16-01-1",
-      "day": 16,
-      "li": 1,
-      "q": "Didn’t you say you had to be at work by 9:30?",
-      "qKo": "9시 반까지 출근해야 한다고 하지 않았어?"
-    },
-    {
-      "id": "a16-01-2",
-      "day": 16,
-      "li": 1,
-      "q": "Why are you still at home? Aren’t you late?",
-      "qKo": "왜 아직 집이야? 늦은 거 아니야?"
-    },
-    {
-      "id": "a16-02-1",
-      "day": 16,
-      "li": 2,
-      "q": "I still have about half an hour before my boss comes in.",
-      "qKo": "상사 올 때까지 아직 30분 정도 있어."
-    },
-    {
-      "id": "a16-02-2",
-      "day": 16,
-      "li": 2,
-      "q": "Should I relax a bit before going to work?",
-      "qKo": "출근 전에 좀 여유 부려도 될까?"
-    },
-    {
-      "id": "a17-00-1",
-      "day": 17,
-      "li": 0,
-      "q": "How did you feel today?",
-      "qKo": "오늘 기분이 어땠어?"
-    },
-    {
-      "id": "a17-00-2",
-      "day": 17,
-      "li": 0,
-      "q": "Why were you so down today?",
-      "qKo": "오늘 왜 그렇게 처져 있었어?"
-    },
-    {
-      "id": "a17-01-1",
-      "day": 17,
-      "li": 1,
-      "q": "What did you do today?",
-      "qKo": "오늘 뭐 했어?"
-    },
-    {
-      "id": "a17-01-2",
-      "day": 17,
-      "li": 1,
-      "q": "Did you see anyone during the holiday?",
-      "qKo": "연휴 동안 누구 만났어?"
-    },
-    {
-      "id": "a17-02-1",
-      "day": 17,
-      "li": 2,
-      "q": "What’s your plan for tomorrow?",
-      "qKo": "내일 계획이 뭐야?"
-    },
-    {
-      "id": "a17-02-2",
-      "day": 17,
-      "li": 2,
-      "q": "Is your holiday over?",
-      "qKo": "연휴 끝났어?"
-    },
-    {
-      "id": "a17-03-1",
-      "day": 17,
-      "li": 3,
-      "q": "Are you worried about going back to work?",
-      "qKo": "다시 출근하는 거 걱정돼?"
-    },
-    {
-      "id": "a17-03-2",
-      "day": 17,
-      "li": 3,
-      "q": "What are you thinking about tomorrow?",
-      "qKo": "내일 생각하면 어때?"
-    },
-    {
-      "id": "a18-00-1",
-      "day": 18,
-      "li": 0,
-      "q": "Who did you see when you came back with the coffee?",
-      "qKo": "커피 사 들고 왔을 때 누굴 봤어?"
-    },
-    {
-      "id": "a18-00-2",
-      "day": 18,
-      "li": 0,
-      "q": "What did you say when you saw Kevin?",
-      "qKo": "케빈을 봤을 때 뭐라고 했어?"
-    },
-    {
-      "id": "a18-01-1",
-      "day": 18,
-      "li": 1,
-      "q": "I’m sorry, I didn’t get you any coffee.",
-      "qKo": "미안, 네 커피는 안 사 왔어."
-    },
-    {
-      "id": "a18-01-2",
-      "day": 18,
-      "li": 1,
-      "q": "Should I go get you a coffee too?",
-      "qKo": "너도 커피 사다 줄까?"
-    },
-    {
-      "id": "a18-02-1",
-      "day": 18,
-      "li": 2,
-      "q": "Don’t worry, I was about to leave anyway.",
-      "qKo": "신경 쓰지 마, 어차피 가려던 참이었어."
-    },
-    {
-      "id": "a18-02-2",
-      "day": 18,
-      "li": 2,
-      "q": "Are you sure? I can get you a cup.",
-      "qKo": "정말? 한 잔 사다 줄 수 있는데."
-    },
-    {
-      "id": "a18-03-1",
-      "day": 18,
-      "li": 3,
-      "q": "You should stay a little longer and chat with us.",
-      "qKo": "좀 더 있다가 우리랑 얘기하다 가."
-    },
-    {
-      "id": "a18-03-2",
-      "day": 18,
-      "li": 3,
-      "q": "Can’t you stay for a bit?",
-      "qKo": "조금만 더 있을 수 없어?"
-    },
-    {
-      "id": "a19-00-1",
-      "day": 19,
-      "li": 0,
-      "q": "How has your week been?",
-      "qKo": "이번 주 어땠어?"
-    },
-    {
-      "id": "a19-00-2",
-      "day": 19,
-      "li": 0,
-      "q": "Why do you look so tired these days?",
-      "qKo": "요즘 왜 그렇게 피곤해 보여?"
-    },
-    {
-      "id": "a19-01-1",
-      "day": 19,
-      "li": 1,
-      "q": "Why have you been so busy?",
-      "qKo": "왜 그렇게 바빴어?"
-    },
-    {
-      "id": "a19-01-2",
-      "day": 19,
-      "li": 1,
-      "q": "Did you get a new assignment at work?",
-      "qKo": "회사에서 새 업무 맡았어?"
-    },
-    {
-      "id": "a19-02-1",
-      "day": 19,
-      "li": 2,
-      "q": "How do you feel about the new project?",
-      "qKo": "새 프로젝트 어떻게 생각해?"
-    },
-    {
-      "id": "a19-02-2",
-      "day": 19,
-      "li": 2,
-      "q": "Is the new data project easy?",
-      "qKo": "새 데이터 프로젝트 쉬워?"
-    },
-    {
-      "id": "a19-03-1",
-      "day": 19,
-      "li": 3,
-      "q": "What will happen after the project?",
-      "qKo": "프로젝트 끝나면 어떻게 돼?"
-    },
-    {
-      "id": "a19-03-2",
-      "day": 19,
-      "li": 3,
-      "q": "Will your team stay in the same group?",
-      "qKo": "팀이 같은 그룹에 계속 있을 거야?"
-    },
-    {
-      "id": "a19-04-1",
-      "day": 19,
-      "li": 4,
-      "q": "Why is this week so important?",
-      "qKo": "이번 주가 왜 그렇게 중요해?"
-    },
-    {
-      "id": "a19-04-2",
-      "day": 19,
-      "li": 4,
-      "q": "How important is this week for you?",
-      "qKo": "이번 주가 너한테 얼마나 중요해?"
-    },
-    {
-      "id": "a20-00-1",
-      "day": 20,
-      "li": 0,
-      "q": "What day is it today?",
-      "qKo": "오늘 무슨 요일이야?"
-    },
-    {
-      "id": "a20-00-2",
-      "day": 20,
-      "li": 0,
-      "q": "How do you feel about the weekend?",
-      "qKo": "주말이라 기분이 어때?"
-    },
-    {
-      "id": "a20-01-1",
-      "day": 20,
-      "li": 1,
-      "q": "How was your morning?",
-      "qKo": "오늘 아침 어땠어?"
-    },
-    {
-      "id": "a20-01-2",
-      "day": 20,
-      "li": 1,
-      "q": "Did you sleep in this morning?",
-      "qKo": "오늘 아침에 늦잠 잤어?"
-    },
-    {
-      "id": "a20-02-1",
-      "day": 20,
-      "li": 2,
-      "q": "What are you going to do today?",
-      "qKo": "오늘 뭐 할 거야?"
-    },
-    {
-      "id": "a20-02-2",
-      "day": 20,
-      "li": 2,
-      "q": "Why are you going to clean the house?",
-      "qKo": "왜 집 청소를 하려고 해?"
-    },
-    {
-      "id": "a20-03-1",
-      "day": 20,
-      "li": 3,
-      "q": "Where did you go first today?",
-      "qKo": "오늘 제일 먼저 어디 갔어?"
-    },
-    {
-      "id": "a20-03-2",
-      "day": 20,
-      "li": 3,
-      "q": "Did you go anywhere this morning?",
-      "qKo": "오늘 아침에 어디 갔었어?"
-    },
-    {
-      "id": "a20-04-1",
-      "day": 20,
-      "li": 4,
-      "q": "What did you do at the cafe?",
-      "qKo": "카페에서 뭐 했어?"
-    },
-    {
-      "id": "a20-04-2",
-      "day": 20,
-      "li": 4,
-      "q": "Did you study at the cafe?",
-      "qKo": "카페에서 공부했어?"
-    },
-    {
-      "id": "a20-05-1",
-      "day": 20,
-      "li": 5,
-      "q": "What else are you planning to do today?",
-      "qKo": "오늘 또 뭐 할 계획이야?"
-    },
-    {
-      "id": "a20-05-2",
-      "day": 20,
-      "li": 5,
-      "q": "Why do you want to learn Superset?",
-      "qKo": "왜 Superset을 배우고 싶어?"
-    },
-    {
-      "id": "a20-06-1",
-      "day": 20,
-      "li": 6,
-      "q": "Who will benefit if you learn Superset well?",
-      "qKo": "Superset을 잘 배우면 누구한테 도움이 돼?"
-    },
-    {
-      "id": "a20-06-2",
-      "day": 20,
-      "li": 6,
-      "q": "Is learning Superset just for you?",
-      "qKo": "Superset 배우는 게 너만을 위한 거야?"
-    },
-    {
-      "id": "a20-07-1",
-      "day": 20,
-      "li": 7,
-      "q": "Are you confident with the new tool?",
-      "qKo": "새 툴 자신 있어?"
-    },
-    {
-      "id": "a20-07-2",
-      "day": 20,
-      "li": 7,
-      "q": "Do you think you can learn Superset quickly?",
-      "qKo": "Superset 금방 배울 수 있을 것 같아?"
-    },
-    {
-      "id": "a21-01-1",
-      "day": 21,
-      "li": 1,
-      "q": "I’m on my way to the convenience store. You need anything?",
-      "qKo": "나 편의점 가는 길인데, 뭐 필요한 거 있어?"
-    },
-    {
-      "id": "a21-01-2",
-      "day": 21,
-      "li": 1,
-      "q": "What should I buy for you at the store?",
-      "qKo": "가게에서 뭐 사다 줄까?"
-    },
-    {
-      "id": "a21-02-1",
-      "day": 21,
-      "li": 2,
-      "q": "Could you also get me a USB-A to C connector?",
-      "qKo": "USB-A to C 젠더도 사다 줄래?"
-    },
-    {
-      "id": "a21-02-2",
-      "day": 21,
-      "li": 2,
-      "q": "Can you pick up a few more things for me?",
-      "qKo": "몇 가지 더 사다 줄 수 있어?"
-    },
-    {
-      "id": "a22-00-1",
-      "day": 22,
-      "li": 0,
-      "q": "What time is it now?",
-      "qKo": "지금 몇 시야?"
-    },
-    {
-      "id": "a22-00-2",
-      "day": 22,
-      "li": 0,
-      "q": "Is it already noon?",
-      "qKo": "벌써 정오야?"
-    },
-    {
-      "id": "a22-01-1",
-      "day": 22,
-      "li": 1,
-      "q": "Where are you right now?",
-      "qKo": "지금 어디야?"
-    },
-    {
-      "id": "a22-01-2",
-      "day": 22,
-      "li": 1,
-      "q": "Did you go out today?",
-      "qKo": "오늘 밖에 나갔어?"
-    },
-    {
-      "id": "a22-02-1",
-      "day": 22,
-      "li": 2,
-      "q": "What have you been doing all morning?",
-      "qKo": "아침 내내 뭐 했어?"
-    },
-    {
-      "id": "a22-02-2",
-      "day": 22,
-      "li": 2,
-      "q": "Why are you so tired this morning?",
-      "qKo": "오늘 아침에 왜 그렇게 피곤해?"
-    },
-    {
-      "id": "a22-03-1",
-      "day": 22,
-      "li": 3,
-      "q": "Which room are you cleaning now?",
-      "qKo": "지금 어느 방 청소해?"
-    },
-    {
-      "id": "a22-03-2",
-      "day": 22,
-      "li": 3,
-      "q": "Are you almost done cleaning?",
-      "qKo": "청소 거의 끝났어?"
-    },
-    {
-      "id": "a22-04-1",
-      "day": 22,
-      "li": 4,
-      "q": "Are you still cleaning?",
-      "qKo": "아직 청소 중이야?"
-    },
-    {
-      "id": "a22-04-2",
-      "day": 22,
-      "li": 4,
-      "q": "What are you doing right now?",
-      "qKo": "지금 뭐 하고 있어?"
-    },
-    {
-      "id": "a22-05-1",
-      "day": 22,
-      "li": 5,
-      "q": "How’s the cleaning going?",
-      "qKo": "청소는 어떻게 돼 가?"
-    },
-    {
-      "id": "a22-05-2",
-      "day": 22,
-      "li": 5,
-      "q": "Is cleaning the whole house hard?",
-      "qKo": "집 전체 청소하는 거 힘들어?"
-    },
-    {
-      "id": "a22-06-1",
-      "day": 22,
-      "li": 6,
-      "q": "Are you hungry?",
-      "qKo": "배고파?"
-    },
-    {
-      "id": "a22-06-2",
-      "day": 22,
-      "li": 6,
-      "q": "What time is it getting to be?",
-      "qKo": "벌써 몇 시쯤 됐어?"
-    },
-    {
-      "id": "a22-07-1",
-      "day": 22,
-      "li": 7,
-      "q": "What are you going to eat for lunch?",
-      "qKo": "점심 뭐 먹을 거야?"
-    },
-    {
-      "id": "a22-07-2",
-      "day": 22,
-      "li": 7,
-      "q": "Have you decided on lunch?",
-      "qKo": "점심 메뉴 정했어?"
-    },
-    {
-      "id": "a22-08-1",
-      "day": 22,
-      "li": 8,
-      "q": "Do you like cooking?",
-      "qKo": "요리하는 거 좋아해?"
-    },
-    {
-      "id": "a22-08-2",
-      "day": 22,
-      "li": 8,
-      "q": "What do you wish for when you’re hungry and tired?",
-      "qKo": "배고프고 피곤할 때 뭘 바라?"
-    },
-    {
-      "id": "a22-09-1",
-      "day": 22,
-      "li": 9,
-      "q": "Why do you want someone to cook for you?",
-      "qKo": "왜 누가 요리해 주면 좋겠어?"
-    },
-    {
-      "id": "a22-09-2",
-      "day": 22,
-      "li": 9,
-      "q": "What if someone cooked for you every day?",
-      "qKo": "누가 매일 요리해 주면 어떨 것 같아?"
-    },
-    {
-      "id": "a22-10-1",
-      "day": 22,
-      "li": 10,
-      "q": "Is there anything to eat at home?",
-      "qKo": "집에 먹을 거 있어?"
-    },
-    {
-      "id": "a22-10-2",
-      "day": 22,
-      "li": 10,
-      "q": "Are you going to order food?",
-      "qKo": "음식 주문할 거야?"
-    },
-    {
-      "id": "a22-11-1",
-      "day": 22,
-      "li": 11,
-      "q": "What will you do with the leftover pizza?",
-      "qKo": "남은 피자는 어떻게 할 거야?"
-    },
-    {
-      "id": "a22-11-2",
-      "day": 22,
-      "li": 11,
-      "q": "So what’s for lunch?",
-      "qKo": "그래서 점심은 뭐야?"
-    },
-    {
-      "id": "a22-12-1",
-      "day": 22,
-      "li": 12,
-      "q": "Are you done taking a break?",
-      "qKo": "쉬는 거 끝났어?"
-    },
-    {
-      "id": "a22-12-2",
-      "day": 22,
-      "li": 12,
-      "q": "What are you going to do now?",
-      "qKo": "이제 뭐 할 거야?"
-    },
-    {
-      "id": "a23-01-1",
-      "day": 23,
-      "li": 1,
-      "q": "You chose med school over music, right?",
-      "qKo": "음악 대신 의대를 택했지?"
-    },
-    {
-      "id": "a23-01-2",
-      "day": 23,
-      "li": 1,
-      "q": "Was it easy to choose medicine over music?",
-      "qKo": "음악 대신 의학을 택하는 게 쉬웠어?"
-    },
-    {
-      "id": "a23-03-1",
-      "day": 23,
-      "li": 3,
-      "q": "Do you have any regrets about not pursuing music?",
-      "qKo": "음악을 안 한 거 후회해?"
-    },
-    {
-      "id": "a23-03-2",
-      "day": 23,
-      "li": 3,
-      "q": "Do you ever miss playing music?",
-      "qKo": "음악 하던 게 그리울 때 있어?"
-    },
-    {
-      "id": "a24-00-1",
-      "day": 24,
-      "li": 0,
-      "q": "What do you say to a friend you haven’t seen for a while?",
-      "qKo": "한동안 못 본 친구에게 뭐라고 해?"
-    },
-    {
-      "id": "a24-00-2",
-      "day": 24,
-      "li": 0,
-      "q": "Have you noticed anything about our friend lately?",
-      "qKo": "요즘 우리 친구 뭔가 달라진 거 알아챘어?"
-    },
-    {
-      "id": "a24-01-1",
-      "day": 24,
-      "li": 1,
-      "q": "Hey, I haven’t seen you around lately.",
-      "qKo": "요즘 통 안 보이더라."
-    },
-    {
-      "id": "a24-01-2",
-      "day": 24,
-      "li": 1,
-      "q": "How have you been this week?",
-      "qKo": "이번 주 어떻게 지냈어?"
-    },
-    {
-      "id": "a24-03-1",
-      "day": 24,
-      "li": 3,
-      "q": "Want to talk about it?",
-      "qKo": "얘기하고 싶어?"
-    },
-    {
-      "id": "a24-03-2",
-      "day": 24,
-      "li": 3,
-      "q": "Do you want to tell me what happened?",
-      "qKo": "무슨 일 있었는지 말해 줄래?"
-    },
-    {
-      "id": "a25-03-1",
-      "day": 25,
-      "li": 3,
-      "q": "Would you like to try the new Italian restaurant with me?",
-      "qKo": "새로 생긴 이탈리안 식당 나랑 같이 갈래?"
-    },
-    {
-      "id": "a25-03-2",
-      "day": 25,
-      "li": 3,
-      "q": "Are you free to go out for pasta this weekend?",
-      "qKo": "이번 주말에 파스타 먹으러 갈 시간 돼?"
-    },
-    {
-      "id": "a26-00-1",
-      "day": 26,
-      "li": 0,
-      "q": "Look at this cake! I’m going to order one.",
-      "qKo": "이 케이크 봐! 하나 시킬래."
-    },
-    {
-      "id": "a26-00-2",
-      "day": 26,
-      "li": 0,
-      "q": "Why are you surprised I ordered dessert?",
-      "qKo": "내가 디저트 시킨 게 왜 놀라워?"
-    },
-    {
-      "id": "a26-01-1",
-      "day": 26,
-      "li": 1,
-      "q": "Aren’t you trying to eat less sugar?",
-      "qKo": "단 거 줄이려는 거 아니었어?"
-    },
-    {
-      "id": "a26-01-2",
-      "day": 26,
-      "li": 1,
-      "q": "Why did you order dessert again?",
-      "qKo": "왜 또 디저트 시켰어?"
-    },
-    {
-      "id": "a26-02-1",
-      "day": 26,
-      "li": 2,
-      "q": "I can’t help eating dessert when it looks this good.",
-      "qKo": "이렇게 맛있어 보이면 디저트를 안 먹을 수가 없어."
-    },
-    {
-      "id": "a26-02-2",
-      "day": 26,
-      "li": 2,
-      "q": "Do you also love sweets?",
-      "qKo": "너도 단 거 좋아해?"
-    },
-    {
-      "id": "a26-03-1",
-      "day": 26,
-      "li": 3,
-      "q": "Do you always end up ordering dessert?",
-      "qKo": "결국 항상 디저트를 시키게 돼?"
-    },
-    {
-      "id": "a26-03-2",
-      "day": 26,
-      "li": 3,
-      "q": "Why can’t you stop ordering dessert?",
-      "qKo": "왜 디저트 시키는 걸 못 끊어?"
-    },
-    {
-      "id": "a26-04-1",
-      "day": 26,
-      "li": 4,
-      "q": "We both love dessert. What should we do?",
-      "qKo": "우리 둘 다 디저트 좋아하잖아. 어떡할까?"
-    },
-    {
-      "id": "a26-04-2",
-      "day": 26,
-      "li": 4,
-      "q": "Should we each order a dessert?",
-      "qKo": "디저트 하나씩 시킬까?"
-    },
-    {
-      "id": "a27-01-1",
-      "day": 27,
-      "li": 1,
-      "q": "There’s a way to use ChatGPT with voice recognition, right?",
-      "qKo": "음성 인식으로 ChatGPT 쓰는 방법 있지?"
-    },
-    {
-      "id": "a27-01-2",
-      "day": 27,
-      "li": 1,
-      "q": "Can I talk to ChatGPT for free?",
-      "qKo": "ChatGPT랑 무료로 대화할 수 있어?"
-    },
-    {
-      "id": "a27-02-1",
-      "day": 27,
-      "li": 2,
-      "q": "So there’s no way to use voice with ChatGPT?",
-      "qKo": "그럼 ChatGPT를 음성으로 쓸 방법이 없는 거야?"
-    },
-    {
-      "id": "a27-02-2",
-      "day": 27,
-      "li": 2,
-      "q": "Is there any way to talk to ChatGPT?",
-      "qKo": "ChatGPT랑 말로 할 방법이 있어?"
-    },
-    {
-      "id": "a27-04-1",
-      "day": 27,
-      "li": 4,
-      "q": "Have you tried the third-party service?",
-      "qKo": "그 외부 서비스 써 봤어?"
-    },
-    {
-      "id": "a27-04-2",
-      "day": 27,
-      "li": 4,
-      "q": "Does that service work well?",
-      "qKo": "그 서비스 잘 돼?"
-    },
-    {
-      "id": "a27-05-1",
-      "day": 27,
-      "li": 5,
-      "q": "It only works in limited cases, though.",
-      "qKo": "근데 제한적인 경우에만 돼."
-    },
-    {
-      "id": "a27-05-2",
-      "day": 27,
-      "li": 5,
-      "q": "Is a limited service still worth using?",
-      "qKo": "제한적인 서비스라도 쓸 만해?"
-    },
-    {
-      "id": "a27-06-1",
-      "day": 27,
-      "li": 6,
-      "q": "Are there any other problems with it?",
-      "qKo": "그거 다른 문제도 있어?"
-    },
-    {
-      "id": "a27-06-2",
-      "day": 27,
-      "li": 6,
-      "q": "Does the voice function work well?",
-      "qKo": "음성 기능은 잘 돼?"
-    },
-    {
-      "id": "a28-01-1",
-      "day": 28,
-      "li": 1,
-      "q": "Are you still planning to join the new project?",
-      "qKo": "아직 새 프로젝트 합류할 생각이야?"
-    },
-    {
-      "id": "a28-01-2",
-      "day": 28,
-      "li": 1,
-      "q": "Have you decided about the new project?",
-      "qKo": "새 프로젝트 결정했어?"
-    },
-    {
-      "id": "a28-02-1",
-      "day": 28,
-      "li": 2,
-      "q": "I’m having second thoughts about the new project.",
-      "qKo": "새 프로젝트가 좀 망설여져."
-    },
-    {
-      "id": "a28-02-2",
-      "day": 28,
-      "li": 2,
-      "q": "I’m not sure about joining anymore.",
-      "qKo": "이제 합류할지 잘 모르겠어."
-    },
-    {
-      "id": "a28-03-1",
-      "day": 28,
-      "li": 3,
-      "q": "Why are you having second thoughts?",
-      "qKo": "왜 망설여져?"
-    },
-    {
-      "id": "a28-03-2",
-      "day": 28,
-      "li": 3,
-      "q": "What are you worried about?",
-      "qKo": "뭐가 걱정돼?"
-    },
-    {
-      "id": "a28-04-1",
-      "day": 28,
-      "li": 4,
-      "q": "I’m worried it’s too much work on top of my current projects.",
-      "qKo": "지금 프로젝트에 더해지면 일이 너무 많을까 봐 걱정돼."
-    },
-    {
-      "id": "a28-04-2",
-      "day": 28,
-      "li": 4,
-      "q": "What do you think I should do?",
-      "qKo": "내가 어떻게 해야 할 것 같아?"
-    },
-    {
-      "id": "a29-01-1",
-      "day": 29,
-      "li": 1,
-      "q": "Hey, what are you doing tomorrow?",
-      "qKo": "내일 뭐 해?"
-    },
-    {
-      "id": "a29-01-2",
-      "day": 29,
-      "li": 1,
-      "q": "Do you have any plans for tomorrow?",
-      "qKo": "내일 계획 있어?"
-    },
-    {
-      "id": "a29-02-1",
-      "day": 29,
-      "li": 2,
-      "q": "I’m going to clean out some furniture tomorrow.",
-      "qKo": "내일 가구 좀 정리하려고."
-    },
-    {
-      "id": "a29-02-2",
-      "day": 29,
-      "li": 2,
-      "q": "What do you say when a friend has a big job to do?",
-      "qKo": "친구가 할 일이 많을 때 뭐라고 해?"
-    },
-    {
-      "id": "a29-03-1",
-      "day": 29,
-      "li": 3,
-      "q": "Do you need my help tomorrow?",
-      "qKo": "내일 내 도움 필요해?"
-    },
-    {
-      "id": "a29-03-2",
-      "day": 29,
-      "li": 3,
-      "q": "Is anyone helping you clean out your apartment?",
-      "qKo": "집 정리 도와줄 사람 있어?"
-    },
-    {
-      "id": "a29-04-1",
-      "day": 29,
-      "li": 4,
-      "q": "It would be nice to have an extra pair of hands.",
-      "qKo": "일손이 하나 더 있으면 좋겠어."
-    },
-    {
-      "id": "a29-04-2",
-      "day": 29,
-      "li": 4,
-      "q": "Can I count on you if I need help?",
-      "qKo": "도움 필요하면 너한테 부탁해도 돼?"
-    },
-    {
-      "id": "a29-05-1",
-      "day": 29,
-      "li": 5,
-      "q": "Just say the word.",
-      "qKo": "말만 해."
-    },
-    {
-      "id": "a29-05-2",
-      "day": 29,
-      "li": 5,
-      "q": "So, should I come over tomorrow?",
-      "qKo": "그래서 내일 갈까?"
-    },
-    {
-      "id": "a30-00-1",
-      "day": 30,
-      "li": 0,
-      "q": "Do you have any big news?",
-      "qKo": "큰 소식 있어?"
-    },
-    {
-      "id": "a30-00-2",
-      "day": 30,
-      "li": 0,
-      "q": "Why do you look so serious today?",
-      "qKo": "오늘 왜 그렇게 진지해 보여?"
-    },
-    {
-      "id": "a30-02-1",
-      "day": 30,
-      "li": 2,
-      "q": "Did you just suddenly decide to quit?",
-      "qKo": "그냥 갑자기 그만두기로 한 거야?"
-    },
-    {
-      "id": "a30-02-2",
-      "day": 30,
-      "li": 2,
-      "q": "Are you sure about quitting your job?",
-      "qKo": "회사 그만두는 거 확실해?"
-    },
-    {
-      "id": "a30-04-1",
-      "day": 30,
-      "li": 4,
-      "q": "So what’s your next move?",
-      "qKo": "그래서 다음 계획은 뭐야?"
-    },
-    {
-      "id": "a30-04-2",
-      "day": 30,
-      "li": 4,
-      "q": "What will you do after you quit?",
-      "qKo": "그만두고 나서 뭐 할 거야?"
-    },
-    {
-      "id": "a31-00-1",
-      "day": 31,
-      "li": 0,
-      "q": "Why are you so late?",
-      "qKo": "왜 이렇게 늦었어?"
-    },
-    {
-      "id": "a31-00-2",
-      "day": 31,
-      "li": 0,
-      "q": "I’ve been waiting for 30 minutes. What happened?",
-      "qKo": "30분 기다렸어. 무슨 일이야?"
-    },
-    {
-      "id": "a31-01-1",
-      "day": 31,
-      "li": 1,
-      "q": "My supervisor thinks work starts at 5 in the evening.",
-      "qKo": "우리 상사는 일이 저녁 5시에 시작한다고 생각해."
-    },
-    {
-      "id": "a31-01-2",
-      "day": 31,
-      "li": 1,
-      "q": "Is working late normal?",
-      "qKo": "늦게까지 일하는 게 정상이야?"
-    },
-    {
-      "id": "a31-02-1",
-      "day": 31,
-      "li": 2,
-      "q": "Your supervisor needs to get with the times.",
-      "qKo": "너희 상사 시대에 좀 맞춰 살아야겠다."
-    },
-    {
-      "id": "a31-02-2",
-      "day": 31,
-      "li": 2,
-      "q": "Don’t you think your boss is old-fashioned?",
-      "qKo": "너희 상사 좀 구식인 것 같지 않아?"
-    },
-    {
-      "id": "a32-01-1",
-      "day": 32,
-      "li": 1,
-      "q": "Do you ever feel like your kids do the opposite of what you say?",
-      "qKo": "애들이 네 말이랑 반대로만 한다고 느낄 때 있어?"
-    },
-    {
-      "id": "a32-01-2",
-      "day": 32,
-      "li": 1,
-      "q": "Is it normal for kids not to listen?",
-      "qKo": "애들이 말 안 듣는 거 정상이야?"
-    },
-    {
-      "id": "a32-03-1",
-      "day": 32,
-      "li": 3,
-      "q": "So, how do you handle it?",
-      "qKo": "그래서 넌 어떻게 대처해?"
-    },
-    {
-      "id": "a32-03-2",
-      "day": 32,
-      "li": 3,
-      "q": "Why don’t you try to control your kids more?",
-      "qKo": "왜 애들을 더 통제하려고 하지 않아?"
-    },
-    {
-      "id": "a33-01-1",
-      "day": 33,
-      "li": 1,
-      "q": "How did it go at the dentist today?",
-      "qKo": "오늘 치과 어땠어?"
-    },
-    {
-      "id": "a33-01-2",
-      "day": 33,
-      "li": 1,
-      "q": "Did the dentist say anything?",
-      "qKo": "치과에서 뭐라고 했어?"
-    },
-    {
-      "id": "a33-03-1",
-      "day": 33,
-      "li": 3,
-      "q": "Did you forget about the dentist again?",
-      "qKo": "치과 또 잊어버렸어?"
-    },
-    {
-      "id": "a33-03-2",
-      "day": 33,
-      "li": 3,
-      "q": "Why didn’t you go to the dentist?",
-      "qKo": "왜 치과에 안 갔어?"
-    },
-    {
-      "id": "a33-04-1",
-      "day": 33,
-      "li": 4,
-      "q": "I was too busy to go. I’ll go next time.",
-      "qKo": "너무 바빠서 못 갔어. 다음에 갈게."
-    },
-    {
-      "id": "a33-04-2",
-      "day": 33,
-      "li": 4,
-      "q": "I never got around to going to the dentist.",
-      "qKo": "치과에 끝내 못 갔어."
-    },
-    {
-      "id": "a33-05-1",
-      "day": 33,
-      "li": 5,
-      "q": "That’s what you said last time!",
-      "qKo": "지난번에도 그렇게 말했잖아!"
-    },
-    {
-      "id": "a33-05-2",
-      "day": 33,
-      "li": 5,
-      "q": "Are you really going to go next week?",
-      "qKo": "다음 주엔 진짜 갈 거야?"
-    },
-    {
-      "id": "a34-00-1",
-      "day": 34,
-      "li": 0,
-      "q": "Look at my phone. What do you think?",
-      "qKo": "내 폰 좀 봐. 어떻게 생각해?"
-    },
-    {
-      "id": "a34-00-2",
-      "day": 34,
-      "li": 0,
-      "q": "My screen got damaged. What should I do?",
-      "qKo": "화면이 망가졌어. 어떻게 해야 할까?"
-    },
-    {
-      "id": "a34-01-1",
-      "day": 34,
-      "li": 1,
-      "q": "Why don’t you fix your cracked screen?",
-      "qKo": "깨진 화면 왜 안 고쳐?"
-    },
-    {
-      "id": "a34-01-2",
-      "day": 34,
-      "li": 1,
-      "q": "Are you going to repair your phone?",
-      "qKo": "휴대폰 수리할 거야?"
-    },
-    {
-      "id": "a34-02-1",
-      "day": 34,
-      "li": 2,
-      "q": "I’m thinking of buying a new iPhone right now.",
-      "qKo": "지금 새 아이폰을 살까 생각 중이야."
-    },
-    {
-      "id": "a34-02-2",
-      "day": 34,
-      "li": 2,
-      "q": "Should I buy a new phone now?",
-      "qKo": "지금 새 폰 살까?"
-    },
-    {
-      "id": "a34-03-1",
-      "day": 34,
-      "li": 3,
-      "q": "Don’t you want the newest model?",
-      "qKo": "최신 모델 갖고 싶지 않아?"
-    },
-    {
-      "id": "a34-03-2",
-      "day": 34,
-      "li": 3,
-      "q": "What do you mostly use your phone for?",
-      "qKo": "휴대폰은 주로 뭐에 써?"
-    },
-    {
-      "id": "a35-01-1",
-      "day": 35,
-      "li": 1,
-      "q": "Have you had a chance to look into last week’s GMV performance?",
-      "qKo": "지난주 GMV 실적 확인해 볼 시간 있었어요?"
-    },
-    {
-      "id": "a35-01-2",
-      "day": 35,
-      "li": 1,
-      "q": "What did you find in last week’s numbers?",
-      "qKo": "지난주 숫자에서 뭘 발견했어요?"
-    },
-    {
-      "id": "a35-03-1",
-      "day": 35,
-      "li": 3,
-      "q": "Do we know what caused the decline?",
-      "qKo": "하락 원인이 뭔지 파악했어요?"
-    },
-    {
-      "id": "a35-03-2",
-      "day": 35,
-      "li": 3,
-      "q": "Why do you think GMV dropped?",
-      "qKo": "GMV가 왜 떨어졌다고 생각해요?"
-    },
-    {
-      "id": "a35-05-1",
-      "day": 35,
-      "li": 5,
-      "q": "Could you break down the numbers by customer segment?",
-      "qKo": "고객 세그먼트별로 수치를 나눠 줄 수 있어요?"
-    },
-    {
-      "id": "a35-05-2",
-      "day": 35,
-      "li": 5,
-      "q": "What are your next steps on the GMV analysis?",
-      "qKo": "GMV 분석의 다음 단계는 뭐예요?"
-    },
-    {
-      "id": "a36-01-1",
-      "day": 36,
-      "li": 1,
-      "q": "The upstream table hasn’t been updated yet. Could you check what’s going on?",
-      "qKo": "상위 테이블이 아직 업데이트가 안 됐어요. 무슨 일인지 확인해 줄래요?"
-    },
-    {
-      "id": "a36-01-2",
-      "day": 36,
-      "li": 1,
-      "q": "How will you find out why the table failed?",
-      "qKo": "테이블이 왜 실패했는지 어떻게 알아낼 거예요?"
-    },
-    {
-      "id": "a36-02-1",
-      "day": 36,
-      "li": 2,
-      "q": "What should we check before using the table?",
-      "qKo": "테이블 쓰기 전에 뭘 확인해야 해요?"
-    },
-    {
-      "id": "a36-02-2",
-      "day": 36,
-      "li": 2,
-      "q": "Is checking the logs enough?",
-      "qKo": "로그 확인만 하면 충분해요?"
-    },
-    {
-      "id": "a36-03-1",
-      "day": 36,
-      "li": 3,
-      "q": "What did you find in the logs?",
-      "qKo": "로그에서 뭘 찾았어요?"
-    },
-    {
-      "id": "a36-03-2",
-      "day": 36,
-      "li": 3,
-      "q": "Where did the problem happen?",
-      "qKo": "문제가 어디서 생겼어요?"
-    },
-    {
-      "id": "a36-05-1",
-      "day": 36,
-      "li": 5,
-      "q": "Does this affect any downstream tables or dashboards?",
-      "qKo": "하위 테이블이나 대시보드에도 영향이 있어요?"
-    },
-    {
-      "id": "a36-05-2",
-      "day": 36,
-      "li": 5,
-      "q": "When will the data be fixed?",
-      "qKo": "데이터는 언제 고쳐져요?"
-    },
-    {
-      "id": "a37-00-1",
-      "day": 37,
-      "li": 0,
-      "q": "Is there a problem with my dashboard?",
-      "qKo": "제 대시보드에 문제 있어요?"
-    },
-    {
-      "id": "a37-00-2",
-      "day": 37,
-      "li": 0,
-      "q": "Why did you want to talk to me?",
-      "qKo": "왜 저랑 얘기하고 싶었어요?"
-    },
-    {
-      "id": "a37-02-1",
-      "day": 37,
-      "li": 2,
-      "q": "Could you clarify how the order count is calculated on your side?",
-      "qKo": "그쪽에서는 주문 건수를 어떻게 계산하는지 설명해 줄래요?"
-    },
-    {
-      "id": "a37-02-2",
-      "day": 37,
-      "li": 2,
-      "q": "Do you count canceled orders too?",
-      "qKo": "취소된 주문도 세요?"
-    },
-    {
-      "id": "a37-03-1",
-      "day": 37,
-      "li": 3,
-      "q": "We include canceled orders in our count.",
-      "qKo": "저희는 취소 주문도 포함해서 세요."
-    },
-    {
-      "id": "a37-03-2",
-      "day": 37,
-      "li": 3,
-      "q": "Why are our numbers different?",
-      "qKo": "우리 숫자가 왜 다르죠?"
-    },
-    {
-      "id": "a37-04-1",
-      "day": 37,
-      "li": 4,
-      "q": "Our metric only includes completed orders.",
-      "qKo": "저희 지표는 완료된 주문만 포함해요."
-    },
-    {
-      "id": "a37-04-2",
-      "day": 37,
-      "li": 4,
-      "q": "How can we stop this kind of mismatch?",
-      "qKo": "이런 불일치는 어떻게 막을 수 있을까요?"
-    },
-    {
-      "id": "a37-05-1",
-      "day": 37,
-      "li": 5,
-      "q": "We should align on the metric definition.",
-      "qKo": "지표 정의를 맞춰야겠어요."
-    },
-    {
-      "id": "a37-05-2",
-      "day": 37,
-      "li": 5,
-      "q": "What will you do next to fix this?",
-      "qKo": "이걸 해결하려고 다음에 뭘 할 거예요?"
-    },
-    {
-      "id": "a38-02-1",
-      "day": 38,
-      "li": 2,
-      "q": "Are you joining any large tables or running heavy aggregations?",
-      "qKo": "대용량 테이블을 조인하거나 무거운 집계를 돌리고 있어요?"
-    },
-    {
-      "id": "a38-02-2",
-      "day": 38,
-      "li": 2,
-      "q": "When did the query start getting slow?",
-      "qKo": "쿼리가 언제부터 느려졌어요?"
-    },
-    {
-      "id": "a38-03-1",
-      "day": 38,
-      "li": 3,
-      "q": "Why do you think the query is so slow?",
-      "qKo": "쿼리가 왜 그렇게 느린 것 같아요?"
-    },
-    {
-      "id": "a38-03-2",
-      "day": 38,
-      "li": 3,
-      "q": "Where should we start looking?",
-      "qKo": "어디서부터 봐야 할까요?"
-    },
-    {
-      "id": "a38-04-1",
-      "day": 38,
-      "li": 4,
-      "q": "We might have a bottleneck in the execution plan.",
-      "qKo": "실행 계획에 병목이 있을 수도 있어요."
-    },
-    {
-      "id": "a38-04-2",
-      "day": 38,
-      "li": 4,
-      "q": "What will you do to fix the slow query?",
-      "qKo": "느린 쿼리를 고치려고 뭘 할 거예요?"
-    },
-    {
-      "id": "a38-05-1",
-      "day": 38,
-      "li": 5,
-      "q": "I’ll try to optimize the query.",
-      "qKo": "쿼리를 최적화해 볼게요."
-    },
-    {
-      "id": "a38-05-2",
-      "day": 38,
-      "li": 5,
-      "q": "Is there anything else we should think about?",
-      "qKo": "그 밖에 고려할 게 있을까요?"
-    },
-    {
-      "id": "a39-01-1",
-      "day": 39,
-      "li": 1,
-      "q": "We’ve seen a decline in customer retention. Can you investigate the reason?",
-      "qKo": "고객 유지율이 떨어졌어요. 원인을 조사해 줄 수 있어요?"
-    },
-    {
-      "id": "a39-01-2",
-      "day": 39,
-      "li": 1,
-      "q": "What will you look at to understand the retention drop?",
-      "qKo": "유지율 하락을 이해하려고 뭘 볼 거예요?"
-    },
-    {
-      "id": "a39-03-1",
-      "day": 39,
-      "li": 3,
-      "q": "Can we segment customers based on their purchase history?",
-      "qKo": "구매 이력으로 고객을 세분화할 수 있을까요?"
-    },
-    {
-      "id": "a39-03-2",
-      "day": 39,
-      "li": 3,
-      "q": "How can we compare retention between groups?",
-      "qKo": "그룹 간 유지율은 어떻게 비교할 수 있어요?"
-    },
-    {
-      "id": "a39-05-1",
-      "day": 39,
-      "li": 5,
-      "q": "Could this trend affect our long-term revenue?",
-      "qKo": "이 추세가 장기 매출에 영향을 줄 수 있을까요?"
-    },
-    {
-      "id": "a39-05-2",
-      "day": 39,
-      "li": 5,
-      "q": "What will you check next?",
-      "qKo": "다음엔 뭘 확인할 거예요?"
-    },
-    {
-      "id": "a40-00-1",
-      "day": 40,
-      "li": 0,
-      "q": "Did you find any problems in the data?",
-      "qKo": "데이터에서 문제 찾은 거 있어요?"
-    },
-    {
-      "id": "a40-00-2",
-      "day": 40,
-      "li": 0,
-      "q": "What’s wrong with the analytics table?",
-      "qKo": "분석 테이블에 무슨 문제가 있어요?"
-    },
-    {
-      "id": "a40-01-1",
-      "day": 40,
-      "li": 1,
-      "q": "We found some duplicate and missing records.",
-      "qKo": "중복되고 누락된 레코드를 좀 찾았어요."
-    },
-    {
-      "id": "a40-01-2",
-      "day": 40,
-      "li": 1,
-      "q": "How will you investigate the data problem?",
-      "qKo": "데이터 문제는 어떻게 조사할 거예요?"
-    },
-    {
-      "id": "a40-02-1",
-      "day": 40,
-      "li": 2,
-      "q": "What should we do before loading the data downstream?",
-      "qKo": "하위 시스템에 데이터를 넣기 전에 뭘 해야 해요?"
-    },
-    {
-      "id": "a40-02-2",
-      "day": 40,
-      "li": 2,
-      "q": "Is the data ready to be loaded?",
-      "qKo": "데이터 적재할 준비 됐어요?"
-    },
-    {
-      "id": "a40-03-1",
-      "day": 40,
-      "li": 3,
-      "q": "Can you handle this incident?",
-      "qKo": "이번 장애 처리해 줄 수 있어요?"
-    },
-    {
-      "id": "a40-03-2",
-      "day": 40,
-      "li": 3,
-      "q": "What are your next steps for this issue?",
-      "qKo": "이 문제에 대한 다음 단계는 뭐예요?"
-    },
-    {
-      "id": "a40-05-1",
-      "day": 40,
-      "li": 5,
-      "q": "Could we set up monitoring to prevent this from happening again?",
-      "qKo": "다시 이런 일이 없도록 모니터링을 구축할 수 있을까요?"
-    },
-    {
-      "id": "a40-05-2",
-      "day": 40,
-      "li": 5,
-      "q": "What else will you do to make the pipeline safer?",
-      "qKo": "파이프라인을 더 안전하게 하려고 또 뭘 할 거예요?"
-    },
-    {
-      "id": "a41-00-1",
-      "day": 41,
-      "li": 0,
-      "q": "What’s the plan for next month?",
-      "qKo": "다음 달 계획이 뭐예요?"
-    },
-    {
-      "id": "a41-00-2",
-      "day": 41,
-      "li": 0,
-      "q": "Are there any new features coming soon?",
-      "qKo": "곧 나올 새 기능 있어요?"
-    },
-    {
-      "id": "a41-03-1",
-      "day": 41,
-      "li": 3,
-      "q": "Could you propose a way to measure the impact?",
-      "qKo": "효과를 측정할 방법을 제안해 줄래요?"
-    },
-    {
-      "id": "a41-03-2",
-      "day": 41,
-      "li": 3,
-      "q": "How should we test the new checkout feature?",
-      "qKo": "새 결제 기능은 어떻게 테스트해야 할까요?"
-    },
-    {
-      "id": "a41-05-1",
-      "day": 41,
-      "li": 5,
-      "q": "Are there any technical dependencies we should take into account before deployment?",
-      "qKo": "배포 전에 고려할 기술적 의존성이 있어요?"
-    },
-    {
-      "id": "a41-05-2",
-      "day": 41,
-      "li": 5,
-      "q": "What do we need to check before launch?",
-      "qKo": "출시 전에 뭘 확인해야 해요?"
-    },
-    {
-      "id": "a42-00-1",
-      "day": 42,
-      "li": 0,
-      "q": "How did you feel when you came into work today?",
-      "qKo": "오늘 출근할 때 기분이 어땠어?"
-    },
-    {
-      "id": "a42-00-2",
-      "day": 42,
-      "li": 0,
-      "q": "Why were you in such a good mood this morning?",
-      "qKo": "오늘 아침에 왜 그렇게 기분이 좋았어?"
-    },
-    {
-      "id": "a42-01-1",
-      "day": 42,
-      "li": 1,
-      "q": "What did you do when you got to the office?",
-      "qKo": "사무실에 도착해서 뭐 했어?"
-    },
-    {
-      "id": "a42-01-2",
-      "day": 42,
-      "li": 1,
-      "q": "Did you have coffee this morning?",
-      "qKo": "오늘 아침에 커피 마셨어?"
-    },
-    {
-      "id": "a42-02-1",
-      "day": 42,
-      "li": 2,
-      "q": "How was your morning at work?",
-      "qKo": "회사에서 오전은 어땠어?"
-    },
-    {
-      "id": "a42-02-2",
-      "day": 42,
-      "li": 2,
-      "q": "Were you able to concentrate today?",
-      "qKo": "오늘 집중 잘 됐어?"
-    },
-    {
-      "id": "a42-03-1",
-      "day": 42,
-      "li": 3,
-      "q": "Did anything surprising happen this morning?",
-      "qKo": "오늘 아침에 놀라운 일 있었어?"
-    },
-    {
-      "id": "a42-03-2",
-      "day": 42,
-      "li": 3,
-      "q": "Who came to see you in the mid-morning?",
-      "qKo": "오전 중반에 누가 찾아왔어?"
-    },
-    {
-      "id": "a42-04-1",
-      "day": 42,
-      "li": 4,
-      "q": "What did the director and the MD say to you?",
-      "qKo": "이사님이랑 대표님이 뭐라고 하셨어?"
-    },
-    {
-      "id": "a42-04-2",
-      "day": 42,
-      "li": 4,
-      "q": "Why did they come to see you?",
-      "qKo": "그분들이 왜 찾아오셨어?"
-    },
-    {
-      "id": "a42-05-1",
-      "day": 42,
-      "li": 5,
-      "q": "Why was this project so important for the company?",
-      "qKo": "이 프로젝트가 회사에 왜 그렇게 중요했어?"
-    },
-    {
-      "id": "a42-05-2",
-      "day": 42,
-      "li": 5,
-      "q": "What else did they say about the deal?",
-      "qKo": "그 거래에 대해 또 뭐라고 하셨어?"
-    },
-    {
-      "id": "a42-06-1",
-      "day": 42,
-      "li": 6,
-      "q": "Was the price good for the company?",
-      "qKo": "가격이 회사에 유리했어?"
-    },
-    {
-      "id": "a42-06-2",
-      "day": 42,
-      "li": 6,
-      "q": "What made the deal even better?",
-      "qKo": "뭐 때문에 그 거래가 더 좋았어?"
-    },
-    {
-      "id": "a42-07-1",
-      "day": 42,
-      "li": 7,
-      "q": "How did the company celebrate?",
-      "qKo": "회사는 어떻게 축하했어?"
-    },
-    {
-      "id": "a42-07-2",
-      "day": 42,
-      "li": 7,
-      "q": "Did you work all day today?",
-      "qKo": "오늘 하루 종일 일했어?"
-    },
-    {
-      "id": "a42-08-1",
-      "day": 42,
-      "li": 8,
-      "q": "Who did you sit with at lunch?",
-      "qKo": "점심 때 누구랑 앉았어?"
-    },
-    {
-      "id": "a42-08-2",
-      "day": 42,
-      "li": 8,
-      "q": "How was lunch with the bosses?",
-      "qKo": "임원들이랑 점심은 어땠어?"
-    },
-    {
-      "id": "a42-09-1",
-      "day": 42,
-      "li": 9,
-      "q": "Did the director say anything about a bonus?",
-      "qKo": "이사님이 보너스에 대해 뭐라고 하셨어?"
-    },
-    {
-      "id": "a42-09-2",
-      "day": 42,
-      "li": 9,
-      "q": "What good news did you hear at lunch?",
-      "qKo": "점심 때 어떤 좋은 소식을 들었어?"
-    },
-    {
-      "id": "a43-00-1",
-      "day": 43,
-      "li": 0,
-      "q": "What did the director tell the MD about you?",
-      "qKo": "이사님이 대표님께 너에 대해 뭐라고 하셨어?"
-    },
-    {
-      "id": "a43-00-2",
-      "day": 43,
-      "li": 0,
-      "q": "How did you get a better price than Mr. Kim?",
-      "qKo": "김 과장님보다 어떻게 더 좋은 가격을 받아냈어?"
-    },
-    {
-      "id": "a43-01-1",
-      "day": 43,
-      "li": 1,
-      "q": "What did the director think of your strategy?",
-      "qKo": "이사님은 네 전략을 어떻게 생각하셨어?"
-    },
-    {
-      "id": "a43-01-2",
-      "day": 43,
-      "li": 1,
-      "q": "Did anyone praise your work?",
-      "qKo": "누가 네 일을 칭찬해 줬어?"
-    },
-    {
-      "id": "a43-02-1",
-      "day": 43,
-      "li": 2,
-      "q": "How did everyone celebrate you?",
-      "qKo": "다들 너를 어떻게 축하해 줬어?"
-    },
-    {
-      "id": "a43-02-2",
-      "day": 43,
-      "li": 2,
-      "q": "What happened in the room after the director spoke?",
-      "qKo": "이사님 말씀 후에 그 자리에서 무슨 일이 있었어?"
-    },
-    {
-      "id": "a43-03-1",
-      "day": 43,
-      "li": 3,
-      "q": "What exactly did the director say?",
-      "qKo": "이사님이 정확히 뭐라고 하셨어?"
-    },
-    {
-      "id": "a43-03-2",
-      "day": 43,
-      "li": 3,
-      "q": "How did the director give you credit?",
-      "qKo": "이사님이 어떻게 너를 인정해 주셨어?"
-    },
-    {
-      "id": "a43-04-1",
-      "day": 43,
-      "li": 4,
-      "q": "How did the managing director react?",
-      "qKo": "대표님은 어떻게 반응하셨어?"
-    },
-    {
-      "id": "a43-04-2",
-      "day": 43,
-      "li": 4,
-      "q": "What did the MD add?",
-      "qKo": "대표님이 뭐라고 덧붙이셨어?"
-    },
-    {
-      "id": "a43-05-1",
-      "day": 43,
-      "li": 5,
-      "q": "How did you feel by the end of lunch?",
-      "qKo": "점심이 끝날 무렵 기분이 어땠어?"
-    },
-    {
-      "id": "a43-05-2",
-      "day": 43,
-      "li": 5,
-      "q": "Did you look happy after the celebration?",
-      "qKo": "축하 자리 끝나고 행복해 보였어?"
-    },
-    {
-      "id": "a43-06-1",
-      "day": 43,
-      "li": 6,
-      "q": "Did the director give you anything as you left?",
-      "qKo": "나올 때 이사님이 뭐 주셨어?"
-    },
-    {
-      "id": "a43-06-2",
-      "day": 43,
-      "li": 6,
-      "q": "How did you get home?",
-      "qKo": "집에 어떻게 왔어?"
-    },
-    {
-      "id": "a43-07-1",
-      "day": 43,
-      "li": 7,
-      "q": "How was your day overall?",
-      "qKo": "오늘 하루 전체적으로 어땠어?"
-    },
-    {
-      "id": "a43-07-2",
-      "day": 43,
-      "li": 7,
-      "q": "Was today a good day?",
-      "qKo": "오늘 좋은 하루였어?"
-    },
-    {
-      "id": "a43-08-1",
-      "day": 43,
-      "li": 8,
-      "q": "What made today so amazing?",
-      "qKo": "오늘 뭐가 그렇게 좋았어?"
-    },
-    {
-      "id": "a43-08-2",
-      "day": 43,
-      "li": 8,
-      "q": "What were the best parts of your day?",
-      "qKo": "오늘 가장 좋았던 건 뭐였어?"
-    },
-    {
-      "id": "a43-09-1",
-      "day": 43,
-      "li": 9,
-      "q": "How did you feel at the end of the day?",
-      "qKo": "하루가 끝날 때 기분이 어땠어?"
-    },
-    {
-      "id": "a43-09-2",
-      "day": 43,
-      "li": 9,
-      "q": "Were you happy today?",
-      "qKo": "오늘 행복했어?"
-    },
-    {
-      "id": "a43-10-1",
-      "day": 43,
-      "li": 10,
-      "q": "Why are you so happy?",
-      "qKo": "왜 그렇게 행복해?"
-    },
-    {
-      "id": "a43-10-2",
-      "day": 43,
-      "li": 10,
-      "q": "How does it feel to get praised by the directors?",
-      "qKo": "임원들에게 칭찬받으니까 기분이 어때?"
-    },
-    {
-      "id": "a43-11-1",
-      "day": 43,
-      "li": 11,
-      "q": "What does this contract mean for you?",
-      "qKo": "이 계약이 너한테 어떤 의미야?"
-    },
-    {
-      "id": "a43-11-2",
-      "day": 43,
-      "li": 11,
-      "q": "Do you think this deal will change your career?",
-      "qKo": "이 거래가 네 커리어를 바꿀 것 같아?"
+      "id": "it-001",
+      "type": "it",
+      "ko": "지난주 매출 하락은 주로 주문량 감소 때문이었어요.",
+      "en": "The drop in revenue last week was mainly driven by a decrease in order volume.",
+      "hints": [
+        "be driven by",
+        "revenue",
+        "order volume"
+      ]
+    },
+    {
+      "id": "it-002",
+      "type": "it",
+      "ko": "이 대시보드의 숫자가 우리 보고서와 일치하지 않는 걸 발견했어요.",
+      "en": "I noticed that the numbers in this dashboard don’t match our report.",
+      "hints": [
+        "I noticed that ~",
+        "match"
+      ]
+    },
+    {
+      "id": "it-003",
+      "type": "it",
+      "ko": "회의 전에 지표 정의에 대해 의견을 맞춰야 할 것 같아요.",
+      "en": "I think we need to align on the metric definition before the meeting.",
+      "hints": [
+        "align on",
+        "metric definition"
+      ]
+    },
+    {
+      "id": "it-004",
+      "type": "it",
+      "ko": "로그를 확인해서 근본 원인을 파악해 볼게요.",
+      "en": "I’ll check the logs and identify the root cause.",
+      "hints": [
+        "check the logs",
+        "identify the root cause"
+      ]
+    },
+    {
+      "id": "it-005",
+      "type": "it",
+      "ko": "이 쿼리가 예상보다 오래 걸리고 있어요.",
+      "en": "This query is taking longer than expected.",
+      "hints": [
+        "take longer than expected"
+      ]
+    },
+    {
+      "id": "it-006",
+      "type": "it",
+      "ko": "문제가 되는 부분을 좁혀 볼게요.",
+      "en": "I’ll narrow down the problematic part.",
+      "hints": [
+        "narrow down"
+      ]
+    },
+    {
+      "id": "it-007",
+      "type": "it",
+      "ko": "새 기능을 다음 달에 출시할 계획이에요.",
+      "en": "We’re planning to roll out the new feature next month.",
+      "hints": [
+        "be planning to",
+        "roll out"
+      ]
+    },
+    {
+      "id": "it-008",
+      "type": "it",
+      "ko": "배포 전에 의존성을 고려해야 해요.",
+      "en": "We should take dependencies into account before deployment.",
+      "hints": [
+        "take ~ into account",
+        "dependency",
+        "deployment"
+      ]
+    },
+    {
+      "id": "it-009",
+      "type": "it",
+      "ko": "혹시 지난주 회의 자료 어디에 저장했는지 기억나세요?",
+      "en": "Do you happen to remember where you saved last week’s meeting materials?",
+      "hints": [
+        "Do you happen to ~?",
+        "materials"
+      ]
+    },
+    {
+      "id": "it-010",
+      "type": "it",
+      "ko": "그 이슈 짚어 주셔서 감사해요.",
+      "en": "Thanks for pointing out that issue.",
+      "hints": [
+        "Thanks for ~ing",
+        "point out"
+      ]
+    },
+    {
+      "id": "it-011",
+      "type": "it",
+      "ko": "이 문제는 지난 배포와 관련이 있는 것 같아요.",
+      "en": "I think this issue is related to the last deployment.",
+      "hints": [
+        "be related to",
+        "deployment"
+      ]
+    },
+    {
+      "id": "it-012",
+      "type": "it",
+      "ko": "중복 레코드를 제거한 다음에 다시 집계해 주세요.",
+      "en": "Please aggregate the data again after removing the duplicate records.",
+      "hints": [
+        "aggregation",
+        "duplicate records",
+        "remove"
+      ]
+    },
+    {
+      "id": "it-013",
+      "type": "it",
+      "ko": "데이터가 최신 상태인지 꼭 확인해 주세요.",
+      "en": "Please make sure the data is up to date.",
+      "hints": [
+        "make sure",
+        "up to date"
+      ]
+    },
+    {
+      "id": "it-014",
+      "type": "it",
+      "ko": "제 관점에서는 이 지표가 오해를 줄 수 있어요.",
+      "en": "From my perspective, this metric could be misleading.",
+      "hints": [
+        "from my perspective",
+        "could be"
+      ]
+    },
+    {
+      "id": "it-015",
+      "type": "it",
+      "ko": "이 결과는 통계적으로 유의하지 않아요.",
+      "en": "This result isn’t statistically significant.",
+      "hints": [
+        "statistical significance"
+      ]
+    },
+    {
+      "id": "it-016",
+      "type": "it",
+      "ko": "대시보드 사용법을 차근차근 설명해 드릴게요.",
+      "en": "Let me walk you through how to use the dashboard.",
+      "hints": [
+        "walk someone through",
+        "how to ~"
+      ]
+    },
+    {
+      "id": "it-017",
+      "type": "it",
+      "ko": "고객 세그먼트별로 수치를 나눠 주실 수 있나요?",
+      "en": "Could you break down the numbers by customer segment?",
+      "hints": [
+        "break down",
+        "segment"
+      ]
+    },
+    {
+      "id": "it-018",
+      "type": "it",
+      "ko": "이번 분기 목표는 이탈률을 줄이는 거예요.",
+      "en": "Our goal this quarter is to reduce churn.",
+      "hints": [
+        "churn"
+      ]
+    },
+    {
+      "id": "it-019",
+      "type": "it",
+      "ko": "마감을 지키려면 우선순위를 다시 정해야 해요.",
+      "en": "We need to set new priorities to meet the deadline.",
+      "hints": [
+        "priority",
+        "meet a deadline"
+      ]
+    },
+    {
+      "id": "it-020",
+      "type": "it",
+      "ko": "이 프로젝트는 계획대로 잘 진행되고 있어요.",
+      "en": "This project is on track.",
+      "hints": [
+        "be on track"
+      ]
+    },
+    {
+      "id": "it-021",
+      "type": "it",
+      "ko": "우리 팀 일정이 조금 밀리고 있어요.",
+      "en": "Our team is falling a little behind schedule.",
+      "hints": [
+        "fall behind"
+      ]
+    },
+    {
+      "id": "it-022",
+      "type": "it",
+      "ko": "다음 주 월요일에 프로젝트를 시작할게요.",
+      "en": "We’ll kick off the project next Monday.",
+      "hints": [
+        "kick off"
+      ]
+    },
+    {
+      "id": "it-023",
+      "type": "it",
+      "ko": "프로젝트를 인계하기 전에 문서를 업데이트할게요.",
+      "en": "I’ll update the documentation before I hand over the project.",
+      "hints": [
+        "hand over",
+        "documentation"
+      ]
+    },
+    {
+      "id": "it-024",
+      "type": "it",
+      "ko": "내일까지 다시 연락드릴게요.",
+      "en": "I’ll get back to you by tomorrow.",
+      "hints": [
+        "get back to"
+      ]
+    },
+    {
+      "id": "it-025",
+      "type": "it",
+      "ko": "데이터 수집 과정에서 문제가 생긴 것 같아요.",
+      "en": "It looks like there was an issue during data ingestion.",
+      "hints": [
+        "It looks like ~",
+        "ingestion"
+      ]
+    },
+    {
+      "id": "it-026",
+      "type": "it",
+      "ko": "이 변경이 하위 대시보드에 영향을 줄까요?",
+      "en": "Will this change affect any downstream dashboards?",
+      "hints": [
+        "downstream",
+        "affect"
+      ]
+    },
+    {
+      "id": "it-027",
+      "type": "it",
+      "ko": "파이프라인이 다시 정상적으로 돌아가고 있어요.",
+      "en": "The pipeline is up and running again.",
+      "hints": [
+        "be up and running"
+      ]
+    },
+    {
+      "id": "it-028",
+      "type": "it",
+      "ko": "API를 연동하다가 문제에 부딪혔어요.",
+      "en": "I ran into an issue while integrating the API.",
+      "hints": [
+        "run into an issue"
+      ]
+    },
+    {
+      "id": "it-029",
+      "type": "it",
+      "ko": "다시는 이런 일이 없도록 모니터링을 구축합시다.",
+      "en": "Let’s set up monitoring to prevent this from happening again.",
+      "hints": [
+        "set up",
+        "prevent A from ~ing"
+      ]
+    },
+    {
+      "id": "it-030",
+      "type": "it",
+      "ko": "재시도해도 결과가 같도록 파이프라인을 멱등하게 만들어야 해요.",
+      "en": "We need to make the pipeline idempotent so that retries give the same result.",
+      "hints": [
+        "idempotent",
+        "retry"
+      ]
+    },
+    {
+      "id": "it-031",
+      "type": "it",
+      "ko": "이 테이블의 단위가 일별인가요, 시간별인가요?",
+      "en": "Is the granularity of this table daily or hourly?",
+      "hints": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "it-032",
+      "type": "it",
+      "ko": "평균을 내기 전에 이상치를 제거하는 게 좋겠어요.",
+      "en": "We’d better remove the outliers before we calculate the average.",
+      "hints": [
+        "outlier",
+        "had better"
+      ]
+    },
+    {
+      "id": "it-033",
+      "type": "it",
+      "ko": "상관관계가 곧 인과관계는 아니에요.",
+      "en": "Correlation doesn’t mean causation.",
+      "hints": [
+        "correlation",
+        "causality"
+      ]
+    },
+    {
+      "id": "it-034",
+      "type": "it",
+      "ko": "A/B 테스트로 새 디자인의 효과를 측정해 봐요.",
+      "en": "Let’s measure the impact of the new design with an A/B test.",
+      "hints": [
+        "measure the impact",
+        "A/B test"
+      ]
+    },
+    {
+      "id": "it-035",
+      "type": "it",
+      "ko": "대조군과 실험군의 전환율을 비교해 주세요.",
+      "en": "Please compare the conversion rate between the control and treatment groups.",
+      "hints": [
+        "control group",
+        "treatment group",
+        "conversion rate"
+      ]
+    },
+    {
+      "id": "it-036",
+      "type": "it",
+      "ko": "가설을 검증하려면 표본이 더 필요해요.",
+      "en": "We need a bigger sample size to validate the hypothesis.",
+      "hints": [
+        "sample size",
+        "validate the hypothesis"
+      ]
+    },
+    {
+      "id": "it-037",
+      "type": "it",
+      "ko": "코호트 분석으로 그룹별 유지율을 비교할 수 있어요.",
+      "en": "We can compare retention across groups with cohort analysis.",
+      "hints": [
+        "cohort analysis",
+        "retention"
+      ]
+    },
+    {
+      "id": "it-038",
+      "type": "it",
+      "ko": "이번 캠페인의 증분 효과는 어느 정도였나요?",
+      "en": "What was the incrementality of this campaign?",
+      "hints": [
+        "incrementality"
+      ]
+    },
+    {
+      "id": "it-039",
+      "type": "it",
+      "ko": "매출은 늘었는데 마진은 오히려 줄었어요.",
+      "en": "Revenue went up, but our margin actually went down.",
+      "hints": [
+        "revenue",
+        "margin"
+      ]
+    },
+    {
+      "id": "it-040",
+      "type": "it",
+      "ko": "배송비가 비용 구조에서 가장 큰 부분을 차지해요.",
+      "en": "Shipping accounts for the biggest part of our cost structure.",
+      "hints": [
+        "account for",
+        "cost structure"
+      ]
+    },
+    {
+      "id": "it-041",
+      "type": "it",
+      "ko": "모바일이 전체 주문의 70%를 차지해요.",
+      "en": "Mobile accounts for 70% of all orders.",
+      "hints": [
+        "account for"
+      ]
+    },
+    {
+      "id": "it-042",
+      "type": "it",
+      "ko": "장바구니 이탈은 특히 모바일에서 높아요.",
+      "en": "Basket abandonment is especially high on mobile.",
+      "hints": [
+        "basket abandonment",
+        "especially"
+      ]
+    },
+    {
+      "id": "it-043",
+      "type": "it",
+      "ko": "재구매를 늘리려면 어떤 인센티브가 효과적일까요?",
+      "en": "What kind of incentive would be effective in increasing repeat purchases?",
+      "hints": [
+        "incentive",
+        "effective",
+        "repeat purchase"
+      ]
+    },
+    {
+      "id": "it-044",
+      "type": "it",
+      "ko": "가격 민감도가 높은 고객에게는 할인 쿠폰이 잘 통해요.",
+      "en": "Discount coupons work well for customers with high price sensitivity.",
+      "hints": [
+        "price sensitivity"
+      ]
+    },
+    {
+      "id": "it-045",
+      "type": "it",
+      "ko": "예산과 실제 지출 사이의 차이가 커요.",
+      "en": "The variance between the budget and actual spending is large.",
+      "hints": [
+        "variance",
+        "expenditure"
+      ]
+    },
+    {
+      "id": "it-046",
+      "type": "it",
+      "ko": "이 예측은 작년 데이터를 기준으로 했어요.",
+      "en": "This forecast is based on last year’s data.",
+      "hints": [
+        "forecast",
+        "based on"
+      ]
+    },
+    {
+      "id": "it-047",
+      "type": "it",
+      "ko": "데이터를 보면 주말 매출이 더 높아요.",
+      "en": "Based on the data, weekend sales are higher.",
+      "hints": [
+        "based on the data"
+      ]
+    },
+    {
+      "id": "it-048",
+      "type": "it",
+      "ko": "제가 알기로는 오늘 배포 일정은 없어요.",
+      "en": "As far as I know, there’s no deployment scheduled today.",
+      "hints": [
+        "as far as I know"
+      ]
+    },
+    {
+      "id": "it-049",
+      "type": "it",
+      "ko": "그 부분 좀 더 자세히 설명해 주실 수 있나요?",
+      "en": "Could you elaborate on that part?",
+      "hints": [
+        "elaborate on"
+      ]
+    },
+    {
+      "id": "it-050",
+      "type": "it",
+      "ko": "회의를 이쯤에서 마무리할까요?",
+      "en": "Should we wrap up the meeting here?",
+      "hints": [
+        "wrap up"
+      ]
+    },
+    {
+      "id": "it-051",
+      "type": "it",
+      "ko": "이 건은 매니저에게 보고해야 할 것 같아요.",
+      "en": "I think we should escalate this to the manager.",
+      "hints": [
+        "escalate"
+      ]
+    },
+    {
+      "id": "it-052",
+      "type": "it",
+      "ko": "엔지니어링 팀과 일정을 조율해 볼게요.",
+      "en": "I’ll coordinate the timeline with the engineering team.",
+      "hints": [
+        "coordinate"
+      ]
+    },
+    {
+      "id": "it-053",
+      "type": "it",
+      "ko": "이 일정이 현실적으로 가능할까요?",
+      "en": "Is this timeline feasible?",
+      "hints": [
+        "feasible"
+      ]
+    },
+    {
+      "id": "it-054",
+      "type": "it",
+      "ko": "속도와 정확도 사이에는 트레이드오프가 있어요.",
+      "en": "There’s a trade-off between speed and accuracy.",
+      "hints": [
+        "trade-off"
+      ]
+    },
+    {
+      "id": "it-055",
+      "type": "it",
+      "ko": "일단은 이 방법으로 진행하고 나중에 개선해요.",
+      "en": "Let’s go with this approach for now and improve it later.",
+      "hints": [
+        "for now"
+      ]
+    },
+    {
+      "id": "it-056",
+      "type": "it",
+      "ko": "리디자인은 우선순위를 낮추기로 했어요.",
+      "en": "We decided to deprioritize the redesign.",
+      "hints": [
+        "deprioritize"
+      ]
+    },
+    {
+      "id": "it-057",
+      "type": "it",
+      "ko": "툴을 바꾸는 건 아직 잠정적인 계획이에요.",
+      "en": "Switching tools is still a tentative plan.",
+      "hints": [
+        "tentative"
+      ]
+    },
+    {
+      "id": "it-058",
+      "type": "it",
+      "ko": "이 버그를 우회할 방법을 찾았어요.",
+      "en": "I found a way to work around this bug.",
+      "hints": [
+        "work around"
+      ]
+    },
+    {
+      "id": "it-059",
+      "type": "it",
+      "ko": "예전 대시보드는 다음 달부터 단계적으로 없앨 거예요.",
+      "en": "We’ll phase out the old dashboard starting next month.",
+      "hints": [
+        "phase out"
+      ]
+    },
+    {
+      "id": "it-060",
+      "type": "it",
+      "ko": "다음 주까지 사용자 설문 조사를 실시할 예정이에요.",
+      "en": "We’re going to carry out a user survey by next week.",
+      "hints": [
+        "carry out",
+        "conduct"
+      ]
+    },
+    {
+      "id": "it-061",
+      "type": "it",
+      "ko": "원인 후보를 두 가지로 좁혔어요.",
+      "en": "We’ve narrowed it down to two possible causes.",
+      "hints": [
+        "narrow down"
+      ]
+    },
+    {
+      "id": "it-062",
+      "type": "it",
+      "ko": "데이터 오류 가능성은 배제했어요.",
+      "en": "We’ve ruled out a data error.",
+      "hints": [
+        "rule out"
+      ]
+    },
+    {
+      "id": "it-063",
+      "type": "it",
+      "ko": "계절성도 고려해야 해요.",
+      "en": "We also need to take seasonality into account.",
+      "hints": [
+        "take ~ into account"
+      ]
+    },
+    {
+      "id": "it-064",
+      "type": "it",
+      "ko": "일간 활성 사용자를 매일 추적하고 있어요.",
+      "en": "We keep track of daily active users every day.",
+      "hints": [
+        "keep track of",
+        "active users"
+      ]
+    },
+    {
+      "id": "it-065",
+      "type": "it",
+      "ko": "저는 매출 대시보드를 담당하고 있어요.",
+      "en": "I’m responsible for the sales dashboard.",
+      "hints": [
+        "be responsible for"
+      ]
+    },
+    {
+      "id": "it-066",
+      "type": "it",
+      "ko": "이번 주 내내 쿼리 최적화 작업을 했어요.",
+      "en": "I’ve been working on query optimization all week.",
+      "hints": [
+        "work on",
+        "optimize"
+      ]
+    },
+    {
+      "id": "it-067",
+      "type": "it",
+      "ko": "전부터 이 이슈에 대해 여쭤보려고 했어요.",
+      "en": "I’ve been meaning to ask you about this issue.",
+      "hints": [
+        "I’ve been meaning to ~"
+      ]
+    },
+    {
+      "id": "it-068",
+      "type": "it",
+      "ko": "대체로 결과는 예상대로 나왔어요.",
+      "en": "For the most part, the results came out as expected.",
+      "hints": [
+        "for the most part",
+        "as expected"
+      ]
+    },
+    {
+      "id": "it-069",
+      "type": "it",
+      "ko": "노력을 안 한 건 아니에요. 시간이 부족했을 뿐이에요.",
+      "en": "It’s not like I didn’t put in any effort. I just didn’t have enough time.",
+      "hints": [
+        "It’s not like ~",
+        "put in effort"
+      ]
+    },
+    {
+      "id": "it-070",
+      "type": "it",
+      "ko": "지금 시작해야 해요. 안 그러면 마감을 놓칠 거예요.",
+      "en": "We need to start now. Otherwise, we’ll miss the deadline.",
+      "hints": [
+        "otherwise",
+        "miss a deadline"
+      ]
+    },
+    {
+      "id": "it-071",
+      "type": "it",
+      "ko": "보고서 보내기 전에 숫자를 한 번 더 검토해 봐요.",
+      "en": "Let’s go over the numbers one more time before we send the report.",
+      "hints": [
+        "go over"
+      ]
+    },
+    {
+      "id": "it-072",
+      "type": "it",
+      "ko": "요청이 너무 많아서 다 따라가기 힘들어요.",
+      "en": "There are so many requests that it’s hard to keep up with them.",
+      "hints": [
+        "keep up with"
+      ]
+    },
+    {
+      "id": "it-073",
+      "type": "it",
+      "ko": "남는 시간을 활용해서 문서를 정리했어요.",
+      "en": "I made use of the extra time to organize the documentation.",
+      "hints": [
+        "make use of"
+      ]
+    },
+    {
+      "id": "it-074",
+      "type": "it",
+      "ko": "일정은 데이터 팀에 달려 있어요.",
+      "en": "The timeline depends on the data team.",
+      "hints": [
+        "depend on"
+      ]
+    },
+    {
+      "id": "it-075",
+      "type": "it",
+      "ko": "오늘은 회의가 줄줄이 있는 그런 날이었어요.",
+      "en": "It was one of those days with back-to-back meetings.",
+      "hints": [
+        "one of those days"
+      ]
+    },
+    {
+      "id": "it-076",
+      "type": "it",
+      "ko": "야근 자체가 나쁜 건 아니지만, 매일 하면 번아웃이 와요.",
+      "en": "Overtime isn’t bad in and of itself, but doing it every day leads to burnout.",
+      "hints": [
+        "in and of itself",
+        "lead to"
+      ]
+    },
+    {
+      "id": "it-077",
+      "type": "it",
+      "ko": "우리 팀이 마감 전에 그 프로젝트를 해냈어요.",
+      "en": "Our team pulled off the project before the deadline.",
+      "hints": [
+        "pull off"
+      ]
+    },
+    {
+      "id": "it-078",
+      "type": "it",
+      "ko": "결과는 다음 주나 되어야 나와요.",
+      "en": "The results won’t be ready until next week.",
+      "hints": [
+        "not ~ until"
+      ]
+    },
+    {
+      "id": "it-079",
+      "type": "it",
+      "ko": "이 변경이 효과가 있을지 궁금해요.",
+      "en": "I wonder if this change will work.",
+      "hints": [
+        "I wonder if ~"
+      ]
+    },
+    {
+      "id": "it-080",
+      "type": "it",
+      "ko": "막 메일 보내려던 참이었어요.",
+      "en": "I was just about to send you an email.",
+      "hints": [
+        "be about to"
+      ]
+    },
+    {
+      "id": "it-081",
+      "type": "it",
+      "ko": "이 작업은 우리 팀과 마케팅 팀 모두에게 중요해요.",
+      "en": "This work is important for both our team and the marketing team.",
+      "hints": [
+        "both A and B"
+      ]
+    },
+    {
+      "id": "it-082",
+      "type": "it",
+      "ko": "어차피 기다려야 하니까 그동안 문서를 업데이트하는 게 낫겠어요.",
+      "en": "Since we have to wait anyway, we might as well update the documentation.",
+      "hints": [
+        "might as well"
+      ]
+    },
+    {
+      "id": "it-083",
+      "type": "it",
+      "ko": "잠깐 쉬었으니 다시 작업하러 갈게요.",
+      "en": "I took a short break, so I’ll get back to it.",
+      "hints": [
+        "get back to it"
+      ]
+    },
+    {
+      "id": "it-084",
+      "type": "it",
+      "ko": "저는 마케팅 대신 데이터 분석을 택했어요.",
+      "en": "I chose data analysis over marketing.",
+      "hints": [
+        "choose A over B"
+      ]
+    },
+    {
+      "id": "it-085",
+      "type": "it",
+      "ko": "새 프로젝트에 합류하는 게 좀 망설여지기 시작했어요.",
+      "en": "I’m starting to have second thoughts about joining the new project.",
+      "hints": [
+        "have second thoughts"
+      ]
+    },
+    {
+      "id": "it-086",
+      "type": "it",
+      "ko": "도움이 필요하면 언제든 말만 하세요.",
+      "en": "If you need any help, just say the word.",
+      "hints": [
+        "just say the word"
+      ]
+    },
+    {
+      "id": "it-087",
+      "type": "it",
+      "ko": "참고로, 내일 회의는 3시로 옮겨졌어요.",
+      "en": "Just so you know, tomorrow’s meeting has been moved to 3.",
+      "hints": [
+        "just so you know"
+      ]
+    },
+    {
+      "id": "it-088",
+      "type": "it",
+      "ko": "월말이라 정신이 없어요. 어떤지 아시잖아요.",
+      "en": "It’s the end of the month, so things are hectic. You know how it is.",
+      "hints": [
+        "You know how it is."
+      ]
+    },
+    {
+      "id": "it-089",
+      "type": "it",
+      "ko": "결국 결정은 데이터를 보고 해야 해요.",
+      "en": "At the end of the day, the data should drive the decision.",
+      "hints": [
+        "at the end of the day"
+      ]
+    },
+    {
+      "id": "it-090",
+      "type": "it",
+      "ko": "그 리팩토링은 끝내 손을 못 댔어요.",
+      "en": "I never got around to that refactoring.",
+      "hints": [
+        "get around to"
+      ]
+    },
+    {
+      "id": "it-091",
+      "type": "it",
+      "ko": "저라면 지금 배포하지 않고 다음 주까지 기다리겠어요.",
+      "en": "I wouldn’t deploy it now. I would wait until next week.",
+      "hints": [
+        "would / wouldn’t"
+      ]
+    },
+    {
+      "id": "it-092",
+      "type": "it",
+      "ko": "이번 분기에 큰 해외 거래를 따냈어요.",
+      "en": "We secured a big overseas deal this quarter.",
+      "hints": [
+        "secure a deal",
+        "overseas"
+      ]
+    },
+    {
+      "id": "it-093",
+      "type": "it",
+      "ko": "제 분석이 인정받아서 정말 기뻐요.",
+      "en": "I’m so happy my analysis was recognized.",
+      "hints": [
+        "be recognized"
+      ]
+    },
+    {
+      "id": "it-094",
+      "type": "it",
+      "ko": "회사가 해외 매출 감소로 고전하고 있어요.",
+      "en": "The company has been struggling with lower overseas sales.",
+      "hints": [
+        "struggle with"
+      ]
+    },
+    {
+      "id": "it-095",
+      "type": "it",
+      "ko": "이 계약이 우리 팀의 전환점이 될 수 있을 것 같아요.",
+      "en": "I feel like this contract could be a turning point for our team.",
+      "hints": [
+        "I feel like ~",
+        "turning point"
+      ]
+    },
+    {
+      "id": "it-096",
+      "type": "it",
+      "ko": "이 지표는 완료된 주문만 포함해요.",
+      "en": "This metric only includes completed orders.",
+      "hints": [
+        "include",
+        "completed orders"
+      ]
+    },
+    {
+      "id": "it-097",
+      "type": "it",
+      "ko": "그래서 숫자가 달랐던 거군요.",
+      "en": "That explains the discrepancy.",
+      "hints": [
+        "That explains ~",
+        "discrepancy"
+      ]
+    },
+    {
+      "id": "it-098",
+      "type": "it",
+      "ko": "최근 업데이트 이후로 쿼리 성능이 저하됐어요.",
+      "en": "Query performance has degraded since the latest update.",
+      "hints": [
+        "degrade",
+        "since ~"
+      ]
+    },
+    {
+      "id": "it-099",
+      "type": "it",
+      "ko": "실행 계획에 병목이 있을 수도 있어요.",
+      "en": "There might be a bottleneck in the execution plan.",
+      "hints": [
+        "bottleneck",
+        "execution plan"
+      ]
+    },
+    {
+      "id": "it-100",
+      "type": "it",
+      "ko": "데이터 양과 확장성도 고려해야 해요.",
+      "en": "We should also take data volume and scalability into account.",
+      "hints": [
+        "scalability",
+        "take ~ into account"
+      ]
+    },
+    {
+      "id": "it-101",
+      "type": "it",
+      "ko": "데이터 계보를 보고 이 데이터가 어디서 왔는지 확인해 볼게요.",
+      "en": "I’ll check the data lineage to see where this data comes from.",
+      "hints": [
+        "data lineage"
+      ]
+    },
+    {
+      "id": "it-102",
+      "type": "it",
+      "ko": "적재하기 전에 완전성과 일관성을 확인해야 해요.",
+      "en": "We need to check completeness and consistency before loading the data.",
+      "hints": [
+        "completeness",
+        "consistency"
+      ]
+    },
+    {
+      "id": "it-103",
+      "type": "it",
+      "ko": "장애에서 복구하는 데 30분 정도 걸렸어요.",
+      "en": "It took about 30 minutes to recover from the incident.",
+      "hints": [
+        "incident",
+        "recovery"
+      ]
+    },
+    {
+      "id": "it-104",
+      "type": "it",
+      "ko": "성공 지표부터 먼저 정의해야 해요.",
+      "en": "We need to define the success metrics first.",
+      "hints": [
+        "define success metrics"
+      ]
+    },
+    {
+      "id": "it-105",
+      "type": "it",
+      "ko": "이벤트 트래킹이 제대로 되는지 확인해 주세요.",
+      "en": "Please confirm that event tracking is working properly.",
+      "hints": [
+        "confirm",
+        "event tracking"
+      ]
+    },
+    {
+      "id": "it-106",
+      "type": "it",
+      "ko": "주요 발견 사항을 문서로 정리했어요.",
+      "en": "I’ve documented the key findings.",
+      "hints": [
+        "document",
+        "key findings"
+      ]
+    },
+    {
+      "id": "it-107",
+      "type": "it",
+      "ko": "이 분석의 한계점도 같이 설명해 주세요.",
+      "en": "Please explain the limitations of this analysis too.",
+      "hints": [
+        "limitation"
+      ]
+    },
+    {
+      "id": "it-108",
+      "type": "it",
+      "ko": "추가 설명이 필요하면 다시 연락드릴게요.",
+      "en": "I’ll get back to you if I need further clarification.",
+      "hints": [
+        "further clarification"
+      ]
+    },
+    {
+      "id": "it-109",
+      "type": "it",
+      "ko": "새 툴 사용법은 아직 알아 가는 중이에요.",
+      "en": "I’m still figuring out how to use the new tool.",
+      "hints": [
+        "figure out"
+      ]
+    },
+    {
+      "id": "it-110",
+      "type": "it",
+      "ko": "데이터를 깊이 파고들어서 원인을 찾아볼게요.",
+      "en": "I’ll dig into the data to find the cause.",
+      "hints": [
+        "dig into"
+      ]
+    },
+    {
+      "id": "it-111",
+      "type": "it",
+      "ko": "이 수치를 지역별로 나눠서 볼게요.",
+      "en": "I’ll break these numbers down by region.",
+      "hints": [
+        "break down"
+      ]
+    },
+    {
+      "id": "it-112",
+      "type": "it",
+      "ko": "지난 분기에 비해 생산성이 크게 올랐어요.",
+      "en": "Productivity has gone up a lot compared to last quarter.",
+      "hints": [
+        "productivity"
+      ]
+    },
+    {
+      "id": "it-113",
+      "type": "it",
+      "ko": "금요일까지 비용 견적을 보내 주실 수 있나요?",
+      "en": "Could you send us a cost estimate by Friday?",
+      "hints": [
+        "estimate"
+      ]
+    },
+    {
+      "id": "it-114",
+      "type": "it",
+      "ko": "그 업체는 항상 제때 납품해서 믿을 만해요.",
+      "en": "That vendor is reliable because they always deliver on time.",
+      "hints": [
+        "reliable",
+        "vendor"
+      ]
+    },
+    {
+      "id": "it-115",
+      "type": "it",
+      "ko": "회의가 다음 주 화요일로 연기됐어요.",
+      "en": "The meeting has been postponed until next Tuesday.",
+      "hints": [
+        "postpone"
+      ]
+    },
+    {
+      "id": "it-116",
+      "type": "it",
+      "ko": "출장비를 환급받으려면 영수증을 제출해야 해요.",
+      "en": "You need to submit your receipts to get reimbursement for travel expenses.",
+      "hints": [
+        "reimbursement"
+      ]
+    },
+    {
+      "id": "it-117",
+      "type": "it",
+      "ko": "출시 전에 위험 요소를 평가해야 해요.",
+      "en": "We need to assess the risks before the launch.",
+      "hints": [
+        "assess"
+      ]
+    },
+    {
+      "id": "it-118",
+      "type": "it",
+      "ko": "이 문제는 즉각적인 조치가 필요해요.",
+      "en": "This issue needs immediate attention.",
+      "hints": [
+        "immediate"
+      ]
+    },
+    {
+      "id": "it-119",
+      "type": "it",
+      "ko": "고객 만족이 우리의 최우선 과제예요.",
+      "en": "Customer satisfaction is our top priority.",
+      "hints": [
+        "priority"
+      ]
+    },
+    {
+      "id": "it-120",
+      "type": "it",
+      "ko": "이 수치가 어떻게 계산되는지 설명해 주시겠어요?",
+      "en": "Could you clarify how this number is calculated?",
+      "hints": [
+        "clarify",
+        "how ~ is calculated"
+      ]
+    },
+    {
+      "id": "life-001",
+      "type": "life",
+      "ko": "일단은 회사 근처에 살고 있는데, 내년에 이사할 수도 있어.",
+      "en": "I’m living near my office for now, but I might move next year.",
+      "hints": [
+        "for now"
+      ]
+    },
+    {
+      "id": "life-002",
+      "type": "life",
+      "ko": "그 영화 대체로 재밌었는데 결말이 좀 아쉬웠어.",
+      "en": "The movie was fun for the most part, but the ending was a little disappointing.",
+      "hints": [
+        "for the most part"
+      ]
+    },
+    {
+      "id": "life-003",
+      "type": "life",
+      "ko": "네 메시지 무시한 거 아니야. 늦게 봤을 뿐이야.",
+      "en": "It’s not like I ignored your message. I just saw it late.",
+      "hints": [
+        "It’s not like ~"
+      ]
+    },
+    {
+      "id": "life-004",
+      "type": "life",
+      "ko": "지금 출발하자. 안 그러면 차 막혀서 꼼짝 못 할 거야.",
+      "en": "Let’s leave now. Otherwise, we’ll get stuck in traffic.",
+      "hints": [
+        "otherwise",
+        "stuck"
+      ]
+    },
+    {
+      "id": "life-005",
+      "type": "life",
+      "ko": "나가기 전에 문 잠갔는지 꼭 확인해.",
+      "en": "Make sure you lock the door before you leave.",
+      "hints": [
+        "make sure"
+      ]
+    },
+    {
+      "id": "life-006",
+      "type": "life",
+      "ko": "요즘 뉴스를 잘 못 따라가고 있어.",
+      "en": "I haven’t been keeping up with the news lately.",
+      "hints": [
+        "keep up with"
+      ]
+    },
+    {
+      "id": "life-007",
+      "type": "life",
+      "ko": "출퇴근 시간을 활용해서 영어 공부를 해.",
+      "en": "I make use of my commute to study English.",
+      "hints": [
+        "make use of"
+      ]
+    },
+    {
+      "id": "life-008",
+      "type": "life",
+      "ko": "갈지 말지는 날씨에 달렸어.",
+      "en": "Whether we go or not depends on the weather.",
+      "hints": [
+        "depend on"
+      ]
+    },
+    {
+      "id": "life-009",
+      "type": "life",
+      "ko": "오늘 하루 종일 일이 꼬였어. 그런 날 있잖아.",
+      "en": "Everything went wrong today. It was one of those days.",
+      "hints": [
+        "one of those days"
+      ]
+    },
+    {
+      "id": "life-010",
+      "type": "life",
+      "ko": "이번 주말엔 기분 전환 삼아 등산 가자.",
+      "en": "Let’s go hiking this weekend for a change.",
+      "hints": [
+        "for a change"
+      ]
+    },
+    {
+      "id": "life-011",
+      "type": "life",
+      "ko": "그 짧은 시간에 그걸 해내다니 믿기지가 않아.",
+      "en": "I can’t believe you pulled it off in such a short time.",
+      "hints": [
+        "pull off"
+      ]
+    },
+    {
+      "id": "life-012",
+      "type": "life",
+      "ko": "조용히 책 읽기 딱 좋은 카페를 알아.",
+      "en": "I know just the place to read quietly.",
+      "hints": [
+        "just the place"
+      ]
+    },
+    {
+      "id": "life-013",
+      "type": "life",
+      "ko": "혹시 충전기 있어?",
+      "en": "Do you happen to have a charger?",
+      "hints": [
+        "Do you happen to ~?"
+      ]
+    },
+    {
+      "id": "life-014",
+      "type": "life",
+      "ko": "그 가게는 10시나 돼야 문을 열어.",
+      "en": "That store doesn’t open until 10.",
+      "hints": [
+        "not ~ until"
+      ]
+    },
+    {
+      "id": "life-015",
+      "type": "life",
+      "ko": "내일 비가 올지 궁금하네.",
+      "en": "I wonder if it’s going to rain tomorrow.",
+      "hints": [
+        "I wonder if ~"
+      ]
+    },
+    {
+      "id": "life-016",
+      "type": "life",
+      "ko": "막 너한테 전화하려던 참이었어!",
+      "en": "I was just about to call you!",
+      "hints": [
+        "be about to"
+      ]
+    },
+    {
+      "id": "life-017",
+      "type": "life",
+      "ko": "나는 커피랑 차 둘 다 좋아해.",
+      "en": "I like both coffee and tea.",
+      "hints": [
+        "both A and B"
+      ]
+    },
+    {
+      "id": "life-018",
+      "type": "life",
+      "ko": "이번 겨울에 베트남 여행 갈 계획이야.",
+      "en": "I’m planning to travel to Vietnam this winter.",
+      "hints": [
+        "be planning to"
+      ]
+    },
+    {
+      "id": "life-019",
+      "type": "life",
+      "ko": "버스가 안 오네. 그냥 걸어가는 게 낫겠다.",
+      "en": "The bus isn’t coming. We might as well walk.",
+      "hints": [
+        "might as well"
+      ]
+    },
+    {
+      "id": "life-020",
+      "type": "life",
+      "ko": "잠깐 쉬었으니 이제 다시 청소해야겠다.",
+      "en": "I took a short break, so I’d better get back to it.",
+      "hints": [
+        "get back to it",
+        "I’d better"
+      ]
+    },
+    {
+      "id": "life-021",
+      "type": "life",
+      "ko": "나는 시골보다 도시를 택하겠어.",
+      "en": "I’d choose the city over the countryside.",
+      "hints": [
+        "choose A over B"
+      ]
+    },
+    {
+      "id": "life-022",
+      "type": "life",
+      "ko": "산책하면서 머리 좀 식히고 올게.",
+      "en": "I’m going to take a walk to clear my head.",
+      "hints": [
+        "clear my head"
+      ]
+    },
+    {
+      "id": "life-023",
+      "type": "life",
+      "ko": "전부터 너한테 전화하려고 했어.",
+      "en": "I’ve been meaning to call you.",
+      "hints": [
+        "I’ve been meaning to ~"
+      ]
+    },
+    {
+      "id": "life-024",
+      "type": "life",
+      "ko": "맛있어 보이면 디저트를 안 시킬 수가 없어.",
+      "en": "I can’t help ordering dessert when it looks good.",
+      "hints": [
+        "can’t help ~ing"
+      ]
+    },
+    {
+      "id": "life-025",
+      "type": "life",
+      "ko": "“내일 휴일이야?” “내가 알기로는 아니야.”",
+      "en": "“Is tomorrow a holiday?” “Not that I know of.”",
+      "hints": [
+        "Not that I know of."
+      ]
+    },
+    {
+      "id": "life-026",
+      "type": "life",
+      "ko": "이사하는 게 좀 망설여지기 시작했어.",
+      "en": "I’m starting to have second thoughts about moving.",
+      "hints": [
+        "have second thoughts"
+      ]
+    },
+    {
+      "id": "life-027",
+      "type": "life",
+      "ko": "도움 필요하면 말만 해.",
+      "en": "If you need help, just say the word.",
+      "hints": [
+        "just say the word"
+      ]
+    },
+    {
+      "id": "life-028",
+      "type": "life",
+      "ko": "참고로 말하는데, 오늘은 내가 살게.",
+      "en": "Just so you know, I’m paying today.",
+      "hints": [
+        "just so you know"
+      ]
+    },
+    {
+      "id": "life-029",
+      "type": "life",
+      "ko": "요즘 너무 바빠서 운동을 못 했어. 어떤지 알잖아.",
+      "en": "I’ve been too busy to work out lately. You know how it is.",
+      "hints": [
+        "too ~ to …",
+        "You know how it is."
+      ]
+    },
+    {
+      "id": "life-030",
+      "type": "life",
+      "ko": "결국 중요한 건 건강이야.",
+      "en": "At the end of the day, what matters is your health.",
+      "hints": [
+        "at the end of the day"
+      ]
+    },
+    {
+      "id": "life-031",
+      "type": "life",
+      "ko": "그 책은 끝내 다 읽지 못했어.",
+      "en": "I never got around to finishing that book.",
+      "hints": [
+        "get around to"
+      ]
+    },
+    {
+      "id": "life-032",
+      "type": "life",
+      "ko": "나라면 지금 사지 않고 세일을 기다리겠어.",
+      "en": "I wouldn’t buy it now. I would wait for a sale.",
+      "hints": [
+        "would / wouldn’t"
+      ]
+    },
+    {
+      "id": "life-033",
+      "type": "life",
+      "ko": "합격 소식을 들었을 때 세상을 다 가진 기분이었어.",
+      "en": "I felt on top of the world when I heard I passed.",
+      "hints": [
+        "on top of the world"
+      ]
+    },
+    {
+      "id": "life-034",
+      "type": "life",
+      "ko": "오늘은 기분 좋게 출근했어.",
+      "en": "I came into work feeling good today.",
+      "hints": [
+        "come into work"
+      ]
+    },
+    {
+      "id": "life-035",
+      "type": "life",
+      "ko": "친구들이랑 있으니까 시간이 쏜살같이 지나갔어.",
+      "en": "The time flew by when I was with my friends.",
+      "hints": [
+        "the time flew by"
+      ]
+    },
+    {
+      "id": "life-036",
+      "type": "life",
+      "ko": "친구가 그걸 짚어 줘서 알았어.",
+      "en": "My friend pointed it out to me.",
+      "hints": [
+        "point out"
+      ]
+    },
+    {
+      "id": "life-037",
+      "type": "life",
+      "ko": "주말 계획에 대해 가족과 의견을 맞췄어.",
+      "en": "I aligned on our weekend plans with my family.",
+      "hints": [
+        "align on"
+      ]
+    },
+    {
+      "id": "life-038",
+      "type": "life",
+      "ko": "여행지를 일본이랑 대만 두 곳으로 좁혔어.",
+      "en": "I’ve narrowed it down to Japan and Taiwan.",
+      "hints": [
+        "narrow down"
+      ]
+    },
+    {
+      "id": "life-039",
+      "type": "life",
+      "ko": "요즘 피곤한 건 수면 부족이랑 관련 있는 것 같아.",
+      "en": "I think my tiredness is related to a lack of sleep.",
+      "hints": [
+        "be related to"
+      ]
+    },
+    {
+      "id": "life-040",
+      "type": "life",
+      "ko": "새 휴대폰 사기 전에 리뷰를 꼼꼼히 살펴봤어.",
+      "en": "I went over the reviews carefully before buying a new phone.",
+      "hints": [
+        "go over"
+      ]
+    },
+    {
+      "id": "life-041",
+      "type": "life",
+      "ko": "남은 음식을 하나도 안 버리고 다 활용했어.",
+      "en": "I made use of all the leftovers.",
+      "hints": [
+        "make use of",
+        "leftover"
+      ]
+    },
+    {
+      "id": "life-042",
+      "type": "life",
+      "ko": "혹시 이 근처에 괜찮은 식당 알아?",
+      "en": "Do you happen to know a good restaurant around here?",
+      "hints": [
+        "Do you happen to ~?"
+      ]
+    },
+    {
+      "id": "life-043",
+      "type": "life",
+      "ko": "오늘은 반나절만 일하고 일찍 퇴근했어.",
+      "en": "I only worked a half-day today and left early.",
+      "hints": [
+        "work a half-day"
+      ]
+    },
+    {
+      "id": "life-044",
+      "type": "life",
+      "ko": "면접은 긴장됐지만 신났어.",
+      "en": "The interview was nerve-wracking but exciting.",
+      "hints": [
+        "nerve-wracking"
+      ]
+    },
+    {
+      "id": "life-045",
+      "type": "life",
+      "ko": "시험 결과는 다음 주나 되어야 나와.",
+      "en": "The exam results won’t be out until next week.",
+      "hints": [
+        "not ~ until"
+      ]
+    },
+    {
+      "id": "life-046",
+      "type": "life",
+      "ko": "그 집 월세는 너무 비싸서 감당이 안 돼.",
+      "en": "I can’t afford the rent for that place.",
+      "hints": [
+        "afford"
+      ]
+    },
+    {
+      "id": "life-047",
+      "type": "life",
+      "ko": "내일까지 이 일 마무리할 수 있을 것 같아.",
+      "en": "I think I can wrap this up by tomorrow.",
+      "hints": [
+        "wrap up"
+      ]
+    },
+    {
+      "id": "life-048",
+      "type": "life",
+      "ko": "어제 늦게까지 일해서 완전 녹초가 됐어.",
+      "en": "I’m wiped out because I worked late last night.",
+      "hints": [
+        "wiped out"
+      ]
+    },
+    {
+      "id": "life-049",
+      "type": "life",
+      "ko": "가끔 그 노래를 들어.",
+      "en": "I listen to that song from time to time.",
+      "hints": [
+        "from time to time"
+      ]
+    },
+    {
+      "id": "life-050",
+      "type": "life",
+      "ko": "드디어 이사를 끝냈어!",
+      "en": "At last, I finished moving!",
+      "hints": [
+        "at last"
+      ]
+    },
+    {
+      "id": "life-051",
+      "type": "life",
+      "ko": "비가 오더라도 갈 거야.",
+      "en": "I’ll go even if it rains.",
+      "hints": [
+        "even if"
+      ]
+    },
+    {
+      "id": "life-052",
+      "type": "life",
+      "ko": "집에 도착하자마자 전화할게.",
+      "en": "I’ll call you as soon as I get home.",
+      "hints": [
+        "as soon as"
+      ]
+    },
+    {
+      "id": "life-053",
+      "type": "life",
+      "ko": "늦지만 않으면 괜찮아.",
+      "en": "It’s fine as long as you’re not late.",
+      "hints": [
+        "as long as"
+      ]
+    },
+    {
+      "id": "life-054",
+      "type": "life",
+      "ko": "영어 공부하려고 일찍 일어나.",
+      "en": "I wake up early in order to study English.",
+      "hints": [
+        "in order to"
+      ]
+    },
+    {
+      "id": "life-055",
+      "type": "life",
+      "ko": "늦어서 미안해. 꼭 만회할게.",
+      "en": "Sorry I’m late. I’ll make it up to you.",
+      "hints": [
+        "make it up to ~"
+      ]
+    },
+    {
+      "id": "life-056",
+      "type": "life",
+      "ko": "3시까지 카페에 올 수 있어?",
+      "en": "Can you make it to the cafe by 3?",
+      "hints": [
+        "make it to ~"
+      ]
+    },
+    {
+      "id": "life-057",
+      "type": "life",
+      "ko": "안 입는 옷들 좀 처분해야겠어.",
+      "en": "I need to get rid of some old clothes.",
+      "hints": [
+        "get rid of"
+      ]
+    },
+    {
+      "id": "life-058",
+      "type": "life",
+      "ko": "힘들었지만 그만한 가치가 있었어.",
+      "en": "It was hard, but it was worth it.",
+      "hints": [
+        "be worth it"
+      ]
+    },
+    {
+      "id": "life-059",
+      "type": "life",
+      "ko": "이번엔 꼭 시험에 붙기로 결심했어.",
+      "en": "I’m determined to pass the exam this time.",
+      "hints": [
+        "be determined to"
+      ]
+    },
+    {
+      "id": "life-060",
+      "type": "life",
+      "ko": "이 노트북은 내 것보다 두 배 비싸.",
+      "en": "This laptop costs twice as much as mine.",
+      "hints": [
+        "twice as much as ~"
+      ]
+    },
+    {
+      "id": "life-061",
+      "type": "life",
+      "ko": "일이 생겨서 오늘은 못 갈 것 같아.",
+      "en": "Something came up, so I don’t think I can make it today.",
+      "hints": [
+        "come up",
+        "make it"
+      ]
+    },
+    {
+      "id": "life-062",
+      "type": "life",
+      "ko": "지금 공항으로 가는 중이야.",
+      "en": "I’m heading to the airport now.",
+      "hints": [
+        "head to ~"
+      ]
+    },
+    {
+      "id": "life-063",
+      "type": "life",
+      "ko": "그거 정말 하고 싶으면 도전해 봐!",
+      "en": "If you really want to do it, go for it!",
+      "hints": [
+        "go for it"
+      ]
+    },
+    {
+      "id": "life-064",
+      "type": "life",
+      "ko": "다음 주에 연락할게.",
+      "en": "I’ll be in touch next week.",
+      "hints": [
+        "be in touch"
+      ]
+    },
+    {
+      "id": "life-065",
+      "type": "life",
+      "ko": "지난 이틀 동안 정말 바빴어.",
+      "en": "I’ve been really busy these past two days.",
+      "hints": [
+        "these past two days"
+      ]
+    },
+    {
+      "id": "life-066",
+      "type": "life",
+      "ko": "도움을 요청하는 걸 두려워하지 마.",
+      "en": "Don’t be afraid to ask for help.",
+      "hints": [
+        "ask for"
+      ]
+    },
+    {
+      "id": "life-067",
+      "type": "life",
+      "ko": "걔는 지각한 핑계를 지어냈어.",
+      "en": "He made up an excuse for being late.",
+      "hints": [
+        "make up"
+      ]
+    },
+    {
+      "id": "life-068",
+      "type": "life",
+      "ko": "새 동네에 적응하는 데 시간이 좀 걸렸어.",
+      "en": "It took me a while to adapt to the new neighborhood.",
+      "hints": [
+        "adapt"
+      ]
+    },
+    {
+      "id": "life-069",
+      "type": "life",
+      "ko": "결과에 대해선 낙관하고 있어.",
+      "en": "I’m optimistic about the results.",
+      "hints": [
+        "optimistic"
+      ]
+    },
+    {
+      "id": "life-070",
+      "type": "life",
+      "ko": "친구 생일을 깜빡해서 마음이 안 좋아.",
+      "en": "I feel guilty about forgetting my friend’s birthday.",
+      "hints": [
+        "guilty"
+      ]
+    },
+    {
+      "id": "life-071",
+      "type": "life",
+      "ko": "커피 한 잔이 너무 간절해.",
+      "en": "I’m desperate for a cup of coffee.",
+      "hints": [
+        "desperate"
+      ]
+    },
+    {
+      "id": "life-072",
+      "type": "life",
+      "ko": "일요일 빼고 매일 운동해.",
+      "en": "I work out every day except Sunday.",
+      "hints": [
+        "except"
+      ]
+    },
+    {
+      "id": "life-073",
+      "type": "life",
+      "ko": "같은 실수를 반복하지 않도록 해.",
+      "en": "Try to avoid making the same mistake.",
+      "hints": [
+        "avoid + ~ing"
+      ]
+    },
+    {
+      "id": "life-074",
+      "type": "life",
+      "ko": "가족끼리 주말에 갈 곳을 정했어.",
+      "en": "We decided on where to go this weekend as a family.",
+      "hints": [
+        "decide on"
+      ]
+    },
+    {
+      "id": "life-075",
+      "type": "life",
+      "ko": "그 소식 듣고 마음이 놓였어.",
+      "en": "I was relieved to hear the news.",
+      "hints": [
+        "relieve"
+      ]
+    },
+    {
+      "id": "life-076",
+      "type": "life",
+      "ko": "조만간 만나서 그동안 얘기 나누자.",
+      "en": "Let’s catch up soon.",
+      "hints": [
+        "catch up"
+      ]
+    },
+    {
+      "id": "life-077",
+      "type": "life",
+      "ko": "머리 바꿔서 못 알아봤어.",
+      "en": "I didn’t recognize you with your new haircut.",
+      "hints": [
+        "recognize"
+      ]
+    },
+    {
+      "id": "life-078",
+      "type": "life",
+      "ko": "여러 가지 음식을 먹을 수 있어서 뷔페가 좋아.",
+      "en": "I like buffets because they have a variety of food.",
+      "hints": [
+        "variety"
+      ]
+    },
+    {
+      "id": "life-079",
+      "type": "life",
+      "ko": "연휴 내내 영화를 몇 편 봤어.",
+      "en": "I watched several movies during the holidays.",
+      "hints": [
+        "several"
+      ]
+    },
+    {
+      "id": "life-080",
+      "type": "life",
+      "ko": "날씨가 좋으면 주말에 한강에 가자.",
+      "en": "If the weather is nice, let’s go to the Han River this weekend.",
+      "hints": [
+        "if ~",
+        "let’s ~"
+      ]
     }
   ],
 
-  /* ---------- 오늘의 영상 ----------
-     url: 유튜브 주소 (watch?v=, youtu.be/, shorts/ 모두 가능), title, note: 한 줄 메모, date: 추가한 날짜
-     가장 최근 영상이 홈에 크게 나오고, 나머지는 목록에서 골라 볼 수 있어요 */
-  videos: [],
 };

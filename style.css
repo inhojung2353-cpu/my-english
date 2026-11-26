@@ -411,3 +411,11 @@ input[type=search], textarea { background: var(--surface); }
 body { letter-spacing: -.005em; }
 .topbar h1, .hero h2, .script-top h2, .dialog-item h3, .script-item h3, .word-head .w, .mini-words .w, .vw { letter-spacing: -.02em; }
 .stat b { font-weight: 800; }
+
+/* 홈: 오늘의 질문 (한글 → 영어로 말하기) */
+.ask-head { display: flex; align-items: center; gap: 8px; }
+.ask-tag { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
+.ask-tag.it { background: var(--primary-soft); color: var(--primary); }
+.ask-tag.life { background: var(--accent-soft); color: var(--accent); }
+.ask-ko-main { margin-top: 8px; font-size: 17px; font-weight: 600; line-height: 1.55; word-break: keep-all; }
+.hint-chip { display: inline-block; margin: 2px 2px 0 0; padding: 1px 8px; border-radius: 6px; background: var(--surface); color: var(--primary); font-weight: 700; font-size: 13px; }
