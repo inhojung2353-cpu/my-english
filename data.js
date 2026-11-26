@@ -19,7 +19,7 @@ window.CONTENT = {
       "exampleKo": "제때 납품할 수 있는 믿을 만한 공급업체가 필요해요.",
       "note": "reliable source(믿을 만한 출처). rely on(~에 의지하다)과 같은 뿌리예요.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 1"
     },
     {
@@ -31,7 +31,7 @@ window.CONTENT = {
       "exampleKo": "금요일까지 비용 견적서를 보내 주실 수 있나요?",
       "note": "명사는 /ˈestɪmət/ [에스티멋], 동사는 /ˈestɪmeɪt/ [에스티메이트]로 발음이 달라요. rough estimate = 대략적인 추정치.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -55,7 +55,7 @@ window.CONTENT = {
       "exampleKo": "이 프로젝트에 헌신해 주셔서 감사합니다.",
       "note": "commitment to + 명사/동명사 (to 뒤에 ~ing). make a commitment = 약속하다.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 1"
     },
     {
@@ -79,7 +79,7 @@ window.CONTENT = {
       "exampleKo": "모든 주방 가전은 2년 보증이 제공됩니다.",
       "note": "home appliances = 가전제품. application(지원서, 앱)과 헷갈리지 마세요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 1"
     },
     {
@@ -91,7 +91,7 @@ window.CONTENT = {
       "exampleKo": "사무용품에 드는 월 지출을 줄여야 해요.",
       "note": "expenditure on ~ = ~에 대한 지출. expense보다 더 격식 있는 말이에요.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -127,7 +127,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 결승전에서 상대를 쉽게 이겼어요.",
       "note": "반대 의견을 가진 사람에게도 써요: opponents of the plan = 그 계획의 반대자들.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 1"
     },
     {
@@ -139,7 +139,7 @@ window.CONTENT = {
       "exampleKo": "재택근무할 때는 쉽게 집중이 흐트러져요.",
       "note": "-ed라서 \"산만해진\" 사람의 상태예요 (bored/boring 규칙!). distracting = 주의를 흩뜨리는.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 1"
     },
     {
@@ -163,7 +163,7 @@ window.CONTENT = {
       "exampleKo": "꾸준히 연습하면 영어 실력은 시간이 지나면서 늘 거예요.",
       "note": "붙여 쓴 overtime은 \"야근, 초과 근무\"라서 뜻이 달라요! (Dialog Day 11)",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 1"
     },
     {
@@ -175,7 +175,7 @@ window.CONTENT = {
       "exampleKo": "매일 영어 공부를 하려면 강한 의지가 필요해요.",
       "note": "형용사는 strong-willed (의지가 강한). willpower = 의지력.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 1"
     },
     {
@@ -187,7 +187,7 @@ window.CONTENT = {
       "exampleKo": "문제를 해결하는 동안 기다려 주셔서 감사합니다.",
       "note": "명사 patience = 인내심. \"Thank you for your patience.\"는 고객 응대 단골 문장이에요.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 1"
     },
     {
@@ -211,7 +211,7 @@ window.CONTENT = {
       "exampleKo": "시스템 점검으로 서비스가 일시 중단되었어요.",
       "note": "완전히 끝내는 게 아니라 \"잠시\" 멈추는 느낌이에요. 명사는 suspension.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -247,7 +247,7 @@ window.CONTENT = {
       "exampleKo": "항공사가 지연에 대해 승객들에게 보상했어요.",
       "note": "compensate (사람) for (손해). 명사 compensation = 보상(금), 급여.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -259,7 +259,7 @@ window.CONTENT = {
       "exampleKo": "만일에 대비해 파일을 정기적으로 백업해 주세요.",
       "note": "take precautions = 예방 조치를 취하다. as a precaution = 만일에 대비해.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 1"
     },
     {
@@ -271,7 +271,7 @@ window.CONTENT = {
       "exampleKo": "그 회사는 원격 근무에 대해 진보적인 방식을 취하고 있어요.",
       "note": "progress(진전) + -ive. \"점진적인\"으로도 써요: a progressive increase = 점진적인 증가.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 1"
     },
     {
@@ -307,7 +307,7 @@ window.CONTENT = {
       "exampleKo": "출장 일정표를 이메일로 보내 드릴게요.",
       "note": "발음 주의: [아이티너레리]. travel itinerary = 여행 일정표.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -319,7 +319,7 @@ window.CONTENT = {
       "exampleKo": "그 호텔은 최대 200명까지 수용할 수 있어요.",
       "note": "accommodate a request = 요청을 들어주다. 명사 accommodation(s) = 숙소. 철자는 c 두 개, m 두 개!",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -343,7 +343,7 @@ window.CONTENT = {
       "exampleKo": "회의가 다음 주 화요일로 연기되었어요.",
       "note": "postpone + ~ing (동명사). 같은 뜻의 구동사는 put off.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -355,7 +355,7 @@ window.CONTENT = {
       "exampleKo": "팀워크에는 원활한 소통이 꼭 필요해요.",
       "note": "It is essential to ~ / that ~. 복수 명사 essentials = 필수품.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 1"
     },
     {
@@ -367,7 +367,7 @@ window.CONTENT = {
       "exampleKo": "출장비를 환급받으려면 영수증을 제출하세요.",
       "note": "동사 reimburse = (비용을) 돌려주다. 회사 경비 처리에서 자주 써요.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 1"
     },
     {
@@ -391,7 +391,7 @@ window.CONTENT = {
       "exampleKo": "출퇴근 시간엔 교통 체증이 심해요.",
       "note": "코막힘에도 써요: nasal congestion.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -415,7 +415,7 @@ window.CONTENT = {
       "exampleKo": "공급업체와 협상해서 더 좋은 가격을 받았어요.",
       "note": "negotiate with + 사람. 명사는 negotiation.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -439,7 +439,7 @@ window.CONTENT = {
       "exampleKo": "비행하는 동안 내내 자리에 앉아 계세요.",
       "note": "for the duration of ~ = ~하는 동안 내내.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -463,7 +463,7 @@ window.CONTENT = {
       "exampleKo": "회사가 올해 수익을 냈어요.",
       "note": "make a profit = 수익을 내다. profitable = 수익성 있는.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -487,7 +487,7 @@ window.CONTENT = {
       "exampleKo": "상사에게 월급 인상을 요청할 거예요.",
       "note": "raise는 \"무엇을 올리다\"(목적어 있음), rise는 \"스스로 오르다\".",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -499,7 +499,7 @@ window.CONTENT = {
       "exampleKo": "24시간 이내 배송을 보장합니다.",
       "note": "money-back guarantee = 환불 보증.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -511,7 +511,7 @@ window.CONTENT = {
       "exampleKo": "새 사무실을 2년 임대 계약했어요.",
       "note": "rent보다 장기적이고 공식적인 계약이에요.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -547,7 +547,7 @@ window.CONTENT = {
       "exampleKo": "의사가 감기약을 처방해 줬어요.",
       "note": "명사 prescription = 처방전. (목록의 Prescrive·prescribe를 하나로 합쳤어요)",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -559,7 +559,7 @@ window.CONTENT = {
       "exampleKo": "출시하는 동안 큰 문제는 없었어요.",
       "note": "major in ~ = ~을 전공하다. majority = 대다수.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -595,7 +595,7 @@ window.CONTENT = {
       "exampleKo": "ATM에서 현금을 좀 뽑아야 해요.",
       "note": "withdraw an offer = 제안을 철회하다. 명사 withdrawal.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -619,7 +619,7 @@ window.CONTENT = {
       "exampleKo": "컴퓨터 경고 메시지를 무시하지 마세요.",
       "note": "ignorant(무지한)와는 뜻이 달라요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -631,7 +631,7 @@ window.CONTENT = {
       "exampleKo": "여행 전에 여권을 갱신해야 해요.",
       "note": "renew a contract / subscription. 명사 renewal.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -667,7 +667,7 @@ window.CONTENT = {
       "exampleKo": "30일 이내에 대금을 송금해 주세요.",
       "note": "remittance = 송금(액). 청구서·인보이스에 자주 나와요.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -715,7 +715,7 @@ window.CONTENT = {
       "exampleKo": "지금은 새 차를 살 여유가 없어요.",
       "note": "can’t afford to ~ (Dialog Day 6). affordable = 가격이 적당한.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -727,7 +727,7 @@ window.CONTENT = {
       "exampleKo": "지연에 대한 불만을 수없이 받았어요.",
       "note": "many보다 격식 있는 말이에요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -739,7 +739,7 @@ window.CONTENT = {
       "exampleKo": "상사가 그 소식에 어떻게 반응했어?",
       "note": "react to ~. 명사 reaction.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -775,7 +775,7 @@ window.CONTENT = {
       "exampleKo": "그는 우리 가게 단골이에요.",
       "note": "frequently = 자주. frequent flyer = 항공사 단골 고객.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -823,7 +823,7 @@ window.CONTENT = {
       "exampleKo": "바닥이 젖었을 때는 조심하세요.",
       "note": "cautious = 조심스러운. with caution = 조심해서.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -859,7 +859,7 @@ window.CONTENT = {
       "exampleKo": "곧 확인 이메일을 받으실 거예요.",
       "note": "동사 confirm. booking confirmation = 예약 확인.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -871,7 +871,7 @@ window.CONTENT = {
       "exampleKo": "느린 인터넷 때문에 정말 짜증 나요.",
       "note": "frustrated(짜증 난 사람) vs frustrating(짜증 나게 하는 것).",
       "date": "2026-10-09",
-      "topic": "감정·상태",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -895,7 +895,7 @@ window.CONTENT = {
       "exampleKo": "이 옷 면접에 적절할까?",
       "note": "반대말 inappropriate = 부적절한.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -907,7 +907,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 면접관들에게 좋은 인상을 남겼어요.",
       "note": "make a good first impression = 좋은 첫인상을 남기다.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -919,7 +919,7 @@ window.CONTENT = {
       "exampleKo": "같은 실수를 하지 않도록 해요.",
       "note": "avoid + ~ing (동명사)!",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -931,7 +931,7 @@ window.CONTENT = {
       "exampleKo": "보고서를 간신히 제시간에 끝냈어요.",
       "note": "과거형 managed to로 많이 써요.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -943,7 +943,7 @@ window.CONTENT = {
       "exampleKo": "회의를 마무리하죠.",
       "note": "\"That’s a wrap!\" = 끝!",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -955,7 +955,7 @@ window.CONTENT = {
       "exampleKo": "의사가 내 목을 진찰했어요.",
       "note": "examination(exam) = 시험, 검사.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -967,7 +967,7 @@ window.CONTENT = {
       "exampleKo": "회의에 노트북 가져올 수 있어요?",
       "note": "bring(이쪽으로) vs take(저쪽으로). bring up = 화제를 꺼내다.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -979,7 +979,7 @@ window.CONTENT = {
       "exampleKo": "비행기는 오전 9시에 이륙해요.",
       "note": "take a day off = 하루 쉬다. Her career took off. = 그녀의 커리어가 급성장했다.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -991,7 +991,7 @@ window.CONTENT = {
       "exampleKo": "어젯밤엔 너무 피곤해서 나갈 수 없었어요.",
       "note": "= so ~ that I couldn’t …",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1003,7 +1003,7 @@ window.CONTENT = {
       "exampleKo": "비가 왔는데, 게다가 우산까지 잃어버렸어요.",
       "note": "on top of ~ = ~에 더해 (Dialog Day 28).",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1015,7 +1015,7 @@ window.CONTENT = {
       "exampleKo": "그녀 생일을 놓쳐서 마음이 안 좋아요.",
       "note": "feel guilty about ~. guilty pleasure = 남몰래 즐기는 것.",
       "date": "2026-10-09",
-      "topic": "감정·상태",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1027,7 +1027,7 @@ window.CONTENT = {
       "exampleKo": "이 카페의 여유로운 분위기가 좋아요.",
       "note": "지구의 \"대기\"라는 뜻도 있어요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1039,7 +1039,7 @@ window.CONTENT = {
       "exampleKo": "그는 일자리를 잃은 뒤로 우울해하고 있어요.",
       "note": "depressing = 우울하게 만드는. (목록의 depresse를 depressed로 정리했어요)",
       "date": "2026-10-09",
-      "topic": "감정·상태",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1051,7 +1051,7 @@ window.CONTENT = {
       "exampleKo": "일본에 여러 번 가 봤어요.",
       "note": "a few보다 조금 많은 느낌이에요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1063,7 +1063,7 @@ window.CONTENT = {
       "exampleKo": "한 시간 동안 차가 막혀서 꼼짝 못 했어요.",
       "note": "be stuck on ~ = (문제에서) 막히다. get stuck = 갇히다.",
       "date": "2026-10-09",
-      "topic": "감정·상태",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1075,7 +1075,7 @@ window.CONTENT = {
       "exampleKo": "그가 말한 뒤 긴 침묵이 흘렀어요.",
       "note": "silent = 조용한. in silence = 조용히.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1087,7 +1087,7 @@ window.CONTENT = {
       "exampleKo": "하루 종일 청소했어요.",
       "note": "the whole + 단수 명사. hole(구멍)과 발음이 같아요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1099,7 +1099,7 @@ window.CONTENT = {
       "exampleKo": "아직 주택 담보 대출을 갚고 있어요.",
       "note": "발음 주의: t가 묵음이에요 [모기지].",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -1111,7 +1111,7 @@ window.CONTENT = {
       "exampleKo": "어제 그에게 전화하기로 했었는데.",
       "note": "was supposed to = 하기로 했는데 (못 했다).",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1123,7 +1123,7 @@ window.CONTENT = {
       "exampleKo": "영어 공부를 하려고 일찍 일어나요.",
       "note": "in order not to ~ = ~하지 않기 위해.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1135,7 +1135,7 @@ window.CONTENT = {
       "exampleKo": "늦어서 미안해. 꼭 만회할게.",
       "note": "make up for ~ = (손실을) 메우다.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1147,7 +1147,7 @@ window.CONTENT = {
       "exampleKo": "비가 오더라도 갈 거예요.",
       "note": "even though = (실제로) ~이긴 하지만.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1159,7 +1159,7 @@ window.CONTENT = {
       "exampleKo": "3시 회의에 올 수 있어요?",
       "note": "make it = 해내다, 제시간에 도착하다.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1171,7 +1171,7 @@ window.CONTENT = {
       "exampleKo": "집에 도착하자마자 전화할게.",
       "note": "미래 일이라도 현재형(get)을 써요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1183,7 +1183,7 @@ window.CONTENT = {
       "exampleKo": "오늘 밤까지 돌려주기만 하면 내 차 빌려 가도 돼.",
       "note": "조건을 말할 때 써요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1195,7 +1195,7 @@ window.CONTENT = {
       "exampleKo": "그 가게는 아주 다양한 제품을 팔아요.",
       "note": "a variety of ~ = 다양한 ~. various = 다양한.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1207,7 +1207,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 우리 팀에 큰 자산이에요.",
       "note": "사람에게도 써요.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -1243,7 +1243,7 @@ window.CONTENT = {
       "exampleKo": "드디어 프로젝트가 끝났어!",
       "note": "finally와 비슷하지만 오래 기다린 안도감이 느껴져요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1255,7 +1255,7 @@ window.CONTENT = {
       "exampleKo": "비가 와서 집에 있었어요.",
       "note": "뜻이 많으니 문맥으로 파악! I work as a data analyst. = 데이터 분석가로 일해요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1267,7 +1267,7 @@ window.CONTENT = {
       "exampleKo": "이번 주에 팀 전체가 야근했어요.",
       "note": "whole과 비슷해요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1279,7 +1279,7 @@ window.CONTENT = {
       "exampleKo": "이렇게 늦은 줄 몰랐어요.",
       "note": "realize a dream = 꿈을 이루다.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1291,7 +1291,7 @@ window.CONTENT = {
       "exampleKo": "아직도 가끔 그 생각이 나요.",
       "note": "= sometimes, now and then.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1303,7 +1303,7 @@ window.CONTENT = {
       "exampleKo": "등산은 힘들었지만 경치가 그만한 가치가 있었어요.",
       "note": "be worth + ~ing: It’s worth trying. = 해 볼 만해.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1315,7 +1315,7 @@ window.CONTENT = {
       "exampleKo": "이 약이 두통을 덜어 줄 거예요.",
       "note": "relieved = 안도한. relief = 안도, 완화.",
       "date": "2026-10-09",
-      "topic": "감정·상태",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1339,7 +1339,7 @@ window.CONTENT = {
       "exampleKo": "그거 확실해?",
       "note": "a certain ~ = 어떤 (특정한). certainly = 확실히.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1351,7 +1351,7 @@ window.CONTENT = {
       "exampleKo": "회사에서는 정치 얘기는 하지 말자.",
       "note": "politics = 정치, politician = 정치인.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1363,7 +1363,7 @@ window.CONTENT = {
       "exampleKo": "이론상으로는 그 계획이 통해야 해요.",
       "note": "in theory = 이론상으로는. confirm my theory도 참고하세요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1375,7 +1375,7 @@ window.CONTENT = {
       "exampleKo": "이번엔 꼭 시험에 붙기로 결심했어요.",
       "note": "determination = 결심, 투지.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1387,7 +1387,7 @@ window.CONTENT = {
       "exampleKo": "결과에 대해 낙관하고 있어요.",
       "note": "반대말 pessimistic = 비관적인.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1399,7 +1399,7 @@ window.CONTENT = {
       "exampleKo": "좋은 관리자는 팀에 동기를 부여하는 법을 알아요.",
       "note": "motivated = 의욕 있는, motivation = 동기.",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1411,7 +1411,7 @@ window.CONTENT = {
       "exampleKo": "이 노트북은 내 것보다 두 배 비싸요.",
       "note": "셀 수 있는 명사는 twice as many as. 세 배는 three times as much as.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1423,7 +1423,7 @@ window.CONTENT = {
       "exampleKo": "일이 생겨서 오늘 밤에 못 가.",
       "note": "come up with = 생각해 내다 (Dialog Day 1).",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1435,7 +1435,7 @@ window.CONTENT = {
       "exampleKo": "노트북 와이파이에 연결됐어?",
       "note": "관계에도 써요: His stress is connected to work.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1447,7 +1447,7 @@ window.CONTENT = {
       "exampleKo": "악천후로 비행기가 지연됐어요.",
       "note": "because of보다 격식 있는 말. 공지문 단골이에요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1459,7 +1459,7 @@ window.CONTENT = {
       "exampleKo": "이 시장은 경쟁이 치열해요.",
       "note": "intensive(집중적인)와 구별하세요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1471,7 +1471,7 @@ window.CONTENT = {
       "exampleKo": "한국 음식 좋아해요, 특히 김치찌개요.",
       "note": "목록에 두 번 있어서 하나로 합쳤어요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1483,7 +1483,7 @@ window.CONTENT = {
       "exampleKo": "지연될 가능성이 있나요?",
       "note": "possibility of ~ing.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1507,7 +1507,7 @@ window.CONTENT = {
       "exampleKo": "업데이트 후 트래픽이 엄청나게 늘었어요.",
       "note": "huge보다 묵직하고 강한 느낌이에요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1519,7 +1519,7 @@ window.CONTENT = {
       "exampleKo": "한 컵은 약 240ml에 해당해요.",
       "note": "be equivalent to ~.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1531,7 +1531,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 신입과 경력자가 섞여 있어요.",
       "note": "a good mix = 적절한 조합.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1543,7 +1543,7 @@ window.CONTENT = {
       "exampleKo": "지금 사무실로 가는 중이에요.",
       "note": "목록에 두 번 있어서 하나로 합쳤어요. head home = 집에 가다 (to 없이).",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1555,7 +1555,7 @@ window.CONTENT = {
       "exampleKo": "테스트 결과가 내 가설을 입증했어요.",
       "note": "confirm = 확인하다, 확정하다 (confirmation 참고).",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1567,7 +1567,7 @@ window.CONTENT = {
       "exampleKo": "프로젝트 이름 정했어?",
       "note": "decide to + 동사 / decide on + 명사.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1579,7 +1579,7 @@ window.CONTENT = {
       "exampleKo": "그 일을 정말 원하면 도전해 봐!",
       "note": "go for ~ = ~을 고르다: I’ll go for the pasta.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1591,7 +1591,7 @@ window.CONTENT = {
       "exampleKo": "수리 견적 좀 받을 수 있을까요?",
       "note": "estimate(추정 견적)보다 더 확정된 가격이에요.",
       "date": "2026-10-09",
-      "topic": "비용·돈",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -1603,7 +1603,7 @@ window.CONTENT = {
       "exampleKo": "예상대로 회의가 늦게 끝났어요.",
       "note": "predictable = 예측 가능한, 뻔한.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1639,7 +1639,7 @@ window.CONTENT = {
       "exampleKo": "그들은 돈 문제로 말다툼을 했어요.",
       "note": "\"주장, 논거\"로도 써요: a strong argument.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1651,7 +1651,7 @@ window.CONTENT = {
       "exampleKo": "힘든 한 해였어요. 그럼에도 목표를 달성했어요.",
       "note": "= nevertheless. however보다 강조하는 느낌이에요.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1663,7 +1663,7 @@ window.CONTENT = {
       "exampleKo": "회의에서 내 입장을 변호해야 했어요.",
       "note": "position = 입장, 의견.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1675,7 +1675,7 @@ window.CONTENT = {
       "exampleKo": "다음 주에 연락드릴게요.",
       "note": "keep in touch = 연락하고 지내다, get in touch with ~ = ~에게 연락하다.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1699,7 +1699,7 @@ window.CONTENT = {
       "exampleKo": "커피 한 잔이 너무 간절했어요.",
       "note": "be desperate for ~ / to ~.",
       "date": "2026-10-09",
-      "topic": "감정·상태",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1711,7 +1711,7 @@ window.CONTENT = {
       "exampleKo": "사무실은 일요일 빼고 매일 열어요.",
       "note": "except for ~. expect(기대하다)와 헷갈리지 마세요!",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1723,7 +1723,7 @@ window.CONTENT = {
       "exampleKo": "지난 이틀 동안 정말 바빴어요.",
       "note": "현재완료와 잘 어울려요. these past few weeks = 지난 몇 주 동안.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1759,7 +1759,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 해외에서 공부할 계획이에요.",
       "note": "go overseas (to 없이!). = abroad.",
       "date": "2026-10-09",
-      "topic": "일정·출장",
+      "topic": "업무·회사",
       "set": "Set 2"
     },
     {
@@ -1771,7 +1771,7 @@ window.CONTENT = {
       "exampleKo": "머리 바꿔서 못 알아봤어.",
       "note": "recognition = 인정, 인식.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1783,7 +1783,7 @@ window.CONTENT = {
       "exampleKo": "새 모델 출시가 임박했어요.",
       "note": "eminent(저명한)와 철자가 비슷하니 주의하세요.",
       "date": "2026-10-09",
-      "topic": "일상·기타",
+      "topic": "일상",
       "set": "Set 2"
     },
     {
@@ -1795,7 +1795,7 @@ window.CONTENT = {
       "exampleKo": "도움을 요청하는 걸 두려워하지 마세요.",
       "note": "ask for permission / a raise.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1807,7 +1807,7 @@ window.CONTENT = {
       "exampleKo": "오래된 옷들을 좀 처분해야 해요.",
       "note": "throw out(버리다, Dialog Day 29)과 비슷해요.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1831,7 +1831,7 @@ window.CONTENT = {
       "exampleKo": "\"만나서 반가워요.\" \"저도요!\"",
       "note": "문장 앞에서 \"마찬가지로\": Likewise, our costs went up.",
       "date": "2026-10-09",
-      "topic": "연결어",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1843,7 +1843,7 @@ window.CONTENT = {
       "exampleKo": "그는 지각한 핑계를 지어냈어요.",
       "note": "make up with ~ = ~와 화해하다. Women make up 40% of the team. = 팀의 40%를 차지하다.",
       "date": "2026-10-09",
-      "topic": "표현·구문",
+      "topic": "회화 표현",
       "set": "Set 2"
     },
     {
@@ -1855,7 +1855,7 @@ window.CONTENT = {
       "exampleKo": "새 직장에 적응하는 데 시간이 좀 걸렸어요.",
       "note": "adapt to ~. adopt(채택하다)와 구별! (목록의 adapts를 기본형으로 정리했어요)",
       "date": "2026-10-09",
-      "topic": "성격·태도",
+      "topic": "핵심 단어",
       "set": "Set 2"
     },
     {
@@ -1867,7 +1867,7 @@ window.CONTENT = {
       "exampleKo": "이번 분기 매출이 15% 늘었어요.",
       "note": "revenue는 \"매출(총수입)\", profit은 \"이익\"이에요.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1879,7 +1879,7 @@ window.CONTENT = {
       "exampleKo": "지난달 총거래액이 1,000만 달러에 도달했어요.",
       "note": "플랫폼에서 거래된 상품 금액의 합. 취소·환불 전 금액이라 매출과 달라요.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1891,7 +1891,7 @@ window.CONTENT = {
       "exampleKo": "고객 이탈을 줄여야 해요.",
       "note": "churn rate = 이탈률.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1903,7 +1903,7 @@ window.CONTENT = {
       "exampleKo": "올해 사용자 유치 비용이 올랐어요.",
       "note": "CAC (customer acquisition cost) = 고객 획득 비용.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1915,7 +1915,7 @@ window.CONTENT = {
       "exampleKo": "지역별 세부 내역을 공유해 줄 수 있어요?",
       "note": "명사는 붙여 써요. 동사구 break down(나눠서 분석하다)과 구별.",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1927,7 +1927,7 @@ window.CONTENT = {
       "exampleKo": "가격과 판매량 사이에 강한 상관관계가 있어요.",
       "note": "Correlation is not causation. = 상관관계가 인과관계는 아니다.",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1939,7 +1939,7 @@ window.CONTENT = {
       "exampleKo": "기여도 분석을 보면 어떤 채널이 구매를 이끌었는지 알 수 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1951,7 +1951,7 @@ window.CONTENT = {
       "exampleKo": "결과를 기준값과 비교해 봐요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1963,7 +1963,7 @@ window.CONTENT = {
       "exampleKo": "예측과 실제 값의 차이가 작았어요.",
       "note": "통계의 \"분산\"과 재무의 \"예산 대비 차이\" 둘 다 써요.",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1975,7 +1975,7 @@ window.CONTENT = {
       "exampleKo": "어제 트래픽에서 이상 현상을 발견했어요.",
       "note": "anomaly detection = 이상 탐지.",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1987,7 +1987,7 @@ window.CONTENT = {
       "exampleKo": "이 테이블은 어떤 단위예요? 일별, 아니면 시간별?",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 분석",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -1999,7 +1999,7 @@ window.CONTENT = {
       "exampleKo": "각 행이 거래 한 건을 나타내요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2011,7 +2011,7 @@ window.CONTENT = {
       "exampleKo": "가격 인상 후 소비자 행동이 바뀌었어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2023,7 +2023,7 @@ window.CONTENT = {
       "exampleKo": "재고 수준을 매일 확인해야 해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2035,7 +2035,7 @@ window.CONTENT = {
       "exampleKo": "주문 처리에 이틀 정도 걸려요.",
       "note": "주문 접수 → 포장 → 배송까지의 과정 전체를 말해요.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2047,7 +2047,7 @@ window.CONTENT = {
       "exampleKo": "플랫폼은 판매마다 10% 수수료를 가져가요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2059,7 +2059,7 @@ window.CONTENT = {
       "exampleKo": "세일 기간에 평균 장바구니 크기가 커졌어요.",
       "note": "AOV(평균 주문 금액)와 비슷하게 써요.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2071,7 +2071,7 @@ window.CONTENT = {
       "exampleKo": "주말에 수요가 급증해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2083,7 +2083,7 @@ window.CONTENT = {
       "exampleKo": "공급이 수요를 못 따라가요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2095,7 +2095,7 @@ window.CONTENT = {
       "exampleKo": "자동화로 운영 효율성이 좋아졌어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2107,7 +2107,7 @@ window.CONTENT = {
       "exampleKo": "올해는 수익성에 집중하고 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2119,7 +2119,7 @@ window.CONTENT = {
       "exampleKo": "데이터 수집이 매시간 돌아가요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2131,7 +2131,7 @@ window.CONTENT = {
       "exampleKo": "변환 단계에서 원본 데이터를 정제해요.",
       "note": "ETL의 T(Transform)예요.",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2143,7 +2143,7 @@ window.CONTENT = {
       "exampleKo": "작업 오케스트레이션에 Airflow를 써요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2155,7 +2155,7 @@ window.CONTENT = {
       "exampleKo": "이 작업은 매출 테이블에 의존해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2167,7 +2167,7 @@ window.CONTENT = {
       "exampleKo": "주문을 일별로 집계해야 해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2179,7 +2179,7 @@ window.CONTENT = {
       "exampleKo": "중복 제거로 전체 행의 2%가 빠졌어요.",
       "note": "줄여서 dedup이라고도 해요.",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2191,7 +2191,7 @@ window.CONTENT = {
       "exampleKo": "대시보드 지연 시간이 길어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2203,7 +2203,7 @@ window.CONTENT = {
       "exampleKo": "파이프라인 처리량을 두 배로 늘렸어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2215,7 +2215,7 @@ window.CONTENT = {
       "exampleKo": "데이터베이스가 주요 병목이에요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2227,7 +2227,7 @@ window.CONTENT = {
       "exampleKo": "배포는 금요일로 잡혀 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2239,7 +2239,7 @@ window.CONTENT = {
       "exampleKo": "네트워크 장애 때문에 작업이 실패했어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2251,7 +2251,7 @@ window.CONTENT = {
       "exampleKo": "작업은 세 번 재시도돼요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2263,7 +2263,7 @@ window.CONTENT = {
       "exampleKo": "멱등성은 작업을 두 번 돌려도 결과가 같다는 뜻이에요.",
       "note": "재시도해도 데이터가 중복되지 않게 하는 핵심 개념이에요.",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2275,7 +2275,7 @@ window.CONTENT = {
       "exampleKo": "제가 알기로는 데이터가 매일 업데이트돼요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2287,7 +2287,7 @@ window.CONTENT = {
       "exampleKo": "제 관점에서는 이 지표가 오해를 줄 수 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2299,7 +2299,7 @@ window.CONTENT = {
       "exampleKo": "비용 측면에서는 A안이 나아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2311,7 +2311,7 @@ window.CONTENT = {
       "exampleKo": "데이터를 보면 주말 매출이 더 높아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2323,7 +2323,7 @@ window.CONTENT = {
       "exampleKo": "보고서에 따르면 이탈이 줄었어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2335,7 +2335,7 @@ window.CONTENT = {
       "exampleKo": "활성 사용자를 어떻게 정의하느냐에 따라 달라요.",
       "note": "Dialog Day 9에서도 나왔어요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2347,7 +2347,7 @@ window.CONTENT = {
       "exampleKo": "이해되셨나요?",
       "note": "설명하고 나서 확인할 때 자주 써요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2359,7 +2359,7 @@ window.CONTENT = {
       "exampleKo": "이 쿼리 한번 봐 줄래요?",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2371,7 +2371,7 @@ window.CONTENT = {
       "exampleKo": "매출이 왜 떨어졌는지 알아내야 해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2383,7 +2383,7 @@ window.CONTENT = {
       "exampleKo": "숫자를 깊이 파고들어 봐요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2395,7 +2395,7 @@ window.CONTENT = {
       "exampleKo": "채널별로 나눠서 봐 줄래요?",
       "note": "목록의 break something down과 합쳤어요. 명사 breakdown도 참고하세요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2407,7 +2407,7 @@ window.CONTENT = {
       "exampleKo": "그 문제 알아볼게요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2419,7 +2419,7 @@ window.CONTENT = {
       "exampleKo": "어제 요청하신 건으로 다시 연락드려요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2431,7 +2431,7 @@ window.CONTENT = {
       "exampleKo": "먼저 지표에 대해 의견을 맞춰요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2443,7 +2443,7 @@ window.CONTENT = {
       "exampleKo": "새로운 접근법을 생각해 냈어요.",
       "note": "Dialog Day 1에서도 나왔어요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2455,7 +2455,7 @@ window.CONTENT = {
       "exampleKo": "데이터 오류 가능성은 배제했어요.",
       "note": "목록의 rule something out과 합쳤어요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2467,7 +2467,7 @@ window.CONTENT = {
       "exampleKo": "계절성을 고려해야 해요.",
       "note": "take A into account = A를 고려하다.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2479,7 +2479,7 @@ window.CONTENT = {
       "exampleKo": "일간 활성 사용자를 추적하고 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2491,7 +2491,7 @@ window.CONTENT = {
       "exampleKo": "저는 매출 대시보드를 담당해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2503,7 +2503,7 @@ window.CONTENT = {
       "exampleKo": "이 문제는 지난 배포와 관련 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2515,7 +2515,7 @@ window.CONTENT = {
       "exampleKo": "문제 하나 더 얘기하고 싶어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2527,7 +2527,7 @@ window.CONTENT = {
       "exampleKo": "그녀가 보고서의 오류를 지적했어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2539,7 +2539,7 @@ window.CONTENT = {
       "exampleKo": "그 부분 좀 더 자세히 설명해 주실래요?",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2551,7 +2551,7 @@ window.CONTENT = {
       "exampleKo": "대시보드를 하나씩 설명해 드릴게요.",
       "note": "walk someone through ~ 형태로 자주 써요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2563,7 +2563,7 @@ window.CONTENT = {
       "exampleKo": "무슨 뜻인지 명확히 말씀해 주실래요?",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2575,7 +2575,7 @@ window.CONTENT = {
       "exampleKo": "이 문제를 곧 해결해야 해요.",
       "note": "\"주소\"만이 아니에요! 회의에서는 \"문제를 다루다\"로 자주 써요.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2587,7 +2587,7 @@ window.CONTENT = {
       "exampleKo": "그 문제는 어제 해결됐어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2599,7 +2599,7 @@ window.CONTENT = {
       "exampleKo": "먼저 테스트해 볼 것을 제안해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2611,7 +2611,7 @@ window.CONTENT = {
       "exampleKo": "주간 보기를 쓰는 걸 추천해요.",
       "note": "recommend + ~ing.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2623,7 +2623,7 @@ window.CONTENT = {
       "exampleKo": "다른 선택지도 고려해야 해요.",
       "note": "consider + ~ing.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2635,7 +2635,7 @@ window.CONTENT = {
       "exampleKo": "급한 일부터 먼저 처리하죠.",
       "note": "Set 1 priority의 동사형.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2647,7 +2647,7 @@ window.CONTENT = {
       "exampleKo": "리디자인은 우선순위를 낮췄어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2659,7 +2659,7 @@ window.CONTENT = {
       "exampleKo": "정오까지 안 고쳐지면 매니저에게 보고하세요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2671,7 +2671,7 @@ window.CONTENT = {
       "exampleKo": "엔지니어링 팀과 조율할게요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2683,7 +2683,7 @@ window.CONTENT = {
       "exampleKo": "출시에 대한 잠정 계획이 있어요.",
       "note": "tentatively = 잠정적으로.",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2695,7 +2695,7 @@ window.CONTENT = {
       "exampleKo": "이 일정이 실현 가능할까요?",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2707,7 +2707,7 @@ window.CONTENT = {
       "exampleKo": "속도와 정확도 사이에 트레이드오프가 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "회의·소통 표현",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -2719,7 +2719,7 @@ window.CONTENT = {
       "exampleKo": "숫자를 확인하려고 쿼리를 돌렸어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2731,7 +2731,7 @@ window.CONTENT = {
       "exampleKo": "지난달 데이터 뽑아 줄 수 있어요?",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2743,7 +2743,7 @@ window.CONTENT = {
       "exampleKo": "매일 밤 데이터를 웨어하우스에 적재해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2755,7 +2755,7 @@ window.CONTENT = {
       "exampleKo": "새 데이터 소스용 파이프라인을 구축했어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2767,7 +2767,7 @@ window.CONTENT = {
       "exampleKo": "데이터 처리에 한 시간 걸려요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2779,7 +2779,7 @@ window.CONTENT = {
       "exampleKo": "걱정 마세요, 그 문제는 제가 처리할게요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2791,7 +2791,7 @@ window.CONTENT = {
       "exampleKo": "엔지니어가 오늘 아침에 버그를 고쳤어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2803,7 +2803,7 @@ window.CONTENT = {
       "exampleKo": "먼저 로그를 확인해 볼게요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2815,7 +2815,7 @@ window.CONTENT = {
       "exampleKo": "고치기 전에 근본 원인을 찾아야 해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2827,7 +2827,7 @@ window.CONTENT = {
       "exampleKo": "파이프라인이 다시 정상 작동해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2839,7 +2839,7 @@ window.CONTENT = {
       "exampleKo": "API에서 문제가 생겼어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2851,7 +2851,7 @@ window.CONTENT = {
       "exampleKo": "숫자가 맞는지 꼭 확인하세요.",
       "note": "Dialog Day 6에서도 나왔어요.",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2863,7 +2863,7 @@ window.CONTENT = {
       "exampleKo": "안건을 미리 보내 주세요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2875,7 +2875,7 @@ window.CONTENT = {
       "exampleKo": "이 지표는 매일 모니터링해요.",
       "note": "on a weekly / monthly basis = 주 / 월 단위로.",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2887,7 +2887,7 @@ window.CONTENT = {
       "exampleKo": "예상대로 매출이 떨어졌어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2899,7 +2899,7 @@ window.CONTENT = {
       "exampleKo": "대시보드는 실시간으로 업데이트돼요.",
       "note": "명사 앞에서는 real-time data처럼 하이픈을 붙여요.",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2911,7 +2911,7 @@ window.CONTENT = {
       "exampleKo": "우리가 같은 생각인지 확인해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2923,7 +2923,7 @@ window.CONTENT = {
       "exampleKo": "마이그레이션이 예상보다 오래 걸렸어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2935,7 +2935,7 @@ window.CONTENT = {
       "exampleKo": "이 데이터 최신이에요?",
       "note": "명사 앞에서는 up-to-date data처럼 하이픈을 붙여요.",
       "date": "2026-10-31",
-      "topic": "데이터 작업 표현",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2947,7 +2947,7 @@ window.CONTENT = {
       "exampleKo": "우리 가설은 무료 배송이 주문을 늘린다는 거예요.",
       "note": "복수형은 hypotheses.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2959,7 +2959,7 @@ window.CONTENT = {
       "exampleKo": "결제 페이지에서 실험을 진행했어요.",
       "note": "A/B 테스트도 experiment의 한 종류예요.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2971,7 +2971,7 @@ window.CONTENT = {
       "exampleKo": "데이터 검증에서 오류 몇 개를 잡았어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2983,7 +2983,7 @@ window.CONTENT = {
       "exampleKo": "그 결과는 실질적인 의미가 별로 없어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -2995,7 +2995,7 @@ window.CONTENT = {
       "exampleKo": "테스트가 통계적 유의성에 도달하지 못했어요.",
       "note": "보통 p-value < 0.05를 기준으로 봐요.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3007,7 +3007,7 @@ window.CONTENT = {
       "exampleKo": "표본 크기가 너무 작아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3019,7 +3019,7 @@ window.CONTENT = {
       "exampleKo": "무작위 표본 추출은 편향을 줄여요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3031,7 +3031,7 @@ window.CONTENT = {
       "exampleKo": "주문 금액 분포가 한쪽으로 치우쳐 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3043,7 +3043,7 @@ window.CONTENT = {
       "exampleKo": "평균 내기 전에 이상치를 제거하세요.",
       "note": "anomaly와 비슷하지만 outlier는 주로 분포에서 튀는 개별 값을 말해요.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3055,7 +3055,7 @@ window.CONTENT = {
       "exampleKo": "수요 예측에 회귀 분석을 썼어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3067,7 +3067,7 @@ window.CONTENT = {
       "exampleKo": "예측으로는 다음 분기에 성장할 거예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3079,7 +3079,7 @@ window.CONTENT = {
       "exampleKo": "매출 전망은 500만 달러예요.",
       "note": "forecast와 비슷하게 써요.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3091,7 +3091,7 @@ window.CONTENT = {
       "exampleKo": "고객 세분화는 타깃 마케팅에 도움이 돼요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3103,7 +3103,7 @@ window.CONTENT = {
       "exampleKo": "캠페인의 증분 효과를 측정했어요.",
       "note": "캠페인이 없었어도 생겼을 성과를 빼고 \"순수하게 더해진\" 효과예요.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3115,7 +3115,7 @@ window.CONTENT = {
       "exampleKo": "새 디자인으로 전환율이 5% 올랐어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3127,7 +3127,7 @@ window.CONTENT = {
       "exampleKo": "데이터 기반 기여도 모델로 바꿨어요.",
       "note": "last-click, first-click 같은 방식이 있어요.",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3139,7 +3139,7 @@ window.CONTENT = {
       "exampleKo": "95% 신뢰 구간은 2%에서 6%예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3151,7 +3151,7 @@ window.CONTENT = {
       "exampleKo": "상관관계가 인과관계를 증명하진 않아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3163,7 +3163,7 @@ window.CONTENT = {
       "exampleKo": "가격에 대한 민감도 분석을 했어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "통계·실험",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3175,7 +3175,7 @@ window.CONTENT = {
       "exampleKo": "매출 총이익은 매출에서 상품 원가를 뺀 거예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3187,7 +3187,7 @@ window.CONTENT = {
       "exampleKo": "마케팅 비용 때문에 순이익이 줄었어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3199,7 +3199,7 @@ window.CONTENT = {
       "exampleKo": "이 상품은 마진이 높아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3211,7 +3211,7 @@ window.CONTENT = {
       "exampleKo": "신규 사용자에게 배송비를 지원해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3223,7 +3223,7 @@ window.CONTENT = {
       "exampleKo": "쿠폰은 재구매를 유도하는 장치예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3235,7 +3235,7 @@ window.CONTENT = {
       "exampleKo": "가격 탄력성은 수요가 가격에 어떻게 반응하는지 알려 줘요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3247,7 +3247,7 @@ window.CONTENT = {
       "exampleKo": "학생들은 가격 민감도가 높아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3259,7 +3259,7 @@ window.CONTENT = {
       "exampleKo": "재구매가 매출의 40%를 차지해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3271,7 +3271,7 @@ window.CONTENT = {
       "exampleKo": "앱 업데이트 후 구매 빈도가 올랐어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3283,7 +3283,7 @@ window.CONTENT = {
       "exampleKo": "모바일에서 장바구니 이탈이 높아요.",
       "note": "cart abandonment라고도 해요.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3295,7 +3295,7 @@ window.CONTENT = {
       "exampleKo": "주문 이행률은 98%예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3307,7 +3307,7 @@ window.CONTENT = {
       "exampleKo": "이번 달 정시 배송률이 좋아졌어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3319,7 +3319,7 @@ window.CONTENT = {
       "exampleKo": "배송 리드타임은 평균 이틀이에요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3331,7 +3331,7 @@ window.CONTENT = {
       "exampleKo": "세일 후 환불률이 올랐어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3343,7 +3343,7 @@ window.CONTENT = {
       "exampleKo": "일간 활성 사용자가 5만 명이에요.",
       "note": "DAU (daily active users), MAU (monthly active users).",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3355,7 +3355,7 @@ window.CONTENT = {
       "exampleKo": "주말에 사용자 참여도가 더 높아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3367,7 +3367,7 @@ window.CONTENT = {
       "exampleKo": "건당 수익 구조를 개선해야 해요.",
       "note": "주문 1건(또는 고객 1명)당 수익과 비용을 따지는 거예요.",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3379,7 +3379,7 @@ window.CONTENT = {
       "exampleKo": "배송비가 비용 구조에서 가장 큰 부분이에요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "커머스·지표",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3391,7 +3391,7 @@ window.CONTENT = {
       "exampleKo": "데이터 계보를 보면 이 컬럼이 어디서 왔는지 알 수 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3403,7 +3403,7 @@ window.CONTENT = {
       "exampleKo": "데이터 거버넌스는 누가 무엇에 접근할 수 있는지 정해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3415,7 +3415,7 @@ window.CONTENT = {
       "exampleKo": "데이터 품질이 낮으면 잘못된 결정을 하게 돼요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3427,7 +3427,7 @@ window.CONTENT = {
       "exampleKo": "두 테이블 간 일관성을 확인하세요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3439,7 +3439,7 @@ window.CONTENT = {
       "exampleKo": "null 값 개수로 완전성을 확인해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3451,7 +3451,7 @@ window.CONTENT = {
       "exampleKo": "이 대시보드는 데이터 최신성이 아주 중요해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3463,7 +3463,7 @@ window.CONTENT = {
       "exampleKo": "이 설계는 확장성이 좋아요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3475,7 +3475,7 @@ window.CONTENT = {
       "exampleKo": "서비스 가용성은 99.9%예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3487,7 +3487,7 @@ window.CONTENT = {
       "exampleKo": "파이프라인의 신뢰성을 높였어요.",
       "note": "Set 1 reliable의 명사형이에요.",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3499,7 +3499,7 @@ window.CONTENT = {
       "exampleKo": "깔끔한 코드는 유지보수성을 높여요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3511,7 +3511,7 @@ window.CONTENT = {
       "exampleKo": "업그레이드 전에 호환성을 확인하세요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3523,7 +3523,7 @@ window.CONTENT = {
       "exampleKo": "스키마 변경으로 기존 쿼리 몇 개가 깨졌어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3535,7 +3535,7 @@ window.CONTENT = {
       "exampleKo": "오류는 앞단 시스템에서 왔어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3547,7 +3547,7 @@ window.CONTENT = {
       "exampleKo": "이 변경은 뒷단 리포트에 영향을 줄 거예요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3559,7 +3559,7 @@ window.CONTENT = {
       "exampleKo": "근본 원인은 인덱스 누락이었어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3571,7 +3571,7 @@ window.CONTENT = {
       "exampleKo": "어제 장애에 대한 보고서를 작성했어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3583,7 +3583,7 @@ window.CONTENT = {
       "exampleKo": "복구에 30분 정도 걸렸어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "데이터 엔지니어링",
+      "topic": "데이터·IT",
       "set": "Set 3 · 업무"
     },
     {
@@ -3595,7 +3595,7 @@ window.CONTENT = {
       "exampleKo": "다음 주에 프로젝트를 시작해요.",
       "note": "명사는 kickoff (kickoff meeting = 착수 회의).",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3607,7 +3607,7 @@ window.CONTENT = {
       "exampleKo": "사용자 1,000명 대상 설문을 실시했어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3619,7 +3619,7 @@ window.CONTENT = {
       "exampleKo": "기능을 전체 사용자에게 출시하고 있어요.",
       "note": "명사 rollout.",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3631,7 +3631,7 @@ window.CONTENT = {
       "exampleKo": "예전 대시보드를 단계적으로 없애고 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3643,7 +3643,7 @@ window.CONTENT = {
       "exampleKo": "마감을 금요일로 정하죠.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3655,7 +3655,7 @@ window.CONTENT = {
       "exampleKo": "마감을 지키려고 늦게까지 일했어요.",
       "note": "miss a deadline = 마감을 놓치다.",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3667,7 +3667,7 @@ window.CONTENT = {
       "exampleKo": "일정이 밀리고 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3679,7 +3679,7 @@ window.CONTENT = {
       "exampleKo": "밀린 이메일을 처리해야 해요.",
       "note": "catch up on ~ = 밀린 ~를 처리하다. 영화 인턴 Part 5의 playing catch-up도 참고.",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3691,7 +3691,7 @@ window.CONTENT = {
       "exampleKo": "프로젝트는 계획대로 가고 있어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3703,7 +3703,7 @@ window.CONTENT = {
       "exampleKo": "이번 주는 계획에서 조금 벗어났어요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3715,7 +3715,7 @@ window.CONTENT = {
       "exampleKo": "버그를 우회하는 방법을 찾았어요.",
       "note": "명사 workaround = 임시방편.",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3727,7 +3727,7 @@ window.CONTENT = {
       "exampleKo": "일정은 데이터 팀에 달려 있어요.",
       "note": "Dialog Day 9에서도 나왔어요.",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3739,7 +3739,7 @@ window.CONTENT = {
       "exampleKo": "그 버그로 데이터가 누락됐어요.",
       "note": "원인 + result in + 결과. (결과 + result from + 원인)",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3751,7 +3751,7 @@ window.CONTENT = {
       "exampleKo": "배송 지연은 환불 증가로 이어져요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3763,7 +3763,7 @@ window.CONTENT = {
       "exampleKo": "모바일이 주문의 70%를 차지해요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3775,7 +3775,7 @@ window.CONTENT = {
       "exampleKo": "원인 후보를 좁혀 봐요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3787,7 +3787,7 @@ window.CONTENT = {
       "exampleKo": "떠나기 전에 프로젝트를 인계할게요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3799,7 +3799,7 @@ window.CONTENT = {
       "exampleKo": "내일까지 다시 연락드릴게요.",
       "note": "",
       "date": "2026-10-31",
-      "topic": "프로젝트 진행",
+      "topic": "업무·회사",
       "set": "Set 3 · 업무"
     },
     {
@@ -3811,7 +3811,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 이번 분기에 마침내 무중단 목표를 달성했다.",
       "note": "achieve a goal / achieve success처럼 목표·성과와 함께 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3823,7 +3823,7 @@ window.CONTENT = {
       "exampleKo": "보고서 맨 위에 짧은 요약을 추가해 주시겠어요?",
       "note": "add A to B(B에 A를 추가하다) 형태로 많이 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3835,7 +3835,7 @@ window.CONTENT = {
       "exampleKo": "새 정책은 직원들이 일주일에 두 번 재택근무하는 것을 허락한다.",
       "note": "allow + 사람 + to 동사원형 형태를 꼭 기억하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3847,7 +3847,7 @@ window.CONTENT = {
       "exampleKo": "파일을 삭제하려고 하면 경고 메시지가 나타난다.",
       "note": "appear는 '나타나다' 외에 '~인 것 같다(seem)'의 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3859,7 +3859,7 @@ window.CONTENT = {
       "exampleKo": "이 방식이 우리 시간을 많이 아껴줄 거라고 믿어요.",
       "note": "believe A(A의 말을 믿다)와 believe in A(A의 존재·가치를 믿다)를 구분하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3871,7 +3871,7 @@ window.CONTENT = {
       "exampleKo": "잠깐 충전기 좀 빌려도 될까요?",
       "note": "borrow는 '빌려오다', lend는 '빌려주다'로 방향이 반대예요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3883,7 +3883,7 @@ window.CONTENT = {
       "exampleKo": "우리는 단 두 달 만에 앱의 첫 번째 버전을 만들었다.",
       "note": "build an app, build trust처럼 물리적·추상적인 것 모두에 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3895,7 +3895,7 @@ window.CONTENT = {
       "exampleKo": "심각한 버그 때문에 출시일을 바꿔야 했다.",
       "note": "change one's mind(마음을 바꾸다)는 꼭 알아둘 표현이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3907,7 +3907,7 @@ window.CONTENT = {
       "exampleKo": "프로젝트에 맞는 데이터베이스를 선택하는 데 일주일이 걸렸다.",
       "note": "과거형 chose, 과거분사 chosen 변화에 주의하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3919,7 +3919,7 @@ window.CONTENT = {
       "exampleKo": "잠깐 쉬고 이 논의는 점심 이후에 계속합시다.",
       "note": "continue to 동사원형 / continue -ing 둘 다 가능해요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3931,7 +3931,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 주간 보고서를 자동화하는 간단한 스크립트를 만들었다.",
       "note": "create an account, create a ticket처럼 IT에서 '생성하다'로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3943,7 +3943,7 @@ window.CONTENT = {
       "exampleKo": "우리는 출시를 다음 달로 미루기로 결정했다.",
       "note": "decide to 동사원형(~하기로 결정하다) 형태가 가장 흔해요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3955,7 +3955,7 @@ window.CONTENT = {
       "exampleKo": "올해는 발표 실력을 발전시키고 싶다.",
       "note": "develop은 '개발하다' 외에 실력·관계를 '발전시키다'의 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3967,7 +3967,7 @@ window.CONTENT = {
       "exampleKo": "우리는 새 기능이 사용자 참여를 높일 것으로 예상한다.",
       "note": "expect + 목적어 + to 동사원형 형태로 '~가 …하기를 예상하다'를 표현해요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3979,7 +3979,7 @@ window.CONTENT = {
       "exampleKo": "새 팀원들에게 이 기능이 어떻게 작동하는지 설명해 줄 수 있나요?",
       "note": "explain me (X)가 아니라 explain it to me (O)로 써야 해요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -3991,7 +3991,7 @@ window.CONTENT = {
       "exampleKo": "개발 환경을 설정하려면 가이드의 단계를 따라 주세요.",
       "note": "follow the rules / follow up on(후속 조치하다)도 함께 알아두세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4003,7 +4003,7 @@ window.CONTENT = {
       "exampleKo": "어젯밤 서버에 무슨 일이 있었는지 정확히 아는 사람이 없다.",
       "note": "happen to + 사람(~에게 일어나다), What happened?를 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4015,7 +4015,7 @@ window.CONTENT = {
       "exampleKo": "결과를 캐싱하자 페이지 로딩 속도가 크게 개선되었다.",
       "note": "improve performance / improve one's skills가 대표 조합이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4027,7 +4027,7 @@ window.CONTENT = {
       "exampleKo": "가격에는 설치와 1년간의 지원이 포함되어 있다.",
       "note": "including(~을 포함하여)은 전치사처럼 문장 중간에 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4039,7 +4039,7 @@ window.CONTENT = {
       "exampleKo": "지난달 활성 사용자 수가 20퍼센트 증가했다.",
       "note": "동사는 /ɪnˈkriːs/, 명사는 /ˈɪnkriːs/로 강세가 달라요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4051,7 +4051,7 @@ window.CONTENT = {
       "exampleKo": "새 백엔드 개발자 민지 씨를 소개할게요.",
       "note": "introduce A to B(A를 B에게 소개하다) 순서에 주의하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4063,7 +4063,7 @@ window.CONTENT = {
       "exampleKo": "이 프로젝트는 모든 데이터를 클라우드로 이전하는 일을 수반한다.",
       "note": "involve 뒤에는 -ing가 오고, be involved in(~에 관여하다)도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4075,7 +4075,7 @@ window.CONTENT = {
       "exampleKo": "경비 보고서를 위해 영수증을 모두 보관해 주세요.",
       "note": "keep -ing는 '계속 ~하다', keep A 형용사는 'A를 ~하게 유지하다'예요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4087,7 +4087,7 @@ window.CONTENT = {
       "exampleKo": "선배의 코드를 리뷰하면서 많이 배웠다.",
       "note": "learn은 스스로 익히는 것, teach는 가르치는 것이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4099,7 +4099,7 @@ window.CONTENT = {
       "exampleKo": "오늘 오후에 당신의 풀 리퀘스트에 코멘트를 남길게요.",
       "note": "leave for + 장소는 '~로 떠나다', leave + 장소는 '~를 떠나다'예요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4111,7 +4111,7 @@ window.CONTENT = {
       "exampleKo": "회사는 모든 직원에게 무료 점심을 제공한다.",
       "note": "offer to 동사원형(~해 주겠다고 제안하다), job offer(채용 제안)도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4123,7 +4123,7 @@ window.CONTENT = {
       "exampleKo": "내일 고객 미팅용 슬라이드를 준비해야 한다.",
       "note": "prepare for + 명사(~에 대비하다)와 prepare + 명사(~을 준비하다)를 구분하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4135,7 +4135,7 @@ window.CONTENT = {
       "exampleKo": "우리는 모든 고객에게 24시간 기술 지원을 제공한다.",
       "note": "provide A with B 또는 provide B for A 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4147,7 +4147,7 @@ window.CONTENT = {
       "exampleKo": "제가 오늘 아침에 보낸 회의 초대 받으셨어요?",
       "note": "receive는 get보다 격식 있는 표현이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4159,7 +4159,7 @@ window.CONTENT = {
       "exampleKo": "테스트를 자동화하자 릴리스 시간이 절반으로 줄었다.",
       "note": "reduce costs / reduce stress처럼 양·정도를 줄일 때 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4171,7 +4171,7 @@ window.CONTENT = {
       "exampleKo": "이번 스프린트를 마무리하기 전에 두 개의 작업만 남아 있다.",
       "note": "remain + 형용사는 '계속 ~한 상태이다'라는 뜻이에요(remain calm).",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4183,7 +4183,7 @@ window.CONTENT = {
       "exampleKo": "이 기능은 사용자가 2단계 인증으로 로그인해야 한다.",
       "note": "require + 사람 + to 동사원형, requirement(요구사항)도 함께 익히세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4195,7 +4195,7 @@ window.CONTENT = {
       "exampleKo": "새 인턴은 머신러닝에 아주 관심이 많아 보인다.",
       "note": "seem + 형용사 / seem to 동사원형 / It seems that ~ 세 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4207,7 +4207,7 @@ window.CONTENT = {
       "exampleKo": "작업을 더 작은 티켓으로 나누는 것을 제안합니다.",
       "note": "suggest me to (X), suggest that we ~ 또는 suggest -ing (O)로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4219,7 +4219,7 @@ window.CONTENT = {
       "exampleKo": "우리 매니저는 주 4일 근무 아이디어를 전적으로 지지했다.",
       "note": "technical support(기술 지원)처럼 명사로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4231,7 +4231,7 @@ window.CONTENT = {
       "exampleKo": "새 결제 시스템을 이해하는 데 시간이 좀 걸렸다.",
       "note": "Do you understand?보다 Does that make sense?가 더 부드러워요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4243,7 +4243,7 @@ window.CONTENT = {
       "exampleKo": "재택근무의 장점 하나는 출퇴근 시간을 아낄 수 있다는 것이다.",
       "note": "take advantage of(~을 이용하다)는 꼭 알아둘 표현이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4255,7 +4255,7 @@ window.CONTENT = {
       "exampleKo": "멘토가 커리어 성장에 대해 좋은 조언을 해 줬다.",
       "note": "advice는 셀 수 없는 명사라 an advice (X), a piece of advice (O)예요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4267,7 +4267,7 @@ window.CONTENT = {
       "exampleKo": "사용자가 왜 앱을 떠났는지 알아보려고 사용자 행동을 분석했다.",
       "note": "영국식 철자는 behaviour이고, 동사는 behave예요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4279,7 +4279,7 @@ window.CONTENT = {
       "exampleKo": "수백만 명의 사용자를 위해 시스템을 확장하는 것은 큰 도전이었다.",
       "note": "face a challenge(어려움에 직면하다) 조합으로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4291,7 +4291,7 @@ window.CONTENT = {
       "exampleKo": "고객이 제안서를 승인할 가능성이 높다.",
       "note": "chance는 '기회'와 '가능성' 두 뜻이 있어요(a good chance of ~).",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4303,7 +4303,7 @@ window.CONTENT = {
       "exampleKo": "이 프로젝트에 파이썬을 선택한 것은 올바른 선택이었다.",
       "note": "make a choice(선택하다), have no choice but to ~(~할 수밖에 없다)를 기억하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4315,7 +4315,7 @@ window.CONTENT = {
       "exampleKo": "지난주 하드웨어 업그레이드 후 서버 상태가 좋아요.",
       "note": "'on one condition(한 가지 조건으로)', 'in good condition(상태가 좋은)'처럼 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4327,7 +4327,7 @@ window.CONTENT = {
       "exampleKo": "금요일까지 출시일에 대한 결정을 내려야 해요.",
       "note": "'make a decision(결정하다)'이 기본 짝이고 'do a decision'은 틀려요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4339,7 +4339,7 @@ window.CONTENT = {
       "exampleKo": "이 두 API 버전의 차이를 설명해 줄 수 있어요?",
       "note": "'difference between A and B', 'make a difference(변화를 가져오다)'를 함께 기억하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4351,7 +4351,7 @@ window.CONTENT = {
       "exampleKo": "이번 분기 마이그레이션 프로젝트에 애써 주셔서 감사해요.",
       "note": "'make an effort(노력하다)', 'put effort into ~(~에 노력을 들이다)'가 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4363,7 +4363,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 백엔드 개발 경력이 5년이에요.",
       "note": "'경력'의 의미일 때는 셀 수 없는 명사, '한 번의 경험'일 때는 셀 수 있는 명사예요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4375,7 +4375,7 @@ window.CONTENT = {
       "exampleKo": "이번 스프린트의 주요 목표는 페이지 로딩 시간을 줄이는 거예요.",
       "note": "'set a goal(목표를 세우다)', 'reach/achieve a goal(목표를 달성하다)'로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4387,7 +4387,7 @@ window.CONTENT = {
       "exampleKo": "저는 아침에 제일 먼저 이메일을 확인하는 습관이 있어요.",
       "note": "'have a habit of ~ing', 'break a habit(습관을 고치다)'처럼 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4399,7 +4399,7 @@ window.CONTENT = {
       "exampleKo": "좋은 생각이에요, 다음 스프린트에 해 봐요.",
       "note": "'I have no idea(전혀 모르겠어요)'는 일상에서 정말 자주 쓰는 표현이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4411,7 +4411,7 @@ window.CONTENT = {
       "exampleKo": "새 요금제에 대한 정보를 더 보내 주세요.",
       "note": "셀 수 없는 명사라 'informations'는 틀리고, 'a piece of information'으로 세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4423,7 +4423,7 @@ window.CONTENT = {
       "exampleKo": "모바일 기기에서 로그인 페이지에 문제가 있는 걸 발견했어요.",
       "note": "IT에서는 'problem'보다 부드럽게 'issue'를 많이 쓰고, 'No issues(문제없어요)'도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4435,7 +4435,7 @@ window.CONTENT = {
       "exampleKo": "그는 데이터베이스 성능 튜닝에 대한 깊은 지식을 갖고 있어요.",
       "note": "발음은 '날리지'이고, 'k'는 묵음이에요; 셀 수 없는 명사예요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4447,7 +4447,7 @@ window.CONTENT = {
       "exampleKo": "제 생각엔 기능을 추가하기 전에 이 모듈을 리팩터링해야 해요.",
       "note": "'In my opinion'은 자기 의견을 말할 때 문장 앞에 붙이기 좋아요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4459,7 +4459,7 @@ window.CONTENT = {
       "exampleKo": "이 회의의 목적은 프로젝트 일정을 검토하는 거예요.",
       "note": "'on purpose(일부러)'도 함께 알아 두면 좋아요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4471,7 +4471,7 @@ window.CONTENT = {
       "exampleKo": "우리가 이 데이터베이스를 고른 데는 그럴 만한 이유가 있어요.",
       "note": "'the reason for + 명사', 'the reason why + 문장' 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4483,7 +4483,7 @@ window.CONTENT = {
       "exampleKo": "테스트 결과가 좋아서 브랜치를 머지할 수 있어요.",
       "note": "'as a result(그 결과)'는 이유-결과를 연결할 때 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4495,7 +4495,7 @@ window.CONTENT = {
       "exampleKo": "서버 장애의 현재 상황을 설명할게요.",
       "note": "'in this situation(이런 상황에서)'처럼 전치사 in과 함께 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4507,7 +4507,7 @@ window.CONTENT = {
       "exampleKo": "임시방편이 아니라 장기적인 해결책이 필요해요.",
       "note": "'a solution to the problem'처럼 전치사 to를 써요(for도 가능).",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4519,7 +4519,7 @@ window.CONTENT = {
       "exampleKo": "영업에서는 고객과 좋은 관계를 쌓는 게 중요해요.",
       "note": "'relationship with + 사람', 'relationship between A and B'로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4531,7 +4531,7 @@ window.CONTENT = {
       "exampleKo": "배포가 문제없이 진행되도록 하는 게 제 책임이에요.",
       "note": "'take responsibility for ~(~에 책임을 지다)'가 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4543,7 +4543,7 @@ window.CONTENT = {
       "exampleKo": "팀 전체 덕분에 제품 출시가 큰 성공을 거뒀어요.",
       "note": "명사는 success, 형용사는 successful, 동사는 succeed로 구별하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4555,7 +4555,7 @@ window.CONTENT = {
       "exampleKo": "오늘 아침에 VPN 연결하는 데 좀 애를 먹었어요.",
       "note": "'have trouble ~ing(~하는 데 어려움을 겪다)' 패턴을 꼭 기억하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4567,7 +4567,7 @@ window.CONTENT = {
       "exampleKo": "이 기능은 기업 고객에게 큰 가치를 더해 줘요.",
       "note": "'add value(가치를 더하다)', 'good value for money(가성비가 좋은)'로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4579,7 +4579,7 @@ window.CONTENT = {
       "exampleKo": "이 테스트를 다 돌리는 더 빠른 방법이 있나요?",
       "note": "'the way + 문장(~하는 방식)', 'by the way(그런데)'도 함께 알아 두세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4591,7 +4591,7 @@ window.CONTENT = {
       "exampleKo": "새 버전이 이제 저희 웹사이트에서 다운로드 가능해요.",
       "note": "사람에게 쓰면 '시간이 되는'이라는 뜻: 'Are you available tomorrow?'",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4603,7 +4603,7 @@ window.CONTENT = {
       "exampleKo": "오늘 밤 서버가 중단된다는 거 알고 계세요?",
       "note": "'be aware of + 명사' 또는 'be aware that + 문장'으로 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4615,7 +4615,7 @@ window.CONTENT = {
       "exampleKo": "이 툴을 쓰려면 기본적인 파이썬 실력만 있으면 돼요.",
       "note": "'the basics(기초)'처럼 명사로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4627,7 +4627,7 @@ window.CONTENT = {
       "exampleKo": "이건 주니어 개발자들 사이에서 흔한 실수예요.",
       "note": "'in common(공통으로)': 'We have a lot in common.'도 함께 알아 두세요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4639,7 +4639,7 @@ window.CONTENT = {
       "exampleKo": "회사에서 바쁠 때 인터넷 뱅킹은 정말 편리해요.",
       "note": "시간 약속에는 'Is 3 p.m. convenient for you?'처럼 사물이 주어, 사람은 for 뒤에 와요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4651,7 +4651,7 @@ window.CONTENT = {
       "exampleKo": "이 작업이 얼마나 걸릴지 예측하기 어려워요.",
       "note": "'It's difficult to + 동사' 형태가 가장 많이 쓰여요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4663,7 +4663,7 @@ window.CONTENT = {
       "exampleKo": "이번 스프린트에 모든 기능을 끝낼 시간이 충분하지 않아요.",
       "note": "형용사·부사 뒤에 올 때는 'good enough'처럼 뒤에 붙여요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4675,7 +4675,7 @@ window.CONTENT = {
       "exampleKo": "코드베이스의 이 부분에 익숙하세요?",
       "note": "'be familiar with ~(~에 익숙하다)', 'look familiar(낯이 익다)'로 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4687,7 +4687,7 @@ window.CONTENT = {
       "exampleKo": "먼저 시스템의 전반적인 개요를 알려 드릴게요.",
       "note": "'in general(일반적으로)'은 문장 앞뒤에 붙여 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4699,7 +4699,7 @@ window.CONTENT = {
       "exampleKo": "마이그레이션 전에 데이터베이스를 백업하는 게 중요해요.",
       "note": "'It's important to + 동사' 또는 'It's important that + 문장'으로 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4711,7 +4711,7 @@ window.CONTENT = {
       "exampleKo": "이 변경 때문에 서버를 꼭 재시작해야 하나요?",
       "note": "'if necessary(필요하면)'는 짧고 유용한 표현이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4723,7 +4723,7 @@ window.CONTENT = {
       "exampleKo": "회의를 목요일로 옮기는 게 가능할까요?",
       "note": "'as soon as possible(ASAP, 가능한 빨리)'을 함께 기억하세요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4735,7 +4735,7 @@ window.CONTENT = {
       "exampleKo": "운영에 올리기 전에 적절한 에러 처리가 필요해요.",
       "note": "'proper'는 '제대로 된'이라는 뉘앙스로 일상에서도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4747,7 +4747,7 @@ window.CONTENT = {
       "exampleKo": "작년에 결제 시스템에서도 비슷한 문제가 있었어요.",
       "note": "'similar to ~(~와 비슷한)'처럼 전치사 to와 함께 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4759,7 +4759,7 @@ window.CONTENT = {
       "exampleKo": "그 버그의 구체적인 예시를 하나 줄 수 있어요?",
       "note": "'be more specific(좀 더 구체적으로 말하다)'는 회의에서 자주 쓰는 표현이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4771,7 +4771,7 @@ window.CONTENT = {
       "exampleKo": "서버 마이그레이션이 다운타임 없이 성공적으로 끝났어요.",
       "note": "부사형 'successfully(성공적으로)'도 'deployed successfully'처럼 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4783,7 +4783,7 @@ window.CONTENT = {
       "exampleKo": "이 스크립트는 오래된 로그 파일 정리할 때 정말 유용해요.",
       "note": "반대말은 'useless(쓸모없는)'이고, 'useful for ~ing' 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4795,7 +4795,7 @@ window.CONTENT = {
       "exampleKo": "시제품에 대한 피드백이 저희에게 정말 소중했어요.",
       "note": "'useful'보다 '귀중한, 값진' 느낌이 강하고, 'valuable time'처럼 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4807,7 +4807,7 @@ window.CONTENT = {
       "exampleKo": "프론트엔드 버그인 줄 알았는데, 실제로는 서버 문제였어요.",
       "note": "'actually'는 '사실은'으로 예상과 다른 말을 할 때 쓰며, 'currently(현재)'와 헷갈리지 마세요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4819,7 +4819,7 @@ window.CONTENT = {
       "exampleKo": "3주간의 테스트 끝에 마침내 새 결제 기능을 출시했어요.",
       "note": "'at last'와 비슷하지만, 순서를 나열할 때 '마지막으로'라는 뜻으로도 쓰여요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4831,7 +4831,7 @@ window.CONTENT = {
       "exampleKo": "고객은 아마 데모 후에 수정을 더 요청할 거예요.",
       "note": "'maybe'보다 가능성이 더 높을 때 쓰고, 보통 조동사 뒤나 일반동사 앞에 와요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4843,7 +4843,7 @@ window.CONTENT = {
       "exampleKo": "최근에 회사의 지루한 업무를 자동화하려고 파이썬을 배우기 시작했어요.",
       "note": "주로 과거 시제나 현재완료와 함께 쓰여요 (I have recently...).",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4855,7 +4855,7 @@ window.CONTENT = {
       "exampleKo": "저는 보통 아침에 제일 먼저 이메일을 확인해요.",
       "note": "빈도부사라서 일반동사 앞, be동사 뒤에 위치해요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4867,7 +4867,7 @@ window.CONTENT = {
       "exampleKo": "코딩에 집중하느라 회의를 완전히 잊어버렸어요.",
       "note": "forget, agree, different 등과 자주 어울려요 (I completely agree).",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4879,7 +4879,7 @@ window.CONTENT = {
       "exampleKo": "개발자들이 헷갈리지 않도록 요구사항을 명확하게 설명해 주세요.",
       "note": "'분명히'라는 뜻으로 문장 전체를 수식하기도 해요 (Clearly, it's a bug).",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4891,7 +4891,7 @@ window.CONTENT = {
       "exampleKo": "이메일로 파일을 보내는 대신 공유 문서를 사용해요.",
       "note": "명사 앞에서는 'instead of'를 쓰고, 단독으로는 문장 끝에 자주 와요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4903,7 +4903,7 @@ window.CONTENT = {
       "exampleKo": "보안 알림이 보이면 즉시 팀에 알려 주세요.",
       "note": "'right away'와 비슷하지만 더 격식 있는 표현이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 4 · 기초 단어"
     },
     {
@@ -4915,7 +4915,7 @@ window.CONTENT = {
       "exampleKo": "출근 전에 운동하려고 매일 아침 6시에 일어나요.",
       "note": "'wake up'은 잠에서 깨는 것, 'get up'은 침대에서 일어나는 것이에요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4927,7 +4927,7 @@ window.CONTENT = {
       "exampleKo": "한밤중에 깨서 다시 잠들 수가 없었어요.",
       "note": "'wake someone up'처럼 다른 사람을 깨운다는 뜻으로도 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4939,7 +4939,7 @@ window.CONTENT = {
       "exampleKo": "성공적인 출시를 축하하려고 저녁 먹으러 나가기로 했어요.",
       "note": "'go out with someone'은 '~와 사귀다'라는 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4951,7 +4951,7 @@ window.CONTENT = {
       "exampleKo": "급한 일을 끝내고 이 이슈로 다시 돌아올게요.",
       "note": "'come back to + 주제'는 '나중에 다시 다루다'라는 뜻으로 회의에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4963,7 +4963,7 @@ window.CONTENT = {
       "exampleKo": "퇴근 후에 동료들과 카페에서 어울리는 걸 좋아해요.",
       "note": "친구와 편하게 시간을 보낼 때 쓰는 캐주얼한 표현이에요 (hang out with ~).",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4975,7 +4975,7 @@ window.CONTENT = {
       "exampleKo": "오래된 폰에서 앱이 왜 꺼지는지 알아내야 해요.",
       "note": "'find'는 물건을 찾는 것, 'find out'은 정보나 사실을 알아내는 것이에요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4987,7 +4987,7 @@ window.CONTENT = {
       "exampleKo": "초보자를 위한 좋은 도커 튜토리얼을 찾고 있어요.",
       "note": "찾는 과정은 'look for', 찾아낸 결과는 'find'를 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -4999,7 +4999,7 @@ window.CONTENT = {
       "exampleKo": "제가 출장 갈 때 언니가 강아지를 돌봐 줘요.",
       "note": "'take care of'와 비슷하며, 사람·동물·물건 모두에 쓸 수 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5011,7 +5011,7 @@ window.CONTENT = {
       "exampleKo": "다음 달 회사 워크숍이 정말 기대돼요.",
       "note": "'to'는 전치사라서 뒤에 명사나 동명사(~ing)가 와요 (look forward to seeing you).",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5023,7 +5023,7 @@ window.CONTENT = {
       "exampleKo": "청구서는 걱정 마세요. 오늘 제가 처리할게요.",
       "note": "'Take care!'는 헤어질 때 '잘 지내'라는 인사로도 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5035,7 +5035,7 @@ window.CONTENT = {
       "exampleKo": "팀원들 모두와 잘 지내서 일이 덜 스트레스받아요.",
       "note": "'get along well with'처럼 well을 넣어 강조할 수 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5047,7 +5047,7 @@ window.CONTENT = {
       "exampleKo": "사무실에 커피가 다 떨어져서 더 주문했어요.",
       "note": "'run out of time'(시간이 다 되다)은 회의에서 아주 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5059,7 +5059,7 @@ window.CONTENT = {
       "exampleKo": "새 프로젝트 관리 도구에 익숙해지는 데 한 달이 걸렸어요.",
       "note": "'to' 뒤에 동명사가 오며, 'used to + 동사원형'(~하곤 했다)과 헷갈리지 마세요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5071,7 +5071,7 @@ window.CONTENT = {
       "exampleKo": "올해는 머신러닝에 대해 더 배우는 데 관심이 있어요.",
       "note": "'interesting'은 대상이 흥미로운 것, 'interested'는 사람이 흥미를 느끼는 것이에요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5083,7 +5083,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 개발자가 아닌 사람들에게 기술 문제를 설명하는 걸 정말 잘해요.",
       "note": "'at' 뒤에 명사나 동명사가 와요; 반대는 'be bad at'이에요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5095,7 +5095,7 @@ window.CONTENT = {
       "exampleKo": "많은 주니어 개발자들은 회의에서 질문하는 걸 두려워해요.",
       "note": "'I'm afraid (that)...'은 '유감이지만~'이라는 공손한 표현으로도 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5107,7 +5107,7 @@ window.CONTENT = {
       "exampleKo": "아직 버그가 많아서 마감일이 걱정돼요.",
       "note": "'worry about'(동사)과 같은 뜻이지만 현재 상태를 강조할 때 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5119,7 +5119,7 @@ window.CONTENT = {
       "exampleKo": "10분 쉬고 회의를 계속해요.",
       "note": "'take a short break', 'take a coffee break'처럼 꾸며 쓸 수 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5131,7 +5131,7 @@ window.CONTENT = {
       "exampleKo": "죄송한데 아직 보고서를 읽어 볼 기회가 없었어요.",
       "note": "'Did you have a chance to ~?'는 '혹시 ~해 보셨어요?'라는 공손한 확인 표현이에요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5143,7 +5143,7 @@ window.CONTENT = {
       "exampleKo": "저는 매주 풀 리퀘스트를 검토하는 데 많은 시간을 써요.",
       "note": "'spend + 시간/돈 + ~ing' 형태로, to부정사가 아닌 동명사를 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5155,7 +5155,7 @@ window.CONTENT = {
       "exampleKo": "바빠도 운동할 시간은 내려고 해요.",
       "note": "'find time for'와 비슷하지만, 일부러 시간을 만든다는 느낌이 더 강해요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5167,7 +5167,7 @@ window.CONTENT = {
       "exampleKo": "남은 스프린트 기간을 최대한 활용해서 치명적인 버그를 고쳐요.",
       "note": "'make the most of + 기회/시간'으로 '~을 최대한 누리다'는 뜻으로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 기본 표현",
+      "topic": "일상",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5179,7 +5179,7 @@ window.CONTENT = {
       "exampleKo": "소셜 계정을 지원하는 새 로그인 페이지를 작업하고 있어요.",
       "note": "'work on + 일/과제'이고, 'work at + 회사/장소'와 구분하세요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5191,7 +5191,7 @@ window.CONTENT = {
       "exampleKo": "오늘 아침에 전화로 화난 고객을 응대해야 했어요.",
       "note": "문제나 사람을 '처리하다/상대하다'로, 'handle'과 비슷해요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5203,7 +5203,7 @@ window.CONTENT = {
       "exampleKo": "제가 육아휴직 중인 동안 지수 씨가 프로젝트를 맡을 거예요.",
       "note": "'take over from + 사람'으로 '~에게서 인계받다'라고 해요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5215,7 +5215,7 @@ window.CONTENT = {
       "exampleKo": "배포하기 전에 릴리스 체크리스트를 검토해요.",
       "note": "'review'보다 구어적이며, 함께 쭉 훑어볼 때 많이 써요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5227,7 +5227,7 @@ window.CONTENT = {
       "exampleKo": "새 노트북에 개발 환경을 설정해야 해요.",
       "note": "붙여 쓴 'setup'은 명사(설정, 구성)이고, 띄어 쓴 'set up'은 동사예요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5239,7 +5239,7 @@ window.CONTENT = {
       "exampleKo": "민지 씨가 이번 분기 모바일 앱 출시를 담당해요.",
       "note": "'responsible for'와 비슷하며, 'Who's in charge?'(책임자가 누구예요?)도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5251,7 +5251,7 @@ window.CONTENT = {
       "exampleKo": "새 요금제는 작년 고객 피드백을 바탕으로 했어요.",
       "note": "'based in + 장소'는 '~에 본사를 둔'이라는 뜻이라 헷갈리지 마세요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5263,7 +5263,7 @@ window.CONTENT = {
       "exampleKo": "지난 주말 팀원 모두가 해커톤에 참여했어요.",
       "note": "'participate in'보다 구어적이며, 뒤에 반드시 'in'이 와요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5275,7 +5275,7 @@ window.CONTENT = {
       "exampleKo": "질문 있으시면 편하게 연락 주세요.",
       "note": "'contact'보다 부드럽고 친근한 비즈니스 표현이에요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5287,7 +5287,7 @@ window.CONTENT = {
       "exampleKo": "드디어 빌드 속도를 높이는 방법을 알아냈어요.",
       "note": "'figure out' 뒤에 'how/why/what' 절을 붙여 다양하게 쓸 수 있어요.",
       "date": "2026-11-26",
-      "topic": "회사·업무 표현",
+      "topic": "업무·회사",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5299,7 +5299,7 @@ window.CONTENT = {
       "exampleKo": "출시 전에 이 기능을 더 테스트해야 할 것 같아요.",
       "note": "의견을 부드럽게 말할 때 쓰며, 부정은 'I don't think ~'로 앞에서 해요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5311,7 +5311,7 @@ window.CONTENT = {
       "exampleKo": "이 변경이 사용자 경험을 크게 개선할 거라고 생각해요.",
       "note": "'I think'보다 확신이 강하고 조금 더 격식 있는 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5323,7 +5323,7 @@ window.CONTENT = {
       "exampleKo": "이 새 디자인이 예전 것보다 훨씬 쓰기 쉬운 것 같아요.",
       "note": "'I feel like + 문장'은 ~인 것 같다, 'I feel like + 명사/~ing'는 ~하고 싶다라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5335,7 +5335,7 @@ window.CONTENT = {
       "exampleKo": "오늘 아침에도 기차가 또 늦는 것 같아.",
       "note": "'seem like + 명사/문장'으로 쓰고, 객관적인 정황을 보고 추측할 때 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5347,7 +5347,7 @@ window.CONTENT = {
       "exampleKo": "제 의견으로는, 그 기능을 먼저 실제 사용자들과 테스트해봐야 해요.",
       "note": "회의에서 'I think'보다 조금 더 격식 있게 의견을 낼 때 좋아요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5359,7 +5359,7 @@ window.CONTENT = {
       "exampleKo": "솔직히 말하면, 어젯밤에 본 영화 별로 재미없었어.",
       "note": "줄여서 'TBH'라고 채팅에서 자주 쓰고, 'Honestly'로 바꿔 말해도 돼요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5371,7 +5371,7 @@ window.CONTENT = {
       "exampleKo": "그나저나, 아래층 카페 문 닫는다는 얘기 들었어?",
       "note": "화제를 바꿀 때 쓰며, 채팅에서는 'BTW'로 줄여 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5383,7 +5383,7 @@ window.CONTENT = {
       "exampleKo": "작은 것에서 돈을 아낄 수 있어요, 예를 들어 집에서 커피를 내려 마시는 거죠.",
       "note": "'for instance'와 같은 뜻이고, 'e.g.'는 글에서만 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5395,7 +5395,7 @@ window.CONTENT = {
       "exampleKo": "메인 요리 외에도 그 식당은 샐러드와 수프를 무료로 줘요.",
       "note": "'In addition to + 명사/~ing' 형태로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5407,7 +5407,7 @@ window.CONTENT = {
       "exampleKo": "시내에 사는 건 편리해요. 반면에 정말 비싸죠.",
       "note": "두 가지를 대조할 때 쓰며, 앞에 'On the one hand'를 짝으로 쓰기도 해요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5419,7 +5419,7 @@ window.CONTENT = {
       "exampleKo": "매일 적어도 물 2리터는 마시도록 해 보세요.",
       "note": "'at the least'가 아니라 'at least'이고, '그래도 ~는 다행이다'라는 위로의 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5431,7 +5431,7 @@ window.CONTENT = {
       "exampleKo": "일반적으로 이 도시 사람들은 관광객에게 친절해요.",
       "note": "'generally'와 같은 뜻이며, 문장 맨 앞에 주로 와요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5443,7 +5443,7 @@ window.CONTENT = {
       "exampleKo": "그는 버스를 놓쳤고, 결과적으로 면접에 늦었어요.",
       "note": "'as a result of + 명사'는 '~의 결과로'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5455,7 +5455,7 @@ window.CONTENT = {
       "exampleKo": "그 가게는 공휴일에 문을 닫아요. 다시 말해서 내일은 안 열어요.",
       "note": "앞에서 한 말을 더 쉽게 풀어 설명할 때 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5467,7 +5467,7 @@ window.CONTENT = {
       "exampleKo": "아, 비 때문에 택시 탔구나? 그럴 만하네.",
       "note": "반대로 이해가 안 될 때는 'That doesn't make sense'라고 해요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5479,7 +5479,7 @@ window.CONTENT = {
       "exampleKo": "무슨 말인지 알겠는데, 그래도 파란 게 더 나아 보여.",
       "note": "상대 의견을 인정하면서 반론을 이어갈 때 'I see what you mean, but...'으로 많이 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5491,7 +5491,7 @@ window.CONTENT = {
       "exampleKo": "오늘 아침에 열쇠를 어디 뒀는지 전혀 모르겠어.",
       "note": "'I don't know'보다 강하게 '전혀 모른다'는 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5503,7 +5503,7 @@ window.CONTENT = {
       "exampleKo": "그 가게가 일요일에 여는지 확실하지 않아요.",
       "note": "뒤에 'if/whether + 문장' 또는 'about + 명사'를 붙여 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5515,7 +5515,7 @@ window.CONTENT = {
       "exampleKo": "네 말에 동의해. 차 막히기 전에 일찍 출발하자.",
       "note": "사람에는 'agree with', 제안에는 'agree to', 주제에는 'agree on'을 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5527,7 +5527,7 @@ window.CONTENT = {
       "exampleKo": "결말에 대해선 네 생각에 동의 안 해. 난 완벽했다고 봐.",
       "note": "회의에서는 'I'm afraid I disagree'처럼 부드럽게 말하는 게 좋아요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5539,7 +5539,7 @@ window.CONTENT = {
       "exampleKo": "등산로가 길고 가파르지만 정상의 경치는 그만한 가치가 있어요.",
       "note": "'be worth + ~ing'로 '~할 가치가 있다'라고도 써요.",
       "date": "2026-11-26",
-      "topic": "생각·의견 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5551,7 +5551,7 @@ window.CONTENT = {
       "exampleKo": "오늘 밤에 공항에 여동생을 데리러 가야 해요.",
       "note": "'don't have to'는 '~할 필요 없다'로, 'must not(~하면 안 된다)'과 뜻이 달라요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5563,7 +5563,7 @@ window.CONTENT = {
       "exampleKo": "옆집 소음 때문에 잠을 잘 못 잤어요.",
       "note": "'can'은 미래·완료형이 없어서 'will be able to', 'have been able to'로 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5575,7 +5575,7 @@ window.CONTENT = {
       "exampleKo": "일 때문에 서울로 오기 전에는 부산에 살았어요.",
       "note": "'be used to ~ing(~에 익숙하다)'와 헷갈리지 않도록 주의하세요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5587,7 +5587,7 @@ window.CONTENT = {
       "exampleKo": "이렇게 추운 날씨에 나가느니 차라리 집에 있을래요.",
       "note": "'would rather A than B' 형태로 쓰고, 뒤에 동사원형이 와요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5599,7 +5599,7 @@ window.CONTENT = {
       "exampleKo": "어제 마트에서 우연히 옛 선생님을 만났어요.",
       "note": "'Do you happen to know...?'는 '혹시 ~ 아세요?'라는 공손한 질문이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5611,7 +5611,7 @@ window.CONTENT = {
       "exampleKo": "그 영상 볼 때마다 웃지 않을 수가 없어요.",
       "note": "'can't help but + 동사원형'으로도 같은 뜻을 표현해요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5623,7 +5623,7 @@ window.CONTENT = {
       "exampleKo": "네 메시지가 왔을 때 막 전화하려던 참이었어.",
       "note": "'be about to'는 'be going to'보다 훨씬 임박한 일에 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5635,7 +5635,7 @@ window.CONTENT = {
       "exampleKo": "요리하려고 했는데 결국 배달 음식을 시켰어요.",
       "note": "'end up + 장소/형용사'로도 써서 '결국 ~에 이르다'라는 뜻이 돼요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5647,7 +5647,7 @@ window.CONTENT = {
       "exampleKo": "옆집 개가 매일 밤 자정쯤 계속 짖어요.",
       "note": "'keep on ~ing'라고 하면 반복이나 끈질김이 더 강조돼요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5659,7 +5659,7 @@ window.CONTENT = {
       "exampleKo": "잠을 잘 자려고 오후 3시 이후엔 커피를 끊었어요.",
       "note": "'stop to + 동사'는 '~하려고 멈추다'라는 뜻이라 'stop ~ing'와 달라요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5671,7 +5671,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 한 달 동안 설탕을 끊었더니 훨씬 좋아졌어요.",
       "note": "'give up on + 사람/일'은 '~에 대한 기대를 버리다'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5683,7 +5683,7 @@ window.CONTENT = {
       "exampleKo": "치과 가는 걸 계속 미루는데, 정말 가야 해요.",
       "note": "목적어가 대명사면 'put it off'처럼 사이에 넣어요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5695,7 +5695,7 @@ window.CONTENT = {
       "exampleKo": "폭우 때문에 야외 콘서트가 취소됐어요.",
       "note": "'cancel'과 비슷하지만 행사나 계획을 취소할 때 구어로 더 자주 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5707,7 +5707,7 @@ window.CONTENT = {
       "exampleKo": "식당은 작아 보였는데 음식이 정말 맛있었어요.",
       "note": "'turn out to be + 명사/형용사' 또는 'It turns out that...' 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5719,7 +5719,7 @@ window.CONTENT = {
       "exampleKo": "매일 짧게 산책하는 것만으로도 건강에 큰 변화를 줄 수 있어요.",
       "note": "'make a big/huge difference', 'make no difference'처럼 형용사를 붙여 자주 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5731,7 +5731,7 @@ window.CONTENT = {
       "exampleKo": "방 청소하다가 우연히 부모님 옛날 사진을 발견했어요.",
       "note": "'come across as + 형용사'는 '~한 인상을 주다'라는 다른 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5743,7 +5743,7 @@ window.CONTENT = {
       "exampleKo": "이번 일요일 무료 박물관 개방일을 꼭 이용해 보세요.",
       "note": "사람에게 쓰면 '~를 이용해 먹다'라는 부정적 의미가 될 수 있어요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5755,7 +5755,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 출퇴근 시간에 영어 팟캐스트를 들으며 시간을 잘 활용해요.",
       "note": "'make good/full use of'처럼 형용사를 넣어 강조할 수 있어요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5767,7 +5767,7 @@ window.CONTENT = {
       "exampleKo": "그렇게 비싼 차를 사는 게 다시 망설여져요.",
       "note": "'have second thoughts about + 명사/~ing'로 쓰며 진행형으로 자주 말해요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5779,7 +5779,7 @@ window.CONTENT = {
       "exampleKo": "오늘 밤 눈이 올 가능성이 높으니 운전 조심하세요.",
       "note": "반대는 'be unlikely to'이고, 'probably'보다 조금 더 격식 있어요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5791,7 +5791,7 @@ window.CONTENT = {
       "exampleKo": "비가 오는데도 우리는 그래도 산책을 나갔어요.",
       "note": "'even though' 뒤에는 문장이, 'despite' 뒤에는 명사가 와요.",
       "date": "2026-11-26",
-      "topic": "원어민 실전 표현",
+      "topic": "회화 표현",
       "set": "Set 5 · 기초 표현"
     },
     {
@@ -5803,7 +5803,7 @@ window.CONTENT = {
       "exampleKo": "클라이언트가 요구사항을 바꾼 뒤 우리는 일정을 조정해야 했다.",
       "note": "adjust to ~는 '~에 적응하다'라는 뜻으로 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5815,7 +5815,7 @@ window.CONTENT = {
       "exampleKo": "그는 결국 파일 백업하는 걸 잊었다고 인정했다.",
       "note": "admit + ~ing 또는 admit that 절 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5827,7 +5827,7 @@ window.CONTENT = {
       "exampleKo": "회사는 어제 컨퍼런스에서 신제품을 발표했다.",
       "note": "announce는 to 없이 바로 목적어를 받고, 사람에게는 announce to someone으로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5839,7 +5839,7 @@ window.CONTENT = {
       "exampleKo": "금요일 전에 최신 보안 패치를 적용해야 한다.",
       "note": "apply for는 '~에 지원/신청하다', apply to는 '~에 적용되다'입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5851,7 +5851,7 @@ window.CONTENT = {
       "exampleKo": "다음 주에 업체와 미팅 좀 잡아 줄 수 있어요?",
       "note": "arrange a meeting/call처럼 일정을 '잡다'는 의미로 많이 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5863,7 +5863,7 @@ window.CONTENT = {
       "exampleKo": "아무도 안 와서 나는 회의가 취소된 줄 알았다.",
       "note": "assume은 근거 없이 '당연히 그렇다고 여기다'라는 뉘앙스가 있습니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5875,7 +5875,7 @@ window.CONTENT = {
       "exampleKo": "지난 목요일 온라인 워크숍에 약 50명이 참석했다.",
       "note": "attend는 to 없이 바로 목적어를 받습니다 (attend a meeting).",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5887,7 +5887,7 @@ window.CONTENT = {
       "exampleKo": "우리는 하나를 고르기 전에 세 개의 클라우드 업체를 비교했다.",
       "note": "compare A with/to B 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5899,7 +5899,7 @@ window.CONTENT = {
       "exampleKo": "여러 사용자가 느린 로딩 속도에 대해 불평했다.",
       "note": "complain about ~ / complain that ~ 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5911,7 +5911,7 @@ window.CONTENT = {
       "exampleKo": "이 메일에 회신해서 참석 여부를 확인해 주세요.",
       "note": "check는 직접 살펴보는 것, confirm은 사실임을 '확정/확인해 주는' 것입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5923,7 +5923,7 @@ window.CONTENT = {
       "exampleKo": "이 파일에는 모든 API 키가 들어 있으니 비공개로 유지하세요.",
       "note": "contain은 진행형으로 잘 쓰지 않습니다 (is containing X).",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5935,7 +5935,7 @@ window.CONTENT = {
       "exampleKo": "팀원 모두가 출시 성공에 기여했다.",
       "note": "contribute to ~ 형태로 쓰며, to 뒤에 명사/동명사가 옵니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5947,7 +5947,7 @@ window.CONTENT = {
       "exampleKo": "매니저가 새 툴을 써 보도록 설득하는 데 시간이 좀 걸렸다.",
       "note": "convince someone to do는 '설득하다', convince someone that은 '확신시키다'입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5959,7 +5959,7 @@ window.CONTENT = {
       "exampleKo": "데이터는 새 디자인이 가입률을 높인다는 걸 분명히 보여준다.",
       "note": "demo는 demonstration의 줄임말입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5971,7 +5971,7 @@ window.CONTENT = {
       "exampleKo": "에러가 나기 전에 어떤 단계를 거쳤는지 설명해 줄 수 있어요?",
       "note": "describe는 about 없이 바로 목적어를 받습니다 (describe about X).",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5983,7 +5983,7 @@ window.CONTENT = {
       "exampleKo": "부하 테스트를 돌리다가 메모리 누수를 발견했다.",
       "note": "find out은 정보를 알아내는 것, discover는 몰랐던 것을 처음 발견하는 느낌입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -5995,7 +5995,7 @@ window.CONTENT = {
       "exampleKo": "멘토가 밋업에서 발표해 보라고 격려해 줬다.",
       "note": "encourage someone to do 형태로 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6007,7 +6007,7 @@ window.CONTENT = {
       "exampleKo": "새 팀을 위해 명확한 코딩 표준을 확립해야 한다.",
       "note": "establish a connection(연결을 수립하다)은 IT에서 자주 쓰는 표현입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6019,7 +6019,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 우리 팀의 모든 고객 에스컬레이션을 처리한다.",
       "note": "handle it은 '그거 내가 처리할게'처럼 회화에서 아주 자주 씁니다; 명사로는 '손잡이'.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6031,7 +6031,7 @@ window.CONTENT = {
       "exampleKo": "우리는 한 시간 안에 장애의 근본 원인을 파악했다.",
       "note": "identify the root cause(근본 원인을 파악하다)는 장애 보고서에 자주 나옵니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6043,7 +6043,7 @@ window.CONTENT = {
       "exampleKo": "테스트가 없는 레거시 코드는 유지보수하기 어렵다.",
       "note": "maintain은 '유지보수하다'의 의미로 IT에서 많이 쓰며, 명사형은 maintenance입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6055,7 +6055,7 @@ window.CONTENT = {
       "exampleKo": "아까 마감 얘기를 하셨는데, 정확히 언제예요?",
       "note": "mention은 about 없이 바로 목적어를 받습니다 (mention about X).",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6067,7 +6067,7 @@ window.CONTENT = {
       "exampleKo": "어젯밤 로그에서 이상한 거 눈치챘어요?",
       "note": "명사로는 '공지, 통지'이며, on short notice는 '촉박하게'라는 뜻입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6079,7 +6079,7 @@ window.CONTENT = {
       "exampleKo": "모든 팀원은 스프린트 계획 회의에 참여해야 한다.",
       "note": "participate in ~ 형태로 쓰며, take part in과 같은 뜻입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6091,7 +6091,7 @@ window.CONTENT = {
       "exampleKo": "입력 검증을 추가하면 많은 보안 문제를 막을 수 있다.",
       "note": "prevent A from ~ing(A가 ~하는 것을 막다) 형태가 핵심입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6103,7 +6103,7 @@ window.CONTENT = {
       "exampleKo": "우리는 내년까지 기존 결제 시스템을 교체할 계획이다.",
       "note": "replace A with B는 'A를 B로 교체하다'입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6115,7 +6115,7 @@ window.CONTENT = {
       "exampleKo": "캐싱 문제를 해결하는 데 이틀이 걸렸다.",
       "note": "solve는 문제/퍼즐을, resolve는 갈등/이슈를 해결할 때 더 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6127,7 +6127,7 @@ window.CONTENT = {
       "exampleKo": "복잡한 개념을 쉽게 설명하는 그녀의 능력은 인상적이다.",
       "note": "the ability to do 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6139,7 +6139,7 @@ window.CONTENT = {
       "exampleKo": "신입 사원은 첫날 사내 위키 접근 권한을 받는다.",
       "note": "have access to ~ 형태로 쓰고, 동사로도 쓸 수 있습니다 (access the server).",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6151,7 +6151,7 @@ window.CONTENT = {
       "exampleKo": "이 프로젝트에는 단계적인 접근 방식이 더 나을 것 같다.",
       "note": "approach to ~ (~에 대한 접근법) 형태로 쓰며, 동사일 때는 to 없이 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6163,7 +6163,7 @@ window.CONTENT = {
       "exampleKo": "마이그레이션 중에는 에러 메시지에 주의를 기울여 주세요.",
       "note": "pay attention to ~ (~에 주의를 기울이다)가 가장 흔한 표현입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6175,7 +6175,7 @@ window.CONTENT = {
       "exampleKo": "그의 긍정적인 태도는 팀 전체에 동기를 준다.",
       "note": "attitude toward(s) ~ (~에 대한 태도) 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6187,7 +6187,7 @@ window.CONTENT = {
       "exampleKo": "회의 전에 이 프로젝트 배경 좀 알려줄 수 있어요?",
       "note": "give some background on ~은 '~에 대한 배경 설명을 하다'입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6199,7 +6199,7 @@ window.CONTENT = {
       "exampleKo": "재택근무의 큰 이점 중 하나는 출퇴근 시간을 아끼는 것이다.",
       "note": "복수형 benefits는 회사의 '복지 혜택'을 뜻하기도 합니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6211,7 +6211,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 지금 다른 프로젝트를 맡을 여력이 없다.",
       "note": "회사에서는 '업무 여력'이라는 뜻으로 have capacity를 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6223,7 +6223,7 @@ window.CONTENT = {
       "exampleKo": "팀 간의 원활한 의사소통은 많은 문제를 막을 수 있다.",
       "note": "communication skills(의사소통 능력)는 이력서와 면접에서 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6235,7 +6235,7 @@ window.CONTENT = {
       "exampleKo": "이 프레임워크의 개발자 커뮤니티는 매우 활발하다.",
       "note": "online community, local community처럼 형용사와 함께 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6247,7 +6247,7 @@ window.CONTENT = {
       "exampleKo": "내 주된 걱정은 테스트할 시간이 충분하지 않다는 것이다.",
       "note": "raise a concern(우려를 제기하다)은 회의에서 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6259,7 +6259,7 @@ window.CONTENT = {
       "exampleKo": "모든 테스트를 통과해서 새 릴리스에 대한 확신이 생겼다.",
       "note": "confidence in ~ (~에 대한 신뢰/확신) 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6271,7 +6271,7 @@ window.CONTENT = {
       "exampleKo": "코드 리뷰를 건너뛰면 나중에 심각한 결과를 초래할 수 있다.",
       "note": "as a consequence(그 결과로)라는 연결 표현도 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6283,7 +6283,7 @@ window.CONTENT = {
       "exampleKo": "맥락 없이는 그 에러 메시지를 이해하기 어렵다.",
       "note": "in this context(이런 맥락에서), out of context(맥락 없이)로 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6295,7 +6295,7 @@ window.CONTENT = {
       "exampleKo": "앱이 계속 꺼져서 고객이 환불을 요청했다.",
       "note": "client는 전문 서비스를 받는 고객, customer는 물건/서비스를 사는 고객에 더 가깝습니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6307,7 +6307,7 @@ window.CONTENT = {
       "exampleKo": "서명하기 전에 계약서의 세부 사항을 모두 확인하세요.",
       "note": "in detail(자세히)과 pay attention to detail(꼼꼼하다)을 함께 기억하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6319,7 +6319,7 @@ window.CONTENT = {
       "exampleKo": "그 버그는 로컬이 아니라 스테이징 환경에서만 발생한다.",
       "note": "IT에서는 dev/staging/production environment처럼 '실행 환경'의 뜻으로 많이 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6331,7 +6331,7 @@ window.CONTENT = {
       "exampleKo": "비용이 업체를 바꾸기로 한 결정의 가장 큰 요인이었다.",
       "note": "a key factor(핵심 요인)라는 표현을 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6343,7 +6343,7 @@ window.CONTENT = {
       "exampleKo": "새 기능은 사용자가 데이터를 엑셀로 내보낼 수 있게 해준다.",
       "note": "feature request(기능 요청), feature flag(기능 플래그)는 IT 필수 표현입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6355,7 +6355,7 @@ window.CONTENT = {
       "exampleKo": "피드백 감사해요. 내일까지 디자인을 수정할게요.",
       "note": "feedback은 셀 수 없는 명사라 a feedback, feedbacks로 쓰지 않습니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6367,7 +6367,7 @@ window.CONTENT = {
       "exampleKo": "그 장애는 그날 매출에 큰 영향을 미쳤다.",
       "note": "have an impact on ~ 형태로 쓰고, 동사로 impact 단독으로도 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6379,7 +6379,7 @@ window.CONTENT = {
       "exampleKo": "이 방법은 더 오래 걸리지만 더 정확한 결과를 준다.",
       "note": "코드에서는 클래스 안의 '메서드(함수)'라는 뜻으로도 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6391,7 +6391,7 @@ window.CONTENT = {
       "exampleKo": "SQL 쿼리에서 실수를 해서 엉뚱한 행을 삭제했다.",
       "note": "do a mistake가 아니라 make a mistake로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6403,7 +6403,7 @@ window.CONTENT = {
       "exampleKo": "이미지 크기를 줄여서 앱 성능을 개선했다.",
       "note": "사람에게는 '성과/실적', 시스템에는 '성능'의 뜻으로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6415,7 +6415,7 @@ window.CONTENT = {
       "exampleKo": "사용자 관점에서 보면 이 버튼은 찾기 어렵다.",
       "note": "from one's perspective(~의 관점에서)가 가장 흔한 형태입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6427,7 +6427,7 @@ window.CONTENT = {
       "exampleKo": "이번 주에 마이그레이션 작업이 많이 진척됐다.",
       "note": "make progress(진척을 보이다)로 쓰며, 셀 수 없는 명사입니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6439,7 +6439,7 @@ window.CONTENT = {
       "exampleKo": "마감을 맞추려고 코드 품질을 희생해서는 안 된다.",
       "note": "high quality / low quality처럼 형용사로도 붙여 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6451,7 +6451,7 @@ window.CONTENT = {
       "exampleKo": "이번 달에 두 프로젝트를 모두 끝낼 자원이 부족하다.",
       "note": "회사에서는 '인력'의 뜻으로도 쓰며, 보통 복수형 resources로 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6463,7 +6463,7 @@ window.CONTENT = {
       "exampleKo": "업데이트가 구형 기기에서 문제를 일으킬 위험이 있다.",
       "note": "take a risk(위험을 감수하다), at risk(위험에 처한) 표현을 함께 기억하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6475,7 +6475,7 @@ window.CONTENT = {
       "exampleKo": "이 큰 업무를 작은 티켓들로 나눌게요.",
       "note": "work on a task, assign a task처럼 동사와 함께 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6487,7 +6487,7 @@ window.CONTENT = {
       "exampleKo": "추세를 보면 더 많은 사용자가 모바일로 옮겨 가고 있다.",
       "note": "a growing trend(커지는 추세), follow a trend(유행을 따르다)로 자주 씁니다.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6499,7 +6499,7 @@ window.CONTENT = {
       "exampleKo": "리포트를 보내기 전에 숫자가 정확한지 꼭 확인하세요.",
       "note": "correct는 '맞는/틀리지 않은', accurate는 '세밀하게 정확한'의 느낌입니다.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6511,7 +6511,7 @@ window.CONTENT = {
       "exampleKo": "페어 프로그래밍은 주니어와 시니어 개발자 모두에게 유익할 수 있다.",
       "note": "beneficial to/for ~ (~에게 유익한) 형태로 씁니다.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6523,7 +6523,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 프론트엔드와 백엔드 모두 할 수 있는 유능한 엔지니어다.",
       "note": "be capable of ~ing 형태로 쓰며, can보다 격식 있는 표현입니다.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6535,7 +6535,7 @@ window.CONTENT = {
       "exampleKo": "새 기업 고객을 확보하려면 가격 경쟁력을 유지해야 해요.",
       "note": "competitive price(경쟁력 있는 가격), competitive market(경쟁이 치열한 시장)처럼 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6547,7 +6547,7 @@ window.CONTENT = {
       "exampleKo": "마이그레이션이 예상보다 복잡해서 일주일 더 걸릴 거예요.",
       "note": "complicated와 비슷하지만 complex는 구성 요소가 많아 복잡하다는 뉘앙스가 강해요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6559,7 +6559,7 @@ window.CONTENT = {
       "exampleKo": "모든 API 엔드포인트에서 이름 규칙을 일관되게 유지해 주세요.",
       "note": "be consistent with(~와 일치하다) 형태도 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6571,7 +6571,7 @@ window.CONTENT = {
       "exampleKo": "이건 치명적인 버그라서 출시 전에 고쳐야 해요.",
       "note": "critical은 '아주 중요한/심각한'과 '비판적인' 두 뜻이 있어 문맥으로 구분해요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6583,7 +6583,7 @@ window.CONTENT = {
       "exampleKo": "현재 버전은 아직 다크 모드를 지원하지 않아요.",
       "note": "current는 '현재의', currently는 '현재'(부사)로 품사를 구분해서 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6595,7 +6595,7 @@ window.CONTENT = {
       "exampleKo": "우리 앱은 외부 결제 API에 크게 의존하고 있어요.",
       "note": "dependent on(~에 의존하는)처럼 전치사 on과 함께 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6607,7 +6607,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 근무 시간이 유연해서 10시 전 아무 때나 시작하면 돼요.",
       "note": "flexible schedule, flexible working hours처럼 일정·근무 관련해서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6619,7 +6619,7 @@ window.CONTENT = {
       "exampleKo": "각 마이크로서비스는 따로 배포할 수 있도록 독립적이어야 해요.",
       "note": "independent of(~와 무관한/~에서 독립된)처럼 of와 함께 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6631,7 +6631,7 @@ window.CONTENT = {
       "exampleKo": "시간이 제한되어 있으니 가장 중요한 기능에 집중합시다.",
       "note": "limited time/budget/resources처럼 자원이 부족하다는 말로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6643,7 +6643,7 @@ window.CONTENT = {
       "exampleKo": "사소한 문제라서 다음 스프린트에 고치면 돼요.",
       "note": "minor의 반대는 major이고, minor change/fix/bug처럼 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6655,7 +6655,7 @@ window.CONTENT = {
       "exampleKo": "업데이트 후 사용자들의 전반적인 피드백은 긍정적이었어요.",
       "note": "overall은 형용사(전반적인)와 부사(전반적으로) 모두로 쓰여요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6667,7 +6667,7 @@ window.CONTENT = {
       "exampleKo": "이 라이브러리를 쓰는 특별한 이유가 있나요?",
       "note": "in particular(특히)라는 표현도 아주 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6679,7 +6679,7 @@ window.CONTENT = {
       "exampleKo": "프로젝트를 시작하기 전에 잠재적인 위험을 논의해야 해요.",
       "note": "potential은 명사로 '잠재력'이라는 뜻도 있어요(have potential).",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6691,7 +6691,7 @@ window.CONTENT = {
       "exampleKo": "버그 리포트에는 관련 있는 로그만 첨부해 주세요.",
       "note": "relevant to(~와 관련 있는)로 쓰고, 반대말은 irrelevant예요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6703,7 +6703,7 @@ window.CONTENT = {
       "exampleKo": "새 캐시 덕분에 페이지 로딩 시간이 상당히 개선됐어요.",
       "note": "significant improvement/increase/impact처럼 변화의 크기를 강조할 때 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6715,7 +6715,7 @@ window.CONTENT = {
       "exampleKo": "근본 원인을 찾을 때까지 이건 임시 해결책일 뿐이에요.",
       "note": "temporary의 반대는 permanent(영구적인)이고, temporary fix/workaround가 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6727,7 +6727,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀의 일반적인 스프린트는 2주예요.",
       "note": "typical of(~답다, ~의 전형이다) 형태로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6739,7 +6739,7 @@ window.CONTENT = {
       "exampleKo": "결국 어떤 디자인으로 갈지는 고객이 결정해요.",
       "note": "문장 맨 앞에 쓰면 '결국에는, 최종적으로'라는 결론을 강조해요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6751,7 +6751,7 @@ window.CONTENT = {
       "exampleKo": "서버 부하가 클 때 이 에러가 자주 발생해요.",
       "note": "frequently asked questions(FAQ)처럼 often보다 약간 격식 있는 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6763,7 +6763,7 @@ window.CONTENT = {
       "exampleKo": "새 기능을 모든 사용자에게 점차적으로 배포할 거예요.",
       "note": "gradually increase/improve처럼 변화가 천천히 일어날 때 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6775,7 +6775,7 @@ window.CONTENT = {
       "exampleKo": "원인을 찾고 나니 수정은 비교적 간단했어요.",
       "note": "relatively easy/cheap/new처럼 형용사 앞에서 '비교적'의 의미로 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6787,7 +6787,7 @@ window.CONTENT = {
       "exampleKo": "질문이 있으면 고객에게 직접 연락하셔도 돼요.",
       "note": "directly는 '직접'이라는 뜻이고, direct가 부사로 쓰일 때는 주로 이동·연락을 말해요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6799,7 +6799,7 @@ window.CONTENT = {
       "exampleKo": "마이그레이션은 토요일 밤에 대략 세 시간 걸릴 거예요.",
       "note": "about, around와 비슷하게 숫자 앞에서 '대략'이라는 뜻으로 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 6 · 필수 단어"
     },
     {
@@ -6811,7 +6811,7 @@ window.CONTENT = {
       "exampleKo": "로그를 확인하고 다시 연락드릴게요.",
       "note": "get back to someone은 '나중에 다시 연락하다'라는 뜻으로 업무에서 정말 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6823,7 +6823,7 @@ window.CONTENT = {
       "exampleKo": "금요일에 모여서 스프린트 계획을 검토합시다.",
       "note": "명사 get-together는 '모임'이라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6835,7 +6835,7 @@ window.CONTENT = {
       "exampleKo": "출시 스트레스를 극복하는 데 시간이 좀 걸렸어요.",
       "note": "get over는 병·실망·충격에서 회복할 때 쓰고, 목적어가 뒤에 와요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6847,7 +6847,7 @@ window.CONTENT = {
       "exampleKo": "오늘 회의에서 처리할 게 많아요.",
       "note": "get through는 '끝까지 해내다'와 '(전화가) 연결되다'의 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6859,7 +6859,7 @@ window.CONTENT = {
       "exampleKo": "이 옛날 코드를 보니 첫 프로젝트 기억이 떠올라요.",
       "note": "bring back memories(추억을 떠올리게 하다)는 아주 흔한 표현이에요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6871,7 +6871,7 @@ window.CONTENT = {
       "exampleKo": "이 PR 머지하기 전에 디버그 코드를 빼죠.",
       "note": "take out은 '꺼내다/빼다' 외에 take someone out(데리고 나가 대접하다)으로도 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6883,7 +6883,7 @@ window.CONTENT = {
       "exampleKo": "이 큰 이미지들이 서버 저장 공간을 너무 많이 차지해요.",
       "note": "take up은 '(공간·시간을) 차지하다'와 '(취미를) 시작하다' 두 뜻이 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6895,7 +6895,7 @@ window.CONTENT = {
       "exampleKo": "서버실에 들어가기 전에 출입증을 착용하세요.",
       "note": "put on은 입는 '동작', wear는 입고 있는 '상태'를 나타내요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6907,7 +6907,7 @@ window.CONTENT = {
       "exampleKo": "토론에 집중할 수 있게 노트북을 치워 주세요.",
       "note": "put away는 물건을 제자리에 정리할 때 쓰고, '저축하다'의 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6919,7 +6919,7 @@ window.CONTENT = {
       "exampleKo": "지난주 장애에 대한 간단한 보고서를 정리해 줄 수 있어요?",
       "note": "put together a report/team/plan처럼 '만들다, 구성하다'의 뜻으로 업무에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6931,7 +6931,7 @@ window.CONTENT = {
       "exampleKo": "출퇴근이 너무 멀어서 그 채용 제안을 거절해야 했어요.",
       "note": "turn down은 '거절하다'와 '(소리·온도를) 줄이다' 두 뜻이 있고, 반대는 turn up이에요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6943,7 +6943,7 @@ window.CONTENT = {
       "exampleKo": "잃어버린 파일이 마침내 오래된 백업 폴더에서 나타났어요.",
       "note": "turn up은 '나타나다'와 '(소리를) 높이다'로 쓰이고, show up과 비슷해요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6955,7 +6955,7 @@ window.CONTENT = {
       "exampleKo": "오늘 오후에 IT 팀에서 새 노트북을 받아 올게요.",
       "note": "pick up은 '집다, 데리러 가다' 외에 '(기술을) 익히다, 다시 시작하다'로도 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6967,7 +6967,7 @@ window.CONTENT = {
       "exampleKo": "이 서류를 고객사 사무실에 갖다 줄 수 있어요?",
       "note": "pick up(데리러 가다)과 짝을 이루는 표현으로, '(사람을) 내려주다, (물건을) 맡기다'예요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6979,7 +6979,7 @@ window.CONTENT = {
       "exampleKo": "다 쓰시면 테스트 폰을 돌려주세요.",
       "note": "give back to the community(사회에 환원하다)라는 표현도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -6991,7 +6991,7 @@ window.CONTENT = {
       "exampleKo": "고객의 모든 기능 요청에 굴복하면 안 돼요.",
       "note": "give in to ~(~에 굴복하다) 형태로 쓰고, give up(포기하다)과 구분해요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7003,7 +7003,7 @@ window.CONTENT = {
       "exampleKo": "이 큰 작업을 작은 티켓들로 나눕시다.",
       "note": "break up with someone(~와 헤어지다)처럼 with와 함께 자주 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7015,7 +7015,7 @@ window.CONTENT = {
       "exampleKo": "다들 진정하고 먼저 에러 로그부터 봅시다.",
       "note": "calm down은 화난 사람에게 직접 말하면 무례하게 들릴 수 있어 조심해서 써요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7027,7 +7027,7 @@ window.CONTENT = {
       "exampleKo": "새 플러그인이 빌드 과정을 정말 느리게 해요.",
       "note": "반대는 speed up이고, 사물(시스템)과 사람 모두에 쓸 수 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7039,7 +7039,7 @@ window.CONTENT = {
       "exampleKo": "아침 스탠드업에 팀의 절반만 나타났어요.",
       "note": "show up은 turn up과 비슷하고, '(화면에) 표시되다'의 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "일상 구동사",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7051,7 +7051,7 @@ window.CONTENT = {
       "exampleKo": "마감을 맞추는 데 도움이 된다면 이번 주에 기꺼이 야근할게요.",
       "note": "be willing to 뒤에는 동사원형이 오고, be unwilling to는 '~하기를 꺼리다'예요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7063,7 +7063,7 @@ window.CONTENT = {
       "exampleKo": "우리 배포 프로세스에 이제 좀 익숙해지셨어요?",
       "note": "be familiar with + 대상(사람이 아는 것), be familiar to + 사람(~에게 낯익다)으로 구분해요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7075,7 +7075,7 @@ window.CONTENT = {
       "exampleKo": "이번 토요일 서버 점검이 있다는 점 알아 두세요.",
       "note": "be aware that + 문장 형태로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7087,7 +7087,7 @@ window.CONTENT = {
       "exampleKo": "이 서버는 초당 만 건의 요청을 처리할 수 있어요.",
       "note": "be capable of 뒤에는 명사나 ~ing가 오고, be able to(동사원형)와 형태가 달라요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7099,7 +7099,7 @@ window.CONTENT = {
       "exampleKo": "고객이 새 대시보드 디자인에 만족하는 것 같았어요.",
       "note": "be satisfied with는 결과에 만족할 때, be pleased with는 기쁘다는 감정이 더 강해요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7111,7 +7111,7 @@ window.CONTENT = {
       "exampleKo": "새 검색 기능의 성능이 걱정돼요.",
       "note": "be worried about보다 조금 더 격식 있고 차분한 표현이에요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7123,7 +7123,7 @@ window.CONTENT = {
       "exampleKo": "작년에 결제 시스템 설계에 참여했어요.",
       "note": "get involved in(참여하게 되다)도 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7135,7 +7135,7 @@ window.CONTENT = {
       "exampleKo": "오늘 오후에 잠깐 통화 가능하세요?",
       "note": "사람에게 쓰면 '시간이 되다', 물건에 쓰면 '이용·구매 가능하다'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7147,7 +7147,7 @@ window.CONTENT = {
       "exampleKo": "집에서 VPN 연결이 잘 안 돼요.",
       "note": "have trouble 뒤에는 to부정사가 아니라 ~ing가 와요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7159,7 +7159,7 @@ window.CONTENT = {
       "exampleKo": "일부 사용자들이 설정 메뉴를 찾는 데 어려움을 겪어요.",
       "note": "have trouble ~ing보다 조금 더 격식 있는 표현으로 보고서에 잘 어울려요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7171,7 +7171,7 @@ window.CONTENT = {
       "exampleKo": "배포를 롤백할 수밖에 없었어요.",
       "note": "뒤에 동사원형이 와요: have no choice but to + 동사원형.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7183,7 +7183,7 @@ window.CONTENT = {
       "exampleKo": "고객에게 버그를 설명하는 데 애를 먹었어요.",
       "note": "have a hard time 뒤에도 ~ing가 오고, 일상 회화에서 아주 자주 써요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7195,7 +7195,7 @@ window.CONTENT = {
       "exampleKo": "커밋 메시지를 더 깔끔하게 쓰려고 노력하고 있어요.",
       "note": "make an effort to + 동사원형, 강조할 땐 make every effort to를 써요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7207,7 +7207,7 @@ window.CONTENT = {
       "exampleKo": "금요일까지 데이터베이스에 대한 결정을 내려야 해요.",
       "note": "do a decision이 아니라 make a decision이라고 해요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7219,7 +7219,7 @@ window.CONTENT = {
       "exampleKo": "설정 파일에서 실수를 해서 빌드가 깨졌어요.",
       "note": "do a mistake는 틀린 표현이고, 항상 make a mistake라고 해요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7231,7 +7231,7 @@ window.CONTENT = {
       "exampleKo": "새 온보딩 흐름 작업이 잘 진행되고 있어요.",
       "note": "progress는 셀 수 없는 명사라 a progress라고 하지 않아요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7243,7 +7243,7 @@ window.CONTENT = {
       "exampleKo": "금요일 팀 회식 자리를 예약할게요.",
       "note": "make a reservation for + 인원/시간 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7255,7 +7255,7 @@ window.CONTENT = {
       "exampleKo": "회사는 일과 삶의 균형을 개선하겠다고 약속했어요.",
       "note": "make a commitment to + 명사/~ing 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7267,7 +7267,7 @@ window.CONTENT = {
       "exampleKo": "팀장으로서 출시 지연에 대한 책임은 제가 지겠습니다.",
       "note": "\"take full responsibility for\"처럼 full을 넣으면 '전적으로 책임지다'라는 뜻이 돼요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7279,7 +7279,7 @@ window.CONTENT = {
       "exampleKo": "서버 비용이 감당 못 할 정도가 되기 전에 조치를 취해야 해요.",
       "note": "\"take immediate action\"처럼 형용사로 긴급함을 표현할 수 있어요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7291,7 +7291,7 @@ window.CONTENT = {
       "exampleKo": "회의 중에 누가 메모해서 나중에 공유해 주실 수 있나요?",
       "note": "회의록 작성자는 \"note-taker\"라고 해요.",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7303,7 +7303,7 @@ window.CONTENT = {
       "exampleKo": "연례 기술 컨퍼런스가 다음 달 서울에서 열릴 거예요.",
       "note": "take place는 수동태로 쓰지 않아요 (was taken place ✗).",
       "date": "2026-11-26",
-      "topic": "실생활 표현",
+      "topic": "일상",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7315,7 +7315,7 @@ window.CONTENT = {
       "exampleKo": "그녀가 빌드 시간을 절반으로 줄이는 아이디어를 생각해 냈어요.",
       "note": "come up with는 idea 외에 plan, solution, name과도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7327,7 +7327,7 @@ window.CONTENT = {
       "exampleKo": "이 보안 문제를 이렇게 빨리 알려 주셔서 감사합니다.",
       "note": "\"It has come to my attention that ~\"(~라는 사실을 알게 되었습니다)도 격식 있는 표현으로 자주 쓰여요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7339,7 +7339,7 @@ window.CONTENT = {
       "exampleKo": "이번 주 데이터베이스 마이그레이션 진행 상황을 계속 알려 주세요.",
       "note": "\"keep me posted\"도 같은 뜻의 캐주얼한 표현이에요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7351,7 +7351,7 @@ window.CONTENT = {
       "exampleKo": "API는 분당 100건의 요청 제한이 있다는 걸 명심하세요.",
       "note": "\"keep A in mind\" 또는 \"keep in mind that ~\" 두 형태 다 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7363,7 +7363,7 @@ window.CONTENT = {
       "exampleKo": "출시를 결정하기 전에 테스트 결과를 검토해 봅시다.",
       "note": "go through는 '검토하다' 외에 '힘든 일을 겪다'(go through a hard time)라는 뜻도 있어요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7375,7 +7375,7 @@ window.CONTENT = {
       "exampleKo": "걱정 마세요, 고객과의 결제 문제는 분명 해결될 거예요.",
       "note": "work out은 '운동하다'라는 뜻도 있어서 문맥으로 구분해야 해요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7387,7 +7387,7 @@ window.CONTENT = {
       "exampleKo": "이 머지 충돌들 정리하는 데 한 시간 정도 필요해요.",
       "note": "\"sort it out\"처럼 대명사는 sort와 out 사이에 넣어요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7399,7 +7399,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 페이지 로딩 시간을 30% 줄이는 목표를 세웠어요.",
       "note": "\"set a goal\"과 함께 \"achieve/reach a goal\"(목표를 달성하다)도 같이 알아 두세요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7411,7 +7411,7 @@ window.CONTENT = {
       "exampleKo": "새 대시보드가 고객의 기대에 못 미쳐서 다시 디자인하고 있어요.",
       "note": "\"exceed expectations\"는 '기대를 뛰어넘다'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7423,7 +7423,7 @@ window.CONTENT = {
       "exampleKo": "지난주에 못 한 티켓들을 따라잡으려고 늦게까지 남았어요.",
       "note": "\"catch up with + 사람\"은 '~와 근황을 나누다'라는 뜻이라 구분해야 해요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7435,7 +7435,7 @@ window.CONTENT = {
       "exampleKo": "법무팀이 계약을 승인하면 출시를 진행할 수 있어요.",
       "note": "\"move forward with + 계획/프로젝트\" 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7447,7 +7447,7 @@ window.CONTENT = {
       "exampleKo": "더 질문이 없으면 다음 안건으로 넘어갑시다.",
       "note": "\"move on\"만 쓰면 '(과거를) 잊고 넘어가다'라는 뜻도 돼요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7459,7 +7459,7 @@ window.CONTENT = {
       "exampleKo": "디자인 팀에 목업 진행 상황이 어떤지 확인해 볼게요.",
       "note": "\"check in\"만 쓰면 호텔/공항 체크인 뜻이 되니 with를 꼭 붙이세요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7471,7 +7471,7 @@ window.CONTENT = {
       "exampleKo": "두 번의 긴 회의 끝에 마침내 계약에 합의했어요.",
       "note": "\"reach an agreement on + 주제\", \"with + 상대방\"으로 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7483,7 +7483,7 @@ window.CONTENT = {
       "exampleKo": "로그를 검토한 끝에 캐시가 문제라는 결론에 도달했어요.",
       "note": "뒤에 that절이 오면 보통 \"come to the conclusion that\"처럼 the를 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7495,7 +7495,7 @@ window.CONTENT = {
       "exampleKo": "빠듯한 테스트 일정에 대해 우려를 제기하고 싶어요.",
       "note": "\"raise a concern about + 명사\" 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7507,7 +7507,7 @@ window.CONTENT = {
       "exampleKo": "이 문제는 다음 주 패치 릴리스에서 해결할 계획이에요.",
       "note": "address는 '주소' 외에 '(문제를) 다루다, 해결하다'라는 동사로 회의에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7519,7 +7519,7 @@ window.CONTENT = {
       "exampleKo": "내일 스탠드업에서 서버 마이그레이션 진행 상황을 공유할게요.",
       "note": "\"provide an update on + 주제\" 형태로 쓰며, give an update도 같은 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7531,7 +7531,7 @@ window.CONTENT = {
       "exampleKo": "고객 데모 마감을 지키려고 주말 내내 일했어요.",
       "note": "마감을 놓치다는 \"miss the deadline\"이에요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7543,7 +7543,7 @@ window.CONTENT = {
       "exampleKo": "스프린트 시작 전에 티켓마다 우선순위를 정합시다.",
       "note": "\"set priorities\"처럼 복수형으로도 자주 쓰고, 한 단어로는 \"prioritize\"라고 해요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7555,7 +7555,7 @@ window.CONTENT = {
       "exampleKo": "저는 앱을 클라우드로 이전하는 프로젝트에 참여했어요.",
       "note": "\"get involved in\"은 '참여하게 되다'라는 변화를 강조해요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7567,7 +7567,7 @@ window.CONTENT = {
       "exampleKo": "최종 디자인은 고객이 요청한 것과 일치해요.",
       "note": "\"in line with expectations\"(예상과 일치하는)처럼 보고서에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "회사·회의 표현",
+      "topic": "업무·회사",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7579,7 +7579,7 @@ window.CONTENT = {
       "exampleKo": "알고 보니 그 버그는 환경 변수가 빠져서 생긴 거였어요.",
       "note": "과거 일에는 \"It turned out that\"도 쓰고, that은 생략 가능해요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7591,7 +7591,7 @@ window.CONTENT = {
       "exampleKo": "문제는 안전하게 리팩토링할 만큼 테스트 커버리지가 충분하지 않다는 거예요.",
       "note": "상대 의견에 반론하거나 핵심을 꺼낼 때 문장 맨 앞에 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7603,7 +7603,7 @@ window.CONTENT = {
       "exampleKo": "제 말은, 운영에 올리기 전에 스테이징에서 테스트해야 한다는 거예요.",
       "note": "오해를 바로잡거나 앞에 한 말을 다시 설명할 때 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7615,7 +7615,7 @@ window.CONTENT = {
       "exampleKo": "제 생각에는 현재 디자인이면 출시하기에 충분해요.",
       "note": "\"As far as I know\"(내가 아는 한)와 헷갈리지 않도록 주의하세요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7627,7 +7627,7 @@ window.CONTENT = {
       "exampleKo": "아무도 그 기능을 안 쓰면 이 코드를 최적화해 봐야 소용없어요.",
       "note": "in 뒤에는 반드시 동사-ing가 와요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7639,7 +7639,7 @@ window.CONTENT = {
       "exampleKo": "유지보수만 잘 되면 어떤 프레임워크를 쓰든 상관없어요.",
       "note": "\"It doesn't matter + who/what/which절\" 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7651,7 +7651,7 @@ window.CONTENT = {
       "exampleKo": "오늘 배포하든 내일 배포하든 차이가 없어요.",
       "note": "\"It makes a big difference\"는 반대로 '큰 차이가 있다'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7663,7 +7663,7 @@ window.CONTENT = {
       "exampleKo": "그 말을 들으니 작년에 있었던 큰 장애가 생각나네요.",
       "note": "\"That reminds me,\"만 쓰면 '아, 그러고 보니'라는 뜻으로 화제를 바꿀 때 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7675,7 +7675,7 @@ window.CONTENT = {
       "exampleKo": "오늘 제 풀 리퀘스트를 리뷰해 주실 수 있을지 궁금했어요.",
       "note": "직접 묻는 것보다 공손한 부탁 표현으로, 뒤에 could/would를 자주 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7687,7 +7687,7 @@ window.CONTENT = {
       "exampleKo": "금요일까지 보고서를 보내 주시면 감사하겠습니다.",
       "note": "it을 빠뜨리고 \"I would appreciate if\"라고 하는 실수가 많아요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7699,7 +7699,7 @@ window.CONTENT = {
       "exampleKo": "가능하면 금요일 오후에는 배포하지 않는 게 좋겠어요.",
       "note": "뒤에 동사원형이 오며, 정중하게 거절할 때 유용해요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7711,7 +7711,7 @@ window.CONTENT = {
       "exampleKo": "신입 직원을 위해 더 나은 문서가 필요하다는 데 전적으로 동의해요.",
       "note": "부정형이지만 '더 이상 동의할 수 없을 만큼 동의한다'는 강한 긍정이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7723,7 +7723,7 @@ window.CONTENT = {
       "exampleKo": "프로젝트가 실패했다고까지는 말하지 않겠지만, 확실히 지연되긴 했어요.",
       "note": "상대 의견에 부드럽게 반대할 때 쓰는 완곡한 표현이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7735,7 +7735,7 @@ window.CONTENT = {
       "exampleKo": "이번에 React를 쓸지 Vue를 쓸지는 당신이 결정하면 돼요.",
       "note": "회화에서는 보통 \"It's up to you\"로 줄여 말해요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7747,7 +7747,7 @@ window.CONTENT = {
       "exampleKo": "고객이 추가 수정을 요청할 가능성이 높아요.",
       "note": "\"There's a slim chance that\"은 반대로 '가능성이 낮다'는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7759,7 +7759,7 @@ window.CONTENT = {
       "exampleKo": "이제 마이그레이션이 끝났으니 드디어 예전 데이터베이스를 지울 수 있어요.",
       "note": "since와 비슷하지만 '상황이 바뀌었으니 이제'라는 느낌이 있어요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7771,7 +7771,7 @@ window.CONTENT = {
       "exampleKo": "업데이트 중에 문제가 생길 경우를 대비해서 데이터베이스를 백업합시다.",
       "note": "in case 뒤에는 미래 일이라도 현재 시제를 써요 (in case it rains).",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7783,7 +7783,7 @@ window.CONTENT = {
       "exampleKo": "전부 다시 짜기보다는 가장 중요한 부분부터 고칩시다.",
       "note": "\"would rather\"(차라리 ~하겠다)와 헷갈리지 않도록 주의하세요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7795,7 +7795,7 @@ window.CONTENT = {
       "exampleKo": "코드가 비효율적이면 더 큰 서버라고 반드시 더 빠른 건 아니에요.",
       "note": "상대 말에 \"Not necessarily.\"라고만 답해도 부드러운 반대가 돼요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7807,7 +7807,7 @@ window.CONTENT = {
       "exampleKo": "지금까지 새 릴리스에서 큰 버그는 발견되지 않았어요.",
       "note": "보통 현재완료(have p.p.)와 함께 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7819,7 +7819,7 @@ window.CONTENT = {
       "exampleKo": "지금부터 모든 풀 리퀘스트는 최소 두 명의 승인이 필요해요.",
       "note": "앞으로 계속 지속될 변화를 말할 때 써요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7831,7 +7831,7 @@ window.CONTENT = {
       "exampleKo": "당신 코드를 리뷰하면서 동시에 이 버그를 고칠 수는 없어요.",
       "note": "문장 맨 앞에 쓰면 '그렇긴 하지만'이라는 연결어 역할도 해요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7843,7 +7843,7 @@ window.CONTENT = {
       "exampleKo": "수정 사항이 배포될 때까지 당분간은 예전 로그인 페이지를 사용해 주세요.",
       "note": "\"for now\"와 비슷하지만 좀 더 격식 있는 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "원어민 회화 패턴",
+      "topic": "회화 표현",
       "set": "Set 7 · 필수 표현"
     },
     {
@@ -7855,7 +7855,7 @@ window.CONTENT = {
       "exampleKo": "우리 회사는 내년에 작은 AI 스타트업을 인수할 계획이에요.",
       "note": "\"acquire skills\"(기술을 습득하다)처럼 능력에도 쓰고, 명사는 acquisition(인수, 습득)이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7867,7 +7867,7 @@ window.CONTENT = {
       "exampleKo": "신규 사용자를 더 끌어들이려고 랜딩 페이지를 다시 디자인했어요.",
       "note": "\"attract attention/customers/talent\"처럼 쓰고, 형용사는 attractive예요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7879,7 +7879,7 @@ window.CONTENT = {
       "exampleKo": "이 저장소는 플랫폼 팀 소속이니까 먼저 그쪽에 물어보세요.",
       "note": "소유·소속을 나타낼 때는 \"belong to + 사람/단체\" 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7891,7 +7891,7 @@ window.CONTENT = {
       "exampleKo": "빌드를 단순하게 하려고 이 두 스크립트를 하나로 합칩시다.",
       "note": "\"combine A with B\" 또는 \"combine A and B\" 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7903,7 +7903,7 @@ window.CONTENT = {
       "exampleKo": "개발자가 더 없으면 그 마감 기한을 약속할 수 없어요.",
       "note": "\"commit to + 명사/동사-ing\" 형태이며, Git에서는 '커밋하다'라는 뜻으로도 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7915,7 +7915,7 @@ window.CONTENT = {
       "exampleKo": "더 큰 클라우드 업체들과 경쟁하려면 가격을 낮춰야 해요.",
       "note": "\"compete with/against + 상대\", \"compete for + 얻으려는 것\"으로 구분해요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7927,7 +7927,7 @@ window.CONTENT = {
       "exampleKo": "오늘 아침에 집에서 VPN에 접속이 안 돼요.",
       "note": "\"connect to + 네트워크/서버\", \"connect A with B\"(A와 B를 연결하다)로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7939,7 +7939,7 @@ window.CONTENT = {
       "exampleKo": "코딩하기 전에 고객과 요구 사항을 명확히 정의합시다.",
       "note": "명사는 definition이고, \"well-defined\"(명확하게 정의된)도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7951,7 +7951,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 새 기능을 예정보다 이틀 일찍 전달했어요.",
       "note": "업무에서는 '결과물을 내놓다, 납품하다'라는 뜻으로 자주 써요 (deliverable: 결과물).",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7963,7 +7963,7 @@ window.CONTENT = {
       "exampleKo": "우리 앱은 외부 결제 API에 의존해요.",
       "note": "항상 \"depend on\"으로 쓰고, \"It depends.\"는 '상황에 따라 달라'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7975,7 +7975,7 @@ window.CONTENT = {
       "exampleKo": "아직 크래시의 근본 원인을 알아내려고 하고 있어요.",
       "note": "\"determine the cause\"처럼 '알아내다'라는 뜻으로 보고서에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7987,7 +7987,7 @@ window.CONTENT = {
       "exampleKo": "이 로그에서는 진짜 에러와 경고를 구별하기 어려워요.",
       "note": "\"distinguish A from B\" 또는 \"distinguish between A and B\" 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -7999,7 +7999,7 @@ window.CONTENT = {
       "exampleKo": "이 새 도구 덕분에 몇 분 만에 변경 사항을 배포할 수 있어요.",
       "note": "enable A to B(A가 B할 수 있게 하다) 형태로 자주 쓰고, '기능을 켜다'라는 의미로도 많이 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8011,7 +8011,7 @@ window.CONTENT = {
       "exampleKo": "최종 결정을 내리기 전에 두 가지 옵션을 신중하게 평가해야 해요.",
       "note": "evaluate는 꼼꼼히 따져 평가한다는 느낌이고, 명사형은 evaluation이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8023,7 +8023,7 @@ window.CONTENT = {
       "exampleKo": "지난주에 누가 삭제해서 그 파일은 이제 존재하지 않아요.",
       "note": "exist는 자동사라 수동태로 쓰지 않으며, 'is existed'는 틀린 표현이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8035,7 +8035,7 @@ window.CONTENT = {
       "exampleKo": "그 스크립트가 주간 보고서를 생성해서 팀 전체에 보내요.",
       "note": "generate a report, generate revenue(수익을 창출하다)처럼 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8047,7 +8047,7 @@ window.CONTENT = {
       "exampleKo": "회의에서 그가 침묵한 건 그 계획에 반대한다는 뜻 같았어요.",
       "note": "imply는 말하는 사람이 '암시하다', infer는 듣는 사람이 '추론하다'라서 헷갈리지 마세요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8059,7 +8059,7 @@ window.CONTENT = {
       "exampleKo": "제가 여러 번 내겠다고 했는데도 그녀가 저녁값을 내겠다고 고집했어요.",
       "note": "insist on ~ing 또는 insist that 절 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8071,7 +8071,7 @@ window.CONTENT = {
       "exampleKo": "새 장비를 구입하기 전에 매니저의 승인을 받아야 해요.",
       "note": "obtain은 get보다 격식 있는 표현으로 obtain permission/approval/a license처럼 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8083,7 +8083,7 @@ window.CONTENT = {
       "exampleKo": "적절한 인덱스를 추가한 뒤로 데이터베이스 성능이 훨씬 좋아졌어요.",
       "note": "perform a task/test/check처럼 '수행하다'와 '성능을 내다' 두 의미로 다 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8095,7 +8095,7 @@ window.CONTENT = {
       "exampleKo": "사용자들이 새 디자인에 어떻게 반응할지 예측하기 어려워요.",
       "note": "predict는 근거로 예측하는 것이고, guess는 근거 없이 짐작하는 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8107,7 +8107,7 @@ window.CONTENT = {
       "exampleKo": "최종 가격에는 고객을 위해 우리가 한 추가 작업이 반영돼야 해요.",
       "note": "reflect on은 '곰곰이 생각하다', reflect A는 'A를 반영하다'라는 뜻이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8119,7 +8119,7 @@ window.CONTENT = {
       "exampleKo": "이 차트의 점 하나하나는 해당 지역의 활성 사용자 한 명을 나타내요.",
       "note": "represent the company(회사를 대표하다)처럼 '대표하다' 의미로도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8131,7 +8131,7 @@ window.CONTENT = {
       "exampleKo": "설문 결과 대부분의 사용자가 설정 페이지를 한 번도 열지 않는 것으로 드러났어요.",
       "note": "reveal that 절로 '~라는 사실을 밝히다'라고 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8143,7 +8143,7 @@ window.CONTENT = {
       "exampleKo": "정리된 상태를 유지하려면 업무용 이메일과 개인 이메일을 분리해 보세요.",
       "note": "동사는 /ˈsepəreɪt/, 형용사는 /ˈseprət/로 발음이 달라요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8155,7 +8155,7 @@ window.CONTENT = {
       "exampleKo": "계절에 따라 가격이 달라지니 예약하기 전에 확인하세요.",
       "note": "vary depending on ~ / vary by ~ 형태로 많이 쓰고, 형용사형은 various예요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8167,7 +8167,7 @@ window.CONTENT = {
       "exampleKo": "저희가 보낸 링크를 클릭해서 이메일 주소를 인증해 주세요.",
       "note": "verify that 절로 '~인지 확인하다'라고 자주 쓰고, 명사형은 verification이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 동사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8179,7 +8179,7 @@ window.CONTENT = {
       "exampleKo": "다운타임 없이 마이그레이션을 마친 건 우리에게 큰 성과였어요.",
       "note": "a great/major achievement처럼 형용사와 함께 자주 쓰고, 동사는 achieve예요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8191,7 +8191,7 @@ window.CONTENT = {
       "exampleKo": "저희 분석에 따르면 대부분의 오류가 피크 시간대에 발생해요.",
       "note": "복수형은 analyses이고, do/conduct an analysis로 '분석하다'를 표현해요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8203,7 +8203,7 @@ window.CONTENT = {
       "exampleKo": "우리는 모든 사용자가 안정적인 인터넷 연결을 가지고 있다고 가정했어요.",
       "note": "make an assumption(가정하다)이 기본 조합이고, 동사는 assume이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8215,7 +8215,7 @@ window.CONTENT = {
       "exampleKo": "그 워크숍은 신입 사원들 사이에서 흔한 보안 위험에 대한 인식을 높이는 데 도움이 됐어요.",
       "note": "raise awareness of ~(~에 대한 인식을 높이다)가 가장 흔한 조합이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8227,7 +8227,7 @@ window.CONTENT = {
       "exampleKo": "이런 상황에서는 출시를 미루는 게 나을 것 같아요.",
       "note": "주로 복수형으로 under the circumstances, in any circumstances처럼 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8239,7 +8239,7 @@ window.CONTENT = {
       "exampleKo": "요즘 모바일 앱 시장은 경쟁이 정말 치열해요.",
       "note": "fierce/tough competition처럼 '치열한 경쟁'을 표현하고, '대회'라는 의미도 있어요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8251,7 +8251,7 @@ window.CONTENT = {
       "exampleKo": "그녀의 기여 덕분에 프로젝트를 2주 일찍 끝냈어요.",
       "note": "make a contribution to ~ 형태로 쓰고, 오픈소스 '기여'에도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8263,7 +8263,7 @@ window.CONTENT = {
       "exampleKo": "편의를 위해 회의록을 이 이메일에 첨부했어요.",
       "note": "for your convenience(편의를 위해), at your convenience(편하실 때)를 구분해서 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8275,7 +8275,7 @@ window.CONTENT = {
       "exampleKo": "첫 달 결과가 우리 기대를 훨씬 넘어섰어요.",
       "note": "meet/exceed expectations(기대를 충족하다/넘어서다)가 자주 쓰는 조합이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8287,7 +8287,7 @@ window.CONTENT = {
       "exampleKo": "컨퍼런스 출장 경비는 회사에서 지원해 줘요.",
       "note": "회사 '경비'는 보통 복수형 expenses로 쓰고, at the expense of는 '~을 희생하여'예요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8299,7 +8299,7 @@ window.CONTENT = {
       "exampleKo": "그 회사는 모바일 앱을 출시한 뒤 빠르게 성장했어요.",
       "note": "rapid/steady growth, personal growth(개인적 성장)처럼 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8311,7 +8311,7 @@ window.CONTENT = {
       "exampleKo": "팀의 코딩 문화에 그녀가 미친 영향은 정말 긍정적이었어요.",
       "note": "have an influence on ~ 형태로 쓰고, 동사로도 쓰지만 여기선 명사 '영향력'이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8323,7 +8323,7 @@ window.CONTENT = {
       "exampleKo": "그 말로 누군가를 기분 상하게 할 의도는 전혀 없었어요.",
       "note": "have no intention of ~ing(~할 의도가 전혀 없다) 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8335,7 +8335,7 @@ window.CONTENT = {
       "exampleKo": "코딩을 시작하기 전에 모든 요구 사항을 제대로 이해했는지 확인해요.",
       "note": "meet the requirements(요구 사항을 충족하다)가 자주 쓰는 조합이에요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8347,7 +8347,7 @@ window.CONTENT = {
       "exampleKo": "지역 채용 시장에 경력 있는 엔지니어가 부족해요.",
       "note": "a shortage of ~ 형태로 쓰고, lack보다 '수량이 모자람'을 강조해요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8359,7 +8359,7 @@ window.CONTENT = {
       "exampleKo": "릴리스 전에 우리 코드가 회사 보안 기준을 충족해야 해요.",
       "note": "meet the standard(기준을 충족하다), industry standard(업계 표준)처럼 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8371,7 +8371,7 @@ window.CONTENT = {
       "exampleKo": "회사가 오늘 아침 데이터 유출에 관한 공식 성명을 발표했어요.",
       "note": "SQL statement, bank statement(은행 명세서)처럼 분야마다 뜻이 달라져요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8383,7 +8383,7 @@ window.CONTENT = {
       "exampleKo": "저는 작업이 얼마나 걸릴지 과소평가하는 경향이 있어요.",
       "note": "have a tendency to + 동사원형 형태로 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8395,7 +8395,7 @@ window.CONTENT = {
       "exampleKo": "약한 비밀번호는 우리 시스템 보안에 가장 큰 위협 중 하나예요.",
       "note": "a threat to ~ 형태로 쓰고, security threat(보안 위협)이 IT에서 자주 나와요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8407,7 +8407,7 @@ window.CONTENT = {
       "exampleKo": "그 버그가 최신 업데이트 때문에 생겼다는 증거는 없어요.",
       "note": "evidence는 셀 수 없는 명사라 an evidence나 evidences로 쓰지 않아요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8419,7 +8419,7 @@ window.CONTENT = {
       "exampleKo": "무료 요금제의 한계 중 하나는 프로젝트를 세 개만 만들 수 있다는 거예요.",
       "note": "복수형 limitations로 '한계점들'을 말할 때 많이 써요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8431,7 +8431,7 @@ window.CONTENT = {
       "exampleKo": "이번 스프린트의 주된 목표는 페이지 로딩 속도를 개선하는 거예요.",
       "note": "형용사로는 '객관적인'이라는 뜻이니 문맥으로 구분하세요.",
       "date": "2026-11-26",
-      "topic": "핵심 명사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8443,7 +8443,7 @@ window.CONTENT = {
       "exampleKo": "고객 데이터를 안전하게 지키는 건 우리 팀의 절대적인 우선순위예요.",
       "note": "absolute priority, absolute must처럼 '꼭 필요한'을 강조할 때 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8455,7 +8455,7 @@ window.CONTENT = {
       "exampleKo": "당일 배송을 원하시면 추가 요금이 있어요.",
       "note": "additional cost/information/time처럼 명사 앞에서 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8467,7 +8467,7 @@ window.CONTENT = {
       "exampleKo": "업체가 마감을 놓칠 경우를 대비해 대안 계획이 필요해요.",
       "note": "명사로도 써서 There's no alternative(대안이 없다)처럼 말할 수 있어요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8479,7 +8479,7 @@ window.CONTENT = {
       "exampleKo": "새 시스템이 우리 필요에 비해 너무 느리다는 게 곧 분명해졌어요.",
       "note": "It became apparent that ~(~가 분명해졌다) 형태로 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8491,7 +8491,7 @@ window.CONTENT = {
       "exampleKo": "이번 주 평균 응답 시간이 200밀리초 미만으로 떨어졌어요.",
       "note": "on average(평균적으로)라는 표현도 함께 알아 두세요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8503,7 +8503,7 @@ window.CONTENT = {
       "exampleKo": "그녀는 프론트엔드와 백엔드 개발 모두에서 폭넓은 경험이 있어요.",
       "note": "a broad range of ~(폭넓은 범위의 ~), in broad terms(대략적으로)처럼 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8515,7 +8515,7 @@ window.CONTENT = {
       "exampleKo": "리디자인에 상당한 시간이 걸렸지만 사용자들이 정말 좋아해요.",
       "note": "considerable amount/time/effort처럼 쓰고, considerate(배려심 있는)와 헷갈리지 마세요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8527,7 +8527,7 @@ window.CONTENT = {
       "exampleKo": "다른 시간대의 팀과 일할 땐 명확한 소통이 매우 중요해요.",
       "note": "It's crucial that/to ~ 형태로 쓰고, important보다 훨씬 강한 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8539,7 +8539,7 @@ window.CONTENT = {
       "exampleKo": "우리 팀은 6개국 출신 멤버로 구성돼 매우 다양해요.",
       "note": "명사형 diversity도 회사 문화 이야기에서 자주 나와요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8551,7 +8551,7 @@ window.CONTENT = {
       "exampleKo": "캠페인을 시작한 뒤로 가입자가 극적으로 늘었어요.",
       "note": "dramatic increase/drop/change처럼 큰 변화를 말할 때 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8563,7 +8563,7 @@ window.CONTENT = {
       "exampleKo": "그녀 얼굴을 보니 잠을 별로 못 잤다는 게 분명했어요.",
       "note": "It is evident that ~ 형태로 쓰며, obvious보다 조금 격식 있는 느낌이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8575,7 +8575,7 @@ window.CONTENT = {
       "exampleKo": "이 문서는 내부용이니 외부에 공유하지 마세요.",
       "note": "반대말은 external이고, internal tool/meeting/server처럼 IT에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8587,7 +8587,7 @@ window.CONTENT = {
       "exampleKo": "공항과 이렇게 가까운 호텔치고 가격이 합리적인 것 같아요.",
       "note": "reasonable price(적당한 가격), reasonable request(무리 없는 요청)처럼 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8599,7 +8599,7 @@ window.CONTENT = {
       "exampleKo": "아직 제대로 된 결론을 내리기엔 데이터가 충분하지 않아요.",
       "note": "sufficient for/to ~ 형태로 쓰고, enough보다 격식 있는 표현이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8611,7 +8611,7 @@ window.CONTENT = {
       "exampleKo": "릴리스 직전에 예상치 못한 문제가 생겼어요.",
       "note": "unexpected error/result/visit처럼 쓰고, 부사형은 unexpectedly예요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8623,7 +8623,7 @@ window.CONTENT = {
       "exampleKo": "듣자 하니 회의가 목요일 오후로 옮겨졌대요.",
       "note": "apparently는 '듣자 하니/보아하니'라는 뜻으로 전해 들은 이야기를 말할 때 많이 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8635,7 +8635,7 @@ window.CONTENT = {
       "exampleKo": "마이그레이션을 완료하는 데 대략 3시간 걸릴 거예요.",
       "note": "about보다 격식 있는 표현이라 보고서나 공지에 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8647,7 +8647,7 @@ window.CONTENT = {
       "exampleKo": "이 방식이 확실히 더 빠르긴 하지만 유지보수가 더 어려워요.",
       "note": "요청에 대한 대답으로 Certainly!(물론이죠)라고도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8659,7 +8659,7 @@ window.CONTENT = {
       "exampleKo": "서버에 과부하가 걸렸고, 그 결과 사이트가 한 시간 동안 다운됐어요.",
       "note": "as a result와 비슷하며, 글이나 보고서에서 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8671,7 +8671,7 @@ window.CONTENT = {
       "exampleKo": "여섯 시간 디버깅한 끝에 결국 버그를 찾았어요.",
       "note": "eventually는 '결국(시간이 지나서)'이란 뜻이며, '혹시'라는 의미는 없어요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8683,7 +8683,7 @@ window.CONTENT = {
       "exampleKo": "새 노트북은 엄청 가벼워서 들고 다니기 편해요.",
       "note": "very보다 강한 강조로 extremely important/difficult처럼 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8695,7 +8695,7 @@ window.CONTENT = {
       "exampleKo": "연결이 계속 끊겨서 그의 말이 거의 들리지 않았어요.",
       "note": "hardly 자체가 부정 의미라 not과 함께 쓰지 않으며, hard(열심히)와 뜻이 달라요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8707,7 +8707,7 @@ window.CONTENT = {
       "exampleKo": "당신 아이디어를 비판하는 게 아니라 그저 다른 옵션을 제안하는 거예요.",
       "note": "merely는 just/only의 격식 있는 표현이에요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8719,7 +8719,7 @@ window.CONTENT = {
       "exampleKo": "작업을 자주 저장하세요. 그렇지 않으면 충돌 시 전부 잃을 수 있어요.",
       "note": "'그렇지 않으면' 외에 '그 외에는'(Otherwise, it's fine)의 의미도 있어요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     },
     {
@@ -8731,7 +8731,7 @@ window.CONTENT = {
       "exampleKo": "발표 중에서 특히 사용자 피드백에 관한 부분이 좋았어요.",
       "note": "especially와 비슷하고, not particularly(별로 ~않다)도 자주 써요.",
       "date": "2026-11-26",
-      "topic": "형용사·부사",
+      "topic": "핵심 단어",
       "set": "Set 8 · 심화 단어"
     }
   ],

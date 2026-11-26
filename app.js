@@ -413,7 +413,9 @@ function wordCard(w) {
 
 function renderWords() {
   setTitle('단어');
-  const topics = [...new Set(words.map(w => w.topic).filter(Boolean))];
+  const TOPIC_ORDER = ['핵심 단어', '업무·회사', '데이터·IT', '회화 표현', '일상'];
+  const topics = [...new Set(words.map(w => w.topic).filter(Boolean))]
+    .sort((a, b) => (TOPIC_ORDER.indexOf(a) + 1 || 99) - (TOPIC_ORDER.indexOf(b) + 1 || 99));
   view.innerHTML = `
     <div class="tools">
       <div class="seg" id="status" role="tablist">
