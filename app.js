@@ -135,9 +135,15 @@ function todayQuestions(reroll = false) {
   const st = dailyState();
   const n = (st.an || 0) + (reroll ? 1 : 0);
   if (reroll) writeJSON(DAILY_KEY, { ...st, an: n });
-  const it = seededShuffle(ask.filter(q => q.type === 'it'), dailySeed('qi', n)).slice(0, 6);
-  const life = seededShuffle(ask.filter(q => q.type !== 'it'), dailySeed('ql', n)).slice(0, 4);
-  return seededShuffle([...it, ...life], dailySeed('qm', n));
+  // 10개 = 회사 6(의문문 2) + 일상 4(의문문 1) → 의문문 30%
+  const isQ = q => /\?\s*$/.test(q.en);
+  const pick = (type, wantQ, count, key) => seededShuffle(
+    ask.filter(q => (type === 'it' ? q.type === 'it' : q.type !== 'it') && isQ(q) === wantQ),
+    dailySeed(key, n)).slice(0, count);
+  return seededShuffle([
+    ...pick('it', true, 2, 'qiq'), ...pick('it', false, 4, 'qi'),
+    ...pick('life', true, 1, 'qlq'), ...pick('life', false, 3, 'ql'),
+  ], dailySeed('qm', n));
 }
 
 // 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 6개.
