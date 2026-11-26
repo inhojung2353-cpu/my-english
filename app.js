@@ -101,17 +101,17 @@ function dailyState() {
 }
 const dailySeed = (prefix, n) => prefix + todayKey() + (n ? '#' + n : '');
 
-// 오늘의 단어: 외우지 못한 단어에서만 6개.
-// 하루 동안은 같은 단어를 유지하고, 그사이 ✓로 외운 단어만 빼고 다른 안 외운 단어로 채워요
+// 오늘의 단어: ✓ 표시한 외운 단어에서만 6개 (복습용).
+// 하루 동안은 같은 단어를 유지하고, 그사이 ✓를 푼 단어만 빼고 다른 외운 단어로 채워요
 function todayWords(reroll = false) {
   const st = dailyState();
   const n = (st.wn || 0) + (reroll ? 1 : 0);
-  const unlearned = words.filter(w => !isLearned(w));
+  const pool = words.filter(w => isLearned(w));
   const prev = Array.isArray(st.words) ? st.words : [];
-  const kept = reroll ? [] : prev.map(x => unlearned.find(w => w.word === x)).filter(Boolean);
-  let fill = seededShuffle(unlearned, dailySeed('w', n)).filter(w => !kept.includes(w));
+  const kept = reroll ? [] : prev.map(x => pool.find(w => w.word === x)).filter(Boolean);
+  let fill = seededShuffle(pool, dailySeed('w', n)).filter(w => !kept.includes(w));
   // 새로고침할 때는 단어가 충분하면 방금 본 6개와 겹치지 않게
-  if (reroll && unlearned.length - prev.length >= 6) fill = fill.filter(w => !prev.includes(w.word));
+  if (reroll && pool.length - prev.length >= 6) fill = fill.filter(w => !prev.includes(w.word));
   const picked = [...kept, ...fill].slice(0, 6);
   writeJSON(DAILY_KEY, { ...st, wn: n, words: picked.map(w => w.word) });
   return picked;
@@ -242,7 +242,7 @@ function renderHome(reroll = {}) {
       <a class="stat" href="#dialogs"><b>${dialogs.length}</b><span>Dialog</span></a>
     </div>
 
-    <div class="section-title">📚 오늘의 단어 <span class="title-right"><small>${todayLabel}</small>${tw.length ? `<button class="reroll" id="reroll-words" aria-label="다른 단어로 새로고침">🔄</button>` : ''}</span></div>
+    <div class="section-title">📚 오늘의 단어 <span class="title-right"><small>${todayLabel} · 외운 단어 복습</small>${tw.length ? `<button class="reroll" id="reroll-words" aria-label="다른 단어로 새로고침">🔄</button>` : ''}</span></div>
     ${tw.length ? `
       <div class="home-tools"><button class="chip ${hideMeaning ? 'on' : ''}" id="home-hide">🙈 뜻 가리기</button><span class="muted small">${hideMeaning ? '단어를 누르면 뜻이 보여요' : ''}</span></div>
       <div class="card vlist ${hideMeaning ? 'hide-meaning' : ''}" id="today-words">${tw.map(w => `
@@ -252,9 +252,7 @@ function renderHome(reroll = {}) {
         ${w.example ? `<div class="vex"><div class="en">${esc(w.example)}</div>${w.exampleKo ? `<div class="ko">${esc(w.exampleKo)}</div>` : ''}</div>` : ''}
       </div>`).join('')}</div>
       <a class="more-link" href="#words">단어 탭에서 더 보기 ›</a>`
-    : words.length
-      ? `<div class="card empty"><span class="big">🎉</span>모든 단어를 외웠어요!<br><span class="small">새 단어를 보내 주시면 여기에 다시 나와요</span></div>`
-      : `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`}
+    : `<div class="card empty"><span class="big">📚</span>아직 외운 단어가 없어요<br><span class="small"><a href="#words">단어 탭</a>에서 외운 단어에 ✓를 누르면 여기에 복습용으로 나와요</span></div>`}
 
     <div class="section-title">💬 오늘의 문장 <span class="title-right"><small>누르면 영어</small>${ts.length ? `<button class="reroll" id="reroll-sents" aria-label="다른 문장으로 새로고침">🔄</button>` : ''}</span></div>
     ${ts.length ? `
