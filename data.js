@@ -5793,6 +5793,2946 @@ window.CONTENT = {
       "date": "2026-11-26",
       "topic": "원어민 실전 표현",
       "set": "Set 5 · 기초 표현"
+    },
+    {
+      "word": "adjust",
+      "ipa": "/əˈdʒʌst/",
+      "pos": "v.",
+      "meaning": "조정하다, 적응하다",
+      "example": "We had to adjust the timeline after the client changed the requirements.",
+      "exampleKo": "클라이언트가 요구사항을 바꾼 뒤 우리는 일정을 조정해야 했다.",
+      "note": "adjust to ~는 '~에 적응하다'라는 뜻으로 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "admit",
+      "ipa": "/ədˈmɪt/",
+      "pos": "v.",
+      "meaning": "인정하다",
+      "example": "He finally admitted that he had forgotten to back up the files.",
+      "exampleKo": "그는 결국 파일 백업하는 걸 잊었다고 인정했다.",
+      "note": "admit + ~ing 또는 admit that 절 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "announce",
+      "ipa": "/əˈnaʊns/",
+      "pos": "v.",
+      "meaning": "발표하다",
+      "example": "The company announced a new product at the conference yesterday.",
+      "exampleKo": "회사는 어제 컨퍼런스에서 신제품을 발표했다.",
+      "note": "announce는 to 없이 바로 목적어를 받고, 사람에게는 announce to someone으로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "apply",
+      "ipa": "/əˈplaɪ/",
+      "pos": "v.",
+      "meaning": "적용하다, 신청하다",
+      "example": "You need to apply the latest security patch before Friday.",
+      "exampleKo": "금요일 전에 최신 보안 패치를 적용해야 한다.",
+      "note": "apply for는 '~에 지원/신청하다', apply to는 '~에 적용되다'입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "arrange",
+      "ipa": "/əˈreɪndʒ/",
+      "pos": "v.",
+      "meaning": "준비하다, 정리하다",
+      "example": "Could you arrange a meeting with the vendor for next week?",
+      "exampleKo": "다음 주에 업체와 미팅 좀 잡아 줄 수 있어요?",
+      "note": "arrange a meeting/call처럼 일정을 '잡다'는 의미로 많이 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "assume",
+      "ipa": "/əˈsuːm/",
+      "pos": "v.",
+      "meaning": "가정하다",
+      "example": "I assumed the meeting was canceled because nobody showed up.",
+      "exampleKo": "아무도 안 와서 나는 회의가 취소된 줄 알았다.",
+      "note": "assume은 근거 없이 '당연히 그렇다고 여기다'라는 뉘앙스가 있습니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "attend",
+      "ipa": "/əˈtend/",
+      "pos": "v.",
+      "meaning": "참석하다",
+      "example": "About fifty people attended the online workshop last Thursday.",
+      "exampleKo": "지난 목요일 온라인 워크숍에 약 50명이 참석했다.",
+      "note": "attend는 to 없이 바로 목적어를 받습니다 (attend a meeting).",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "compare",
+      "ipa": "/kəmˈper/",
+      "pos": "v.",
+      "meaning": "비교하다",
+      "example": "We compared three cloud providers before choosing one.",
+      "exampleKo": "우리는 하나를 고르기 전에 세 개의 클라우드 업체를 비교했다.",
+      "note": "compare A with/to B 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "complain",
+      "ipa": "/kəmˈpleɪn/",
+      "pos": "v.",
+      "meaning": "불평하다",
+      "example": "Several users complained about the slow loading time.",
+      "exampleKo": "여러 사용자가 느린 로딩 속도에 대해 불평했다.",
+      "note": "complain about ~ / complain that ~ 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "confirm",
+      "ipa": "/kənˈfɜːrm/",
+      "pos": "v.",
+      "meaning": "확인하다",
+      "example": "Please confirm your attendance by replying to this email.",
+      "exampleKo": "이 메일에 회신해서 참석 여부를 확인해 주세요.",
+      "note": "check는 직접 살펴보는 것, confirm은 사실임을 '확정/확인해 주는' 것입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "contain",
+      "ipa": "/kənˈteɪn/",
+      "pos": "v.",
+      "meaning": "포함하다",
+      "example": "This file contains all the API keys, so keep it private.",
+      "exampleKo": "이 파일에는 모든 API 키가 들어 있으니 비공개로 유지하세요.",
+      "note": "contain은 진행형으로 잘 쓰지 않습니다 (is containing X).",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "contribute",
+      "ipa": "/kənˈtrɪbjuːt/",
+      "pos": "v.",
+      "meaning": "기여하다",
+      "example": "Everyone on the team contributed to the success of the launch.",
+      "exampleKo": "팀원 모두가 출시 성공에 기여했다.",
+      "note": "contribute to ~ 형태로 쓰며, to 뒤에 명사/동명사가 옵니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "convince",
+      "ipa": "/kənˈvɪns/",
+      "pos": "v.",
+      "meaning": "설득하다",
+      "example": "It took a while to convince my manager to try the new tool.",
+      "exampleKo": "매니저가 새 툴을 써 보도록 설득하는 데 시간이 좀 걸렸다.",
+      "note": "convince someone to do는 '설득하다', convince someone that은 '확신시키다'입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "demonstrate",
+      "ipa": "/ˈdemənstreɪt/",
+      "pos": "v.",
+      "meaning": "보여주다, 입증하다",
+      "example": "The data clearly demonstrates that the new design improves sign-ups.",
+      "exampleKo": "데이터는 새 디자인이 가입률을 높인다는 걸 분명히 보여준다.",
+      "note": "demo는 demonstration의 줄임말입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "describe",
+      "ipa": "/dɪˈskraɪb/",
+      "pos": "v.",
+      "meaning": "묘사하다, 설명하다",
+      "example": "Can you describe the steps you took before the error appeared?",
+      "exampleKo": "에러가 나기 전에 어떤 단계를 거쳤는지 설명해 줄 수 있어요?",
+      "note": "describe는 about 없이 바로 목적어를 받습니다 (describe about X).",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "discover",
+      "ipa": "/dɪˈskʌvər/",
+      "pos": "v.",
+      "meaning": "발견하다",
+      "example": "We discovered a memory leak while running the load test.",
+      "exampleKo": "부하 테스트를 돌리다가 메모리 누수를 발견했다.",
+      "note": "find out은 정보를 알아내는 것, discover는 몰랐던 것을 처음 발견하는 느낌입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "encourage",
+      "ipa": "/ɪnˈkɜːrɪdʒ/",
+      "pos": "v.",
+      "meaning": "격려하다",
+      "example": "My mentor encouraged me to give a talk at the meetup.",
+      "exampleKo": "멘토가 밋업에서 발표해 보라고 격려해 줬다.",
+      "note": "encourage someone to do 형태로 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "establish",
+      "ipa": "/ɪˈstæblɪʃ/",
+      "pos": "v.",
+      "meaning": "설립하다, 확립하다",
+      "example": "We need to establish clear coding standards for the new team.",
+      "exampleKo": "새 팀을 위해 명확한 코딩 표준을 확립해야 한다.",
+      "note": "establish a connection(연결을 수립하다)은 IT에서 자주 쓰는 표현입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "handle",
+      "ipa": "/ˈhændl/",
+      "pos": "v. / n.",
+      "meaning": "처리하다, 다루다",
+      "example": "She handles all the customer escalations on our team.",
+      "exampleKo": "그녀는 우리 팀의 모든 고객 에스컬레이션을 처리한다.",
+      "note": "handle it은 '그거 내가 처리할게'처럼 회화에서 아주 자주 씁니다; 명사로는 '손잡이'.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "identify",
+      "ipa": "/aɪˈdentɪfaɪ/",
+      "pos": "v.",
+      "meaning": "확인하다, 식별하다",
+      "example": "We identified the root cause of the outage within an hour.",
+      "exampleKo": "우리는 한 시간 안에 장애의 근본 원인을 파악했다.",
+      "note": "identify the root cause(근본 원인을 파악하다)는 장애 보고서에 자주 나옵니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "maintain",
+      "ipa": "/meɪnˈteɪn/",
+      "pos": "v.",
+      "meaning": "유지하다",
+      "example": "It's hard to maintain legacy code that has no tests.",
+      "exampleKo": "테스트가 없는 레거시 코드는 유지보수하기 어렵다.",
+      "note": "maintain은 '유지보수하다'의 의미로 IT에서 많이 쓰며, 명사형은 maintenance입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "mention",
+      "ipa": "/ˈmenʃn/",
+      "pos": "v. / n.",
+      "meaning": "언급하다",
+      "example": "You mentioned a deadline earlier. When exactly is it?",
+      "exampleKo": "아까 마감 얘기를 하셨는데, 정확히 언제예요?",
+      "note": "mention은 about 없이 바로 목적어를 받습니다 (mention about X).",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "notice",
+      "ipa": "/ˈnoʊtɪs/",
+      "pos": "v. / n.",
+      "meaning": "알아차리다",
+      "example": "Did you notice anything strange in the logs last night?",
+      "exampleKo": "어젯밤 로그에서 이상한 거 눈치챘어요?",
+      "note": "명사로는 '공지, 통지'이며, on short notice는 '촉박하게'라는 뜻입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "participate",
+      "ipa": "/pɑːrˈtɪsɪpeɪt/",
+      "pos": "v.",
+      "meaning": "참여하다",
+      "example": "All team members are expected to participate in the sprint planning.",
+      "exampleKo": "모든 팀원은 스프린트 계획 회의에 참여해야 한다.",
+      "note": "participate in ~ 형태로 쓰며, take part in과 같은 뜻입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "prevent",
+      "ipa": "/prɪˈvent/",
+      "pos": "v.",
+      "meaning": "예방하다, 막다",
+      "example": "Adding input validation can prevent a lot of security issues.",
+      "exampleKo": "입력 검증을 추가하면 많은 보안 문제를 막을 수 있다.",
+      "note": "prevent A from ~ing(A가 ~하는 것을 막다) 형태가 핵심입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "replace",
+      "ipa": "/rɪˈpleɪs/",
+      "pos": "v.",
+      "meaning": "대체하다",
+      "example": "We plan to replace the old payment system by next year.",
+      "exampleKo": "우리는 내년까지 기존 결제 시스템을 교체할 계획이다.",
+      "note": "replace A with B는 'A를 B로 교체하다'입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "solve",
+      "ipa": "/sɑːlv/",
+      "pos": "v.",
+      "meaning": "해결하다",
+      "example": "It took us two days to solve the caching problem.",
+      "exampleKo": "캐싱 문제를 해결하는 데 이틀이 걸렸다.",
+      "note": "solve는 문제/퍼즐을, resolve는 갈등/이슈를 해결할 때 더 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "ability",
+      "ipa": "/əˈbɪləti/",
+      "pos": "n.",
+      "meaning": "능력",
+      "example": "Her ability to explain complex ideas simply is impressive.",
+      "exampleKo": "복잡한 개념을 쉽게 설명하는 그녀의 능력은 인상적이다.",
+      "note": "the ability to do 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "access",
+      "ipa": "/ˈækses/",
+      "pos": "n. / v.",
+      "meaning": "접근, 이용 권한",
+      "example": "New employees get access to the internal wiki on their first day.",
+      "exampleKo": "신입 사원은 첫날 사내 위키 접근 권한을 받는다.",
+      "note": "have access to ~ 형태로 쓰고, 동사로도 쓸 수 있습니다 (access the server).",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "approach",
+      "ipa": "/əˈproʊtʃ/",
+      "pos": "n. / v.",
+      "meaning": "접근 방식",
+      "example": "I think a step-by-step approach would work better for this project.",
+      "exampleKo": "이 프로젝트에는 단계적인 접근 방식이 더 나을 것 같다.",
+      "note": "approach to ~ (~에 대한 접근법) 형태로 쓰며, 동사일 때는 to 없이 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "attention",
+      "ipa": "/əˈtenʃn/",
+      "pos": "n.",
+      "meaning": "관심, 주의",
+      "example": "Please pay attention to the error messages during the migration.",
+      "exampleKo": "마이그레이션 중에는 에러 메시지에 주의를 기울여 주세요.",
+      "note": "pay attention to ~ (~에 주의를 기울이다)가 가장 흔한 표현입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "attitude",
+      "ipa": "/ˈætɪtuːd/",
+      "pos": "n.",
+      "meaning": "태도",
+      "example": "His positive attitude makes the whole team more motivated.",
+      "exampleKo": "그의 긍정적인 태도는 팀 전체에 동기를 준다.",
+      "note": "attitude toward(s) ~ (~에 대한 태도) 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "background",
+      "ipa": "/ˈbækɡraʊnd/",
+      "pos": "n.",
+      "meaning": "배경",
+      "example": "Can you give me some background on this project before the meeting?",
+      "exampleKo": "회의 전에 이 프로젝트 배경 좀 알려줄 수 있어요?",
+      "note": "give some background on ~은 '~에 대한 배경 설명을 하다'입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "benefit",
+      "ipa": "/ˈbenɪfɪt/",
+      "pos": "n. / v.",
+      "meaning": "이점, 혜택",
+      "example": "One big benefit of remote work is saving time on commuting.",
+      "exampleKo": "재택근무의 큰 이점 중 하나는 출퇴근 시간을 아끼는 것이다.",
+      "note": "복수형 benefits는 회사의 '복지 혜택'을 뜻하기도 합니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "capacity",
+      "ipa": "/kəˈpæsəti/",
+      "pos": "n.",
+      "meaning": "능력, 수용력",
+      "example": "Our team doesn't have the capacity to take on another project right now.",
+      "exampleKo": "우리 팀은 지금 다른 프로젝트를 맡을 여력이 없다.",
+      "note": "회사에서는 '업무 여력'이라는 뜻으로 have capacity를 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "communication",
+      "ipa": "/kəˌmjuːnɪˈkeɪʃn/",
+      "pos": "n.",
+      "meaning": "의사소통",
+      "example": "Good communication between teams can prevent a lot of problems.",
+      "exampleKo": "팀 간의 원활한 의사소통은 많은 문제를 막을 수 있다.",
+      "note": "communication skills(의사소통 능력)는 이력서와 면접에서 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "community",
+      "ipa": "/kəˈmjuːnəti/",
+      "pos": "n.",
+      "meaning": "공동체",
+      "example": "The developer community around this framework is very active.",
+      "exampleKo": "이 프레임워크의 개발자 커뮤니티는 매우 활발하다.",
+      "note": "online community, local community처럼 형용사와 함께 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "concern",
+      "ipa": "/kənˈsɜːrn/",
+      "pos": "n. / v.",
+      "meaning": "우려, 관심사",
+      "example": "My main concern is that we don't have enough time for testing.",
+      "exampleKo": "내 주된 걱정은 테스트할 시간이 충분하지 않다는 것이다.",
+      "note": "raise a concern(우려를 제기하다)은 회의에서 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "confidence",
+      "ipa": "/ˈkɑːnfɪdəns/",
+      "pos": "n.",
+      "meaning": "자신감, 신뢰",
+      "example": "Passing all the tests gave us confidence in the new release.",
+      "exampleKo": "모든 테스트를 통과해서 새 릴리스에 대한 확신이 생겼다.",
+      "note": "confidence in ~ (~에 대한 신뢰/확신) 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "consequence",
+      "ipa": "/ˈkɑːnsəkwens/",
+      "pos": "n.",
+      "meaning": "결과, 영향",
+      "example": "Skipping code review can have serious consequences later.",
+      "exampleKo": "코드 리뷰를 건너뛰면 나중에 심각한 결과를 초래할 수 있다.",
+      "note": "as a consequence(그 결과로)라는 연결 표현도 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "context",
+      "ipa": "/ˈkɑːntekst/",
+      "pos": "n.",
+      "meaning": "맥락, 상황",
+      "example": "Without context, the error message is hard to understand.",
+      "exampleKo": "맥락 없이는 그 에러 메시지를 이해하기 어렵다.",
+      "note": "in this context(이런 맥락에서), out of context(맥락 없이)로 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "customer",
+      "ipa": "/ˈkʌstəmər/",
+      "pos": "n.",
+      "meaning": "고객",
+      "example": "The customer asked for a refund because the app kept crashing.",
+      "exampleKo": "앱이 계속 꺼져서 고객이 환불을 요청했다.",
+      "note": "client는 전문 서비스를 받는 고객, customer는 물건/서비스를 사는 고객에 더 가깝습니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "detail",
+      "ipa": "/ˈdiːteɪl/",
+      "pos": "n.",
+      "meaning": "세부 사항",
+      "example": "Please check every detail in the contract before you sign it.",
+      "exampleKo": "서명하기 전에 계약서의 세부 사항을 모두 확인하세요.",
+      "note": "in detail(자세히)과 pay attention to detail(꼼꼼하다)을 함께 기억하세요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "environment",
+      "ipa": "/ɪnˈvaɪrənmənt/",
+      "pos": "n.",
+      "meaning": "환경",
+      "example": "The bug only happens in the staging environment, not locally.",
+      "exampleKo": "그 버그는 로컬이 아니라 스테이징 환경에서만 발생한다.",
+      "note": "IT에서는 dev/staging/production environment처럼 '실행 환경'의 뜻으로 많이 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "factor",
+      "ipa": "/ˈfæktər/",
+      "pos": "n.",
+      "meaning": "요인",
+      "example": "Cost was the biggest factor in our decision to switch vendors.",
+      "exampleKo": "비용이 업체를 바꾸기로 한 결정의 가장 큰 요인이었다.",
+      "note": "a key factor(핵심 요인)라는 표현을 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "feature",
+      "ipa": "/ˈfiːtʃər/",
+      "pos": "n. / v.",
+      "meaning": "특징, 기능",
+      "example": "The new feature lets users export their data to Excel.",
+      "exampleKo": "새 기능은 사용자가 데이터를 엑셀로 내보낼 수 있게 해준다.",
+      "note": "feature request(기능 요청), feature flag(기능 플래그)는 IT 필수 표현입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "feedback",
+      "ipa": "/ˈfiːdbæk/",
+      "pos": "n.",
+      "meaning": "피드백",
+      "example": "Thanks for the feedback. I'll update the design by tomorrow.",
+      "exampleKo": "피드백 감사해요. 내일까지 디자인을 수정할게요.",
+      "note": "feedback은 셀 수 없는 명사라 a feedback, feedbacks로 쓰지 않습니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "impact",
+      "ipa": "/ˈɪmpækt/",
+      "pos": "n. / v.",
+      "meaning": "영향",
+      "example": "The outage had a huge impact on our sales that day.",
+      "exampleKo": "그 장애는 그날 매출에 큰 영향을 미쳤다.",
+      "note": "have an impact on ~ 형태로 쓰고, 동사로 impact 단독으로도 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "method",
+      "ipa": "/ˈmeθəd/",
+      "pos": "n.",
+      "meaning": "방법",
+      "example": "This method takes longer, but it gives more accurate results.",
+      "exampleKo": "이 방법은 더 오래 걸리지만 더 정확한 결과를 준다.",
+      "note": "코드에서는 클래스 안의 '메서드(함수)'라는 뜻으로도 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "mistake",
+      "ipa": "/mɪˈsteɪk/",
+      "pos": "n. / v.",
+      "meaning": "실수",
+      "example": "I made a mistake in the SQL query and deleted the wrong rows.",
+      "exampleKo": "SQL 쿼리에서 실수를 해서 엉뚱한 행을 삭제했다.",
+      "note": "do a mistake가 아니라 make a mistake로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "performance",
+      "ipa": "/pərˈfɔːrməns/",
+      "pos": "n.",
+      "meaning": "성과, 성능",
+      "example": "We improved the app's performance by reducing the image sizes.",
+      "exampleKo": "이미지 크기를 줄여서 앱 성능을 개선했다.",
+      "note": "사람에게는 '성과/실적', 시스템에는 '성능'의 뜻으로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "perspective",
+      "ipa": "/pərˈspektɪv/",
+      "pos": "n.",
+      "meaning": "관점",
+      "example": "From the user's perspective, this button is hard to find.",
+      "exampleKo": "사용자 관점에서 보면 이 버튼은 찾기 어렵다.",
+      "note": "from one's perspective(~의 관점에서)가 가장 흔한 형태입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "progress",
+      "ipa": "/ˈprɑːɡres/",
+      "pos": "n. / v.",
+      "meaning": "진행, 발전",
+      "example": "We made good progress on the migration this week.",
+      "exampleKo": "이번 주에 마이그레이션 작업이 많이 진척됐다.",
+      "note": "make progress(진척을 보이다)로 쓰며, 셀 수 없는 명사입니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "quality",
+      "ipa": "/ˈkwɑːləti/",
+      "pos": "n.",
+      "meaning": "품질",
+      "example": "We shouldn't sacrifice code quality just to meet the deadline.",
+      "exampleKo": "마감을 맞추려고 코드 품질을 희생해서는 안 된다.",
+      "note": "high quality / low quality처럼 형용사로도 붙여 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "resource",
+      "ipa": "/ˈriːsɔːrs/",
+      "pos": "n.",
+      "meaning": "자원",
+      "example": "We don't have enough resources to finish both projects this month.",
+      "exampleKo": "이번 달에 두 프로젝트를 모두 끝낼 자원이 부족하다.",
+      "note": "회사에서는 '인력'의 뜻으로도 쓰며, 보통 복수형 resources로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "risk",
+      "ipa": "/rɪsk/",
+      "pos": "n. / v.",
+      "meaning": "위험",
+      "example": "There's a risk that the update will break older devices.",
+      "exampleKo": "업데이트가 구형 기기에서 문제를 일으킬 위험이 있다.",
+      "note": "take a risk(위험을 감수하다), at risk(위험에 처한) 표현을 함께 기억하세요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "task",
+      "ipa": "/tæsk/",
+      "pos": "n.",
+      "meaning": "업무, 과제",
+      "example": "I'll break this big task into smaller tickets.",
+      "exampleKo": "이 큰 업무를 작은 티켓들로 나눌게요.",
+      "note": "work on a task, assign a task처럼 동사와 함께 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "trend",
+      "ipa": "/trend/",
+      "pos": "n.",
+      "meaning": "추세, 경향",
+      "example": "The trend shows that more users are switching to mobile.",
+      "exampleKo": "추세를 보면 더 많은 사용자가 모바일로 옮겨 가고 있다.",
+      "note": "a growing trend(커지는 추세), follow a trend(유행을 따르다)로 자주 씁니다.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "accurate",
+      "ipa": "/ˈækjərət/",
+      "pos": "adj.",
+      "meaning": "정확한",
+      "example": "Make sure the numbers in the report are accurate before sending it.",
+      "exampleKo": "리포트를 보내기 전에 숫자가 정확한지 꼭 확인하세요.",
+      "note": "correct는 '맞는/틀리지 않은', accurate는 '세밀하게 정확한'의 느낌입니다.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "beneficial",
+      "ipa": "/ˌbenɪˈfɪʃl/",
+      "pos": "adj.",
+      "meaning": "유익한",
+      "example": "Pair programming can be beneficial for both junior and senior developers.",
+      "exampleKo": "페어 프로그래밍은 주니어와 시니어 개발자 모두에게 유익할 수 있다.",
+      "note": "beneficial to/for ~ (~에게 유익한) 형태로 씁니다.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "capable",
+      "ipa": "/ˈkeɪpəbl/",
+      "pos": "adj.",
+      "meaning": "능력이 있는",
+      "example": "She's a capable engineer who can work on both front-end and back-end.",
+      "exampleKo": "그녀는 프론트엔드와 백엔드 모두 할 수 있는 유능한 엔지니어다.",
+      "note": "be capable of ~ing 형태로 쓰며, can보다 격식 있는 표현입니다.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "competitive",
+      "ipa": "/kəmˈpetətɪv/",
+      "pos": "adj.",
+      "meaning": "경쟁력 있는",
+      "example": "We need to keep our pricing competitive to win new enterprise clients.",
+      "exampleKo": "새 기업 고객을 확보하려면 가격 경쟁력을 유지해야 해요.",
+      "note": "competitive price(경쟁력 있는 가격), competitive market(경쟁이 치열한 시장)처럼 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "complex",
+      "ipa": "/kəmˈpleks/",
+      "pos": "adj.",
+      "meaning": "복잡한",
+      "example": "The migration is more complex than we expected, so it'll take another week.",
+      "exampleKo": "마이그레이션이 예상보다 복잡해서 일주일 더 걸릴 거예요.",
+      "note": "complicated와 비슷하지만 complex는 구성 요소가 많아 복잡하다는 뉘앙스가 강해요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "consistent",
+      "ipa": "/kənˈsɪstənt/",
+      "pos": "adj.",
+      "meaning": "일관된",
+      "example": "Please keep the naming consistent across all the API endpoints.",
+      "exampleKo": "모든 API 엔드포인트에서 이름 규칙을 일관되게 유지해 주세요.",
+      "note": "be consistent with(~와 일치하다) 형태도 자주 쓰여요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "critical",
+      "ipa": "/ˈkrɪtɪkəl/",
+      "pos": "adj.",
+      "meaning": "중요한, 비판적인",
+      "example": "This is a critical bug, so we need to fix it before the release.",
+      "exampleKo": "이건 치명적인 버그라서 출시 전에 고쳐야 해요.",
+      "note": "critical은 '아주 중요한/심각한'과 '비판적인' 두 뜻이 있어 문맥으로 구분해요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "current",
+      "ipa": "/ˈkɜːrənt/",
+      "pos": "adj.",
+      "meaning": "현재의",
+      "example": "The current version doesn't support dark mode yet.",
+      "exampleKo": "현재 버전은 아직 다크 모드를 지원하지 않아요.",
+      "note": "current는 '현재의', currently는 '현재'(부사)로 품사를 구분해서 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "dependent",
+      "ipa": "/dɪˈpendənt/",
+      "pos": "adj.",
+      "meaning": "의존하는",
+      "example": "Our app is heavily dependent on a third-party payment API.",
+      "exampleKo": "우리 앱은 외부 결제 API에 크게 의존하고 있어요.",
+      "note": "dependent on(~에 의존하는)처럼 전치사 on과 함께 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "flexible",
+      "ipa": "/ˈfleksəbəl/",
+      "pos": "adj.",
+      "meaning": "유연한",
+      "example": "Our team has flexible hours, so you can start anytime before ten.",
+      "exampleKo": "우리 팀은 근무 시간이 유연해서 10시 전 아무 때나 시작하면 돼요.",
+      "note": "flexible schedule, flexible working hours처럼 일정·근무 관련해서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "independent",
+      "ipa": "/ˌɪndɪˈpendənt/",
+      "pos": "adj.",
+      "meaning": "독립적인",
+      "example": "Each microservice should be independent so we can deploy it separately.",
+      "exampleKo": "각 마이크로서비스는 따로 배포할 수 있도록 독립적이어야 해요.",
+      "note": "independent of(~와 무관한/~에서 독립된)처럼 of와 함께 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "limited",
+      "ipa": "/ˈlɪmɪtɪd/",
+      "pos": "adj.",
+      "meaning": "제한된",
+      "example": "We have limited time, so let's focus on the most important features.",
+      "exampleKo": "시간이 제한되어 있으니 가장 중요한 기능에 집중합시다.",
+      "note": "limited time/budget/resources처럼 자원이 부족하다는 말로 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "minor",
+      "ipa": "/ˈmaɪnər/",
+      "pos": "adj.",
+      "meaning": "사소한",
+      "example": "It's just a minor issue, so we can fix it in the next sprint.",
+      "exampleKo": "사소한 문제라서 다음 스프린트에 고치면 돼요.",
+      "note": "minor의 반대는 major이고, minor change/fix/bug처럼 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "overall",
+      "ipa": "/ˌoʊvərˈɔːl/",
+      "pos": "adj.",
+      "meaning": "전반적인",
+      "example": "The overall feedback from users was positive after the update.",
+      "exampleKo": "업데이트 후 사용자들의 전반적인 피드백은 긍정적이었어요.",
+      "note": "overall은 형용사(전반적인)와 부사(전반적으로) 모두로 쓰여요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "particular",
+      "ipa": "/pərˈtɪkjələr/",
+      "pos": "adj.",
+      "meaning": "특정한",
+      "example": "Is there a particular reason we're using this library?",
+      "exampleKo": "이 라이브러리를 쓰는 특별한 이유가 있나요?",
+      "note": "in particular(특히)라는 표현도 아주 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "potential",
+      "ipa": "/pəˈtenʃəl/",
+      "pos": "adj.",
+      "meaning": "잠재적인",
+      "example": "We should discuss potential risks before we start the project.",
+      "exampleKo": "프로젝트를 시작하기 전에 잠재적인 위험을 논의해야 해요.",
+      "note": "potential은 명사로 '잠재력'이라는 뜻도 있어요(have potential).",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "relevant",
+      "ipa": "/ˈreləvənt/",
+      "pos": "adj.",
+      "meaning": "관련 있는",
+      "example": "Please attach only the relevant logs to the bug report.",
+      "exampleKo": "버그 리포트에는 관련 있는 로그만 첨부해 주세요.",
+      "note": "relevant to(~와 관련 있는)로 쓰고, 반대말은 irrelevant예요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "significant",
+      "ipa": "/sɪɡˈnɪfɪkənt/",
+      "pos": "adj.",
+      "meaning": "상당한, 중요한",
+      "example": "The new cache made a significant improvement in page load time.",
+      "exampleKo": "새 캐시 덕분에 페이지 로딩 시간이 상당히 개선됐어요.",
+      "note": "significant improvement/increase/impact처럼 변화의 크기를 강조할 때 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "temporary",
+      "ipa": "/ˈtempəreri/",
+      "pos": "adj.",
+      "meaning": "일시적인",
+      "example": "This is just a temporary fix until we find the root cause.",
+      "exampleKo": "근본 원인을 찾을 때까지 이건 임시 해결책일 뿐이에요.",
+      "note": "temporary의 반대는 permanent(영구적인)이고, temporary fix/workaround가 자주 쓰여요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "typical",
+      "ipa": "/ˈtɪpɪkəl/",
+      "pos": "adj.",
+      "meaning": "전형적인",
+      "example": "A typical sprint on our team lasts two weeks.",
+      "exampleKo": "우리 팀의 일반적인 스프린트는 2주예요.",
+      "note": "typical of(~답다, ~의 전형이다) 형태로도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "ultimately",
+      "ipa": "/ˈʌltɪmətli/",
+      "pos": "adv.",
+      "meaning": "궁극적으로, 결국",
+      "example": "Ultimately, the client decides which design we go with.",
+      "exampleKo": "결국 어떤 디자인으로 갈지는 고객이 결정해요.",
+      "note": "문장 맨 앞에 쓰면 '결국에는, 최종적으로'라는 결론을 강조해요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "frequently",
+      "ipa": "/ˈfriːkwəntli/",
+      "pos": "adv.",
+      "meaning": "자주",
+      "example": "This error happens frequently when the server is under heavy load.",
+      "exampleKo": "서버 부하가 클 때 이 에러가 자주 발생해요.",
+      "note": "frequently asked questions(FAQ)처럼 often보다 약간 격식 있는 느낌이에요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "gradually",
+      "ipa": "/ˈɡrædʒuəli/",
+      "pos": "adv.",
+      "meaning": "점차적으로",
+      "example": "We'll gradually roll out the new feature to all users.",
+      "exampleKo": "새 기능을 모든 사용자에게 점차적으로 배포할 거예요.",
+      "note": "gradually increase/improve처럼 변화가 천천히 일어날 때 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "relatively",
+      "ipa": "/ˈrelətɪvli/",
+      "pos": "adv.",
+      "meaning": "상대적으로",
+      "example": "The fix was relatively simple once we found the cause.",
+      "exampleKo": "원인을 찾고 나니 수정은 비교적 간단했어요.",
+      "note": "relatively easy/cheap/new처럼 형용사 앞에서 '비교적'의 의미로 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "directly",
+      "ipa": "/dəˈrektli/",
+      "pos": "adv.",
+      "meaning": "직접적으로",
+      "example": "You can contact the client directly if you have any questions.",
+      "exampleKo": "질문이 있으면 고객에게 직접 연락하셔도 돼요.",
+      "note": "directly는 '직접'이라는 뜻이고, direct가 부사로 쓰일 때는 주로 이동·연락을 말해요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "roughly",
+      "ipa": "/ˈrʌfli/",
+      "pos": "adv.",
+      "meaning": "대략",
+      "example": "The migration will take roughly three hours on Saturday night.",
+      "exampleKo": "마이그레이션은 토요일 밤에 대략 세 시간 걸릴 거예요.",
+      "note": "about, around와 비슷하게 숫자 앞에서 '대략'이라는 뜻으로 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 6 · 필수 단어"
+    },
+    {
+      "word": "get back",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "돌아오다",
+      "example": "I'll get back to you once I check the logs.",
+      "exampleKo": "로그를 확인하고 다시 연락드릴게요.",
+      "note": "get back to someone은 '나중에 다시 연락하다'라는 뜻으로 업무에서 정말 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "get together",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "모이다",
+      "example": "Let's get together on Friday to review the sprint plan.",
+      "exampleKo": "금요일에 모여서 스프린트 계획을 검토합시다.",
+      "note": "명사 get-together는 '모임'이라는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "get over",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "극복하다",
+      "example": "It took me a while to get over the stress of the launch.",
+      "exampleKo": "출시 스트레스를 극복하는 데 시간이 좀 걸렸어요.",
+      "note": "get over는 병·실망·충격에서 회복할 때 쓰고, 목적어가 뒤에 와요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "get through",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "끝내다, 통과하다",
+      "example": "We have a lot to get through in today's meeting.",
+      "exampleKo": "오늘 회의에서 처리할 게 많아요.",
+      "note": "get through는 '끝까지 해내다'와 '(전화가) 연결되다'의 뜻도 있어요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "bring back",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "다시 가져오다, 떠올리게 하다",
+      "example": "This old code really brings back memories of my first project.",
+      "exampleKo": "이 옛날 코드를 보니 첫 프로젝트 기억이 떠올라요.",
+      "note": "bring back memories(추억을 떠올리게 하다)는 아주 흔한 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "take out",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "꺼내다, 데리고 나가다",
+      "example": "Let's take out the debug code before we merge this PR.",
+      "exampleKo": "이 PR 머지하기 전에 디버그 코드를 빼죠.",
+      "note": "take out은 '꺼내다/빼다' 외에 take someone out(데리고 나가 대접하다)으로도 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "take up",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "시작하다, 차지하다",
+      "example": "These large images take up too much storage on the server.",
+      "exampleKo": "이 큰 이미지들이 서버 저장 공간을 너무 많이 차지해요.",
+      "note": "take up은 '(공간·시간을) 차지하다'와 '(취미를) 시작하다' 두 뜻이 있어요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "put on",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "입다, 착용하다",
+      "example": "Put on your badge before you go into the server room.",
+      "exampleKo": "서버실에 들어가기 전에 출입증을 착용하세요.",
+      "note": "put on은 입는 '동작', wear는 입고 있는 '상태'를 나타내요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "put away",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "치우다, 정리하다",
+      "example": "Please put away your laptops so we can focus on the discussion.",
+      "exampleKo": "토론에 집중할 수 있게 노트북을 치워 주세요.",
+      "note": "put away는 물건을 제자리에 정리할 때 쓰고, '저축하다'의 뜻도 있어요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "put together",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "조립하다, 구성하다",
+      "example": "Can you put together a quick report on last week's incidents?",
+      "exampleKo": "지난주 장애에 대한 간단한 보고서를 정리해 줄 수 있어요?",
+      "note": "put together a report/team/plan처럼 '만들다, 구성하다'의 뜻으로 업무에서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "turn down",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "거절하다, 줄이다",
+      "example": "I had to turn down the job offer because of the long commute.",
+      "exampleKo": "출퇴근이 너무 멀어서 그 채용 제안을 거절해야 했어요.",
+      "note": "turn down은 '거절하다'와 '(소리·온도를) 줄이다' 두 뜻이 있고, 반대는 turn up이에요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "turn up",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "나타나다, 높이다",
+      "example": "The missing file finally turned up in an old backup folder.",
+      "exampleKo": "잃어버린 파일이 마침내 오래된 백업 폴더에서 나타났어요.",
+      "note": "turn up은 '나타나다'와 '(소리를) 높이다'로 쓰이고, show up과 비슷해요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "pick up",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "집다, 데리러 가다",
+      "example": "I'll pick up the new laptop from IT this afternoon.",
+      "exampleKo": "오늘 오후에 IT 팀에서 새 노트북을 받아 올게요.",
+      "note": "pick up은 '집다, 데리러 가다' 외에 '(기술을) 익히다, 다시 시작하다'로도 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "drop off",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "내려주다, 맡기다",
+      "example": "Can you drop off these documents at the client's office?",
+      "exampleKo": "이 서류를 고객사 사무실에 갖다 줄 수 있어요?",
+      "note": "pick up(데리러 가다)과 짝을 이루는 표현으로, '(사람을) 내려주다, (물건을) 맡기다'예요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "give back",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "돌려주다",
+      "example": "Please give back the test phone when you're done with it.",
+      "exampleKo": "다 쓰시면 테스트 폰을 돌려주세요.",
+      "note": "give back to the community(사회에 환원하다)라는 표현도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "give in",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "굴복하다, 양보하다",
+      "example": "We shouldn't give in to every feature request from the client.",
+      "exampleKo": "고객의 모든 기능 요청에 굴복하면 안 돼요.",
+      "note": "give in to ~(~에 굴복하다) 형태로 쓰고, give up(포기하다)과 구분해요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "break up",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "헤어지다, 해체하다",
+      "example": "Let's break up this big task into smaller tickets.",
+      "exampleKo": "이 큰 작업을 작은 티켓들로 나눕시다.",
+      "note": "break up with someone(~와 헤어지다)처럼 with와 함께 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "calm down",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "진정하다",
+      "example": "Let's all calm down and look at the error logs first.",
+      "exampleKo": "다들 진정하고 먼저 에러 로그부터 봅시다.",
+      "note": "calm down은 화난 사람에게 직접 말하면 무례하게 들릴 수 있어 조심해서 써요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "slow down",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "속도를 늦추다",
+      "example": "The new plugin really slows down the build process.",
+      "exampleKo": "새 플러그인이 빌드 과정을 정말 느리게 해요.",
+      "note": "반대는 speed up이고, 사물(시스템)과 사람 모두에 쓸 수 있어요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "show up",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "나타나다",
+      "example": "Only half the team showed up to the morning stand-up.",
+      "exampleKo": "아침 스탠드업에 팀의 절반만 나타났어요.",
+      "note": "show up은 turn up과 비슷하고, '(화면에) 표시되다'의 뜻도 있어요.",
+      "date": "2026-11-26",
+      "topic": "일상 구동사",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be willing to",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "기꺼이 ~하다",
+      "example": "I'm willing to work late this week if it helps us hit the deadline.",
+      "exampleKo": "마감을 맞추는 데 도움이 된다면 이번 주에 기꺼이 야근할게요.",
+      "note": "be willing to 뒤에는 동사원형이 오고, be unwilling to는 '~하기를 꺼리다'예요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be familiar with",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에 익숙하다",
+      "example": "Are you familiar with our deployment process yet?",
+      "exampleKo": "우리 배포 프로세스에 이제 좀 익숙해지셨어요?",
+      "note": "be familiar with + 대상(사람이 아는 것), be familiar to + 사람(~에게 낯익다)으로 구분해요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be aware of",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~을 알고 있다",
+      "example": "Please be aware of the server maintenance this Saturday.",
+      "exampleKo": "이번 토요일 서버 점검이 있다는 점 알아 두세요.",
+      "note": "be aware that + 문장 형태로도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be capable of",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~할 능력이 있다",
+      "example": "This server is capable of handling ten thousand requests per second.",
+      "exampleKo": "이 서버는 초당 만 건의 요청을 처리할 수 있어요.",
+      "note": "be capable of 뒤에는 명사나 ~ing가 오고, be able to(동사원형)와 형태가 달라요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be satisfied with",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에 만족하다",
+      "example": "The client seemed satisfied with the new dashboard design.",
+      "exampleKo": "고객이 새 대시보드 디자인에 만족하는 것 같았어요.",
+      "note": "be satisfied with는 결과에 만족할 때, be pleased with는 기쁘다는 감정이 더 강해요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be concerned about",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~을 걱정하다",
+      "example": "I'm concerned about the performance of the new search feature.",
+      "exampleKo": "새 검색 기능의 성능이 걱정돼요.",
+      "note": "be worried about보다 조금 더 격식 있고 차분한 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be involved in",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에 관여하다",
+      "example": "I was involved in the design of the payment system last year.",
+      "exampleKo": "작년에 결제 시스템 설계에 참여했어요.",
+      "note": "get involved in(참여하게 되다)도 자주 쓰여요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be available for",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에 이용 가능하다",
+      "example": "Are you available for a quick call this afternoon?",
+      "exampleKo": "오늘 오후에 잠깐 통화 가능하세요?",
+      "note": "사람에게 쓰면 '시간이 되다', 물건에 쓰면 '이용·구매 가능하다'라는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "have trouble ~ing",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~하는 데 어려움을 겪다",
+      "example": "I'm having trouble connecting to the VPN from home.",
+      "exampleKo": "집에서 VPN 연결이 잘 안 돼요.",
+      "note": "have trouble 뒤에는 to부정사가 아니라 ~ing가 와요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "have difficulty ~ing",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~하는 데 어려움을 겪다",
+      "example": "Some users have difficulty finding the settings menu.",
+      "exampleKo": "일부 사용자들이 설정 메뉴를 찾는 데 어려움을 겪어요.",
+      "note": "have trouble ~ing보다 조금 더 격식 있는 표현으로 보고서에 잘 어울려요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "have no choice but to",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~할 수밖에 없다",
+      "example": "We had no choice but to roll back the deployment.",
+      "exampleKo": "배포를 롤백할 수밖에 없었어요.",
+      "note": "뒤에 동사원형이 와요: have no choice but to + 동사원형.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "have a hard time ~ing",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~하는 데 애를 먹다",
+      "example": "I had a hard time explaining the bug to the client.",
+      "exampleKo": "고객에게 버그를 설명하는 데 애를 먹었어요.",
+      "note": "have a hard time 뒤에도 ~ing가 오고, 일상 회화에서 아주 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "make an effort to",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~하려고 노력하다",
+      "example": "I'm making an effort to write cleaner commit messages.",
+      "exampleKo": "커밋 메시지를 더 깔끔하게 쓰려고 노력하고 있어요.",
+      "note": "make an effort to + 동사원형, 강조할 땐 make every effort to를 써요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "make a decision",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "결정을 내리다",
+      "example": "We need to make a decision about the database by Friday.",
+      "exampleKo": "금요일까지 데이터베이스에 대한 결정을 내려야 해요.",
+      "note": "do a decision이 아니라 make a decision이라고 해요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "make a mistake",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "실수하다",
+      "example": "I made a mistake in the config file, and it broke the build.",
+      "exampleKo": "설정 파일에서 실수를 해서 빌드가 깨졌어요.",
+      "note": "do a mistake는 틀린 표현이고, 항상 make a mistake라고 해요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "make progress",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "진전을 이루다",
+      "example": "We're making good progress on the new onboarding flow.",
+      "exampleKo": "새 온보딩 흐름 작업이 잘 진행되고 있어요.",
+      "note": "progress는 셀 수 없는 명사라 a progress라고 하지 않아요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "make a reservation",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "예약하다",
+      "example": "I'll make a reservation for the team dinner on Friday.",
+      "exampleKo": "금요일 팀 회식 자리를 예약할게요.",
+      "note": "make a reservation for + 인원/시간 형태로 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "make a commitment",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "약속하다, 전념하다",
+      "example": "The company made a commitment to improve work-life balance.",
+      "exampleKo": "회사는 일과 삶의 균형을 개선하겠다고 약속했어요.",
+      "note": "make a commitment to + 명사/~ing 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "take responsibility for",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에 책임을 지다",
+      "example": "As team lead, I take responsibility for the delay in the release.",
+      "exampleKo": "팀장으로서 출시 지연에 대한 책임은 제가 지겠습니다.",
+      "note": "\"take full responsibility for\"처럼 full을 넣으면 '전적으로 책임지다'라는 뜻이 돼요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "take action",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "조치를 취하다",
+      "example": "We need to take action before the server costs get out of control.",
+      "exampleKo": "서버 비용이 감당 못 할 정도가 되기 전에 조치를 취해야 해요.",
+      "note": "\"take immediate action\"처럼 형용사로 긴급함을 표현할 수 있어요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "take notes",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "메모하다",
+      "example": "Could someone take notes during the meeting and share them afterward?",
+      "exampleKo": "회의 중에 누가 메모해서 나중에 공유해 주실 수 있나요?",
+      "note": "회의록 작성자는 \"note-taker\"라고 해요.",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "take place",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "발생하다, 개최되다",
+      "example": "The annual tech conference will take place in Seoul next month.",
+      "exampleKo": "연례 기술 컨퍼런스가 다음 달 서울에서 열릴 거예요.",
+      "note": "take place는 수동태로 쓰지 않아요 (was taken place ✗).",
+      "date": "2026-11-26",
+      "topic": "실생활 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "come up with an idea",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "아이디어를 생각해 내다",
+      "example": "She came up with an idea to cut our build time in half.",
+      "exampleKo": "그녀가 빌드 시간을 절반으로 줄이는 아이디어를 생각해 냈어요.",
+      "note": "come up with는 idea 외에 plan, solution, name과도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "bring something to someone's attention",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~의 주의를 환기하다",
+      "example": "Thanks for bringing this security issue to my attention so quickly.",
+      "exampleKo": "이 보안 문제를 이렇게 빨리 알려 주셔서 감사합니다.",
+      "note": "\"It has come to my attention that ~\"(~라는 사실을 알게 되었습니다)도 격식 있는 표현으로 자주 쓰여요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "keep someone updated",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~에게 최신 정보를 계속 알려주다",
+      "example": "Please keep me updated on the database migration progress this week.",
+      "exampleKo": "이번 주 데이터베이스 마이그레이션 진행 상황을 계속 알려 주세요.",
+      "note": "\"keep me posted\"도 같은 뜻의 캐주얼한 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "keep in mind",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "명심하다",
+      "example": "Keep in mind that the API has a limit of 100 requests per minute.",
+      "exampleKo": "API는 분당 100건의 요청 제한이 있다는 걸 명심하세요.",
+      "note": "\"keep A in mind\" 또는 \"keep in mind that ~\" 두 형태 다 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "go through",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "검토하다, 경험하다",
+      "example": "Let's go through the test results before we decide on the release.",
+      "exampleKo": "출시를 결정하기 전에 테스트 결과를 검토해 봅시다.",
+      "note": "go through는 '검토하다' 외에 '힘든 일을 겪다'(go through a hard time)라는 뜻도 있어요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "work out",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "해결하다, 잘 진행되다",
+      "example": "Don't worry, I'm sure we'll work out the payment issue with the client.",
+      "exampleKo": "걱정 마세요, 고객과의 결제 문제는 분명 해결될 거예요.",
+      "note": "work out은 '운동하다'라는 뜻도 있어서 문맥으로 구분해야 해요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "sort out",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "정리하다, 해결하다",
+      "example": "I need about an hour to sort out these merge conflicts.",
+      "exampleKo": "이 머지 충돌들 정리하는 데 한 시간 정도 필요해요.",
+      "note": "\"sort it out\"처럼 대명사는 sort와 out 사이에 넣어요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "set a goal",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "목표를 설정하다",
+      "example": "Our team set a goal to reduce page load time by 30 percent.",
+      "exampleKo": "우리 팀은 페이지 로딩 시간을 30% 줄이는 목표를 세웠어요.",
+      "note": "\"set a goal\"과 함께 \"achieve/reach a goal\"(목표를 달성하다)도 같이 알아 두세요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "meet expectations",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "기대를 충족하다",
+      "example": "The new dashboard didn't meet the client's expectations, so we're redesigning it.",
+      "exampleKo": "새 대시보드가 고객의 기대에 못 미쳐서 다시 디자인하고 있어요.",
+      "note": "\"exceed expectations\"는 '기대를 뛰어넘다'라는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "catch up on",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "밀린 일을 따라잡다",
+      "example": "I stayed late to catch up on the tickets I missed last week.",
+      "exampleKo": "지난주에 못 한 티켓들을 따라잡으려고 늦게까지 남았어요.",
+      "note": "\"catch up with + 사람\"은 '~와 근황을 나누다'라는 뜻이라 구분해야 해요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "move forward",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "앞으로 나아가다",
+      "example": "Once legal approves the contract, we can move forward with the launch.",
+      "exampleKo": "법무팀이 계약을 승인하면 출시를 진행할 수 있어요.",
+      "note": "\"move forward with + 계획/프로젝트\" 형태로 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "move on to",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "다음 단계로 넘어가다",
+      "example": "If there are no more questions, let's move on to the next agenda item.",
+      "exampleKo": "더 질문이 없으면 다음 안건으로 넘어갑시다.",
+      "note": "\"move on\"만 쓰면 '(과거를) 잊고 넘어가다'라는 뜻도 돼요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "check in with",
+      "ipa": "",
+      "pos": "phrasal v.",
+      "meaning": "~에게 진행 상황을 확인하다",
+      "example": "I'll check in with the design team to see how the mockups are going.",
+      "exampleKo": "디자인 팀에 목업 진행 상황이 어떤지 확인해 볼게요.",
+      "note": "\"check in\"만 쓰면 호텔/공항 체크인 뜻이 되니 with를 꼭 붙이세요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "reach an agreement",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "합의에 도달하다",
+      "example": "After two long meetings, we finally reached an agreement on the contract.",
+      "exampleKo": "두 번의 긴 회의 끝에 마침내 계약에 합의했어요.",
+      "note": "\"reach an agreement on + 주제\", \"with + 상대방\"으로 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "come to a conclusion",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "결론에 도달하다",
+      "example": "After reviewing the logs, we came to the conclusion that the cache was the problem.",
+      "exampleKo": "로그를 검토한 끝에 캐시가 문제라는 결론에 도달했어요.",
+      "note": "뒤에 that절이 오면 보통 \"come to the conclusion that\"처럼 the를 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "raise a concern",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "우려를 제기하다",
+      "example": "I'd like to raise a concern about the tight testing schedule.",
+      "exampleKo": "빠듯한 테스트 일정에 대해 우려를 제기하고 싶어요.",
+      "note": "\"raise a concern about + 명사\" 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "address an issue",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "문제를 다루다",
+      "example": "We plan to address this issue in next week's patch release.",
+      "exampleKo": "이 문제는 다음 주 패치 릴리스에서 해결할 계획이에요.",
+      "note": "address는 '주소' 외에 '(문제를) 다루다, 해결하다'라는 동사로 회의에서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "provide an update",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "진행 상황을 공유하다",
+      "example": "I'll provide an update on the server migration at tomorrow's stand-up.",
+      "exampleKo": "내일 스탠드업에서 서버 마이그레이션 진행 상황을 공유할게요.",
+      "note": "\"provide an update on + 주제\" 형태로 쓰며, give an update도 같은 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "meet the deadline",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "마감 기한을 지키다",
+      "example": "We worked all weekend to meet the deadline for the client demo.",
+      "exampleKo": "고객 데모 마감을 지키려고 주말 내내 일했어요.",
+      "note": "마감을 놓치다는 \"miss the deadline\"이에요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "set a priority",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "우선순위를 정하다",
+      "example": "Let's set a priority for each ticket before the sprint starts.",
+      "exampleKo": "스프린트 시작 전에 티켓마다 우선순위를 정합시다.",
+      "note": "\"set priorities\"처럼 복수형으로도 자주 쓰고, 한 단어로는 \"prioritize\"라고 해요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be involved in a project",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "프로젝트에 참여하다",
+      "example": "I was involved in a project that migrated our app to the cloud.",
+      "exampleKo": "저는 앱을 클라우드로 이전하는 프로젝트에 참여했어요.",
+      "note": "\"get involved in\"은 '참여하게 되다'라는 변화를 강조해요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "be in line with",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~와 일치하다",
+      "example": "The final design is in line with what the client requested.",
+      "exampleKo": "최종 디자인은 고객이 요청한 것과 일치해요.",
+      "note": "\"in line with expectations\"(예상과 일치하는)처럼 보고서에서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "회사·회의 표현",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "It turns out that",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "알고 보니 ~이다",
+      "example": "It turns out that the bug was caused by a missing environment variable.",
+      "exampleKo": "알고 보니 그 버그는 환경 변수가 빠져서 생긴 거였어요.",
+      "note": "과거 일에는 \"It turned out that\"도 쓰고, that은 생략 가능해요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "The thing is",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "중요한 건, 문제는",
+      "example": "The thing is, we don't have enough test coverage to refactor safely.",
+      "exampleKo": "문제는 안전하게 리팩토링할 만큼 테스트 커버리지가 충분하지 않다는 거예요.",
+      "note": "상대 의견에 반론하거나 핵심을 꺼낼 때 문장 맨 앞에 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "What I mean is",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "내 말은",
+      "example": "What I mean is, we should test it on staging before production.",
+      "exampleKo": "제 말은, 운영에 올리기 전에 스테이징에서 테스트해야 한다는 거예요.",
+      "note": "오해를 바로잡거나 앞에 한 말을 다시 설명할 때 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "As far as I'm concerned",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "내 생각에는",
+      "example": "As far as I'm concerned, the current design is good enough to ship.",
+      "exampleKo": "제 생각에는 현재 디자인이면 출시하기에 충분해요.",
+      "note": "\"As far as I know\"(내가 아는 한)와 헷갈리지 않도록 주의하세요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "There's no point in ~ing",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~해 봐야 소용없다",
+      "example": "There's no point in optimizing this code if nobody uses the feature.",
+      "exampleKo": "아무도 그 기능을 안 쓰면 이 코드를 최적화해 봐야 소용없어요.",
+      "note": "in 뒤에는 반드시 동사-ing가 와요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "It doesn't matter",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "상관없어",
+      "example": "It doesn't matter which framework we use, as long as it's maintainable.",
+      "exampleKo": "유지보수만 잘 되면 어떤 프레임워크를 쓰든 상관없어요.",
+      "note": "\"It doesn't matter + who/what/which절\" 형태로 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "It makes no difference",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "차이가 없어",
+      "example": "It makes no difference whether we deploy today or tomorrow.",
+      "exampleKo": "오늘 배포하든 내일 배포하든 차이가 없어요.",
+      "note": "\"It makes a big difference\"는 반대로 '큰 차이가 있다'라는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "That reminds me of",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "그 말을 들으니 ~가 생각나",
+      "example": "That reminds me of the big outage we had last year.",
+      "exampleKo": "그 말을 들으니 작년에 있었던 큰 장애가 생각나네요.",
+      "note": "\"That reminds me,\"만 쓰면 '아, 그러고 보니'라는 뜻으로 화제를 바꿀 때 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "I was wondering if",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~인지 궁금했어요",
+      "example": "I was wondering if you could review my pull request today.",
+      "exampleKo": "오늘 제 풀 리퀘스트를 리뷰해 주실 수 있을지 궁금했어요.",
+      "note": "직접 묻는 것보다 공손한 부탁 표현으로, 뒤에 could/would를 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "I would appreciate it if",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~해 주시면 감사하겠습니다",
+      "example": "I would appreciate it if you could send the report by Friday.",
+      "exampleKo": "금요일까지 보고서를 보내 주시면 감사하겠습니다.",
+      "note": "it을 빠뜨리고 \"I would appreciate if\"라고 하는 실수가 많아요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "I'd rather not",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "차라리 그러지 않을래",
+      "example": "I'd rather not deploy on Friday afternoon if we can avoid it.",
+      "exampleKo": "가능하면 금요일 오후에는 배포하지 않는 게 좋겠어요.",
+      "note": "뒤에 동사원형이 오며, 정중하게 거절할 때 유용해요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "I couldn't agree more",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "전적으로 동의해",
+      "example": "I couldn't agree more that we need better documentation for new hires.",
+      "exampleKo": "신입 직원을 위해 더 나은 문서가 필요하다는 데 전적으로 동의해요.",
+      "note": "부정형이지만 '더 이상 동의할 수 없을 만큼 동의한다'는 강한 긍정이에요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "I wouldn't say that",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "그렇게 말하진 않을 것 같아",
+      "example": "I wouldn't say that the project failed, but it was definitely delayed.",
+      "exampleKo": "프로젝트가 실패했다고까지는 말하지 않겠지만, 확실히 지연되긴 했어요.",
+      "note": "상대 의견에 부드럽게 반대할 때 쓰는 완곡한 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "It is up to you",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "네가 결정하면 돼",
+      "example": "It is up to you whether we use React or Vue for this.",
+      "exampleKo": "이번에 React를 쓸지 Vue를 쓸지는 당신이 결정하면 돼요.",
+      "note": "회화에서는 보통 \"It's up to you\"로 줄여 말해요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "There's a good chance that",
+      "ipa": "",
+      "pos": "pattern",
+      "meaning": "~할 가능성이 높다",
+      "example": "There's a good chance that the client will ask for more changes.",
+      "exampleKo": "고객이 추가 수정을 요청할 가능성이 높아요.",
+      "note": "\"There's a slim chance that\"은 반대로 '가능성이 낮다'는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "Now that",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "이제 ~이므로",
+      "example": "Now that the migration is done, we can finally remove the old database.",
+      "exampleKo": "이제 마이그레이션이 끝났으니 드디어 예전 데이터베이스를 지울 수 있어요.",
+      "note": "since와 비슷하지만 '상황이 바뀌었으니 이제'라는 느낌이 있어요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "In case",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~할 경우를 대비해서",
+      "example": "Let's back up the database in case something goes wrong during the update.",
+      "exampleKo": "업데이트 중에 문제가 생길 경우를 대비해서 데이터베이스를 백업합시다.",
+      "note": "in case 뒤에는 미래 일이라도 현재 시제를 써요 (in case it rains).",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "Rather than",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "~보다는",
+      "example": "Rather than rewriting everything, let's fix the most critical parts first.",
+      "exampleKo": "전부 다시 짜기보다는 가장 중요한 부분부터 고칩시다.",
+      "note": "\"would rather\"(차라리 ~하겠다)와 헷갈리지 않도록 주의하세요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "Not necessarily",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "반드시 그런 것은 아니다",
+      "example": "A bigger server is not necessarily faster if the code is inefficient.",
+      "exampleKo": "코드가 비효율적이면 더 큰 서버라고 반드시 더 빠른 건 아니에요.",
+      "note": "상대 말에 \"Not necessarily.\"라고만 답해도 부드러운 반대가 돼요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "So far",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "지금까지",
+      "example": "So far, we haven't found any major bugs in the new release.",
+      "exampleKo": "지금까지 새 릴리스에서 큰 버그는 발견되지 않았어요.",
+      "note": "보통 현재완료(have p.p.)와 함께 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "From now on",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "지금부터",
+      "example": "From now on, every pull request needs at least two approvals.",
+      "exampleKo": "지금부터 모든 풀 리퀘스트는 최소 두 명의 승인이 필요해요.",
+      "note": "앞으로 계속 지속될 변화를 말할 때 써요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "At the same time",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "동시에",
+      "example": "I can't review your code and fix this bug at the same time.",
+      "exampleKo": "당신 코드를 리뷰하면서 동시에 이 버그를 고칠 수는 없어요.",
+      "note": "문장 맨 앞에 쓰면 '그렇긴 하지만'이라는 연결어 역할도 해요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "For the time being",
+      "ipa": "",
+      "pos": "phrase",
+      "meaning": "당분간",
+      "example": "For the time being, please use the old login page until the fix is deployed.",
+      "exampleKo": "수정 사항이 배포될 때까지 당분간은 예전 로그인 페이지를 사용해 주세요.",
+      "note": "\"for now\"와 비슷하지만 좀 더 격식 있는 느낌이에요.",
+      "date": "2026-11-26",
+      "topic": "원어민 회화 패턴",
+      "set": "Set 7 · 필수 표현"
+    },
+    {
+      "word": "acquire",
+      "ipa": "/əˈkwaɪɚ/",
+      "pos": "v.",
+      "meaning": "획득하다, 습득하다",
+      "example": "Our company plans to acquire a small AI startup next year.",
+      "exampleKo": "우리 회사는 내년에 작은 AI 스타트업을 인수할 계획이에요.",
+      "note": "\"acquire skills\"(기술을 습득하다)처럼 능력에도 쓰고, 명사는 acquisition(인수, 습득)이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "attract",
+      "ipa": "/əˈtrækt/",
+      "pos": "v.",
+      "meaning": "끌어들이다",
+      "example": "We redesigned the landing page to attract more new users.",
+      "exampleKo": "신규 사용자를 더 끌어들이려고 랜딩 페이지를 다시 디자인했어요.",
+      "note": "\"attract attention/customers/talent\"처럼 쓰고, 형용사는 attractive예요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "belong",
+      "ipa": "/bɪˈlɔːŋ/",
+      "pos": "v.",
+      "meaning": "속하다",
+      "example": "This repository belongs to the platform team, so ask them first.",
+      "exampleKo": "이 저장소는 플랫폼 팀 소속이니까 먼저 그쪽에 물어보세요.",
+      "note": "소유·소속을 나타낼 때는 \"belong to + 사람/단체\" 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "combine",
+      "ipa": "/kəmˈbaɪn/",
+      "pos": "v.",
+      "meaning": "결합하다",
+      "example": "Let's combine these two scripts into one to simplify the build.",
+      "exampleKo": "빌드를 단순하게 하려고 이 두 스크립트를 하나로 합칩시다.",
+      "note": "\"combine A with B\" 또는 \"combine A and B\" 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "commit",
+      "ipa": "/kəˈmɪt/",
+      "pos": "v.",
+      "meaning": "전념하다, 약속하다",
+      "example": "We can't commit to that deadline without more developers.",
+      "exampleKo": "개발자가 더 없으면 그 마감 기한을 약속할 수 없어요.",
+      "note": "\"commit to + 명사/동사-ing\" 형태이며, Git에서는 '커밋하다'라는 뜻으로도 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "compete",
+      "ipa": "/kəmˈpiːt/",
+      "pos": "v.",
+      "meaning": "경쟁하다",
+      "example": "We need lower prices to compete with bigger cloud providers.",
+      "exampleKo": "더 큰 클라우드 업체들과 경쟁하려면 가격을 낮춰야 해요.",
+      "note": "\"compete with/against + 상대\", \"compete for + 얻으려는 것\"으로 구분해요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "connect",
+      "ipa": "/kəˈnɛkt/",
+      "pos": "v.",
+      "meaning": "연결하다",
+      "example": "I can't connect to the VPN from home this morning.",
+      "exampleKo": "오늘 아침에 집에서 VPN에 접속이 안 돼요.",
+      "note": "\"connect to + 네트워크/서버\", \"connect A with B\"(A와 B를 연결하다)로 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "define",
+      "ipa": "/dɪˈfaɪn/",
+      "pos": "v.",
+      "meaning": "정의하다",
+      "example": "Before coding, let's clearly define the requirements with the client.",
+      "exampleKo": "코딩하기 전에 고객과 요구 사항을 명확히 정의합시다.",
+      "note": "명사는 definition이고, \"well-defined\"(명확하게 정의된)도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "deliver",
+      "ipa": "/dɪˈlɪvɚ/",
+      "pos": "v.",
+      "meaning": "전달하다, 배달하다",
+      "example": "Our team delivered the new feature two days ahead of schedule.",
+      "exampleKo": "우리 팀은 새 기능을 예정보다 이틀 일찍 전달했어요.",
+      "note": "업무에서는 '결과물을 내놓다, 납품하다'라는 뜻으로 자주 써요 (deliverable: 결과물).",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "depend",
+      "ipa": "/dɪˈpɛnd/",
+      "pos": "v.",
+      "meaning": "의존하다",
+      "example": "Our app depends on a third-party payment API.",
+      "exampleKo": "우리 앱은 외부 결제 API에 의존해요.",
+      "note": "항상 \"depend on\"으로 쓰고, \"It depends.\"는 '상황에 따라 달라'라는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "determine",
+      "ipa": "/dɪˈtɝːmɪn/",
+      "pos": "v.",
+      "meaning": "결정하다, 알아내다",
+      "example": "We're still trying to determine the root cause of the crash.",
+      "exampleKo": "아직 크래시의 근본 원인을 알아내려고 하고 있어요.",
+      "note": "\"determine the cause\"처럼 '알아내다'라는 뜻으로 보고서에서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "distinguish",
+      "ipa": "/dɪˈstɪŋɡwɪʃ/",
+      "pos": "v.",
+      "meaning": "구별하다",
+      "example": "It's hard to distinguish real errors from warnings in these logs.",
+      "exampleKo": "이 로그에서는 진짜 에러와 경고를 구별하기 어려워요.",
+      "note": "\"distinguish A from B\" 또는 \"distinguish between A and B\" 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "enable",
+      "ipa": "/ɪˈneɪbəl/",
+      "pos": "v.",
+      "meaning": "가능하게 하다",
+      "example": "This new tool enables us to deploy changes in just a few minutes.",
+      "exampleKo": "이 새 도구 덕분에 몇 분 만에 변경 사항을 배포할 수 있어요.",
+      "note": "enable A to B(A가 B할 수 있게 하다) 형태로 자주 쓰고, '기능을 켜다'라는 의미로도 많이 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "evaluate",
+      "ipa": "/ɪˈvæljueɪt/",
+      "pos": "v.",
+      "meaning": "평가하다",
+      "example": "We need to evaluate both options carefully before making a final decision.",
+      "exampleKo": "최종 결정을 내리기 전에 두 가지 옵션을 신중하게 평가해야 해요.",
+      "note": "evaluate는 꼼꼼히 따져 평가한다는 느낌이고, 명사형은 evaluation이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "exist",
+      "ipa": "/ɪɡˈzɪst/",
+      "pos": "v.",
+      "meaning": "존재하다",
+      "example": "That file doesn't exist anymore because someone deleted it last week.",
+      "exampleKo": "지난주에 누가 삭제해서 그 파일은 이제 존재하지 않아요.",
+      "note": "exist는 자동사라 수동태로 쓰지 않으며, 'is existed'는 틀린 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "generate",
+      "ipa": "/ˈdʒenəreɪt/",
+      "pos": "v.",
+      "meaning": "생성하다, 발생시키다",
+      "example": "The script generates a weekly report and sends it to the whole team.",
+      "exampleKo": "그 스크립트가 주간 보고서를 생성해서 팀 전체에 보내요.",
+      "note": "generate a report, generate revenue(수익을 창출하다)처럼 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "imply",
+      "ipa": "/ɪmˈplaɪ/",
+      "pos": "v.",
+      "meaning": "암시하다, 의미하다",
+      "example": "His silence in the meeting seemed to imply that he disagreed with the plan.",
+      "exampleKo": "회의에서 그가 침묵한 건 그 계획에 반대한다는 뜻 같았어요.",
+      "note": "imply는 말하는 사람이 '암시하다', infer는 듣는 사람이 '추론하다'라서 헷갈리지 마세요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "insist",
+      "ipa": "/ɪnˈsɪst/",
+      "pos": "v.",
+      "meaning": "주장하다, 고집하다",
+      "example": "She insisted on paying for dinner even though I offered several times.",
+      "exampleKo": "제가 여러 번 내겠다고 했는데도 그녀가 저녁값을 내겠다고 고집했어요.",
+      "note": "insist on ~ing 또는 insist that 절 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "obtain",
+      "ipa": "/əbˈteɪn/",
+      "pos": "v.",
+      "meaning": "얻다, 획득하다",
+      "example": "You have to obtain approval from your manager before buying new equipment.",
+      "exampleKo": "새 장비를 구입하기 전에 매니저의 승인을 받아야 해요.",
+      "note": "obtain은 get보다 격식 있는 표현으로 obtain permission/approval/a license처럼 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "perform",
+      "ipa": "/pərˈfɔːrm/",
+      "pos": "v.",
+      "meaning": "수행하다",
+      "example": "The database performs much better after we added the right indexes.",
+      "exampleKo": "적절한 인덱스를 추가한 뒤로 데이터베이스 성능이 훨씬 좋아졌어요.",
+      "note": "perform a task/test/check처럼 '수행하다'와 '성능을 내다' 두 의미로 다 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "predict",
+      "ipa": "/prɪˈdɪkt/",
+      "pos": "v.",
+      "meaning": "예측하다",
+      "example": "It's hard to predict how users will react to the new design.",
+      "exampleKo": "사용자들이 새 디자인에 어떻게 반응할지 예측하기 어려워요.",
+      "note": "predict는 근거로 예측하는 것이고, guess는 근거 없이 짐작하는 느낌이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "reflect",
+      "ipa": "/rɪˈflekt/",
+      "pos": "v.",
+      "meaning": "반영하다, 숙고하다",
+      "example": "The final price should reflect the extra work we did for the client.",
+      "exampleKo": "최종 가격에는 고객을 위해 우리가 한 추가 작업이 반영돼야 해요.",
+      "note": "reflect on은 '곰곰이 생각하다', reflect A는 'A를 반영하다'라는 뜻이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "represent",
+      "ipa": "/ˌreprɪˈzent/",
+      "pos": "v.",
+      "meaning": "나타내다, 대표하다",
+      "example": "Each dot on this chart represents one active user in the region.",
+      "exampleKo": "이 차트의 점 하나하나는 해당 지역의 활성 사용자 한 명을 나타내요.",
+      "note": "represent the company(회사를 대표하다)처럼 '대표하다' 의미로도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "reveal",
+      "ipa": "/rɪˈviːl/",
+      "pos": "v.",
+      "meaning": "드러내다, 밝히다",
+      "example": "The survey revealed that most users never open the settings page.",
+      "exampleKo": "설문 결과 대부분의 사용자가 설정 페이지를 한 번도 열지 않는 것으로 드러났어요.",
+      "note": "reveal that 절로 '~라는 사실을 밝히다'라고 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "separate",
+      "ipa": "/ˈsepəreɪt/",
+      "pos": "v.",
+      "meaning": "분리하다",
+      "example": "Try to separate your work email from your personal email to stay organized.",
+      "exampleKo": "정리된 상태를 유지하려면 업무용 이메일과 개인 이메일을 분리해 보세요.",
+      "note": "동사는 /ˈsepəreɪt/, 형용사는 /ˈseprət/로 발음이 달라요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "vary",
+      "ipa": "/ˈveri/",
+      "pos": "v.",
+      "meaning": "달라지다, 다양하다",
+      "example": "Prices vary depending on the season, so check before you book.",
+      "exampleKo": "계절에 따라 가격이 달라지니 예약하기 전에 확인하세요.",
+      "note": "vary depending on ~ / vary by ~ 형태로 많이 쓰고, 형용사형은 various예요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "verify",
+      "ipa": "/ˈverɪfaɪ/",
+      "pos": "v.",
+      "meaning": "검증하다, 확인하다",
+      "example": "Please verify your email address by clicking the link we sent you.",
+      "exampleKo": "저희가 보낸 링크를 클릭해서 이메일 주소를 인증해 주세요.",
+      "note": "verify that 절로 '~인지 확인하다'라고 자주 쓰고, 명사형은 verification이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 동사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "achievement",
+      "ipa": "/əˈtʃiːvmənt/",
+      "pos": "n.",
+      "meaning": "성취, 업적",
+      "example": "Finishing the migration without any downtime was a huge achievement for us.",
+      "exampleKo": "다운타임 없이 마이그레이션을 마친 건 우리에게 큰 성과였어요.",
+      "note": "a great/major achievement처럼 형용사와 함께 자주 쓰고, 동사는 achieve예요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "analysis",
+      "ipa": "/əˈnæləsɪs/",
+      "pos": "n.",
+      "meaning": "분석",
+      "example": "Our analysis shows that most errors happen during peak hours.",
+      "exampleKo": "저희 분석에 따르면 대부분의 오류가 피크 시간대에 발생해요.",
+      "note": "복수형은 analyses이고, do/conduct an analysis로 '분석하다'를 표현해요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "assumption",
+      "ipa": "/əˈsʌmpʃən/",
+      "pos": "n.",
+      "meaning": "가정",
+      "example": "We made the assumption that every user has a stable internet connection.",
+      "exampleKo": "우리는 모든 사용자가 안정적인 인터넷 연결을 가지고 있다고 가정했어요.",
+      "note": "make an assumption(가정하다)이 기본 조합이고, 동사는 assume이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "awareness",
+      "ipa": "/əˈwernəs/",
+      "pos": "n.",
+      "meaning": "인식",
+      "example": "The workshop helped raise awareness of common security risks among new hires.",
+      "exampleKo": "그 워크숍은 신입 사원들 사이에서 흔한 보안 위험에 대한 인식을 높이는 데 도움이 됐어요.",
+      "note": "raise awareness of ~(~에 대한 인식을 높이다)가 가장 흔한 조합이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "circumstance",
+      "ipa": "/ˈsɜːrkəmstæns/",
+      "pos": "n.",
+      "meaning": "상황, 환경",
+      "example": "Under these circumstances, I think it's better to delay the launch.",
+      "exampleKo": "이런 상황에서는 출시를 미루는 게 나을 것 같아요.",
+      "note": "주로 복수형으로 under the circumstances, in any circumstances처럼 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "competition",
+      "ipa": "/ˌkɑːmpəˈtɪʃən/",
+      "pos": "n.",
+      "meaning": "경쟁",
+      "example": "There's a lot of competition in the mobile app market these days.",
+      "exampleKo": "요즘 모바일 앱 시장은 경쟁이 정말 치열해요.",
+      "note": "fierce/tough competition처럼 '치열한 경쟁'을 표현하고, '대회'라는 의미도 있어요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "contribution",
+      "ipa": "/ˌkɑːntrɪˈbjuːʃən/",
+      "pos": "n.",
+      "meaning": "기여",
+      "example": "Thanks to her contribution, we finished the project two weeks early.",
+      "exampleKo": "그녀의 기여 덕분에 프로젝트를 2주 일찍 끝냈어요.",
+      "note": "make a contribution to ~ 형태로 쓰고, 오픈소스 '기여'에도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "convenience",
+      "ipa": "/kənˈviːniəns/",
+      "pos": "n.",
+      "meaning": "편리함",
+      "example": "For your convenience, I've attached the meeting notes to this email.",
+      "exampleKo": "편의를 위해 회의록을 이 이메일에 첨부했어요.",
+      "note": "for your convenience(편의를 위해), at your convenience(편하실 때)를 구분해서 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "expectation",
+      "ipa": "/ˌekspekˈteɪʃən/",
+      "pos": "n.",
+      "meaning": "기대",
+      "example": "The results were far above our expectations for the first month.",
+      "exampleKo": "첫 달 결과가 우리 기대를 훨씬 넘어섰어요.",
+      "note": "meet/exceed expectations(기대를 충족하다/넘어서다)가 자주 쓰는 조합이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "expense",
+      "ipa": "/ɪkˈspens/",
+      "pos": "n.",
+      "meaning": "비용, 지출",
+      "example": "Travel expenses for the conference will be covered by the company.",
+      "exampleKo": "컨퍼런스 출장 경비는 회사에서 지원해 줘요.",
+      "note": "회사 '경비'는 보통 복수형 expenses로 쓰고, at the expense of는 '~을 희생하여'예요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "growth",
+      "ipa": "/ɡroʊθ/",
+      "pos": "n.",
+      "meaning": "성장",
+      "example": "The company saw rapid growth after launching its mobile app.",
+      "exampleKo": "그 회사는 모바일 앱을 출시한 뒤 빠르게 성장했어요.",
+      "note": "rapid/steady growth, personal growth(개인적 성장)처럼 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "influence",
+      "ipa": "/ˈɪnfluəns/",
+      "pos": "n.",
+      "meaning": "영향력",
+      "example": "Her influence on the team's coding culture has been really positive.",
+      "exampleKo": "팀의 코딩 문화에 그녀가 미친 영향은 정말 긍정적이었어요.",
+      "note": "have an influence on ~ 형태로 쓰고, 동사로도 쓰지만 여기선 명사 '영향력'이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "intention",
+      "ipa": "/ɪnˈtenʃən/",
+      "pos": "n.",
+      "meaning": "의도",
+      "example": "I had no intention of offending anyone with that comment.",
+      "exampleKo": "그 말로 누군가를 기분 상하게 할 의도는 전혀 없었어요.",
+      "note": "have no intention of ~ing(~할 의도가 전혀 없다) 형태로 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "requirement",
+      "ipa": "/rɪˈkwaɪərmənt/",
+      "pos": "n.",
+      "meaning": "요구 사항",
+      "example": "Before we start coding, let's make sure we understand every requirement.",
+      "exampleKo": "코딩을 시작하기 전에 모든 요구 사항을 제대로 이해했는지 확인해요.",
+      "note": "meet the requirements(요구 사항을 충족하다)가 자주 쓰는 조합이에요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "shortage",
+      "ipa": "/ˈʃɔːrtɪdʒ/",
+      "pos": "n.",
+      "meaning": "부족",
+      "example": "There's a shortage of experienced engineers in the local job market.",
+      "exampleKo": "지역 채용 시장에 경력 있는 엔지니어가 부족해요.",
+      "note": "a shortage of ~ 형태로 쓰고, lack보다 '수량이 모자람'을 강조해요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "standard",
+      "ipa": "/ˈstændərd/",
+      "pos": "n.",
+      "meaning": "기준, 표준",
+      "example": "Our code has to meet the company's security standards before release.",
+      "exampleKo": "릴리스 전에 우리 코드가 회사 보안 기준을 충족해야 해요.",
+      "note": "meet the standard(기준을 충족하다), industry standard(업계 표준)처럼 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "statement",
+      "ipa": "/ˈsteɪtmənt/",
+      "pos": "n.",
+      "meaning": "진술, 성명, 명세",
+      "example": "The company released an official statement about the data breach this morning.",
+      "exampleKo": "회사가 오늘 아침 데이터 유출에 관한 공식 성명을 발표했어요.",
+      "note": "SQL statement, bank statement(은행 명세서)처럼 분야마다 뜻이 달라져요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "tendency",
+      "ipa": "/ˈtendənsi/",
+      "pos": "n.",
+      "meaning": "경향",
+      "example": "I have a tendency to underestimate how long tasks will take.",
+      "exampleKo": "저는 작업이 얼마나 걸릴지 과소평가하는 경향이 있어요.",
+      "note": "have a tendency to + 동사원형 형태로 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "threat",
+      "ipa": "/θret/",
+      "pos": "n.",
+      "meaning": "위협",
+      "example": "Weak passwords are one of the biggest threats to our system's security.",
+      "exampleKo": "약한 비밀번호는 우리 시스템 보안에 가장 큰 위협 중 하나예요.",
+      "note": "a threat to ~ 형태로 쓰고, security threat(보안 위협)이 IT에서 자주 나와요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "evidence",
+      "ipa": "/ˈevɪdəns/",
+      "pos": "n.",
+      "meaning": "증거, 근거",
+      "example": "There's no evidence that the bug was caused by the latest update.",
+      "exampleKo": "그 버그가 최신 업데이트 때문에 생겼다는 증거는 없어요.",
+      "note": "evidence는 셀 수 없는 명사라 an evidence나 evidences로 쓰지 않아요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "limitation",
+      "ipa": "/ˌlɪmɪˈteɪʃən/",
+      "pos": "n.",
+      "meaning": "한계, 제한",
+      "example": "One limitation of the free plan is that you can only have three projects.",
+      "exampleKo": "무료 요금제의 한계 중 하나는 프로젝트를 세 개만 만들 수 있다는 거예요.",
+      "note": "복수형 limitations로 '한계점들'을 말할 때 많이 써요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "objective",
+      "ipa": "/əbˈdʒektɪv/",
+      "pos": "n.",
+      "meaning": "목표, 목적",
+      "example": "The main objective of this sprint is to improve page load speed.",
+      "exampleKo": "이번 스프린트의 주된 목표는 페이지 로딩 속도를 개선하는 거예요.",
+      "note": "형용사로는 '객관적인'이라는 뜻이니 문맥으로 구분하세요.",
+      "date": "2026-11-26",
+      "topic": "핵심 명사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "absolute",
+      "ipa": "/ˈæbsəluːt/",
+      "pos": "adj.",
+      "meaning": "절대적인",
+      "example": "Keeping customer data safe is an absolute priority for our team.",
+      "exampleKo": "고객 데이터를 안전하게 지키는 건 우리 팀의 절대적인 우선순위예요.",
+      "note": "absolute priority, absolute must처럼 '꼭 필요한'을 강조할 때 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "additional",
+      "ipa": "/əˈdɪʃənəl/",
+      "pos": "adj.",
+      "meaning": "추가적인",
+      "example": "There's an additional fee if you want the package delivered on the same day.",
+      "exampleKo": "당일 배송을 원하시면 추가 요금이 있어요.",
+      "note": "additional cost/information/time처럼 명사 앞에서 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "alternative",
+      "ipa": "/ɔːlˈtɜːrnətɪv/",
+      "pos": "adj.",
+      "meaning": "대안의",
+      "example": "We need an alternative plan in case the vendor misses the deadline.",
+      "exampleKo": "업체가 마감을 놓칠 경우를 대비해 대안 계획이 필요해요.",
+      "note": "명사로도 써서 There's no alternative(대안이 없다)처럼 말할 수 있어요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "apparent",
+      "ipa": "/əˈpærənt/",
+      "pos": "adj.",
+      "meaning": "명백한, 겉으로 드러나는",
+      "example": "It soon became apparent that the new system was too slow for our needs.",
+      "exampleKo": "새 시스템이 우리 필요에 비해 너무 느리다는 게 곧 분명해졌어요.",
+      "note": "It became apparent that ~(~가 분명해졌다) 형태로 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "average",
+      "ipa": "/ˈævərɪdʒ/",
+      "pos": "adj.",
+      "meaning": "평균의",
+      "example": "The average response time dropped to under 200 milliseconds this week.",
+      "exampleKo": "이번 주 평균 응답 시간이 200밀리초 미만으로 떨어졌어요.",
+      "note": "on average(평균적으로)라는 표현도 함께 알아 두세요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "broad",
+      "ipa": "/brɔːd/",
+      "pos": "adj.",
+      "meaning": "폭넓은",
+      "example": "She has a broad range of experience in both frontend and backend development.",
+      "exampleKo": "그녀는 프론트엔드와 백엔드 개발 모두에서 폭넓은 경험이 있어요.",
+      "note": "a broad range of ~(폭넓은 범위의 ~), in broad terms(대략적으로)처럼 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "considerable",
+      "ipa": "/kənˈsɪdərəbəl/",
+      "pos": "adj.",
+      "meaning": "상당한",
+      "example": "The redesign took a considerable amount of time, but users love it.",
+      "exampleKo": "리디자인에 상당한 시간이 걸렸지만 사용자들이 정말 좋아해요.",
+      "note": "considerable amount/time/effort처럼 쓰고, considerate(배려심 있는)와 헷갈리지 마세요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "crucial",
+      "ipa": "/ˈkruːʃəl/",
+      "pos": "adj.",
+      "meaning": "매우 중요한",
+      "example": "Clear communication is crucial when working with teams in different time zones.",
+      "exampleKo": "다른 시간대의 팀과 일할 땐 명확한 소통이 매우 중요해요.",
+      "note": "It's crucial that/to ~ 형태로 쓰고, important보다 훨씬 강한 느낌이에요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "diverse",
+      "ipa": "/daɪˈvɜːrs/",
+      "pos": "adj.",
+      "meaning": "다양한",
+      "example": "Our team is very diverse, with members from six different countries.",
+      "exampleKo": "우리 팀은 6개국 출신 멤버로 구성돼 매우 다양해요.",
+      "note": "명사형 diversity도 회사 문화 이야기에서 자주 나와요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "dramatic",
+      "ipa": "/drəˈmætɪk/",
+      "pos": "adj.",
+      "meaning": "극적인",
+      "example": "There was a dramatic increase in sign-ups after the campaign started.",
+      "exampleKo": "캠페인을 시작한 뒤로 가입자가 극적으로 늘었어요.",
+      "note": "dramatic increase/drop/change처럼 큰 변화를 말할 때 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "evident",
+      "ipa": "/ˈevɪdənt/",
+      "pos": "adj.",
+      "meaning": "분명한",
+      "example": "It was evident from her face that she hadn't slept much.",
+      "exampleKo": "그녀 얼굴을 보니 잠을 별로 못 잤다는 게 분명했어요.",
+      "note": "It is evident that ~ 형태로 쓰며, obvious보다 조금 격식 있는 느낌이에요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "internal",
+      "ipa": "/ɪnˈtɜːrnəl/",
+      "pos": "adj.",
+      "meaning": "내부의",
+      "example": "This document is for internal use only, so please don't share it outside.",
+      "exampleKo": "이 문서는 내부용이니 외부에 공유하지 마세요.",
+      "note": "반대말은 external이고, internal tool/meeting/server처럼 IT에서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "reasonable",
+      "ipa": "/ˈriːzənəbəl/",
+      "pos": "adj.",
+      "meaning": "합리적인",
+      "example": "The price seems reasonable for a hotel this close to the airport.",
+      "exampleKo": "공항과 이렇게 가까운 호텔치고 가격이 합리적인 것 같아요.",
+      "note": "reasonable price(적당한 가격), reasonable request(무리 없는 요청)처럼 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "sufficient",
+      "ipa": "/səˈfɪʃənt/",
+      "pos": "adj.",
+      "meaning": "충분한",
+      "example": "We don't have sufficient data yet to draw any real conclusions.",
+      "exampleKo": "아직 제대로 된 결론을 내리기엔 데이터가 충분하지 않아요.",
+      "note": "sufficient for/to ~ 형태로 쓰고, enough보다 격식 있는 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "unexpected",
+      "ipa": "/ˌʌnɪkˈspektɪd/",
+      "pos": "adj.",
+      "meaning": "예상치 못한",
+      "example": "We ran into an unexpected issue right before the release.",
+      "exampleKo": "릴리스 직전에 예상치 못한 문제가 생겼어요.",
+      "note": "unexpected error/result/visit처럼 쓰고, 부사형은 unexpectedly예요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "apparently",
+      "ipa": "/əˈpærəntli/",
+      "pos": "adv.",
+      "meaning": "보아하니, 겉보기에는",
+      "example": "Apparently, the meeting has been moved to Thursday afternoon.",
+      "exampleKo": "듣자 하니 회의가 목요일 오후로 옮겨졌대요.",
+      "note": "apparently는 '듣자 하니/보아하니'라는 뜻으로 전해 들은 이야기를 말할 때 많이 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "approximately",
+      "ipa": "/əˈprɑːksɪmətli/",
+      "pos": "adv.",
+      "meaning": "대략, 약",
+      "example": "The migration will take approximately three hours to complete.",
+      "exampleKo": "마이그레이션을 완료하는 데 대략 3시간 걸릴 거예요.",
+      "note": "about보다 격식 있는 표현이라 보고서나 공지에 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "certainly",
+      "ipa": "/ˈsɜːrtənli/",
+      "pos": "adv.",
+      "meaning": "확실히",
+      "example": "This approach is certainly faster, but it's harder to maintain.",
+      "exampleKo": "이 방식이 확실히 더 빠르긴 하지만 유지보수가 더 어려워요.",
+      "note": "요청에 대한 대답으로 Certainly!(물론이죠)라고도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "consequently",
+      "ipa": "/ˈkɑːnsəkwentli/",
+      "pos": "adv.",
+      "meaning": "결과적으로",
+      "example": "The server was overloaded, and consequently, the site went down for an hour.",
+      "exampleKo": "서버에 과부하가 걸렸고, 그 결과 사이트가 한 시간 동안 다운됐어요.",
+      "note": "as a result와 비슷하며, 글이나 보고서에서 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "eventually",
+      "ipa": "/ɪˈventʃuəli/",
+      "pos": "adv.",
+      "meaning": "결국, 마침내",
+      "example": "We eventually found the bug after debugging for six hours.",
+      "exampleKo": "여섯 시간 디버깅한 끝에 결국 버그를 찾았어요.",
+      "note": "eventually는 '결국(시간이 지나서)'이란 뜻이며, '혹시'라는 의미는 없어요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "extremely",
+      "ipa": "/ɪkˈstriːmli/",
+      "pos": "adv.",
+      "meaning": "극도로",
+      "example": "The new laptop is extremely light, so it's easy to carry around.",
+      "exampleKo": "새 노트북은 엄청 가벼워서 들고 다니기 편해요.",
+      "note": "very보다 강한 강조로 extremely important/difficult처럼 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "hardly",
+      "ipa": "/ˈhɑːrdli/",
+      "pos": "adv.",
+      "meaning": "거의 ~않다",
+      "example": "I could hardly hear him because the connection kept cutting out.",
+      "exampleKo": "연결이 계속 끊겨서 그의 말이 거의 들리지 않았어요.",
+      "note": "hardly 자체가 부정 의미라 not과 함께 쓰지 않으며, hard(열심히)와 뜻이 달라요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "merely",
+      "ipa": "/ˈmɪrli/",
+      "pos": "adv.",
+      "meaning": "단지, 그저",
+      "example": "I'm merely suggesting another option, not criticizing your idea.",
+      "exampleKo": "당신 아이디어를 비판하는 게 아니라 그저 다른 옵션을 제안하는 거예요.",
+      "note": "merely는 just/only의 격식 있는 표현이에요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "otherwise",
+      "ipa": "/ˈʌðərwaɪz/",
+      "pos": "adv.",
+      "meaning": "그렇지 않으면, 다른 방식으로",
+      "example": "Save your work often; otherwise, you might lose everything if it crashes.",
+      "exampleKo": "작업을 자주 저장하세요. 그렇지 않으면 충돌 시 전부 잃을 수 있어요.",
+      "note": "'그렇지 않으면' 외에 '그 외에는'(Otherwise, it's fine)의 의미도 있어요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
+    },
+    {
+      "word": "particularly",
+      "ipa": "/pərˈtɪkjələrli/",
+      "pos": "adv.",
+      "meaning": "특히",
+      "example": "I particularly liked the part of the presentation about user feedback.",
+      "exampleKo": "발표 중에서 특히 사용자 피드백에 관한 부분이 좋았어요.",
+      "note": "especially와 비슷하고, not particularly(별로 ~않다)도 자주 써요.",
+      "date": "2026-11-26",
+      "topic": "형용사·부사",
+      "set": "Set 8 · 심화 단어"
     }
   ],
 
@@ -49385,6 +52325,8078 @@ window.CONTENT = {
       "hints": [
         "even though",
         "birthday party"
+      ]
+    },
+    {
+      "id": "it-2086",
+      "type": "it",
+      "src": "w:adjust",
+      "ko": "이 설정값 좀 조정해 줄 수 있어요?",
+      "en": "Could you adjust these config values for me?",
+      "hints": [
+        "adjust",
+        "config"
+      ]
+    },
+    {
+      "id": "it-2087",
+      "type": "it",
+      "src": "w:adjust",
+      "ko": "트래픽에 맞춰서 서버 용량을 조정했어요.",
+      "en": "We adjusted the server capacity to match the traffic.",
+      "hints": [
+        "adjust",
+        "capacity"
+      ]
+    },
+    {
+      "id": "life-1336",
+      "type": "life",
+      "src": "w:adjust",
+      "ko": "새 동네에 적응하는 데 시간이 좀 걸렸어.",
+      "en": "It took me a while to adjust to the new neighborhood.",
+      "hints": [
+        "adjust",
+        "neighborhood"
+      ]
+    },
+    {
+      "id": "it-2088",
+      "type": "it",
+      "src": "w:admit",
+      "ko": "제 코드에 버그가 있었다는 거 인정해요.",
+      "en": "I admit there was a bug in my code.",
+      "hints": [
+        "admit",
+        "bug"
+      ]
+    },
+    {
+      "id": "it-2089",
+      "type": "it",
+      "src": "w:admit",
+      "ko": "그 팀이 실수를 인정했어요?",
+      "en": "Did the team admit their mistake?",
+      "hints": [
+        "admit",
+        "mistake"
+      ]
+    },
+    {
+      "id": "life-1337",
+      "type": "life",
+      "src": "w:admit",
+      "ko": "솔직히 그 영화 좀 지루했다는 건 인정할게.",
+      "en": "I have to admit the movie was a little boring.",
+      "hints": [
+        "admit",
+        "boring"
+      ]
+    },
+    {
+      "id": "it-2090",
+      "type": "it",
+      "src": "w:announce",
+      "ko": "새 버전 출시는 다음 주 월요일에 발표할 거예요.",
+      "en": "We'll announce the new release next Monday.",
+      "hints": [
+        "announce",
+        "release"
+      ]
+    },
+    {
+      "id": "it-2091",
+      "type": "it",
+      "src": "w:announce",
+      "ko": "조직 개편은 언제 발표한대요?",
+      "en": "When are they going to announce the reorganization?",
+      "hints": [
+        "announce",
+        "reorganization"
+      ]
+    },
+    {
+      "id": "life-1338",
+      "type": "life",
+      "src": "w:announce",
+      "ko": "걔가 저녁 먹다가 약혼했다고 발표했어.",
+      "en": "She announced her engagement at dinner.",
+      "hints": [
+        "announce",
+        "engagement"
+      ]
+    },
+    {
+      "id": "it-2092",
+      "type": "it",
+      "src": "w:apply",
+      "ko": "이 변경사항을 운영 서버에도 적용했어요?",
+      "en": "Did you apply these changes to the production server?",
+      "hints": [
+        "apply",
+        "production"
+      ]
+    },
+    {
+      "id": "it-2093",
+      "type": "it",
+      "src": "w:apply",
+      "ko": "이 규칙은 내부 API에는 적용되지 않아요.",
+      "en": "This rule doesn't apply to internal APIs.",
+      "hints": [
+        "apply",
+        "rule"
+      ]
+    },
+    {
+      "id": "life-1339",
+      "type": "life",
+      "src": "w:apply",
+      "ko": "나 다음 달에 비자 신청하려고.",
+      "en": "I'm going to apply for a visa next month.",
+      "hints": [
+        "apply",
+        "visa"
+      ]
+    },
+    {
+      "id": "it-2094",
+      "type": "it",
+      "src": "w:arrange",
+      "ko": "클라이언트랑 통화 일정 잡아 둘게요.",
+      "en": "I'll arrange a call with the client.",
+      "hints": [
+        "arrange",
+        "call"
+      ]
+    },
+    {
+      "id": "it-2095",
+      "type": "it",
+      "src": "w:arrange",
+      "ko": "제가 데모 일정 잡아 드릴까요?",
+      "en": "Should I arrange a demo for them?",
+      "hints": [
+        "arrange",
+        "demo"
+      ]
+    },
+    {
+      "id": "life-1340",
+      "type": "life",
+      "src": "w:arrange",
+      "ko": "책들을 크기별로 정리해 놨어.",
+      "en": "I arranged the books by size.",
+      "hints": [
+        "arrange",
+        "size"
+      ]
+    },
+    {
+      "id": "it-2096",
+      "type": "it",
+      "src": "w:assume",
+      "ko": "입력값이 항상 유효하다고 가정하면 안 돼요.",
+      "en": "We shouldn't assume the input is always valid.",
+      "hints": [
+        "assume",
+        "input"
+      ]
+    },
+    {
+      "id": "it-2097",
+      "type": "it",
+      "src": "w:assume",
+      "ko": "일단 사용자가 만 명이라고 가정해 봅시다.",
+      "en": "Let's assume we have ten thousand users.",
+      "hints": [
+        "assume",
+        "users"
+      ]
+    },
+    {
+      "id": "life-1341",
+      "type": "life",
+      "src": "w:assume",
+      "ko": "너 벌써 저녁 먹은 줄 알았는데, 아니야?",
+      "en": "I assumed you already had dinner. Didn't you?",
+      "hints": [
+        "assume",
+        "dinner"
+      ]
+    },
+    {
+      "id": "it-2098",
+      "type": "it",
+      "src": "w:attend",
+      "ko": "저 내일 아침 스탠드업 미팅 참석 못 해요.",
+      "en": "I can't attend tomorrow morning's stand-up meeting.",
+      "hints": [
+        "attend",
+        "meeting"
+      ]
+    },
+    {
+      "id": "it-2099",
+      "type": "it",
+      "src": "w:attend",
+      "ko": "이번 분기 리뷰 회의에 참석하실 거예요?",
+      "en": "Are you going to attend the quarterly review?",
+      "hints": [
+        "attend",
+        "review"
+      ]
+    },
+    {
+      "id": "life-1342",
+      "type": "life",
+      "src": "w:attend",
+      "ko": "주말에 친구 결혼식에 참석했어.",
+      "en": "I attended my friend's wedding over the weekend.",
+      "hints": [
+        "attend",
+        "wedding"
+      ]
+    },
+    {
+      "id": "it-2100",
+      "type": "it",
+      "src": "w:compare",
+      "ko": "두 브랜치의 성능을 비교해 봤어요.",
+      "en": "I compared the performance of the two branches.",
+      "hints": [
+        "compare",
+        "performance"
+      ]
+    },
+    {
+      "id": "it-2101",
+      "type": "it",
+      "src": "w:compare",
+      "ko": "이전 버전이랑 비교해 줄 수 있어요?",
+      "en": "Can you compare it with the previous version?",
+      "hints": [
+        "compare",
+        "version"
+      ]
+    },
+    {
+      "id": "life-1343",
+      "type": "life",
+      "src": "w:compare",
+      "ko": "사기 전에 가격 비교 좀 해 봐.",
+      "en": "Compare the prices before you buy it.",
+      "hints": [
+        "compare",
+        "price"
+      ]
+    },
+    {
+      "id": "it-2102",
+      "type": "it",
+      "src": "w:complain",
+      "ko": "고객들이 로그인 문제로 계속 불만을 제기하고 있어요.",
+      "en": "Customers keep complaining about the login issue.",
+      "hints": [
+        "complain",
+        "login"
+      ]
+    },
+    {
+      "id": "it-2103",
+      "type": "it",
+      "src": "w:complain",
+      "ko": "누가 새 UI에 대해 불평했어요?",
+      "en": "Did anyone complain about the new UI?",
+      "hints": [
+        "complain",
+        "UI"
+      ]
+    },
+    {
+      "id": "life-1344",
+      "type": "life",
+      "src": "w:complain",
+      "ko": "그만 좀 불평하고 그냥 해.",
+      "en": "Stop complaining and just do it.",
+      "hints": [
+        "complain",
+        "stop"
+      ]
+    },
+    {
+      "id": "it-2104",
+      "type": "it",
+      "src": "w:confirm",
+      "ko": "배포 시간 다시 한번 확인해 줄 수 있어요?",
+      "en": "Can you confirm the deployment time again?",
+      "hints": [
+        "confirm",
+        "deployment"
+      ]
+    },
+    {
+      "id": "it-2105",
+      "type": "it",
+      "src": "w:confirm",
+      "ko": "QA팀이 버그가 고쳐졌다고 확인해 줬어요.",
+      "en": "The QA team confirmed that the bug was fixed.",
+      "hints": [
+        "confirm",
+        "fixed"
+      ]
+    },
+    {
+      "id": "life-1345",
+      "type": "life",
+      "src": "w:confirm",
+      "ko": "레스토랑에 예약 확인 전화했어.",
+      "en": "I called the restaurant to confirm our reservation.",
+      "hints": [
+        "confirm",
+        "reservation"
+      ]
+    },
+    {
+      "id": "it-2106",
+      "type": "it",
+      "src": "w:contain",
+      "ko": "이 로그에 에러 메시지가 들어 있나요?",
+      "en": "Does this log contain any error messages?",
+      "hints": [
+        "contain",
+        "log"
+      ]
+    },
+    {
+      "id": "it-2107",
+      "type": "it",
+      "src": "w:contain",
+      "ko": "이번 릴리스에는 버그 수정 몇 개가 포함돼 있어요.",
+      "en": "This release contains a few bug fixes.",
+      "hints": [
+        "contain",
+        "release"
+      ]
+    },
+    {
+      "id": "life-1346",
+      "type": "life",
+      "src": "w:contain",
+      "ko": "이 과자에 견과류가 들어 있으니까 조심해.",
+      "en": "Be careful, this snack contains nuts.",
+      "hints": [
+        "contain",
+        "nuts"
+      ]
+    },
+    {
+      "id": "it-2108",
+      "type": "it",
+      "src": "w:contribute",
+      "ko": "저는 오픈소스 프로젝트에 기여하고 싶어요.",
+      "en": "I'd like to contribute to open-source projects.",
+      "hints": [
+        "contribute",
+        "open-source"
+      ]
+    },
+    {
+      "id": "it-2109",
+      "type": "it",
+      "src": "w:contribute",
+      "ko": "그 이슈가 장애에 영향을 준 거예요?",
+      "en": "Did that issue contribute to the outage?",
+      "hints": [
+        "contribute",
+        "outage"
+      ]
+    },
+    {
+      "id": "life-1347",
+      "type": "life",
+      "src": "w:contribute",
+      "ko": "스트레스가 수면 부족에 한몫하는 것 같아.",
+      "en": "I think stress contributes to my lack of sleep.",
+      "hints": [
+        "contribute",
+        "stress"
+      ]
+    },
+    {
+      "id": "it-2110",
+      "type": "it",
+      "src": "w:convince",
+      "ko": "팀장님을 설득해서 마감을 연장했어요.",
+      "en": "I convinced my team lead to extend the deadline.",
+      "hints": [
+        "convince",
+        "deadline"
+      ]
+    },
+    {
+      "id": "it-2111",
+      "type": "it",
+      "src": "w:convince",
+      "ko": "어떻게 클라이언트를 설득할 수 있을까요?",
+      "en": "How can we convince the client?",
+      "hints": [
+        "convince",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1348",
+      "type": "life",
+      "src": "w:convince",
+      "ko": "친구가 나를 설득해서 같이 헬스장 등록했어.",
+      "en": "My friend convinced me to sign up for the gym.",
+      "hints": [
+        "convince",
+        "gym"
+      ]
+    },
+    {
+      "id": "it-2112",
+      "type": "it",
+      "src": "w:demonstrate",
+      "ko": "새 기능을 회의에서 직접 보여드릴게요.",
+      "en": "I'll demonstrate the new feature at the meeting.",
+      "hints": [
+        "demonstrate",
+        "feature"
+      ]
+    },
+    {
+      "id": "it-2113",
+      "type": "it",
+      "src": "w:demonstrate",
+      "ko": "이 결과가 캐싱이 효과 있다는 걸 입증해요.",
+      "en": "These results demonstrate that caching works.",
+      "hints": [
+        "demonstrate",
+        "caching"
+      ]
+    },
+    {
+      "id": "life-1349",
+      "type": "life",
+      "src": "w:demonstrate",
+      "ko": "이 기계 어떻게 쓰는지 보여줄 수 있어요?",
+      "en": "Could you demonstrate how to use this machine?",
+      "hints": [
+        "demonstrate",
+        "machine"
+      ]
+    },
+    {
+      "id": "it-2114",
+      "type": "it",
+      "src": "w:describe",
+      "ko": "문제를 좀 더 자세히 설명해 주실 수 있나요?",
+      "en": "Could you describe the problem in more detail?",
+      "hints": [
+        "describe",
+        "detail"
+      ]
+    },
+    {
+      "id": "it-2115",
+      "type": "it",
+      "src": "w:describe",
+      "ko": "티켓에 재현 방법을 설명해 놨어요.",
+      "en": "I described the steps to reproduce it in the ticket.",
+      "hints": [
+        "describe",
+        "reproduce"
+      ]
+    },
+    {
+      "id": "life-1350",
+      "type": "life",
+      "src": "w:describe",
+      "ko": "그 사람 어떻게 생겼는지 설명하기 어려워.",
+      "en": "It's hard to describe what he looks like.",
+      "hints": [
+        "describe",
+        "look like"
+      ]
+    },
+    {
+      "id": "it-2116",
+      "type": "it",
+      "src": "w:discover",
+      "ko": "그 버그 언제 처음 발견했어요?",
+      "en": "When did you first discover the bug?",
+      "hints": [
+        "discover",
+        "bug"
+      ]
+    },
+    {
+      "id": "it-2117",
+      "type": "it",
+      "src": "w:discover",
+      "ko": "테스트 중에 보안 취약점을 발견했어요.",
+      "en": "We discovered a security hole during testing.",
+      "hints": [
+        "discover",
+        "security"
+      ]
+    },
+    {
+      "id": "life-1351",
+      "type": "life",
+      "src": "w:discover",
+      "ko": "회사 근처에서 괜찮은 카페를 발견했어.",
+      "en": "I discovered a nice café near my office.",
+      "hints": [
+        "discover",
+        "café"
+      ]
+    },
+    {
+      "id": "it-2118",
+      "type": "it",
+      "src": "w:encourage",
+      "ko": "우리 팀은 질문하는 걸 장려해요.",
+      "en": "Our team encourages people to ask questions.",
+      "hints": [
+        "encourage",
+        "question"
+      ]
+    },
+    {
+      "id": "it-2119",
+      "type": "it",
+      "src": "w:encourage",
+      "ko": "주니어 개발자들한테 코드 리뷰를 하라고 독려해 주실래요?",
+      "en": "Could you encourage the junior developers to do code reviews?",
+      "hints": [
+        "encourage",
+        "code review"
+      ]
+    },
+    {
+      "id": "life-1352",
+      "type": "life",
+      "src": "w:encourage",
+      "ko": "엄마가 항상 나한테 하고 싶은 걸 하라고 격려해 주셨어.",
+      "en": "My mom always encouraged me to follow my dreams.",
+      "hints": [
+        "encourage",
+        "dream"
+      ]
+    },
+    {
+      "id": "it-2120",
+      "type": "it",
+      "src": "w:establish",
+      "ko": "서버가 데이터베이스와 연결을 맺지 못했어요.",
+      "en": "The server couldn't establish a connection to the database.",
+      "hints": [
+        "establish",
+        "connection"
+      ]
+    },
+    {
+      "id": "it-2121",
+      "type": "it",
+      "src": "w:establish",
+      "ko": "리뷰 프로세스를 먼저 확립하는 게 어때요?",
+      "en": "Why don't we establish a review process first?",
+      "hints": [
+        "establish",
+        "process"
+      ]
+    },
+    {
+      "id": "life-1353",
+      "type": "life",
+      "src": "w:establish",
+      "ko": "그 빵집은 1980년에 세워졌대.",
+      "en": "That bakery was established in 1980.",
+      "hints": [
+        "establish",
+        "bakery"
+      ]
+    },
+    {
+      "id": "it-2122",
+      "type": "it",
+      "src": "w:handle",
+      "ko": "이 함수가 null 값을 처리하나요?",
+      "en": "Does this function handle null values?",
+      "hints": [
+        "handle",
+        "null"
+      ]
+    },
+    {
+      "id": "it-2123",
+      "type": "it",
+      "src": "w:handle",
+      "ko": "걱정 마세요, 그 이슈는 제가 처리할게요.",
+      "en": "Don't worry, I'll handle that issue.",
+      "hints": [
+        "handle",
+        "issue"
+      ]
+    },
+    {
+      "id": "life-1354",
+      "type": "life",
+      "src": "w:handle",
+      "ko": "요즘 스트레스를 잘 감당 못 하겠어.",
+      "en": "I can't handle the stress these days.",
+      "hints": [
+        "handle",
+        "stress"
+      ]
+    },
+    {
+      "id": "it-2124",
+      "type": "it",
+      "src": "w:identify",
+      "ko": "병목 지점을 아직 파악 못 했어요.",
+      "en": "We haven't identified the bottleneck yet.",
+      "hints": [
+        "identify",
+        "bottleneck"
+      ]
+    },
+    {
+      "id": "it-2125",
+      "type": "it",
+      "src": "w:identify",
+      "ko": "어떤 사용자가 영향받았는지 확인할 수 있어요?",
+      "en": "Can you identify which users were affected?",
+      "hints": [
+        "identify",
+        "affected"
+      ]
+    },
+    {
+      "id": "life-1355",
+      "type": "life",
+      "src": "w:identify",
+      "ko": "사진만 보고 그 새를 식별할 수 있었어.",
+      "en": "I was able to identify the bird from the photo.",
+      "hints": [
+        "identify",
+        "bird"
+      ]
+    },
+    {
+      "id": "it-2126",
+      "type": "it",
+      "src": "w:maintain",
+      "ko": "이 라이브러리는 지금 누가 유지보수하고 있어요?",
+      "en": "Who is maintaining this library right now?",
+      "hints": [
+        "maintain",
+        "library"
+      ]
+    },
+    {
+      "id": "it-2127",
+      "type": "it",
+      "src": "w:maintain",
+      "ko": "높은 테스트 커버리지를 유지해야 해요.",
+      "en": "We need to maintain high test coverage.",
+      "hints": [
+        "maintain",
+        "coverage"
+      ]
+    },
+    {
+      "id": "life-1356",
+      "type": "life",
+      "src": "w:maintain",
+      "ko": "건강한 체중을 유지하려고 노력 중이야.",
+      "en": "I'm trying to maintain a healthy weight.",
+      "hints": [
+        "maintain",
+        "weight"
+      ]
+    },
+    {
+      "id": "it-2128",
+      "type": "it",
+      "src": "w:mention",
+      "ko": "회의에서 그 문제를 언급하는 걸 깜빡했어요.",
+      "en": "I forgot to mention that issue in the meeting.",
+      "hints": [
+        "mention",
+        "forget"
+      ]
+    },
+    {
+      "id": "it-2129",
+      "type": "it",
+      "src": "w:mention",
+      "ko": "리포트에 이번 지연은 언급하지 마세요.",
+      "en": "Please don't mention the delay in the report.",
+      "hints": [
+        "mention",
+        "report"
+      ]
+    },
+    {
+      "id": "life-1357",
+      "type": "life",
+      "src": "w:mention",
+      "ko": "걔가 이사 간다는 얘기 했었어?",
+      "en": "Did she mention that she's moving?",
+      "hints": [
+        "mention",
+        "move"
+      ]
+    },
+    {
+      "id": "it-2130",
+      "type": "it",
+      "src": "w:notice",
+      "ko": "응답 시간이 느려진 걸 알아챘어요.",
+      "en": "I noticed that the response time got slower.",
+      "hints": [
+        "notice",
+        "response time"
+      ]
+    },
+    {
+      "id": "it-2131",
+      "type": "it",
+      "src": "w:notice",
+      "ko": "배포 전까지 아무도 그 오타를 알아채지 못했어요.",
+      "en": "Nobody noticed the typo until after the deploy.",
+      "hints": [
+        "notice",
+        "typo"
+      ]
+    },
+    {
+      "id": "life-1358",
+      "type": "life",
+      "src": "w:notice",
+      "ko": "머리 자른 거 알아챘어?",
+      "en": "Did you notice my new haircut?",
+      "hints": [
+        "notice",
+        "haircut"
+      ]
+    },
+    {
+      "id": "it-2132",
+      "type": "it",
+      "src": "w:participate",
+      "ko": "이번 해커톤에 참여하실 거예요?",
+      "en": "Are you going to participate in the hackathon?",
+      "hints": [
+        "participate",
+        "hackathon"
+      ]
+    },
+    {
+      "id": "it-2133",
+      "type": "it",
+      "src": "w:participate",
+      "ko": "그 사람은 항상 회의에 적극적으로 참여해요.",
+      "en": "He always participates actively in our meetings.",
+      "hints": [
+        "participate",
+        "actively"
+      ]
+    },
+    {
+      "id": "life-1359",
+      "type": "life",
+      "src": "w:participate",
+      "ko": "나 지난달에 마라톤 대회에 참가했어.",
+      "en": "I participated in a marathon last month.",
+      "hints": [
+        "participate",
+        "marathon"
+      ]
+    },
+    {
+      "id": "it-2134",
+      "type": "it",
+      "src": "w:prevent",
+      "ko": "이 검증 로직이 중복 결제를 막아 줘요.",
+      "en": "This validation check prevents duplicate payments from going through.",
+      "hints": [
+        "prevent",
+        "duplicate"
+      ]
+    },
+    {
+      "id": "it-2135",
+      "type": "it",
+      "src": "w:prevent",
+      "ko": "같은 장애가 다시 안 생기게 하려면 어떻게 해야 할까요?",
+      "en": "How can we prevent the same outage from happening again?",
+      "hints": [
+        "prevent",
+        "outage"
+      ]
+    },
+    {
+      "id": "life-1360",
+      "type": "life",
+      "src": "w:prevent",
+      "ko": "손을 자주 씻는 게 감기 예방에 도움이 돼.",
+      "en": "Washing your hands often helps prevent colds.",
+      "hints": [
+        "prevent",
+        "cold"
+      ]
+    },
+    {
+      "id": "it-2136",
+      "type": "it",
+      "src": "w:replace",
+      "ko": "이 라이브러리를 더 가벼운 걸로 교체하는 게 어때요?",
+      "en": "Why don't we replace this library with a lighter one?",
+      "hints": [
+        "replace",
+        "lighter"
+      ]
+    },
+    {
+      "id": "it-2137",
+      "type": "it",
+      "src": "w:replace",
+      "ko": "하드코딩된 값을 환경 변수로 대체했어요.",
+      "en": "I replaced the hard-coded values with environment variables.",
+      "hints": [
+        "replace",
+        "environment variable"
+      ]
+    },
+    {
+      "id": "life-1361",
+      "type": "life",
+      "src": "w:replace",
+      "ko": "휴대폰 배터리 갈아야 해.",
+      "en": "I need to replace my phone battery.",
+      "hints": [
+        "replace",
+        "battery"
+      ]
+    },
+    {
+      "id": "it-2138",
+      "type": "it",
+      "src": "w:solve",
+      "ko": "그 메모리 문제 해결했어요?",
+      "en": "Did you solve the memory issue?",
+      "hints": [
+        "solve",
+        "memory"
+      ]
+    },
+    {
+      "id": "it-2139",
+      "type": "it",
+      "src": "w:solve",
+      "ko": "서버를 재시작하는 것만으로는 이 문제가 해결되지 않아요.",
+      "en": "Just restarting the server won't solve this problem.",
+      "hints": [
+        "solve",
+        "restart"
+      ]
+    },
+    {
+      "id": "life-1362",
+      "type": "life",
+      "src": "w:solve",
+      "ko": "나 어젯밤에 퍼즐 다 풀었어.",
+      "en": "I solved the whole puzzle last night.",
+      "hints": [
+        "solve",
+        "puzzle"
+      ]
+    },
+    {
+      "id": "it-2140",
+      "type": "it",
+      "src": "w:ability",
+      "ko": "이 툴은 대용량 파일을 처리하는 능력이 있어요.",
+      "en": "This tool has the ability to handle large files.",
+      "hints": [
+        "ability",
+        "large file"
+      ]
+    },
+    {
+      "id": "it-2141",
+      "type": "it",
+      "src": "w:ability",
+      "ko": "문제 해결 능력이 이 직무에서 제일 중요해요.",
+      "en": "Problem-solving ability is the most important thing for this role.",
+      "hints": [
+        "ability",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "life-1363",
+      "type": "life",
+      "src": "w:ability",
+      "ko": "그 사람은 어떻게 그렇게 빨리 언어를 배우는 능력이 있을까?",
+      "en": "How does he have the ability to learn languages so fast?",
+      "hints": [
+        "ability",
+        "learn"
+      ]
+    },
+    {
+      "id": "it-2142",
+      "type": "it",
+      "src": "w:access",
+      "ko": "저 아직 운영 DB 접근 권한이 없어요.",
+      "en": "I still don't have access to the production database.",
+      "hints": [
+        "access",
+        "production"
+      ]
+    },
+    {
+      "id": "it-2143",
+      "type": "it",
+      "src": "w:access",
+      "ko": "이 저장소 접근 권한 좀 주실 수 있나요?",
+      "en": "Could you give me access to this repository?",
+      "hints": [
+        "access",
+        "repository"
+      ]
+    },
+    {
+      "id": "life-1364",
+      "type": "life",
+      "src": "w:access",
+      "ko": "그 호텔은 해변 접근성이 좋아.",
+      "en": "The hotel has easy access to the beach.",
+      "hints": [
+        "access",
+        "beach"
+      ]
+    },
+    {
+      "id": "it-2144",
+      "type": "it",
+      "src": "w:approach",
+      "ko": "이 문제에 대해 다른 접근 방식을 시도해 봐요.",
+      "en": "Let's try a different approach to this problem.",
+      "hints": [
+        "approach",
+        "different"
+      ]
+    },
+    {
+      "id": "it-2145",
+      "type": "it",
+      "src": "w:approach",
+      "ko": "두 가지 중에 어떤 접근 방식이 더 확장성이 좋을까요?",
+      "en": "Which approach is more scalable in the long run?",
+      "hints": [
+        "approach",
+        "scalable"
+      ]
+    },
+    {
+      "id": "life-1365",
+      "type": "life",
+      "src": "w:approach",
+      "ko": "운동에 대한 네 접근 방식이 마음에 들어.",
+      "en": "I like your approach to working out.",
+      "hints": [
+        "approach",
+        "work out"
+      ]
+    },
+    {
+      "id": "it-2146",
+      "type": "it",
+      "src": "w:attention",
+      "ko": "이 경고 메시지에 주의해 주세요.",
+      "en": "Please pay attention to this warning message.",
+      "hints": [
+        "attention",
+        "pay"
+      ]
+    },
+    {
+      "id": "it-2147",
+      "type": "it",
+      "src": "w:attention",
+      "ko": "이 보안 이슈는 당장 신경 써야 해요.",
+      "en": "This security issue needs our immediate attention.",
+      "hints": [
+        "attention",
+        "immediate"
+      ]
+    },
+    {
+      "id": "life-1366",
+      "type": "life",
+      "src": "w:attention",
+      "ko": "내 말에 집중하고 있어?",
+      "en": "Are you paying attention to what I'm saying?",
+      "hints": [
+        "attention",
+        "pay"
+      ]
+    },
+    {
+      "id": "it-2148",
+      "type": "it",
+      "src": "w:attitude",
+      "ko": "신입 개발자가 배우려는 태도가 정말 좋아요.",
+      "en": "The new developer has a great attitude about learning.",
+      "hints": [
+        "attitude",
+        "learning"
+      ]
+    },
+    {
+      "id": "it-2149",
+      "type": "it",
+      "src": "w:attitude",
+      "ko": "그 클라이언트 태도가 좀 바뀌었어요?",
+      "en": "Has the client's attitude changed at all?",
+      "hints": [
+        "attitude",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1367",
+      "type": "life",
+      "src": "w:attitude",
+      "ko": "그런 태도로는 아무것도 못 바꿔.",
+      "en": "You won't change anything with that attitude.",
+      "hints": [
+        "attitude",
+        "change"
+      ]
+    },
+    {
+      "id": "it-2150",
+      "type": "it",
+      "src": "w:background",
+      "ko": "저는 백엔드 개발 쪽 배경을 가지고 있어요.",
+      "en": "I have a background in back-end development.",
+      "hints": [
+        "background",
+        "back-end"
+      ]
+    },
+    {
+      "id": "it-2151",
+      "type": "it",
+      "src": "w:background",
+      "ko": "이 결정에 대한 배경 좀 설명해 주실래요?",
+      "en": "Could you explain the background of this decision?",
+      "hints": [
+        "background",
+        "decision"
+      ]
+    },
+    {
+      "id": "life-1368",
+      "type": "life",
+      "src": "w:background",
+      "ko": "사진 배경이 너무 예쁘다.",
+      "en": "The background of this photo is so pretty.",
+      "hints": [
+        "background",
+        "photo"
+      ]
+    },
+    {
+      "id": "it-2152",
+      "type": "it",
+      "src": "w:benefit",
+      "ko": "자동화의 가장 큰 이점은 시간을 아끼는 거예요.",
+      "en": "The biggest benefit of automation is saving time.",
+      "hints": [
+        "benefit",
+        "automation"
+      ]
+    },
+    {
+      "id": "it-2153",
+      "type": "it",
+      "src": "w:benefit",
+      "ko": "이 회사 복지 혜택은 어때요?",
+      "en": "What are the benefits like at this company?",
+      "hints": [
+        "benefit",
+        "company"
+      ]
+    },
+    {
+      "id": "life-1369",
+      "type": "life",
+      "src": "w:benefit",
+      "ko": "규칙적인 운동은 이점이 정말 많아.",
+      "en": "Regular exercise has a lot of benefits.",
+      "hints": [
+        "benefit",
+        "exercise"
+      ]
+    },
+    {
+      "id": "it-2154",
+      "type": "it",
+      "src": "w:capacity",
+      "ko": "이번 스프린트에 여유 있어요?",
+      "en": "Do you have capacity this sprint?",
+      "hints": [
+        "capacity",
+        "sprint"
+      ]
+    },
+    {
+      "id": "it-2155",
+      "type": "it",
+      "src": "w:capacity",
+      "ko": "디스크 용량이 거의 다 찼어요.",
+      "en": "We're almost at full disk capacity.",
+      "hints": [
+        "capacity",
+        "disk"
+      ]
+    },
+    {
+      "id": "life-1370",
+      "type": "life",
+      "src": "w:capacity",
+      "ko": "그 공연장은 수용 인원이 2천 명이야.",
+      "en": "The concert hall has a capacity of two thousand people.",
+      "hints": [
+        "capacity",
+        "concert hall"
+      ]
+    },
+    {
+      "id": "it-2156",
+      "type": "it",
+      "src": "w:communication",
+      "ko": "이번 지연은 소통 부족 때문이었어요.",
+      "en": "The delay was caused by a lack of communication.",
+      "hints": [
+        "communication",
+        "lack"
+      ]
+    },
+    {
+      "id": "it-2157",
+      "type": "it",
+      "src": "w:communication",
+      "ko": "원격 팀이랑 소통을 어떻게 개선할 수 있을까요?",
+      "en": "How can we improve communication with the remote team?",
+      "hints": [
+        "communication",
+        "improve"
+      ]
+    },
+    {
+      "id": "life-1371",
+      "type": "life",
+      "src": "w:communication",
+      "ko": "부부 사이엔 소통이 제일 중요해.",
+      "en": "Communication is the most important thing in a marriage.",
+      "hints": [
+        "communication",
+        "marriage"
+      ]
+    },
+    {
+      "id": "it-2158",
+      "type": "it",
+      "src": "w:community",
+      "ko": "이 라이브러리는 커뮤니티 지원이 별로 없어요.",
+      "en": "This library doesn't have much community support.",
+      "hints": [
+        "community",
+        "support"
+      ]
+    },
+    {
+      "id": "it-2159",
+      "type": "it",
+      "src": "w:community",
+      "ko": "개발자 커뮤니티에 질문 올려 봤어요?",
+      "en": "Have you posted the question in the developer community?",
+      "hints": [
+        "community",
+        "post"
+      ]
+    },
+    {
+      "id": "life-1372",
+      "type": "life",
+      "src": "w:community",
+      "ko": "우리 동네는 커뮤니티가 정말 끈끈해.",
+      "en": "Our neighborhood has a really close community.",
+      "hints": [
+        "community",
+        "close"
+      ]
+    },
+    {
+      "id": "it-2160",
+      "type": "it",
+      "src": "w:concern",
+      "ko": "보안 관련해서 우려를 제기하고 싶어요.",
+      "en": "I'd like to raise a concern about security.",
+      "hints": [
+        "concern",
+        "raise"
+      ]
+    },
+    {
+      "id": "it-2161",
+      "type": "it",
+      "src": "w:concern",
+      "ko": "이 일정에 대해 다른 우려 사항 있나요?",
+      "en": "Do you have any other concerns about this schedule?",
+      "hints": [
+        "concern",
+        "schedule"
+      ]
+    },
+    {
+      "id": "life-1373",
+      "type": "life",
+      "src": "w:concern",
+      "ko": "할머니 건강이 제일 걱정이야.",
+      "en": "My biggest concern is my grandma's health.",
+      "hints": [
+        "concern",
+        "health"
+      ]
+    },
+    {
+      "id": "it-2162",
+      "type": "it",
+      "src": "w:confidence",
+      "ko": "발표 후에 자신감이 많이 생겼어요.",
+      "en": "I gained a lot of confidence after the presentation.",
+      "hints": [
+        "confidence",
+        "gain"
+      ]
+    },
+    {
+      "id": "it-2163",
+      "type": "it",
+      "src": "w:confidence",
+      "ko": "이 수정에 대해 얼마나 확신하세요?",
+      "en": "How much confidence do you have in this fix?",
+      "hints": [
+        "confidence",
+        "fix"
+      ]
+    },
+    {
+      "id": "life-1374",
+      "type": "life",
+      "src": "w:confidence",
+      "ko": "칭찬 한마디가 자신감을 정말 키워 줘.",
+      "en": "A single compliment can really boost your confidence.",
+      "hints": [
+        "confidence",
+        "boost"
+      ]
+    },
+    {
+      "id": "it-2164",
+      "type": "it",
+      "src": "w:consequence",
+      "ko": "이 설정을 바꾸면 어떤 결과가 생길까요?",
+      "en": "What are the consequences of changing this setting?",
+      "hints": [
+        "consequence",
+        "setting"
+      ]
+    },
+    {
+      "id": "it-2165",
+      "type": "it",
+      "src": "w:consequence",
+      "ko": "그 결정은 예상하지 못한 결과를 낳았어요.",
+      "en": "That decision had some unexpected consequences.",
+      "hints": [
+        "consequence",
+        "unexpected"
+      ]
+    },
+    {
+      "id": "life-1375",
+      "type": "life",
+      "src": "w:consequence",
+      "ko": "네 행동에는 결과가 따른다는 걸 알아야 해.",
+      "en": "You need to understand that your actions have consequences.",
+      "hints": [
+        "consequence",
+        "action"
+      ]
+    },
+    {
+      "id": "it-2166",
+      "type": "it",
+      "src": "w:context",
+      "ko": "이 티켓에 맥락을 좀 더 추가해 줄 수 있어요?",
+      "en": "Could you add more context to this ticket?",
+      "hints": [
+        "context",
+        "ticket"
+      ]
+    },
+    {
+      "id": "it-2167",
+      "type": "it",
+      "src": "w:context",
+      "ko": "그 메시지는 맥락 없이 읽으면 오해할 수 있어요.",
+      "en": "That message can be misunderstood out of context.",
+      "hints": [
+        "context",
+        "misunderstand"
+      ]
+    },
+    {
+      "id": "life-1376",
+      "type": "life",
+      "src": "w:context",
+      "ko": "그 말은 맥락을 알아야 웃겨.",
+      "en": "That joke is only funny if you know the context.",
+      "hints": [
+        "context",
+        "joke"
+      ]
+    },
+    {
+      "id": "it-2168",
+      "type": "it",
+      "src": "w:customer",
+      "ko": "이 기능은 고객들이 가장 많이 요청한 거예요.",
+      "en": "This is the feature our customers requested the most.",
+      "hints": [
+        "customer",
+        "request"
+      ]
+    },
+    {
+      "id": "it-2169",
+      "type": "it",
+      "src": "w:customer",
+      "ko": "고객 데이터는 절대 로그에 남기면 안 돼요.",
+      "en": "We should never log customer data.",
+      "hints": [
+        "customer",
+        "log"
+      ]
+    },
+    {
+      "id": "life-1377",
+      "type": "life",
+      "src": "w:customer",
+      "ko": "그 가게는 손님이 너무 많아서 줄을 서야 했어?",
+      "en": "Was the shop so busy with customers that you had to wait in line?",
+      "hints": [
+        "customer",
+        "line"
+      ]
+    },
+    {
+      "id": "it-2170",
+      "type": "it",
+      "src": "w:detail",
+      "ko": "자세한 내용은 문서에 정리해 둘게요.",
+      "en": "I'll put the details in the document.",
+      "hints": [
+        "detail",
+        "document"
+      ]
+    },
+    {
+      "id": "it-2171",
+      "type": "it",
+      "src": "w:detail",
+      "ko": "그 에러에 대해 좀 더 자세히 말해 줄래요?",
+      "en": "Can you give me more details about the error?",
+      "hints": [
+        "detail",
+        "error"
+      ]
+    },
+    {
+      "id": "life-1378",
+      "type": "life",
+      "src": "w:detail",
+      "ko": "여행 세부 일정은 아직 안 정했어.",
+      "en": "We haven't decided the details of the trip yet.",
+      "hints": [
+        "detail",
+        "trip"
+      ]
+    },
+    {
+      "id": "it-2172",
+      "type": "it",
+      "src": "w:environment",
+      "ko": "이거 테스트 환경에서 먼저 확인해 봤어요?",
+      "en": "Did you check this in the test environment first?",
+      "hints": [
+        "environment",
+        "test"
+      ]
+    },
+    {
+      "id": "it-2173",
+      "type": "it",
+      "src": "w:environment",
+      "ko": "우리 회사는 일하기 좋은 환경이에요.",
+      "en": "Our company has a great working environment.",
+      "hints": [
+        "environment",
+        "working"
+      ]
+    },
+    {
+      "id": "life-1379",
+      "type": "life",
+      "src": "w:environment",
+      "ko": "환경을 위해서 일회용 컵을 안 쓰려고 해.",
+      "en": "I try not to use disposable cups for the environment.",
+      "hints": [
+        "environment",
+        "disposable"
+      ]
+    },
+    {
+      "id": "it-2174",
+      "type": "it",
+      "src": "w:factor",
+      "ko": "성능 저하의 주요 요인이 뭐였어요?",
+      "en": "What was the main factor behind the slowdown?",
+      "hints": [
+        "factor",
+        "slowdown"
+      ]
+    },
+    {
+      "id": "it-2175",
+      "type": "it",
+      "src": "w:factor",
+      "ko": "보안은 이 선택에서 핵심 요인이에요.",
+      "en": "Security is a key factor in this choice.",
+      "hints": [
+        "factor",
+        "key"
+      ]
+    },
+    {
+      "id": "life-1380",
+      "type": "life",
+      "src": "w:factor",
+      "ko": "날씨가 여행 계획에 큰 요인이었어.",
+      "en": "The weather was a big factor in our travel plans.",
+      "hints": [
+        "factor",
+        "weather"
+      ]
+    },
+    {
+      "id": "it-2176",
+      "type": "it",
+      "src": "w:feature",
+      "ko": "이 기능은 다음 스프린트로 미뤄도 될까요?",
+      "en": "Can we push this feature to the next sprint?",
+      "hints": [
+        "feature",
+        "push"
+      ]
+    },
+    {
+      "id": "it-2177",
+      "type": "it",
+      "src": "w:feature",
+      "ko": "기능 플래그 뒤에 새 기능을 숨겨 놨어요.",
+      "en": "I put the new feature behind a feature flag.",
+      "hints": [
+        "feature",
+        "flag"
+      ]
+    },
+    {
+      "id": "life-1381",
+      "type": "life",
+      "src": "w:feature",
+      "ko": "이 폰 카메라 기능이 진짜 좋아.",
+      "en": "This phone has a really good camera feature.",
+      "hints": [
+        "feature",
+        "camera"
+      ]
+    },
+    {
+      "id": "it-2178",
+      "type": "it",
+      "src": "w:feedback",
+      "ko": "제 PR에 피드백 좀 주실 수 있나요?",
+      "en": "Could you give me some feedback on my PR?",
+      "hints": [
+        "feedback",
+        "PR"
+      ]
+    },
+    {
+      "id": "it-2179",
+      "type": "it",
+      "src": "w:feedback",
+      "ko": "클라이언트한테서 아직 피드백을 못 받았어요.",
+      "en": "We haven't gotten any feedback from the client yet.",
+      "hints": [
+        "feedback",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1382",
+      "type": "life",
+      "src": "w:feedback",
+      "ko": "내 요리에 대해 솔직한 피드백 줘.",
+      "en": "Give me honest feedback on my cooking.",
+      "hints": [
+        "feedback",
+        "honest"
+      ]
+    },
+    {
+      "id": "it-2180",
+      "type": "it",
+      "src": "w:impact",
+      "ko": "이 변경이 다른 서비스에 영향을 줄까요?",
+      "en": "Will this change have an impact on other services?",
+      "hints": [
+        "impact",
+        "service"
+      ]
+    },
+    {
+      "id": "it-2181",
+      "type": "it",
+      "src": "w:impact",
+      "ko": "이번 업데이트는 사용자에게 영향이 거의 없었어요.",
+      "en": "This update had little impact on users.",
+      "hints": [
+        "impact",
+        "little"
+      ]
+    },
+    {
+      "id": "life-1383",
+      "type": "life",
+      "src": "w:impact",
+      "ko": "그 책이 내 인생에 큰 영향을 줬어.",
+      "en": "That book had a big impact on my life.",
+      "hints": [
+        "impact",
+        "life"
+      ]
+    },
+    {
+      "id": "it-2182",
+      "type": "it",
+      "src": "w:method",
+      "ko": "이 메서드는 더 이상 지원되지 않으니까 쓰지 마세요.",
+      "en": "This method is deprecated, so please don't use it.",
+      "hints": [
+        "method",
+        "deprecated"
+      ]
+    },
+    {
+      "id": "it-2183",
+      "type": "it",
+      "src": "w:method",
+      "ko": "더 효율적인 방법이 있을까요?",
+      "en": "Is there a more efficient method?",
+      "hints": [
+        "method",
+        "efficient"
+      ]
+    },
+    {
+      "id": "life-1384",
+      "type": "life",
+      "src": "w:method",
+      "ko": "이 방법으로 영어 단어를 더 빨리 외웠어.",
+      "en": "I memorized English words faster with this method.",
+      "hints": [
+        "method",
+        "memorize"
+      ]
+    },
+    {
+      "id": "it-2184",
+      "type": "it",
+      "src": "w:mistake",
+      "ko": "제가 설정 파일에서 실수를 했어요.",
+      "en": "I made a mistake in the config file.",
+      "hints": [
+        "mistake",
+        "make"
+      ]
+    },
+    {
+      "id": "it-2185",
+      "type": "it",
+      "src": "w:mistake",
+      "ko": "같은 실수를 반복하지 않도록 체크리스트를 만들어요.",
+      "en": "Let's make a checklist so we don't repeat the same mistake.",
+      "hints": [
+        "mistake",
+        "repeat"
+      ]
+    },
+    {
+      "id": "life-1385",
+      "type": "life",
+      "src": "w:mistake",
+      "ko": "실수로 네 우산 가져갔어?",
+      "en": "Did I take your umbrella by mistake?",
+      "hints": [
+        "mistake",
+        "by mistake"
+      ]
+    },
+    {
+      "id": "it-2186",
+      "type": "it",
+      "src": "w:performance",
+      "ko": "이번 분기 성과 평가는 언제예요?",
+      "en": "When is the performance review this quarter?",
+      "hints": [
+        "performance",
+        "review"
+      ]
+    },
+    {
+      "id": "it-2187",
+      "type": "it",
+      "src": "w:performance",
+      "ko": "인덱스를 추가해서 쿼리 성능이 좋아졌어요.",
+      "en": "Query performance improved after we added an index.",
+      "hints": [
+        "performance",
+        "index"
+      ]
+    },
+    {
+      "id": "life-1386",
+      "type": "life",
+      "src": "w:performance",
+      "ko": "어제 그 밴드 공연 진짜 멋졌어.",
+      "en": "The band's performance last night was amazing.",
+      "hints": [
+        "performance",
+        "band"
+      ]
+    },
+    {
+      "id": "it-2188",
+      "type": "it",
+      "src": "w:perspective",
+      "ko": "사용자 관점에서 다시 생각해 봐요.",
+      "en": "Let's think about it from the user's perspective.",
+      "hints": [
+        "perspective",
+        "user"
+      ]
+    },
+    {
+      "id": "it-2189",
+      "type": "it",
+      "src": "w:perspective",
+      "ko": "기획 쪽 관점은 어때요?",
+      "en": "What's the perspective from the product side?",
+      "hints": [
+        "perspective",
+        "product"
+      ]
+    },
+    {
+      "id": "life-1387",
+      "type": "life",
+      "src": "w:perspective",
+      "ko": "여행 가면 세상을 보는 관점이 바뀌어.",
+      "en": "Traveling changes your perspective on the world.",
+      "hints": [
+        "perspective",
+        "travel"
+      ]
+    },
+    {
+      "id": "it-2190",
+      "type": "it",
+      "src": "w:progress",
+      "ko": "프로젝트 진행 상황 좀 업데이트해 줄래요?",
+      "en": "Can you give me an update on the project's progress?",
+      "hints": [
+        "progress",
+        "update"
+      ]
+    },
+    {
+      "id": "it-2191",
+      "type": "it",
+      "src": "w:progress",
+      "ko": "이번 주엔 진척이 별로 없었어요.",
+      "en": "We didn't make much progress this week.",
+      "hints": [
+        "progress",
+        "make"
+      ]
+    },
+    {
+      "id": "life-1388",
+      "type": "life",
+      "src": "w:progress",
+      "ko": "영어 실력이 조금씩 늘고 있어.",
+      "en": "I'm making progress with my English little by little.",
+      "hints": [
+        "progress",
+        "little by little"
+      ]
+    },
+    {
+      "id": "it-2192",
+      "type": "it",
+      "src": "w:quality",
+      "ko": "코드 품질을 어떻게 관리하고 있어요?",
+      "en": "How do you manage code quality?",
+      "hints": [
+        "quality",
+        "manage"
+      ]
+    },
+    {
+      "id": "it-2193",
+      "type": "it",
+      "src": "w:quality",
+      "ko": "이번 출시는 품질이 기대에 못 미쳤어요.",
+      "en": "The quality of this release didn't meet our expectations.",
+      "hints": [
+        "quality",
+        "expectation"
+      ]
+    },
+    {
+      "id": "life-1389",
+      "type": "life",
+      "src": "w:quality",
+      "ko": "이 가방은 비싸지만 품질이 정말 좋아.",
+      "en": "This bag is expensive, but the quality is great.",
+      "hints": [
+        "quality",
+        "expensive"
+      ]
+    },
+    {
+      "id": "it-2194",
+      "type": "it",
+      "src": "w:resource",
+      "ko": "이 프로젝트에 인력을 더 투입할 수 있을까요?",
+      "en": "Can we put more resources on this project?",
+      "hints": [
+        "resource",
+        "put"
+      ]
+    },
+    {
+      "id": "it-2195",
+      "type": "it",
+      "src": "w:resource",
+      "ko": "이 작업은 CPU 자원을 너무 많이 써요.",
+      "en": "This job uses too many CPU resources.",
+      "hints": [
+        "resource",
+        "CPU"
+      ]
+    },
+    {
+      "id": "life-1390",
+      "type": "life",
+      "src": "w:resource",
+      "ko": "도서관은 공부할 때 정말 좋은 자원이야.",
+      "en": "The library is a great resource for studying.",
+      "hints": [
+        "resource",
+        "library"
+      ]
+    },
+    {
+      "id": "it-2196",
+      "type": "it",
+      "src": "w:risk",
+      "ko": "금요일 오후에 배포하는 건 위험이 너무 커요.",
+      "en": "Deploying on Friday afternoon is too much of a risk.",
+      "hints": [
+        "risk",
+        "deploy"
+      ]
+    },
+    {
+      "id": "it-2197",
+      "type": "it",
+      "src": "w:risk",
+      "ko": "이 마이그레이션의 위험 요소가 뭐예요?",
+      "en": "What are the risks of this migration?",
+      "hints": [
+        "risk",
+        "migration"
+      ]
+    },
+    {
+      "id": "life-1391",
+      "type": "life",
+      "src": "w:risk",
+      "ko": "가끔은 위험을 감수해야 해.",
+      "en": "Sometimes you have to take a risk.",
+      "hints": [
+        "risk",
+        "take"
+      ]
+    },
+    {
+      "id": "it-2198",
+      "type": "it",
+      "src": "w:task",
+      "ko": "이 작업 누구한테 할당할까요?",
+      "en": "Who should we assign this task to?",
+      "hints": [
+        "task",
+        "assign"
+      ]
+    },
+    {
+      "id": "it-2199",
+      "type": "it",
+      "src": "w:task",
+      "ko": "오늘 안에 이 작업 끝낼 수 있어요.",
+      "en": "I can finish this task by the end of today.",
+      "hints": [
+        "task",
+        "finish"
+      ]
+    },
+    {
+      "id": "life-1392",
+      "type": "life",
+      "src": "w:task",
+      "ko": "빨래는 내가 제일 싫어하는 집안일이야.",
+      "en": "Laundry is my least favorite household task.",
+      "hints": [
+        "task",
+        "household"
+      ]
+    },
+    {
+      "id": "it-2200",
+      "type": "it",
+      "src": "w:trend",
+      "ko": "요즘 업계 트렌드를 따라가기 쉽지 않아요.",
+      "en": "It's not easy to keep up with industry trends these days.",
+      "hints": [
+        "trend",
+        "keep up with"
+      ]
+    },
+    {
+      "id": "it-2201",
+      "type": "it",
+      "src": "w:trend",
+      "ko": "이번 달 트래픽 추세 확인해 봤어요?",
+      "en": "Have you checked the traffic trend this month?",
+      "hints": [
+        "trend",
+        "traffic"
+      ]
+    },
+    {
+      "id": "life-1393",
+      "type": "life",
+      "src": "w:trend",
+      "ko": "난 패션 유행에 별로 관심 없어.",
+      "en": "I'm not really interested in fashion trends.",
+      "hints": [
+        "trend",
+        "fashion"
+      ]
+    },
+    {
+      "id": "it-2202",
+      "type": "it",
+      "src": "w:accurate",
+      "ko": "이 예상치는 정확하지 않을 수도 있어요.",
+      "en": "This estimate might not be accurate.",
+      "hints": [
+        "accurate",
+        "estimate"
+      ]
+    },
+    {
+      "id": "it-2203",
+      "type": "it",
+      "src": "w:accurate",
+      "ko": "이 대시보드 데이터 정확한 거 맞아요?",
+      "en": "Is the data on this dashboard accurate?",
+      "hints": [
+        "accurate",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "life-1394",
+      "type": "life",
+      "src": "w:accurate",
+      "ko": "일기예보가 요즘 꽤 정확해.",
+      "en": "The weather forecast has been pretty accurate lately.",
+      "hints": [
+        "accurate",
+        "forecast"
+      ]
+    },
+    {
+      "id": "it-2204",
+      "type": "it",
+      "src": "w:beneficial",
+      "ko": "이 변경은 양쪽 팀 모두에게 도움이 될 거예요.",
+      "en": "This change will be beneficial for both teams.",
+      "hints": [
+        "beneficial",
+        "both"
+      ]
+    },
+    {
+      "id": "it-2205",
+      "type": "it",
+      "src": "w:beneficial",
+      "ko": "정기적인 회고가 정말 유익하다고 생각하세요?",
+      "en": "Do you think regular retrospectives are really beneficial?",
+      "hints": [
+        "beneficial",
+        "retrospective"
+      ]
+    },
+    {
+      "id": "life-1395",
+      "type": "life",
+      "src": "w:beneficial",
+      "ko": "아침 산책은 정신 건강에 유익해.",
+      "en": "Morning walks are beneficial for your mental health.",
+      "hints": [
+        "beneficial",
+        "mental health"
+      ]
+    },
+    {
+      "id": "it-2206",
+      "type": "it",
+      "src": "w:capable",
+      "ko": "이 서버는 초당 만 건의 요청을 처리할 수 있어요.",
+      "en": "This server is capable of handling ten thousand requests per second.",
+      "hints": [
+        "capable",
+        "request"
+      ]
+    },
+    {
+      "id": "it-2207",
+      "type": "it",
+      "src": "w:capable",
+      "ko": "그 사람 혼자서 이 프로젝트를 이끌 수 있을까요?",
+      "en": "Is he capable of leading this project on his own?",
+      "hints": [
+        "capable",
+        "lead"
+      ]
+    },
+    {
+      "id": "life-1396",
+      "type": "life",
+      "src": "w:capable",
+      "ko": "넌 생각보다 훨씬 더 많은 걸 할 수 있어.",
+      "en": "You're capable of much more than you think.",
+      "hints": [
+        "capable",
+        "think"
+      ]
+    },
+    {
+      "id": "it-2208",
+      "type": "it",
+      "src": "w:competitive",
+      "ko": "이번 제안서 가격이 경쟁력 있다고 생각하세요?",
+      "en": "Do you think our proposal's price is competitive enough?",
+      "hints": [
+        "competitive",
+        "price"
+      ]
+    },
+    {
+      "id": "it-2209",
+      "type": "it",
+      "src": "w:competitive",
+      "ko": "이 분야 채용 시장이 요즘 정말 경쟁이 치열해요.",
+      "en": "The hiring market in this field is really competitive these days.",
+      "hints": [
+        "competitive",
+        "market"
+      ]
+    },
+    {
+      "id": "life-1397",
+      "type": "life",
+      "src": "w:competitive",
+      "ko": "제 동생은 게임할 때 너무 승부욕이 강해요.",
+      "en": "My brother gets way too competitive when we play games.",
+      "hints": [
+        "competitive"
+      ]
+    },
+    {
+      "id": "it-2210",
+      "type": "it",
+      "src": "w:complex",
+      "ko": "이 로직이 너무 복잡하니까 함수 몇 개로 나눠 주세요.",
+      "en": "This logic is too complex, so please split it into a few functions.",
+      "hints": [
+        "complex",
+        "split"
+      ]
+    },
+    {
+      "id": "it-2211",
+      "type": "it",
+      "src": "w:complex",
+      "ko": "이 기능이 왜 이렇게 복잡해진 거예요?",
+      "en": "Why did this feature become so complex?",
+      "hints": [
+        "complex"
+      ]
+    },
+    {
+      "id": "life-1398",
+      "type": "life",
+      "src": "w:complex",
+      "ko": "세금 신고는 생각보다 그렇게 복잡하지 않았어요.",
+      "en": "Filing my taxes wasn't as complex as I thought.",
+      "hints": [
+        "complex",
+        "taxes"
+      ]
+    },
+    {
+      "id": "it-2212",
+      "type": "it",
+      "src": "w:consistent",
+      "ko": "테스트 결과가 매번 일관되지 않아요.",
+      "en": "The test results aren't consistent every time we run them.",
+      "hints": [
+        "consistent",
+        "results"
+      ]
+    },
+    {
+      "id": "it-2213",
+      "type": "it",
+      "src": "w:consistent",
+      "ko": "이 화면 디자인이 나머지 앱과 일관된가요?",
+      "en": "Is this screen design consistent with the rest of the app?",
+      "hints": [
+        "consistent"
+      ]
+    },
+    {
+      "id": "life-1399",
+      "type": "life",
+      "src": "w:consistent",
+      "ko": "운동은 꾸준히 하는 게 제일 중요해요.",
+      "en": "Being consistent is the most important thing when you work out.",
+      "hints": [
+        "consistent",
+        "work out"
+      ]
+    },
+    {
+      "id": "it-2214",
+      "type": "it",
+      "src": "w:critical",
+      "ko": "이 이슈가 출시에 중요한 건가요?",
+      "en": "Is this issue critical for the release?",
+      "hints": [
+        "critical",
+        "release"
+      ]
+    },
+    {
+      "id": "it-2215",
+      "type": "it",
+      "src": "w:critical",
+      "ko": "고객이 우리 보고서에 꽤 비판적이었어요.",
+      "en": "The client was pretty critical of our report.",
+      "hints": [
+        "critical",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1400",
+      "type": "life",
+      "src": "w:critical",
+      "ko": "자기 자신에게 너무 비판적으로 굴지 마.",
+      "en": "Don't be so critical of yourself.",
+      "hints": [
+        "critical"
+      ]
+    },
+    {
+      "id": "it-2216",
+      "type": "it",
+      "src": "w:current",
+      "ko": "현재 배포된 버전이 뭐예요?",
+      "en": "What's the current version in production?",
+      "hints": [
+        "current",
+        "version"
+      ]
+    },
+    {
+      "id": "it-2217",
+      "type": "it",
+      "src": "w:current",
+      "ko": "현재 일정으로는 금요일까지 끝내기 어려워요.",
+      "en": "With the current schedule, it's hard to finish by Friday.",
+      "hints": [
+        "current",
+        "schedule"
+      ]
+    },
+    {
+      "id": "life-1401",
+      "type": "life",
+      "src": "w:current",
+      "ko": "지금 사는 집이 회사에서 너무 멀어요.",
+      "en": "My current place is too far from the office.",
+      "hints": [
+        "current"
+      ]
+    },
+    {
+      "id": "it-2218",
+      "type": "it",
+      "src": "w:dependent",
+      "ko": "이 서비스는 레거시 데이터베이스에 너무 의존하고 있어요.",
+      "en": "This service is too dependent on the legacy database.",
+      "hints": [
+        "dependent",
+        "legacy"
+      ]
+    },
+    {
+      "id": "it-2219",
+      "type": "it",
+      "src": "w:dependent",
+      "ko": "이 작업이 다른 팀 작업에 의존하나요?",
+      "en": "Is this task dependent on the other team's work?",
+      "hints": [
+        "dependent"
+      ]
+    },
+    {
+      "id": "life-1402",
+      "type": "life",
+      "src": "w:dependent",
+      "ko": "요즘 커피에 너무 의존하는 것 같아요.",
+      "en": "I feel like I'm too dependent on coffee lately.",
+      "hints": [
+        "dependent",
+        "coffee"
+      ]
+    },
+    {
+      "id": "it-2220",
+      "type": "it",
+      "src": "w:flexible",
+      "ko": "마감일은 좀 유연하게 조정할 수 있어요.",
+      "en": "We can be a little flexible with the deadline.",
+      "hints": [
+        "flexible",
+        "deadline"
+      ]
+    },
+    {
+      "id": "it-2221",
+      "type": "it",
+      "src": "w:flexible",
+      "ko": "이 설정을 더 유연하게 만들 수 있을까요?",
+      "en": "Can we make this configuration more flexible?",
+      "hints": [
+        "flexible",
+        "configuration"
+      ]
+    },
+    {
+      "id": "life-1403",
+      "type": "life",
+      "src": "w:flexible",
+      "ko": "저는 저녁 약속 시간은 유연해요.",
+      "en": "I'm flexible about the time for dinner.",
+      "hints": [
+        "flexible"
+      ]
+    },
+    {
+      "id": "it-2222",
+      "type": "it",
+      "src": "w:independent",
+      "ko": "이 모듈들은 서로 독립적으로 동작해야 해요.",
+      "en": "These modules should work independent of each other.",
+      "hints": [
+        "independent"
+      ]
+    },
+    {
+      "id": "it-2223",
+      "type": "it",
+      "src": "w:independent",
+      "ko": "이 테스트들은 서로 독립적인가요?",
+      "en": "Are these tests independent from each other?",
+      "hints": [
+        "independent",
+        "tests"
+      ]
+    },
+    {
+      "id": "life-1404",
+      "type": "life",
+      "src": "w:independent",
+      "ko": "대학 가고 나서 훨씬 독립적이 됐어요.",
+      "en": "I became much more independent after I went to college.",
+      "hints": [
+        "independent"
+      ]
+    },
+    {
+      "id": "it-2224",
+      "type": "it",
+      "src": "w:limited",
+      "ko": "이번 분기 예산이 제한적이라 사람을 더 뽑을 수 없어요.",
+      "en": "Our budget is limited this quarter, so we can't hire more people.",
+      "hints": [
+        "limited",
+        "budget"
+      ]
+    },
+    {
+      "id": "it-2225",
+      "type": "it",
+      "src": "w:limited",
+      "ko": "무료 플랜은 기능이 제한되어 있나요?",
+      "en": "Is the free plan limited in features?",
+      "hints": [
+        "limited",
+        "free plan"
+      ]
+    },
+    {
+      "id": "life-1405",
+      "type": "life",
+      "src": "w:limited",
+      "ko": "이 세일은 한정 기간 동안만 해요.",
+      "en": "This sale is only for a limited time.",
+      "hints": [
+        "limited",
+        "sale"
+      ]
+    },
+    {
+      "id": "it-2226",
+      "type": "it",
+      "src": "w:minor",
+      "ko": "코드 리뷰에서 사소한 코멘트 몇 개만 남겼어요.",
+      "en": "I only left a few minor comments in the code review.",
+      "hints": [
+        "minor",
+        "comments"
+      ]
+    },
+    {
+      "id": "it-2227",
+      "type": "it",
+      "src": "w:minor",
+      "ko": "이거 사소한 버그인가요, 아니면 심각한 건가요?",
+      "en": "Is this a minor bug or a serious one?",
+      "hints": [
+        "minor",
+        "bug"
+      ]
+    },
+    {
+      "id": "life-1406",
+      "type": "life",
+      "src": "w:minor",
+      "ko": "사소한 감기라서 금방 나을 거예요.",
+      "en": "It's just a minor cold, so I'll get better soon.",
+      "hints": [
+        "minor",
+        "cold"
+      ]
+    },
+    {
+      "id": "it-2228",
+      "type": "it",
+      "src": "w:overall",
+      "ko": "이번 분기 전반적인 성과는 어땠어요?",
+      "en": "How was the overall performance this quarter?",
+      "hints": [
+        "overall",
+        "performance"
+      ]
+    },
+    {
+      "id": "it-2229",
+      "type": "it",
+      "src": "w:overall",
+      "ko": "전반적인 일정은 아직 순조로워요.",
+      "en": "The overall timeline is still on track.",
+      "hints": [
+        "overall",
+        "on track"
+      ]
+    },
+    {
+      "id": "life-1407",
+      "type": "life",
+      "src": "w:overall",
+      "ko": "여행의 전반적인 경험은 정말 좋았어요.",
+      "en": "The overall experience of the trip was really great.",
+      "hints": [
+        "overall",
+        "trip"
+      ]
+    },
+    {
+      "id": "it-2230",
+      "type": "it",
+      "src": "w:particular",
+      "ko": "이 버그는 특정 브라우저에서만 발생해요.",
+      "en": "This bug only happens in a particular browser.",
+      "hints": [
+        "particular",
+        "browser"
+      ]
+    },
+    {
+      "id": "it-2231",
+      "type": "it",
+      "src": "w:particular",
+      "ko": "특별히 먼저 리뷰받고 싶은 부분이 있어요?",
+      "en": "Is there a particular part you want me to review first?",
+      "hints": [
+        "particular",
+        "review"
+      ]
+    },
+    {
+      "id": "life-1408",
+      "type": "life",
+      "src": "w:particular",
+      "ko": "저는 음식에 대해 특별히 가리는 건 없어요.",
+      "en": "I'm not really particular about what I eat.",
+      "hints": [
+        "particular"
+      ]
+    },
+    {
+      "id": "it-2232",
+      "type": "it",
+      "src": "w:potential",
+      "ko": "이 변경사항이 잠재적인 보안 문제를 일으킬 수 있어요.",
+      "en": "This change could cause a potential security issue.",
+      "hints": [
+        "potential",
+        "security"
+      ]
+    },
+    {
+      "id": "it-2233",
+      "type": "it",
+      "src": "w:potential",
+      "ko": "다음 주에 잠재 고객이랑 미팅이 있어요.",
+      "en": "We have a meeting with a potential client next week.",
+      "hints": [
+        "potential",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1409",
+      "type": "life",
+      "src": "w:potential",
+      "ko": "이 동네에서 이사 갈 만한 집 좀 봤어요?",
+      "en": "Have you seen any potential places to move to in this area?",
+      "hints": [
+        "potential",
+        "move"
+      ]
+    },
+    {
+      "id": "it-2234",
+      "type": "it",
+      "src": "w:relevant",
+      "ko": "이 질문은 오늘 회의 주제랑 관련이 없어요.",
+      "en": "This question isn't relevant to today's meeting.",
+      "hints": [
+        "relevant",
+        "meeting"
+      ]
+    },
+    {
+      "id": "it-2235",
+      "type": "it",
+      "src": "w:relevant",
+      "ko": "관련 있는 문서 링크 좀 공유해 줄 수 있어요?",
+      "en": "Could you share the links to the relevant documents?",
+      "hints": [
+        "relevant",
+        "documents"
+      ]
+    },
+    {
+      "id": "life-1410",
+      "type": "life",
+      "src": "w:relevant",
+      "ko": "이력서에는 관련 있는 경험만 적는 게 좋아요.",
+      "en": "It's better to put only relevant experience on your résumé.",
+      "hints": [
+        "relevant",
+        "experience"
+      ]
+    },
+    {
+      "id": "it-2236",
+      "type": "it",
+      "src": "w:significant",
+      "ko": "이번 리팩터링으로 상당한 성능 향상이 있었어요.",
+      "en": "This refactoring brought a significant performance improvement.",
+      "hints": [
+        "significant",
+        "improvement"
+      ]
+    },
+    {
+      "id": "it-2237",
+      "type": "it",
+      "src": "w:significant",
+      "ko": "이 지연이 프로젝트에 큰 영향을 줄까요?",
+      "en": "Will this delay have a significant impact on the project?",
+      "hints": [
+        "significant",
+        "impact"
+      ]
+    },
+    {
+      "id": "life-1411",
+      "type": "life",
+      "src": "w:significant",
+      "ko": "오늘은 우리에게 아주 의미 있는 날이에요.",
+      "en": "Today is a really significant day for us.",
+      "hints": [
+        "significant"
+      ]
+    },
+    {
+      "id": "it-2238",
+      "type": "it",
+      "src": "w:temporary",
+      "ko": "임시 비밀번호를 이메일로 보내 드렸어요.",
+      "en": "I sent you a temporary password by email.",
+      "hints": [
+        "temporary",
+        "password"
+      ]
+    },
+    {
+      "id": "it-2239",
+      "type": "it",
+      "src": "w:temporary",
+      "ko": "이 우회 방법은 임시인가요, 아니면 계속 쓸 건가요?",
+      "en": "Is this workaround temporary, or are we keeping it?",
+      "hints": [
+        "temporary",
+        "workaround"
+      ]
+    },
+    {
+      "id": "life-1412",
+      "type": "life",
+      "src": "w:temporary",
+      "ko": "지금 하는 일은 그냥 임시 아르바이트예요.",
+      "en": "My current job is just a temporary part-time job.",
+      "hints": [
+        "temporary",
+        "part-time"
+      ]
+    },
+    {
+      "id": "it-2240",
+      "type": "it",
+      "src": "w:typical",
+      "ko": "이건 메모리 누수의 전형적인 증상이에요.",
+      "en": "This is a typical sign of a memory leak.",
+      "hints": [
+        "typical",
+        "memory leak"
+      ]
+    },
+    {
+      "id": "it-2241",
+      "type": "it",
+      "src": "w:typical",
+      "ko": "개발자의 평범한 하루는 어떤가요?",
+      "en": "What does a typical day look like for a developer?",
+      "hints": [
+        "typical",
+        "day"
+      ]
+    },
+    {
+      "id": "life-1413",
+      "type": "life",
+      "src": "w:typical",
+      "ko": "주말에 늦잠 자는 건 저한테는 흔한 일이에요.",
+      "en": "Sleeping in on weekends is pretty typical for me.",
+      "hints": [
+        "typical",
+        "sleep in"
+      ]
+    },
+    {
+      "id": "it-2242",
+      "type": "it",
+      "src": "w:ultimately",
+      "ko": "결국 이 결정은 팀장님이 하셔야 해요.",
+      "en": "Ultimately, our team lead has to make this decision.",
+      "hints": [
+        "ultimately",
+        "decision"
+      ]
+    },
+    {
+      "id": "it-2243",
+      "type": "it",
+      "src": "w:ultimately",
+      "ko": "결국 그 프로젝트는 어떻게 됐어요?",
+      "en": "What ultimately happened to that project?",
+      "hints": [
+        "ultimately",
+        "happen"
+      ]
+    },
+    {
+      "id": "life-1414",
+      "type": "life",
+      "src": "w:ultimately",
+      "ko": "결국 중요한 건 건강이에요.",
+      "en": "Ultimately, what matters is your health.",
+      "hints": [
+        "ultimately",
+        "matter"
+      ]
+    },
+    {
+      "id": "it-2244",
+      "type": "it",
+      "src": "w:frequently",
+      "ko": "이 테스트는 자주 실패해서 원인을 봐야 해요.",
+      "en": "This test fails frequently, so we need to check why.",
+      "hints": [
+        "frequently",
+        "fail"
+      ]
+    },
+    {
+      "id": "it-2245",
+      "type": "it",
+      "src": "w:frequently",
+      "ko": "이 대시보드 얼마나 자주 업데이트돼요?",
+      "en": "How frequently does this dashboard get updated?",
+      "hints": [
+        "frequently",
+        "update"
+      ]
+    },
+    {
+      "id": "life-1415",
+      "type": "life",
+      "src": "w:frequently",
+      "ko": "저는 출장 때문에 자주 비행기를 타요.",
+      "en": "I frequently fly for business trips.",
+      "hints": [
+        "frequently",
+        "business trip"
+      ]
+    },
+    {
+      "id": "it-2246",
+      "type": "it",
+      "src": "w:gradually",
+      "ko": "트래픽을 점차 새 서버로 옮길 계획이에요.",
+      "en": "We plan to gradually move traffic to the new server.",
+      "hints": [
+        "gradually",
+        "traffic"
+      ]
+    },
+    {
+      "id": "it-2247",
+      "type": "it",
+      "src": "w:gradually",
+      "ko": "응답 속도가 점점 느려지고 있지 않아요?",
+      "en": "Isn't the response time gradually getting slower?",
+      "hints": [
+        "gradually",
+        "response time"
+      ]
+    },
+    {
+      "id": "life-1416",
+      "type": "life",
+      "src": "w:gradually",
+      "ko": "날씨가 점점 따뜻해지고 있어요.",
+      "en": "The weather is gradually getting warmer.",
+      "hints": [
+        "gradually",
+        "warmer"
+      ]
+    },
+    {
+      "id": "it-2248",
+      "type": "it",
+      "src": "w:relatively",
+      "ko": "이 라이브러리는 비교적 새로운 거라 문서가 많지 않아요.",
+      "en": "This library is relatively new, so there isn't much documentation.",
+      "hints": [
+        "relatively",
+        "documentation"
+      ]
+    },
+    {
+      "id": "it-2249",
+      "type": "it",
+      "src": "w:relatively",
+      "ko": "이 작업은 비교적 빨리 끝낼 수 있죠?",
+      "en": "We can finish this task relatively quickly, right?",
+      "hints": [
+        "relatively",
+        "quickly"
+      ]
+    },
+    {
+      "id": "life-1417",
+      "type": "life",
+      "src": "w:relatively",
+      "ko": "이 동네는 집값이 비교적 싸요.",
+      "en": "Rent in this neighborhood is relatively cheap.",
+      "hints": [
+        "relatively",
+        "rent"
+      ]
+    },
+    {
+      "id": "it-2250",
+      "type": "it",
+      "src": "w:directly",
+      "ko": "이 문제는 사용자 경험에 직접적으로 영향을 줘요.",
+      "en": "This issue directly affects the user experience.",
+      "hints": [
+        "directly",
+        "affect"
+      ]
+    },
+    {
+      "id": "it-2251",
+      "type": "it",
+      "src": "w:directly",
+      "ko": "제가 담당자한테 직접 물어봐도 될까요?",
+      "en": "Can I ask the person in charge directly?",
+      "hints": [
+        "directly",
+        "in charge"
+      ]
+    },
+    {
+      "id": "life-1418",
+      "type": "life",
+      "src": "w:directly",
+      "ko": "퇴근하고 바로 집에 갈 거예요.",
+      "en": "I'm going directly home after work.",
+      "hints": [
+        "directly",
+        "home"
+      ]
+    },
+    {
+      "id": "it-2252",
+      "type": "it",
+      "src": "w:roughly",
+      "ko": "이 기능 개발하는 데 대략 얼마나 걸릴까요?",
+      "en": "Roughly how long will it take to build this feature?",
+      "hints": [
+        "roughly",
+        "take"
+      ]
+    },
+    {
+      "id": "it-2253",
+      "type": "it",
+      "src": "w:roughly",
+      "ko": "사용자의 대략 20퍼센트가 아직 구버전을 써요.",
+      "en": "Roughly twenty percent of users are still on the old version.",
+      "hints": [
+        "roughly",
+        "percent"
+      ]
+    },
+    {
+      "id": "life-1419",
+      "type": "life",
+      "src": "w:roughly",
+      "ko": "여기서 공항까지 대략 한 시간 걸려요.",
+      "en": "It takes roughly an hour from here to the airport.",
+      "hints": [
+        "roughly",
+        "airport"
+      ]
+    },
+    {
+      "id": "it-2254",
+      "type": "it",
+      "src": "w:get back",
+      "ko": "회의 끝나고 다시 연락드릴게요.",
+      "en": "I'll get back to you after the meeting.",
+      "hints": [
+        "get back",
+        "meeting"
+      ]
+    },
+    {
+      "id": "it-2255",
+      "type": "it",
+      "src": "w:get back",
+      "ko": "점심 먹고 돌아와서 그 버그 볼게요.",
+      "en": "I'll look at that bug when I get back from lunch.",
+      "hints": [
+        "get back",
+        "lunch"
+      ]
+    },
+    {
+      "id": "life-1420",
+      "type": "life",
+      "src": "w:get back",
+      "ko": "어젯밤 몇 시에 집에 돌아왔어?",
+      "en": "What time did you get back home last night?",
+      "hints": [
+        "get back"
+      ]
+    },
+    {
+      "id": "it-2256",
+      "type": "it",
+      "src": "w:get together",
+      "ko": "배포 전에 팀원들이 다 같이 모여야 해요.",
+      "en": "The whole team needs to get together before the deploy.",
+      "hints": [
+        "get together",
+        "deploy"
+      ]
+    },
+    {
+      "id": "it-2257",
+      "type": "it",
+      "src": "w:get together",
+      "ko": "내일 오후에 잠깐 모여서 디자인 얘기할 수 있어요?",
+      "en": "Can we get together tomorrow afternoon to talk about the design?",
+      "hints": [
+        "get together",
+        "design"
+      ]
+    },
+    {
+      "id": "life-1421",
+      "type": "life",
+      "src": "w:get together",
+      "ko": "우리 가족은 명절마다 모여요.",
+      "en": "My family gets together every holiday.",
+      "hints": [
+        "get together",
+        "holiday"
+      ]
+    },
+    {
+      "id": "it-2258",
+      "type": "it",
+      "src": "w:get over",
+      "ko": "그 장애 사건은 이제 털고 앞으로 나아가야 해요.",
+      "en": "We need to get over that outage and move forward.",
+      "hints": [
+        "get over",
+        "outage"
+      ]
+    },
+    {
+      "id": "it-2259",
+      "type": "it",
+      "src": "w:get over",
+      "ko": "발표 울렁증은 어떻게 극복했어요?",
+      "en": "How did you get over your fear of presenting?",
+      "hints": [
+        "get over",
+        "fear"
+      ]
+    },
+    {
+      "id": "life-1422",
+      "type": "life",
+      "src": "w:get over",
+      "ko": "감기가 아직 다 낫지 않았어요.",
+      "en": "I still haven't gotten over my cold.",
+      "hints": [
+        "get over",
+        "cold"
+      ]
+    },
+    {
+      "id": "it-2260",
+      "type": "it",
+      "src": "w:get through",
+      "ko": "오늘 안에 이 티켓들 다 끝낼 수 있을까요?",
+      "en": "Can we get through all these tickets today?",
+      "hints": [
+        "get through",
+        "tickets"
+      ]
+    },
+    {
+      "id": "it-2261",
+      "type": "it",
+      "src": "w:get through",
+      "ko": "이번 주 마감만 넘기면 좀 여유가 생길 거예요.",
+      "en": "Once we get through this week's deadline, things will calm down.",
+      "hints": [
+        "get through",
+        "deadline"
+      ]
+    },
+    {
+      "id": "life-1423",
+      "type": "life",
+      "src": "w:get through",
+      "ko": "커피 없이는 아침을 버틸 수가 없어요.",
+      "en": "I can't get through the morning without coffee.",
+      "hints": [
+        "get through",
+        "morning"
+      ]
+    },
+    {
+      "id": "it-2262",
+      "type": "it",
+      "src": "w:bring back",
+      "ko": "이전 버전의 기능을 다시 가져올 수 있어요?",
+      "en": "Can we bring back the feature from the previous version?",
+      "hints": [
+        "bring back",
+        "feature"
+      ]
+    },
+    {
+      "id": "it-2263",
+      "type": "it",
+      "src": "w:bring back",
+      "ko": "사용자들이 예전 디자인을 다시 살려 달라고 요청했어요.",
+      "en": "Users asked us to bring back the old design.",
+      "hints": [
+        "bring back",
+        "design"
+      ]
+    },
+    {
+      "id": "life-1424",
+      "type": "life",
+      "src": "w:bring back",
+      "ko": "이 노래 들으니까 학창 시절 생각이 나요.",
+      "en": "This song brings back memories of my school days.",
+      "hints": [
+        "bring back",
+        "memories"
+      ]
+    },
+    {
+      "id": "it-2264",
+      "type": "it",
+      "src": "w:take out",
+      "ko": "이 불필요한 로그는 빼는 게 좋겠어요.",
+      "en": "We should take out these unnecessary logs.",
+      "hints": [
+        "take out",
+        "logs"
+      ]
+    },
+    {
+      "id": "it-2265",
+      "type": "it",
+      "src": "w:take out",
+      "ko": "출시 축하로 팀을 저녁에 데려가서 대접할 거예요.",
+      "en": "I'm going to take the team out to dinner to celebrate the launch.",
+      "hints": [
+        "take out",
+        "celebrate"
+      ]
+    },
+    {
+      "id": "life-1425",
+      "type": "life",
+      "src": "w:take out",
+      "ko": "쓰레기 좀 내다 버려 줄 수 있어?",
+      "en": "Can you take out the trash?",
+      "hints": [
+        "take out",
+        "trash"
+      ]
+    },
+    {
+      "id": "it-2266",
+      "type": "it",
+      "src": "w:take up",
+      "ko": "이 회의가 오후 시간을 너무 많이 잡아먹어요.",
+      "en": "This meeting takes up too much of my afternoon.",
+      "hints": [
+        "take up",
+        "meeting"
+      ]
+    },
+    {
+      "id": "it-2267",
+      "type": "it",
+      "src": "w:take up",
+      "ko": "로그 파일이 디스크 공간을 얼마나 차지해요?",
+      "en": "How much disk space do the log files take up?",
+      "hints": [
+        "take up",
+        "disk space"
+      ]
+    },
+    {
+      "id": "life-1426",
+      "type": "life",
+      "src": "w:take up",
+      "ko": "올해 요가를 시작했어요.",
+      "en": "I took up yoga this year.",
+      "hints": [
+        "take up",
+        "yoga"
+      ]
+    },
+    {
+      "id": "it-2268",
+      "type": "it",
+      "src": "w:put on",
+      "ko": "화상 회의 들어가기 전에 헤드셋 꼭 써 주세요.",
+      "en": "Please put on your headset before joining the video call.",
+      "hints": [
+        "put on",
+        "headset"
+      ]
+    },
+    {
+      "id": "it-2269",
+      "type": "it",
+      "src": "w:put on",
+      "ko": "고객 미팅 때 정장 입어야 하나요?",
+      "en": "Should I put on a suit for the client meeting?",
+      "hints": [
+        "put on",
+        "suit"
+      ]
+    },
+    {
+      "id": "life-1427",
+      "type": "life",
+      "src": "w:put on",
+      "ko": "밖에 추우니까 재킷 입어.",
+      "en": "It's cold outside, so put on a jacket.",
+      "hints": [
+        "put on",
+        "jacket"
+      ]
+    },
+    {
+      "id": "it-2270",
+      "type": "it",
+      "src": "w:put away",
+      "ko": "회의실 쓰고 나서 장비 좀 정리해 주세요.",
+      "en": "Please put away the equipment after using the meeting room.",
+      "hints": [
+        "put away",
+        "equipment"
+      ]
+    },
+    {
+      "id": "it-2271",
+      "type": "it",
+      "src": "w:put away",
+      "ko": "데모 끝나고 테스트 기기들 정리했어요?",
+      "en": "Did you put away the test devices after the demo?",
+      "hints": [
+        "put away",
+        "test devices"
+      ]
+    },
+    {
+      "id": "life-1428",
+      "type": "life",
+      "src": "w:put away",
+      "ko": "장난감 좀 치우고 저녁 먹자.",
+      "en": "Put away your toys, and let's have dinner.",
+      "hints": [
+        "put away",
+        "toys"
+      ]
+    },
+    {
+      "id": "it-2272",
+      "type": "it",
+      "src": "w:put together",
+      "ko": "이 프로젝트를 위해 새 팀을 꾸렸어요.",
+      "en": "We put together a new team for this project.",
+      "hints": [
+        "put together",
+        "team"
+      ]
+    },
+    {
+      "id": "it-2273",
+      "type": "it",
+      "src": "w:put together",
+      "ko": "내일까지 발표 자료 정리할 수 있어요?",
+      "en": "Can you put together the presentation slides by tomorrow?",
+      "hints": [
+        "put together",
+        "slides"
+      ]
+    },
+    {
+      "id": "life-1429",
+      "type": "life",
+      "src": "w:put together",
+      "ko": "어제 책상 조립하는 데 두 시간 걸렸어요.",
+      "en": "It took me two hours to put together the desk yesterday.",
+      "hints": [
+        "put together",
+        "desk"
+      ]
+    },
+    {
+      "id": "it-2274",
+      "type": "it",
+      "src": "w:turn down",
+      "ko": "고객이 우리 제안을 거절했어요.",
+      "en": "The client turned down our proposal.",
+      "hints": [
+        "turn down",
+        "proposal"
+      ]
+    },
+    {
+      "id": "it-2275",
+      "type": "it",
+      "src": "w:turn down",
+      "ko": "일정 때문에 그 요청은 거절해야 할 것 같아요.",
+      "en": "I think we have to turn down that request because of the schedule.",
+      "hints": [
+        "turn down",
+        "request"
+      ]
+    },
+    {
+      "id": "life-1430",
+      "type": "life",
+      "src": "w:turn down",
+      "ko": "음악 소리 좀 줄여 줄래?",
+      "en": "Could you turn down the music a little?",
+      "hints": [
+        "turn down",
+        "music"
+      ]
+    },
+    {
+      "id": "it-2276",
+      "type": "it",
+      "src": "w:turn up",
+      "ko": "테스트 중에 예상 못 한 에러가 몇 개 나타났어요.",
+      "en": "A few unexpected errors turned up during testing.",
+      "hints": [
+        "turn up",
+        "errors"
+      ]
+    },
+    {
+      "id": "it-2277",
+      "type": "it",
+      "src": "w:turn up",
+      "ko": "그 사람 결국 회의에 나타났어요?",
+      "en": "Did he finally turn up to the meeting?",
+      "hints": [
+        "turn up",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1431",
+      "type": "life",
+      "src": "w:turn up",
+      "ko": "이 노래 좋아하니까 볼륨 좀 높여 줘.",
+      "en": "I love this song, so turn up the volume.",
+      "hints": [
+        "turn up",
+        "volume"
+      ]
+    },
+    {
+      "id": "it-2278",
+      "type": "it",
+      "src": "w:pick up",
+      "ko": "어제 하던 데서 이어서 다시 시작합시다.",
+      "en": "Let's pick up where we left off yesterday.",
+      "hints": [
+        "pick up",
+        "left off"
+      ]
+    },
+    {
+      "id": "it-2279",
+      "type": "it",
+      "src": "w:pick up",
+      "ko": "새 프레임워크 금방 익혔어요?",
+      "en": "Did you pick up the new framework quickly?",
+      "hints": [
+        "pick up",
+        "framework"
+      ]
+    },
+    {
+      "id": "life-1432",
+      "type": "life",
+      "src": "w:pick up",
+      "ko": "퇴근길에 애들 데리러 가야 해요.",
+      "en": "I have to pick up my kids on my way home.",
+      "hints": [
+        "pick up",
+        "kids"
+      ]
+    },
+    {
+      "id": "it-2280",
+      "type": "it",
+      "src": "w:drop off",
+      "ko": "오는 길에 장비를 IT 데스크에 맡겨 주세요.",
+      "en": "Please drop off the equipment at the IT desk on your way.",
+      "hints": [
+        "drop off",
+        "equipment"
+      ]
+    },
+    {
+      "id": "it-2281",
+      "type": "it",
+      "src": "w:drop off",
+      "ko": "회의 끝나고 역에 내려 드릴까요?",
+      "en": "Should I drop you off at the station after the meeting?",
+      "hints": [
+        "drop off",
+        "station"
+      ]
+    },
+    {
+      "id": "life-1433",
+      "type": "life",
+      "src": "w:drop off",
+      "ko": "출근 전에 세탁물 맡겨야 해요.",
+      "en": "I need to drop off my laundry before work.",
+      "hints": [
+        "drop off",
+        "laundry"
+      ]
+    },
+    {
+      "id": "it-2282",
+      "type": "it",
+      "src": "w:give back",
+      "ko": "퇴사하기 전에 노트북 반납해야 해요.",
+      "en": "You need to give back your laptop before you leave the company.",
+      "hints": [
+        "give back",
+        "laptop"
+      ]
+    },
+    {
+      "id": "it-2283",
+      "type": "it",
+      "src": "w:give back",
+      "ko": "빌려 간 충전기 언제 돌려줄 거예요?",
+      "en": "When are you going to give back the charger you borrowed?",
+      "hints": [
+        "give back",
+        "charger"
+      ]
+    },
+    {
+      "id": "life-1434",
+      "type": "life",
+      "src": "w:give back",
+      "ko": "우리 회사는 매년 지역 사회에 환원하는 활동을 해요.",
+      "en": "Our company gives back to the community every year.",
+      "hints": [
+        "give back",
+        "community"
+      ]
+    },
+    {
+      "id": "it-2284",
+      "type": "it",
+      "src": "w:give in",
+      "ko": "결국 마감 압박에 굴복해서 테스트를 건너뛰었어요.",
+      "en": "We finally gave in to the deadline pressure and skipped testing.",
+      "hints": [
+        "give in",
+        "pressure"
+      ]
+    },
+    {
+      "id": "it-2285",
+      "type": "it",
+      "src": "w:give in",
+      "ko": "팀장님이 끝내 우리 의견에 양보하셨어요?",
+      "en": "Did the manager finally give in to our suggestion?",
+      "hints": [
+        "give in",
+        "suggestion"
+      ]
+    },
+    {
+      "id": "life-1435",
+      "type": "life",
+      "src": "w:give in",
+      "ko": "아이가 계속 졸라서 결국 아이스크림을 사 줬어요.",
+      "en": "My kid kept begging, so I gave in and bought ice cream.",
+      "hints": [
+        "give in",
+        "begging"
+      ]
+    },
+    {
+      "id": "it-2286",
+      "type": "it",
+      "src": "w:break up",
+      "ko": "이 거대한 클래스를 여러 개로 쪼개는 게 어때요?",
+      "en": "Why don't we break up this huge class into several smaller ones?",
+      "hints": [
+        "break up",
+        "class"
+      ]
+    },
+    {
+      "id": "it-2287",
+      "type": "it",
+      "src": "w:break up",
+      "ko": "회의는 11시쯤 끝났어요.",
+      "en": "The meeting broke up around eleven.",
+      "hints": [
+        "break up",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1436",
+      "type": "life",
+      "src": "w:break up",
+      "ko": "걔네 작년에 헤어졌대.",
+      "en": "I heard they broke up last year.",
+      "hints": [
+        "break up"
+      ]
+    },
+    {
+      "id": "it-2288",
+      "type": "it",
+      "src": "w:calm down",
+      "ko": "장애가 해결되니까 고객이 좀 진정했어요.",
+      "en": "The client calmed down once the outage was fixed.",
+      "hints": [
+        "calm down",
+        "outage"
+      ]
+    },
+    {
+      "id": "it-2289",
+      "type": "it",
+      "src": "w:calm down",
+      "ko": "출시 직후에는 상황이 언제쯤 진정될까요?",
+      "en": "When do you think things will calm down after the launch?",
+      "hints": [
+        "calm down",
+        "launch"
+      ]
+    },
+    {
+      "id": "life-1437",
+      "type": "life",
+      "src": "w:calm down",
+      "ko": "심호흡하고 좀 진정해.",
+      "en": "Take a deep breath and calm down.",
+      "hints": [
+        "calm down",
+        "breath"
+      ]
+    },
+    {
+      "id": "it-2290",
+      "type": "it",
+      "src": "w:slow down",
+      "ko": "이 쿼리가 전체 시스템을 느리게 만들고 있어요.",
+      "en": "This query is slowing down the whole system.",
+      "hints": [
+        "slow down",
+        "query"
+      ]
+    },
+    {
+      "id": "it-2291",
+      "type": "it",
+      "src": "w:slow down",
+      "ko": "설명을 조금만 천천히 해 주실 수 있어요?",
+      "en": "Could you slow down a little when you explain it?",
+      "hints": [
+        "slow down",
+        "explain"
+      ]
+    },
+    {
+      "id": "life-1438",
+      "type": "life",
+      "src": "w:slow down",
+      "ko": "비가 오니까 운전 속도 좀 줄여.",
+      "en": "It's raining, so slow down when you drive.",
+      "hints": [
+        "slow down",
+        "drive"
+      ]
+    },
+    {
+      "id": "it-2292",
+      "type": "it",
+      "src": "w:show up",
+      "ko": "새 메뉴가 화면에 안 나타나요.",
+      "en": "The new menu doesn't show up on the screen.",
+      "hints": [
+        "show up",
+        "screen"
+      ]
+    },
+    {
+      "id": "it-2293",
+      "type": "it",
+      "src": "w:show up",
+      "ko": "인터뷰 지원자가 제시간에 왔어요?",
+      "en": "Did the interview candidate show up on time?",
+      "hints": [
+        "show up",
+        "on time"
+      ]
+    },
+    {
+      "id": "life-1439",
+      "type": "life",
+      "src": "w:show up",
+      "ko": "그는 항상 약속에 늦게 나타나요.",
+      "en": "He always shows up late to our plans.",
+      "hints": [
+        "show up",
+        "late"
+      ]
+    },
+    {
+      "id": "it-2294",
+      "type": "it",
+      "src": "w:be willing to",
+      "ko": "고객이 추가 비용을 낼 의향이 있나요?",
+      "en": "Is the client willing to pay the extra cost?",
+      "hints": [
+        "be willing to",
+        "cost"
+      ]
+    },
+    {
+      "id": "it-2295",
+      "type": "it",
+      "src": "w:be willing to",
+      "ko": "필요하면 제가 기꺼이 코드 리뷰 도와드릴게요.",
+      "en": "I'm willing to help with the code review if you need it.",
+      "hints": [
+        "be willing to",
+        "code review"
+      ]
+    },
+    {
+      "id": "life-1440",
+      "type": "life",
+      "src": "w:be willing to",
+      "ko": "저는 좋은 집이라면 조금 더 낼 의향이 있어요.",
+      "en": "I'm willing to pay a bit more for a nice apartment.",
+      "hints": [
+        "be willing to",
+        "pay"
+      ]
+    },
+    {
+      "id": "it-2296",
+      "type": "it",
+      "src": "w:be familiar with",
+      "ko": "저는 쿠버네티스에 그렇게 익숙하지 않아요.",
+      "en": "I'm not very familiar with Kubernetes.",
+      "hints": [
+        "be familiar with",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "it-2297",
+      "type": "it",
+      "src": "w:be familiar with",
+      "ko": "이 코드베이스에 익숙한 사람 있어요?",
+      "en": "Is anyone familiar with this codebase?",
+      "hints": [
+        "be familiar with",
+        "codebase"
+      ]
+    },
+    {
+      "id": "life-1441",
+      "type": "life",
+      "src": "w:be familiar with",
+      "ko": "이 동네는 아직 잘 몰라요.",
+      "en": "I'm not familiar with this neighborhood yet.",
+      "hints": [
+        "be familiar with",
+        "neighborhood"
+      ]
+    },
+    {
+      "id": "it-2298",
+      "type": "it",
+      "src": "w:be aware of",
+      "ko": "이 버전에 알려진 버그가 있다는 거 알고 계세요?",
+      "en": "Are you aware of the known bug in this version?",
+      "hints": [
+        "be aware of",
+        "bug"
+      ]
+    },
+    {
+      "id": "it-2299",
+      "type": "it",
+      "src": "w:be aware of",
+      "ko": "저희는 그 보안 문제를 이미 알고 있어요.",
+      "en": "We're already aware of that security issue.",
+      "hints": [
+        "be aware of",
+        "security"
+      ]
+    },
+    {
+      "id": "life-1442",
+      "type": "life",
+      "src": "w:be aware of",
+      "ko": "그 식당이 월요일에 문 닫는 줄 몰랐어요.",
+      "en": "I wasn't aware of the restaurant being closed on Mondays.",
+      "hints": [
+        "be aware of",
+        "closed"
+      ]
+    },
+    {
+      "id": "it-2300",
+      "type": "it",
+      "src": "w:be capable of",
+      "ko": "이 시스템이 이 정도 트래픽을 감당할 수 있을까요?",
+      "en": "Is this system capable of handling this much traffic?",
+      "hints": [
+        "be capable of",
+        "traffic"
+      ]
+    },
+    {
+      "id": "it-2301",
+      "type": "it",
+      "src": "w:be capable of",
+      "ko": "그 친구는 혼자서도 이 프로젝트를 이끌 능력이 있어요.",
+      "en": "She's capable of leading this project on her own.",
+      "hints": [
+        "be capable of",
+        "lead"
+      ]
+    },
+    {
+      "id": "life-1443",
+      "type": "life",
+      "src": "w:be capable of",
+      "ko": "우리 할머니는 아직도 산을 오르실 수 있어요.",
+      "en": "My grandmother is still capable of hiking up mountains.",
+      "hints": [
+        "be capable of",
+        "hiking"
+      ]
+    },
+    {
+      "id": "it-2302",
+      "type": "it",
+      "src": "w:be satisfied with",
+      "ko": "이번 릴리스 결과에 만족하세요?",
+      "en": "Are you satisfied with the results of this release?",
+      "hints": [
+        "be satisfied with",
+        "results"
+      ]
+    },
+    {
+      "id": "it-2303",
+      "type": "it",
+      "src": "w:be satisfied with",
+      "ko": "팀장님이 제 보고서에 별로 만족하지 않으셨어요.",
+      "en": "My manager wasn't really satisfied with my report.",
+      "hints": [
+        "be satisfied with",
+        "report"
+      ]
+    },
+    {
+      "id": "life-1444",
+      "type": "life",
+      "src": "w:be satisfied with",
+      "ko": "저는 지금 사는 집에 꽤 만족해요.",
+      "en": "I'm pretty satisfied with my current apartment.",
+      "hints": [
+        "be satisfied with",
+        "apartment"
+      ]
+    },
+    {
+      "id": "it-2304",
+      "type": "it",
+      "src": "w:be concerned about",
+      "ko": "이번 일정이 너무 빡빡해서 좀 걱정돼요.",
+      "en": "I'm a little concerned about this tight schedule.",
+      "hints": [
+        "be concerned about",
+        "schedule"
+      ]
+    },
+    {
+      "id": "it-2305",
+      "type": "it",
+      "src": "w:be concerned about",
+      "ko": "고객이 데이터 보안에 대해 걱정하고 있나요?",
+      "en": "Is the client concerned about data security?",
+      "hints": [
+        "be concerned about",
+        "security"
+      ]
+    },
+    {
+      "id": "life-1445",
+      "type": "life",
+      "src": "w:be concerned about",
+      "ko": "부모님은 제 건강을 항상 걱정하세요.",
+      "en": "My parents are always concerned about my health.",
+      "hints": [
+        "be concerned about",
+        "health"
+      ]
+    },
+    {
+      "id": "it-2306",
+      "type": "it",
+      "src": "w:be involved in",
+      "ko": "이 프로젝트에 몇 명이나 참여하고 있어요?",
+      "en": "How many people are involved in this project?",
+      "hints": [
+        "be involved in",
+        "project"
+      ]
+    },
+    {
+      "id": "it-2307",
+      "type": "it",
+      "src": "w:be involved in",
+      "ko": "저는 그 결정에 관여하지 않았어요.",
+      "en": "I wasn't involved in that decision.",
+      "hints": [
+        "be involved in",
+        "decision"
+      ]
+    },
+    {
+      "id": "life-1446",
+      "type": "life",
+      "src": "w:be involved in",
+      "ko": "저는 동네 봉사 활동에 참여하고 있어요.",
+      "en": "I'm involved in some volunteer work in my neighborhood.",
+      "hints": [
+        "be involved in",
+        "volunteer"
+      ]
+    },
+    {
+      "id": "it-2308",
+      "type": "it",
+      "src": "w:be available for",
+      "ko": "새 버전은 다음 주부터 모든 사용자가 이용할 수 있어요.",
+      "en": "The new version will be available for all users next week.",
+      "hints": [
+        "be available for",
+        "users"
+      ]
+    },
+    {
+      "id": "it-2309",
+      "type": "it",
+      "src": "w:be available for",
+      "ko": "목요일에 인터뷰 가능한 사람 있어요?",
+      "en": "Is anyone available for an interview on Thursday?",
+      "hints": [
+        "be available for",
+        "interview"
+      ]
+    },
+    {
+      "id": "life-1447",
+      "type": "life",
+      "src": "w:be available for",
+      "ko": "이 방은 이번 주말에 예약 가능해요.",
+      "en": "This room is available for booking this weekend.",
+      "hints": [
+        "be available for",
+        "booking"
+      ]
+    },
+    {
+      "id": "it-2310",
+      "type": "it",
+      "src": "w:have trouble ~ing",
+      "ko": "이 에러 원인을 찾는 데 애먹고 있어요.",
+      "en": "I'm having trouble finding the cause of this error.",
+      "hints": [
+        "have trouble",
+        "cause"
+      ]
+    },
+    {
+      "id": "it-2311",
+      "type": "it",
+      "src": "w:have trouble ~ing",
+      "ko": "새 환경 설정하는 데 문제 있었어요?",
+      "en": "Did you have any trouble setting up the new environment?",
+      "hints": [
+        "have trouble",
+        "set up"
+      ]
+    },
+    {
+      "id": "life-1448",
+      "type": "life",
+      "src": "w:have trouble ~ing",
+      "ko": "요즘 밤에 잠드는 게 힘들어요.",
+      "en": "I've been having trouble falling asleep at night.",
+      "hints": [
+        "have trouble",
+        "fall asleep"
+      ]
+    },
+    {
+      "id": "it-2312",
+      "type": "it",
+      "src": "w:have difficulty ~ing",
+      "ko": "신입 사원들이 레거시 코드를 이해하는 데 어려움을 겪고 있어요.",
+      "en": "New hires have difficulty understanding the legacy code.",
+      "hints": [
+        "have difficulty",
+        "legacy code"
+      ]
+    },
+    {
+      "id": "it-2313",
+      "type": "it",
+      "src": "w:have difficulty ~ing",
+      "ko": "고객 요구사항을 파악하는 데 어려움이 있으세요?",
+      "en": "Are you having difficulty understanding the client's requirements?",
+      "hints": [
+        "have difficulty",
+        "requirements"
+      ]
+    },
+    {
+      "id": "life-1449",
+      "type": "life",
+      "src": "w:have difficulty ~ing",
+      "ko": "처음에는 영어로 전화 받는 게 어려웠어요.",
+      "en": "At first, I had difficulty answering phone calls in English.",
+      "hints": [
+        "have difficulty",
+        "phone calls"
+      ]
+    },
+    {
+      "id": "it-2314",
+      "type": "it",
+      "src": "w:have no choice but to",
+      "ko": "서버가 계속 죽어서 재시작할 수밖에 없었어요.",
+      "en": "The server kept crashing, so we had no choice but to restart it.",
+      "hints": [
+        "have no choice but to",
+        "restart"
+      ]
+    },
+    {
+      "id": "it-2315",
+      "type": "it",
+      "src": "w:have no choice but to",
+      "ko": "이러면 출시를 미룰 수밖에 없지 않아요?",
+      "en": "Don't we have no choice but to delay the launch then?",
+      "hints": [
+        "have no choice but to",
+        "delay"
+      ]
+    },
+    {
+      "id": "life-1450",
+      "type": "life",
+      "src": "w:have no choice but to",
+      "ko": "막차를 놓쳐서 택시를 탈 수밖에 없었어요.",
+      "en": "I missed the last train, so I had no choice but to take a taxi.",
+      "hints": [
+        "have no choice but to",
+        "taxi"
+      ]
+    },
+    {
+      "id": "it-2316",
+      "type": "it",
+      "src": "w:have a hard time ~ing",
+      "ko": "이 테스트 재현하는 데 애먹고 있어요.",
+      "en": "I'm having a hard time reproducing this test failure.",
+      "hints": [
+        "have a hard time",
+        "reproduce"
+      ]
+    },
+    {
+      "id": "it-2317",
+      "type": "it",
+      "src": "w:have a hard time ~ing",
+      "ko": "새 툴에 적응하는 데 힘들었어요?",
+      "en": "Did you have a hard time getting used to the new tool?",
+      "hints": [
+        "have a hard time",
+        "get used to"
+      ]
+    },
+    {
+      "id": "life-1451",
+      "type": "life",
+      "src": "w:have a hard time ~ing",
+      "ko": "아침에 일찍 일어나는 게 너무 힘들어요.",
+      "en": "I have a hard time getting up early in the morning.",
+      "hints": [
+        "have a hard time",
+        "get up"
+      ]
+    },
+    {
+      "id": "it-2318",
+      "type": "it",
+      "src": "w:make an effort to",
+      "ko": "회의 때 더 자주 발언하려고 노력할게요.",
+      "en": "I'll make an effort to speak up more in meetings.",
+      "hints": [
+        "make an effort to",
+        "speak up"
+      ]
+    },
+    {
+      "id": "it-2319",
+      "type": "it",
+      "src": "w:make an effort to",
+      "ko": "우리 다른 팀이랑 더 자주 소통하려고 노력해 볼까요?",
+      "en": "Should we make an effort to communicate more with the other team?",
+      "hints": [
+        "make an effort to",
+        "communicate"
+      ]
+    },
+    {
+      "id": "life-1452",
+      "type": "life",
+      "src": "w:make an effort to",
+      "ko": "매일 조금이라도 걸으려고 노력하고 있어요.",
+      "en": "I'm making an effort to walk a little every day.",
+      "hints": [
+        "make an effort to",
+        "walk"
+      ]
+    },
+    {
+      "id": "it-2320",
+      "type": "it",
+      "src": "w:make a decision",
+      "ko": "아직 어떤 프레임워크를 쓸지 결정 못 했어요.",
+      "en": "We haven't made a decision on which framework to use yet.",
+      "hints": [
+        "make a decision",
+        "framework"
+      ]
+    },
+    {
+      "id": "it-2321",
+      "type": "it",
+      "src": "w:make a decision",
+      "ko": "이 건은 누가 최종 결정을 내려요?",
+      "en": "Who makes the final decision on this?",
+      "hints": [
+        "make a decision",
+        "final"
+      ]
+    },
+    {
+      "id": "life-1453",
+      "type": "life",
+      "src": "w:make a decision",
+      "ko": "이사 갈지 말지 곧 결정해야 해요.",
+      "en": "I have to make a decision about moving soon.",
+      "hints": [
+        "make a decision",
+        "moving"
+      ]
+    },
+    {
+      "id": "it-2322",
+      "type": "it",
+      "src": "w:make a mistake",
+      "ko": "제가 데이터 계산에서 실수를 한 것 같아요.",
+      "en": "I think I made a mistake in the data calculation.",
+      "hints": [
+        "make a mistake",
+        "calculation"
+      ]
+    },
+    {
+      "id": "it-2323",
+      "type": "it",
+      "src": "w:make a mistake",
+      "ko": "제가 이 쿼리에서 뭘 실수한 거죠?",
+      "en": "What mistake did I make in this query?",
+      "hints": [
+        "make a mistake",
+        "query"
+      ]
+    },
+    {
+      "id": "life-1454",
+      "type": "life",
+      "src": "w:make a mistake",
+      "ko": "누구나 실수는 하니까 너무 걱정하지 마.",
+      "en": "Everyone makes mistakes, so don't worry too much.",
+      "hints": [
+        "make a mistake",
+        "worry"
+      ]
+    },
+    {
+      "id": "it-2324",
+      "type": "it",
+      "src": "w:make progress",
+      "ko": "그 버그 건은 좀 진척이 있어요?",
+      "en": "Have you made any progress on that bug?",
+      "hints": [
+        "make progress",
+        "bug"
+      ]
+    },
+    {
+      "id": "it-2325",
+      "type": "it",
+      "src": "w:make progress",
+      "ko": "이번 주에 마이그레이션 작업이 많이 진척됐어요.",
+      "en": "We made a lot of progress on the migration this week.",
+      "hints": [
+        "make progress",
+        "migration"
+      ]
+    },
+    {
+      "id": "life-1455",
+      "type": "life",
+      "src": "w:make progress",
+      "ko": "영어 말하기가 조금씩 늘고 있어요.",
+      "en": "I'm slowly making progress with my English speaking.",
+      "hints": [
+        "make progress",
+        "speaking"
+      ]
+    },
+    {
+      "id": "it-2326",
+      "type": "it",
+      "src": "w:make a reservation",
+      "ko": "고객 미팅 때문에 회의실 예약해 뒀어요.",
+      "en": "I made a reservation for a meeting room for the client meeting.",
+      "hints": [
+        "make a reservation",
+        "meeting room"
+      ]
+    },
+    {
+      "id": "it-2327",
+      "type": "it",
+      "src": "w:make a reservation",
+      "ko": "출장 호텔 예약은 누가 해요?",
+      "en": "Who's going to make a reservation for the hotel on the business trip?",
+      "hints": [
+        "make a reservation",
+        "hotel"
+      ]
+    },
+    {
+      "id": "life-1456",
+      "type": "life",
+      "src": "w:make a reservation",
+      "ko": "토요일 저녁 7시에 두 명으로 예약하고 싶어요.",
+      "en": "I'd like to make a reservation for two at seven on Saturday.",
+      "hints": [
+        "make a reservation",
+        "two"
+      ]
+    },
+    {
+      "id": "it-2328",
+      "type": "it",
+      "src": "w:make a commitment",
+      "ko": "고객에게 이번 달 말까지 납품하겠다고 약속했어요.",
+      "en": "We made a commitment to deliver to the client by the end of this month.",
+      "hints": [
+        "make a commitment",
+        "deliver"
+      ]
+    },
+    {
+      "id": "it-2329",
+      "type": "it",
+      "src": "w:make a commitment",
+      "ko": "이 날짜로 약속하기 전에 팀이랑 확인해 봤어요?",
+      "en": "Did you check with the team before making a commitment to this date?",
+      "hints": [
+        "make a commitment",
+        "date"
+      ]
+    },
+    {
+      "id": "life-1457",
+      "type": "life",
+      "src": "w:make a commitment",
+      "ko": "올해는 운동에 전념하기로 다짐했어요.",
+      "en": "I made a commitment to exercise regularly this year.",
+      "hints": [
+        "make a commitment",
+        "exercise"
+      ]
+    },
+    {
+      "id": "it-2330",
+      "type": "it",
+      "src": "w:take responsibility for",
+      "ko": "그 배포 실수에 대한 책임은 제가 지겠습니다.",
+      "en": "I'll take responsibility for the deployment mistake.",
+      "hints": [
+        "take responsibility for",
+        "deployment"
+      ]
+    },
+    {
+      "id": "it-2331",
+      "type": "it",
+      "src": "w:take responsibility for",
+      "ko": "이 버그 수정은 누가 책임질 건가요?",
+      "en": "Who's going to take responsibility for fixing this bug?",
+      "hints": [
+        "take responsibility for",
+        "bug"
+      ]
+    },
+    {
+      "id": "life-1458",
+      "type": "life",
+      "src": "w:take responsibility for",
+      "ko": "그는 자기 행동에 절대 책임을 지지 않아.",
+      "en": "He never takes responsibility for his own actions.",
+      "hints": [
+        "take responsibility for",
+        "actions"
+      ]
+    },
+    {
+      "id": "it-2332",
+      "type": "it",
+      "src": "w:take action",
+      "ko": "보안팀이 그 건에 대해 이미 조치를 취했어요.",
+      "en": "The security team has already taken action on it.",
+      "hints": [
+        "take action",
+        "security"
+      ]
+    },
+    {
+      "id": "it-2333",
+      "type": "it",
+      "src": "w:take action",
+      "ko": "고객이 또 불평하기 전에 조치를 취해야 할까요?",
+      "en": "Should we take action before the client complains again?",
+      "hints": [
+        "take action",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1459",
+      "type": "life",
+      "src": "w:take action",
+      "ko": "기후 변화에 대해 지금 행동하지 않으면 너무 늦을 거야.",
+      "en": "If we don't take action on climate change now, it'll be too late.",
+      "hints": [
+        "take action",
+        "climate"
+      ]
+    },
+    {
+      "id": "it-2334",
+      "type": "it",
+      "src": "w:take notes",
+      "ko": "오늘 스탠드업에서는 제가 메모할게요.",
+      "en": "I'll take notes at today's stand-up meeting.",
+      "hints": [
+        "take notes",
+        "stand-up"
+      ]
+    },
+    {
+      "id": "it-2335",
+      "type": "it",
+      "src": "w:take notes",
+      "ko": "고객 미팅 때 메모하셨어요?",
+      "en": "Did you take notes during the client meeting?",
+      "hints": [
+        "take notes",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1460",
+      "type": "life",
+      "src": "w:take notes",
+      "ko": "나는 강의 들을 때 항상 노트북에 메모해.",
+      "en": "I always take notes on my laptop during lectures.",
+      "hints": [
+        "take notes",
+        "lecture"
+      ]
+    },
+    {
+      "id": "it-2336",
+      "type": "it",
+      "src": "w:take place",
+      "ko": "장애는 새벽 3시쯤 발생했어요.",
+      "en": "The outage took place around three in the morning.",
+      "hints": [
+        "take place",
+        "outage"
+      ]
+    },
+    {
+      "id": "it-2337",
+      "type": "it",
+      "src": "w:take place",
+      "ko": "스프린트 회고는 어디서 열리나요?",
+      "en": "Where is the sprint retrospective going to take place?",
+      "hints": [
+        "take place",
+        "retrospective"
+      ]
+    },
+    {
+      "id": "life-1461",
+      "type": "life",
+      "src": "w:take place",
+      "ko": "결혼식은 작은 정원에서 열렸어.",
+      "en": "The wedding took place in a small garden.",
+      "hints": [
+        "take place",
+        "wedding"
+      ]
+    },
+    {
+      "id": "it-2338",
+      "type": "it",
+      "src": "w:come up with an idea",
+      "ko": "캐싱 문제에 대한 좋은 아이디어가 떠올랐어요.",
+      "en": "I came up with an idea for the caching problem.",
+      "hints": [
+        "come up with an idea",
+        "caching"
+      ]
+    },
+    {
+      "id": "it-2339",
+      "type": "it",
+      "src": "w:come up with an idea",
+      "ko": "신규 기능에 대한 아이디어 생각해 낸 사람 있어요?",
+      "en": "Has anyone come up with an idea for the new feature?",
+      "hints": [
+        "come up with an idea",
+        "feature"
+      ]
+    },
+    {
+      "id": "life-1462",
+      "type": "life",
+      "src": "w:come up with an idea",
+      "ko": "이번 주말에 할 재밌는 아이디어가 떠올랐어.",
+      "en": "I came up with an idea for something fun this weekend.",
+      "hints": [
+        "come up with an idea",
+        "weekend"
+      ]
+    },
+    {
+      "id": "it-2340",
+      "type": "it",
+      "src": "w:bring something to someone's attention",
+      "ko": "이 버그를 알려 드리고 싶었어요.",
+      "en": "I just wanted to bring this bug to your attention.",
+      "hints": [
+        "bring something to someone's attention",
+        "bug"
+      ]
+    },
+    {
+      "id": "it-2341",
+      "type": "it",
+      "src": "w:bring something to someone's attention",
+      "ko": "이 문제를 클라이언트에게 알려야 할까요?",
+      "en": "Should we bring this issue to the client's attention?",
+      "hints": [
+        "bring something to someone's attention",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1463",
+      "type": "life",
+      "src": "w:bring something to someone's attention",
+      "ko": "집주인에게 누수 문제를 알렸어.",
+      "en": "I brought the water leak to my landlord's attention.",
+      "hints": [
+        "bring something to someone's attention",
+        "landlord"
+      ]
+    },
+    {
+      "id": "it-2342",
+      "type": "it",
+      "src": "w:keep someone updated",
+      "ko": "배포 진행 상황 계속 알려 드릴게요.",
+      "en": "I'll keep you updated on the deployment progress.",
+      "hints": [
+        "keep someone updated",
+        "deployment"
+      ]
+    },
+    {
+      "id": "it-2343",
+      "type": "it",
+      "src": "w:keep someone updated",
+      "ko": "고객에게 진행 상황을 계속 알려 주실 수 있나요?",
+      "en": "Can you keep the client updated on our progress?",
+      "hints": [
+        "keep someone updated",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1464",
+      "type": "life",
+      "src": "w:keep someone updated",
+      "ko": "병원 다녀와서 어떻게 됐는지 계속 알려 줘.",
+      "en": "Keep me updated after your doctor's appointment",
+      "hints": [
+        "keep someone updated",
+        "appointment"
+      ]
+    },
+    {
+      "id": "it-2344",
+      "type": "it",
+      "src": "w:keep in mind",
+      "ko": "마감이 이번 금요일이라는 걸 명심하세요.",
+      "en": "Keep in mind that the deadline is this Friday.",
+      "hints": [
+        "keep in mind",
+        "deadline"
+      ]
+    },
+    {
+      "id": "it-2345",
+      "type": "it",
+      "src": "w:keep in mind",
+      "ko": "코드 리뷰할 때 명심해야 할 게 있나요?",
+      "en": "Is there anything I should keep in mind during code review?",
+      "hints": [
+        "keep in mind",
+        "code review"
+      ]
+    },
+    {
+      "id": "life-1465",
+      "type": "life",
+      "src": "w:keep in mind",
+      "ko": "거기는 밤에 추워진다는 걸 명심해.",
+      "en": "Keep in mind that it gets really cold there at night.",
+      "hints": [
+        "keep in mind",
+        "cold"
+      ]
+    },
+    {
+      "id": "it-2346",
+      "type": "it",
+      "src": "w:go through",
+      "ko": "PR 올리기 전에 제 코드를 한 번 더 검토해 볼게요.",
+      "en": "I'll go through my code once more before opening the PR.",
+      "hints": [
+        "go through",
+        "PR"
+      ]
+    },
+    {
+      "id": "it-2347",
+      "type": "it",
+      "src": "w:go through",
+      "ko": "회의 전에 그 보고서 검토할 시간 있으세요?",
+      "en": "Do you have time to go through the report before the meeting?",
+      "hints": [
+        "go through",
+        "report"
+      ]
+    },
+    {
+      "id": "life-1466",
+      "type": "life",
+      "src": "w:go through",
+      "ko": "그녀는 작년에 정말 힘든 시기를 겪었어.",
+      "en": "She went through a really hard time last year.",
+      "hints": [
+        "go through",
+        "hard time"
+      ]
+    },
+    {
+      "id": "it-2348",
+      "type": "it",
+      "src": "w:work out",
+      "ko": "새 아키텍처는 계획대로 잘 되지 않았어요.",
+      "en": "The new architecture didn't work out as we planned.",
+      "hints": [
+        "work out",
+        "architecture"
+      ]
+    },
+    {
+      "id": "it-2349",
+      "type": "it",
+      "src": "w:work out",
+      "ko": "일정 충돌 문제 해결하셨어요?",
+      "en": "Did you work out the scheduling conflict with the other team?",
+      "hints": [
+        "work out",
+        "conflict"
+      ]
+    },
+    {
+      "id": "life-1467",
+      "type": "life",
+      "src": "w:work out",
+      "ko": "다 잘될 거니까 걱정하지 마.",
+      "en": "Everything will work out, so don't worry about it.",
+      "hints": [
+        "work out",
+        "everything"
+      ]
+    },
+    {
+      "id": "it-2350",
+      "type": "it",
+      "src": "w:sort out",
+      "ko": "권한 문제는 오늘 오후까지 해결할게요.",
+      "en": "I'll sort out the permission issue by this afternoon.",
+      "hints": [
+        "sort out",
+        "permission"
+      ]
+    },
+    {
+      "id": "it-2351",
+      "type": "it",
+      "src": "w:sort out",
+      "ko": "로그인 버그 해결하는 것 좀 도와줄 수 있어요?",
+      "en": "Can you help me sort out the login bug?",
+      "hints": [
+        "sort out",
+        "login"
+      ]
+    },
+    {
+      "id": "life-1468",
+      "type": "life",
+      "src": "w:sort out",
+      "ko": "이번 주말에 옷장 좀 정리해야 해.",
+      "en": "I need to sort out my closet this weekend.",
+      "hints": [
+        "sort out",
+        "closet"
+      ]
+    },
+    {
+      "id": "it-2352",
+      "type": "it",
+      "src": "w:set a goal",
+      "ko": "이번 분기에는 명확한 목표를 세워야 해요.",
+      "en": "We need to set a clear goal for this quarter.",
+      "hints": [
+        "set a goal",
+        "quarter"
+      ]
+    },
+    {
+      "id": "it-2353",
+      "type": "it",
+      "src": "w:set a goal",
+      "ko": "이번 스프린트 목표는 누가 정할 건가요?",
+      "en": "Who's going to set a goal for this sprint?",
+      "hints": [
+        "set a goal",
+        "sprint"
+      ]
+    },
+    {
+      "id": "life-1469",
+      "type": "life",
+      "src": "w:set a goal",
+      "ko": "올해는 한 달에 책 한 권 읽는 목표를 세웠어.",
+      "en": "I set a goal to read one book a month this year.",
+      "hints": [
+        "set a goal",
+        "book"
+      ]
+    },
+    {
+      "id": "it-2354",
+      "type": "it",
+      "src": "w:meet expectations",
+      "ko": "이번 출시는 모두의 기대를 충족했어요.",
+      "en": "This release met everyone's expectations on the team.",
+      "hints": [
+        "meet expectations",
+        "release"
+      ]
+    },
+    {
+      "id": "it-2355",
+      "type": "it",
+      "src": "w:meet expectations",
+      "ko": "성능 테스트 결과가 기대를 충족했나요?",
+      "en": "Did the performance test results meet expectations?",
+      "hints": [
+        "meet expectations",
+        "performance"
+      ]
+    },
+    {
+      "id": "life-1470",
+      "type": "life",
+      "src": "w:meet expectations",
+      "ko": "그 식당은 내 기대에 못 미쳤어.",
+      "en": "That new restaurant didn't meet my expectations at all.",
+      "hints": [
+        "meet expectations",
+        "restaurant"
+      ]
+    },
+    {
+      "id": "it-2356",
+      "type": "it",
+      "src": "w:catch up on",
+      "ko": "휴가 끝나고 밀린 이메일을 처리해야 해요.",
+      "en": "I need to catch up on emails after my vacation.",
+      "hints": [
+        "catch up on",
+        "emails"
+      ]
+    },
+    {
+      "id": "it-2357",
+      "type": "it",
+      "src": "w:catch up on",
+      "ko": "어제 회의에서 놓친 내용 따라잡았어요?",
+      "en": "Did you catch up on what you missed in yesterday's meeting?",
+      "hints": [
+        "catch up on",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1471",
+      "type": "life",
+      "src": "w:catch up on",
+      "ko": "이번 주말엔 밀린 잠 좀 자고 싶어.",
+      "en": "I really want to catch up on sleep this weekend.",
+      "hints": [
+        "catch up on",
+        "sleep"
+      ]
+    },
+    {
+      "id": "it-2358",
+      "type": "it",
+      "src": "w:move forward",
+      "ko": "이 디자인으로 진행합시다.",
+      "en": "Let's move forward with this design for the app.",
+      "hints": [
+        "move forward",
+        "design"
+      ]
+    },
+    {
+      "id": "it-2359",
+      "type": "it",
+      "src": "w:move forward",
+      "ko": "예산 승인 없이 진행할 수 있을까요?",
+      "en": "Can we move forward without budget approval?",
+      "hints": [
+        "move forward",
+        "budget"
+      ]
+    },
+    {
+      "id": "life-1472",
+      "type": "life",
+      "src": "w:move forward",
+      "ko": "이별 후에 그는 마침내 앞으로 나아가기로 했어.",
+      "en": "After the breakup, he finally decided to move forward.",
+      "hints": [
+        "move forward",
+        "breakup"
+      ]
+    },
+    {
+      "id": "it-2360",
+      "type": "it",
+      "src": "w:move on to",
+      "ko": "이 버그 고치고 나서 다음 기능으로 넘어갈게요.",
+      "en": "I'll move on to the next feature after fixing this bug.",
+      "hints": [
+        "move on to",
+        "feature"
+      ]
+    },
+    {
+      "id": "it-2361",
+      "type": "it",
+      "src": "w:move on to",
+      "ko": "이제 QA 단계로 넘어가도 될까요?",
+      "en": "Can we move on to the QA phase now?",
+      "hints": [
+        "move on to",
+        "QA"
+      ]
+    },
+    {
+      "id": "life-1473",
+      "type": "life",
+      "src": "w:move on to",
+      "ko": "다들 다 먹으면 디저트로 넘어가자.",
+      "en": "Let's move on to dessert once everyone's finished eating.",
+      "hints": [
+        "move on to",
+        "dessert"
+      ]
+    },
+    {
+      "id": "it-2362",
+      "type": "it",
+      "src": "w:check in with",
+      "ko": "일정 관련해서 PM한테 이미 확인했어요.",
+      "en": "I already checked in with the PM about the timeline.",
+      "hints": [
+        "check in with",
+        "PM"
+      ]
+    },
+    {
+      "id": "it-2363",
+      "type": "it",
+      "src": "w:check in with",
+      "ko": "배포 전에 QA팀에 확인해 보셨어요?",
+      "en": "Did you check in with the QA team before the deploy?",
+      "hints": [
+        "check in with",
+        "QA"
+      ]
+    },
+    {
+      "id": "life-1474",
+      "type": "life",
+      "src": "w:check in with",
+      "ko": "엄마가 잘 지내시는지 연락 한번 드려야겠어.",
+      "en": "I should check in with my mom to see how she's doing.",
+      "hints": [
+        "check in with",
+        "mom"
+      ]
+    },
+    {
+      "id": "it-2364",
+      "type": "it",
+      "src": "w:reach an agreement",
+      "ko": "가격에 대해서는 아직 합의하지 못했어요.",
+      "en": "We haven't reached an agreement on pricing yet.",
+      "hints": [
+        "reach an agreement",
+        "pricing"
+      ]
+    },
+    {
+      "id": "it-2365",
+      "type": "it",
+      "src": "w:reach an agreement",
+      "ko": "금요일까지 클라이언트와 합의할 수 있을까요?",
+      "en": "Do you think we can reach an agreement with the client by Friday?",
+      "hints": [
+        "reach an agreement",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1475",
+      "type": "life",
+      "src": "w:reach an agreement",
+      "ko": "룸메이트랑 집안일 나누는 걸로 합의했어.",
+      "en": "My roommate and I reached an agreement on splitting chores.",
+      "hints": [
+        "reach an agreement",
+        "chores"
+      ]
+    },
+    {
+      "id": "it-2366",
+      "type": "it",
+      "src": "w:come to a conclusion",
+      "ko": "아직 결론에 도달하지 못했어요.",
+      "en": "We haven't come to a conclusion on that yet.",
+      "hints": [
+        "come to a conclusion",
+        "yet"
+      ]
+    },
+    {
+      "id": "it-2367",
+      "type": "it",
+      "src": "w:come to a conclusion",
+      "ko": "회의에서 결론이 났나요?",
+      "en": "Did you come to a conclusion in the meeting?",
+      "hints": [
+        "come to a conclusion",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1476",
+      "type": "life",
+      "src": "w:come to a conclusion",
+      "ko": "오래 고민한 끝에 이사해야겠다는 결론을 냈어.",
+      "en": "After thinking for a long time, I came to the conclusion that I should move.",
+      "hints": [
+        "come to a conclusion",
+        "move"
+      ]
+    },
+    {
+      "id": "it-2368",
+      "type": "it",
+      "src": "w:raise a concern",
+      "ko": "보안팀이 새 API에 대해 우려를 제기했어요.",
+      "en": "The security team raised a concern about the new API.",
+      "hints": [
+        "raise a concern",
+        "security"
+      ]
+    },
+    {
+      "id": "it-2369",
+      "type": "it",
+      "src": "w:raise a concern",
+      "ko": "회의에서 이 부분에 대해 우려를 말해도 될까요?",
+      "en": "Is it okay if I raise a concern about this in the meeting?",
+      "hints": [
+        "raise a concern",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1477",
+      "type": "life",
+      "src": "w:raise a concern",
+      "ko": "학부모 몇 명이 급식에 대해 우려를 제기했어.",
+      "en": "Some parents raised a concern about the school lunches.",
+      "hints": [
+        "raise a concern",
+        "parents"
+      ]
+    },
+    {
+      "id": "it-2370",
+      "type": "it",
+      "src": "w:address an issue",
+      "ko": "그 이슈는 다음 스프린트에서 다룰게요.",
+      "en": "We'll address that issue in the next sprint.",
+      "hints": [
+        "address an issue",
+        "sprint"
+      ]
+    },
+    {
+      "id": "it-2371",
+      "type": "it",
+      "src": "w:address an issue",
+      "ko": "고객이 보고한 이슈는 언제 처리할 건가요?",
+      "en": "When are we going to address the issue the client reported?",
+      "hints": [
+        "address an issue",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1478",
+      "type": "life",
+      "src": "w:address an issue",
+      "ko": "시에서 주차 문제를 해결해야 해.",
+      "en": "The city really needs to address the parking issue.",
+      "hints": [
+        "address an issue",
+        "parking"
+      ]
+    },
+    {
+      "id": "it-2372",
+      "type": "it",
+      "src": "w:provide an update",
+      "ko": "오늘 오후까지 고객에게 진행 상황을 공유해 주세요.",
+      "en": "Please provide an update to the client by this afternoon.",
+      "hints": [
+        "provide an update",
+        "client"
+      ]
+    },
+    {
+      "id": "it-2373",
+      "type": "it",
+      "src": "w:provide an update",
+      "ko": "결제 버그 진행 상황 공유해 주실 수 있나요?",
+      "en": "Could you provide an update on the payment bug?",
+      "hints": [
+        "provide an update",
+        "payment"
+      ]
+    },
+    {
+      "id": "life-1479",
+      "type": "life",
+      "src": "w:provide an update",
+      "ko": "항공사가 지연에 대해 아직 아무 소식도 안 줬어.",
+      "en": "The airline still hasn't provided an update on the delay.",
+      "hints": [
+        "provide an update",
+        "airline"
+      ]
+    },
+    {
+      "id": "it-2374",
+      "type": "it",
+      "src": "w:meet the deadline",
+      "ko": "이 속도면 마감을 못 지킬 것 같아요.",
+      "en": "At this rate, I don't think we'll meet the deadline.",
+      "hints": [
+        "meet the deadline",
+        "rate"
+      ]
+    },
+    {
+      "id": "it-2375",
+      "type": "it",
+      "src": "w:meet the deadline",
+      "ko": "추가 인원 없이 마감 지킬 수 있겠어요?",
+      "en": "Can we meet the deadline without extra people?",
+      "hints": [
+        "meet the deadline",
+        "extra"
+      ]
+    },
+    {
+      "id": "life-1480",
+      "type": "life",
+      "src": "w:meet the deadline",
+      "ko": "세금 신고 마감은 겨우 맞췄어.",
+      "en": "I barely met the deadline for my tax return.",
+      "hints": [
+        "meet the deadline",
+        "tax return"
+      ]
+    },
+    {
+      "id": "it-2376",
+      "type": "it",
+      "src": "w:set a priority",
+      "ko": "PM이 이 버그에 높은 우선순위를 정했어요.",
+      "en": "The PM set a high priority on this bug.",
+      "hints": [
+        "set a priority",
+        "PM"
+      ]
+    },
+    {
+      "id": "it-2377",
+      "type": "it",
+      "src": "w:set a priority",
+      "ko": "이 요청들의 우선순위는 누가 정할 건가요?",
+      "en": "Who's going to set a priority for these requests?",
+      "hints": [
+        "set a priority",
+        "requests"
+      ]
+    },
+    {
+      "id": "life-1481",
+      "type": "life",
+      "src": "w:set a priority",
+      "ko": "올해는 가족과 시간 보내는 걸 확실한 우선순위로 정했어.",
+      "en": "This year, I set a clear priority on spending time with family.",
+      "hints": [
+        "set a priority",
+        "family"
+      ]
+    },
+    {
+      "id": "it-2378",
+      "type": "it",
+      "src": "w:be involved in a project",
+      "ko": "저는 지금 결제 시스템 프로젝트에 참여하고 있어요.",
+      "en": "I'm involved in a project on the payment system right now.",
+      "hints": [
+        "be involved in a project",
+        "payment"
+      ]
+    },
+    {
+      "id": "it-2379",
+      "type": "it",
+      "src": "w:be involved in a project",
+      "ko": "이 프로젝트에 몇 명이 참여하고 있나요?",
+      "en": "How many people are involved in this project?",
+      "hints": [
+        "be involved in a project",
+        "people"
+      ]
+    },
+    {
+      "id": "life-1482",
+      "type": "life",
+      "src": "w:be involved in a project",
+      "ko": "내 여동생은 지역 봉사 프로젝트에 참여하고 있어.",
+      "en": "My sister is involved in a local volunteer project.",
+      "hints": [
+        "be involved in a project",
+        "volunteer"
+      ]
+    },
+    {
+      "id": "it-2380",
+      "type": "it",
+      "src": "w:be in line with",
+      "ko": "이번 분기 매출은 저희 예측과 일치해요.",
+      "en": "This quarter's revenue is in line with our forecast.",
+      "hints": [
+        "be in line with",
+        "forecast"
+      ]
+    },
+    {
+      "id": "it-2381",
+      "type": "it",
+      "src": "w:be in line with",
+      "ko": "이 변경 사항이 우리 코딩 가이드라인과 맞나요?",
+      "en": "Is this change in line with our coding guidelines?",
+      "hints": [
+        "be in line with",
+        "guidelines"
+      ]
+    },
+    {
+      "id": "life-1483",
+      "type": "life",
+      "src": "w:be in line with",
+      "ko": "그 월세는 이 동네 평균이랑 비슷한 수준이야.",
+      "en": "The rent is in line with the average in this area.",
+      "hints": [
+        "be in line with",
+        "rent"
+      ]
+    },
+    {
+      "id": "it-2382",
+      "type": "it",
+      "src": "w:It turns out that",
+      "ko": "알고 보니 서버에는 아무 문제가 없었어요.",
+      "en": "It turns out that there was nothing wrong with the server.",
+      "hints": [
+        "It turns out that",
+        "server"
+      ]
+    },
+    {
+      "id": "it-2383",
+      "type": "it",
+      "src": "w:It turns out that",
+      "ko": "알고 보니 고객이 예전 버전을 쓰고 있었다는 거 들었어요?",
+      "en": "Did you hear it turns out that the client was using an old version?",
+      "hints": [
+        "It turns out that",
+        "version"
+      ]
+    },
+    {
+      "id": "life-1484",
+      "type": "life",
+      "src": "w:It turns out that",
+      "ko": "알고 보니 그 식당은 월요일에 문을 닫더라.",
+      "en": "It turns out that the restaurant is closed on Mondays.",
+      "hints": [
+        "It turns out that",
+        "closed"
+      ]
+    },
+    {
+      "id": "it-2384",
+      "type": "it",
+      "src": "w:The thing is",
+      "ko": "돕고 싶은데, 문제는 이번 주에 일정이 꽉 찼다는 거예요.",
+      "en": "I'd love to help, but the thing is, I'm fully booked this week.",
+      "hints": [
+        "The thing is",
+        "booked"
+      ]
+    },
+    {
+      "id": "it-2385",
+      "type": "it",
+      "src": "w:The thing is",
+      "ko": "근데 문제는, 이 코드는 누가 유지보수하죠?",
+      "en": "The thing is, who's going to maintain this code?",
+      "hints": [
+        "The thing is",
+        "maintain"
+      ]
+    },
+    {
+      "id": "life-1485",
+      "type": "life",
+      "src": "w:The thing is",
+      "ko": "그 차 마음에 드는데, 문제는 너무 비싸다는 거야.",
+      "en": "I like that car, but the thing is, it's way too expensive.",
+      "hints": [
+        "The thing is",
+        "expensive"
+      ]
+    },
+    {
+      "id": "it-2386",
+      "type": "it",
+      "src": "w:What I mean is",
+      "ko": "제 말은, 기능을 빼자는 게 아니라 미루자는 거예요.",
+      "en": "What I mean is, let's postpone the feature, not drop it.",
+      "hints": [
+        "What I mean is",
+        "postpone"
+      ]
+    },
+    {
+      "id": "it-2387",
+      "type": "it",
+      "src": "w:What I mean is",
+      "ko": "제 말은, 이 라이브러리가 정말 필요하냐는 거죠?",
+      "en": "What I mean is, do we really need this library?",
+      "hints": [
+        "What I mean is",
+        "library"
+      ]
+    },
+    {
+      "id": "life-1486",
+      "type": "life",
+      "src": "w:What I mean is",
+      "ko": "내 말은, 우리 좀 더 자주 만나자는 거야.",
+      "en": "What I mean is, we should hang out more often.",
+      "hints": [
+        "What I mean is",
+        "hang out"
+      ]
+    },
+    {
+      "id": "it-2388",
+      "type": "it",
+      "src": "w:As far as I'm concerned",
+      "ko": "제 생각에는 이 PR은 바로 머지해도 돼요.",
+      "en": "As far as I'm concerned, this PR is ready to merge.",
+      "hints": [
+        "As far as I'm concerned",
+        "merge"
+      ]
+    },
+    {
+      "id": "it-2389",
+      "type": "it",
+      "src": "w:As far as I'm concerned",
+      "ko": "제 생각엔 금요일이 괜찮은데, 다른 분들은 어떠세요?",
+      "en": "As far as I'm concerned, Friday works, but what about everyone else?",
+      "hints": [
+        "As far as I'm concerned",
+        "Friday"
+      ]
+    },
+    {
+      "id": "life-1487",
+      "type": "life",
+      "src": "w:As far as I'm concerned",
+      "ko": "내 생각엔 그 영화는 시간 낭비였어.",
+      "en": "As far as I'm concerned, that movie was a complete waste of time.",
+      "hints": [
+        "As far as I'm concerned",
+        "waste"
+      ]
+    },
+    {
+      "id": "it-2390",
+      "type": "it",
+      "src": "w:There's no point in ~ing",
+      "ko": "원인을 찾기 전까지는 다시 배포해 봐야 소용없어요.",
+      "en": "There's no point in redeploying until we find the root cause.",
+      "hints": [
+        "There's no point in",
+        "redeploy"
+      ]
+    },
+    {
+      "id": "it-2391",
+      "type": "it",
+      "src": "w:There's no point in ~ing",
+      "ko": "구버전은 고쳐 봐야 소용없지 않아요?",
+      "en": "There's no point in fixing the old version, is there?",
+      "hints": [
+        "There's no point in",
+        "old version"
+      ]
+    },
+    {
+      "id": "life-1488",
+      "type": "life",
+      "src": "w:There's no point in ~ing",
+      "ko": "이미 늦었으니까 서둘러 봐야 소용없어.",
+      "en": "We're already late, so there's no point in rushing.",
+      "hints": [
+        "There's no point in",
+        "rush"
+      ]
+    },
+    {
+      "id": "it-2392",
+      "type": "it",
+      "src": "w:It doesn't matter",
+      "ko": "회의를 언제 하든 저는 상관없어요.",
+      "en": "It doesn't matter to me when we have the meeting.",
+      "hints": [
+        "It doesn't matter",
+        "meeting"
+      ]
+    },
+    {
+      "id": "it-2393",
+      "type": "it",
+      "src": "w:It doesn't matter",
+      "ko": "누가 고치든 상관없잖아요, 그렇죠?",
+      "en": "It doesn't matter who fixes it, does it?",
+      "hints": [
+        "It doesn't matter",
+        "fix"
+      ]
+    },
+    {
+      "id": "life-1489",
+      "type": "life",
+      "src": "w:It doesn't matter",
+      "ko": "뭐 먹든 상관없어, 네가 골라.",
+      "en": "It doesn't matter what we eat, so you pick.",
+      "hints": [
+        "It doesn't matter",
+        "pick"
+      ]
+    },
+    {
+      "id": "it-2394",
+      "type": "it",
+      "src": "w:It makes no difference",
+      "ko": "캐시를 지워도 아무 차이가 없었어요.",
+      "en": "Clearing the cache made no difference at all.",
+      "hints": [
+        "It makes no difference",
+        "cache"
+      ]
+    },
+    {
+      "id": "it-2395",
+      "type": "it",
+      "src": "w:It makes no difference",
+      "ko": "어떤 리전을 고르든 차이 없죠?",
+      "en": "It makes no difference which region we choose, right?",
+      "hints": [
+        "It makes no difference",
+        "region"
+      ]
+    },
+    {
+      "id": "life-1490",
+      "type": "life",
+      "src": "w:It makes no difference",
+      "ko": "나는 비가 오든 말든 상관없어, 집에 있을 거니까.",
+      "en": "It makes no difference to me if it rains, I'm staying home.",
+      "hints": [
+        "It makes no difference",
+        "rain"
+      ]
+    },
+    {
+      "id": "it-2396",
+      "type": "it",
+      "src": "w:That reminds me of",
+      "ko": "그 말 들으니 예전 프로젝트에서 겪은 버그가 생각나요.",
+      "en": "That reminds me of a bug from my old project.",
+      "hints": [
+        "That reminds me of",
+        "bug"
+      ]
+    },
+    {
+      "id": "it-2397",
+      "type": "it",
+      "src": "w:That reminds me of",
+      "ko": "그거 지난번 고객 미팅 생각나지 않아요?",
+      "en": "Doesn't that remind you of the last client meeting?",
+      "hints": [
+        "That reminds me of",
+        "client"
+      ]
+    },
+    {
+      "id": "life-1491",
+      "type": "life",
+      "src": "w:That reminds me of",
+      "ko": "그 말 들으니까 대학 시절이 생각나.",
+      "en": "That reminds me of my college days with my friends.",
+      "hints": [
+        "That reminds me of",
+        "college"
+      ]
+    },
+    {
+      "id": "it-2398",
+      "type": "it",
+      "src": "w:I was wondering if",
+      "ko": "회의를 다음 주로 옮길 수 있을지 궁금했어요.",
+      "en": "I was wondering if we could move the meeting to next week.",
+      "hints": [
+        "I was wondering if",
+        "meeting"
+      ]
+    },
+    {
+      "id": "it-2399",
+      "type": "it",
+      "src": "w:I was wondering if",
+      "ko": "혹시 로그 확인해 보셨는지 궁금해서요?",
+      "en": "I was wondering if you've had a chance to check the logs?",
+      "hints": [
+        "I was wondering if",
+        "logs"
+      ]
+    },
+    {
+      "id": "life-1492",
+      "type": "life",
+      "src": "w:I was wondering if",
+      "ko": "이번 주말에 시간 있는지 궁금했어.",
+      "en": "I was wondering if you're free this weekend.",
+      "hints": [
+        "I was wondering if",
+        "free"
+      ]
+    },
+    {
+      "id": "it-2400",
+      "type": "it",
+      "src": "w:I would appreciate it if",
+      "ko": "제 PR에 코멘트 좀 남겨 주시면 감사하겠습니다.",
+      "en": "I would appreciate it if you left some comments on my PR.",
+      "hints": [
+        "I would appreciate it if",
+        "comments"
+      ]
+    },
+    {
+      "id": "it-2401",
+      "type": "it",
+      "src": "w:I would appreciate it if",
+      "ko": "통화에 참여해 주시면 감사하겠는데, 가능하실까요?",
+      "en": "I would appreciate it if you could join the call, would that work?",
+      "hints": [
+        "I would appreciate it if",
+        "call"
+      ]
+    },
+    {
+      "id": "life-1493",
+      "type": "life",
+      "src": "w:I would appreciate it if",
+      "ko": "조금만 조용히 해 주시면 감사하겠습니다.",
+      "en": "I would appreciate it if you could keep it down a little.",
+      "hints": [
+        "I would appreciate it if",
+        "keep it down"
+      ]
+    },
+    {
+      "id": "it-2402",
+      "type": "it",
+      "src": "w:I'd rather not",
+      "ko": "가능하면 그 레거시 코드는 건드리고 싶지 않아요.",
+      "en": "I'd rather not touch that legacy code if possible.",
+      "hints": [
+        "I'd rather not",
+        "legacy"
+      ]
+    },
+    {
+      "id": "it-2403",
+      "type": "it",
+      "src": "w:I'd rather not",
+      "ko": "저는 발표를 안 하고 싶은데, 다른 분이 해 주실 수 있나요?",
+      "en": "I'd rather not present, so could someone else do it?",
+      "hints": [
+        "I'd rather not",
+        "present"
+      ]
+    },
+    {
+      "id": "life-1494",
+      "type": "life",
+      "src": "w:I'd rather not",
+      "ko": "오늘 밤엔 안 나가고 싶어, 너무 피곤해.",
+      "en": "I'd rather not go out tonight, I'm exhausted.",
+      "hints": [
+        "I'd rather not",
+        "exhausted"
+      ]
+    },
+    {
+      "id": "it-2404",
+      "type": "it",
+      "src": "w:I couldn't agree more",
+      "ko": "자동화 테스트를 추가해야 한다는 데 전적으로 동의해요.",
+      "en": "I couldn't agree more about adding automated tests.",
+      "hints": [
+        "I couldn't agree more",
+        "tests"
+      ]
+    },
+    {
+      "id": "it-2405",
+      "type": "it",
+      "src": "w:I couldn't agree more",
+      "ko": "전적으로 동의해요, 근데 누가 이걸 맡을 건가요?",
+      "en": "I couldn't agree more, but who's going to lead it?",
+      "hints": [
+        "I couldn't agree more",
+        "lead"
+      ]
+    },
+    {
+      "id": "life-1495",
+      "type": "life",
+      "src": "w:I couldn't agree more",
+      "ko": "완전 동의해, 그 영화 진짜 최고였어.",
+      "en": "I couldn't agree more, that movie was amazing.",
+      "hints": [
+        "I couldn't agree more",
+        "movie"
+      ]
+    },
+    {
+      "id": "it-2406",
+      "type": "it",
+      "src": "w:I wouldn't say that",
+      "ko": "새 버전이 더 느리다고는 말하기 어려울 것 같아요.",
+      "en": "I wouldn't say that the new version is slower.",
+      "hints": [
+        "I wouldn't say that",
+        "slower"
+      ]
+    },
+    {
+      "id": "it-2407",
+      "type": "it",
+      "src": "w:I wouldn't say that",
+      "ko": "그걸 버그라고 하긴 좀 그렇지 않아요?",
+      "en": "I wouldn't say that it's a bug, would you?",
+      "hints": [
+        "I wouldn't say that",
+        "bug"
+      ]
+    },
+    {
+      "id": "life-1496",
+      "type": "life",
+      "src": "w:I wouldn't say that",
+      "ko": "그가 무례하다고는 안 할게, 그냥 좀 조용한 거야.",
+      "en": "I wouldn't say that he's rude, he's just quiet.",
+      "hints": [
+        "I wouldn't say that",
+        "rude"
+      ]
+    },
+    {
+      "id": "it-2408",
+      "type": "it",
+      "src": "w:It is up to you",
+      "ko": "출시 날짜는 리드이신 당신이 정하시면 돼요.",
+      "en": "The release date is up to you as the lead.",
+      "hints": [
+        "It is up to you",
+        "release date"
+      ]
+    },
+    {
+      "id": "it-2409",
+      "type": "it",
+      "src": "w:It is up to you",
+      "ko": "기술 스택은 제가 결정하면 되나요?",
+      "en": "Is it up to me to decide the tech stack?",
+      "hints": [
+        "It is up to you",
+        "tech stack"
+      ]
+    },
+    {
+      "id": "life-1497",
+      "type": "life",
+      "src": "w:It is up to you",
+      "ko": "오늘 저녁 메뉴는 네가 정해.",
+      "en": "It's up to you what we have for dinner tonight.",
+      "hints": [
+        "It is up to you",
+        "dinner"
+      ]
+    },
+    {
+      "id": "it-2410",
+      "type": "it",
+      "src": "w:There's a good chance that",
+      "ko": "오늘 밤 배포가 지연될 가능성이 높아요.",
+      "en": "There's a good chance that tonight's deploy will be delayed.",
+      "hints": [
+        "There's a good chance that",
+        "delayed"
+      ]
+    },
+    {
+      "id": "it-2411",
+      "type": "it",
+      "src": "w:There's a good chance that",
+      "ko": "메모리 누수일 가능성이 높은 것 같은데, 그렇게 생각하지 않아요?",
+      "en": "There's a good chance that it's a memory leak, don't you think?",
+      "hints": [
+        "There's a good chance that",
+        "memory leak"
+      ]
+    },
+    {
+      "id": "life-1498",
+      "type": "life",
+      "src": "w:There's a good chance that",
+      "ko": "내일 비 올 가능성이 높아.",
+      "en": "There's a good chance that it'll rain tomorrow.",
+      "hints": [
+        "There's a good chance that",
+        "rain"
+      ]
+    },
+    {
+      "id": "it-2412",
+      "type": "it",
+      "src": "w:Now that",
+      "ko": "이제 테스트가 통과했으니 머지할게요.",
+      "en": "Now that the tests have passed, I'll merge it.",
+      "hints": [
+        "Now that",
+        "tests"
+      ]
+    },
+    {
+      "id": "it-2413",
+      "type": "it",
+      "src": "w:Now that",
+      "ko": "이제 출시가 끝났으니 다음엔 뭘 할까요?",
+      "en": "Now that the launch is over, what should we work on next?",
+      "hints": [
+        "Now that",
+        "launch"
+      ]
+    },
+    {
+      "id": "life-1499",
+      "type": "life",
+      "src": "w:Now that",
+      "ko": "이제 겨울이 왔으니 따뜻한 코트를 사야겠어.",
+      "en": "Now that winter is here, I need to buy a warm coat.",
+      "hints": [
+        "Now that",
+        "winter"
+      ]
+    },
+    {
+      "id": "it-2414",
+      "type": "it",
+      "src": "w:In case",
+      "ko": "배포가 실패할 경우를 대비해 롤백 계획을 준비해 둘게요.",
+      "en": "I'll prepare a rollback plan in case the deploy fails.",
+      "hints": [
+        "In case",
+        "rollback"
+      ]
+    },
+    {
+      "id": "it-2415",
+      "type": "it",
+      "src": "w:In case",
+      "ko": "고객이 물어볼 경우를 대비해 슬라이드를 더 준비할까요?",
+      "en": "Should I prepare extra slides in case the client asks?",
+      "hints": [
+        "In case",
+        "slides"
+      ]
+    },
+    {
+      "id": "life-1500",
+      "type": "life",
+      "src": "w:In case",
+      "ko": "이따 비 올 수도 있으니까 우산 챙겨.",
+      "en": "Take an umbrella in case it rains later.",
+      "hints": [
+        "In case",
+        "umbrella"
+      ]
+    },
+    {
+      "id": "it-2416",
+      "type": "it",
+      "src": "w:Rather than",
+      "ko": "이메일보다는 슬랙으로 연락 주세요.",
+      "en": "Please message me on Slack rather than by email.",
+      "hints": [
+        "Rather than",
+        "Slack"
+      ]
+    },
+    {
+      "id": "it-2417",
+      "type": "it",
+      "src": "w:Rather than",
+      "ko": "직접 만들기보다 기존 라이브러리를 쓰는 게 어때요?",
+      "en": "Why don't we use an existing library rather than building our own?",
+      "hints": [
+        "Rather than",
+        "library"
+      ]
+    },
+    {
+      "id": "life-1501",
+      "type": "life",
+      "src": "w:Rather than",
+      "ko": "오늘 밤엔 외식보다는 집에서 요리하고 싶어.",
+      "en": "I'd like to cook at home rather than eat out tonight.",
+      "hints": [
+        "Rather than",
+        "eat out"
+      ]
+    },
+    {
+      "id": "it-2418",
+      "type": "it",
+      "src": "w:Not necessarily",
+      "ko": "꼭 그렇진 않아요. 어떤 버그는 운영 환경에서만 나타나요.",
+      "en": "Not necessarily. Some bugs only show up in production.",
+      "hints": [
+        "Not necessarily",
+        "production"
+      ]
+    },
+    {
+      "id": "it-2419",
+      "type": "it",
+      "src": "w:Not necessarily",
+      "ko": "그거 오늘 꼭 끝내야 하나요, 아니면 꼭 그렇진 않나요?",
+      "en": "Does it have to be done today, or not necessarily?",
+      "hints": [
+        "Not necessarily",
+        "today"
+      ]
+    },
+    {
+      "id": "life-1502",
+      "type": "life",
+      "src": "w:Not necessarily",
+      "ko": "비싼 게 반드시 더 좋은 건 아니야.",
+      "en": "Expensive things are not necessarily better quality.",
+      "hints": [
+        "Not necessarily",
+        "expensive"
+      ]
+    },
+    {
+      "id": "it-2420",
+      "type": "it",
+      "src": "w:So far",
+      "ko": "지금까지 모든 테스트가 통과했어요.",
+      "en": "All the tests have passed so far.",
+      "hints": [
+        "So far",
+        "tests"
+      ]
+    },
+    {
+      "id": "it-2421",
+      "type": "it",
+      "src": "w:So far",
+      "ko": "지금까지 고객 피드백은 어땠어요?",
+      "en": "How has the client feedback been so far?",
+      "hints": [
+        "So far",
+        "feedback"
+      ]
+    },
+    {
+      "id": "life-1503",
+      "type": "life",
+      "src": "w:So far",
+      "ko": "지금까지는 서울 생활이 정말 좋아.",
+      "en": "So far, I really love living in Seoul.",
+      "hints": [
+        "So far",
+        "Seoul"
+      ]
+    },
+    {
+      "id": "it-2422",
+      "type": "it",
+      "src": "w:From now on",
+      "ko": "지금부터 매일 아침 10시에 스탠드업을 할 거예요.",
+      "en": "From now on, we'll have stand-up at 10 every morning.",
+      "hints": [
+        "From now on",
+        "stand-up"
+      ]
+    },
+    {
+      "id": "it-2423",
+      "type": "it",
+      "src": "w:From now on",
+      "ko": "지금부터 제가 배포 담당인가요?",
+      "en": "Am I in charge of deployments from now on?",
+      "hints": [
+        "From now on",
+        "in charge"
+      ]
+    },
+    {
+      "id": "life-1504",
+      "type": "life",
+      "src": "w:From now on",
+      "ko": "지금부터 매일 운동할 거야.",
+      "en": "From now on, I'm going to work out every day.",
+      "hints": [
+        "From now on",
+        "work out"
+      ]
+    },
+    {
+      "id": "it-2424",
+      "type": "it",
+      "src": "w:At the same time",
+      "ko": "두 서버를 동시에 재시작하지 마세요.",
+      "en": "Please don't restart both servers at the same time.",
+      "hints": [
+        "At the same time",
+        "restart"
+      ]
+    },
+    {
+      "id": "it-2425",
+      "type": "it",
+      "src": "w:At the same time",
+      "ko": "두 기능을 동시에 출시할 수 있을까요?",
+      "en": "Can we release both features at the same time?",
+      "hints": [
+        "At the same time",
+        "release"
+      ]
+    },
+    {
+      "id": "life-1505",
+      "type": "life",
+      "src": "w:At the same time",
+      "ko": "우리 둘이 동시에 똑같은 말을 했어.",
+      "en": "We both said the exact same thing at the same time.",
+      "hints": [
+        "At the same time",
+        "same thing"
+      ]
+    },
+    {
+      "id": "it-2426",
+      "type": "it",
+      "src": "w:For the time being",
+      "ko": "당분간 이 기능은 꺼 둘게요.",
+      "en": "We'll keep this feature turned off for the time being.",
+      "hints": [
+        "For the time being",
+        "feature"
+      ]
+    },
+    {
+      "id": "it-2427",
+      "type": "it",
+      "src": "w:For the time being",
+      "ko": "당분간 수동으로 처리해도 될까요?",
+      "en": "Can we handle it manually for the time being?",
+      "hints": [
+        "For the time being",
+        "manually"
+      ]
+    },
+    {
+      "id": "life-1506",
+      "type": "life",
+      "src": "w:For the time being",
+      "ko": "당분간은 부모님 집에서 지낼 거야.",
+      "en": "I'm staying at my parents' place for the time being.",
+      "hints": [
+        "For the time being",
+        "parents"
+      ]
+    },
+    {
+      "id": "it-2428",
+      "type": "it",
+      "src": "w:acquire",
+      "ko": "이 프로젝트에서 새로운 기술을 많이 습득했어요.",
+      "en": "I acquired a lot of new skills on this project.",
+      "hints": [
+        "acquire",
+        "skills"
+      ]
+    },
+    {
+      "id": "it-2429",
+      "type": "it",
+      "src": "w:acquire",
+      "ko": "그 회사가 우리 경쟁사를 인수했다는 게 사실이에요?",
+      "en": "Is it true that they acquired our competitor?",
+      "hints": [
+        "acquire",
+        "competitor"
+      ]
+    },
+    {
+      "id": "life-1507",
+      "type": "life",
+      "src": "w:acquire",
+      "ko": "어린아이들은 어른보다 새 언어를 훨씬 빨리 습득해.",
+      "en": "Young children acquire new languages much faster than adults.",
+      "hints": [
+        "acquire",
+        "language"
+      ]
+    },
+    {
+      "id": "it-2430",
+      "type": "it",
+      "src": "w:attract",
+      "ko": "좋은 복지 덕분에 실력 있는 개발자들을 팀에 끌어들일 수 있어요.",
+      "en": "Good benefits help us attract talented developers to the team.",
+      "hints": [
+        "attract",
+        "developers"
+      ]
+    },
+    {
+      "id": "it-2431",
+      "type": "it",
+      "src": "w:attract",
+      "ko": "이 기능이 정말 고객을 더 끌어들일까요?",
+      "en": "Do you think this feature will attract more customers?",
+      "hints": [
+        "attract",
+        "customers"
+      ]
+    },
+    {
+      "id": "life-1508",
+      "type": "life",
+      "src": "w:attract",
+      "ko": "그 축제는 매년 수천 명의 관광객을 끌어모아.",
+      "en": "The festival attracts thousands of tourists every year.",
+      "hints": [
+        "attract",
+        "tourists"
+      ]
+    },
+    {
+      "id": "it-2432",
+      "type": "it",
+      "src": "w:belong",
+      "ko": "이 서버는 데이터 팀 소속이에요.",
+      "en": "This server belongs to the data team.",
+      "hints": [
+        "belong",
+        "data team"
+      ]
+    },
+    {
+      "id": "it-2433",
+      "type": "it",
+      "src": "w:belong",
+      "ko": "이 노트북은 누구 거예요?",
+      "en": "Who does this laptop on my desk belong to?",
+      "hints": [
+        "belong",
+        "laptop"
+      ]
+    },
+    {
+      "id": "life-1509",
+      "type": "life",
+      "src": "w:belong",
+      "ko": "새 동네에서 드디어 소속감이 느껴져.",
+      "en": "I finally feel like I belong in my new neighborhood.",
+      "hints": [
+        "belong",
+        "neighborhood"
+      ]
+    },
+    {
+      "id": "it-2434",
+      "type": "it",
+      "src": "w:combine",
+      "ko": "두 리포트를 하나의 대시보드로 합쳤어요.",
+      "en": "I combined the two reports into one dashboard.",
+      "hints": [
+        "combine",
+        "dashboard"
+      ]
+    },
+    {
+      "id": "it-2435",
+      "type": "it",
+      "src": "w:combine",
+      "ko": "이 두 티켓을 하나로 합쳐도 될까요?",
+      "en": "Can we combine these two tickets into one?",
+      "hints": [
+        "combine",
+        "tickets"
+      ]
+    },
+    {
+      "id": "life-1510",
+      "type": "life",
+      "src": "w:combine",
+      "ko": "밀가루랑 설탕을 먼저 섞고 나서 계란을 넣어.",
+      "en": "Combine the flour and sugar first, then add the eggs.",
+      "hints": [
+        "combine",
+        "flour"
+      ]
+    },
+    {
+      "id": "it-2436",
+      "type": "it",
+      "src": "w:commit",
+      "ko": "저는 이 프로젝트에 끝까지 전념할게요.",
+      "en": "I'm fully committed to this project until the end.",
+      "hints": [
+        "commit",
+        "project"
+      ]
+    },
+    {
+      "id": "it-2437",
+      "type": "it",
+      "src": "w:commit",
+      "ko": "이번 분기 안에 그 기능을 전달하겠다고 약속할 수 있나요?",
+      "en": "Can you commit to delivering that feature this quarter?",
+      "hints": [
+        "commit",
+        "deliver"
+      ]
+    },
+    {
+      "id": "life-1511",
+      "type": "life",
+      "src": "w:commit",
+      "ko": "올해는 매일 운동하기로 다짐했어.",
+      "en": "I committed to working out every day this year.",
+      "hints": [
+        "commit",
+        "work out"
+      ]
+    },
+    {
+      "id": "it-2438",
+      "type": "it",
+      "src": "w:compete",
+      "ko": "같은 고객을 두고 세 회사와 경쟁하고 있어요.",
+      "en": "We're competing with three companies for the same client.",
+      "hints": [
+        "compete",
+        "client"
+      ]
+    },
+    {
+      "id": "it-2439",
+      "type": "it",
+      "src": "w:compete",
+      "ko": "우리 앱이 정말 대형 업체들과 경쟁할 수 있을까요?",
+      "en": "Can our app really compete with the big players?",
+      "hints": [
+        "compete",
+        "big players"
+      ]
+    },
+    {
+      "id": "life-1512",
+      "type": "life",
+      "src": "w:compete",
+      "ko": "우리 애들은 항상 내 관심을 받으려고 서로 경쟁해.",
+      "en": "My kids always compete for my attention.",
+      "hints": [
+        "compete",
+        "attention"
+      ]
+    },
+    {
+      "id": "it-2440",
+      "type": "it",
+      "src": "w:connect",
+      "ko": "저희 리드 디자이너와 연결해 드릴게요.",
+      "en": "I'll connect you with our lead designer.",
+      "hints": [
+        "connect",
+        "designer"
+      ]
+    },
+    {
+      "id": "it-2441",
+      "type": "it",
+      "src": "w:connect",
+      "ko": "앱이 운영 데이터베이스에 연결돼 있나요?",
+      "en": "Is the app connected to the production database?",
+      "hints": [
+        "connect",
+        "database"
+      ]
+    },
+    {
+      "id": "life-1513",
+      "type": "life",
+      "src": "w:connect",
+      "ko": "노트북을 호텔 와이파이에 연결했어.",
+      "en": "I connected my laptop to the hotel Wi-Fi.",
+      "hints": [
+        "connect",
+        "Wi-Fi"
+      ]
+    },
+    {
+      "id": "it-2442",
+      "type": "it",
+      "src": "w:define",
+      "ko": "이 함수는 utils 파일에 정의돼 있어요.",
+      "en": "This function is defined in the utils file.",
+      "hints": [
+        "define",
+        "function"
+      ]
+    },
+    {
+      "id": "it-2443",
+      "type": "it",
+      "src": "w:define",
+      "ko": "이 프로젝트에서 '완료'는 어떻게 정의하나요?",
+      "en": "How do we define \"done\" for this project?",
+      "hints": [
+        "define",
+        "done"
+      ]
+    },
+    {
+      "id": "life-1514",
+      "type": "life",
+      "src": "w:define",
+      "ko": "성공을 버는 돈으로만 정의하지 마.",
+      "en": "Don't define success only by how much money you make.",
+      "hints": [
+        "define",
+        "success"
+      ]
+    },
+    {
+      "id": "it-2444",
+      "type": "it",
+      "src": "w:deliver",
+      "ko": "금요일까지 최종 버전을 고객에게 전달할게요.",
+      "en": "We'll deliver the final version to the client by Friday.",
+      "hints": [
+        "deliver",
+        "final version"
+      ]
+    },
+    {
+      "id": "it-2445",
+      "type": "it",
+      "src": "w:deliver",
+      "ko": "약속한 걸 제때 전달할 수 있을까요?",
+      "en": "Can we deliver what we promised on time?",
+      "hints": [
+        "deliver",
+        "on time"
+      ]
+    },
+    {
+      "id": "life-1515",
+      "type": "life",
+      "src": "w:deliver",
+      "ko": "택배가 오늘 아침에 배달됐어.",
+      "en": "My package was delivered this morning.",
+      "hints": [
+        "deliver",
+        "package"
+      ]
+    },
+    {
+      "id": "it-2446",
+      "type": "it",
+      "src": "w:depend",
+      "ko": "이 서비스는 오래된 라이브러리에 많이 의존하고 있어요.",
+      "en": "This service depends heavily on an old library.",
+      "hints": [
+        "depend",
+        "library"
+      ]
+    },
+    {
+      "id": "it-2447",
+      "type": "it",
+      "src": "w:depend",
+      "ko": "출시 날짜가 QA 결과에 달려 있나요?",
+      "en": "Does the release date depend on the QA results?",
+      "hints": [
+        "depend",
+        "QA"
+      ]
+    },
+    {
+      "id": "life-1516",
+      "type": "life",
+      "src": "w:depend",
+      "ko": "내일 계획은 날씨에 달려 있어.",
+      "en": "Our plans for tomorrow depend on the weather.",
+      "hints": [
+        "depend",
+        "weather"
+      ]
+    },
+    {
+      "id": "it-2448",
+      "type": "it",
+      "src": "w:determine",
+      "ko": "다음에 뭘 만들지는 사용자 데이터가 결정할 거예요.",
+      "en": "User data will determine what we build next.",
+      "hints": [
+        "determine",
+        "user data"
+      ]
+    },
+    {
+      "id": "it-2449",
+      "type": "it",
+      "src": "w:determine",
+      "ko": "이 프로젝트 예산은 누가 결정하나요?",
+      "en": "Who determines the budget for this project?",
+      "hints": [
+        "determine",
+        "budget"
+      ]
+    },
+    {
+      "id": "life-1517",
+      "type": "life",
+      "src": "w:determine",
+      "ko": "매일의 습관이 네 미래를 결정해.",
+      "en": "Your daily habits determine your future.",
+      "hints": [
+        "determine",
+        "habits"
+      ]
+    },
+    {
+      "id": "it-2450",
+      "type": "it",
+      "src": "w:distinguish",
+      "ko": "두 버전을 구별할 수 있게 라벨을 붙여 주세요.",
+      "en": "Please label the two versions so we can distinguish them.",
+      "hints": [
+        "distinguish",
+        "label"
+      ]
+    },
+    {
+      "id": "it-2451",
+      "type": "it",
+      "src": "w:distinguish",
+      "ko": "테스트 계정과 실제 계정은 어떻게 구별하나요?",
+      "en": "How do we distinguish test accounts from real ones?",
+      "hints": [
+        "distinguish",
+        "accounts"
+      ]
+    },
+    {
+      "id": "life-1518",
+      "type": "life",
+      "src": "w:distinguish",
+      "ko": "나는 아직도 그 쌍둥이를 구별 못 해.",
+      "en": "I still can't distinguish between the twins.",
+      "hints": [
+        "distinguish",
+        "twins"
+      ]
+    },
+    {
+      "id": "it-2452",
+      "type": "it",
+      "src": "w:enable",
+      "ko": "이 기능 켜려면 설정에서 플래그를 활성화해야 해요.",
+      "en": "You need to enable the flag in the settings to use this feature.",
+      "hints": [
+        "enable",
+        "flag"
+      ]
+    },
+    {
+      "id": "it-2453",
+      "type": "it",
+      "src": "w:enable",
+      "ko": "새 API 덕분에 고객들이 데이터를 직접 내보낼 수 있게 됐어요.",
+      "en": "The new API enables clients to export their data on their own.",
+      "hints": [
+        "enable",
+        "export"
+      ]
+    },
+    {
+      "id": "life-1519",
+      "type": "life",
+      "src": "w:enable",
+      "ko": "이 앱으로 은행 일을 집에서 다 볼 수 있지 않아?",
+      "en": "Doesn't this app enable you to do all your banking from home?",
+      "hints": [
+        "enable",
+        "banking"
+      ]
+    },
+    {
+      "id": "it-2454",
+      "type": "it",
+      "src": "w:evaluate",
+      "ko": "다음 주까지 세 가지 로깅 툴을 평가해 볼게요.",
+      "en": "I'll evaluate three logging tools by next week.",
+      "hints": [
+        "evaluate",
+        "logging"
+      ]
+    },
+    {
+      "id": "it-2455",
+      "type": "it",
+      "src": "w:evaluate",
+      "ko": "성능을 어떻게 평가할 건지 기준을 먼저 정할까요?",
+      "en": "Should we agree on how to evaluate performance first?",
+      "hints": [
+        "evaluate",
+        "performance"
+      ]
+    },
+    {
+      "id": "life-1520",
+      "type": "life",
+      "src": "w:evaluate",
+      "ko": "리뷰만 보고 식당을 평가하긴 어려워.",
+      "en": "It's hard to evaluate a restaurant just by reading reviews.",
+      "hints": [
+        "evaluate",
+        "review"
+      ]
+    },
+    {
+      "id": "it-2456",
+      "type": "it",
+      "src": "w:exist",
+      "ko": "그 테이블이 운영 DB에 아직 존재하나요?",
+      "en": "Does that table still exist in the production database?",
+      "hints": [
+        "exist",
+        "production"
+      ]
+    },
+    {
+      "id": "it-2457",
+      "type": "it",
+      "src": "w:exist",
+      "ko": "이 버그는 예전 버전에도 존재했어요.",
+      "en": "This bug existed in the older version too.",
+      "hints": [
+        "exist",
+        "version"
+      ]
+    },
+    {
+      "id": "life-1521",
+      "type": "life",
+      "src": "w:exist",
+      "ko": "그런 가게가 우리 동네에 있는 줄 몰랐어.",
+      "en": "I didn't know a shop like that existed in our neighborhood.",
+      "hints": [
+        "exist",
+        "neighborhood"
+      ]
+    },
+    {
+      "id": "it-2458",
+      "type": "it",
+      "src": "w:generate",
+      "ko": "이 명령어 돌리면 API 문서가 자동으로 생성돼요.",
+      "en": "If you run this command, it generates the API docs automatically.",
+      "hints": [
+        "generate",
+        "docs"
+      ]
+    },
+    {
+      "id": "it-2459",
+      "type": "it",
+      "src": "w:generate",
+      "ko": "새 토큰은 어디서 생성하면 돼요?",
+      "en": "Where can I generate a new access token?",
+      "hints": [
+        "generate",
+        "token"
+      ]
+    },
+    {
+      "id": "life-1522",
+      "type": "life",
+      "src": "w:generate",
+      "ko": "태양광 패널이 우리 집 전기 절반을 만들어 내.",
+      "en": "The solar panels generate about half of our home's electricity.",
+      "hints": [
+        "generate",
+        "electricity"
+      ]
+    },
+    {
+      "id": "it-2460",
+      "type": "it",
+      "src": "w:imply",
+      "ko": "이 에러 메시지는 권한 문제라는 뜻이에요.",
+      "en": "This error message implies that it's a permission issue.",
+      "hints": [
+        "imply",
+        "permission"
+      ]
+    },
+    {
+      "id": "it-2461",
+      "type": "it",
+      "src": "w:imply",
+      "ko": "제 코드 리뷰가 당신 실력이 부족하다는 뜻은 아니었어요.",
+      "en": "I didn't mean to imply that your skills were lacking in my code review.",
+      "hints": [
+        "imply",
+        "code review"
+      ]
+    },
+    {
+      "id": "life-1523",
+      "type": "life",
+      "src": "w:imply",
+      "ko": "지금 내가 늦게 온다는 말이야?",
+      "en": "Are you implying that I'm always late?",
+      "hints": [
+        "imply",
+        "late"
+      ]
+    },
+    {
+      "id": "it-2462",
+      "type": "it",
+      "src": "w:insist",
+      "ko": "클라이언트가 금요일까지 배포해야 한다고 고집하고 있어요.",
+      "en": "The client is insisting that we deploy by Friday.",
+      "hints": [
+        "insist",
+        "deploy"
+      ]
+    },
+    {
+      "id": "it-2463",
+      "type": "it",
+      "src": "w:insist",
+      "ko": "팀장님이 모든 PR에 테스트를 붙이라고 강하게 주장하셨어요.",
+      "en": "My manager insisted on adding tests to every PR.",
+      "hints": [
+        "insist",
+        "test"
+      ]
+    },
+    {
+      "id": "life-1524",
+      "type": "life",
+      "src": "w:insist",
+      "ko": "정말 괜찮다니까, 굳이 데려다줄 필요 없어. 왜 그렇게 고집해?",
+      "en": "Why do you insist on driving me home when I said I'm fine?",
+      "hints": [
+        "insist",
+        "drive"
+      ]
+    },
+    {
+      "id": "it-2464",
+      "type": "it",
+      "src": "w:obtain",
+      "ko": "운영 서버 접근 권한은 어떻게 얻을 수 있나요?",
+      "en": "How can I obtain access to the production server?",
+      "hints": [
+        "obtain",
+        "access"
+      ]
+    },
+    {
+      "id": "it-2465",
+      "type": "it",
+      "src": "w:obtain",
+      "ko": "보안팀에서 인증서를 받으면 바로 적용할게요.",
+      "en": "I'll apply the certificate as soon as I obtain it from the security team.",
+      "hints": [
+        "obtain",
+        "certificate"
+      ]
+    },
+    {
+      "id": "life-1525",
+      "type": "life",
+      "src": "w:obtain",
+      "ko": "비자 받는 데 한 달 넘게 걸렸어.",
+      "en": "It took more than a month to obtain my visa.",
+      "hints": [
+        "obtain",
+        "visa"
+      ]
+    },
+    {
+      "id": "it-2466",
+      "type": "it",
+      "src": "w:perform",
+      "ko": "오늘 밤에 서버 점검을 수행할 예정이에요.",
+      "en": "We're going to perform server maintenance tonight.",
+      "hints": [
+        "perform",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "it-2467",
+      "type": "it",
+      "src": "w:perform",
+      "ko": "새 버전이 부하 상황에서 잘 동작하나요?",
+      "en": "Does the new version perform well under heavy load?",
+      "hints": [
+        "perform",
+        "load"
+      ]
+    },
+    {
+      "id": "life-1526",
+      "type": "life",
+      "src": "w:perform",
+      "ko": "그 밴드는 이번 주말에 공원에서 공연한대.",
+      "en": "That band is performing in the park this weekend.",
+      "hints": [
+        "perform",
+        "band"
+      ]
+    },
+    {
+      "id": "it-2468",
+      "type": "it",
+      "src": "w:predict",
+      "ko": "트래픽이 얼마나 늘지 정확히 예측할 수는 없어요.",
+      "en": "We can't predict exactly how much the traffic will grow.",
+      "hints": [
+        "predict",
+        "traffic"
+      ]
+    },
+    {
+      "id": "it-2469",
+      "type": "it",
+      "src": "w:predict",
+      "ko": "이 작업이 언제 끝날지 예상할 수 있어요?",
+      "en": "Can you predict when this task will be done?",
+      "hints": [
+        "predict",
+        "task"
+      ]
+    },
+    {
+      "id": "life-1527",
+      "type": "life",
+      "src": "w:predict",
+      "ko": "일기예보에서 내일 눈 온다고 예측했어.",
+      "en": "The forecast predicted snow for tomorrow.",
+      "hints": [
+        "predict",
+        "forecast"
+      ]
+    },
+    {
+      "id": "it-2470",
+      "type": "it",
+      "src": "w:reflect",
+      "ko": "문서에 최신 변경 사항이 아직 반영이 안 됐어요.",
+      "en": "The docs don't reflect the latest changes yet.",
+      "hints": [
+        "reflect",
+        "docs"
+      ]
+    },
+    {
+      "id": "it-2471",
+      "type": "it",
+      "src": "w:reflect",
+      "ko": "회고 때 이번 스프린트를 같이 돌아보죠.",
+      "en": "Let's reflect on this sprint together in the retro.",
+      "hints": [
+        "reflect",
+        "sprint"
+      ]
+    },
+    {
+      "id": "life-1528",
+      "type": "life",
+      "src": "w:reflect",
+      "ko": "이번 해에 대해 돌아볼 시간이 좀 있었어?",
+      "en": "Have you had some time to reflect on this year?",
+      "hints": [
+        "reflect",
+        "year"
+      ]
+    },
+    {
+      "id": "it-2472",
+      "type": "it",
+      "src": "w:represent",
+      "ko": "이 그래프의 빨간 선은 뭘 나타내는 거예요?",
+      "en": "What does the red line on this graph represent?",
+      "hints": [
+        "represent",
+        "graph"
+      ]
+    },
+    {
+      "id": "it-2473",
+      "type": "it",
+      "src": "w:represent",
+      "ko": "다음 주 컨퍼런스에서 제가 우리 팀을 대표해서 발표해요.",
+      "en": "I'll represent our team at the conference next week.",
+      "hints": [
+        "represent",
+        "conference"
+      ]
+    },
+    {
+      "id": "life-1529",
+      "type": "life",
+      "src": "w:represent",
+      "ko": "이 그림은 작가의 어린 시절을 나타낸대.",
+      "en": "This painting represents the artist's childhood.",
+      "hints": [
+        "represent",
+        "painting"
+      ]
+    },
+    {
+      "id": "it-2474",
+      "type": "it",
+      "src": "w:reveal",
+      "ko": "로그를 보니 메모리 누수가 있다는 게 드러났어요.",
+      "en": "The logs revealed a memory leak.",
+      "hints": [
+        "reveal",
+        "memory leak"
+      ]
+    },
+    {
+      "id": "it-2475",
+      "type": "it",
+      "src": "w:reveal",
+      "ko": "출시 전까지는 새 기능을 공개하지 마세요.",
+      "en": "Please don't reveal the new feature before launch.",
+      "hints": [
+        "reveal",
+        "launch"
+      ]
+    },
+    {
+      "id": "life-1530",
+      "type": "life",
+      "src": "w:reveal",
+      "ko": "드디어 그 영화 결말이 밝혀지는 거야?",
+      "en": "Do they finally reveal the ending of the movie?",
+      "hints": [
+        "reveal",
+        "ending"
+      ]
+    },
+    {
+      "id": "it-2476",
+      "type": "it",
+      "src": "w:separate",
+      "ko": "설정 파일을 환경별로 분리하는 게 좋겠어요.",
+      "en": "We should separate the config files by environment.",
+      "hints": [
+        "separate",
+        "config"
+      ]
+    },
+    {
+      "id": "it-2477",
+      "type": "it",
+      "src": "w:separate",
+      "ko": "UI 로직이랑 비즈니스 로직 분리할 수 있을까요?",
+      "en": "Can we separate the UI logic from the business logic?",
+      "hints": [
+        "separate",
+        "logic"
+      ]
+    },
+    {
+      "id": "life-1531",
+      "type": "life",
+      "src": "w:separate",
+      "ko": "재활용품은 종이랑 플라스틱 따로 분리해야 해.",
+      "en": "You have to separate paper and plastic for recycling.",
+      "hints": [
+        "separate",
+        "recycling"
+      ]
+    },
+    {
+      "id": "it-2478",
+      "type": "it",
+      "src": "w:vary",
+      "ko": "응답 시간이 지역마다 꽤 달라요.",
+      "en": "Response times vary quite a lot by region.",
+      "hints": [
+        "vary",
+        "region"
+      ]
+    },
+    {
+      "id": "it-2479",
+      "type": "it",
+      "src": "w:vary",
+      "ko": "일정은 요구 사항에 따라 달라질 수 있어요.",
+      "en": "The timeline may vary depending on the requirements.",
+      "hints": [
+        "vary",
+        "timeline"
+      ]
+    },
+    {
+      "id": "life-1532",
+      "type": "life",
+      "src": "w:vary",
+      "ko": "여기 출퇴근 시간은 날씨에 따라 많이 달라져?",
+      "en": "Does your commute time vary a lot with the weather?",
+      "hints": [
+        "vary",
+        "commute"
+      ]
+    },
+    {
+      "id": "it-2480",
+      "type": "it",
+      "src": "w:verify",
+      "ko": "배포 전에 스테이징에서 수정 사항을 검증해 주세요.",
+      "en": "Please verify the fix on staging before we deploy.",
+      "hints": [
+        "verify",
+        "staging"
+      ]
+    },
+    {
+      "id": "it-2481",
+      "type": "it",
+      "src": "w:verify",
+      "ko": "백업이 제대로 됐는지 확인해 봤어요?",
+      "en": "Did you verify that the backup actually worked?",
+      "hints": [
+        "verify",
+        "backup"
+      ]
+    },
+    {
+      "id": "life-1533",
+      "type": "life",
+      "src": "w:verify",
+      "ko": "택배 보내기 전에 주소를 한 번 더 확인했어.",
+      "en": "I verified the address again before sending the package.",
+      "hints": [
+        "verify",
+        "address"
+      ]
+    },
+    {
+      "id": "it-2482",
+      "type": "it",
+      "src": "w:achievement",
+      "ko": "이번 분기 가장 큰 성과가 뭐였어요?",
+      "en": "What was your biggest achievement this quarter?",
+      "hints": [
+        "achievement",
+        "quarter"
+      ]
+    },
+    {
+      "id": "it-2483",
+      "type": "it",
+      "src": "w:achievement",
+      "ko": "성과 평가에 제 주요 업적을 정리해서 넣었어요.",
+      "en": "I listed my key achievements in my performance review.",
+      "hints": [
+        "achievement",
+        "review"
+      ]
+    },
+    {
+      "id": "life-1534",
+      "type": "life",
+      "src": "w:achievement",
+      "ko": "첫 마라톤 완주는 나한테 진짜 큰 성취였어.",
+      "en": "Finishing my first marathon was a real achievement for me.",
+      "hints": [
+        "achievement",
+        "marathon"
+      ]
+    },
+    {
+      "id": "it-2484",
+      "type": "it",
+      "src": "w:analysis",
+      "ko": "장애 원인 분석은 내일까지 공유할게요.",
+      "en": "I'll share the root cause analysis by tomorrow.",
+      "hints": [
+        "analysis",
+        "root cause"
+      ]
+    },
+    {
+      "id": "it-2485",
+      "type": "it",
+      "src": "w:analysis",
+      "ko": "이 분석에 쓴 데이터는 어디서 가져온 거예요?",
+      "en": "Where did you get the data for this analysis?",
+      "hints": [
+        "analysis",
+        "data"
+      ]
+    },
+    {
+      "id": "life-1535",
+      "type": "life",
+      "src": "w:analysis",
+      "ko": "그 경기 분석 영상 진짜 재밌더라.",
+      "en": "That game analysis video was really interesting.",
+      "hints": [
+        "analysis",
+        "game"
+      ]
+    },
+    {
+      "id": "it-2486",
+      "type": "it",
+      "src": "w:assumption",
+      "ko": "그건 잘못된 가정이었던 것 같아요.",
+      "en": "I think that was a wrong assumption.",
+      "hints": [
+        "assumption",
+        "wrong"
+      ]
+    },
+    {
+      "id": "it-2487",
+      "type": "it",
+      "src": "w:assumption",
+      "ko": "이 견적은 어떤 가정을 바탕으로 한 거예요?",
+      "en": "What assumptions is this estimate based on?",
+      "hints": [
+        "assumption",
+        "estimate"
+      ]
+    },
+    {
+      "id": "life-1536",
+      "type": "life",
+      "src": "w:assumption",
+      "ko": "겉모습만 보고 사람을 함부로 짐작하지 마.",
+      "en": "Don't make assumptions about people based on how they look.",
+      "hints": [
+        "assumption",
+        "look"
+      ]
+    },
+    {
+      "id": "it-2488",
+      "type": "it",
+      "src": "w:awareness",
+      "ko": "피싱 메일에 대한 인식을 높이려고 교육을 준비 중이에요.",
+      "en": "We're planning a training to raise awareness of phishing emails.",
+      "hints": [
+        "awareness",
+        "phishing"
+      ]
+    },
+    {
+      "id": "it-2489",
+      "type": "it",
+      "src": "w:awareness",
+      "ko": "팀원들이 이 정책에 대해 잘 알고 있나요?",
+      "en": "Is there enough awareness of this policy on the team?",
+      "hints": [
+        "awareness",
+        "policy"
+      ]
+    },
+    {
+      "id": "life-1537",
+      "type": "life",
+      "src": "w:awareness",
+      "ko": "요즘 환경 문제에 대한 인식이 많이 높아졌어.",
+      "en": "Public awareness of environmental issues has really grown lately.",
+      "hints": [
+        "awareness",
+        "environmental"
+      ]
+    },
+    {
+      "id": "it-2490",
+      "type": "it",
+      "src": "w:circumstance",
+      "ko": "어떤 상황에서도 운영 DB를 직접 수정하면 안 돼요.",
+      "en": "Under no circumstances should you edit the production database directly.",
+      "hints": [
+        "circumstance",
+        "production"
+      ]
+    },
+    {
+      "id": "it-2491",
+      "type": "it",
+      "src": "w:circumstance",
+      "ko": "그 상황이라면 마감 연장 요청해도 될까요?",
+      "en": "Given the circumstances, can I ask for a deadline extension?",
+      "hints": [
+        "circumstance",
+        "extension"
+      ]
+    },
+    {
+      "id": "life-1538",
+      "type": "life",
+      "src": "w:circumstance",
+      "ko": "개인 사정 때문에 이사를 가야 했어.",
+      "en": "I had to move because of personal circumstances.",
+      "hints": [
+        "circumstance",
+        "personal"
+      ]
+    },
+    {
+      "id": "it-2492",
+      "type": "it",
+      "src": "w:competition",
+      "ko": "경쟁사 대비 우리 제품의 강점이 뭐라고 생각해요?",
+      "en": "What do you think our strength is compared to the competition?",
+      "hints": [
+        "competition",
+        "strength"
+      ]
+    },
+    {
+      "id": "it-2493",
+      "type": "it",
+      "src": "w:competition",
+      "ko": "이 분야는 경쟁이 치열해서 빨리 출시해야 해요.",
+      "en": "The competition in this space is tough, so we need to ship fast.",
+      "hints": [
+        "competition",
+        "ship"
+      ]
+    },
+    {
+      "id": "life-1539",
+      "type": "life",
+      "src": "w:competition",
+      "ko": "조카가 피아노 대회에서 1등 했어.",
+      "en": "My niece won first place in a piano competition.",
+      "hints": [
+        "competition",
+        "piano"
+      ]
+    },
+    {
+      "id": "it-2494",
+      "type": "it",
+      "src": "w:contribution",
+      "ko": "이 기능에 대한 당신의 기여가 정말 컸어요.",
+      "en": "Your contribution to this feature was really huge.",
+      "hints": [
+        "contribution",
+        "feature"
+      ]
+    },
+    {
+      "id": "it-2495",
+      "type": "it",
+      "src": "w:contribution",
+      "ko": "오픈소스 프로젝트에 기여해 본 적 있어요?",
+      "en": "Have you ever made a contribution to an open-source project?",
+      "hints": [
+        "contribution",
+        "open-source"
+      ]
+    },
+    {
+      "id": "life-1540",
+      "type": "life",
+      "src": "w:contribution",
+      "ko": "동네 축제에 다들 조금씩 기부했어.",
+      "en": "Everyone made a small contribution to the local festival.",
+      "hints": [
+        "contribution",
+        "festival"
+      ]
+    },
+    {
+      "id": "it-2496",
+      "type": "it",
+      "src": "w:convenience",
+      "ko": "편하실 때 이 PR 한번 봐 주세요.",
+      "en": "Please review this PR at your convenience.",
+      "hints": [
+        "convenience",
+        "review"
+      ]
+    },
+    {
+      "id": "it-2497",
+      "type": "it",
+      "src": "w:convenience",
+      "ko": "사용자 편의를 위해 자동 저장 기능을 추가했어요.",
+      "en": "We added auto-save for user convenience.",
+      "hints": [
+        "convenience",
+        "auto-save"
+      ]
+    },
+    {
+      "id": "life-1541",
+      "type": "life",
+      "src": "w:convenience",
+      "ko": "편리함 때문에 결국 집 근처 마트만 가게 되지 않아?",
+      "en": "Don't you end up shopping near home just for the convenience?",
+      "hints": [
+        "convenience",
+        "shopping"
+      ]
+    },
+    {
+      "id": "it-2498",
+      "type": "it",
+      "src": "w:expectation",
+      "ko": "고객 기대치를 처음부터 명확히 맞춰 두는 게 중요해요.",
+      "en": "It's important to set clear expectations with the client from the start.",
+      "hints": [
+        "expectation",
+        "client"
+      ]
+    },
+    {
+      "id": "it-2499",
+      "type": "it",
+      "src": "w:expectation",
+      "ko": "이번 릴리스가 기대에 못 미쳤던 이유가 뭘까요?",
+      "en": "Why do you think this release didn't meet expectations?",
+      "hints": [
+        "expectation",
+        "release"
+      ]
+    },
+    {
+      "id": "life-1542",
+      "type": "life",
+      "src": "w:expectation",
+      "ko": "기대를 안 하고 갔는데 그 영화 진짜 좋았어.",
+      "en": "I went in with low expectations, but the movie was great.",
+      "hints": [
+        "expectation",
+        "movie"
+      ]
+    },
+    {
+      "id": "it-2500",
+      "type": "it",
+      "src": "w:expense",
+      "ko": "출장 경비는 어디에 청구하면 돼요?",
+      "en": "Where do I submit my travel expenses?",
+      "hints": [
+        "expense",
+        "submit"
+      ]
+    },
+    {
+      "id": "it-2501",
+      "type": "it",
+      "src": "w:expense",
+      "ko": "클라우드 비용이 지난달보다 30% 늘었어요.",
+      "en": "Our cloud expenses went up 30% from last month.",
+      "hints": [
+        "expense",
+        "cloud"
+      ]
+    },
+    {
+      "id": "life-1543",
+      "type": "life",
+      "src": "w:expense",
+      "ko": "이번 달엔 생활비를 좀 줄여야 해.",
+      "en": "I need to cut down on my living expenses this month.",
+      "hints": [
+        "expense",
+        "living"
+      ]
+    },
+    {
+      "id": "it-2502",
+      "type": "it",
+      "src": "w:growth",
+      "ko": "사용자 증가 속도가 예상보다 빨라요.",
+      "en": "User growth is faster than we expected.",
+      "hints": [
+        "growth",
+        "user"
+      ]
+    },
+    {
+      "id": "it-2503",
+      "type": "it",
+      "src": "w:growth",
+      "ko": "이 직무에서 성장할 기회가 있을까요?",
+      "en": "Are there opportunities for growth in this role?",
+      "hints": [
+        "growth",
+        "role"
+      ]
+    },
+    {
+      "id": "life-1544",
+      "type": "life",
+      "src": "w:growth",
+      "ko": "그 일 겪고 나서 개인적으로 많이 성장했어.",
+      "en": "That experience led to a lot of personal growth.",
+      "hints": [
+        "growth",
+        "personal"
+      ]
+    },
+    {
+      "id": "it-2504",
+      "type": "it",
+      "src": "w:influence",
+      "ko": "그 시니어 개발자가 아키텍처 결정에 영향력이 커요.",
+      "en": "That senior developer has a lot of influence on architecture decisions.",
+      "hints": [
+        "influence",
+        "architecture"
+      ]
+    },
+    {
+      "id": "it-2505",
+      "type": "it",
+      "src": "w:influence",
+      "ko": "이번 결정에 고객 피드백이 얼마나 영향을 줬어요?",
+      "en": "How much influence did customer feedback have on this decision?",
+      "hints": [
+        "influence",
+        "feedback"
+      ]
+    },
+    {
+      "id": "life-1545",
+      "type": "life",
+      "src": "w:influence",
+      "ko": "우리 엄마가 내 음악 취향에 큰 영향을 줬어.",
+      "en": "My mom had a big influence on my taste in music.",
+      "hints": [
+        "influence",
+        "taste"
+      ]
+    },
+    {
+      "id": "it-2506",
+      "type": "it",
+      "src": "w:intention",
+      "ko": "이 함수의 원래 의도가 뭐였는지 아세요?",
+      "en": "Do you know what the original intention of this function was?",
+      "hints": [
+        "intention",
+        "function"
+      ]
+    },
+    {
+      "id": "it-2507",
+      "type": "it",
+      "src": "w:intention",
+      "ko": "일정을 미룰 생각은 없지만 범위는 줄일 수 있어요.",
+      "en": "We have no intention of delaying the schedule, but we can cut the scope.",
+      "hints": [
+        "intention",
+        "scope"
+      ]
+    },
+    {
+      "id": "life-1546",
+      "type": "life",
+      "src": "w:intention",
+      "ko": "좋은 의도였는데 결과적으로 일이 더 꼬였어.",
+      "en": "I had good intentions, but it made things worse.",
+      "hints": [
+        "intention",
+        "good"
+      ]
+    },
+    {
+      "id": "it-2508",
+      "type": "it",
+      "src": "w:requirement",
+      "ko": "요구 사항이 또 바뀌어서 일정 다시 잡아야 해요.",
+      "en": "The requirements changed again, so we need to reschedule.",
+      "hints": [
+        "requirement",
+        "reschedule"
+      ]
+    },
+    {
+      "id": "it-2509",
+      "type": "it",
+      "src": "w:requirement",
+      "ko": "이 기능의 최소 요구 사항이 뭐예요?",
+      "en": "What are the minimum requirements for this feature?",
+      "hints": [
+        "requirement",
+        "minimum"
+      ]
+    },
+    {
+      "id": "life-1547",
+      "type": "life",
+      "src": "w:requirement",
+      "ko": "그 아파트는 우리 조건을 다 충족하진 않았어.",
+      "en": "That apartment didn't meet all of our requirements.",
+      "hints": [
+        "requirement",
+        "apartment"
+      ]
+    },
+    {
+      "id": "it-2510",
+      "type": "it",
+      "src": "w:shortage",
+      "ko": "인력 부족 때문에 이번 프로젝트가 지연되고 있어요.",
+      "en": "The project is delayed because of a staff shortage.",
+      "hints": [
+        "shortage",
+        "staff"
+      ]
+    },
+    {
+      "id": "it-2511",
+      "type": "it",
+      "src": "w:shortage",
+      "ko": "반도체 부족이 하드웨어 주문에 영향을 줄까요?",
+      "en": "Will the chip shortage affect our hardware orders?",
+      "hints": [
+        "shortage",
+        "chip"
+      ]
+    },
+    {
+      "id": "life-1548",
+      "type": "life",
+      "src": "w:shortage",
+      "ko": "여름에 물 부족이 심해서 물을 아껴 써야 했어.",
+      "en": "There was a water shortage, so we had to save water this summer.",
+      "hints": [
+        "shortage",
+        "water"
+      ]
+    },
+    {
+      "id": "it-2512",
+      "type": "it",
+      "src": "w:standard",
+      "ko": "이 코드는 우리 팀 코딩 기준에 안 맞아요.",
+      "en": "This code doesn't meet our team's coding standards.",
+      "hints": [
+        "standard",
+        "coding"
+      ]
+    },
+    {
+      "id": "it-2513",
+      "type": "it",
+      "src": "w:standard",
+      "ko": "이게 업계 표준 방식인가요?",
+      "en": "Is this the industry standard approach?",
+      "hints": [
+        "standard",
+        "industry"
+      ]
+    },
+    {
+      "id": "life-1549",
+      "type": "life",
+      "src": "w:standard",
+      "ko": "그 식당은 서비스 기준이 정말 높아.",
+      "en": "That restaurant has really high standards for service.",
+      "hints": [
+        "standard",
+        "service"
+      ]
+    },
+    {
+      "id": "it-2514",
+      "type": "it",
+      "src": "w:statement",
+      "ko": "이 SQL 문이 너무 느려서 튜닝이 필요해요.",
+      "en": "This SQL statement is too slow, so it needs tuning.",
+      "hints": [
+        "statement",
+        "SQL"
+      ]
+    },
+    {
+      "id": "it-2515",
+      "type": "it",
+      "src": "w:statement",
+      "ko": "장애에 대한 공식 입장문은 누가 작성하나요?",
+      "en": "Who's writing the official statement about the outage?",
+      "hints": [
+        "statement",
+        "outage"
+      ]
+    },
+    {
+      "id": "life-1550",
+      "type": "life",
+      "src": "w:statement",
+      "ko": "카드 명세서 보니까 이번 달에 외식을 너무 많이 했더라.",
+      "en": "My card statement shows I ate out way too much this month.",
+      "hints": [
+        "statement",
+        "card"
+      ]
+    },
+    {
+      "id": "it-2516",
+      "type": "it",
+      "src": "w:tendency",
+      "ko": "우리 팀은 마지막에 테스트를 몰아서 하는 경향이 있어요.",
+      "en": "Our team has a tendency to leave testing until the end.",
+      "hints": [
+        "tendency",
+        "testing"
+      ]
+    },
+    {
+      "id": "it-2517",
+      "type": "it",
+      "src": "w:tendency",
+      "ko": "사용자들이 이 버튼을 놓치는 경향이 있지 않나요?",
+      "en": "Don't users have a tendency to miss this button?",
+      "hints": [
+        "tendency",
+        "button"
+      ]
+    },
+    {
+      "id": "life-1551",
+      "type": "life",
+      "src": "w:tendency",
+      "ko": "나는 스트레스 받으면 과식하는 경향이 있어.",
+      "en": "I have a tendency to overeat when I'm stressed.",
+      "hints": [
+        "tendency",
+        "stressed"
+      ]
+    },
+    {
+      "id": "it-2518",
+      "type": "it",
+      "src": "w:threat",
+      "ko": "이 취약점이 실제로 위협이 될 수 있을까요?",
+      "en": "Could this vulnerability be a real threat?",
+      "hints": [
+        "threat",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "it-2519",
+      "type": "it",
+      "src": "w:threat",
+      "ko": "보안팀이 새로운 랜섬웨어 위협에 대해 경고했어요.",
+      "en": "The security team warned us about a new ransomware threat.",
+      "hints": [
+        "threat",
+        "ransomware"
+      ]
+    },
+    {
+      "id": "life-1552",
+      "type": "life",
+      "src": "w:threat",
+      "ko": "폭우가 농작물에 큰 위협이 되고 있대.",
+      "en": "The heavy rain is a big threat to the crops.",
+      "hints": [
+        "threat",
+        "crops"
+      ]
+    },
+    {
+      "id": "it-2520",
+      "type": "it",
+      "src": "w:evidence",
+      "ko": "캐시가 원인이라는 근거가 있어요?",
+      "en": "Do you have any evidence that the cache is the cause?",
+      "hints": [
+        "evidence",
+        "cache"
+      ]
+    },
+    {
+      "id": "it-2521",
+      "type": "it",
+      "src": "w:evidence",
+      "ko": "로그에서 공격 시도의 증거를 찾았어요.",
+      "en": "We found evidence of an attack attempt in the logs.",
+      "hints": [
+        "evidence",
+        "logs"
+      ]
+    },
+    {
+      "id": "life-1553",
+      "type": "life",
+      "src": "w:evidence",
+      "ko": "케이크 먹은 증거가 네 입에 묻어 있어.",
+      "en": "The evidence that you ate the cake is right on your face.",
+      "hints": [
+        "evidence",
+        "cake"
+      ]
+    },
+    {
+      "id": "it-2522",
+      "type": "it",
+      "src": "w:limitation",
+      "ko": "이 라이브러리는 대용량 파일 처리에 한계가 있어요.",
+      "en": "This library has some limitations with large files.",
+      "hints": [
+        "limitation",
+        "library"
+      ]
+    },
+    {
+      "id": "it-2523",
+      "type": "it",
+      "src": "w:limitation",
+      "ko": "현재 구조의 가장 큰 한계가 뭐라고 봐요?",
+      "en": "What do you see as the biggest limitation of the current design?",
+      "hints": [
+        "limitation",
+        "design"
+      ]
+    },
+    {
+      "id": "life-1554",
+      "type": "life",
+      "src": "w:limitation",
+      "ko": "내 체력의 한계를 인정하고 천천히 하기로 했어.",
+      "en": "I accepted my physical limitations and decided to take it slow.",
+      "hints": [
+        "limitation",
+        "physical"
+      ]
+    },
+    {
+      "id": "it-2524",
+      "type": "it",
+      "src": "w:objective",
+      "ko": "이번 분기 팀 목표를 다시 정리해 봅시다.",
+      "en": "Let's go over our team objectives for this quarter again.",
+      "hints": [
+        "objective",
+        "quarter"
+      ]
+    },
+    {
+      "id": "it-2525",
+      "type": "it",
+      "src": "w:objective",
+      "ko": "이 회의의 목적이 정확히 뭐예요?",
+      "en": "What exactly is the objective of this meeting?",
+      "hints": [
+        "objective",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1555",
+      "type": "life",
+      "src": "w:objective",
+      "ko": "올해 내 목표는 매주 세 번 운동하는 거야.",
+      "en": "My objective this year is to work out three times a week.",
+      "hints": [
+        "objective",
+        "work out"
+      ]
+    },
+    {
+      "id": "it-2526",
+      "type": "it",
+      "src": "w:absolute",
+      "ko": "이번 배포는 절대적인 마감이 금요일이에요.",
+      "en": "Friday is the absolute deadline for this deployment.",
+      "hints": [
+        "absolute",
+        "deadline"
+      ]
+    },
+    {
+      "id": "it-2527",
+      "type": "it",
+      "src": "w:absolute",
+      "ko": "정말 절대적으로 필요한 기능만 남기면 어떨까요?",
+      "en": "Why don't we keep only the absolute must-have features?",
+      "hints": [
+        "absolute",
+        "must-have"
+      ]
+    },
+    {
+      "id": "life-1556",
+      "type": "life",
+      "src": "w:absolute",
+      "ko": "그 공연은 완전 대박이었어.",
+      "en": "That concert was an absolute blast.",
+      "hints": [
+        "absolute",
+        "blast"
+      ]
+    },
+    {
+      "id": "it-2528",
+      "type": "it",
+      "src": "w:additional",
+      "ko": "이 작업엔 추가 인력이 필요할 것 같아요.",
+      "en": "I think we'll need additional people for this work.",
+      "hints": [
+        "additional",
+        "people"
+      ]
+    },
+    {
+      "id": "it-2529",
+      "type": "it",
+      "src": "w:additional",
+      "ko": "추가 정보가 필요하면 알려 주세요.",
+      "en": "Let me know if you need any additional information.",
+      "hints": [
+        "additional",
+        "information"
+      ]
+    },
+    {
+      "id": "life-1557",
+      "type": "life",
+      "src": "w:additional",
+      "ko": "수하물 추가하면 돈 더 내야 해?",
+      "en": "Do I have to pay extra for an additional bag?",
+      "hints": [
+        "additional",
+        "bag"
+      ]
+    },
+    {
+      "id": "it-2530",
+      "type": "it",
+      "src": "w:alternative",
+      "ko": "이 라이브러리 대신 쓸 만한 대안 방법이 있을까요?",
+      "en": "Is there an alternative approach instead of this library?",
+      "hints": [
+        "alternative",
+        "approach"
+      ]
+    },
+    {
+      "id": "it-2531",
+      "type": "it",
+      "src": "w:alternative",
+      "ko": "서버가 다운되면 대체 경로로 트래픽을 보낼 거예요.",
+      "en": "If the server goes down, we'll route traffic through an alternative path.",
+      "hints": [
+        "alternative",
+        "route"
+      ]
+    },
+    {
+      "id": "life-1558",
+      "type": "life",
+      "src": "w:alternative",
+      "ko": "지하철 파업이라 다른 교통수단을 찾아야 해.",
+      "en": "The subway is on strike, so I need an alternative way to get to work.",
+      "hints": [
+        "alternative",
+        "strike"
+      ]
+    },
+    {
+      "id": "it-2532",
+      "type": "it",
+      "src": "w:apparent",
+      "ko": "테스트해 보니 문제가 분명해졌어요.",
+      "en": "After testing, the problem became apparent.",
+      "hints": [
+        "apparent",
+        "testing"
+      ]
+    },
+    {
+      "id": "it-2533",
+      "type": "it",
+      "src": "w:apparent",
+      "ko": "뚜렷한 이유 없이 서버가 계속 재시작돼요.",
+      "en": "The server keeps restarting for no apparent reason.",
+      "hints": [
+        "apparent",
+        "restart"
+      ]
+    },
+    {
+      "id": "life-1559",
+      "type": "life",
+      "src": "w:apparent",
+      "ko": "걔가 화난 게 그렇게 티가 났어?",
+      "en": "Was it that apparent that she was upset?",
+      "hints": [
+        "apparent",
+        "upset"
+      ]
+    },
+    {
+      "id": "it-2534",
+      "type": "it",
+      "src": "w:average",
+      "ko": "평균 페이지 로딩 시간이 어떻게 돼요?",
+      "en": "What's the average page load time?",
+      "hints": [
+        "average",
+        "load time"
+      ]
+    },
+    {
+      "id": "it-2535",
+      "type": "it",
+      "src": "w:average",
+      "ko": "평균 처리 시간이 지난달보다 두 배 늘었어요.",
+      "en": "The average processing time doubled compared to last month.",
+      "hints": [
+        "average",
+        "processing"
+      ]
+    },
+    {
+      "id": "life-1560",
+      "type": "life",
+      "src": "w:average",
+      "ko": "평범한 직장인한테 서울 집값은 너무 비싸.",
+      "en": "Housing in Seoul is too expensive for the average office worker.",
+      "hints": [
+        "average",
+        "housing"
+      ]
+    },
+    {
+      "id": "it-2536",
+      "type": "it",
+      "src": "w:broad",
+      "ko": "이 질문은 너무 범위가 넓어서 좀 좁혀야 할 것 같아요.",
+      "en": "This question is too broad, so we should narrow it down.",
+      "hints": [
+        "broad",
+        "narrow down"
+      ]
+    },
+    {
+      "id": "it-2537",
+      "type": "it",
+      "src": "w:broad",
+      "ko": "먼저 큰 그림만 대략적으로 설명해 주실 수 있어요?",
+      "en": "Could you just give me a broad overview first?",
+      "hints": [
+        "broad",
+        "overview"
+      ]
+    },
+    {
+      "id": "life-1561",
+      "type": "life",
+      "src": "w:broad",
+      "ko": "그 서점은 책 종류가 정말 다양해.",
+      "en": "That bookstore has a broad selection of books.",
+      "hints": [
+        "broad",
+        "selection"
+      ]
+    },
+    {
+      "id": "it-2538",
+      "type": "it",
+      "src": "w:considerable",
+      "ko": "이 리팩터링은 상당한 노력이 필요할 거예요.",
+      "en": "This refactoring will take considerable effort.",
+      "hints": [
+        "considerable",
+        "effort"
+      ]
+    },
+    {
+      "id": "it-2539",
+      "type": "it",
+      "src": "w:considerable",
+      "ko": "새 캐시 덕분에 비용을 상당히 절감했어요.",
+      "en": "The new cache saved us a considerable amount of money.",
+      "hints": [
+        "considerable",
+        "cache"
+      ]
+    },
+    {
+      "id": "life-1562",
+      "type": "life",
+      "src": "w:considerable",
+      "ko": "이사하는 데 꽤 많은 돈이 들지 않았어?",
+      "en": "Didn't the move cost you a considerable amount?",
+      "hints": [
+        "considerable",
+        "move"
+      ]
+    },
+    {
+      "id": "it-2540",
+      "type": "it",
+      "src": "w:crucial",
+      "ko": "이 단계는 보안상 매우 중요해서 건너뛰면 안 돼요.",
+      "en": "This step is crucial for security, so don't skip it.",
+      "hints": [
+        "crucial",
+        "security"
+      ]
+    },
+    {
+      "id": "it-2541",
+      "type": "it",
+      "src": "w:crucial",
+      "ko": "이번 데모가 계약에 결정적인 역할을 할까요?",
+      "en": "Will this demo be crucial for closing the deal?",
+      "hints": [
+        "crucial",
+        "deal"
+      ]
+    },
+    {
+      "id": "life-1563",
+      "type": "life",
+      "src": "w:crucial",
+      "ko": "시험 전날엔 잠을 충분히 자는 게 정말 중요해.",
+      "en": "Getting enough sleep before an exam is crucial.",
+      "hints": [
+        "crucial",
+        "sleep"
+      ]
+    },
+    {
+      "id": "it-2542",
+      "type": "it",
+      "src": "w:diverse",
+      "ko": "우리 사용자층은 연령대가 정말 다양해요.",
+      "en": "Our user base is really diverse in terms of age.",
+      "hints": [
+        "diverse",
+        "user base"
+      ]
+    },
+    {
+      "id": "it-2543",
+      "type": "it",
+      "src": "w:diverse",
+      "ko": "다양한 배경을 가진 사람들로 테스트 그룹을 꾸릴 수 있을까요?",
+      "en": "Can we build a test group with people from diverse backgrounds?",
+      "hints": [
+        "diverse",
+        "background"
+      ]
+    },
+    {
+      "id": "life-1564",
+      "type": "life",
+      "src": "w:diverse",
+      "ko": "이 동네는 음식 종류가 정말 다양해.",
+      "en": "This neighborhood has a really diverse food scene.",
+      "hints": [
+        "diverse",
+        "food"
+      ]
+    },
+    {
+      "id": "it-2544",
+      "type": "it",
+      "src": "w:dramatic",
+      "ko": "새 인덱스를 추가하고 나서 쿼리 속도가 극적으로 빨라졌어요.",
+      "en": "Adding the new index made a dramatic difference in query speed.",
+      "hints": [
+        "dramatic",
+        "index"
+      ]
+    },
+    {
+      "id": "it-2545",
+      "type": "it",
+      "src": "w:dramatic",
+      "ko": "이번 업데이트 후에 이탈률이 급격히 떨어진 거 보셨어요?",
+      "en": "Did you see the dramatic drop in churn after the update?",
+      "hints": [
+        "dramatic",
+        "churn"
+      ]
+    },
+    {
+      "id": "life-1565",
+      "type": "life",
+      "src": "w:dramatic",
+      "ko": "이사하고 나서 내 생활이 극적으로 바뀌었어.",
+      "en": "My life changed in a dramatic way after I moved.",
+      "hints": [
+        "dramatic",
+        "moved"
+      ]
+    },
+    {
+      "id": "it-2546",
+      "type": "it",
+      "src": "w:evident",
+      "ko": "로그를 보면 문제가 네트워크 쪽인 게 분명해요.",
+      "en": "From the logs, it's evident that the issue is on the network side.",
+      "hints": [
+        "evident",
+        "network"
+      ]
+    },
+    {
+      "id": "it-2547",
+      "type": "it",
+      "src": "w:evident",
+      "ko": "이 데이터만 봐서는 그게 분명하지 않은데요.",
+      "en": "It's not evident from this data alone.",
+      "hints": [
+        "evident",
+        "data"
+      ]
+    },
+    {
+      "id": "life-1566",
+      "type": "life",
+      "src": "w:evident",
+      "ko": "걔가 너 좋아하는 거 너무 분명하지 않아?",
+      "en": "Isn't it evident that he likes you?",
+      "hints": [
+        "evident",
+        "likes"
+      ]
+    },
+    {
+      "id": "it-2548",
+      "type": "it",
+      "src": "w:internal",
+      "ko": "이건 내부 API라서 외부에 노출하면 안 돼요.",
+      "en": "This is an internal API, so we shouldn't expose it externally.",
+      "hints": [
+        "internal",
+        "API"
+      ]
+    },
+    {
+      "id": "it-2549",
+      "type": "it",
+      "src": "w:internal",
+      "ko": "그 이슈는 내부 회의에서 먼저 논의할까요?",
+      "en": "Should we discuss that issue in an internal meeting first?",
+      "hints": [
+        "internal",
+        "meeting"
+      ]
+    },
+    {
+      "id": "life-1567",
+      "type": "life",
+      "src": "w:internal",
+      "ko": "병원에서 내부 출혈은 없다고 해서 안심했어.",
+      "en": "I was relieved when the doctor said there was no internal bleeding.",
+      "hints": [
+        "internal",
+        "bleeding"
+      ]
+    },
+    {
+      "id": "it-2550",
+      "type": "it",
+      "src": "w:reasonable",
+      "ko": "이 정도 일정이면 합리적이라고 생각해요?",
+      "en": "Do you think this timeline is reasonable?",
+      "hints": [
+        "reasonable",
+        "timeline"
+      ]
+    },
+    {
+      "id": "it-2551",
+      "type": "it",
+      "src": "w:reasonable",
+      "ko": "고객 요청이 충분히 합리적이라서 반영하기로 했어요.",
+      "en": "The client's request was reasonable, so we decided to include it.",
+      "hints": [
+        "reasonable",
+        "request"
+      ]
+    },
+    {
+      "id": "life-1568",
+      "type": "life",
+      "src": "w:reasonable",
+      "ko": "그 동네 월세가 생각보다 적당하더라.",
+      "en": "Rent in that area was more reasonable than I thought.",
+      "hints": [
+        "reasonable",
+        "rent"
+      ]
+    },
+    {
+      "id": "it-2552",
+      "type": "it",
+      "src": "w:sufficient",
+      "ko": "현재 서버 용량으로 연말 트래픽을 감당하기에 충분할까요?",
+      "en": "Is our current server capacity sufficient for year-end traffic?",
+      "hints": [
+        "sufficient",
+        "capacity"
+      ]
+    },
+    {
+      "id": "it-2553",
+      "type": "it",
+      "src": "w:sufficient",
+      "ko": "테스트 커버리지가 충분하지 않아서 배포를 미뤘어요.",
+      "en": "We delayed the deploy because the test coverage wasn't sufficient.",
+      "hints": [
+        "sufficient",
+        "coverage"
+      ]
+    },
+    {
+      "id": "life-1569",
+      "type": "life",
+      "src": "w:sufficient",
+      "ko": "빵 하나로는 아침 식사로 충분하지 않아.",
+      "en": "One piece of bread isn't sufficient for breakfast.",
+      "hints": [
+        "sufficient",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "it-2554",
+      "type": "it",
+      "src": "w:unexpected",
+      "ko": "앱에서 예상치 못한 오류가 계속 떠요.",
+      "en": "The app keeps showing an unexpected error.",
+      "hints": [
+        "unexpected",
+        "error"
+      ]
+    },
+    {
+      "id": "it-2555",
+      "type": "it",
+      "src": "w:unexpected",
+      "ko": "예상치 못한 비용이 생기면 누구한테 보고해야 해요?",
+      "en": "Who should I report to if there's an unexpected cost?",
+      "hints": [
+        "unexpected",
+        "cost"
+      ]
+    },
+    {
+      "id": "life-1570",
+      "type": "life",
+      "src": "w:unexpected",
+      "ko": "친구가 예고 없이 찾아와서 깜짝 놀랐어.",
+      "en": "My friend paid me an unexpected visit, and I was so surprised.",
+      "hints": [
+        "unexpected",
+        "visit"
+      ]
+    },
+    {
+      "id": "it-2556",
+      "type": "it",
+      "src": "w:apparently",
+      "ko": "듣기로는 그 고객이 계약을 연장하지 않는대요.",
+      "en": "Apparently, the client isn't renewing the contract.",
+      "hints": [
+        "apparently",
+        "renew"
+      ]
+    },
+    {
+      "id": "it-2557",
+      "type": "it",
+      "src": "w:apparently",
+      "ko": "보아하니 어제 배포 때문에 생긴 문제 같은데, 맞아요?",
+      "en": "Apparently it's from yesterday's deploy, right?",
+      "hints": [
+        "apparently",
+        "deploy"
+      ]
+    },
+    {
+      "id": "life-1571",
+      "type": "life",
+      "src": "w:apparently",
+      "ko": "그 카페 다음 달에 문 닫는대.",
+      "en": "Apparently, that cafe is closing next month.",
+      "hints": [
+        "apparently",
+        "cafe"
+      ]
+    },
+    {
+      "id": "it-2558",
+      "type": "it",
+      "src": "w:approximately",
+      "ko": "이 작업은 대략 이틀 정도 걸릴 것 같아요.",
+      "en": "This task will take approximately two days.",
+      "hints": [
+        "approximately",
+        "task"
+      ]
+    },
+    {
+      "id": "it-2559",
+      "type": "it",
+      "src": "w:approximately",
+      "ko": "하루 활성 사용자가 대략 몇 명이에요?",
+      "en": "Approximately how many daily active users do we have?",
+      "hints": [
+        "approximately",
+        "active users"
+      ]
+    },
+    {
+      "id": "life-1572",
+      "type": "life",
+      "src": "w:approximately",
+      "ko": "여기서 공항까지 대략 40분 걸려.",
+      "en": "It takes approximately 40 minutes to get to the airport from here.",
+      "hints": [
+        "approximately",
+        "airport"
+      ]
+    },
+    {
+      "id": "it-2560",
+      "type": "it",
+      "src": "w:certainly",
+      "ko": "그건 확실히 다음 릴리스에 넣을 수 있어요.",
+      "en": "We can certainly include that in the next release.",
+      "hints": [
+        "certainly",
+        "release"
+      ]
+    },
+    {
+      "id": "it-2561",
+      "type": "it",
+      "src": "w:certainly",
+      "ko": "이번 장애는 확실히 설정 변경 때문이었어요.",
+      "en": "The outage was certainly caused by the config change.",
+      "hints": [
+        "certainly",
+        "outage"
+      ]
+    },
+    {
+      "id": "life-1573",
+      "type": "life",
+      "src": "w:certainly",
+      "ko": "내 생일 파티에 너 확실히 오는 거 맞지?",
+      "en": "You're certainly coming to my birthday party, right?",
+      "hints": [
+        "certainly",
+        "party"
+      ]
+    },
+    {
+      "id": "it-2562",
+      "type": "it",
+      "src": "w:consequently",
+      "ko": "요구 사항이 늦게 나와서 결과적으로 일정이 밀렸어요.",
+      "en": "The requirements came in late, and consequently, the schedule slipped.",
+      "hints": [
+        "consequently",
+        "schedule"
+      ]
+    },
+    {
+      "id": "it-2563",
+      "type": "it",
+      "src": "w:consequently",
+      "ko": "API가 바뀌어서 결과적으로 다른 서비스 두 개가 깨졌어요.",
+      "en": "The API changed, and consequently, two other services broke.",
+      "hints": [
+        "consequently",
+        "break"
+      ]
+    },
+    {
+      "id": "life-1574",
+      "type": "life",
+      "src": "w:consequently",
+      "ko": "그러니까 늦잠 자서 결과적으로 버스를 놓친 거야?",
+      "en": "So you overslept and consequently missed the bus?",
+      "hints": [
+        "consequently",
+        "oversleep"
+      ]
+    },
+    {
+      "id": "it-2564",
+      "type": "it",
+      "src": "w:eventually",
+      "ko": "결국 우리는 레거시 시스템을 완전히 교체해야 할 거예요.",
+      "en": "Eventually, we'll have to replace the legacy system completely.",
+      "hints": [
+        "eventually",
+        "legacy"
+      ]
+    },
+    {
+      "id": "it-2565",
+      "type": "it",
+      "src": "w:eventually",
+      "ko": "결국 고객이 우리 제안을 받아들였어요.",
+      "en": "The client eventually accepted our proposal.",
+      "hints": [
+        "eventually",
+        "proposal"
+      ]
+    },
+    {
+      "id": "life-1575",
+      "type": "life",
+      "src": "w:eventually",
+      "ko": "걔도 결국엔 이해해 주지 않을까?",
+      "en": "Don't you think she'll eventually understand?",
+      "hints": [
+        "eventually",
+        "understand"
+      ]
+    },
+    {
+      "id": "it-2566",
+      "type": "it",
+      "src": "w:extremely",
+      "ko": "이 버그는 재현하기가 극도로 어려워요.",
+      "en": "This bug is extremely hard to reproduce.",
+      "hints": [
+        "extremely",
+        "reproduce"
+      ]
+    },
+    {
+      "id": "it-2567",
+      "type": "it",
+      "src": "w:extremely",
+      "ko": "이번 주는 일정이 극도로 빡빡해서 회의를 줄여야 해요.",
+      "en": "This week is extremely busy, so we need fewer meetings.",
+      "hints": [
+        "extremely",
+        "busy"
+      ]
+    },
+    {
+      "id": "life-1576",
+      "type": "life",
+      "src": "w:extremely",
+      "ko": "오늘 밖에 엄청 춥지 않아?",
+      "en": "Isn't it extremely cold outside today?",
+      "hints": [
+        "extremely",
+        "cold"
+      ]
+    },
+    {
+      "id": "it-2568",
+      "type": "it",
+      "src": "w:hardly",
+      "ko": "이 기능은 사용자가 거의 안 써요.",
+      "en": "Users hardly ever use this feature.",
+      "hints": [
+        "hardly",
+        "feature"
+      ]
+    },
+    {
+      "id": "it-2569",
+      "type": "it",
+      "src": "w:hardly",
+      "ko": "어젯밤 장애 대응 때문에 거의 못 잤어요.",
+      "en": "I hardly slept last night because of the incident.",
+      "hints": [
+        "hardly",
+        "incident"
+      ]
+    },
+    {
+      "id": "life-1577",
+      "type": "life",
+      "src": "w:hardly",
+      "ko": "요즘 거의 요리 안 하지 않아?",
+      "en": "You hardly cook these days, do you?",
+      "hints": [
+        "hardly",
+        "cook"
+      ]
+    },
+    {
+      "id": "it-2570",
+      "type": "it",
+      "src": "w:merely",
+      "ko": "이건 그냥 임시 해결책일 뿐이에요.",
+      "en": "This is merely a temporary fix.",
+      "hints": [
+        "merely",
+        "temporary"
+      ]
+    },
+    {
+      "id": "it-2571",
+      "type": "it",
+      "src": "w:merely",
+      "ko": "제가 단지 질문만 한 건데 왜 다들 긴장해요?",
+      "en": "I was merely asking a question, so why is everyone so tense?",
+      "hints": [
+        "merely",
+        "tense"
+      ]
+    },
+    {
+      "id": "life-1578",
+      "type": "life",
+      "src": "w:merely",
+      "ko": "그건 그냥 농담이었어, 기분 나빠하지 마.",
+      "en": "It was merely a joke, so don't take it personally.",
+      "hints": [
+        "merely",
+        "joke"
+      ]
+    },
+    {
+      "id": "it-2572",
+      "type": "it",
+      "src": "w:otherwise",
+      "ko": "오늘 안에 머지해야 해요, 안 그러면 릴리스에 못 들어가요.",
+      "en": "We have to merge it today; otherwise, it won't make the release.",
+      "hints": [
+        "otherwise",
+        "merge"
+      ]
+    },
+    {
+      "id": "it-2573",
+      "type": "it",
+      "src": "w:otherwise",
+      "ko": "디자인이 조금 아쉽긴 한데, 그 외에는 괜찮지 않아요?",
+      "en": "The design needs some work, but otherwise it looks good, right?",
+      "hints": [
+        "otherwise",
+        "design"
+      ]
+    },
+    {
+      "id": "life-1579",
+      "type": "life",
+      "src": "w:otherwise",
+      "ko": "지금 출발해야 해, 안 그러면 차 막혀.",
+      "en": "We should leave now; otherwise, we'll get stuck in traffic.",
+      "hints": [
+        "otherwise",
+        "traffic"
+      ]
+    },
+    {
+      "id": "it-2574",
+      "type": "it",
+      "src": "w:particularly",
+      "ko": "이 버그는 특히 모바일에서 자주 발생해요.",
+      "en": "This bug happens particularly often on mobile.",
+      "hints": [
+        "particularly",
+        "mobile"
+      ]
+    },
+    {
+      "id": "it-2575",
+      "type": "it",
+      "src": "w:particularly",
+      "ko": "특히 신경 써야 할 부분이 있을까요?",
+      "en": "Is there anything I should be particularly careful about?",
+      "hints": [
+        "particularly",
+        "careful"
+      ]
+    },
+    {
+      "id": "life-1580",
+      "type": "life",
+      "src": "w:particularly",
+      "ko": "나는 매운 음식을 딱히 좋아하진 않아.",
+      "en": "I'm not particularly fond of spicy food.",
+      "hints": [
+        "particularly",
+        "spicy"
       ]
     }
   ],
