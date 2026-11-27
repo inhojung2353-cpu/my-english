@@ -451,3 +451,8 @@ body { letter-spacing: -.005em; }
 .spk-g { padding: 9px 12px; border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; background: var(--accent-soft); }
 .spk-g b { display: block; font-size: 14.5px; margin-bottom: 2px; }
 .spk-g p { margin: 0; font-size: 14px; line-height: 1.55; word-break: keep-all; }
+.spk-day .check { flex: none; }
+.spk-day.done .day { background: var(--good-soft); color: var(--good); }
+.spk-done-tag { color: var(--good); font-weight: 700; }
+.spk-top-btns { display: inline-flex; align-items: center; gap: 8px; flex: none; }
+a.ask-tag { text-decoration: none; }

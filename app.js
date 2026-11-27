@@ -142,22 +142,17 @@ function todaySentences(reroll = false) {
   return seededShuffle(pool, dailySeed('s', n)).slice(0, 6);
 }
 
-// 오늘의 질문: 한글 문장을 보고 영어로 말하기 (data.js ask)
-// 매일 IT 회사 상황 6개 + 일상 4개를 섞어서 10개, 🔄로 바꾸기
-const ask = C.ask || [];
+// 오늘의 질문: 스피킹 탭에서 ✓ 외웠다고 체크한 Day의 문장만 (복습용)
+// 매일 최대 10개를 골라 보여주고, 🔄로 바꾸기
+const ask = C.ask || []; // 예전 한글→영어 문장 모음 (지금은 홈에서 쓰지 않음)
 function todayQuestions(reroll = false) {
   const st = dailyState();
   const n = (st.an || 0) + (reroll ? 1 : 0);
   if (reroll) writeJSON(DAILY_KEY, { ...st, an: n });
-  // 10개 = 회사 6(의문문 2) + 일상 4(의문문 1) → 의문문 30%
-  const isQ = q => /\?\s*$/.test(q.en);
-  const pick = (type, wantQ, count, key) => seededShuffle(
-    ask.filter(q => (type === 'it' ? q.type === 'it' : q.type !== 'it') && isQ(q) === wantQ),
-    dailySeed(key, n)).slice(0, count);
-  return seededShuffle([
-    ...pick('it', true, 2, 'qiq'), ...pick('it', false, 4, 'qi'),
-    ...pick('life', true, 1, 'qlq'), ...pick('life', false, 3, 'ql'),
-  ], dailySeed('qm', n));
+  const done = speakDone();
+  const pool = speakDays().filter(d => done.has(d.day))
+    .flatMap(d => d.items.map(x => ({ ...x, day: d.day, hints: (x.words || []).map(w => w[0]).slice(0, 3) })));
+  return seededShuffle(pool, dailySeed('qs', n)).slice(0, 10);
 }
 
 // 오늘의 영작: Dialog 표현을 살짝 바꾼 문제(data.js writing) 중 6개.
@@ -282,12 +277,12 @@ function renderHome(reroll = {}) {
       <button class="more-link" id="sents-all">모두 펼치기</button>`
     : `<div class="card empty"><span class="big">💬</span>아직 Dialog가 없어요</div>`}
 
-    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>한글 → 영어로 말하기</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 문장으로 새로고침">🔄</button>` : ''}</span></div>
+    <div class="section-title">🗣️ 오늘의 질문 <span class="title-right"><small>외운 스피킹 복습</small>${tq.length ? `<button class="reroll" id="reroll-ask" aria-label="다른 문장으로 새로고침">🔄</button>` : ''}</span></div>
     ${tq.length ? `
       <p class="muted small" style="margin:-2px 4px 8px">한글 문장을 보고 소리 내어 영어로 말해 보세요. 막히면 💡 힌트, 다 말했으면 정답 보기!</p>
       <div class="card vlist" id="asks">${tq.map((q, i) => `
         <div class="vrow qa ask" data-id="${esc(q.id)}">
-          <div class="ask-head"><span class="sent-no">${i + 1}</span><span class="ask-tag ${q.type === 'it' ? 'it' : 'life'}">${q.type === 'it' ? '💼 회사' : '🏠 일상'}</span></div>
+          <div class="ask-head"><span class="sent-no">${i + 1}</span><a class="ask-tag it" href="#speaking/${q.day}">🗣️ Day ${q.day}</a></div>
           <div class="ask-ko-main">${esc(q.ko)}</div>
           <div class="ask-btns">
             ${(q.hints || []).length ? `<button class="chip hint-toggle">💡 힌트 보기</button>` : ''}
@@ -298,7 +293,7 @@ function renderHome(reroll = {}) {
             <div class="row-between"><div class="en grow">${esc(q.en)}</div>${speakBtn(q.en)}</div>
           </div>
         </div>`).join('')}</div>`
-    : ''}
+    : `<div class="card empty"><span class="big">🗣️</span>아직 외운 스피킹 Day가 없어요<br><span class="small"><a href="#speaking">스피킹 탭</a>에서 외운 Day에 ✓를 누르면 여기에 복습용으로 나와요</span></div>`}
 
     <div class="section-title">✍️ 오늘의 영작 <span class="title-right"><small>Dialog 응용</small>${tc.length ? `<button class="reroll" id="reroll-write" aria-label="다른 문제로 새로고침">🔄</button>` : ''}</span></div>
     ${tc.length ? `
@@ -552,6 +547,15 @@ function renderWords() {
    한글을 먼저 보고 말해 본 뒤, 누르면 영어 + 단어 + 동사 변화 + 문법이 펼쳐져요. */
 const speaking = C.speaking || [];
 const SPEAK_PER_DAY = 10;
+const SPEAK_DONE_KEY = 'my-english-speak-done';
+const speakDone = () => new Set(readJSON(SPEAK_DONE_KEY, []));
+function toggleSpeakDone(day) {
+  const done = speakDone();
+  done.has(day) ? done.delete(day) : done.add(day);
+  writeJSON(SPEAK_DONE_KEY, [...done].sort((a, b) => a - b));
+  return done.has(day);
+}
+const speakCheckBtn = (day, on) => `<button class="check spk-check ${on ? 'on' : ''}" data-day="${day}" aria-pressed="${on}" aria-label="Day ${day} 외웠어요">✓</button>`;
 const speakDays = () => {
   const days = [];
   for (let i = 0; i < speaking.length; i += SPEAK_PER_DAY) days.push({ day: days.length + 1, items: speaking.slice(i, i + SPEAK_PER_DAY) });
@@ -566,16 +570,25 @@ function renderSpeaking(dayNo) {
     view.innerHTML = `<div class="card empty"><span class="big">🗣️</span>아직 문장이 없어요<br><span class="small">문장을 보내 주시면 10개씩 Day로 정리돼요</span></div>`;
     return;
   }
+  const done = speakDone();
   view.innerHTML = `
-    <p class="muted small" style="margin:2px 4px 10px">보내 준 문장이 10개씩 모이면 하루치(Day)가 돼요. 한글을 보고 영어로 말해 보세요.</p>
-    ${[...days].reverse().map(d => `
-      <a class="card dialog-item" href="#speaking/${d.day}">
+    <p class="muted small" style="margin:2px 4px 10px">보내 준 문장이 10개씩 모이면 하루치(Day)가 돼요. 다 외운 Day는 ✓를 눌러 두면 홈의 <b>오늘의 질문</b>에 복습으로 나와요.</p>
+    <div id="spk-days">${[...days].reverse().map(d => `
+      <a class="card dialog-item spk-day ${done.has(d.day) ? 'done' : ''}" href="#speaking/${d.day}">
         <div class="day">Day<b>${d.day}</b></div>
         <div class="grow">
           <h3>${esc(d.items[0].ko)}</h3>
-          <div class="meta">${d.items.length < SPEAK_PER_DAY ? `<span class="speak-progress">채우는 중 ${d.items.length}/${SPEAK_PER_DAY}</span>` : `${d.items.length}문장`}</div>
+          <div class="meta">${d.items.length < SPEAK_PER_DAY ? `<span class="speak-progress">채우는 중 ${d.items.length}/${SPEAK_PER_DAY}</span>` : `${d.items.length}문장`}${done.has(d.day) ? ' · <span class="spk-done-tag">외움</span>' : ''}</div>
         </div>
-      </a>`).join('')}`;
+        ${speakCheckBtn(d.day, done.has(d.day))}
+      </a>`).join('')}</div>`;
+  $('#spk-days').addEventListener('click', e => {
+    const btn = e.target.closest('.spk-check'); if (!btn) return;
+    e.preventDefault(); e.stopPropagation();
+    const on = toggleSpeakDone(Number(btn.dataset.day));
+    toast(on ? `Day ${btn.dataset.day}를 외웠어요! 홈에서 복습할 수 있어요` : `Day ${btn.dataset.day} 체크를 풀었어요`);
+    renderSpeaking();
+  });
 }
 
 function speakItem(x, i) {
@@ -609,7 +622,7 @@ function renderSpeakDay(days, dayNo) {
   view.innerHTML = `
     <div class="row-between" style="margin:2px 4px 10px">
       <span class="muted small">한글을 보고 영어로 말한 뒤 눌러서 확인${d.items.length < SPEAK_PER_DAY ? ` · 채우는 중 ${d.items.length}/${SPEAK_PER_DAY}` : ''}</span>
-      <button class="chip" id="spk-all">모두 펼치기</button>
+      <span class="spk-top-btns">${speakCheckBtn(d.day, speakDone().has(d.day))}<button class="chip" id="spk-all">모두 펼치기</button></span>
     </div>
     <div id="spk-list">${d.items.map(speakItem).join('')}</div>
     <div class="pager">
@@ -625,6 +638,12 @@ function renderSpeakDay(days, dayNo) {
   $('#spk-list').addEventListener('keydown', e => {
     const head = e.target.closest('.spk-ko');
     if (head && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); toggle(head.closest('.spk')); }
+  });
+  $('.spk-top-btns .spk-check').addEventListener('click', e => {
+    const btn = e.currentTarget;
+    const on = toggleSpeakDone(d.day);
+    btn.classList.toggle('on', on); btn.setAttribute('aria-pressed', String(on));
+    toast(on ? `Day ${d.day}를 외웠어요! 홈에서 복습할 수 있어요` : `Day ${d.day} 체크를 풀었어요`);
   });
   $('#spk-all').addEventListener('click', e => {
     const cards = $$('#spk-list .spk');
