@@ -456,3 +456,6 @@ body { letter-spacing: -.005em; }
 .spk-done-tag { color: var(--good); font-weight: 700; }
 .spk-top-btns { display: inline-flex; align-items: center; gap: 8px; flex: none; }
 a.ask-tag { text-decoration: none; }
+.day-card .check { flex: none; }
+.day-card.done .day { background: var(--good-soft); color: var(--good); }
+a.day-link { display: block; text-decoration: none; color: var(--primary); }

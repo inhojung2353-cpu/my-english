@@ -64,10 +64,11 @@ function route() {
   const [page, id, sub] = (location.hash.slice(1) || 'home').split('/');
   const tab = page === 'dialog' ? 'dialogs' : page;
   const speakDay = page === 'speaking' ? Number(id) || 0 : 0;
+  const wordDay = page === 'words' ? Number(id) || 0 : 0;
   $$('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.tab === tab));
-  $('#back').hidden = page !== 'dialog' && !speakDay;
-  $('#back').dataset.to = speakDay ? '#speaking' : '#dialogs';
-  if (page === 'words') renderWords();
+  $('#back').hidden = page !== 'dialog' && !speakDay && !wordDay;
+  $('#back').dataset.to = speakDay ? '#speaking' : wordDay ? '#words' : '#dialogs';
+  if (page === 'words') renderWords(wordDay);
   else if (page === 'speaking') renderSpeaking(speakDay);
   else if (page === 'dialogs') renderDialogs(id === 'mine' ? 'mine' : 'list');
   else if (page === 'dialog') renderDialog(decodeURIComponent(id || ''));
@@ -115,12 +116,13 @@ function parseCode(code) {
   return data;
 }
 
-// 오늘의 단어: ✓ 표시한 외운 단어에서만 6개 (복습용).
-// 하루 동안은 같은 단어를 유지하고, 그사이 ✓를 푼 단어만 빼고 다른 외운 단어로 채워요
+// 오늘의 단어: 단어 탭에서 ✓ 외웠다고 체크한 Day의 단어에서만 6개 (복습용).
+// 하루 동안은 같은 단어를 유지하고, 그사이 체크를 푼 Day의 단어는 빼고 다시 채워요
 function todayWords(reroll = false) {
   const st = dailyState();
   const n = (st.wn || 0) + (reroll ? 1 : 0);
-  const pool = words.filter(w => isLearned(w));
+  const done = wordsDone();
+  const pool = wordDays().filter(d => done.has(d.day)).flatMap(d => d.items);
   const prev = Array.isArray(st.words) ? st.words : [];
   const kept = reroll ? [] : prev.map(x => pool.find(w => w.word === x)).filter(Boolean);
   let fill = seededShuffle(pool, dailySeed('w', n)).filter(w => !kept.includes(w));
@@ -246,7 +248,7 @@ function renderHome(reroll = {}) {
       ${last ? `<p class="small">마지막 업데이트 · ${prettyDate(last)}</p>` : ''}
     </div>
     <div class="stats">
-      <a class="stat" href="#words"><b>${words.length}</b><span>단어 · 표현${words.length ? ` (✓${words.filter(isLearned).length})` : ''}</span></a>
+      <a class="stat" href="#words"><b>${words.length}</b><span>단어 · 표현${words.length ? ` (✓${wordsDone().size} Day)` : ''}</span></a>
       <a class="stat" href="#speaking"><b>🗣️</b><span>스피킹</span></a>
       <a class="stat" href="#dialogs"><b>${dialogs.length}</b><span>Dialog</span></a>
     </div>
@@ -261,7 +263,7 @@ function renderHome(reroll = {}) {
         ${w.example ? `<div class="vex"><div class="en">${esc(w.example)}</div>${w.exampleKo ? `<div class="ko">${esc(w.exampleKo)}</div>` : ''}</div>` : ''}
       </div>`).join('')}</div>
       <a class="more-link" href="#words">단어 탭에서 더 보기 ›</a>`
-    : `<div class="card empty"><span class="big">📚</span>아직 외운 단어가 없어요<br><span class="small"><a href="#words">단어 탭</a>에서 외운 단어에 ✓를 누르면 여기에 복습용으로 나와요</span></div>`}
+    : `<div class="card empty"><span class="big">📚</span>아직 외운 단어 Day가 없어요<br><span class="small"><a href="#words">단어 탭</a>에서 외운 Day에 ✓를 누르면 여기에 복습용으로 나와요</span></div>`}
 
     <div class="section-title">💬 오늘의 문장 <span class="title-right"><small>누르면 영어</small>${ts.length ? `<button class="reroll" id="reroll-sents" aria-label="다른 문장으로 새로고침">🔄</button>` : ''}</span></div>
     ${ts.length ? `
@@ -344,7 +346,7 @@ function renderHome(reroll = {}) {
     if (!code) return toast('먼저 코드를 붙여 넣어 주세요');
     let data;
     try { data = parseCode(code); } catch { return toast('코드가 올바르지 않아요'); }
-    if (!confirm(`이 기기의 기록을 가져온 기록으로 바꿀까요?\n(✓ 외운 단어 ${(data['my-english-learned'] ? JSON.parse(data['my-english-learned']).length : 0)}개 등)`)) return;
+    if (!confirm(`이 기기의 기록을 가져온 기록으로 바꿀까요?\n(✓ 외운 단어 Day ${(data['my-english-words-done'] ? JSON.parse(data['my-english-words-done']).length : 0)}개 등)`)) return;
     Object.keys(localStorage).filter(k => k.startsWith(SYNC_PREFIX) && k !== DAILY_KEY).forEach(k => localStorage.removeItem(k));
     Object.entries(data).forEach(([k, v]) => { if (k.startsWith(SYNC_PREFIX) && k !== DAILY_KEY) localStorage.setItem(k, v); });
     localStorage.removeItem(DAILY_KEY);
@@ -416,26 +418,41 @@ function renderHome(reroll = {}) {
 
 /* ---------- 단어 ---------- */
 let wordQuery = '';
-let wordTopic = '';
 let hideMeaning = true; // 뜻 가리기가 기본. 홈과 단어 탭이 같은 설정을 써요
 
-// 외운 단어 체크는 이 기기의 브라우저에 저장 (단어 글자를 기준으로 기억)
-const LEARNED_KEY = 'my-english-learned';
 const PREFS_KEY = 'my-english-prefs';
 const readJSON = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback; } catch { return fallback; } };
 const writeJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
-const learned = new Set(readJSON(LEARNED_KEY, []));
-const isLearned = w => learned.has(w.word);
-let wordStatus = readJSON(PREFS_KEY, {}).wordStatus || 'all'; // all | todo | done
+
+// Day 체크 (단어·스피킹 공통): key에 외운 Day 번호 배열을 저장
+const doneSet = key => new Set(readJSON(key, []));
+function toggleDone(key, day) {
+  const done = doneSet(key);
+  done.has(day) ? done.delete(day) : done.add(day);
+  writeJSON(key, [...done].sort((a, b) => a - b));
+  return done.has(day);
+}
+
+/* ---------- 단어 ----------
+   data.js words 순서대로 20개씩 Day 1, Day 2 … 로 나눠요. 새 단어는 맨 뒤에 이어 붙어요.
+   다 외운 Day는 ✓ → 홈 오늘의 단어에 복습으로 나와요. */
+const WORDS_PER_DAY = 20;
+const WORDS_DONE_KEY = 'my-english-words-done';
+const wordDays = () => {
+  const days = [];
+  for (let i = 0; i < words.length; i += WORDS_PER_DAY) days.push({ day: days.length + 1, items: words.slice(i, i + WORDS_PER_DAY) });
+  return days;
+};
+const wordsDone = () => doneSet(WORDS_DONE_KEY);
+const dayCheckBtn = (day, on) => `<button class="check day-check ${on ? 'on' : ''}" data-day="${day}" aria-pressed="${on}" aria-label="Day ${day} 외웠어요">✓</button>`;
 
 function wordCard(w) {
   return `
-    <article class="card word ${isLearned(w) ? 'learned' : ''}">
+    <article class="card word">
       <div class="word-head">
         <div style="flex:1;min-width:0">
           <span class="w" data-speak="${esc(w.word)}" role="button" title="눌러서 발음 듣기">${esc(w.word)}</span>${w.ipa ? `<span class="ipa">${esc(w.ipa)}</span>` : ''}${w.pos ? `<span class="pos">${esc(posKo(w.pos))}</span>` : ''}
         </div>
-        <button class="check ${isLearned(w) ? 'on' : ''}" data-check="${esc(w.word)}" aria-pressed="${isLearned(w)}" aria-label="외운 단어로 표시">✓</button>
         ${speakBtn(w.word)}
       </div>
       <div class="m">${esc(w.meaning)}</div>
@@ -444,101 +461,88 @@ function wordCard(w) {
     </article>`;
 }
 
-function renderWords() {
-  setTitle('단어');
-  const TOPIC_ORDER = ['핵심 단어', '업무·회사', '데이터·IT', '회화 표현', '일상'];
-  const topics = [...new Set(words.map(w => w.topic).filter(Boolean))]
-    .sort((a, b) => (TOPIC_ORDER.indexOf(a) + 1 || 99) - (TOPIC_ORDER.indexOf(b) + 1 || 99));
-  view.innerHTML = `
-    <div class="tools">
-      <div class="seg" id="status" role="tablist">
-        <button data-status="all">전체 <b></b></button>
-        <button data-status="todo">안 외운 단어 <b></b></button>
-        <button data-status="done">외운 단어 <b></b></button>
-      </div>
-      <input type="search" id="wq" placeholder="단어나 뜻으로 검색" value="${esc(wordQuery)}" autocomplete="off">
-      <div class="chip-row" id="topics">
-        <button class="chip ${hideMeaning ? 'on' : ''}" id="hide">🙈 뜻 가리기</button>
-        <button class="chip ${!wordTopic ? 'on' : ''}" data-topic="">모든 주제</button>
-        ${topics.map(t => `<button class="chip ${wordTopic === t ? 'on' : ''}" data-topic="${esc(t)}">${esc(t)}</button>`).join('')}
-      </div>
-    </div>
-    <div id="list" class="${hideMeaning ? 'hide-meaning' : ''}"></div>`;
-
-  const list = $('#list');
-  const drawStatus = () => {
-    const done = words.filter(isLearned).length;
-    const counts = { all: words.length, todo: words.length - done, done };
-    $$('#status button').forEach(b => {
-      b.classList.toggle('on', b.dataset.status === wordStatus);
-      b.querySelector('b').textContent = counts[b.dataset.status];
-    });
-  };
-  const emptyMsg = () =>
-    wordStatus === 'done' && !wordQuery ? '아직 외운 단어가 없어요<br><span class="small">다 외운 단어는 ✓를 눌러 주세요</span>'
-    : wordStatus === 'todo' && !wordQuery ? '🎉 모든 단어를 외웠어요!'
-    : '검색 결과가 없어요';
-  const draw = () => {
-    drawStatus();
-    const q = wordQuery.trim().toLowerCase();
-    const items = words.filter(w =>
-      (wordStatus === 'all' || (wordStatus === 'done') === isLearned(w)) &&
-      (!wordTopic || w.topic === wordTopic) &&
-      (!q || [w.word, w.meaning, w.example, w.exampleKo, w.note].some(f => (f || '').toLowerCase().includes(q))));
-    if (!words.length) { list.innerHTML = `<div class="empty"><span class="big">📚</span>아직 단어가 없어요</div>`; return; }
-    if (!items.length) { list.innerHTML = `<div class="empty">${emptyMsg()}</div>`; return; }
-    // 묶음(Set)별로, 없으면 날짜별로 — 최신 묶음이 위로
-    const groups = {};
-    items.forEach(w => (groups[w.set || w.date || ''] ||= []).push(w));
-    list.innerHTML = Object.keys(groups).sort((a, b) => b.localeCompare(a, undefined, { numeric: true })).map(k => `
-      <div class="group-title">${/^\d{4}-/.test(k) ? prettyDate(k) : esc(k || '기타')} · ${groups[k].length}개</div>
-      ${groups[k].map(wordCard).join('')}`).join('');
-  };
-  draw();
-
-  $('#wq').addEventListener('input', e => { wordQuery = e.target.value; draw(); });
-  $('#status').addEventListener('click', e => {
-    const b = e.target.closest('[data-status]'); if (!b) return;
-    wordStatus = b.dataset.status;
-    writeJSON(PREFS_KEY, { ...readJSON(PREFS_KEY, {}), wordStatus });
-    draw();
-  });
-  $('#topics').addEventListener('click', e => {
-    const c = e.target.closest('.chip'); if (!c) return;
-    if (c.id === 'hide') {
-      hideMeaning = !hideMeaning;
-      c.classList.toggle('on', hideMeaning);
-      list.classList.toggle('hide-meaning', hideMeaning);
-      $$('.word.peek', list).forEach(x => x.classList.remove('peek'));
-      return;
-    }
-    wordTopic = c.dataset.topic;
-    $$('[data-topic]').forEach(x => x.classList.toggle('on', x === c));
-    draw();
-  });
-  // 뜻 가리기 상태에서 카드를 누르면 그 카드만 보기
+// 뜻 가리기 상태에서 카드를 누르면 그 카드만 보기
+function bindPeek(list) {
   list.addEventListener('click', e => {
-    const check = e.target.closest('[data-check]');
-    if (check) {
-      const word = check.dataset.check;
-      learned.has(word) ? learned.delete(word) : learned.add(word);
-      writeJSON(LEARNED_KEY, [...learned]);
-      if (wordStatus === 'all') {
-        // 전체 보기에서는 목록을 다시 그리지 않고 그 카드만 바꿔서 스크롤 위치 유지
-        const on = learned.has(word);
-        check.classList.toggle('on', on);
-        check.setAttribute('aria-pressed', on);
-        check.closest('.word').classList.toggle('learned', on);
-        drawStatus();
-      } else {
-        // 필터 보기에서는 카드가 사라지도록 살짝 페이드 후 다시 그리기
-        check.closest('.word').classList.add('leaving');
-        setTimeout(draw, 220);
-      }
-      return;
-    }
     const card = e.target.closest('.word');
     if (card && hideMeaning && !e.target.closest('[data-speak]')) card.classList.toggle('peek');
+  });
+}
+
+function renderWords(dayNo) {
+  const days = wordDays();
+  if (dayNo) return renderWordDay(days, dayNo);
+  setTitle('단어');
+  if (!days.length) { view.innerHTML = `<div class="card empty"><span class="big">📚</span>아직 단어가 없어요</div>`; return; }
+  view.innerHTML = `
+    <div class="tools">
+      <input type="search" id="wq" placeholder="단어나 뜻으로 검색" value="${esc(wordQuery)}" autocomplete="off">
+    </div>
+    <div id="wbody"></div>`;
+  const body = $('#wbody');
+  const draw = () => {
+    const q = wordQuery.trim().toLowerCase();
+    if (q) {
+      const hits = days.flatMap(d => d.items.filter(w => [w.word, w.meaning, w.example, w.exampleKo, w.note]
+        .some(f => (f || '').toLowerCase().includes(q))).map(w => ({ w, day: d.day })));
+      body.innerHTML = hits.length
+        ? hits.map(h => `<a class="group-title day-link" href="#words/${h.day}">Day ${h.day} ›</a>${wordCard(h.w)}`).join('')
+        : `<div class="empty">검색 결과가 없어요</div>`;
+      return;
+    }
+    const done = wordsDone();
+    body.innerHTML = `
+      <p class="muted small" style="margin:2px 4px 10px">단어가 20개씩 하루치(Day)로 나뉘어 있어요. 다 외운 Day는 ✓를 눌러 두면 홈의 <b>오늘의 단어</b>에 복습으로 나와요. <b>✓ ${done.size}/${days.length} Day</b></p>
+      <div id="wdays">${days.map(d => `
+        <a class="card dialog-item day-card ${done.has(d.day) ? 'done' : ''}" href="#words/${d.day}">
+          <div class="day">Day<b>${d.day}</b></div>
+          <div class="grow">
+            <h3>${d.items.slice(0, 3).map(w => esc(w.word)).join(' · ')}</h3>
+            <div class="meta">${d.items.length < WORDS_PER_DAY ? `<span class="speak-progress">채우는 중 ${d.items.length}/${WORDS_PER_DAY}</span>` : `${d.items.length}단어`}${done.has(d.day) ? ' · <span class="spk-done-tag">외움</span>' : ''}</div>
+          </div>
+          ${dayCheckBtn(d.day, done.has(d.day))}
+        </a>`).join('')}</div>`;
+    $('#wdays').addEventListener('click', e => {
+      const btn = e.target.closest('.day-check'); if (!btn) return;
+      e.preventDefault(); e.stopPropagation();
+      const on = toggleDone(WORDS_DONE_KEY, Number(btn.dataset.day));
+      toast(on ? `Day ${btn.dataset.day}를 외웠어요! 홈에서 복습할 수 있어요` : `Day ${btn.dataset.day} 체크를 풀었어요`);
+      const y = window.scrollY; draw(); window.scrollTo(0, y);
+    });
+  };
+  draw();
+  bindPeek(body);
+  $('#wq').addEventListener('input', e => { wordQuery = e.target.value; draw(); });
+}
+
+function renderWordDay(days, dayNo) {
+  const d = days.find(x => x.day === dayNo);
+  if (!d) { location.hash = '#words'; return; }
+  setTitle(`단어 Day ${d.day}`);
+  const prev = days.find(x => x.day === d.day - 1), next = days.find(x => x.day === d.day + 1);
+  view.innerHTML = `
+    <div class="row-between" style="margin:2px 4px 10px">
+      <span class="muted small">${d.items.length}단어${d.items.length < WORDS_PER_DAY ? ` · 채우는 중 ${d.items.length}/${WORDS_PER_DAY}` : ''}</span>
+      <span class="spk-top-btns">${dayCheckBtn(d.day, wordsDone().has(d.day))}<button class="chip ${hideMeaning ? 'on' : ''}" id="hide">🙈 뜻 가리기</button></span>
+    </div>
+    <div id="list" class="${hideMeaning ? 'hide-meaning' : ''}">${d.items.map(wordCard).join('')}</div>
+    <div class="pager">
+      ${prev ? `<a class="card" href="#words/${prev.day}"><span class="muted small">‹ 이전</span><b>Day ${prev.day}</b></a>` : '<span></span>'}
+      ${next ? `<a class="card right" href="#words/${next.day}"><span class="muted small">다음 ›</span><b>Day ${next.day}</b></a>` : '<span></span>'}
+    </div>`;
+  const list = $('#list');
+  bindPeek(list);
+  $('.spk-top-btns .day-check').addEventListener('click', e => {
+    const btn = e.currentTarget;
+    const on = toggleDone(WORDS_DONE_KEY, d.day);
+    btn.classList.toggle('on', on); btn.setAttribute('aria-pressed', String(on));
+    toast(on ? `Day ${d.day}를 외웠어요! 홈에서 복습할 수 있어요` : `Day ${d.day} 체크를 풀었어요`);
+  });
+  $('#hide').addEventListener('click', e => {
+    hideMeaning = !hideMeaning;
+    e.currentTarget.classList.toggle('on', hideMeaning);
+    list.classList.toggle('hide-meaning', hideMeaning);
+    $$('.word.peek', list).forEach(x => x.classList.remove('peek'));
   });
 }
 
@@ -548,13 +552,8 @@ function renderWords() {
 const speaking = C.speaking || [];
 const SPEAK_PER_DAY = 10;
 const SPEAK_DONE_KEY = 'my-english-speak-done';
-const speakDone = () => new Set(readJSON(SPEAK_DONE_KEY, []));
-function toggleSpeakDone(day) {
-  const done = speakDone();
-  done.has(day) ? done.delete(day) : done.add(day);
-  writeJSON(SPEAK_DONE_KEY, [...done].sort((a, b) => a - b));
-  return done.has(day);
-}
+const speakDone = () => doneSet(SPEAK_DONE_KEY);
+const toggleSpeakDone = day => toggleDone(SPEAK_DONE_KEY, day);
 const speakCheckBtn = (day, on) => `<button class="check spk-check ${on ? 'on' : ''}" data-day="${day}" aria-pressed="${on}" aria-label="Day ${day} 외웠어요">✓</button>`;
 const speakDays = () => {
   const days = [];
@@ -573,7 +572,7 @@ function renderSpeaking(dayNo) {
   const done = speakDone();
   view.innerHTML = `
     <p class="muted small" style="margin:2px 4px 10px">보내 준 문장이 10개씩 모이면 하루치(Day)가 돼요. 다 외운 Day는 ✓를 눌러 두면 홈의 <b>오늘의 질문</b>에 복습으로 나와요.</p>
-    <div id="spk-days">${[...days].reverse().map(d => `
+    <div id="spk-days">${days.map(d => `
       <a class="card dialog-item spk-day ${done.has(d.day) ? 'done' : ''}" href="#speaking/${d.day}">
         <div class="day">Day<b>${d.day}</b></div>
         <div class="grow">
