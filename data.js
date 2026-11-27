@@ -8739,7 +8739,8 @@ window.CONTENT = {
 
   /* ---------- 스피킹 ----------
      보내 준 문장을 순서대로 쌓아요. 10문장마다 Day 1, Day 2 … 로 자동으로 나뉘어요.
-     en / ko: 문장과 해석, words: [표현, 뜻], verbs: 동사의 과거·현재·과거분사 (v, past, present, pp), grammar: 문법 설명 */
+     en / ko: 문장과 해석, words: [표현, 뜻], verbs: 동사의 과거·현재·과거분사 (v, past, present, pp),
+     form / parts: 문장 형식과 성분 [글자, S|V|O|C|OC|M, 설명], literal: 직역, grammar: 쓰인 문법과 해석법 */
   speaking: [
     {
       "id": "s001",
@@ -8775,15 +8776,34 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "want to + 동사원형",
-          "d": "'~하고 싶다'. 뒤에 꼭 동사원형이 와요. (want making ✗)"
+          "t": "to부정사 – 명사적 용법 (목적어)",
+          "d": "to make ~ 가 want의 목적어예요. to + 동사원형이 문장에서 '명사'처럼 쓰여 목적어 자리에 들어간 것. '~하는 것을'로 해석해요. 'want + to V' = ~하는 것을 원한다 → '~하고 싶다'. want는 동명사를 목적어로 못 써요 (want making ✗)."
         },
         {
-          "t": "make the most of + 명사",
-          "d": "주어진 시간·기회를 '최대한 활용하다'. make the most of this chance / the weekend 처럼 써요."
+          "t": "to부정사 안의 구조",
+          "d": "to부정사 안에서도 make(V) + the most(O)로 3형식이 이어져요. make the most of ~ = '~의 최대치를 만들어 내다' → '~을 최대한 활용하다'."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "want",
+          "V",
+          "동사"
+        ],
+        [
+          "to make the most of my time",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 원한다 / 내 시간을 최대한 활용하는 것을"
     },
     {
       "id": "s002",
@@ -8819,15 +8839,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재진행 be + ~ing",
-          "d": "I'm trying = '요즘 ~하는 중이야'. 지금 이 순간뿐 아니라 요즘 계속 하고 있는 일에도 써요."
+          "t": "현재진행 be + V-ing",
+          "d": "am trying = '(요즘) ~하고 있는 중이다'. 지금 이 순간뿐 아니라 요즘 계속되는 일에도 써요."
         },
         {
-          "t": "get used to + 명사 / ~ing",
-          "d": "여기서 to는 전치사라서 뒤에 명사나 ~ing가 와요. (get used to waking up early) ↔ used to + 동사원형은 '예전에 ~했다'로 완전히 다른 뜻!"
+          "t": "try + to부정사 (명사적 용법)",
+          "d": "try to V = '~하려고 노력하다'. ↔ try + V-ing = '시험 삼아 ~해 보다' (I tried using a new app). 뒤에 무엇이 오느냐에 따라 뜻이 달라져요."
+        },
+        {
+          "t": "get used to + 명사 / 동명사",
+          "d": "get(~하게 되다) + used(익숙한, 형용사) = '익숙해지다'. 이때 to는 to부정사가 아니라 전치사라서 뒤에 명사나 동명사(-ing)가 와요. get used to working ✓ / get used to work ✗"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "am trying",
+          "V",
+          "동사 · 현재진행"
+        ],
+        [
+          "to get used to my new routine",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 노력하고 있다 / 나의 새 일상에 익숙해지는 것을"
     },
     {
       "id": "s003",
@@ -8853,15 +8896,39 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재완료 부정 haven't + p.p. + yet",
-          "d": "'(지금까지) 아직 ~하지 못했다'. 아직 끝나지 않은 상태를 말해요."
+          "t": "현재완료 have + 과거분사(p.p.)",
+          "d": "haven't figured = 과거에 시작된 일이 지금까지 '완료되지 않았다'는 뜻. figured는 과거형이 아니라 과거분사로, have와 함께 완료형을 만들어요. 부정문 + yet = '아직 ~하지 못했다'."
         },
         {
-          "t": "figure it out (대명사 위치)",
-          "d": "it, them 같은 대명사는 figure와 out 사이에 넣어요. figure it out ✓ / figure out it ✗"
+          "t": "구동사와 대명사 목적어",
+          "d": "figure out(알아내다)의 목적어가 it 같은 대명사면 반드시 figure와 out 사이에: figure it out ✓ / figure out it ✗"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "haven't figured … out",
+          "V",
+          "동사 · 현재완료 부정"
+        ],
+        [
+          "it",
+          "O",
+          "목적어"
+        ],
+        [
+          "yet",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "나는 / (지금까지) 알아내지 못했다 / 그것을 / 아직"
     },
     {
       "id": "s004",
@@ -8893,19 +8960,39 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "Let me + 동사원형",
-          "d": "'내가 ~할게'라고 먼저 나서서 제안할 때 써요. Let me check. / Let me think."
+          "t": "사역동사 let + 목적어 + 동사원형",
+          "d": "let은 '(목적어가) ~하도록 허락하다/두다'. 목적어 뒤에 to 없는 동사원형(원형부정사)이 목적격 보어로 와요. me(목적어)가 look into(보어)의 의미상 주어 → '내가 살펴보다'."
         },
         {
-          "t": "look into + 대상",
-          "d": "look into는 대명사도 뒤에 와요. look into it ✓ / look it into ✗ (figure it out과 반대!)"
-        },
-        {
-          "t": "let은 불규칙 동사",
-          "d": "let – let – let. 과거형도 그대로 let이에요."
+          "t": "명령문",
+          "d": "주어 You가 생략되고 동사원형으로 시작해요. Let me ~ 는 명령이라기보다 '내가 ~할게'라는 제안으로 해석해요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "5형식 · (S) + V + O + OC",
+      "parts": [
+        [
+          "(You)",
+          "S",
+          "주어 · 명령문이라 생략"
+        ],
+        [
+          "Let",
+          "V",
+          "동사 · 사역동사"
+        ],
+        [
+          "me",
+          "O",
+          "목적어"
+        ],
+        [
+          "look into it",
+          "OC",
+          "목적격 보어 · 원형부정사"
+        ]
+      ],
+      "literal": "(네가) / ~하게 해 줘 / 내가 / 그것을 살펴보도록 → 내가 살펴볼게"
     },
     {
       "id": "s005",
@@ -8931,15 +9018,39 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "I'll = I will (그 자리에서 하는 약속)",
-          "d": "말하는 순간 정한 일이나 약속에는 will을 써요."
+          "t": "1형식 + 수식어",
+          "d": "get back(돌아오다)은 목적어가 필요 없는 자동사예요. to you, later는 문장의 필수 성분이 아닌 수식어(M)라서 1형식이에요."
         },
         {
-          "t": "get back to + 사람",
-          "d": "'다시 연락하다/답을 주다'. 업무 메일·회의에서 아주 자주 써요. I'll get back to you on that."
+          "t": "will + 동사원형 (즉석 결정·약속)",
+          "d": "말하는 순간 정한 일이나 약속에 will을 써요. I'll = I will."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "1형식 · S + V (+ 수식어)",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "will get back",
+          "V",
+          "동사 · 미래"
+        ],
+        [
+          "to you",
+          "M",
+          "수식어 · 전치사구"
+        ],
+        [
+          "later",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "나는 / 다시 돌아올 것이다 / 너에게 / 나중에 → 나중에 다시 연락할게"
     },
     {
       "id": "s006",
@@ -8965,15 +9076,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "3인칭 단수 현재 -s",
-          "d": "주어가 It이라서 depend에 -s가 붙어요. It depends ✓ / It depend ✗"
+          "t": "depend on 분석",
+          "d": "depend는 자동사라 on the situation은 전치사구(M) → 1형식. 'depend on'을 하나의 타동사처럼 묶어 '~에 의존하다'로 보면 3형식으로 해석하기도 해요."
         },
         {
-          "t": "It depends.",
-          "d": "뒤를 생략하고 'It depends.'만 말해도 '경우에 따라 달라'라는 완전한 대답이에요."
+          "t": "상황을 가리키는 It",
+          "d": "It은 특정 물건이 아니라 '지금 말하는 그 일/상황'을 가리켜요. 해석할 때 '그건' 정도로 가볍게."
+        },
+        {
+          "t": "3인칭 단수 현재 -s",
+          "d": "주어가 It이라 depend + s. It depends ✓ / It depend ✗"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "1형식 · S + V (+ 수식어)",
+      "parts": [
+        [
+          "It",
+          "S",
+          "주어 · 상황의 it"
+        ],
+        [
+          "depends",
+          "V",
+          "동사 · 3인칭 단수 현재"
+        ],
+        [
+          "on the situation",
+          "M",
+          "수식어 · 전치사구"
+        ]
+      ],
+      "literal": "그것은 / 달려 있다 / 상황에"
     },
     {
       "id": "s007",
@@ -9005,15 +9139,43 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "과거 부정 didn't + 동사원형",
-          "d": "didn't 뒤에는 동사원형! didn't expect ✓ / didn't expected ✗"
+          "t": "expect + 목적어 + to부정사 (5형식)",
+          "d": "목적어와 to부정사가 '주어-동사' 관계예요: that(그 일)이 happen(일어나다). '목적어가 ~할 것이라고 예상하다'로 해석해요. 같은 구조: want/ask/tell + 목적어 + to V"
         },
         {
-          "t": "expect + 목적어 + to 동사원형",
-          "d": "'(목적어)가 ~할 거라고 예상하다'. I expected him to call. = 그가 전화할 줄 알았어."
+          "t": "that = that절이 아니라 지시대명사",
+          "d": "여기 that은 '그것, 그 일'이라는 대명사예요. 뒤에 주어+동사가 오는 that절(I think that he is right)과 구분하세요."
+        },
+        {
+          "t": "과거 부정 didn't + 동사원형",
+          "d": "didn't 뒤에는 동사원형: didn't expect ✓ / didn't expected ✗"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "5형식 · S + V + O + OC",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "didn't expect",
+          "V",
+          "동사 · 과거 부정"
+        ],
+        [
+          "that",
+          "O",
+          "목적어 · 지시대명사"
+        ],
+        [
+          "to happen",
+          "OC",
+          "목적격 보어 · to부정사"
+        ]
+      ],
+      "literal": "나는 / 예상하지 않았다 / 그 일이 / 일어날 것을 → 그런 일이 일어날 줄 몰랐어"
     },
     {
       "id": "s008",
@@ -9045,15 +9207,39 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "end up + ~ing",
-          "d": "계획하지 않았는데 '결국 ~하게 됐다'. 뒤에 ~ing가 와요. (end up to work ✗)"
+          "t": "end up + V-ing",
+          "d": "'결국 ~하게 되다'. 뒤에 오는 V-ing가 주어가 '어떤 상태로 끝났는지'를 보충하는 보어 역할이라 2형식으로 봐요. to부정사는 쓸 수 없어요 (end up to work ✗)."
         },
         {
-          "t": "late vs lately",
-          "d": "late = 늦게 / lately = 최근에. work late(늦게까지 일하다) ≠ work lately"
+          "t": "부사 late vs lately",
+          "d": "late = 늦게 (work late = 늦게까지 일하다), lately = 최근에. 모양이 비슷해도 뜻이 달라요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "2형식 · S + V + C",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "ended up",
+          "V",
+          "동사 · 과거"
+        ],
+        [
+          "working",
+          "C",
+          "보어 · V-ing"
+        ],
+        [
+          "late",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "나는 / 결국 ~한 상태가 되었다 / 일하는 / 늦게까지"
     },
     {
       "id": "s009",
@@ -9085,15 +9271,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재완료진행 have been + ~ing",
-          "d": "과거부터 지금까지 '쭉 ~해 오고 있다'. I've been meaning to ~ = 계속 하려고 했는데 아직 못 했다는 뉘앙스예요."
+          "t": "현재완료진행 have been + V-ing",
+          "d": "과거부터 지금까지 '계속 ~해 오고 있다'. I've been meaning to ~ = 계속 하려고 했는데 아직 못 했다는 아쉬움이 담겨요."
         },
         {
-          "t": "mean to + 동사원형",
-          "d": "여기서 mean은 '뜻하다'가 아니라 '~할 작정이다'. I didn't mean to hurt you. = 상처 주려던 건 아니었어."
+          "t": "mean + to부정사 (명사적 용법)",
+          "d": "mean to V = '~할 작정이다, ~하려고 하다'. to do that이 mean의 목적어예요. 여기 mean은 '의미하다'가 아니에요."
+        },
+        {
+          "t": "that = 지시대명사",
+          "d": "do that의 that은 '그것'을 가리키는 대명사예요 (that절 아님)."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "have been meaning",
+          "V",
+          "동사 · 현재완료진행"
+        ],
+        [
+          "to do that",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / (전부터 계속) 작정해 오고 있다 / 그것을 하는 것을"
     },
     {
       "id": "s010",
@@ -9125,15 +9334,34 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "can't help + ~ing",
-          "d": "'참으려 해도 자꾸 ~하게 된다'. 뒤에 ~ing! 과거는 couldn't help ~ing (I couldn't help laughing.)"
+          "t": "동명사 – 목적어",
+          "d": "thinking은 동사에 -ing를 붙여 명사처럼 쓰는 동명사로, help의 목적어예요. 여기서 help는 '돕다'가 아니라 '피하다(avoid)'라서 '~하는 것을 피할 수 없다' → '~하지 않을 수 없다'."
         },
         {
-          "t": "think about vs think of",
-          "d": "think about = (곰곰이) ~에 대해 생각하다 / think of = 떠올리다, 생각해 내다"
+          "t": "can't help + V-ing",
+          "d": "과거는 couldn't help V-ing (I couldn't help laughing. = 웃지 않을 수 없었어). 뒤에 to부정사는 쓰지 않아요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "can't help",
+          "V",
+          "동사 · 조동사 + 동사원형"
+        ],
+        [
+          "thinking about it",
+          "O",
+          "목적어 · 동명사"
+        ]
+      ],
+      "literal": "나는 / 피할 수 없다 / 그것에 대해 생각하는 것을 → 그 생각을 안 할 수가 없어"
     },
     {
       "id": "s011",
@@ -9170,14 +9398,37 @@ window.CONTENT = {
       "grammar": [
         {
           "t": "현재시제 = 습관",
-          "d": "I try ~ 는 '평소에 늘 ~하려고 한다'는 습관이에요. 지금 이 순간만이면 I'm trying."
+          "d": "try(현재형)는 '평소에 늘 ~하려고 한다'는 습관이에요. 요즘 진행 중인 일이면 I'm trying."
         },
         {
-          "t": "commute (명사/동사)",
-          "d": "명사: my commute(출퇴근길) / 동사: I commute by subway.(지하철로 출퇴근해)"
+          "t": "try + to부정사 (명사적 용법)",
+          "d": "to make ~ 가 try의 목적어. to + 동사원형이 문장에서 '명사'처럼 쓰여 목적어 자리에 들어간 것. '~하는 것을'로 해석해요."
+        },
+        {
+          "t": "to부정사 안의 3형식",
+          "d": "make(V) + the most(O) + of my commute → '내 출퇴근길의 최대치를 만들다' → 출퇴근 시간을 최대한 활용하다."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "try",
+          "V",
+          "동사 · 현재(습관)"
+        ],
+        [
+          "to make the most of my commute",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 노력한다 / 내 출퇴근 시간을 최대한 활용하는 것을"
     },
     {
       "id": "s012",
@@ -9209,15 +9460,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "want to + 동사원형",
-          "d": "'~하고 싶다'. want 뒤에는 to + 동사원형 (want improving ✗)"
+          "t": "to부정사 – 명사적 용법 (목적어)",
+          "d": "to improve ~ 가 want의 목적어. 안에서 improve(V) + my English speaking skills(O)로 다시 3형식이에요."
         },
         {
-          "t": "명사 + 명사 = 꾸밈",
-          "d": "English speaking skills: 앞 명사가 뒤 명사를 꾸며요. skills는 복수로 쓰는 게 자연스러워요."
+          "t": "speaking = 동명사 (명사 수식)",
+          "d": "speaking skills는 '말하는 실력'이 아니라 '말하기(를 위한) 실력'이라 speaking은 용도를 나타내는 동명사예요. (cf. a sleeping baby = 자고 있는 아기 → 현재분사)"
+        },
+        {
+          "t": "명사 여러 개가 이어질 때",
+          "d": "English / speaking / skills: 마지막 skills가 핵심 명사고 앞 단어들이 꾸며요. 뒤에서부터 '영어 → 말하기 → 실력' 순으로 묶어 해석하세요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "want",
+          "V",
+          "동사"
+        ],
+        [
+          "to improve my English speaking skills",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 원한다 / 나의 영어 말하기 실력을 향상시키는 것을"
     },
     {
       "id": "s013",
@@ -9243,15 +9517,43 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재완료 의문문 Have you + p.p.?",
-          "d": "'(지금쯤) ~했어?' 결과를 물을 때 써요. 대답: Yes, I have. / Not yet."
+          "t": "현재완료 의문문 Have + S + p.p.?",
+          "d": "평서문 You have figured out ~ 에서 have가 앞으로 나간 의문문이에요. '(지금쯤은) ~했어?'라고 결과를 물어요. 대답: Yes, I have. / Not yet."
         },
         {
-          "t": "figure out + 명사 / 대명사",
-          "d": "명사는 out 뒤 OK (figure out the problem). 대명사는 사이에: figure it out"
+          "t": "과거분사 figured out",
+          "d": "have 뒤 figured는 과거분사(p.p.). figure – figured – figured로 과거형과 모양이 같아요."
+        },
+        {
+          "t": "구동사 + 명사 목적어",
+          "d": "명사 목적어는 out 뒤(figure out the problem)·사이(figure the problem out) 모두 가능. 대명사는 사이에만 (figure it out)."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · 의문문 (조동사 + S + V + O)",
+      "parts": [
+        [
+          "Have",
+          "V",
+          "조동사 · 현재완료"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "figured out",
+          "V",
+          "동사 · 과거분사"
+        ],
+        [
+          "the problem",
+          "O",
+          "목적어"
+        ]
+      ],
+      "literal": "너는 / (지금까지) 알아냈니 / 그 문제를?"
     },
     {
       "id": "s014",
@@ -9283,15 +9585,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "need to + 동사원형",
-          "d": "'~해야 한다'. 필요해서 해야 한다는 느낌이에요."
+          "t": "need + to부정사 (명사적 용법)",
+          "d": "to clarify ~ 가 need의 목적어. '~하는 것이 필요하다' → '~해야 한다'로 자연스럽게 해석해요."
         },
         {
-          "t": "자음 + y 동사의 변화",
-          "d": "clarify → clarifies, clarified (y를 i로 바꾸고 -es / -ed). try → tries, tried 도 같은 규칙."
+          "t": "to부정사 안의 3형식",
+          "d": "clarify(V: 명확히 하다) + the requirements(O: 요구 사항들)."
+        },
+        {
+          "t": "동사 변화 자음+y",
+          "d": "clarify → clarifies / clarified (y → i). try, apply도 같은 규칙."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "need",
+          "V",
+          "동사"
+        ],
+        [
+          "to clarify the requirements",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "우리는 / 필요로 한다 / 요구 사항을 명확하게 하는 것을 → ~해야 해"
     },
     {
       "id": "s015",
@@ -9321,15 +9646,43 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재완료 부정 haven't + p.p. + yet",
-          "d": "'(지금까지) 아직 ~하지 못했다'. yet은 보통 문장 끝에 와요."
+          "t": "현재완료 have + 과거분사 (완료 용법)",
+          "d": "haven't finished = 과거에 시작한 분석이 지금까지 '완료되지 않은' 상태. finished는 과거분사예요."
         },
         {
-          "t": "analysis 발음·복수",
-          "d": "analysis /əˈnæləsɪs/, 복수형은 analyses /əˈnæləsiːz/. analyze(분석하다)는 동사."
+          "t": "yet의 위치와 뜻",
+          "d": "부정문 끝의 yet = '아직'. 의문문에서는 '벌써' (Have you finished yet? = 벌써 끝냈어?)."
+        },
+        {
+          "t": "analysis (명사)",
+          "d": "analysis(분석)의 복수는 analyses. 동사는 analyze(분석하다)."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "haven't finished",
+          "V",
+          "동사 · 현재완료 부정"
+        ],
+        [
+          "the analysis",
+          "O",
+          "목적어"
+        ],
+        [
+          "yet",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "나는 / (지금까지) 끝내지 못했다 / 그 분석을 / 아직"
     },
     {
       "id": "s016",
@@ -9363,15 +9716,39 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "Let's + 동사원형",
-          "d": "Let us의 줄임말로 '같이 ~하자'라는 제안. (Let me는 '내가 ~할게')"
+          "t": "Let's = Let us + 동사원형",
+          "d": "원래 사역동사 let + 목적어(us) + 원형부정사 구조예요. 줄여서 Let's가 되면 '(우리) ~하자'라는 제안이 돼요."
         },
         {
-          "t": "go – went – gone",
-          "d": "go는 불규칙 동사. go over → went over → gone over"
+          "t": "go over + 목적어",
+          "d": "go over(검토하다) + the results(목적어). 보어 안에서 다시 '동사 + 목적어' 관계가 이어져요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "5형식 · V + O + OC (Let's = Let us)",
+      "parts": [
+        [
+          "Let",
+          "V",
+          "동사 · 사역동사"
+        ],
+        [
+          "'s (us)",
+          "O",
+          "목적어"
+        ],
+        [
+          "go over the results",
+          "OC",
+          "목적격 보어 · 원형부정사"
+        ],
+        [
+          "together",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "~하게 하자 / 우리가 / 결과를 검토하도록 / 함께 → 같이 결과를 검토하자"
     },
     {
       "id": "s017",
@@ -9407,15 +9784,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재진행 be + ~ing",
-          "d": "I'm trying = 요즘 계속 노력하는 중이라는 뜻이에요."
+          "t": "현재진행 be + V-ing",
+          "d": "am trying = 요즘 계속 노력하는 중."
         },
         {
-          "t": "get used to + 명사 / ~ing",
-          "d": "to가 전치사라서 뒤에 명사나 ~ing (get used to working from home). used to + 동사원형은 '예전에 ~했다'로 다른 뜻!"
+          "t": "try + to부정사 (명사적 용법)",
+          "d": "to get used to ~ 가 try의 목적어. try to V = ~하려고 노력하다 / try V-ing = 시험 삼아 ~해 보다."
+        },
+        {
+          "t": "get used to + 명사 / 동명사",
+          "d": "get + used(형용사: 익숙한) = 익숙해지다. to는 전치사라서 뒤에 명사·동명사. ↔ used to + 동사원형 = '예전엔 ~했다'(완전히 다른 표현)"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "am trying",
+          "V",
+          "동사 · 현재진행"
+        ],
+        [
+          "to get used to my new routine",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 노력하고 있다 / 나의 새 일상에 익숙해지는 것을"
     },
     {
       "id": "s018",
@@ -9447,15 +9847,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "what happened (간접의문문)",
-          "d": "의문문이 문장 안에 들어가면 '의문사 + 동사' 순서 그대로. what happened는 what이 주어라서 그대로 써요. (What did happen ✗)"
+          "t": "need + to부정사 (명사적 용법)",
+          "d": "to find out ~ 가 need의 목적어 → '~해야 한다'."
         },
         {
-          "t": "find out vs figure out",
-          "d": "find out = (정보·사실을) 알아내다 / figure out = (머리를 써서) 이해하다·해결하다"
+          "t": "간접의문문 what happened (명사절)",
+          "d": "What happened?(무슨 일이야?)라는 의문문이 문장 속에 들어가 find out의 목적어가 된 명사절이에요. '무슨 일이 일어났는지'로 해석해요."
+        },
+        {
+          "t": "의문사가 주어일 때의 어순",
+          "d": "what이 절 안에서 주어라서 '의문사 + 동사' 순서 그대로예요. 의문사가 주어가 아니면 '의문사 + 주어 + 동사' (what he said ✓ / what did he say ✗)."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "need",
+          "V",
+          "동사"
+        ],
+        [
+          "to find out what happened",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "우리는 / 필요로 한다 / 무슨 일이 일어났는지를 알아내는 것을"
     },
     {
       "id": "s019",
@@ -9491,15 +9914,48 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "과거 의문문 Did you + 동사원형?",
-          "d": "Did 뒤에는 동사원형! Did you had ✗ → Did you have ✓"
+          "t": "to부정사 – 형용사적 용법",
+          "d": "to check the report가 앞의 명사 a chance를 뒤에서 꾸며요. '보고서를 확인할 기회'처럼 '~할 + 명사'로 해석해요. (time to eat = 먹을 시간)"
         },
         {
-          "t": "Did you have a chance to ~?",
-          "d": "'혹시 ~해 봤어요?'를 부드럽게 묻는 업무 표현. 재촉하는 느낌 없이 확인할 때 좋아요."
+          "t": "과거 의문문 Did + S + 동사원형?",
+          "d": "Did가 과거를 담당하니 뒤 동사는 원형: Did you have ✓ / Did you had ✗"
+        },
+        {
+          "t": "업무 표현 뉘앙스",
+          "d": "Did you have a chance to ~? = '혹시 ~해 볼 시간 있었어요?' 재촉하지 않고 부드럽게 확인할 때 써요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · 의문문 (조동사 + S + V + O)",
+      "parts": [
+        [
+          "Did",
+          "V",
+          "조동사 · 과거"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "have",
+          "V",
+          "동사원형"
+        ],
+        [
+          "a chance",
+          "O",
+          "목적어"
+        ],
+        [
+          "to check the report",
+          "M",
+          "수식어 · to부정사(형용사적 용법)"
+        ]
+      ],
+      "literal": "너는 / 가졌니 / 기회를 / 보고서를 확인할?"
     },
     {
       "id": "s020",
@@ -9541,15 +9997,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "decide to + 동사원형",
-          "d": "'~하기로 결정하다'. decide 뒤에는 to 부정사 (decide spending ✗)"
+          "t": "decide + to부정사 (명사적 용법)",
+          "d": "to spend ~ 가 decided의 목적어. '~하기로 결정하다'. decide는 동명사를 목적어로 쓰지 않아요 (decide spending ✗)."
         },
         {
-          "t": "spend + 시간/돈 + ~ing",
-          "d": "'~하는 데 시간·돈을 쓰다'. spend time to learn ✗ → spend time learning ✓"
+          "t": "spend + 시간 + V-ing",
+          "d": "spend(V) + more time(O) + learning English: '~하는 데 시간을 쓰다'. 원래 in learning에서 in이 생략된 형태로, learning은 '~하면서/하는 데'로 해석해요. spend time to learn ✗"
+        },
+        {
+          "t": "learning English (동명사구)",
+          "d": "learning(V-ing) + English(목적어). 동명사도 동사 성질이 있어 목적어를 가질 수 있어요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "decided",
+          "V",
+          "동사 · 과거"
+        ],
+        [
+          "to spend more time learning English",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 결정했다 / 영어를 배우는 데 더 많은 시간을 쓰는 것을"
     },
     {
       "id": "s021",
@@ -9585,15 +10064,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "현재완료 수동태 has been + p.p.",
-          "d": "'(아직) ~되지 않았다'. 데이터가 스스로 업데이트하는 게 아니라 '업데이트되는' 거라 수동태예요."
+          "t": "수동태 be + 과거분사",
+          "d": "능동태 Someone hasn't updated the data(3형식)의 목적어 the data가 주어로 나온 문장이에요. 데이터가 스스로 업데이트하는 게 아니라 '업데이트되는' 거라 수동태. '~되다/~받다'로 해석해요."
         },
         {
-          "t": "data는 단수 취급 (일상·업무)",
-          "d": "The data hasn't / The data is ~ 처럼 단수로 쓰는 게 일반적이에요."
+          "t": "현재완료 + 수동태 = have been + p.p.",
+          "d": "has(현재완료) + been(be의 과거분사) + updated(과거분사). '(지금까지) ~되지 않았다'."
+        },
+        {
+          "t": "data는 단수 취급",
+          "d": "일상·업무에서 data는 보통 단수로: The data hasn't / The data is."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "수동태 · S + be + p.p. (원래 3형식)",
+      "parts": [
+        [
+          "The data",
+          "S",
+          "주어"
+        ],
+        [
+          "hasn't been updated",
+          "V",
+          "동사 · 현재완료 수동태"
+        ],
+        [
+          "yet",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "그 데이터는 / (지금까지) 업데이트되지 않았다 / 아직"
     },
     {
       "id": "s022",
@@ -9623,15 +10125,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "should + 동사원형",
-          "d": "'~하는 게 좋겠다'는 조언·제안. need to보다 부드러워요."
+          "t": "조동사 should + 동사원형",
+          "d": "'~하는 게 좋겠다, ~해야 한다'는 조언·제안. must보다 부드럽고, need to보다 '의견'에 가까워요."
         },
         {
-          "t": "consider + 명사 / ~ing",
-          "d": "consider other options / consider changing the plan (consider to change ✗)"
+          "t": "consider + 명사 / 동명사",
+          "d": "consider 뒤에는 명사나 동명사: consider other options / consider changing the plan. to부정사는 안 돼요 (consider to change ✗)."
+        },
+        {
+          "t": "other + 복수 명사",
+          "d": "other options(다른 선택지들). 하나일 때는 another option."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "should consider",
+          "V",
+          "동사 · 조동사 + 동사원형"
+        ],
+        [
+          "other options",
+          "O",
+          "목적어"
+        ]
+      ],
+      "literal": "우리는 / 고려해야 한다 / 다른 선택지들을"
     },
     {
       "id": "s023",
@@ -9657,15 +10182,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "look forward to + 명사 / ~ing",
-          "d": "to가 전치사라서 뒤에 명사나 ~ing. I'm looking forward to seeing you. (to see ✗)"
+          "t": "구동사를 하나의 타동사로",
+          "d": "look forward to(~을 고대하다)를 한 덩어리 동사로 보면 the weekend가 목적어 → 3형식."
         },
         {
-          "t": "진행형으로 자주 써요",
-          "d": "I'm looking forward to ~ 가 가장 흔해요. 메일 끝 인사: I look forward to hearing from you."
+          "t": "to = 전치사 → 명사 / 동명사",
+          "d": "여기 to는 to부정사가 아니라 전치사예요. 동사를 쓰려면 동명사: I'm looking forward to seeing you ✓ / to see ✗"
+        },
+        {
+          "t": "현재진행으로 기대감 표현",
+          "d": "I'm looking forward to ~ 가 가장 흔해요. 메일 끝 인사는 I look forward to hearing from you. (현재형이 더 격식)"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "am looking forward to",
+          "V",
+          "동사 · 현재진행 (구동사)"
+        ],
+        [
+          "the weekend",
+          "O",
+          "목적어"
+        ]
+      ],
+      "literal": "나는 / 고대하고 있다 / 주말을 → 주말이 기대돼"
     },
     {
       "id": "s024",
@@ -9691,15 +10239,48 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "Why did you + 동사원형?",
-          "d": "과거 이유를 물을 때. did 뒤에는 동사원형이에요."
+          "t": "의문사 + did + S + 동사원형?",
+          "d": "평서문 You put off the meeting에서 이유를 묻는 의문문. did가 과거를 담당하니 뒤 동사는 원형이에요."
         },
         {
-          "t": "put은 과거·과거분사도 put",
-          "d": "put – put – put. 대명사는 사이에: put it off ✓ / put off it ✗"
+          "t": "put off + 목적어",
+          "d": "put off(미루다, 연기하다) + the meeting(목적어). 대명사면 사이에: put it off ✓"
+        },
+        {
+          "t": "put의 3단 변화",
+          "d": "put – put – put. 과거형·과거분사 모두 put이라 문맥(did)으로 시제를 판단해요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · 의문사 의문문",
+      "parts": [
+        [
+          "Why",
+          "M",
+          "의문사 · 이유"
+        ],
+        [
+          "did",
+          "V",
+          "조동사 · 과거"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "put off",
+          "V",
+          "동사원형 (구동사)"
+        ],
+        [
+          "the meeting",
+          "O",
+          "목적어"
+        ]
+      ],
+      "literal": "왜 / 너는 / 미뤘니 / 그 회의를?"
     },
     {
       "id": "s025",
@@ -9735,15 +10316,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "make sure (that) + 주어 + 동사",
-          "d": "'~하도록 확실히 하다'. that은 보통 생략. make sure to + 동사원형도 가능."
+          "t": "that절 – 명사절 (목적어)",
+          "d": "everything is ready가 make sure의 목적어인 명사절이에요. 앞에 that이 생략됐어요. '주어가 ~하다는 것을'로 해석해요."
+        },
+        {
+          "t": "that절 안은 2형식",
+          "d": "everything(S) + is(V) + ready(C: 형용사 보어) → '모든 것이 준비된 상태다'."
         },
         {
           "t": "everything은 단수",
-          "d": "everything is ✓ / everything are ✗"
+          "d": "everything is ✓ / everything are ✗. make sure to + 동사원형 형태도 가능 (Make sure to lock the door)."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O(that절)",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "will make sure",
+          "V",
+          "동사 · 미래"
+        ],
+        [
+          "(that) everything is ready",
+          "O",
+          "목적어 · that절(명사절)"
+        ]
+      ],
+      "literal": "나는 / 확실히 할 것이다 / 모든 것이 준비되어 있다는 것을"
     },
     {
       "id": "s026",
@@ -9773,15 +10377,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "keep – kept – kept",
-          "d": "keep은 불규칙 동사. keep track of → kept track of"
+          "t": "need + to부정사 (명사적 용법)",
+          "d": "to keep track of ~ 가 need의 목적어 → '~해야 한다'."
         },
         {
-          "t": "sales (매출)는 복수형",
-          "d": "'매출'의 뜻일 때는 sales로 써요. Sales are up this month."
+          "t": "keep track of + 목적어",
+          "d": "keep track of(계속 파악하다)를 하나의 동사로 보면 daily sales가 목적어. keep – kept – kept."
+        },
+        {
+          "t": "sales (매출)",
+          "d": "'매출'의 뜻일 때는 복수형 sales로 써요. daily(형용사)가 sales를 꾸며요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "need",
+          "V",
+          "동사"
+        ],
+        [
+          "to keep track of daily sales",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "우리는 / 필요로 한다 / 일일 매출을 계속 추적하는 것을"
     },
     {
       "id": "s027",
@@ -9817,15 +10444,43 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "have trouble + ~ing",
-          "d": "'~하는 데 애먹다'. 뒤에 ~ing! (have trouble to understand ✗) have difficulty ~ing도 같은 뜻."
+          "t": "have trouble + V-ing",
+          "d": "'~하는 데 어려움을 겪다'. 원래 have trouble (in) understanding에서 in이 생략된 형태라 understanding은 '~하는 데(있어서)'로 해석해요. to부정사는 쓰지 않아요 (have trouble to understand ✗)."
         },
         {
-          "t": "understand – understood – understood",
-          "d": "불규칙 동사예요."
+          "t": "V-ing도 목적어를 가져요",
+          "d": "understanding(V-ing) + the new process(목적어) → '새 프로세스를 이해하는 것'."
+        },
+        {
+          "t": "같은 패턴",
+          "d": "have difficulty V-ing / have a hard time V-ing / spend time V-ing 모두 V-ing가 와요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "had",
+          "V",
+          "동사 · 과거"
+        ],
+        [
+          "trouble",
+          "O",
+          "목적어"
+        ],
+        [
+          "understanding the new process",
+          "M",
+          "수식어 · V-ing (~하는 데)"
+        ]
+      ],
+      "literal": "나는 / 가졌다 / 어려움을 / 새 프로세스를 이해하는 데"
     },
     {
       "id": "s028",
@@ -9861,15 +10516,43 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "be related to + 명사",
-          "d": "'~와 관련이 있다'. related는 형용사처럼 쓰여요. (related with ✗)"
+          "t": "과거분사 = 형용사 역할 (보어)",
+          "d": "related는 relate의 과거분사인데, be동사 뒤에서 주어의 상태를 설명하는 형용사(보어)로 쓰였어요. '관련된' → '~와 관련이 있다'."
         },
         {
-          "t": "this + 단수 명사",
-          "d": "this issue / these issues 처럼 단수·복수를 맞춰요."
+          "t": "2형식 S + be + C",
+          "d": "be동사 뒤 보어가 주어를 설명해요: This issue = related (이 문제 = 관련된 상태)."
+        },
+        {
+          "t": "be related to + 명사",
+          "d": "전치사는 to: related to ✓ / related with ✗"
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "2형식 · S + V + C",
+      "parts": [
+        [
+          "This issue",
+          "S",
+          "주어"
+        ],
+        [
+          "is",
+          "V",
+          "동사 · be동사"
+        ],
+        [
+          "related",
+          "C",
+          "보어 · 과거분사(형용사)"
+        ],
+        [
+          "to the source data",
+          "M",
+          "수식어 · 전치사구"
+        ]
+      ],
+      "literal": "이 문제는 / ~이다 / 관련된 (상태) / 원천 데이터와"
     },
     {
       "id": "s029",
@@ -9905,15 +10588,48 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "경험 묻기 Have you ever + p.p.?",
-          "d": "'~해 본 적 있어?' 현재완료 경험 용법. 대답: Yes, I have. / No, I haven't."
+          "t": "현재완료 – 경험 용법",
+          "d": "Have you ever + p.p.? = '~해 본 적 있어?' ever는 '한 번이라도'. 대답: Yes, I have. / No, I never have."
         },
         {
-          "t": "전치사 뒤 ~ing",
-          "d": "about 같은 전치사 뒤에는 동사를 ~ing로 (about changing). change jobs는 jobs 복수형이 자연스러워요."
+          "t": "전치사 + 동명사",
+          "d": "about 같은 전치사 뒤에 동사를 쓰려면 동명사(V-ing)로: about changing ✓ / about change ✗. changing jobs = 직장을 바꾸는 것(이직)."
+        },
+        {
+          "t": "문장 형식",
+          "d": "think는 여기서 자동사라 about ~ 는 수식어 → 1형식. 'think about'을 한 덩어리 타동사로 보면 3형식으로도 해석해요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "1형식 · 의문문 (조동사 + S + V + 수식어)",
+      "parts": [
+        [
+          "Have",
+          "V",
+          "조동사 · 현재완료"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "ever",
+          "M",
+          "수식어 · 부사"
+        ],
+        [
+          "thought",
+          "V",
+          "동사 · 과거분사"
+        ],
+        [
+          "about changing jobs",
+          "M",
+          "수식어 · 전치사 + 동명사"
+        ]
+      ],
+      "literal": "너는 / 한 번이라도 / 생각해 본 적 있니 / 직장을 바꾸는 것에 대해?"
     },
     {
       "id": "s030",
@@ -9949,15 +10665,38 @@ window.CONTENT = {
       ],
       "grammar": [
         {
-          "t": "I hope (that) + 주어 + 동사",
-          "d": "'~이기를 바라'. that은 생략. 미래 일이라도 I hope things get better. 처럼 현재형도 자주 써요."
+          "t": "that절 – 명사절 (목적어)",
+          "d": "things will get better soon이 hope의 목적어인 명사절이에요. that이 생략됐고 '~하기를 (바란다)'로 해석해요."
         },
         {
-          "t": "get + 비교급 = 점점 ~해지다",
-          "d": "get better(나아지다), get worse(나빠지다), get colder(추워지다)"
+          "t": "that절 안은 2형식",
+          "d": "things(S) + will get(V) + better(C) + soon(M). get + 형용사 = '~해지다' → get better = 나아지다. 비교급 better가 보어예요."
+        },
+        {
+          "t": "hope 뒤 시제",
+          "d": "미래 일이라도 현재형을 자주 써요: I hope things get better soon. 둘 다 자연스러워요."
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "form": "3형식 · S + V + O(that절)",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "hope",
+          "V",
+          "동사"
+        ],
+        [
+          "(that) things will get better soon",
+          "O",
+          "목적어 · that절(명사절)"
+        ]
+      ],
+      "literal": "나는 / 바란다 / 상황이 곧 나아질 것을"
     }
   ],
 

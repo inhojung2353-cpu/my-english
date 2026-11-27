@@ -459,3 +459,18 @@ a.ask-tag { text-decoration: none; }
 .day-card .check { flex: none; }
 .day-card.done .day { background: var(--good-soft); color: var(--good); }
 a.day-link { display: block; text-decoration: none; color: var(--primary); }
+
+/* 스피킹 · 문장 구조 */
+.spk-form { color: var(--text); }
+.spk-parts { display: flex; flex-wrap: wrap; gap: 6px; }
+.spk-part { display: inline-flex; flex-direction: column; gap: 2px; padding: 6px 9px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--surface); max-width: 100%; }
+.spk-part .pt { font-weight: 700; font-size: 15px; line-height: 1.35; word-break: break-word; }
+.spk-part .pr { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+.spk-part .pr b { font-size: 11px; font-weight: 900; margin-right: 2px; }
+.spk-part.r-S { border-color: #7aa0c8; } .spk-part.r-S .pr b { color: #4f7aa8; }
+.spk-part.r-V { border-color: var(--primary); } .spk-part.r-V .pr b { color: var(--primary); }
+.spk-part.r-O { border-color: var(--good); } .spk-part.r-O .pr b { color: var(--good); }
+.spk-part.r-C, .spk-part.r-OC { border-color: #b08bc4; } .spk-part.r-C .pr b, .spk-part.r-OC .pr b { color: #8d63a6; }
+.spk-part.r-M { border-style: dashed; }
+.spk-literal { margin-top: 8px; padding: 8px 10px; border-radius: 10px; background: var(--bg); font-size: 14px; line-height: 1.5; word-break: keep-all; }
+.spk-literal b { color: var(--muted); font-size: 12px; margin-right: 4px; }

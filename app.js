@@ -591,7 +591,7 @@ function renderSpeaking(dayNo) {
 }
 
 function speakItem(x, i) {
-  const words = x.words || [], verbs = x.verbs || [], grammar = x.grammar || [];
+  const words = x.words || [], verbs = x.verbs || [], grammar = x.grammar || [], parts = x.parts || [];
   return `
     <div class="card spk" data-i="${i}">
       <div class="spk-ko" role="button" tabindex="0" aria-expanded="false"><span class="sent-no">${i + 1}</span><span class="grow">${esc(x.ko)}</span><span class="spk-arrow">›</span></div>
@@ -606,8 +606,12 @@ function speakItem(x, i) {
             <thead><tr><th>동사</th><th>과거</th><th>현재</th><th>과거분사</th></tr></thead>
             <tbody>${verbs.map(v => `<tr><th>${esc(v.v)}</th><td>${esc(v.past)}</td><td>${esc(v.present)}</td><td>${esc(v.pp)}</td></tr>`).join('')}</tbody>
           </table></div>` : ''}
+        ${parts.length ? `
+          <div class="spk-label">🧩 문장 구조${x.form ? ` · <span class="spk-form">${esc(x.form)}</span>` : ''}</div>
+          <div class="spk-parts">${parts.map(([t, r, d]) => `<span class="spk-part r-${esc(r)}"><span class="pt">${esc(t)}</span><span class="pr"><b>${esc(r)}</b> ${esc(d || '')}</span></span>`).join('')}</div>
+          ${x.literal ? `<div class="spk-literal"><b>직역</b> ${esc(x.literal)}</div>` : ''}` : ''}
         ${grammar.length ? `
-          <div class="spk-label">✏️ 문법</div>
+          <div class="spk-label">✏️ 문법 포인트</div>
           <div class="spk-grammar">${grammar.map(g => `<div class="spk-g"><b>${esc(g.t)}</b><p>${esc(g.d)}</p></div>`).join('')}</div>` : ''}
       </div>
     </div>`;
