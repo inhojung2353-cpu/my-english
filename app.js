@@ -63,11 +63,12 @@ const view = $('#view');
 function route() {
   const [page, id, sub] = (location.hash.slice(1) || 'home').split('/');
   const tab = page === 'dialog' ? 'dialogs' : page;
+  const speakDay = page === 'speaking' ? Number(id) || 0 : 0;
   $$('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.tab === tab));
-  $('#back').hidden = page !== 'dialog';
-  $('#back').dataset.to = '#dialogs';
+  $('#back').hidden = page !== 'dialog' && !speakDay;
+  $('#back').dataset.to = speakDay ? '#speaking' : '#dialogs';
   if (page === 'words') renderWords();
-  else if (page === 'speaking') renderSpeaking();
+  else if (page === 'speaking') renderSpeaking(speakDay);
   else if (page === 'dialogs') renderDialogs(id === 'mine' ? 'mine' : 'list');
   else if (page === 'dialog') renderDialog(decodeURIComponent(id || ''));
   else if (page === 'diary') renderDiary();
@@ -546,11 +547,91 @@ function renderWords() {
   });
 }
 
-/* ---------- 스피킹 ---------- */
-function renderSpeaking() {
+/* ---------- 스피킹 ----------
+   data.js speaking 문장을 순서대로 10개씩 묶어 Day 1, Day 2 … 로 보여줘요.
+   한글을 먼저 보고 말해 본 뒤, 누르면 영어 + 단어 + 시제 + 문법이 펼쳐져요. */
+const speaking = C.speaking || [];
+const SPEAK_PER_DAY = 10;
+const speakDays = () => {
+  const days = [];
+  for (let i = 0; i < speaking.length; i += SPEAK_PER_DAY) days.push({ day: days.length + 1, items: speaking.slice(i, i + SPEAK_PER_DAY) });
+  return days;
+};
+
+function renderSpeaking(dayNo) {
+  const days = speakDays();
+  if (dayNo) return renderSpeakDay(days, dayNo);
   setTitle('스피킹');
+  if (!days.length) {
+    view.innerHTML = `<div class="card empty"><span class="big">🗣️</span>아직 문장이 없어요<br><span class="small">문장을 보내 주시면 10개씩 Day로 정리돼요</span></div>`;
+    return;
+  }
   view.innerHTML = `
-    <div class="card empty"><span class="big">🗣️</span>스피킹 탭을 준비하고 있어요<br><span class="small">곧 연습할 내용이 여기에 들어와요</span></div>`;
+    <p class="muted small" style="margin:2px 4px 10px">보내 준 문장이 10개씩 모이면 하루치(Day)가 돼요. 한글을 보고 영어로 말해 보세요.</p>
+    ${[...days].reverse().map(d => `
+      <a class="card dialog-item" href="#speaking/${d.day}">
+        <div class="day">Day<b>${d.day}</b></div>
+        <div class="grow">
+          <h3>${esc(d.items[0].ko)}</h3>
+          <div class="meta">${d.items.length < SPEAK_PER_DAY ? `<span class="speak-progress">채우는 중 ${d.items.length}/${SPEAK_PER_DAY}</span>` : `${d.items.length}문장`}</div>
+        </div>
+      </a>`).join('')}`;
+}
+
+function speakItem(x, i) {
+  const words = x.words || [], verbs = x.verbs || [], grammar = x.grammar || [];
+  return `
+    <div class="card spk" data-i="${i}">
+      <div class="spk-ko" role="button" tabindex="0" aria-expanded="false"><span class="sent-no">${i + 1}</span><span class="grow">${esc(x.ko)}</span><span class="spk-arrow">›</span></div>
+      <div class="spk-body">
+        <div class="row-between spk-en"><div class="en grow">${esc(x.en)}</div>${speakBtn(x.en)}</div>
+        ${words.length ? `
+          <div class="spk-label">📖 단어 · 표현</div>
+          <ul class="spk-words">${words.map(([w, m]) => `<li><b>${esc(w)}</b><span>${esc(m)}</span></li>`).join('')}</ul>` : ''}
+        ${verbs.length ? `
+          <div class="spk-label">⏱️ 동사 시제</div>
+          <div class="spk-table-wrap"><table class="spk-verbs">
+            <thead><tr><th>동사</th><th>과거</th><th>현재</th><th>미래</th></tr></thead>
+            <tbody>${verbs.map(v => `<tr><th>${esc(v.v)}</th><td>${esc(v.past)}</td><td>${esc(v.present)}</td><td>${esc(v.future)}</td></tr>`).join('')}</tbody>
+          </table></div>` : ''}
+        ${grammar.length ? `
+          <div class="spk-label">✏️ 문법</div>
+          <div class="spk-grammar">${grammar.map(g => `<div class="spk-g"><b>${esc(g.t)}</b><p>${esc(g.d)}</p></div>`).join('')}</div>` : ''}
+      </div>
+    </div>`;
+}
+
+function renderSpeakDay(days, dayNo) {
+  const d = days.find(x => x.day === dayNo);
+  if (!d) { location.hash = '#speaking'; return; }
+  setTitle(`스피킹 Day ${d.day}`);
+  const prev = days.find(x => x.day === d.day - 1), next = days.find(x => x.day === d.day + 1);
+  view.innerHTML = `
+    <div class="row-between" style="margin:2px 4px 10px">
+      <span class="muted small">한글을 보고 영어로 말한 뒤 눌러서 확인${d.items.length < SPEAK_PER_DAY ? ` · 채우는 중 ${d.items.length}/${SPEAK_PER_DAY}` : ''}</span>
+      <button class="chip" id="spk-all">모두 펼치기</button>
+    </div>
+    <div id="spk-list">${d.items.map(speakItem).join('')}</div>
+    <div class="pager">
+      ${prev ? `<a class="card" href="#speaking/${prev.day}"><span class="muted small">‹ 이전</span><b>Day ${prev.day}</b></a>` : '<span></span>'}
+      ${next ? `<a class="card right" href="#speaking/${next.day}"><span class="muted small">다음 ›</span><b>Day ${next.day}</b></a>` : '<span></span>'}
+    </div>`;
+  const toggle = (card, on) => { card.classList.toggle('open', on); card.querySelector('.spk-ko').setAttribute('aria-expanded', String(card.classList.contains('open'))); };
+  $('#spk-list').addEventListener('click', e => {
+    if (e.target.closest('.speak')) return;
+    const head = e.target.closest('.spk-ko'); if (!head) return;
+    toggle(head.closest('.spk'));
+  });
+  $('#spk-list').addEventListener('keydown', e => {
+    const head = e.target.closest('.spk-ko');
+    if (head && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); toggle(head.closest('.spk')); }
+  });
+  $('#spk-all').addEventListener('click', e => {
+    const cards = $$('#spk-list .spk');
+    const open = !cards.every(c => c.classList.contains('open'));
+    cards.forEach(c => toggle(c, open));
+    e.target.textContent = open ? '모두 접기' : '모두 펼치기';
+  });
 }
 
 // Dialog 본문에서 표현 강조

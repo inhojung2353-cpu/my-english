@@ -8736,6 +8736,536 @@ window.CONTENT = {
     }
   ],
 
+  /* ---------- 스피킹 ----------
+     보내 준 문장을 순서대로 쌓아요. 10문장마다 Day 1, Day 2 … 로 자동으로 나뉘어요.
+     en / ko: 문장과 해석, words: [표현, 뜻], verbs: 동사의 과거·현재·미래, grammar: 문법 설명 */
+  speaking: [
+    {
+      "id": "s001",
+      "en": "I want to make the most of my time.",
+      "ko": "시간을 최대한 활용하고 싶어.",
+      "words": [
+        [
+          "want to ~",
+          "~하고 싶다"
+        ],
+        [
+          "make the most of",
+          "~을 최대한 활용하다"
+        ],
+        [
+          "time",
+          "시간"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "want",
+          "past": "wanted",
+          "present": "want / wants",
+          "future": "will want"
+        },
+        {
+          "v": "make",
+          "past": "made",
+          "present": "make / makes",
+          "future": "will make"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "want to + 동사원형",
+          "d": "'~하고 싶다'. 뒤에 꼭 동사원형이 와요. (want making ✗)"
+        },
+        {
+          "t": "make the most of + 명사",
+          "d": "주어진 시간·기회를 '최대한 활용하다'. make the most of this chance / the weekend 처럼 써요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s002",
+      "en": "I'm trying to get used to my new routine.",
+      "ko": "새로운 일상에 익숙해지려고 노력 중이야.",
+      "words": [
+        [
+          "try to ~",
+          "~하려고 노력하다"
+        ],
+        [
+          "get used to",
+          "~에 익숙해지다"
+        ],
+        [
+          "routine",
+          "일상, 매일 하는 일"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "try",
+          "past": "tried",
+          "present": "try / tries",
+          "future": "will try"
+        },
+        {
+          "v": "get",
+          "past": "got",
+          "present": "get / gets",
+          "future": "will get"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재진행 be + ~ing",
+          "d": "I'm trying = '요즘 ~하는 중이야'. 지금 이 순간뿐 아니라 요즘 계속 하고 있는 일에도 써요."
+        },
+        {
+          "t": "get used to + 명사 / ~ing",
+          "d": "여기서 to는 전치사라서 뒤에 명사나 ~ing가 와요. (get used to waking up early) ↔ used to + 동사원형은 '예전에 ~했다'로 완전히 다른 뜻!"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s003",
+      "en": "I haven't figured it out yet.",
+      "ko": "아직 그걸 알아내지 못했어.",
+      "words": [
+        [
+          "figure out",
+          "알아내다, 해결하다"
+        ],
+        [
+          "yet",
+          "(부정문에서) 아직"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "figure out",
+          "past": "figured out",
+          "present": "figure out / figures out",
+          "future": "will figure out"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재완료 부정 haven't + p.p. + yet",
+          "d": "'(지금까지) 아직 ~하지 못했다'. 아직 끝나지 않은 상태를 말해요."
+        },
+        {
+          "t": "figure it out (대명사 위치)",
+          "d": "it, them 같은 대명사는 figure와 out 사이에 넣어요. figure it out ✓ / figure out it ✗"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s004",
+      "en": "Let me look into it.",
+      "ko": "내가 한번 살펴볼게.",
+      "words": [
+        [
+          "let me ~",
+          "내가 ~할게"
+        ],
+        [
+          "look into",
+          "조사하다, 살펴보다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "let",
+          "past": "let",
+          "present": "let / lets",
+          "future": "will let"
+        },
+        {
+          "v": "look into",
+          "past": "looked into",
+          "present": "look into / looks into",
+          "future": "will look into"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "Let me + 동사원형",
+          "d": "'내가 ~할게'라고 먼저 나서서 제안할 때 써요. Let me check. / Let me think."
+        },
+        {
+          "t": "look into + 대상",
+          "d": "look into는 대명사도 뒤에 와요. look into it ✓ / look it into ✗ (figure it out과 반대!)"
+        },
+        {
+          "t": "let은 불규칙 동사",
+          "d": "let – let – let. 과거형도 그대로 let이에요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s005",
+      "en": "I'll get back to you later.",
+      "ko": "나중에 다시 연락할게.",
+      "words": [
+        [
+          "get back to + 사람",
+          "~에게 다시 연락하다, 답을 주다"
+        ],
+        [
+          "later",
+          "나중에"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "get back",
+          "past": "got back",
+          "present": "get back / gets back",
+          "future": "will get back"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "I'll = I will (그 자리에서 하는 약속)",
+          "d": "말하는 순간 정한 일이나 약속에는 will을 써요."
+        },
+        {
+          "t": "get back to + 사람",
+          "d": "'다시 연락하다/답을 주다'. 업무 메일·회의에서 아주 자주 써요. I'll get back to you on that."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s006",
+      "en": "It depends on the situation.",
+      "ko": "상황에 따라 달라.",
+      "words": [
+        [
+          "depend on",
+          "~에 달려 있다, ~에 따라 다르다"
+        ],
+        [
+          "situation",
+          "상황"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "depend",
+          "past": "depended",
+          "present": "depend / depends",
+          "future": "will depend"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "3인칭 단수 현재 -s",
+          "d": "주어가 It이라서 depend에 -s가 붙어요. It depends ✓ / It depend ✗"
+        },
+        {
+          "t": "It depends.",
+          "d": "뒤를 생략하고 'It depends.'만 말해도 '경우에 따라 달라'라는 완전한 대답이에요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s007",
+      "en": "I didn't expect that to happen.",
+      "ko": "그런 일이 일어날 줄 몰랐어.",
+      "words": [
+        [
+          "expect",
+          "예상하다, 기대하다"
+        ],
+        [
+          "happen",
+          "(일이) 일어나다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "expect",
+          "past": "expected",
+          "present": "expect / expects",
+          "future": "will expect"
+        },
+        {
+          "v": "happen",
+          "past": "happened",
+          "present": "happen / happens",
+          "future": "will happen"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "과거 부정 didn't + 동사원형",
+          "d": "didn't 뒤에는 동사원형! didn't expect ✓ / didn't expected ✗"
+        },
+        {
+          "t": "expect + 목적어 + to 동사원형",
+          "d": "'(목적어)가 ~할 거라고 예상하다'. I expected him to call. = 그가 전화할 줄 알았어."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s008",
+      "en": "I ended up working late.",
+      "ko": "결국 늦게까지 일하게 됐어.",
+      "words": [
+        [
+          "end up ~ing",
+          "결국 ~하게 되다"
+        ],
+        [
+          "work late",
+          "늦게까지 일하다, 야근하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "end up",
+          "past": "ended up",
+          "present": "end up / ends up",
+          "future": "will end up"
+        },
+        {
+          "v": "work",
+          "past": "worked",
+          "present": "work / works",
+          "future": "will work"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "end up + ~ing",
+          "d": "계획하지 않았는데 '결국 ~하게 됐다'. 뒤에 ~ing가 와요. (end up to work ✗)"
+        },
+        {
+          "t": "late vs lately",
+          "d": "late = 늦게 / lately = 최근에. work late(늦게까지 일하다) ≠ work lately"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s009",
+      "en": "I've been meaning to do that.",
+      "ko": "전부터 그걸 하려고 했어.",
+      "words": [
+        [
+          "mean to ~",
+          "~하려고 하다, ~할 작정이다"
+        ],
+        [
+          "do",
+          "하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "mean",
+          "past": "meant",
+          "present": "mean / means",
+          "future": "will mean"
+        },
+        {
+          "v": "do",
+          "past": "did",
+          "present": "do / does",
+          "future": "will do"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재완료진행 have been + ~ing",
+          "d": "과거부터 지금까지 '쭉 ~해 오고 있다'. I've been meaning to ~ = 계속 하려고 했는데 아직 못 했다는 뉘앙스예요."
+        },
+        {
+          "t": "mean to + 동사원형",
+          "d": "여기서 mean은 '뜻하다'가 아니라 '~할 작정이다'. I didn't mean to hurt you. = 상처 주려던 건 아니었어."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s010",
+      "en": "I can't help thinking about it.",
+      "ko": "그 생각을 하지 않을 수 없어.",
+      "words": [
+        [
+          "can't help ~ing",
+          "~하지 않을 수 없다, 자꾸 ~하게 된다"
+        ],
+        [
+          "think about",
+          "~에 대해 생각하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "can't help",
+          "past": "couldn't help",
+          "present": "can't help",
+          "future": "won't be able to help"
+        },
+        {
+          "v": "think",
+          "past": "thought",
+          "present": "think / thinks",
+          "future": "will think"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "can't help + ~ing",
+          "d": "'참으려 해도 자꾸 ~하게 된다'. 뒤에 ~ing! 과거는 couldn't help ~ing (I couldn't help laughing.)"
+        },
+        {
+          "t": "think about vs think of",
+          "d": "think about = (곰곰이) ~에 대해 생각하다 / think of = 떠올리다, 생각해 내다"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s011",
+      "en": "We need to figure out the root cause.",
+      "ko": "근본 원인을 찾아야 해.",
+      "words": [
+        [
+          "need to ~",
+          "~해야 한다"
+        ],
+        [
+          "figure out",
+          "알아내다, 찾아내다"
+        ],
+        [
+          "root cause",
+          "근본 원인"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "need",
+          "past": "needed",
+          "present": "need / needs",
+          "future": "will need"
+        },
+        {
+          "v": "figure out",
+          "past": "figured out",
+          "present": "figure out / figures out",
+          "future": "will figure out"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "need to + 동사원형",
+          "d": "'~해야 한다'. have to보다 '필요해서 해야 한다'는 느낌이에요."
+        },
+        {
+          "t": "figure out + 명사",
+          "d": "명사는 out 뒤에도, 사이에도 올 수 있어요. figure out the cause ✓ / figure the cause out ✓ (대명사는 사이에만: figure it out)"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s012",
+      "en": "Let's go over the results together.",
+      "ko": "결과를 함께 검토하자.",
+      "words": [
+        [
+          "let's ~",
+          "~하자"
+        ],
+        [
+          "go over",
+          "검토하다, 훑어보다"
+        ],
+        [
+          "result",
+          "결과"
+        ],
+        [
+          "together",
+          "함께"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "go over",
+          "past": "went over",
+          "present": "go over / goes over",
+          "future": "will go over"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "Let's + 동사원형",
+          "d": "Let us의 줄임말로 '같이 ~하자'라는 제안이에요. (Let me는 '내가 ~할게')"
+        },
+        {
+          "t": "go over + 대상",
+          "d": "'(자료·결과를) 꼼꼼히 검토하다'. 회의에서 Let's go over the agenda. 처럼 자주 써요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s013",
+      "en": "I'll make sure everything is ready.",
+      "ko": "모든 것이 준비됐는지 확인할게.",
+      "words": [
+        [
+          "make sure",
+          "확실히 하다, 꼭 확인하다"
+        ],
+        [
+          "everything",
+          "모든 것"
+        ],
+        [
+          "ready",
+          "준비된"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "make sure",
+          "past": "made sure",
+          "present": "make sure / makes sure",
+          "future": "will make sure"
+        },
+        {
+          "v": "be",
+          "past": "was / were",
+          "present": "am / is / are",
+          "future": "will be"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "make sure (that) + 주어 + 동사",
+          "d": "'~하도록 확실히 하다'. that은 보통 생략해요. make sure to + 동사원형도 가능 (Make sure to lock the door.)"
+        },
+        {
+          "t": "everything은 단수",
+          "d": "everything, everyone은 단수 취급 → everything is ✓ / everything are ✗"
+        }
+      ],
+      "date": "2026-11-27"
+    }
+  ],
+
   /* ---------- Dialog ----------
      id: 주소에 쓰이는 이름(영문), title, situation: 상황, date, summary: 한 줄 요약,
      lines: [{ speaker, en, ko }] — 첫 번째 화자는 왼쪽, 두 번째 화자는 오른쪽 말풍선,
