@@ -549,7 +549,7 @@ function renderWords() {
 
 /* ---------- 스피킹 ----------
    data.js speaking 문장을 순서대로 10개씩 묶어 Day 1, Day 2 … 로 보여줘요.
-   한글을 먼저 보고 말해 본 뒤, 누르면 영어 + 단어 + 시제 + 문법이 펼쳐져요. */
+   한글을 먼저 보고 말해 본 뒤, 누르면 영어 + 단어 + 동사 변화 + 문법이 펼쳐져요. */
 const speaking = C.speaking || [];
 const SPEAK_PER_DAY = 10;
 const speakDays = () => {
@@ -589,10 +589,10 @@ function speakItem(x, i) {
           <div class="spk-label">📖 단어 · 표현</div>
           <ul class="spk-words">${words.map(([w, m]) => `<li><b>${esc(w)}</b><span>${esc(m)}</span></li>`).join('')}</ul>` : ''}
         ${verbs.length ? `
-          <div class="spk-label">⏱️ 동사 시제</div>
+          <div class="spk-label">⏱️ 동사 변화 (과거 · 현재 · 과거분사)</div>
           <div class="spk-table-wrap"><table class="spk-verbs">
-            <thead><tr><th>동사</th><th>과거</th><th>현재</th><th>미래</th></tr></thead>
-            <tbody>${verbs.map(v => `<tr><th>${esc(v.v)}</th><td>${esc(v.past)}</td><td>${esc(v.present)}</td><td>${esc(v.future)}</td></tr>`).join('')}</tbody>
+            <thead><tr><th>동사</th><th>과거</th><th>현재</th><th>과거분사</th></tr></thead>
+            <tbody>${verbs.map(v => `<tr><th>${esc(v.v)}</th><td>${esc(v.past)}</td><td>${esc(v.present)}</td><td>${esc(v.pp)}</td></tr>`).join('')}</tbody>
           </table></div>` : ''}
         ${grammar.length ? `
           <div class="spk-label">✏️ 문법</div>

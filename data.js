@@ -8738,7 +8738,7 @@ window.CONTENT = {
 
   /* ---------- 스피킹 ----------
      보내 준 문장을 순서대로 쌓아요. 10문장마다 Day 1, Day 2 … 로 자동으로 나뉘어요.
-     en / ko: 문장과 해석, words: [표현, 뜻], verbs: 동사의 과거·현재·미래, grammar: 문법 설명 */
+     en / ko: 문장과 해석, words: [표현, 뜻], verbs: 동사의 과거·현재·과거분사 (v, past, present, pp), grammar: 문법 설명 */
   speaking: [
     {
       "id": "s001",
@@ -8763,13 +8763,13 @@ window.CONTENT = {
           "v": "want",
           "past": "wanted",
           "present": "want / wants",
-          "future": "will want"
+          "pp": "wanted"
         },
         {
           "v": "make",
           "past": "made",
           "present": "make / makes",
-          "future": "will make"
+          "pp": "made"
         }
       ],
       "grammar": [
@@ -8807,13 +8807,13 @@ window.CONTENT = {
           "v": "try",
           "past": "tried",
           "present": "try / tries",
-          "future": "will try"
+          "pp": "tried"
         },
         {
           "v": "get",
           "past": "got",
           "present": "get / gets",
-          "future": "will get"
+          "pp": "got / gotten"
         }
       ],
       "grammar": [
@@ -8847,7 +8847,7 @@ window.CONTENT = {
           "v": "figure out",
           "past": "figured out",
           "present": "figure out / figures out",
-          "future": "will figure out"
+          "pp": "figured out"
         }
       ],
       "grammar": [
@@ -8881,13 +8881,13 @@ window.CONTENT = {
           "v": "let",
           "past": "let",
           "present": "let / lets",
-          "future": "will let"
+          "pp": "let"
         },
         {
           "v": "look into",
           "past": "looked into",
           "present": "look into / looks into",
-          "future": "will look into"
+          "pp": "looked into"
         }
       ],
       "grammar": [
@@ -8925,7 +8925,7 @@ window.CONTENT = {
           "v": "get back",
           "past": "got back",
           "present": "get back / gets back",
-          "future": "will get back"
+          "pp": "got back / gotten back"
         }
       ],
       "grammar": [
@@ -8959,7 +8959,7 @@ window.CONTENT = {
           "v": "depend",
           "past": "depended",
           "present": "depend / depends",
-          "future": "will depend"
+          "pp": "depended"
         }
       ],
       "grammar": [
@@ -8993,13 +8993,13 @@ window.CONTENT = {
           "v": "expect",
           "past": "expected",
           "present": "expect / expects",
-          "future": "will expect"
+          "pp": "expected"
         },
         {
           "v": "happen",
           "past": "happened",
           "present": "happen / happens",
-          "future": "will happen"
+          "pp": "happened"
         }
       ],
       "grammar": [
@@ -9033,13 +9033,13 @@ window.CONTENT = {
           "v": "end up",
           "past": "ended up",
           "present": "end up / ends up",
-          "future": "will end up"
+          "pp": "ended up"
         },
         {
           "v": "work",
           "past": "worked",
           "present": "work / works",
-          "future": "will work"
+          "pp": "worked"
         }
       ],
       "grammar": [
@@ -9073,13 +9073,13 @@ window.CONTENT = {
           "v": "mean",
           "past": "meant",
           "present": "mean / means",
-          "future": "will mean"
+          "pp": "meant"
         },
         {
           "v": "do",
           "past": "did",
           "present": "do / does",
-          "future": "will do"
+          "pp": "done"
         }
       ],
       "grammar": [
@@ -9110,16 +9110,16 @@ window.CONTENT = {
       ],
       "verbs": [
         {
-          "v": "can't help",
-          "past": "couldn't help",
-          "present": "can't help",
-          "future": "won't be able to help"
+          "v": "help",
+          "past": "helped",
+          "present": "help / helps",
+          "pp": "helped"
         },
         {
           "v": "think",
           "past": "thought",
           "present": "think / thinks",
-          "future": "will think"
+          "pp": "thought"
         }
       ],
       "grammar": [
@@ -9157,13 +9157,13 @@ window.CONTENT = {
           "v": "need",
           "past": "needed",
           "present": "need / needs",
-          "future": "will need"
+          "pp": "needed"
         },
         {
           "v": "figure out",
           "past": "figured out",
           "present": "figure out / figures out",
-          "future": "will figure out"
+          "pp": "figured out"
         }
       ],
       "grammar": [
@@ -9205,7 +9205,7 @@ window.CONTENT = {
           "v": "go over",
           "past": "went over",
           "present": "go over / goes over",
-          "future": "will go over"
+          "pp": "gone over"
         }
       ],
       "grammar": [
@@ -9243,13 +9243,13 @@ window.CONTENT = {
           "v": "make sure",
           "past": "made sure",
           "present": "make sure / makes sure",
-          "future": "will make sure"
+          "pp": "made sure"
         },
         {
           "v": "be",
           "past": "was / were",
           "present": "am / is / are",
-          "future": "will be"
+          "pp": "been"
         }
       ],
       "grammar": [
