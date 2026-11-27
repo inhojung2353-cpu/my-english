@@ -9136,20 +9136,134 @@ window.CONTENT = {
     },
     {
       "id": "s011",
-      "en": "We need to figure out the root cause.",
-      "ko": "근본 원인을 찾아야 해.",
+      "en": "I try to make the most of my commute.",
+      "ko": "출퇴근 시간을 최대한 활용하려고 해.",
       "words": [
         [
-          "need to ~",
-          "~해야 한다"
+          "try to ~",
+          "~하려고 노력하다"
         ],
+        [
+          "make the most of",
+          "~을 최대한 활용하다"
+        ],
+        [
+          "commute",
+          "출퇴근(길), 통근"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "try",
+          "past": "tried",
+          "present": "try / tries",
+          "pp": "tried"
+        },
+        {
+          "v": "make",
+          "past": "made",
+          "present": "make / makes",
+          "pp": "made"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재시제 = 습관",
+          "d": "I try ~ 는 '평소에 늘 ~하려고 한다'는 습관이에요. 지금 이 순간만이면 I'm trying."
+        },
+        {
+          "t": "commute (명사/동사)",
+          "d": "명사: my commute(출퇴근길) / 동사: I commute by subway.(지하철로 출퇴근해)"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s012",
+      "en": "I want to improve my English speaking skills.",
+      "ko": "영어 회화 실력을 향상하고 싶어.",
+      "words": [
+        [
+          "improve",
+          "향상시키다, 개선하다"
+        ],
+        [
+          "speaking skills",
+          "말하기 실력, 회화 실력"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "want",
+          "past": "wanted",
+          "present": "want / wants",
+          "pp": "wanted"
+        },
+        {
+          "v": "improve",
+          "past": "improved",
+          "present": "improve / improves",
+          "pp": "improved"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "want to + 동사원형",
+          "d": "'~하고 싶다'. want 뒤에는 to + 동사원형 (want improving ✗)"
+        },
+        {
+          "t": "명사 + 명사 = 꾸밈",
+          "d": "English speaking skills: 앞 명사가 뒤 명사를 꾸며요. skills는 복수로 쓰는 게 자연스러워요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s013",
+      "en": "Have you figured out the problem?",
+      "ko": "문제를 알아냈어?",
+      "words": [
         [
           "figure out",
-          "알아내다, 찾아내다"
+          "알아내다, 해결하다"
         ],
         [
-          "root cause",
-          "근본 원인"
+          "problem",
+          "문제"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "figure out",
+          "past": "figured out",
+          "present": "figure out / figures out",
+          "pp": "figured out"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재완료 의문문 Have you + p.p.?",
+          "d": "'(지금쯤) ~했어?' 결과를 물을 때 써요. 대답: Yes, I have. / Not yet."
+        },
+        {
+          "t": "figure out + 명사 / 대명사",
+          "d": "명사는 out 뒤 OK (figure out the problem). 대명사는 사이에: figure it out"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s014",
+      "en": "We need to clarify the requirements.",
+      "ko": "요구 사항을 명확하게 해야 해.",
+      "words": [
+        [
+          "clarify",
+          "명확하게 하다, 분명히 하다"
+        ],
+        [
+          "requirement",
+          "요구 사항"
         ]
       ],
       "verbs": [
@@ -9160,26 +9274,64 @@ window.CONTENT = {
           "pp": "needed"
         },
         {
-          "v": "figure out",
-          "past": "figured out",
-          "present": "figure out / figures out",
-          "pp": "figured out"
+          "v": "clarify",
+          "past": "clarified",
+          "present": "clarify / clarifies",
+          "pp": "clarified"
         }
       ],
       "grammar": [
         {
           "t": "need to + 동사원형",
-          "d": "'~해야 한다'. have to보다 '필요해서 해야 한다'는 느낌이에요."
+          "d": "'~해야 한다'. 필요해서 해야 한다는 느낌이에요."
         },
         {
-          "t": "figure out + 명사",
-          "d": "명사는 out 뒤에도, 사이에도 올 수 있어요. figure out the cause ✓ / figure the cause out ✓ (대명사는 사이에만: figure it out)"
+          "t": "자음 + y 동사의 변화",
+          "d": "clarify → clarifies, clarified (y를 i로 바꾸고 -es / -ed). try → tries, tried 도 같은 규칙."
         }
       ],
       "date": "2026-11-27"
     },
     {
-      "id": "s012",
+      "id": "s015",
+      "en": "I haven't finished the analysis yet.",
+      "ko": "아직 분석을 끝내지 못했어.",
+      "words": [
+        [
+          "finish",
+          "끝내다"
+        ],
+        [
+          "analysis",
+          "분석 (복수: analyses)"
+        ],
+        [
+          "yet",
+          "(부정문) 아직"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "finish",
+          "past": "finished",
+          "present": "finish / finishes",
+          "pp": "finished"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재완료 부정 haven't + p.p. + yet",
+          "d": "'(지금까지) 아직 ~하지 못했다'. yet은 보통 문장 끝에 와요."
+        },
+        {
+          "t": "analysis 발음·복수",
+          "d": "analysis /əˈnæləsɪs/, 복수형은 analyses /əˈnæləsiːz/. analyze(분석하다)는 동사."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s016",
       "en": "Let's go over the results together.",
       "ko": "결과를 함께 검토하자.",
       "words": [
@@ -9211,17 +9363,345 @@ window.CONTENT = {
       "grammar": [
         {
           "t": "Let's + 동사원형",
-          "d": "Let us의 줄임말로 '같이 ~하자'라는 제안이에요. (Let me는 '내가 ~할게')"
+          "d": "Let us의 줄임말로 '같이 ~하자'라는 제안. (Let me는 '내가 ~할게')"
         },
         {
-          "t": "go over + 대상",
-          "d": "'(자료·결과를) 꼼꼼히 검토하다'. 회의에서 Let's go over the agenda. 처럼 자주 써요."
+          "t": "go – went – gone",
+          "d": "go는 불규칙 동사. go over → went over → gone over"
         }
       ],
       "date": "2026-11-27"
     },
     {
-      "id": "s013",
+      "id": "s017",
+      "en": "I'm trying to get used to my new routine.",
+      "ko": "새로운 일상에 익숙해지려고 노력하고 있어.",
+      "words": [
+        [
+          "try to ~",
+          "~하려고 노력하다"
+        ],
+        [
+          "get used to",
+          "~에 익숙해지다"
+        ],
+        [
+          "routine",
+          "일상, 매일 하는 일"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "try",
+          "past": "tried",
+          "present": "try / tries",
+          "pp": "tried"
+        },
+        {
+          "v": "get",
+          "past": "got",
+          "present": "get / gets",
+          "pp": "got / gotten"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재진행 be + ~ing",
+          "d": "I'm trying = 요즘 계속 노력하는 중이라는 뜻이에요."
+        },
+        {
+          "t": "get used to + 명사 / ~ing",
+          "d": "to가 전치사라서 뒤에 명사나 ~ing (get used to working from home). used to + 동사원형은 '예전에 ~했다'로 다른 뜻!"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s018",
+      "en": "We need to find out what happened.",
+      "ko": "무슨 일이 있었는지 알아내야 해.",
+      "words": [
+        [
+          "find out",
+          "알아내다, (사실을) 확인하다"
+        ],
+        [
+          "happen",
+          "(일이) 일어나다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "find out",
+          "past": "found out",
+          "present": "find out / finds out",
+          "pp": "found out"
+        },
+        {
+          "v": "happen",
+          "past": "happened",
+          "present": "happen / happens",
+          "pp": "happened"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "what happened (간접의문문)",
+          "d": "의문문이 문장 안에 들어가면 '의문사 + 동사' 순서 그대로. what happened는 what이 주어라서 그대로 써요. (What did happen ✗)"
+        },
+        {
+          "t": "find out vs figure out",
+          "d": "find out = (정보·사실을) 알아내다 / figure out = (머리를 써서) 이해하다·해결하다"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s019",
+      "en": "Did you have a chance to check the report?",
+      "ko": "보고서를 확인할 기회가 있었어?",
+      "words": [
+        [
+          "have a chance to ~",
+          "~할 기회(시간)가 있다"
+        ],
+        [
+          "check",
+          "확인하다"
+        ],
+        [
+          "report",
+          "보고서"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "have",
+          "past": "had",
+          "present": "have / has",
+          "pp": "had"
+        },
+        {
+          "v": "check",
+          "past": "checked",
+          "present": "check / checks",
+          "pp": "checked"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "과거 의문문 Did you + 동사원형?",
+          "d": "Did 뒤에는 동사원형! Did you had ✗ → Did you have ✓"
+        },
+        {
+          "t": "Did you have a chance to ~?",
+          "d": "'혹시 ~해 봤어요?'를 부드럽게 묻는 업무 표현. 재촉하는 느낌 없이 확인할 때 좋아요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s020",
+      "en": "I decided to spend more time learning English.",
+      "ko": "영어를 배우는 데 더 많은 시간을 쓰기로 결정했어.",
+      "words": [
+        [
+          "decide to ~",
+          "~하기로 결정하다"
+        ],
+        [
+          "spend time ~ing",
+          "~하는 데 시간을 쓰다"
+        ],
+        [
+          "learn",
+          "배우다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "decide",
+          "past": "decided",
+          "present": "decide / decides",
+          "pp": "decided"
+        },
+        {
+          "v": "spend",
+          "past": "spent",
+          "present": "spend / spends",
+          "pp": "spent"
+        },
+        {
+          "v": "learn",
+          "past": "learned",
+          "present": "learn / learns",
+          "pp": "learned"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "decide to + 동사원형",
+          "d": "'~하기로 결정하다'. decide 뒤에는 to 부정사 (decide spending ✗)"
+        },
+        {
+          "t": "spend + 시간/돈 + ~ing",
+          "d": "'~하는 데 시간·돈을 쓰다'. spend time to learn ✗ → spend time learning ✓"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s021",
+      "en": "The data hasn't been updated yet.",
+      "ko": "데이터가 아직 업데이트되지 않았어.",
+      "words": [
+        [
+          "data",
+          "데이터"
+        ],
+        [
+          "update",
+          "업데이트하다, 갱신하다"
+        ],
+        [
+          "yet",
+          "(부정문) 아직"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "update",
+          "past": "updated",
+          "present": "update / updates",
+          "pp": "updated"
+        },
+        {
+          "v": "be",
+          "past": "was / were",
+          "present": "am / is / are",
+          "pp": "been"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "현재완료 수동태 has been + p.p.",
+          "d": "'(아직) ~되지 않았다'. 데이터가 스스로 업데이트하는 게 아니라 '업데이트되는' 거라 수동태예요."
+        },
+        {
+          "t": "data는 단수 취급 (일상·업무)",
+          "d": "The data hasn't / The data is ~ 처럼 단수로 쓰는 게 일반적이에요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s022",
+      "en": "We should consider other options.",
+      "ko": "다른 선택지들도 고려해야 해.",
+      "words": [
+        [
+          "should",
+          "~해야 한다, ~하는 게 좋겠다"
+        ],
+        [
+          "consider",
+          "고려하다"
+        ],
+        [
+          "option",
+          "선택지, 옵션"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "consider",
+          "past": "considered",
+          "present": "consider / considers",
+          "pp": "considered"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "should + 동사원형",
+          "d": "'~하는 게 좋겠다'는 조언·제안. need to보다 부드러워요."
+        },
+        {
+          "t": "consider + 명사 / ~ing",
+          "d": "consider other options / consider changing the plan (consider to change ✗)"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s023",
+      "en": "I'm looking forward to the weekend.",
+      "ko": "주말이 기대돼.",
+      "words": [
+        [
+          "look forward to",
+          "~을 기대하다, 고대하다"
+        ],
+        [
+          "weekend",
+          "주말"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "look forward to",
+          "past": "looked forward to",
+          "present": "look forward to / looks forward to",
+          "pp": "looked forward to"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "look forward to + 명사 / ~ing",
+          "d": "to가 전치사라서 뒤에 명사나 ~ing. I'm looking forward to seeing you. (to see ✗)"
+        },
+        {
+          "t": "진행형으로 자주 써요",
+          "d": "I'm looking forward to ~ 가 가장 흔해요. 메일 끝 인사: I look forward to hearing from you."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s024",
+      "en": "Why did you put off the meeting?",
+      "ko": "왜 회의를 미뤘어?",
+      "words": [
+        [
+          "put off",
+          "미루다, 연기하다"
+        ],
+        [
+          "meeting",
+          "회의"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "put off",
+          "past": "put off",
+          "present": "put off / puts off",
+          "pp": "put off"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "Why did you + 동사원형?",
+          "d": "과거 이유를 물을 때. did 뒤에는 동사원형이에요."
+        },
+        {
+          "t": "put은 과거·과거분사도 put",
+          "d": "put – put – put. 대명사는 사이에: put it off ✓ / put off it ✗"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s025",
       "en": "I'll make sure everything is ready.",
       "ko": "모든 것이 준비됐는지 확인할게.",
       "words": [
@@ -9255,11 +9735,225 @@ window.CONTENT = {
       "grammar": [
         {
           "t": "make sure (that) + 주어 + 동사",
-          "d": "'~하도록 확실히 하다'. that은 보통 생략해요. make sure to + 동사원형도 가능 (Make sure to lock the door.)"
+          "d": "'~하도록 확실히 하다'. that은 보통 생략. make sure to + 동사원형도 가능."
         },
         {
           "t": "everything은 단수",
-          "d": "everything, everyone은 단수 취급 → everything is ✓ / everything are ✗"
+          "d": "everything is ✓ / everything are ✗"
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s026",
+      "en": "We need to keep track of daily sales.",
+      "ko": "일일 매출을 계속 추적해야 해.",
+      "words": [
+        [
+          "keep track of",
+          "~을 계속 추적하다, 파악하다"
+        ],
+        [
+          "daily",
+          "매일의, 일일"
+        ],
+        [
+          "sales",
+          "매출, 판매량"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "keep track of",
+          "past": "kept track of",
+          "present": "keep track of / keeps track of",
+          "pp": "kept track of"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "keep – kept – kept",
+          "d": "keep은 불규칙 동사. keep track of → kept track of"
+        },
+        {
+          "t": "sales (매출)는 복수형",
+          "d": "'매출'의 뜻일 때는 sales로 써요. Sales are up this month."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s027",
+      "en": "I had trouble understanding the new process.",
+      "ko": "새로운 프로세스를 이해하는 데 어려움이 있었어.",
+      "words": [
+        [
+          "have trouble ~ing",
+          "~하는 데 어려움을 겪다"
+        ],
+        [
+          "understand",
+          "이해하다"
+        ],
+        [
+          "process",
+          "과정, 프로세스"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "have",
+          "past": "had",
+          "present": "have / has",
+          "pp": "had"
+        },
+        {
+          "v": "understand",
+          "past": "understood",
+          "present": "understand / understands",
+          "pp": "understood"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "have trouble + ~ing",
+          "d": "'~하는 데 애먹다'. 뒤에 ~ing! (have trouble to understand ✗) have difficulty ~ing도 같은 뜻."
+        },
+        {
+          "t": "understand – understood – understood",
+          "d": "불규칙 동사예요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s028",
+      "en": "This issue is related to the source data.",
+      "ko": "이 문제는 원천 데이터와 관련이 있어.",
+      "words": [
+        [
+          "issue",
+          "문제, 이슈"
+        ],
+        [
+          "be related to",
+          "~와 관련이 있다"
+        ],
+        [
+          "source data",
+          "원천 데이터, 원본 데이터"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "be",
+          "past": "was / were",
+          "present": "am / is / are",
+          "pp": "been"
+        },
+        {
+          "v": "relate",
+          "past": "related",
+          "present": "relate / relates",
+          "pp": "related"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "be related to + 명사",
+          "d": "'~와 관련이 있다'. related는 형용사처럼 쓰여요. (related with ✗)"
+        },
+        {
+          "t": "this + 단수 명사",
+          "d": "this issue / these issues 처럼 단수·복수를 맞춰요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s029",
+      "en": "Have you ever thought about changing jobs?",
+      "ko": "이직에 대해 생각해 본 적 있어?",
+      "words": [
+        [
+          "ever",
+          "(의문문) 한 번이라도"
+        ],
+        [
+          "think about",
+          "~에 대해 생각하다"
+        ],
+        [
+          "change jobs",
+          "이직하다, 직장을 옮기다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "think",
+          "past": "thought",
+          "present": "think / thinks",
+          "pp": "thought"
+        },
+        {
+          "v": "change",
+          "past": "changed",
+          "present": "change / changes",
+          "pp": "changed"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "경험 묻기 Have you ever + p.p.?",
+          "d": "'~해 본 적 있어?' 현재완료 경험 용법. 대답: Yes, I have. / No, I haven't."
+        },
+        {
+          "t": "전치사 뒤 ~ing",
+          "d": "about 같은 전치사 뒤에는 동사를 ~ing로 (about changing). change jobs는 jobs 복수형이 자연스러워요."
+        }
+      ],
+      "date": "2026-11-27"
+    },
+    {
+      "id": "s030",
+      "en": "I hope things will get better soon.",
+      "ko": "상황이 곧 나아지기를 바라.",
+      "words": [
+        [
+          "hope",
+          "바라다, 희망하다"
+        ],
+        [
+          "things",
+          "상황, 형편"
+        ],
+        [
+          "get better",
+          "나아지다, 좋아지다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "hope",
+          "past": "hoped",
+          "present": "hope / hopes",
+          "pp": "hoped"
+        },
+        {
+          "v": "get",
+          "past": "got",
+          "present": "get / gets",
+          "pp": "got / gotten"
+        }
+      ],
+      "grammar": [
+        {
+          "t": "I hope (that) + 주어 + 동사",
+          "d": "'~이기를 바라'. that은 생략. 미래 일이라도 I hope things get better. 처럼 현재형도 자주 써요."
+        },
+        {
+          "t": "get + 비교급 = 점점 ~해지다",
+          "d": "get better(나아지다), get worse(나빠지다), get colder(추워지다)"
         }
       ],
       "date": "2026-11-27"
