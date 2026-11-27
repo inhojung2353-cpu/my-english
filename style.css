@@ -419,3 +419,9 @@ body { letter-spacing: -.005em; }
 .ask-tag.life { background: var(--accent-soft); color: var(--accent); }
 .ask-ko-main { margin-top: 8px; font-size: 17px; font-weight: 600; line-height: 1.55; word-break: keep-all; }
 .hint-chip { display: inline-block; margin: 2px 2px 0 0; padding: 1px 8px; border-radius: 6px; background: var(--surface); color: var(--primary); font-weight: 700; font-size: 13px; }
+
+/* 앱 ↔ 웹 기록 맞추기 */
+.sync-box { margin-top:22px; padding:12px 14px; }
+.sync-box summary { cursor:pointer; font-weight:700; font-size:14px; color:var(--muted, #8a7f73); }
+.sync-box[open] summary { margin-bottom:8px; }
+.sync-box textarea { display:block; width:100%; box-sizing:border-box; margin:10px 0 8px; padding:8px 10px; border:1px solid var(--line, #e7ddd0); border-radius:10px; font:12px/1.4 ui-monospace, monospace; background:var(--surface, #fff); color:inherit; resize:vertical; }

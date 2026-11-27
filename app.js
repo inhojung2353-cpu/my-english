@@ -101,6 +101,21 @@ function dailyState() {
 }
 const dailySeed = (prefix, n) => prefix + todayKey() + (n ? '#' + n : '');
 
+// 앱 ↔ 웹 기록 옮기기: my-english-* 기록을 코드 한 줄로 (오늘의 선택은 제외)
+const SYNC_PREFIX = 'my-english-';
+function exportCode() {
+  const data = {};
+  Object.keys(localStorage).filter(k => k.startsWith(SYNC_PREFIX) && k !== DAILY_KEY).forEach(k => { data[k] = localStorage.getItem(k); });
+  return 'MYENG1:' + btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+}
+function parseCode(code) {
+  const m = code.replace(/\s+/g, '').match(/^MYENG1:(.+)$/);
+  if (!m) throw new Error('bad');
+  const data = JSON.parse(decodeURIComponent(escape(atob(m[1]))));
+  if (!data || typeof data !== 'object') throw new Error('bad');
+  return data;
+}
+
 // 오늘의 단어: ✓ 표시한 외운 단어에서만 6개 (복습용).
 // 하루 동안은 같은 단어를 유지하고, 그사이 ✓를 푼 단어만 빼고 다른 외운 단어로 채워요
 function todayWords(reroll = false) {
@@ -307,6 +322,14 @@ function renderHome(reroll = {}) {
       }).join('')}</div>
       <a class="more-link" href="#dialogs/mine">쓴 영작은 저장돼요 · 지난 영작 보기 ›</a>`
     : ''}
+
+    <details class="card sync-box">
+      <summary>📲 앱 ↔ 웹 기록 맞추기</summary>
+      <p class="muted small">홈 화면 앱과 웹 브라우저는 기록(✓ 외운 단어, 일기, 영작)이 따로 저장돼요. 최신 기록이 있는 쪽에서 <b>코드 복사</b>를 누르고, 다른 쪽에서 붙여 넣은 뒤 <b>가져오기</b>를 누르세요.</p>
+      <button class="chip" id="sync-export">📋 내 기록 코드 복사</button>
+      <textarea id="sync-code" rows="3" placeholder="복사한 코드를 여기에 붙여 넣으세요" autocomplete="off" spellcheck="false"></textarea>
+      <button class="chip" id="sync-import">⬇️ 가져오기</button>
+    </details>
 `;
 
   // 🔄 새로고침: 화면 위치는 그대로 두고 그 영역만 새 6개로
@@ -315,6 +338,24 @@ function renderHome(reroll = {}) {
   $('#reroll-sents')?.addEventListener('click', () => refresh({ sents: true }, '새 문장 6개를 골랐어요'));
   $('#reroll-write')?.addEventListener('click', () => refresh({ write: true }, '새 영작 문제 6개를 골랐어요'));
   $('#reroll-ask')?.addEventListener('click', () => refresh({ ask: true }, '새 문장 10개를 골랐어요'));
+
+  // 앱 ↔ 웹 기록 옮기기 (코드 복사 / 붙여넣기)
+  $('#sync-export')?.addEventListener('click', async () => {
+    const code = exportCode();
+    try { await navigator.clipboard.writeText(code); toast('코드를 복사했어요. 다른 쪽에 붙여 넣으세요'); }
+    catch { const t = $('#sync-code'); t.value = code; t.select(); toast('코드를 길게 눌러 복사하세요'); }
+  });
+  $('#sync-import')?.addEventListener('click', () => {
+    const code = $('#sync-code').value.trim();
+    if (!code) return toast('먼저 코드를 붙여 넣어 주세요');
+    let data;
+    try { data = parseCode(code); } catch { return toast('코드가 올바르지 않아요'); }
+    if (!confirm(`이 기기의 기록을 가져온 기록으로 바꿀까요?\n(✓ 외운 단어 ${(data['my-english-learned'] ? JSON.parse(data['my-english-learned']).length : 0)}개 등)`)) return;
+    Object.keys(localStorage).filter(k => k.startsWith(SYNC_PREFIX) && k !== DAILY_KEY).forEach(k => localStorage.removeItem(k));
+    Object.entries(data).forEach(([k, v]) => { if (k.startsWith(SYNC_PREFIX) && k !== DAILY_KEY) localStorage.setItem(k, v); });
+    localStorage.removeItem(DAILY_KEY);
+    location.reload();
+  });
 
   // 오늘의 질문: 힌트·정답은 눌러서 보기
   const asks = $('#asks');
@@ -1184,6 +1225,8 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     .then(reg => {
       reg.update();
       document.addEventListener('visibilitychange', () => { if (!document.hidden) reg.update(); });
+      // 앱을 켜 둔 동안에도 5분마다 새 버전 확인
+      setInterval(() => { if (!document.hidden) reg.update(); }, 5 * 60 * 1000);
     })
     .catch(() => {});
 }
