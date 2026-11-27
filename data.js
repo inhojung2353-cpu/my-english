@@ -10697,6 +10697,1331 @@ window.CONTENT = {
         ]
       ],
       "literal": "나는 / 바란다 / 상황이 곧 나아질 것을"
+    },
+    {
+      "id": "s031",
+      "en": "I usually listen to podcasts on my way to work.",
+      "ko": "나는 보통 출근길에 팟캐스트를 들어.",
+      "words": [
+        [
+          "usually",
+          "보통, 대개"
+        ],
+        [
+          "listen to",
+          "~을 듣다"
+        ],
+        [
+          "podcast",
+          "팟캐스트"
+        ],
+        [
+          "on my way to work",
+          "출근길에"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "listen",
+          "past": "listened",
+          "present": "listen / listens",
+          "pp": "listened"
+        }
+      ],
+      "form": "1형식 · S + V (+ 수식어)",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "usually",
+          "M",
+          "수식어 · 빈도부사"
+        ],
+        [
+          "listen",
+          "V",
+          "동사 · 현재(습관)"
+        ],
+        [
+          "to podcasts",
+          "M",
+          "수식어 · 전치사구"
+        ],
+        [
+          "on my way to work",
+          "M",
+          "수식어 · 전치사구"
+        ]
+      ],
+      "literal": "나는 / 보통 / 듣는다 / 팟캐스트를 / 출근하는 길에",
+      "grammar": [
+        {
+          "t": "현재시제 = 습관 + 빈도부사",
+          "d": "usually 같은 빈도부사는 일반동사 앞, be동사·조동사 뒤에 와요: I usually listen ✓ / I am usually busy ✓. 현재형은 '평소에 늘 하는 일'이에요."
+        },
+        {
+          "t": "listen은 자동사 → to가 필요",
+          "d": "listen 혼자는 목적어를 못 받아서 listen to + 대상 (listen podcasts ✗). to podcasts는 수식어라 1형식이고, listen to를 한 덩어리 타동사로 보면 3형식으로도 해석해요."
+        },
+        {
+          "t": "on one's way to + 장소",
+          "d": "'~로 가는 길에'. work는 여기서 '직장'이라는 명사. home은 부사라서 to 없이: on my way home ✓ / on my way to home ✗"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s032",
+      "en": "We need to reduce the number of errors.",
+      "ko": "오류의 수를 줄여야 해.",
+      "words": [
+        [
+          "reduce",
+          "줄이다"
+        ],
+        [
+          "the number of ~",
+          "~의 수"
+        ],
+        [
+          "error",
+          "오류, 에러"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "need",
+          "past": "needed",
+          "present": "need / needs",
+          "pp": "needed"
+        },
+        {
+          "v": "reduce",
+          "past": "reduced",
+          "present": "reduce / reduces",
+          "pp": "reduced"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "need",
+          "V",
+          "동사"
+        ],
+        [
+          "to reduce the number of errors",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "우리는 / 필요로 한다 / 오류의 수를 줄이는 것을 → 줄여야 해",
+      "grammar": [
+        {
+          "t": "need + to부정사 (명사적 용법)",
+          "d": "to reduce ~ 가 need의 목적어. '~하는 것이 필요하다' → '~해야 한다'. 안에서 reduce(V) + the number of errors(O)로 다시 3형식."
+        },
+        {
+          "t": "the number of vs a number of",
+          "d": "the number of + 복수명사 = '~의 수' → 단수 취급 (The number of errors is high). a number of + 복수명사 = '많은 ~' → 복수 취급 (A number of errors were found)."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s033",
+      "en": "Did you finish preparing the report?",
+      "ko": "보고서 준비를 끝냈어?",
+      "words": [
+        [
+          "finish",
+          "끝내다, 마치다"
+        ],
+        [
+          "prepare",
+          "준비하다"
+        ],
+        [
+          "report",
+          "보고서"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "finish",
+          "past": "finished",
+          "present": "finish / finishes",
+          "pp": "finished"
+        },
+        {
+          "v": "prepare",
+          "past": "prepared",
+          "present": "prepare / prepares",
+          "pp": "prepared"
+        }
+      ],
+      "form": "3형식 · 의문문 (조동사 + S + V + O)",
+      "parts": [
+        [
+          "Did",
+          "V",
+          "조동사 · 과거"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "finish",
+          "V",
+          "동사원형"
+        ],
+        [
+          "preparing the report",
+          "O",
+          "목적어 · 동명사"
+        ]
+      ],
+      "literal": "너는 / 끝냈니 / 보고서를 준비하는 것을?",
+      "grammar": [
+        {
+          "t": "동명사 – 목적어",
+          "d": "preparing the report가 finish의 목적어예요. 동명사(V-ing)는 '~하는 것'으로 해석해요. finish는 동명사만 목적어로 받아요 (finish to prepare ✗). 같은 동사: enjoy, avoid, mind, suggest, consider"
+        },
+        {
+          "t": "동명사도 목적어를 가져요",
+          "d": "preparing(동명사) + the report(목적어) → '보고서를 준비하는 것'."
+        },
+        {
+          "t": "과거 의문문 Did + S + 동사원형?",
+          "d": "Did가 과거를 맡으니 finish는 원형: Did you finish ✓ / Did you finished ✗"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s034",
+      "en": "I'm not familiar with this system.",
+      "ko": "나는 이 시스템이 익숙하지 않아.",
+      "words": [
+        [
+          "be familiar with",
+          "~에 익숙하다, ~을 잘 알다"
+        ],
+        [
+          "system",
+          "시스템"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "be",
+          "past": "was / were",
+          "present": "am / is / are",
+          "pp": "been"
+        }
+      ],
+      "form": "2형식 · S + V + C",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "am not",
+          "V",
+          "동사 · be동사 부정"
+        ],
+        [
+          "familiar",
+          "C",
+          "보어 · 형용사"
+        ],
+        [
+          "with this system",
+          "M",
+          "수식어 · 전치사구"
+        ]
+      ],
+      "literal": "나는 / ~이 아니다 / 익숙한 (상태) / 이 시스템에",
+      "grammar": [
+        {
+          "t": "2형식 be + 형용사 보어",
+          "d": "familiar(익숙한)가 주어 I의 상태를 설명하는 보어예요. be동사 문장은 '주어 = 보어' 관계로 해석해요."
+        },
+        {
+          "t": "familiar with vs familiar to",
+          "d": "사람이 주어 → be familiar with + 대상 (I'm familiar with this system). 대상이 주어 → be familiar to + 사람 (This system is familiar to me). 뜻은 같고 주어만 바뀌어요."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s035",
+      "en": "She suggested changing the meeting time.",
+      "ko": "그녀는 회의 시간을 바꾸자고 제안했어.",
+      "words": [
+        [
+          "suggest",
+          "제안하다"
+        ],
+        [
+          "change",
+          "바꾸다"
+        ],
+        [
+          "meeting time",
+          "회의 시간"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "suggest",
+          "past": "suggested",
+          "present": "suggest / suggests",
+          "pp": "suggested"
+        },
+        {
+          "v": "change",
+          "past": "changed",
+          "present": "change / changes",
+          "pp": "changed"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "She",
+          "S",
+          "주어"
+        ],
+        [
+          "suggested",
+          "V",
+          "동사 · 과거"
+        ],
+        [
+          "changing the meeting time",
+          "O",
+          "목적어 · 동명사"
+        ]
+      ],
+      "literal": "그녀는 / 제안했다 / 회의 시간을 바꾸는 것을",
+      "grammar": [
+        {
+          "t": "suggest + 동명사",
+          "d": "changing ~ 이 suggested의 목적어인 동명사예요. suggest는 to부정사를 쓰지 않아요 (suggest to change ✗)."
+        },
+        {
+          "t": "suggest + that절 (동사원형)",
+          "d": "같은 뜻을 that절로: She suggested (that) we change the meeting time. 제안·요구 동사 뒤 that절에서는 should가 생략돼 동사원형(change)을 써요."
+        },
+        {
+          "t": "명사 + 명사",
+          "d": "meeting time: meeting이 time을 꾸며 '회의 시간'."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s036",
+      "en": "I'll take care of this issue.",
+      "ko": "이 문제는 내가 처리할게.",
+      "words": [
+        [
+          "take care of",
+          "~을 처리하다, 돌보다"
+        ],
+        [
+          "issue",
+          "문제, 이슈"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "take",
+          "past": "took",
+          "present": "take / takes",
+          "pp": "taken"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "will take care of",
+          "V",
+          "동사 · 미래 (구동사)"
+        ],
+        [
+          "this issue",
+          "O",
+          "목적어"
+        ]
+      ],
+      "literal": "나는 / 처리할 것이다 / 이 문제를 → 내가 처리할게",
+      "grammar": [
+        {
+          "t": "will = 그 자리에서 정한 의지·약속",
+          "d": "I'll take care of it. 처럼 '내가 맡을게'라고 나설 때 will을 써요."
+        },
+        {
+          "t": "take care of = 하나의 타동사",
+          "d": "take care of를 한 덩어리 동사로 보면 this issue가 목적어 → 3형식. 뜻: 사람·동물이면 '돌보다', 일·문제면 '처리하다'."
+        },
+        {
+          "t": "take의 3단 변화",
+          "d": "take – took – taken (불규칙)"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s037",
+      "en": "We haven't received the latest data yet.",
+      "ko": "우리는 아직 최신 데이터를 받지 못했어.",
+      "words": [
+        [
+          "receive",
+          "받다"
+        ],
+        [
+          "latest",
+          "최신의"
+        ],
+        [
+          "yet",
+          "(부정문) 아직"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "receive",
+          "past": "received",
+          "present": "receive / receives",
+          "pp": "received"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "haven't received",
+          "V",
+          "동사 · 현재완료 부정"
+        ],
+        [
+          "the latest data",
+          "O",
+          "목적어"
+        ],
+        [
+          "yet",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "우리는 / (지금까지) 받지 못했다 / 최신 데이터를 / 아직",
+      "grammar": [
+        {
+          "t": "현재완료 have + 과거분사 (완료 용법)",
+          "d": "haven't received = 지금까지 받는 일이 '완료되지 않은' 상태. received는 과거분사. 부정문 + yet = '아직 ~하지 못했다'."
+        },
+        {
+          "t": "latest vs last",
+          "d": "latest = 가장 최근의, 최신의 (the latest data) / last = 마지막의, 지난 (last week). late의 최상급이 latest예요."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s038",
+      "en": "It took longer than I expected.",
+      "ko": "예상했던 것보다 시간이 더 오래 걸렸어.",
+      "words": [
+        [
+          "take",
+          "(시간이) 걸리다"
+        ],
+        [
+          "longer",
+          "더 오래 (long의 비교급)"
+        ],
+        [
+          "expect",
+          "예상하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "take",
+          "past": "took",
+          "present": "take / takes",
+          "pp": "taken"
+        },
+        {
+          "v": "expect",
+          "past": "expected",
+          "present": "expect / expects",
+          "pp": "expected"
+        }
+      ],
+      "form": "1형식 · S + V (+ 수식어)",
+      "parts": [
+        [
+          "It",
+          "S",
+          "주어 · 시간의 it"
+        ],
+        [
+          "took",
+          "V",
+          "동사 · 과거"
+        ],
+        [
+          "longer",
+          "M",
+          "수식어 · 비교급 부사"
+        ],
+        [
+          "than I expected",
+          "M",
+          "수식어 · 비교 대상(than절)"
+        ]
+      ],
+      "literal": "그것은 / 걸렸다 / 더 오래 / 내가 예상했던 것보다",
+      "grammar": [
+        {
+          "t": "It takes + 시간 = (시간이) 걸리다",
+          "d": "It은 '그 일'을 가리키고 take는 '(시간이) 걸리다'. It took two hours.처럼 시간이 오면 목적어(3형식), 이 문장처럼 longer(부사)가 오면 1형식이에요."
+        },
+        {
+          "t": "비교급 + than + 주어 + 동사",
+          "d": "longer than I expected = '내가 예상했던 것보다 더 오래'. than 뒤에 절(주어+동사)이 와서 비교 대상을 나타내요. than expected로 줄여 쓰기도 해요."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s039",
+      "en": "Can you explain how this works?",
+      "ko": "이것이 어떻게 작동하는지 설명해 줄 수 있어?",
+      "words": [
+        [
+          "explain",
+          "설명하다"
+        ],
+        [
+          "how ~",
+          "어떻게 ~하는지"
+        ],
+        [
+          "work",
+          "작동하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "explain",
+          "past": "explained",
+          "present": "explain / explains",
+          "pp": "explained"
+        },
+        {
+          "v": "work",
+          "past": "worked",
+          "present": "work / works",
+          "pp": "worked"
+        }
+      ],
+      "form": "3형식 · 의문문 (조동사 + S + V + O)",
+      "parts": [
+        [
+          "Can",
+          "V",
+          "조동사"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "explain",
+          "V",
+          "동사원형"
+        ],
+        [
+          "how this works",
+          "O",
+          "목적어 · 간접의문문(명사절)"
+        ]
+      ],
+      "literal": "너는 / 설명해 줄 수 있니 / 이것이 어떻게 작동하는지를?",
+      "grammar": [
+        {
+          "t": "간접의문문 (명사절) 어순",
+          "d": "How does this work?(이거 어떻게 작동해?)가 문장 속 목적어로 들어가면 '의문사 + 주어 + 동사' 순서가 돼요: how this works ✓ / how does this work ✗. '어떻게 ~하는지'로 해석."
+        },
+        {
+          "t": "Can you ~? = 부탁",
+          "d": "능력을 묻기보다 '~해 줄 수 있어?'라는 부탁. 더 공손하게는 Could you ~?"
+        },
+        {
+          "t": "explain + 목적어 (+ to 사람)",
+          "d": "explain은 사람을 바로 목적어로 못 받아요: explain me ✗ → explain it to me ✓"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s040",
+      "en": "I need some time to think about it.",
+      "ko": "그것에 대해 생각할 시간이 좀 필요해.",
+      "words": [
+        [
+          "need",
+          "필요하다"
+        ],
+        [
+          "some time",
+          "약간의 시간"
+        ],
+        [
+          "think about",
+          "~에 대해 생각하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "need",
+          "past": "needed",
+          "present": "need / needs",
+          "pp": "needed"
+        },
+        {
+          "v": "think",
+          "past": "thought",
+          "present": "think / thinks",
+          "pp": "thought"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "need",
+          "V",
+          "동사"
+        ],
+        [
+          "some time",
+          "O",
+          "목적어"
+        ],
+        [
+          "to think about it",
+          "M",
+          "수식어 · to부정사(형용사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 필요하다 / 약간의 시간이 / 그것에 대해 생각할",
+      "grammar": [
+        {
+          "t": "to부정사 – 형용사적 용법",
+          "d": "to think about it이 앞의 명사 some time을 꾸며요. '~할 + 명사' → '생각할 시간'. (something to drink = 마실 것)"
+        },
+        {
+          "t": "some time vs sometime vs sometimes",
+          "d": "some time = 약간의 시간 / sometime = 언젠가 / sometimes = 가끔. 띄어쓰기와 s로 뜻이 달라져요."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s041",
+      "en": "The results were different from what we expected.",
+      "ko": "결과는 우리가 예상했던 것과 달랐어.",
+      "words": [
+        [
+          "result",
+          "결과"
+        ],
+        [
+          "be different from",
+          "~와 다르다"
+        ],
+        [
+          "what we expected",
+          "우리가 예상했던 것"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "be",
+          "past": "was / were",
+          "present": "am / is / are",
+          "pp": "been"
+        },
+        {
+          "v": "expect",
+          "past": "expected",
+          "present": "expect / expects",
+          "pp": "expected"
+        }
+      ],
+      "form": "2형식 · S + V + C",
+      "parts": [
+        [
+          "The results",
+          "S",
+          "주어"
+        ],
+        [
+          "were",
+          "V",
+          "동사 · be동사 과거"
+        ],
+        [
+          "different",
+          "C",
+          "보어 · 형용사"
+        ],
+        [
+          "from what we expected",
+          "M",
+          "수식어 · 전치사 + what절"
+        ]
+      ],
+      "literal": "그 결과들은 / ~였다 / 다른 (상태) / 우리가 예상했던 것과",
+      "grammar": [
+        {
+          "t": "관계대명사 what = '~한 것'",
+          "d": "what we expected = the thing which we expected '우리가 예상했던 것'. 선행사를 품은 관계대명사라 what절 전체가 명사 역할을 하고, 여기서는 전치사 from의 목적어예요."
+        },
+        {
+          "t": "what절 안의 구조",
+          "d": "we(S) + expected(V) + what(목적어 자리). what이 expected의 목적어 역할을 해요."
+        },
+        {
+          "t": "2형식 be + 형용사 + 전치사",
+          "d": "be different from ~ = '~와 다르다'. 주어가 복수(results)라 were."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s042",
+      "en": "I'm trying to keep track of my daily expenses.",
+      "ko": "매일 지출을 관리하려고 노력하고 있어.",
+      "words": [
+        [
+          "try to ~",
+          "~하려고 노력하다"
+        ],
+        [
+          "keep track of",
+          "~을 계속 파악하다, 기록·관리하다"
+        ],
+        [
+          "expense",
+          "지출, 비용"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "try",
+          "past": "tried",
+          "present": "try / tries",
+          "pp": "tried"
+        },
+        {
+          "v": "keep",
+          "past": "kept",
+          "present": "keep / keeps",
+          "pp": "kept"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "am trying",
+          "V",
+          "동사 · 현재진행"
+        ],
+        [
+          "to keep track of my daily expenses",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 노력하고 있다 / 나의 매일 지출을 계속 파악하는 것을",
+      "grammar": [
+        {
+          "t": "현재진행 + try to부정사",
+          "d": "am trying = 요즘 계속 하고 있는 일. to keep track of ~ 가 try의 목적어(명사적 용법)."
+        },
+        {
+          "t": "keep track of + 목적어",
+          "d": "keep track of를 한 덩어리 동사로 보면 my daily expenses가 목적어. '놓치지 않고 계속 기록·파악하다'."
+        },
+        {
+          "t": "expenses (복수)",
+          "d": "'지출들, 비용'은 보통 복수형 expenses. daily가 꾸며 '매일의 지출'."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s043",
+      "en": "Why don't we discuss this tomorrow?",
+      "ko": "이 문제를 내일 논의하는 게 어때?",
+      "words": [
+        [
+          "Why don't we ~?",
+          "~하는 게 어때? (제안)"
+        ],
+        [
+          "discuss",
+          "논의하다"
+        ],
+        [
+          "tomorrow",
+          "내일"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "discuss",
+          "past": "discussed",
+          "present": "discuss / discusses",
+          "pp": "discussed"
+        }
+      ],
+      "form": "3형식 · 의문문 (제안)",
+      "parts": [
+        [
+          "Why",
+          "M",
+          "의문사"
+        ],
+        [
+          "don't",
+          "V",
+          "조동사 · 부정"
+        ],
+        [
+          "we",
+          "S",
+          "주어"
+        ],
+        [
+          "discuss",
+          "V",
+          "동사원형"
+        ],
+        [
+          "this",
+          "O",
+          "목적어"
+        ],
+        [
+          "tomorrow",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "왜 / 우리가 / 논의하지 않니 / 이것을 / 내일 → 내일 논의하는 게 어때?",
+      "grammar": [
+        {
+          "t": "Why don't we + 동사원형? = 제안",
+          "d": "글자 그대로는 '왜 ~하지 않아?'지만 실제로는 '~하는 게 어때?'라는 제안이에요. 이유를 묻는 질문이 아니에요. = Let's ~ / How about ~ing?"
+        },
+        {
+          "t": "discuss는 타동사",
+          "d": "discuss 뒤에 바로 목적어: discuss this ✓ / discuss about this ✗ (talk about은 about 필요)"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s044",
+      "en": "I forgot to send you the file.",
+      "ko": "너에게 파일 보내는 것을 깜빡했어.",
+      "words": [
+        [
+          "forget to ~",
+          "~할 것을 잊다"
+        ],
+        [
+          "send",
+          "보내다"
+        ],
+        [
+          "file",
+          "파일"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "forget",
+          "past": "forgot",
+          "present": "forget / forgets",
+          "pp": "forgotten"
+        },
+        {
+          "v": "send",
+          "past": "sent",
+          "present": "send / sends",
+          "pp": "sent"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "forgot",
+          "V",
+          "동사 · 과거"
+        ],
+        [
+          "to send you the file",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 잊었다 / 너에게 그 파일을 보내는 것을",
+      "grammar": [
+        {
+          "t": "forget + to부정사 vs 동명사",
+          "d": "forget to V = (앞으로) 해야 할 일을 잊다 → 파일 보내는 걸 깜빡했다. forget V-ing = (이미) 한 일을 잊다 (I'll never forget meeting you). remember도 같은 규칙."
+        },
+        {
+          "t": "to부정사 안의 4형식",
+          "d": "send(V) + you(간접목적어: ~에게) + the file(직접목적어: ~을). '너에게 파일을 보내다'. 3형식으로 바꾸면 send the file to you."
+        },
+        {
+          "t": "불규칙 변화",
+          "d": "forget – forgot – forgotten / send – sent – sent"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s045",
+      "en": "We need to make a decision soon.",
+      "ko": "우리는 곧 결정을 내려야 해.",
+      "words": [
+        [
+          "make a decision",
+          "결정을 내리다"
+        ],
+        [
+          "soon",
+          "곧"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "need",
+          "past": "needed",
+          "present": "need / needs",
+          "pp": "needed"
+        },
+        {
+          "v": "make",
+          "past": "made",
+          "present": "make / makes",
+          "pp": "made"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "We",
+          "S",
+          "주어"
+        ],
+        [
+          "need",
+          "V",
+          "동사"
+        ],
+        [
+          "to make a decision soon",
+          "O",
+          "목적어 · to부정사(명사적 용법)"
+        ]
+      ],
+      "literal": "우리는 / 필요로 한다 / 곧 결정을 내리는 것을 → 곧 결정해야 해",
+      "grammar": [
+        {
+          "t": "need + to부정사 (명사적 용법)",
+          "d": "to make a decision soon이 need의 목적어. 안에서 make(V) + a decision(O) + soon(M)."
+        },
+        {
+          "t": "make a decision = decide",
+          "d": "동사 decide를 'make + 명사'로 풀어 쓴 표현. 회의에서 자주 써요. 비슷한 짝: make a mistake, make progress, make an effort"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s046",
+      "en": "He hasn't gotten back to me yet.",
+      "ko": "그는 아직 나에게 답변하지 않았어.",
+      "words": [
+        [
+          "get back to + 사람",
+          "~에게 다시 연락하다, 답을 주다"
+        ],
+        [
+          "yet",
+          "(부정문) 아직"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "get back",
+          "past": "got back",
+          "present": "get back / gets back",
+          "pp": "gotten back"
+        }
+      ],
+      "form": "1형식 · S + V (+ 수식어)",
+      "parts": [
+        [
+          "He",
+          "S",
+          "주어"
+        ],
+        [
+          "hasn't gotten back",
+          "V",
+          "동사 · 현재완료 부정"
+        ],
+        [
+          "to me",
+          "M",
+          "수식어 · 전치사구"
+        ],
+        [
+          "yet",
+          "M",
+          "수식어 · 부사"
+        ]
+      ],
+      "literal": "그는 / (지금까지) 다시 오지 않았다 / 나에게 / 아직 → 아직 답이 없어",
+      "grammar": [
+        {
+          "t": "현재완료 부정 + yet",
+          "d": "hasn't gotten back = 지금까지 답을 주는 일이 일어나지 않은 상태. 주어가 He라서 has."
+        },
+        {
+          "t": "gotten = get의 과거분사 (미국식)",
+          "d": "get – got – gotten(미국) / got(영국). 현재완료에서는 has gotten을 주로 써요."
+        },
+        {
+          "t": "get back to + 사람",
+          "d": "get back은 자동사라 to me는 수식어 → 1형식. '나중에 다시 연락하다/답을 주다'라는 업무 표현이에요."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s047",
+      "en": "I'm looking for a better way to solve this problem.",
+      "ko": "이 문제를 해결할 더 나은 방법을 찾고 있어.",
+      "words": [
+        [
+          "look for",
+          "찾다"
+        ],
+        [
+          "a better way",
+          "더 나은 방법"
+        ],
+        [
+          "solve",
+          "해결하다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "look for",
+          "past": "looked for",
+          "present": "look for / looks for",
+          "pp": "looked for"
+        },
+        {
+          "v": "solve",
+          "past": "solved",
+          "present": "solve / solves",
+          "pp": "solved"
+        }
+      ],
+      "form": "3형식 · S + V + O",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "am looking for",
+          "V",
+          "동사 · 현재진행 (구동사)"
+        ],
+        [
+          "a better way",
+          "O",
+          "목적어"
+        ],
+        [
+          "to solve this problem",
+          "M",
+          "수식어 · to부정사(형용사적 용법)"
+        ]
+      ],
+      "literal": "나는 / 찾고 있다 / 더 나은 방법을 / 이 문제를 해결할",
+      "grammar": [
+        {
+          "t": "to부정사 – 형용사적 용법",
+          "d": "to solve this problem이 a better way를 뒤에서 꾸며요. '~할 + 명사' → '이 문제를 해결할 방법'. a way to V = ~할 방법"
+        },
+        {
+          "t": "look for = 하나의 타동사",
+          "d": "look for(찾다)를 한 덩어리로 보면 a better way가 목적어 → 3형식. 현재진행이라 '지금/요즘 찾는 중'."
+        },
+        {
+          "t": "better = good의 비교급",
+          "d": "good – better – best. a better way = 더 좋은 방법"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s048",
+      "en": "What do you think about this idea?",
+      "ko": "이 아이디어에 대해 어떻게 생각해?",
+      "words": [
+        [
+          "What do you think about ~?",
+          "~에 대해 어떻게 생각해?"
+        ],
+        [
+          "idea",
+          "아이디어, 생각"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "think",
+          "past": "thought",
+          "present": "think / thinks",
+          "pp": "thought"
+        }
+      ],
+      "form": "3형식 · 의문사 의문문",
+      "parts": [
+        [
+          "What",
+          "O",
+          "목적어 · 의문사"
+        ],
+        [
+          "do",
+          "V",
+          "조동사"
+        ],
+        [
+          "you",
+          "S",
+          "주어"
+        ],
+        [
+          "think",
+          "V",
+          "동사원형"
+        ],
+        [
+          "about this idea",
+          "M",
+          "수식어 · 전치사구"
+        ]
+      ],
+      "literal": "무엇을 / 너는 / 생각하니 / 이 아이디어에 대해 → 어떻게 생각해?",
+      "grammar": [
+        {
+          "t": "What이 think의 목적어",
+          "d": "You think something about this idea.에서 something(목적어)을 묻는 말이라 What이 앞으로 나왔어요. 한국어로는 '어떻게'지만 영어는 What을 써요. How do you think ~? ✗ (how는 '방법')"
+        },
+        {
+          "t": "의문사 의문문 어순",
+          "d": "의문사 + do/does/did + 주어 + 동사원형 ~? 주어가 you라 do."
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s049",
+      "en": "I used to work late almost every day.",
+      "ko": "나는 예전에는 거의 매일 늦게까지 일하곤 했어.",
+      "words": [
+        [
+          "used to ~",
+          "(예전에) ~하곤 했다"
+        ],
+        [
+          "work late",
+          "늦게까지 일하다"
+        ],
+        [
+          "almost every day",
+          "거의 매일"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "work",
+          "past": "worked",
+          "present": "work / works",
+          "pp": "worked"
+        }
+      ],
+      "form": "1형식 · S + V (+ 수식어)",
+      "parts": [
+        [
+          "I",
+          "S",
+          "주어"
+        ],
+        [
+          "used to work",
+          "V",
+          "동사 · 과거 습관"
+        ],
+        [
+          "late",
+          "M",
+          "수식어 · 부사"
+        ],
+        [
+          "almost every day",
+          "M",
+          "수식어 · 부사구"
+        ]
+      ],
+      "literal": "나는 / (예전에) 일하곤 했다 / 늦게까지 / 거의 매일",
+      "grammar": [
+        {
+          "t": "used to + 동사원형 = 과거의 습관",
+          "d": "'예전에는 ~했다 (지금은 아니다)'. 과거에만 쓰는 표현이라 현재형이 없어요. 부정·의문: didn't use to / Did you use to ~?"
+        },
+        {
+          "t": "used to vs be used to",
+          "d": "used to + 동사원형 = 예전에 ~하곤 했다 / be(get) used to + 명사·V-ing = ~에 익숙하다(익숙해지다). I'm used to working late. = 늦게까지 일하는 데 익숙해."
+        },
+        {
+          "t": "every day vs everyday",
+          "d": "every day(띄어 씀) = 매일 (부사) / everyday(붙여 씀) = 일상의 (형용사: everyday life)"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "id": "s050",
+      "en": "Let's make sure we're on the same page.",
+      "ko": "서로 같은 내용을 이해하고 있는지 확인하자.",
+      "words": [
+        [
+          "make sure",
+          "확실히 하다, 확인하다"
+        ],
+        [
+          "be on the same page",
+          "같은 생각·이해를 하고 있다"
+        ]
+      ],
+      "verbs": [
+        {
+          "v": "make sure",
+          "past": "made sure",
+          "present": "make sure / makes sure",
+          "pp": "made sure"
+        },
+        {
+          "v": "be",
+          "past": "was / were",
+          "present": "am / is / are",
+          "pp": "been"
+        }
+      ],
+      "form": "5형식 · V + O + OC (Let's = Let us)",
+      "parts": [
+        [
+          "Let",
+          "V",
+          "동사 · 사역동사"
+        ],
+        [
+          "'s (us)",
+          "O",
+          "목적어"
+        ],
+        [
+          "make sure we're on the same page",
+          "OC",
+          "목적격 보어 · 원형부정사 + that절"
+        ]
+      ],
+      "literal": "~하게 하자 / 우리가 / 우리가 같은 페이지에 있는지 확실히 하도록 → 서로 이해한 게 같은지 확인하자",
+      "grammar": [
+        {
+          "t": "Let's = Let us + 동사원형",
+          "d": "사역동사 let + 목적어(us) + 원형부정사(make sure) 구조가 줄어 '~하자'라는 제안이 됐어요."
+        },
+        {
+          "t": "make sure + (that)절",
+          "d": "we're on the same page가 make sure의 목적어인 명사절(that 생략). 절 안은 we(S) + are(V) + on the same page(C: 전치사구 보어) 2형식."
+        },
+        {
+          "t": "관용 표현 be on the same page",
+          "d": "직역은 '같은 페이지에 있다' → '같은 내용을 이해하고 있다, 생각이 일치하다'. 회의 마무리에 자주 써요."
+        }
+      ],
+      "date": "2026-11-28"
     }
   ],
 
